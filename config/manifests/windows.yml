@@ -1,0 +1,108 @@
+components:
+  driverdependency:
+    type: artifactory
+    root_url: https://gfx-assets.intel.com/artifactory
+    asset_path: gfx-display-build-assets/ValDisplay
+    asset_name: driverdependency
+    asset_version: '1'
+    dest_dir: gfx_Development/mainline
+  wdk:
+    type: artifactory
+    root_url: https://gfx-assets.intel.com/artifactory
+    asset_path: gfx-build-assets/build
+    asset_name: wdk
+    asset_version: '18259'
+    dest_dir: build/wdk
+  ewdk:
+    type: artifactory
+    root_url: https://gfx-assets.intel.com/artifactory
+    asset_path: gfx-build-assets/build
+    asset_name: ewdk
+    asset_version: '19554.1'
+    dest_dir: build/ewdk
+  vctargets:
+    type: artifactory
+    root_url: https://gfx-assets.intel.com/artifactory
+    asset_path: gfx-build-assets/build
+    asset_name: vctargets
+    asset_version: '15.6'
+    dest_dir: build/vctargets
+  cmake:
+    type: artifactory
+    root_url: https://gfx-assets.intel.com/artifactory
+    asset_path: gfx-build-assets/build
+    asset_name: cmake
+    asset_version: 3.12.2-dirty
+    dest_dir: build/cmake
+  7zip-win64:
+    type: artifactory
+    root_url: https://gfx-assets.intel.com/artifactory
+    asset_path: gfx-build-assets/build-tools
+    asset_name: 7zip-win64
+    asset_version: '18.05'
+    dest_dir: build/7zip-win64
+  python2-win32:
+    type: artifactory
+    root_url: https://gfx-assets.intel.com/artifactory
+    asset_path: gfx-build-assets/build-tools
+    asset_name: python2-win32
+    asset_version: 2.7.5
+    dest_dir: build/python2-win32
+  Self-Signed_Cert:
+    type: artifactory
+    root_url: https://gfx-assets.intel.com/artifactory
+    asset_path: gfx-build-assets/build-tools
+    asset_name: self-signed_cert
+    asset_version: latest
+    dest_dir: build/self-signed_cert
+    clean_on_sync: true
+  CRC:
+    type: artifactory
+    root_url: https://gfx-assets.intel.com/artifactory
+    asset_path: gfx-display-build-assets/ValDisplay/TestStore
+    asset_name: CRC
+    asset_version: '1'
+    dest_dir: ValDisplay/DisplayAutomation2.0/TestStore/CRC
+  CommonBin:
+    type: artifactory
+    root_url: https://gfx-assets.intel.com/artifactory
+    asset_path: gfx-display-build-assets/ValDisplay/TestStore
+    asset_name: CommonBin
+    asset_version: '15'
+    dest_dir: ValDisplay/DisplayAutomation2.0/TestStore/CommonBin
+  Setup:
+    type: artifactory
+    root_url: https://gfx-assets.intel.com/artifactory
+    asset_path: gfx-display-build-assets/ValDisplay/TestStore
+    asset_name: Setup
+    asset_version: '3'
+    dest_dir: ValDisplay/DisplayAutomation2.0/TestStore/Setup
+  TestSpecificBin:
+    type: artifactory
+    root_url: https://gfx-assets.intel.com/artifactory
+    asset_path: gfx-display-build-assets/ValDisplay/TestStore
+    asset_name: TestSpecificBin
+    asset_version: '58'
+    dest_dir: ValDisplay/DisplayAutomation2.0/TestStore/TestSpecificBin
+  BuildPackages:
+    type: artifactory
+    root_url: https://gfx-assets.intel.com/artifactory
+    asset_path: gfx-display-build-assets/ValDisplay/
+    asset_name: BuildPackages
+    asset_version: '2'
+    dest_dir: ValDisplay/DisplayAutomation2.0/Build/packages
+  displayLLVM:
+    type: artifactory
+    root_url: https://gfx-assets.intel.com/artifactory
+    asset_path: gfx-display-build-assets/Display
+    asset_name: LLVM
+    asset_version: '3'
+    dest_dir: ValDisplay/LLVM
+  opromSigningTools:
+    type: artifactory
+    root_url: https://gfx-assets.intel.com/artifactory
+    asset_path: gfx-display-build-assets/ValDisplay/TestStore
+    asset_name: OpromSigningTools
+    asset_version: '1'
+    dest_dir: ValDisplay/DisplayAutomation2.0/TestStore/OpromSigningTools
+version: '1'

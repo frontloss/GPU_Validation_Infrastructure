@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EDID>
+	<5K_RB2_5_EDID>5K_60hz_RB2_5_8ch_192Hz_EDID.bin</5K_RB2_5_EDID>
+</EDID>
+
+<DPCD>
+	<MST_DSC_BRANCH>MST_DSC_BRANCH.bin</MST_DSC_BRANCH>
+	<HBR3_LC4_DPCD>VDSC_HBR3_DPCD.bin</HBR3_LC4_DPCD>
+</DPCD>
+
+<Topology>
+	<Branch>
+		<UpStrmBranchOutPort>0xffffffff</UpStrmBranchOutPort>
+		<ThisBranchInputPort>0</ThisBranchInputPort>
+		<TotalInputPorts>1</TotalInputPorts>
+		<TotalPhysicalPorts>2</TotalPhysicalPorts>
+		<TotalVirtualPorts>0</TotalVirtualPorts>
+		<TotalAvailablePBN>3780</TotalAvailablePBN>
+		<MaxLinkRate>810</MaxLinkRate>
+		<MaxLaneCount>4</MaxLaneCount>
+		<BranchReplyDelay>0</BranchReplyDelay>
+		<LinkAddressDelay>0</LinkAddressDelay>
+		<RemoteI2ReadDelay>0</RemoteI2ReadDelay>
+		<RemoteI2WriteDelay>0</RemoteI2WriteDelay>
+		<RemoteDPCDReadDelay>0</RemoteDPCDReadDelay>
+		<RemoteDPCDWriteDelay>0</RemoteDPCDWriteDelay>
+		<EPRDelay>0</EPRDelay>
+		<AllocatePayloadDelay>0</AllocatePayloadDelay>
+		<ClearPayLoadDelay>0</ClearPayLoadDelay>
+		<BranchDPCD>MST_DSC_BRANCH</BranchDPCD>
+		<Display>
+			<UpStrmBranchOutPort>1</UpStrmBranchOutPort>
+			<ThisDisplayInputPort>0</ThisDisplayInputPort>
+			<TotalInputPorts>1</TotalInputPorts>
+			<TotalAvailablePBN>3780</TotalAvailablePBN>
+			<MaxLinkRate>810</MaxLinkRate>
+			<MaxLaneCount>4</MaxLaneCount>
+			<RemoteI2ReadDelay>0</RemoteI2ReadDelay>
+			<RemoteI2WriteDelay>0</RemoteI2WriteDelay>
+			<RemoteDPCDReadDelay>0</RemoteDPCDReadDelay>
+			<RemoteDPCDWriteDelay>0</RemoteDPCDWriteDelay>
+			<DisplayDPCD>HBR3_LC4_DPCD</DisplayDPCD>
+			<DisplayEDID>4K_RB2_5_EDID</DisplayEDID>
+		</Display>
+		<!-- This is a dummy branch created as WA to simulate 2 output ports in a MST branch device in valsim -->
+		<Branch>
+			<UpStrmBranchOutPort>2</UpStrmBranchOutPort>
+			<ThisBranchInputPort>0</ThisBranchInputPort>
+			<TotalInputPorts>1</TotalInputPorts>
+			<TotalPhysicalPorts>2</TotalPhysicalPorts>
+			<TotalVirtualPorts>0</TotalVirtualPorts>
+			<TotalAvailablePBN>3780</TotalAvailablePBN>
+			<MaxLinkRate>810</MaxLinkRate>
+			<MaxLaneCount>4</MaxLaneCount>
+			<BranchReplyDelay>0</BranchReplyDelay>
+			<LinkAddressDelay>0</LinkAddressDelay>
+			<RemoteI2ReadDelay>0</RemoteI2ReadDelay>
+			<RemoteI2WriteDelay>0</RemoteI2WriteDelay>
+			<RemoteDPCDReadDelay>0</RemoteDPCDReadDelay>
+			<RemoteDPCDWriteDelay>0</RemoteDPCDWriteDelay>
+			<EPRDelay>0</EPRDelay>
+			<AllocatePayloadDelay>0</AllocatePayloadDelay>
+			<ClearPayLoadDelay>0</ClearPayLoadDelay>
+			<BranchDPCD>MST_DSC_BRANCH</BranchDPCD>
+		</Branch>
+	</Branch>
+</Topology>

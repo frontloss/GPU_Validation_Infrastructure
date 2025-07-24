@@ -1,0 +1,105 @@
+<Display_Automation_2.0>
+   <Feature Name="Display Diagnostic" Owner="npdoriwa">
+     <Test LastModifiedWW="2019.WW09" Name="dd_basic_tdr.py" Owner="npdoriwa" Priority="P2" Version="1">
+       <TestInstance Grids="GFT" Id="DISDI001">
+         <CommandLine>python Tests\TDR\Display_Diagnostic\dd_basic_tdr.py -edp_a </CommandLine>
+         <OS>19H1</OS>
+         <Platform>KBL_ULX;CFL_HALO;GLK;ICL;TGL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>TGL_EMU;TGL_SOC;DG1_EMU;DG1_SOC;EHL_EMU;;EHL_SOC;RKL_EMU;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       
+       <TestInstance Grids="GFT" Id="DISDI002">
+         <CommandLine>python Tests\TDR\Display_Diagnostic\dd_basic_tdr.py -edp_a -dp_b -config extended</CommandLine>
+         <OS>19H1</OS>
+         <Platform>KBL_ULX;CFL_HALO;GLK;ICL;TGL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>TGL_SOC;DG1_EMU;DG1_SOC;EHL_EMU;EHL_SOC;RKL_EMU;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="GFT" Id="DISDI003">
+         <CommandLine>python Tests\TDR\Display_Diagnostic\dd_basic_tdr.py -edp_a -dp_b -hdmi_c -config extended</CommandLine>
+         <OS>19H1</OS>
+         <Platform>KBL_ULX;CFL_HALO;GLK;ICL;TGL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>TGL_SOC;DG1_EMU;DG1_SOC;EHL_EMU;EHL_SOC;RKL_EMU;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="GFT" Id="DISDI004">
+         <CommandLine>python Tests\TDR\Display_Diagnostic\dd_basic_tdr.py -edp_a -dp_b -hdmi_c -hdmi_d -config extended</CommandLine>
+         <OS>19H1</OS>
+         <Platform>TGL;DG1;RKL</Platform>
+                <TestEnvironment>TGL_SOC;DG1_EMU;DG1_SOC;RKL_EMU;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="GFT" Id="DISDI005">
+         <CommandLine>python Tests\TDR\Display_Diagnostic\dd_basic_tdr.py -mipi_a</CommandLine>
+         <OS>19H1</OS>
+         <Platform>LKF1;EHL</Platform>
+                <TestEnvironment>LKF1_EMU;LKF1_SOC;EHL_EMU;EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="GFT" Id="DISDI006">
+         <CommandLine>python Tests\TDR\Display_Diagnostic\dd_basic_tdr.py -mipi_a -mipi_c -config extended</CommandLine>
+         <OS>19H1</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_EMU;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+	   <TestInstance Grids="GFT" Id="DISDI007">
+         <CommandLine>python Tests\TDR\Display_Diagnostic\dd_basic_tdr.py -mipi_a -mipi_c -dp_d -config extended</CommandLine>
+         <OS>19H1</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_EMU;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="GFT" Id="DISDI008">
+         <CommandLine>python Tests\TDR\Display_Diagnostic\dd_basic_tdr.py -mipi_a -mipi_c -dp_d -hdmi_e -config extended</CommandLine>
+         <OS>19H1</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_EMU;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="GFT" Id="DISDI009">
+         <CommandLine>python Tests\TDR\Display_Diagnostic\dd_basic_tdr.py -mipi_a -mipi_c -dp_d -dp_e -config extended</CommandLine>
+         <OS>19H1</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_EMU;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="GFT" Id="DISDI010">
+         <CommandLine>python Tests\TDR\tdr_config_change.py -mipi_a -mipi_b -hdmi_c -config extended</CommandLine>
+         <OS>19H1</OS>
+         <Platform>EHL</Platform>
+                <TestEnvironment>EHL_EMU;EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+    </Test>
+   </Feature>
+</Display_Automation_2.0>

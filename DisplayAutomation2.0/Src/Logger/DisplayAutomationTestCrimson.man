@@ -1,0 +1,421 @@
+<?xml version="1.0"?>
+<instrumentationManifest xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd" xmlns="http://schemas.microsoft.com/win/2004/08/events" xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:trace="http://schemas.microsoft.com/win/2004/08/events/trace">
+	<instrumentation>
+		<events>
+			<provider name="DisplayAutomation-Test" guid="{A89A2A04-26B9-44BC-BA52-D87312CE0E33}" symbol="DisplayAutomationTest" resourceFileName="%ProgramFiles%\Intel\Graphics\Logger.dll" messageFileName="%ProgramFiles%\Intel\Graphics\Logger.dll" parameterFileName="%ProgramFiles%\Intel\Graphics\Logger.dll">
+				<events>
+					<event symbol="MediaOperation" value="1" version="0" channel="GfxDisplayTestDebug" level="win:Error" task="MediaOperations" opcode="win:Info" template="MediaOperation_t"></event>
+					<event symbol="GetDriverEscape" value="2" version="0" channel="GfxDisplayTestDebug" level="win:Error" task="DriverEscape" opcode="Get" template="EscapeOperation_t"></event>
+					<event symbol="SetDriverEscape" value="3" version="0" channel="GfxDisplayTestDebug" level="win:Error" task="DriverEscape" opcode="Set" template="EscapeOperation_t"></event>
+					<event symbol="TdrEscape" value="4" version="0" channel="GfxDisplayTestDebug" level="win:LogAlways" task="TdrDriverEscape" template="TdrEscapeOperation_t"></event>
+					<event symbol="ReadRegistry" value="5" version="0" channel="GfxDisplayAnalytical" level="win:LogAlways" task="RegistryAccess" opcode="Get" template="RegistryData_t"></event>
+					<event symbol="WriteRegistry" value="6" version="0" channel="GfxDisplayAnalytical" level="win:LogAlways" task="RegistryAccess" opcode="Set" template="RegistryData_t"></event>
+					<event symbol="GetModeDetails" value="7" version="0" channel="GfxDisplayTestDebug" level="win:LogAlways" task="ModeSet" opcode="Get" template="DisplayMode_t"></event>
+					<event symbol="SetModeDetails" value="8" version="0" channel="GfxDisplayTestDebug" level="win:LogAlways" task="ModeSet" opcode="Set" template="DisplayMode_t"></event>
+					<event symbol="GetConfiguration" value="9" version="0" channel="GfxDisplayTestDebug" level="win:LogAlways" task="DisplayConfig" opcode="Get" template="DisplayConfig_t"></event>
+					<event symbol="SetConfiguration" value="10" version="0" channel="GfxDisplayTestDebug" level="win:LogAlways" task="DisplayConfig" opcode="Set" template="DisplayConfig_t"></event>
+					<event symbol="TargetDetails" value="11" version="0" channel="GfxDisplayTestDebug" level="win:LogAlways" task="ModeSet" opcode="Get" template="TargetDetails_t"></event>
+					<event symbol="Mpo3Flip_Start" value="12" version="0" channel="GfxDisplayAnalytical" level="win:Verbose" task="Mpo3Flip" opcode="win:Start" template="Mpo3FlipIn_t" keywords="Flip "></event>
+					<event symbol="Mpo3Flip_Stop" value="13" version="0" channel="GfxDisplayAnalytical" level="win:Verbose" task="Mpo3Flip" opcode="win:Stop" template="Mpo3FlipOut_t" keywords="Flip "></event>
+					<event symbol="Mpo3Flip_Plane" value="14" version="0" channel="GfxDisplayAnalytical" level="win:Verbose" task="Mpo3Flip" opcode="Plane" template="Mpo3FlipPlaneIn_t" keywords="Flip "></event>
+					<event symbol="MPO3FlipPlane_Details" value="15" version="0" channel="GfxDisplayAnalytical" level="win:Verbose" task="Mpo3Flip" opcode="Info" template="Mpo3FlipPlaneDetails_t" keywords="Flip "></event>
+				</events>
+				<levels></levels>
+				<tasks>
+					<task name="MediaOperations" symbol="MediaOperations_Test" value="1" eventGUID="{D2ABE070-B743-47A7-8F0E-D9E7FD6F2D60}"></task>
+					<task name="DriverEscape" symbol="DriverEscape_Task" value="2" eventGUID="{564E2C03-0AE9-4FED-AE3D-4E35D3BA5C06}"></task>
+					<task name="TdrDriverEscape" symbol="TdrDriverEscape_Task" value="3" eventGUID="{36167526-8DBF-4039-A031-CDE1E7E44217}"></task>
+					<task name="RegistryAccess" symbol="RegistryAccess_Task" value="4" eventGUID="{EF891A79-AAA2-4683-B910-43519A0656E6}"></task>
+					<task name="ModeSet" symbol="ModeSet_Task" value="5" eventGUID="{86FE9E91-3989-45FA-9223-01D88973F76B}"></task>
+					<task name="DisplayConfig" symbol="DisplayConfig_Task" value="6" eventGUID="{40FE7096-1BAB-4955-9F32-59F5F33256D8}"></task>
+					<task name="Mpo3Flip" symbol="Mpo3Flip_Task" value="41" eventGUID="{CC524958-96A6-4A98-B22F-5B38B433E5F1}"></task>
+				</tasks>
+				<opcodes>
+					<opcode name="Get" symbol="Get" value="10"></opcode>
+					<opcode name="Set" symbol="Set" value="11"></opcode>
+					<opcode name="Plane" symbol="Plane_DD_Opcode" value="28"></opcode>
+					<opcode name="Info" symbol="Information_DD_Opcode" value="25"></opcode>
+				</opcodes>
+				<channels>
+					<channel name="GfxDisplayOperations" chid="GfxDisplayOperations" symbol="GfxDisplayOperations_Channel" type="Operational" enabled="true"></channel>
+					<channel name="GfxDisplayAnalytical" chid="GfxDisplayAnalytical" symbol="GfxDisplayAnalytical_Channel" type="Analytic" enabled="false" isolation="System"></channel>
+					<channel name="GfxDisplayTestDebug" chid="GfxDisplayTestDebug" symbol="GfxDisplayTestDebug_Channel" type="Debug" enabled="false" isolation="System"></channel>
+				</channels>
+				<keywords>
+					<keyword name="Flip" symbol="Flip_Keyword" mask="0x400"></keyword>
+				</keywords>
+				<maps>
+					<bitMap name="DXGK_SETVIDPNSOURCEADDRESS_INPUT_FLAGS">
+						<map value="0x1" message="$(string.DisplayAutomation-Test.map.DXGK_SETVIDPNSOURCEADDRESS_INPUT_FLAGS.1.message)"></map>
+						<map value="0x2" message="$(string.DisplayAutomation-Test.map.DXGK_SETVIDPNSOURCEADDRESS_INPUT_FLAGS.2.message)"></map>
+						<map value="0x4" message="$(string.DisplayAutomation-Test.map.DXGK_SETVIDPNSOURCEADDRESS_INPUT_FLAGS.4.message)"></map>
+						<map value="0x8" message="$(string.DisplayAutomation-Test.map.DXGK_SETVIDPNSOURCEADDRESS_INPUT_FLAGS.8.message)"></map>
+					</bitMap>
+					<bitMap name="DXGK_SETVIDPNSOURCEADDRESS_OUTPUT_FLAGS">
+						<map value="0x1" message="$(string.DisplayAutomation-Test.map.DXGK_SETVIDPNSOURCEADDRESS_OUTPUT_FLAGS.1.message)"></map>
+					</bitMap>
+					<bitMap name="DXGK_PLANE_SPECIFIC_INPUT_FLAGS">
+						<map value="0x1" message="$(string.DisplayAutomation-Test.map.DXGK_PLANE_SPECIFIC_INPUT_FLAGS.1.message)"></map>
+						<map value="0x2" message="$(string.DisplayAutomation-Test.map.DXGK_PLANE_SPECIFIC_INPUT_FLAGS.2.message)"></map>
+						<map value="0x4" message="$(string.DisplayAutomation-Test.map.DXGK_PLANE_SPECIFIC_INPUT_FLAGS.4.message)"></map>
+						<map value="0x8" message="$(string.DisplayAutomation-Test.map.DXGK_PLANE_SPECIFIC_INPUT_FLAGS.8.message)"></map>
+						<map value="0x10" message="$(string.DisplayAutomation-Test.map.DXGK_PLANE_SPECIFIC_INPUT_FLAGS.16.message)"></map>
+						<map value="0x20" message="$(string.DisplayAutomation-Test.map.DXGK_PLANE_SPECIFIC_INPUT_FLAGS.32.message)"></map>
+						<map value="0x40" message="$(string.DisplayAutomation-Test.map.DXGK_PLANE_SPECIFIC_INPUT_FLAGS.64.message)"></map>
+					</bitMap>
+					<valueMap name="EscapeCode">
+						<map value="0" message="$(string.DisplayAutomation-Test.map.EscapeCode.0.message)"></map>
+						<map value="1" message="$(string.DisplayAutomation-Test.map.EscapeCode.1.message)"></map>
+						<map value="2" message="$(string.DisplayAutomation-Test.map.EscapeCode.2.message)"></map>
+						<map value="3" message="$(string.DisplayAutomation-Test.map.EscapeCode.3.message)"></map>
+						<map value="4" message="$(string.DisplayAutomation-Test.map.EscapeCode.4.message)"></map>
+						<map value="5" message="$(string.DisplayAutomation-Test.map.EscapeCode.5.message)"></map>
+						<map value="6" message="$(string.DisplayAutomation-Test.map.EscapeCode.6.message)"></map>
+						<map value="7" message="$(string.DisplayAutomation-Test.map.EscapeCode.7.message)"></map>
+						<map value="8" message="$(string.DisplayAutomation-Test.map.EscapeCode.8.message)"></map>
+						<map value="9" message="$(string.DisplayAutomation-Test.map.EscapeCode.9.message)"></map>
+						<map value="10" message="$(string.DisplayAutomation-Test.map.EscapeCode.10.message)"></map>
+						<map value="11" message="$(string.DisplayAutomation-Test.map.EscapeCode.11.message)"></map>
+						<map value="12" message="$(string.DisplayAutomation-Test.map.EscapeCode.12.message)"></map>
+						<map value="13" message="$(string.DisplayAutomation-Test.map.EscapeCode.13.message)"></map>
+						<map value="14" message="$(string.DisplayAutomation-Test.map.EscapeCode.14.message)"></map>
+						<map value="15" message="$(string.DisplayAutomation-Test.map.EscapeCode.15.message)"></map>
+						<map value="16" message="$(string.DisplayAutomation-Test.map.EscapeCode.16.message)"></map>
+						<map value="17" message="$(string.DisplayAutomation-Test.map.EscapeCode.17.message)"></map>
+						<map value="18" message="$(string.DisplayAutomation-Test.map.EscapeCode.18.message)"></map>
+						<map value="100" message="$(string.DisplayAutomation-Test.map.EscapeCode.100.message)"></map>
+						<map value="101" message="$(string.DisplayAutomation-Test.map.EscapeCode.101.message)"></map>
+						<map value="102" message="$(string.DisplayAutomation-Test.map.EscapeCode.102.message)"></map>
+						<map value="103" message="$(string.DisplayAutomation-Test.map.EscapeCode.103.message)"></map>
+						<map value="104" message="$(string.DisplayAutomation-Test.map.EscapeCode.104.message)"></map>
+						<map value="105" message="$(string.DisplayAutomation-Test.map.EscapeCode.105.message)"></map>
+						<map value="106" message="$(string.DisplayAutomation-Test.map.EscapeCode.106.message)"></map>
+						<map value="107" message="$(string.DisplayAutomation-Test.map.EscapeCode.107.message)"></map>
+						<map value="108" message="$(string.DisplayAutomation-Test.map.EscapeCode.108.message)"></map>
+						<map value="109" message="$(string.DisplayAutomation-Test.map.EscapeCode.109.message)"></map>
+						<map value="110" message="$(string.DisplayAutomation-Test.map.EscapeCode.110.message)"></map>
+						<map value="111" message="$(string.DisplayAutomation-Test.map.EscapeCode.111.message)"></map>
+						<map value="112" message="$(string.DisplayAutomation-Test.map.EscapeCode.112.message)"></map>
+						<map value="113" message="$(string.DisplayAutomation-Test.map.EscapeCode.113.message)"></map>
+						<map value="114" message="$(string.DisplayAutomation-Test.map.EscapeCode.114.message)"></map>
+						<map value="115" message="$(string.DisplayAutomation-Test.map.EscapeCode.115.message)"></map>
+					</valueMap>
+					<valueMap name="Media_Operation">
+						<map value="0" message="$(string.DisplayAutomation-Test.map.Media_Operation.0.message)"></map>
+						<map value="1" message="$(string.DisplayAutomation-Test.map.Media_Operation.1.message)"></map>
+						<map value="2" message="$(string.DisplayAutomation-Test.map.Media_Operation.2.message)"></map>
+						<map value="3" message="$(string.DisplayAutomation-Test.map.Media_Operation.3.message)"></map>
+						<map value="4" message="$(string.DisplayAutomation-Test.map.Media_Operation.4.message)"></map>
+						<map value="5" message="$(string.DisplayAutomation-Test.map.Media_Operation.5.message)"></map>
+						<map value="6" message="$(string.DisplayAutomation-Test.map.Media_Operation.6.message)"></map>
+						<map value="7" message="$(string.DisplayAutomation-Test.map.Media_Operation.7.message)"></map>
+						<map value="8" message="$(string.DisplayAutomation-Test.map.Media_Operation.8.message)"></map>
+						<map value="9" message="$(string.DisplayAutomation-Test.map.Media_Operation.9.message)"></map>
+						<map value="10" message="$(string.DisplayAutomation-Test.map.Media_Operation.10.message)"></map>
+					</valueMap>
+					<valueMap name="TdrEscapeCode">
+						<map value="0" message="$(string.DisplayAutomation-Test.map.TdrEscapeCode.0.message)"></map>
+						<map value="4" message="$(string.DisplayAutomation-Test.map.TdrEscapeCode.4.message)"></map>
+					</valueMap>
+					<valueMap name="RegDataType">
+						<map value="0" message="$(string.DisplayAutomation-Test.map.RegDataType.0.message)"></map>
+						<map value="1" message="$(string.DisplayAutomation-Test.map.RegDataType.1.message)"></map>
+						<map value="2" message="$(string.DisplayAutomation-Test.map.RegDataType.2.message)"></map>
+						<map value="3" message="$(string.DisplayAutomation-Test.map.RegDataType.3.message)"></map>
+						<map value="4" message="$(string.DisplayAutomation-Test.map.RegDataType.4.message)"></map>
+						<map value="7" message="$(string.DisplayAutomation-Test.map.RegDataType.7.message)"></map>
+						<map value="11" message="$(string.DisplayAutomation-Test.map.RegDataType.11.message)"></map>
+					</valueMap>
+					<valueMap name="Feature">
+						<map value="0" message="$(string.DisplayAutomation-Test.map.Feature.0.message)"></map>
+						<map value="1" message="$(string.DisplayAutomation-Test.map.Feature.1.message)"></map>
+						<map value="2" message="$(string.DisplayAutomation-Test.map.Feature.2.message)"></map>
+						<map value="3" message="$(string.DisplayAutomation-Test.map.Feature.3.message)"></map>
+					</valueMap>
+					<valueMap name="PixelFormat">
+						<map value="0" message="$(string.DisplayAutomation-Test.map.PixelFormat.0.message)"></map>
+						<map value="1" message="$(string.DisplayAutomation-Test.map.PixelFormat.1.message)"></map>
+						<map value="2" message="$(string.DisplayAutomation-Test.map.PixelFormat.2.message)"></map>
+						<map value="3" message="$(string.DisplayAutomation-Test.map.PixelFormat.3.message)"></map>
+						<map value="4" message="$(string.DisplayAutomation-Test.map.PixelFormat.4.message)"></map>
+					</valueMap>
+					<valueMap name="Rotation">
+						<map value="0" message="$(string.DisplayAutomation-Test.map.Rotation.0.message)"></map>
+						<map value="1" message="$(string.DisplayAutomation-Test.map.Rotation.1.message)"></map>
+						<map value="2" message="$(string.DisplayAutomation-Test.map.Rotation.2.message)"></map>
+						<map value="3" message="$(string.DisplayAutomation-Test.map.Rotation.3.message)"></map>
+						<map value="4" message="$(string.DisplayAutomation-Test.map.Rotation.4.message)"></map>
+					</valueMap>
+					<valueMap name="Scaling">
+						<map value="0" message="$(string.DisplayAutomation-Test.map.ScanlineOrdering.0.message)"></map>
+						<map value="1" message="$(string.DisplayAutomation-Test.map.ScanlineOrdering.1.message)"></map>
+						<map value="2" message="$(string.DisplayAutomation-Test.map.ScanlineOrdering.2.message)"></map>
+						<map value="4" message="$(string.DisplayAutomation-Test.map.ScanlineOrdering.4.message)"></map>
+						<map value="8" message="$(string.DisplayAutomation-Test.map.ScanlineOrdering.8.message)"></map>
+						<map value="64" message="$(string.DisplayAutomation-Test.map.ScanlineOrdering.64.message)"></map>
+					</valueMap>
+					<valueMap name="ScanlineOrdering">
+						<map value="0" message="$(string.DisplayAutomation-Test.map.ScanlineOrdering.0.message)"></map>
+						<map value="1" message="$(string.DisplayAutomation-Test.map.ScanlineOrdering.1.message)"></map>
+						<map value="2" message="$(string.DisplayAutomation-Test.map.ScanlineOrdering.2.message)"></map>
+					</valueMap>
+					<valueMap name="RRMode">
+						<map value="0" message="$(string.DisplayAutomation-Test.map.RRMode.0.message)"></map>
+						<map value="1" message="$(string.DisplayAutomation-Test.map.RRMode.1.message)"></map>
+					</valueMap>
+					<valueMap name="Status">
+						<map value="0" message="$(string.DisplayAutomation-Test.map.Status.0.message)"></map>
+						<map value="1" message="$(string.DisplayAutomation-Test.map.Status.1.message)"></map>
+						<map value="2" message="$(string.DisplayAutomation-Test.map.Status.2.message)"></map>
+						<map value="3" message="$(string.DisplayAutomation-Test.map.Status.3.message)"></map>
+						<map value="4" message="$(string.DisplayAutomation-Test.map.Status.4.message)"></map>
+						<map value="5" message="$(string.DisplayAutomation-Test.map.Status.5.message)"></map>
+						<map value="6" message="$(string.DisplayAutomation-Test.map.Status.6.message)"></map>
+						<map value="7" message="$(string.DisplayAutomation-Test.map.Status.7.message)"></map>
+						<map value="8" message="$(string.DisplayAutomation-Test.map.Status.8.message)"></map>
+						<map value="9" message="$(string.DisplayAutomation-Test.map.Status.9.message)"></map>
+						<map value="10" message="$(string.DisplayAutomation-Test.map.Status.10.message)"></map>
+						<map value="11" message="$(string.DisplayAutomation-Test.map.Status.11.message)"></map>
+						<map value="12" message="$(string.DisplayAutomation-Test.map.Status.12.message)"></map>
+						<map value="13" message="$(string.DisplayAutomation-Test.map.Status.13.message)"></map>
+						<map value="14" message="$(string.DisplayAutomation-Test.map.Status.14.message)"></map>
+						<map value="15" message="$(string.DisplayAutomation-Test.map.Status.15.message)"></map>
+						<map value="16" message="$(string.DisplayAutomation-Test.map.Status.16.message)"></map>
+						<map value="17" message="$(string.DisplayAutomation-Test.map.Status.17.message)"></map>
+						<map value="255" message="$(string.DisplayAutomation-Test.map.Status.255.message)"></map>
+					</valueMap>
+					<valueMap name="gfx_index">
+						<map value="0" message="$(string.DisplayAutomation-Test.map.gfxIndex.0.message)"></map>
+						<map value="1" message="$(string.DisplayAutomation-Test.map.gfxIndex.1.message)"></map>
+					</valueMap>
+					<valueMap name="Topology">
+						<map value="0" message="$(string.DisplayAutomation-Test.map.Topology.0.message)"></map>
+						<map value="1" message="$(string.DisplayAutomation-Test.map.Topology.1.message)"></map>
+						<map value="2" message="$(string.DisplayAutomation-Test.map.Topology.2.message)"></map>
+						<map value="3" message="$(string.DisplayAutomation-Test.map.Topology.3.message)"></map>
+						<map value="4" message="$(string.DisplayAutomation-Test.map.Topology.4.message)"></map>
+					</valueMap>
+				</maps>
+				<templates>
+					<template tid="MediaOperation_t">
+						<data name="Target" inType="win:UInt32" outType="win:HexInt32"></data>
+						<data name="Operation" inType="win:UInt32" map="Media_Operation"></data>
+					</template>
+					<template tid="EscapeOperation_t">
+						<data name="minorEscapeCode" inType="win:UInt32" map="EscapeCode"></data>
+						<data name="majorEscapeCode" inType="win:UInt32" outType="xs:unsignedInt"></data>
+						<data name="minorInterfaceVersion" inType="win:UInt16" outType="xs:unsignedShort"></data>
+						<data name="majorInterfaceVersion" inType="win:UInt16" outType="xs:unsignedShort"></data>
+					</template>
+					<template tid="TdrEscapeOperation_t">
+						<data name="deviceID" inType="win:UnicodeString" outType="xs:string"></data>
+						<data name="deviceInstanceID" inType="win:UnicodeString" outType="xs:string"></data>
+						<data name="tdrType" inType="win:UInt32" map="TdrEscapeCode"></data>
+					</template>
+					<template tid="RegistryData_t">
+						<data name="feature" inType="win:UInt32" map="Feature"></data>
+						<data name="reg_path" inType="win:UnicodeString" outType="xs:string"></data>
+						<data name="sub_key" inType="win:UnicodeString" outType="xs:string"></data>
+						<data name="reg_name" inType="win:UnicodeString" outType="xs:string"></data>
+						<data name="reg_type" inType="win:UInt32" map="RegDataType"></data>
+						<data name="reg_value" inType="win:UnicodeString" outType="xs:string"></data>
+					</template>
+					<template tid="DisplayMode_t">
+						<data name="gfxIndex" inType="win:UInt32" map="gfx_index"></data>
+						<data name="targetId" inType="win:UInt32" outType="win:HexInt32"></data>
+						<data name="status" inType="win:UInt32" map="Status"></data>
+						<data name="virtualModeSetAware" inType="win:Boolean" outType="xs:boolean"></data>
+						<data name="HzRes" inType="win:UInt32" outType="xs:unsignedInt"></data>
+						<data name="VtRes" inType="win:UInt32" outType="xs:unsignedInt"></data>
+						<data name="refreshRate" inType="win:UInt32" outType="xs:unsignedInt"></data>
+						<data name="scaling" inType="win:UInt32" map="Scaling"></data>
+						<data name="rotation" inType="win:UInt32" map="Rotation"></data>
+						<data name="scanlineOrdering" inType="win:UInt32" map="ScanlineOrdering"></data>
+						<data name="BPP" inType="win:UInt32" map="PixelFormat"></data>
+						<data name="pixelClock_Hz" inType="win:UInt64" outType="xs:unsignedLong"></data>
+						<data name="rrMode" inType="win:UInt32" map="RRMode"></data>
+					</template>
+					<template tid="DisplayConfig_t">
+						<data name="status" inType="win:UInt32" map="Status"></data>
+						<data name="topology" inType="win:UInt32" map="Topology"></data>
+						<data name="numberOfDisplays" inType="win:UInt32" outType="xs:unsignedInt"></data>
+					</template>
+					<template tid="TargetDetails_t">
+						<data name="gfxIndex" inType="win:UInt32" map="gfx_index"></data>
+						<data name="targetID" inType="win:UInt32" outType="win:HexInt32"></data>
+						<data name="isActive" inType="win:Boolean" outType="xs:boolean"></data>
+					</template>
+					<template tid="Mpo3FlipIn_t">
+						<data name="SourceID" inType="win:UInt32" outType="xs:unsignedInt"></data>
+						<data name="Flags" inType="win:UInt32" map="DXGK_SETVIDPNSOURCEADDRESS_INPUT_FLAGS"></data>
+						<data name="PlaneCount" inType="win:UInt32" outType="xs:unsignedInt"></data>
+						<data name="Duration" inType="win:UInt32" outType="xs:unsignedInt"></data>
+						<data name="TargetFlipTime" inType="win:UInt64" outType="xs:unsignedLong"></data>
+					</template>
+					<template tid="Mpo3FlipPlaneIn_t">
+						<data name="LayerIndex" inType="win:UInt32" outType="xs:unsignedInt"></data>
+						<data name="Flags" inType="win:UInt32" map="DXGK_PLANE_SPECIFIC_INPUT_FLAGS"></data>
+						<data name="PresentID" inType="win:UInt64" outType="xs:unsignedLong"></data>
+						<data name="Rsvd" inType="win:UInt32" outType="xs:unsignedInt"></data>
+					</template>
+					<template tid="Mpo3FlipOut_t">
+						<data name="Flags" inType="win:UInt32" map="DXGK_SETVIDPNSOURCEADDRESS_OUTPUT_FLAGS"></data>
+					</template>
+					<template tid="Mpo3FlipPlaneDetails_t">
+						<data name="MaxImmFlipLine" inType="win:UInt32" outType="xs:unsignedInt"></data>
+						<data name="PlaneAttribFlag" inType="win:UInt32" outType="xs:unsignedInt"></data>
+						<data name="Blend" inType="win:UInt32" outType="xs:unsignedInt"></data>
+						<data name="ClrSpace" inType="win:UInt32" outType="xs:unsignedInt"></data>
+						<data name="Rotation" inType="win:UInt32" outType="xs:unsignedInt"></data>
+						<data name="StretchQuality" inType="win:UInt32" outType="xs:unsignedInt"></data>
+						<data name="SDRWhiteLevel" inType="win:UInt32" outType="xs:unsignedInt"></data>
+						<data name="SrcLeft" inType="win:Int64" outType="xs:long"></data>
+						<data name="SrcTop" inType="win:Int64" outType="xs:long"></data>
+						<data name="SrcRight" inType="win:Int64" outType="xs:long"></data>
+						<data name="SrcBottom" inType="win:Int64" outType="xs:long"></data>
+						<data name="DestLeft" inType="win:Int64" outType="xs:long"></data>
+						<data name="DestTop" inType="win:Int64" outType="xs:long"></data>
+						<data name="DestRight" inType="win:Int64" outType="xs:long"></data>
+						<data name="DestBottom" inType="win:Int64" outType="xs:long"></data>
+						<data name="ClipLeft" inType="win:Int64" outType="xs:long"></data>
+						<data name="ClipTop" inType="win:Int64" outType="xs:long"></data>
+						<data name="ClipRight" inType="win:Int64" outType="xs:long"></data>
+						<data name="ClipBottom" inType="win:Int64" outType="xs:long"></data>
+						<data name="DirtyRectLeft" inType="win:Int64" outType="xs:long"></data>
+						<data name="DirtyRectTop" inType="win:Int64" outType="xs:long"></data>
+						<data name="DirtyRectRight" inType="win:Int64" outType="xs:long"></data>
+						<data name="DirtyRectBottom" inType="win:Int64" outType="xs:long"></data>
+						<data name="hallocation" inType="win:Pointer" outType="win:HexInt64"></data>
+					</template>
+				</templates>
+			</provider>
+		</events>
+	</instrumentation>
+	<localization>
+		<resources culture="en-US">
+			<stringTable>
+				<string id="opcode.Stop" value="Stop"></string>
+				<string id="opcode.Start" value="Start"></string>
+				<string id="opcode.Info" value="Info"></string>
+				<string id="level.Verbose" value="Verbose"></string>
+				<string id="level.LogAlways" value="Log Always"></string>
+				<string id="level.Error" value="Error"></string>
+				<string id="DisplayAutomation-Test.map.gfxIndex.1.message" value="1"></string>
+				<string id="DisplayAutomation-Test.map.gfxIndex.0.message" value="0"></string>
+				<string id="DisplayAutomation-Test.map.Topology.4.message" value="HYBRID"></string>
+				<string id="DisplayAutomation-Test.map.Topology.3.message" value="EXTENDED"></string>
+				<string id="DisplayAutomation-Test.map.Topology.2.message" value="CLONE"></string>
+				<string id="DisplayAutomation-Test.map.Topology.1.message" value="SINGLE"></string>
+				<string id="DisplayAutomation-Test.map.Topology.0.message" value="TOPOLOGY_NONE"></string>
+				<string id="DisplayAutomation-Test.map.TdrEscapeCode.4.message" value="D3DKMT_TDRDBGCTRLTYPE_VSYNCTDR"></string>
+				<string id="DisplayAutomation-Test.map.TdrEscapeCode.0.message" value="D3DKMT_TDRDBGCTRLTYPE_FORCETDR"></string>
+				<string id="DisplayAutomation-Test.map.Status.9.message" value="DISPLAY_CONFIG_ERROR_TARGET_INACTIVE"></string>
+				<string id="DisplayAutomation-Test.map.Status.8.message" value="DISPLAY_CONFIG_ERROR_SIZE_MISMATCH"></string>
+				<string id="DisplayAutomation-Test.map.Status.7.message" value="DISPLAY_CONFIG_ERROR_MEMORY_ALLOCATION_FAILED"></string>
+				<string id="DisplayAutomation-Test.map.Status.6.message" value="DISPLAY_CONFIG_ERROR_BAD_CONFIGURATION"></string>
+				<string id="DisplayAutomation-Test.map.Status.5.message" value="DISPLAY_CONFIG_ERROR_INSUFFICIENT_BUFFER"></string>
+				<string id="DisplayAutomation-Test.map.Status.4.message" value="DISPLAY_CONFIG_ERROR_GEN_FAILURE      "></string>
+				<string id="DisplayAutomation-Test.map.Status.3.message" value="DISPLAY_CONFIG_ERROR_ACCESS_DENIED            "></string>
+				<string id="DisplayAutomation-Test.map.Status.255.message" value="DISPLAY_CONFIG_ERROR_UNDEFINED"></string>
+				<string id="DisplayAutomation-Test.map.Status.2.message" value="DISPLAY_CONFIG_ERROR_NOT_SUPPORTED            "></string>
+				<string id="DisplayAutomation-Test.map.Status.17.message" value="DISPLAY_CONFIG_ERROR_SUCCUESS_RR_MISMATCH     "></string>
+				<string id="DisplayAutomation-Test.map.Status.16.message" value="DISPLAY_CONFIG_ERROR_OS_API_CALL_FAILED"></string>
+				<string id="DisplayAutomation-Test.map.Status.15.message" value="DISPLAY_CONFIG_ERROR_INVALID_ADAPTER_ID"></string>
+				<string id="DisplayAutomation-Test.map.Status.14.message" value="DISPLAY_CONFIG_ERROR_MODE_VERIFICATION_FAILED "></string>
+				<string id="DisplayAutomation-Test.map.Status.13.message" value="DISPLAY_CONFIG_ERROR_REGISTRY_ACCESS"></string>
+				<string id="DisplayAutomation-Test.map.Status.12.message" value="DISPLAY_CONFIG_ERROR_DRIVER_ESCAPE_FAILED     "></string>
+				<string id="DisplayAutomation-Test.map.Status.11.message" value="DISPLAY_CONFIG_ERROR_QUERY_MODE_FAILED"></string>
+				<string id="DisplayAutomation-Test.map.Status.10.message" value="DISPLAY_CONFIG_ERROR_INVALID_DEVICE_NAME"></string>
+				<string id="DisplayAutomation-Test.map.Status.1.message" value="DISPLAY_CONFIG_ERROR_INVALID_PARAMETER        "></string>
+				<string id="DisplayAutomation-Test.map.Status.0.message" value="DISPLAY_CONFIG_ERROR_SUCCESS                  "></string>
+				<string id="DisplayAutomation-Test.map.ScanlineOrdering.8.message" value="CAR"></string>
+				<string id="DisplayAutomation-Test.map.ScanlineOrdering.64.message" value="MDS"></string>
+				<string id="DisplayAutomation-Test.map.ScanlineOrdering.4.message" value="MAR"></string>
+				<string id="DisplayAutomation-Test.map.ScanlineOrdering.2.message" value="INTERLACED"></string>
+				<string id="DisplayAutomation-Test.map.ScanlineOrdering.1.message" value="PROGRESSIVE"></string>
+				<string id="DisplayAutomation-Test.map.ScanlineOrdering.0.message" value="SCANLINE_ORDERING_UNSPECIFIED"></string>
+				<string id="DisplayAutomation-Test.map.Rotation.4.message" value="ROTATE_270"></string>
+				<string id="DisplayAutomation-Test.map.Rotation.3.message" value="ROTATE_180"></string>
+				<string id="DisplayAutomation-Test.map.Rotation.2.message" value="ROTATE_90"></string>
+				<string id="DisplayAutomation-Test.map.Rotation.1.message" value="ROTATE_0"></string>
+				<string id="DisplayAutomation-Test.map.Rotation.0.message" value="ROTATE_UNSPECIFIED"></string>
+				<string id="DisplayAutomation-Test.map.RegDataType.7.message" value="MULTI_SZ"></string>
+				<string id="DisplayAutomation-Test.map.RegDataType.4.message" value="DWORD"></string>
+				<string id="DisplayAutomation-Test.map.RegDataType.3.message" value="BINARY"></string>
+				<string id="DisplayAutomation-Test.map.RegDataType.2.message" value="EXPAND_SZ"></string>
+				<string id="DisplayAutomation-Test.map.RegDataType.11.message" value="QWORD"></string>
+				<string id="DisplayAutomation-Test.map.RegDataType.1.message" value="SZ"></string>
+				<string id="DisplayAutomation-Test.map.RegDataType.0.message" value="NONE"></string>
+				<string id="DisplayAutomation-Test.map.RRMode.1.message" value="DYNAMIC_RR"></string>
+				<string id="DisplayAutomation-Test.map.RRMode.0.message" value="LEGACY_RR"></string>
+				<string id="DisplayAutomation-Test.map.PixelFormat.4.message" value="PIXELFORMAT_32BPP"></string>
+				<string id="DisplayAutomation-Test.map.PixelFormat.3.message" value="PIXELFORMAT_24BPP"></string>
+				<string id="DisplayAutomation-Test.map.PixelFormat.2.message" value="PIXELFORMAT_16BPP"></string>
+				<string id="DisplayAutomation-Test.map.PixelFormat.1.message" value="PIXELFORMAT_8BPP"></string>
+				<string id="DisplayAutomation-Test.map.PixelFormat.0.message" value="PIXELFORMAT_UNSPECIFIED"></string>
+				<string id="DisplayAutomation-Test.map.Media_Operation.9.message" value="Windows_Maximize"></string>
+				<string id="DisplayAutomation-Test.map.Media_Operation.8.message" value="Switch_Window"></string>
+				<string id="DisplayAutomation-Test.map.Media_Operation.7.message" value="Move_Window"></string>
+				<string id="DisplayAutomation-Test.map.Media_Operation.6.message" value="Application_Resize"></string>
+				<string id="DisplayAutomation-Test.map.Media_Operation.5.message" value="Application_Close"></string>
+				<string id="DisplayAutomation-Test.map.Media_Operation.4.message" value="Application_Open"></string>
+				<string id="DisplayAutomation-Test.map.Media_Operation.3.message" value="Stop"></string>
+				<string id="DisplayAutomation-Test.map.Media_Operation.2.message" value="Pause"></string>
+				<string id="DisplayAutomation-Test.map.Media_Operation.10.message" value="Window_Minimize"></string>
+				<string id="DisplayAutomation-Test.map.Media_Operation.1.message" value="Play"></string>
+				<string id="DisplayAutomation-Test.map.Media_Operation.0.message" value="None"></string>
+				<string id="DisplayAutomation-Test.map.Feature.3.message" value="LEGACY"></string>
+				<string id="DisplayAutomation-Test.map.Feature.2.message" value="VALSIM"></string>
+				<string id="DisplayAutomation-Test.map.Feature.1.message" value="AUDIO"></string>
+				<string id="DisplayAutomation-Test.map.Feature.0.message" value="DISPLAY"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.9.message" value="DD_ESC_VIRTUAL_DISPLAY"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.8.message" value="DD_ESC_GET_CURSOR_SHAPE"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.7.message" value="DD_ESC_GET_SET_COLLAGE_MODE"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.6.message" value="DD_ESC_S3D"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.5.message" value="DD_ESC_POWER_CONSERVATION"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.4.message" value="DD_ESC_CUSTOM_MODES"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.3.message" value="DD_ESC_SET_CUSTOM_SCALING"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.2.message" value="DD_ESC_GET_INVALID_DISP_COMBO"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.18.message" value="DD_ESC_GET_SET_NN_SCALING"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.17.message" value="DD_ESC_GET_SET_CUSTOM_AVI_INFO_FRAME"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.16.message" value="DD_ESC_SET_3D_LUT"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.15.message" value="DD_ESC_GET_SET_COLOR_MODEL"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.14.message" value="DD_ESC_GET_SET_GAMMA"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.13.message" value="DD_ESC_SET_CSC"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.12.message" value="DD_ESC_DISP_PWR_MAX"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.115.message" value="DD_ESC_MAX"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.114.message" value="DD_ESC_GET_SET_OVERRIDE_OUTPUT_FORMAT"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.113.message" value="DD_ESC_GET_SET_GENLOCK"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.112.message" value="DD_ESC_GET_SET_SHARPNESS_FACTOR"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.111.message" value="DD_ESC_GET_SET_CAPPED_FPS"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.110.message" value="DD_ESC_GET_DP_MST_PORT_DETAILS"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.11.message" value="DD_ESC_ROTATION_FOR_KVM"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.109.message" value="DD_ESC_GET_SET_SMOOTH_SYNC"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.108.message" value="DD_ESC_UPDATE_GET_DP_CAPABILITIES"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.107.message" value="DD_ESC_WRITEABCK_CAPTURE_BUFFER"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.106.message" value="DD_ESC_WRITEBACK_ENABLE_DISABLE"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.105.message" value="DD_ESC_WRITEBACK_QUERY"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.104.message" value="DD_ESC_EXPERIMENT"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.103.message" value="DD_ESC_QUERY_DISPLAY_DETAILS"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.102.message" value="DD_ESC_GET_EDID"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.101.message" value="DD_ESC_AUX_I2C_ACCESS"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.100.message" value="DD_ESC_GET_VERSION"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.10.message" value="DD_ESC_GET_SET_VRR"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.1.message" value="DD_ESC_DETECT_DEVICE"></string>
+				<string id="DisplayAutomation-Test.map.EscapeCode.0.message" value="DD_ESC_QUERY_MODE_TABLE"></string>
+				<string id="DisplayAutomation-Test.map.DXGK_SETVIDPNSOURCEADDRESS_OUTPUT_FLAGS.1.message" value="PrePresentNeeded"></string>
+				<string id="DisplayAutomation-Test.map.DXGK_SETVIDPNSOURCEADDRESS_INPUT_FLAGS.8.message" value="RetryAtLowerIrql"></string>
+				<string id="DisplayAutomation-Test.map.DXGK_SETVIDPNSOURCEADDRESS_INPUT_FLAGS.4.message" value="FlipStereoPreferRight"></string>
+				<string id="DisplayAutomation-Test.map.DXGK_SETVIDPNSOURCEADDRESS_INPUT_FLAGS.2.message" value="FlipStereoTemporaryMono"></string>
+				<string id="DisplayAutomation-Test.map.DXGK_SETVIDPNSOURCEADDRESS_INPUT_FLAGS.1.message" value="FlipStereo"></string>
+				<string id="DisplayAutomation-Test.map.DXGK_PLANE_SPECIFIC_INPUT_FLAGS.8.message" value="SharedPrimaryTransition"></string>
+				<string id="DisplayAutomation-Test.map.DXGK_PLANE_SPECIFIC_INPUT_FLAGS.64.message" value="FlipImmediateNoTearing"></string>
+				<string id="DisplayAutomation-Test.map.DXGK_PLANE_SPECIFIC_INPUT_FLAGS.4.message" value="FlipOnNextVsync"></string>
+				<string id="DisplayAutomation-Test.map.DXGK_PLANE_SPECIFIC_INPUT_FLAGS.32.message" value="StereoFlip"></string>
+				<string id="DisplayAutomation-Test.map.DXGK_PLANE_SPECIFIC_INPUT_FLAGS.2.message" value="FlipImmediate"></string>
+				<string id="DisplayAutomation-Test.map.DXGK_PLANE_SPECIFIC_INPUT_FLAGS.16.message" value="IndependantFlipExclusive"></string>
+				<string id="DisplayAutomation-Test.map.DXGK_PLANE_SPECIFIC_INPUT_FLAGS.1.message" value="Enabled"></string>
+			</stringTable>
+		</resources>
+	</localization>
+</instrumentationManifest>

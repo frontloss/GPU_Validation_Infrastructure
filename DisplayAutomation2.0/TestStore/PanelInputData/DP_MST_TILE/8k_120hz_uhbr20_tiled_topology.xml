@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EDID>
+	<UHBR20_8K_120HZ_MST_MASTER_TILED>8k_120hz_tiled_master_edid.bin</UHBR20_8K_120HZ_MST_MASTER_TILED>
+	<UHBR20_8K_120HZ_MST_SLAVE_TILED>8k_120hz_tiled_slave_edid.bin</UHBR20_8K_120HZ_MST_SLAVE_TILED>
+</EDID>
+
+<DPCD>
+	<UHBR20_LC4_MST>UHBR20_LC4_MST_DPCD.bin</UHBR20_LC4_MST>
+</DPCD>
+
+<Topology>
+	<Branch>
+		<UpStrmBranchOutPort>0xffffffff</UpStrmBranchOutPort>
+		<ThisBranchInputPort>0</ThisBranchInputPort>
+		<TotalInputPorts>1</TotalInputPorts>
+		<TotalPhysicalPorts>1</TotalPhysicalPorts>
+		<TotalVirtualPorts>1</TotalVirtualPorts>
+		<TotalAvailablePBN>11461</TotalAvailablePBN>
+		<MaxLinkRate>2000</MaxLinkRate>
+		<MaxLaneCount>4</MaxLaneCount>
+		<BranchReplyDelay>0</BranchReplyDelay>
+		<LinkAddressDelay>0</LinkAddressDelay>
+		<RemoteI2ReadDelay>0</RemoteI2ReadDelay>
+		<RemoteI2WriteDelay>0</RemoteI2WriteDelay>
+		<RemoteDPCDReadDelay>0</RemoteDPCDReadDelay>
+		<RemoteDPCDWriteDelay>0</RemoteDPCDWriteDelay>
+		<EPRDelay>0</EPRDelay>
+		<AllocatePayloadDelay>0</AllocatePayloadDelay>
+		<ClearPayLoadDelay>0</ClearPayLoadDelay>
+		<BranchDPCD>UHBR20_LC4_MST</BranchDPCD>
+		<Display>
+			<UpStrmBranchOutPort>8</UpStrmBranchOutPort>
+			<ThisDisplayInputPort>0</ThisDisplayInputPort>
+			<TotalInputPorts>1</TotalInputPorts>
+			<TotalAvailablePBN>11461</TotalAvailablePBN>
+			<MaxLinkRate>2000</MaxLinkRate>
+			<MaxLaneCount>4</MaxLaneCount>
+			<RemoteI2ReadDelay>0</RemoteI2ReadDelay>
+			<RemoteI2WriteDelay>0</RemoteI2WriteDelay>
+			<RemoteDPCDReadDelay>0</RemoteDPCDReadDelay>
+			<RemoteDPCDWriteDelay>0</RemoteDPCDWriteDelay>
+			<DisplayDPCD>UHBR20_DPCD</DisplayDPCD>
+			<DisplayEDID>UHBR20_8K_120HZ_MST_MASTER_TILED</DisplayEDID>
+		</Display>
+		<Branch>
+			<UpStrmBranchOutPort>1</UpStrmBranchOutPort>
+			<ThisBranchInputPort>0</ThisBranchInputPort>
+			<TotalInputPorts>1</TotalInputPorts>
+			<TotalPhysicalPorts>0</TotalPhysicalPorts>
+			<TotalVirtualPorts>1</TotalVirtualPorts>
+			<TotalAvailablePBN>11461</TotalAvailablePBN>
+			<MaxLinkRate>2000</MaxLinkRate>
+			<MaxLaneCount>4</MaxLaneCount>
+			<BranchReplyDelay>0</BranchReplyDelay>
+			<LinkAddressDelay>0</LinkAddressDelay>
+			<RemoteI2ReadDelay>0</RemoteI2ReadDelay>
+			<RemoteI2WriteDelay>0</RemoteI2WriteDelay>
+			<RemoteDPCDReadDelay>0</RemoteDPCDReadDelay>
+			<RemoteDPCDWriteDelay>0</RemoteDPCDWriteDelay>
+			<EPRDelay>0</EPRDelay>
+			<AllocatePayloadDelay>0</AllocatePayloadDelay>
+			<ClearPayLoadDelay>0</ClearPayLoadDelay>
+			<BranchDPCD>UHBR20_LC4_MST</BranchDPCD>
+			<Display>
+				<UpStrmBranchOutPort>8</UpStrmBranchOutPort>
+				<ThisDisplayInputPort>0</ThisDisplayInputPort>
+				<TotalInputPorts>1</TotalInputPorts>
+				<TotalAvailablePBN>11461</TotalAvailablePBN>
+				<MaxLinkRate>2000</MaxLinkRate>
+				<MaxLaneCount>4</MaxLaneCount>
+				<RemoteI2ReadDelay>0</RemoteI2ReadDelay>
+				<RemoteI2WriteDelay>0</RemoteI2WriteDelay>
+				<RemoteDPCDReadDelay>0</RemoteDPCDReadDelay>
+				<RemoteDPCDWriteDelay>0</RemoteDPCDWriteDelay>
+				<DisplayDPCD>UHBR20_LC4_MST</DisplayDPCD>
+				<DisplayEDID>UHBR20_8K_120HZ_MST_SLAVE_TILED</DisplayEDID>
+			</Display>
+		</Branch>
+	</Branch>
+</Topology>

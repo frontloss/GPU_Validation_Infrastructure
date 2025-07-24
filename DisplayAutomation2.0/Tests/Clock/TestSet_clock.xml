@@ -1,0 +1,24 @@
+<Display_Automation_2.0>
+    <Feature Name="CdClk" Owner="npdoriwa">
+        <Test LastModifiedWW="2020.WW42" Name="dynamic_cdclk_disable_enable.py" Owner="npdoriwa" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="CDCLK001">
+                <CommandLine>python Tests\Clock\dynamic_cdclk_disable_enable.py -dynamic_cdclk Disable</CommandLine>
+                <OS>20H2</OS>
+                <Platform>TGL;DG1;DG2;ADLP</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;DG1_SOC;DG2_SOC;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="CDCLK001">
+                <CommandLine>python Tests\Clock\dynamic_cdclk_disable_enable.py -dynamic_cdclk Enable</CommandLine>
+                <OS>20H2</OS>
+                <Platform>TGL;DG1;DG2;ADLP</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;DG1_SOC;DG2_SOC;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+    </Feature>
+</Display_Automation_2.0>

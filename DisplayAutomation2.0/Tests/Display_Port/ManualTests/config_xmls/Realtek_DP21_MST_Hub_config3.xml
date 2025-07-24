@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!-- Refer DisplayAutomation2.0/Libs/manual/modules/mode_xml_parser.py for parsing -->
+<Dock Name="Realtek_DP21_MST_Hub">
+	<Displays Count="4">
+		<Display Index="1" Name="LG C1"       Connector = "HDMI"    />
+	</Displays>
+
+	<Verification1>
+		<Display Index="1" HActive="3840" VActive="2160" RefreshRate="120" Scaling="MDS" AudioChannels="2"
+				 AudioSampleRates="[32,44.1,48,96,192]" />
+	</Verification1>
+</Dock>
+
+<!--  ModeControlFlag 8 Bit Definition:
+
+    Connector:
+    DP
+    HDMI
+    Type-C
+    TBT
+    DVI
+    mDP
+    VGA
+
+    Scaling:
+    Default
+    MDS
+    MAR
+    CI
+     -->

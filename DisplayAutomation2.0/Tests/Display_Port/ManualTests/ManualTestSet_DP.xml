@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Display_Automation_2_0_Manual>
+    <Feature Name="DP" Owner="akumarv">
+        <SubFeature Name="DP_MST" Owner="akumarv">
+            <Test Id="TI-1131551" Name="DP MST Modeset With Clone Config" Grids="Manual CI">
+                <CommandLine> python Tests\Display_Port\ManualTests\dp_mst_manual_config.py -Display1 "eDP" -Display2 "Display USB-C => DP 1.2 (Depth 1)" -Display3 "Display DP 1.2 (Depth 2)" -Display4 "Display DP 1.2 (Depth 3)" -config CLONE -depth 3 -all_ports True</CommandLine>
+                <OS>WinRS4;WinRS5;Win19H1</OS>
+                <Platform>GLK</Platform>
+                <ExecutionTime>00</ExecutionTime>
+            </Test>
+            <Test Id="TI-1131550" Name="DP MST Modeset With Extended config" Grids="Manual CI">
+                <CommandLine> python Tests\Display_Port\ManualTests\dp_mst_manual_config.py -Display1 "eDP" -Display2 "Display DP 1.2 (Depth 1)" -Display3 "Display DP 1.2 (Depth 2)" -Display4 "Display DP 1.2 (Depth 3)" -config EXTENDED -depth 3 -all_ports True</CommandLine>
+                <OS>WinRS4;WinRS5;Win19H1</OS>
+                <Platform>KBL_ULX</Platform>
+                <ExecutionTime>00</ExecutionTime>
+            </Test>
+        </SubFeature>
+    </Feature>
+</Display_Automation_2_0_Manual>

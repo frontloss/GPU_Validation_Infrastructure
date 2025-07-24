@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+    <Feature Name="Scalar" Owner="vveluru">
+        <Test LastModifiedWW="2020.WW42" Name="scalar_verification.py" Owner="vveluru" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="SCALRD001">
+                <CommandLine>python Tests\Scalar\scalar_verification.py -dp_b -dispconfig single -XML Tests\Scalar\scalar_config.xml -dsc true</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ICL;TGL_LP;DG2;ADLS;ADLP</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_SOC;ICL_HP_DOD;TGL_LP_SIM;TGL_LP_SOC;DG2_SIM;DG2_SOC;ADLS_SIM;ADLS_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="SCALRD002">
+                <CommandLine>python Tests\Scalar\scalar_verification.py -dp_c -dispconfig single -XML Tests\Scalar\scalar_config.xml -dsc true</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ICL;DG2;ADLS</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_SOC;ICL_HP_DOD;DG2_SIM;DG2_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="SCALRD003">
+                <CommandLine>python Tests\Scalar\scalar_verification.py -dp_d -dispconfig single -XML Tests\Scalar\scalar_config.xml -dsc true</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ICL;TGL_LP;DG2;ADLS</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_SOC;ICL_HP_DOD;TGL_LP_SIM;TGL_LP_SOC;DG2_SIM;DG2_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="SCALRD004">
+                <CommandLine>python Tests\Scalar\scalar_verification.py -dp_e -dispconfig single -XML Tests\Scalar\scalar_config.xml -dsc true</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ICL;TGL_LP;ADLS</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_SOC;ICL_HP_DOD;TGL_LP_SIM;TGL_LP_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="SCALRD005">
+                <CommandLine>python Tests\Scalar\scalar_verification.py -dp_f -dispconfig single -XML Tests\Scalar\scalar_config.xml -dsc true</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL_LP;DG2;ADLP</Platform>
+                <TestEnvironment>TGL_LP_SIM;TGL_LP_SOC;DG2_SIM;DG2_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="SCALRD006">
+                <CommandLine>python Tests\Scalar\scalar_verification.py -dp_g -dispconfig single -XML Tests\Scalar\scalar_config.xml -dsc true</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL_LP;ADLP</Platform>
+                <TestEnvironment>TGL_LP_SIM;TGL_LP_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="SCALRD007">
+                <CommandLine>python Tests\Scalar\scalar_verification.py -dp_h -dispconfig single -XML Tests\Scalar\scalar_config.xml -dsc true</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL_LP;ADLP</Platform>
+                <TestEnvironment>TGL_LP_SIM;TGL_LP_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="SCALRD008">
+                <CommandLine>python Tests\Scalar\scalar_verification.py -dp_i -dispconfig single -XML Tests\Scalar\scalar_config.xml -dsc true</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL_LP;ADLP</Platform>
+                <TestEnvironment>TGL_LP_SIM;TGL_LP_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="SCALRD009">
+                <CommandLine>python Tests\Scalar\scalar_verification.py -dp_b -dp_d -dispconfig dual -XML Tests\Scalar\scalar_config.xml -dsc true</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL_LP;DG2;ADLS</Platform>
+                <TestEnvironment>TGL_LP_SIM;TGL_LP_SOC;DG2_SIM;DG2_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="SCALRD010">
+                <CommandLine>python Tests\Scalar\scalar_verification.py -dp_b -dp_e -dispconfig dual -XML Tests\Scalar\scalar_config.xml -dsc true</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL_LP</Platform>
+                <TestEnvironment>TGL_LP_SIM;TGL_LP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="SCALRD011">
+                <CommandLine>python Tests\Scalar\scalar_verification.py -dp_b -dp_f -dispconfig dual -XML Tests\Scalar\scalar_config.xml -dsc true</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL_LP;DG2;ADLP</Platform>
+                <TestEnvironment>TGL_LP_SIM;TGL_LP_SOC;DG2_SIM;DG2_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="SCALRD012">
+                <CommandLine>python Tests\Scalar\scalar_verification.py -dp_d -dp_e -dispconfig dual -XML Tests\Scalar\scalar_config.xml -dsc true</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL_LP</Platform>
+                <TestEnvironment>TGL_LP_SIM;TGL_LP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="SCALRD013">
+                <CommandLine>python Tests\Scalar\scalar_verification.py -dp_d -dp_f -dispconfig dual -XML Tests\Scalar\scalar_config.xml -dsc true</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL_LP;DG2;ADLP</Platform>
+                <TestEnvironment>TGL_LP_SIM;TGL_LP_SOC;DG2_SIM;DG2_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="SCALRD014">
+                <CommandLine>python Tests\Scalar\scalar_verification.py -dp_g -dp_f -dispconfig dual -XML Tests\Scalar\scalar_config.xml -dsc true</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL_LP;ADLP</Platform>
+                <TestEnvironment>TGL_LP_SIM;TGL_LP_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="SCALRD015">
+                <CommandLine>python Tests\Scalar\scalar_verification.py -dp_g -dp_h -dispconfig dual -XML Tests\Scalar\scalar_config.xml -dsc true</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL_LP;ADLP</Platform>
+                <TestEnvironment>TGL_LP_SIM;TGL_LP_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="SCALRD016">
+                <CommandLine>python Tests\Scalar\scalar_verification.py -dp_g -dp_f_tc -dispconfig dual -XML Tests\Scalar\scalar_config.xml -dsc true</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL_LP;ADLP</Platform>
+                <TestEnvironment>TGL_LP_SIM;TGL_LP_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="SCALRD017">
+                <CommandLine>python Tests\Scalar\scalar_verification.py -dp_g -dp_i -dispconfig dual -XML Tests\Scalar\scalar_config.xml -dsc true</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL_LP;ADLP</Platform>
+                <TestEnvironment>TGL_LP_SIM;TGL_LP_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="SCALRD018">
+                <CommandLine>python Tests\Scalar\scalar_verification.py -dp_g -dp_i -dispconfig dual -XML Tests\Scalar\scalar_config.xml -dsc true</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL_LP;ADLP</Platform>
+                <TestEnvironment>TGL_LP_SIM;TGL_LP_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="SCALRD019">
+                <CommandLine>python Tests\Scalar\scalar_verification.py -dp_d -dp_g -dp_i -dispconfig tri -XML Tests\Scalar\scalar_config.xml -dsc true</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL_LP</Platform>
+                <TestEnvironment>TGL_LP_SIM;TGL_LP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="SCALRD020">
+                <CommandLine>python Tests\Scalar\scalar_verification.py -dp_b -dp_c -dp_d -dispconfig tri -XML Tests\Scalar\scalar_config.xml -dsc true</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL_LP;ADLS</Platform>
+                <TestEnvironment>TGL_LP_SIM;TGL_LP_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="SCALRD021">
+                <CommandLine>python Tests\Scalar\scalar_verification.py -dp_b -dp_d -dp_e -dispconfig tri -XML Tests\Scalar\scalar_config.xml -dsc true</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL_LP;ADLS</Platform>
+                <TestEnvironment>TGL_LP_SIM;TGL_LP_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="SCALRD022">
+                <CommandLine>python Tests\Scalar\scalar_verification.py -dp_b -dp_d -dp_f_tc -dispconfig tri -XML Tests\Scalar\scalar_config.xml -dsc true</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL_LP;ADLS</Platform>
+                <TestEnvironment>TGL_LP_SIM;TGL_LP_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="SCALRD023">
+                <CommandLine>python Tests\Scalar\scalar_verification.py -mipi_a -dispconfig single -XML Tests\Scalar\scalar_config.xml -dsc true</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="SCALRD024">
+                <CommandLine>python Tests\Scalar\scalar_verification.py -mipi_a -dp_d -dispconfig dual -XML Tests\Scalar\scalar_config.xml -dsc true</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="SCALRD025">
+                <CommandLine>python Tests\Scalar\scalar_verification.py -dp_d -dp_e -dispconfig dual -XML Tests\Scalar\scalar_config.xml -dsc true</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL_LP;LKF1</Platform>
+                <TestEnvironment>TGL_LP_SIM;TGL_LP_SOC;LKF1_SIM;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="SCALRD026">
+                <CommandLine>python Tests\Scalar\scalar_verification.py -edp_a -dispconfig single -XML Tests\Scalar\scalar_config.xml -dsc true</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ICL;TGL_LP;DG2;ADLS;ADLP</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_SOC;ICL_HP_DOD;TGL_LP_SIM;TGL_LP_SOC;DG2_SIM;DG2_SOC;ADLS_SIM;ADLS_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+    </Feature>
+</Display_Automation_2.0>

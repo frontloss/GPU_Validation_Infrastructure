@@ -1,0 +1,380 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+    <Feature Name="CollageYangra" Owner="pkrishna">
+        <Test Name="collage_config_switching_yangra.py" Owner="pkrishna" Priority="P1" Version="1" LastModifiedWW="2019.WW30.1">
+            <TestInstance Id="COLLY001" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_config_switching_yangra.py -edp_a -dp_b -dp_c -config EXTENDED -config_path SST/DUAL_COLLAGE -ID DC100001 -user_event 0 -loglevel debug</CommandLine>
+                <OS>WinRS6</OS>
+                <Platform>TGL;DG1</Platform>
+                <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY002" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_config_switching_yangra.py -edp_a -dp_b -dp_c -hdmi_d -config EXTENDED -config_path SST/DUAL_COLLAGE -ID TC100002 -user_event 1 -loglevel debug</CommandLine>
+                <OS>WinRS6</OS>
+                <Platform>TGL;DG1</Platform>
+                <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY003" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_config_switching_yangra.py -edp_a -dp_b -hdmi_c -hdmi_d -config EXTENDED -config_path SST/DUAL_COLLAGE -ID DC100007 -user_event 1 -loglevel debug</CommandLine>
+                <OS>WinRS6</OS>
+                <Platform>TGL;DG1</Platform>
+                <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY004" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_config_switching_yangra.py -edp_a -dp_d -dp_e -config SINGLE -config_path SST/DUAL_COLLAGE -ID DC100001 -user_event 0 -loglevel debug</CommandLine>
+                <OS>WinRS6</OS>
+                <Platform>ICL_LP</Platform>
+                <TestEnvironment>ICL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY005" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_config_switching_yangra.py -edp_a -dp_d -dp_e -dp_f -config SINGLE -config_path SST/TRI_COLLAGE -ID TC100001 -user_event 0 -loglevel debug</CommandLine>
+                <OS>WinRS6</OS>
+                <Platform>ICL_LP</Platform>
+                <TestEnvironment>ICL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY006" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_config_switching_yangra.py -edp_a -dp_d -hdmi_e -config EXTENDED -config_path SST/DUAL_COLLAGE -ID DC100003 -user_event 0 -loglevel debug</CommandLine>
+                <OS>WinRS6</OS>
+                <Platform>ICL_LP</Platform>
+                <TestEnvironment>ICL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY007" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_config_switching_yangra.py -edp_a -dp_d -hdmi_e -hdmi_f -config EXTENDED -config_path SST/TRI_COLLAGE -ID TC100003 -user_event 0 -loglevel debug</CommandLine>
+                <OS>WinRS6</OS>
+                <Platform>ICL_LP</Platform>
+                <TestEnvironment>ICL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY008" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_config_switching_yangra.py -edp_a -dp_e -dp_f -config EXTENDED -config_path SST/DUAL_COLLAGE -ID DC100001 -user_event 1 -loglevel debug</CommandLine>
+                <OS>WinRS6</OS>
+                <Platform>ICL_LP</Platform>
+                <TestEnvironment>ICL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY009" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_config_switching_yangra.py -edp_a -dp_e -hdmi_f -dp_b -config CLONE -config_path SST/DUAL_COLLAGE -ID DC100006 -user_event 1 -loglevel debug</CommandLine>
+                <OS>WinRS6</OS>
+                <Platform>ICL_LP</Platform>
+                <TestEnvironment>ICL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY010" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_config_switching_yangra.py -edp_a -dp_e -hdmi_f -hdmi_c -config EXTENDED -config_path SST/DUAL_COLLAGE -ID DC100007 -user_event 1 -loglevel debug</CommandLine>
+                <OS>WinRS6</OS>
+                <Platform>ICL_LP</Platform>
+                <TestEnvironment>ICL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY011" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_config_switching_yangra.py -edp_a -hdmi_b -hdmi_c -hdmi_d -config EXTENDED -config_path SST/TRI_COLLAGE -ID TC100004 -user_event 0 -loglevel debug</CommandLine>
+                <OS>WinRS6</OS>
+                <Platform>TGL;DG1</Platform>
+                <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test Name="collage_disable_enable.py" Owner="pkrishna" Priority="P1" Version="1" LastModifiedWW="2020.WW18.4">
+            <TestInstance Id="COLLY012" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_disable_enable.py -edp_a -dp_b -dp_c -config_path SST/DUAL_COLLAGE -ID DC100001  -user_event 0 -loglevel debug</CommandLine>
+                <OS>WinRS6</OS>
+                <Platform>ICL_LP;TGL;DG1</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SIM;DG1_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY013" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_disable_enable.py -edp_a -dp_b -dp_c -dp_d -config_path SST/TRI_COLLAGE -ID TC100001 -user_event 0 -loglevel debug</CommandLine>
+                <OS>WinRS6</OS>
+                <Platform>ICL_LP</Platform>
+                <TestEnvironment>ICL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY014" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_disable_enable.py -edp_a -dp_b -dp_c -dp_d -config_path SST/TRI_COLLAGE -ID TC100001 -user_event 1 -loglevel debug</CommandLine>
+                <OS>WinRS6</OS>
+                <Platform>TGL;DG1</Platform>
+                <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY015" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_disable_enable.py -edp_a -dp_b -dp_d -config_path SST/DUAL_COLLAGE -ID DC100001 -user_event 1 -loglevel debug</CommandLine>
+                <OS>WinRS6</OS>
+                <Platform>ICL_LP</Platform>
+                <TestEnvironment>ICL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY016" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_disable_enable.py -edp_a -dp_b -dp_d -dp_e -config_path SST/TRI_COLLAGE -ID TC100001 -user_event 1 -loglevel debug</CommandLine>
+                <OS>WinRS6</OS>
+                <Platform>ICL_LP</Platform>
+                <TestEnvironment>ICL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY017" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_disable_enable.py -edp_a -dp_b -dp_e -hdmi_f -config_path SST/TRI_COLLAGE -ID TC100002 -user_event 1 -loglevel debug</CommandLine>
+                <OS>WinRS6</OS>
+                <Platform>ICL_LP</Platform>
+                <TestEnvironment>ICL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY018" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_disable_enable.py -edp_a -dp_b -hdmi_c -config_path SST/DUAL_COLLAGE -ID DC100003 -user_event 0 -loglevel debug</CommandLine>
+                <OS>WinRS6</OS>
+                <Platform>ICL_LP</Platform>
+                <TestEnvironment>ICL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY019" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_disable_enable.py -edp_a -dp_b -hdmi_c -hdmi_d -config_path SST/TRI_COLLAGE -ID TC100003 -user_event 0 -loglevel debug</CommandLine>
+                <OS>WinRS6</OS>
+                <Platform>ICL_LP;TGL;DG1</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SIM;DG1_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY020" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_disable_enable.py -edp_a -hdmi_c -hdmi_d -config_path SST/DUAL_COLLAGE -ID DC100002 -user_event 1 -loglevel debug</CommandLine>
+                <OS>WinRS6</OS>
+                <Platform>ICL_LP;TGL;DG1</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SIM;DG1_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY021" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_disable_enable.py -edp_a -hdmi_c -hdmi_d -hdmi_e -config_path SST/TRI_COLLAGE -ID TC100004 -user_event 1 -loglevel debug</CommandLine>
+                <OS>WinRS6</OS>
+                <Platform>ICL_LP</Platform>
+                <TestEnvironment>ICL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY022" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_disable_enable.py -dp_d -dp_e -dp_f -dp_g -config_path SST/QUAD_COLLAGE -ID QC100001 -user_event 0</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_EMU;TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY023" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_disable_enable.py -dp_d -dp_e -dp_f -dp_g -config_path SST/QUAD_COLLAGE -ID QC100001 -user_event 1</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_EMU;TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY024" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_disable_enable.py -dp_a -dp_b -dp_c -dp_d -config_path SST/QUAD_COLLAGE -ID QC100001 -user_event 0</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>DG1;DG2</Platform>
+                <TestEnvironment>DG1_EMU;DG1_SIM;DG1_SOC;DG2EMU;DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY025" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_disable_enable.py -dp_a -dp_b -dp_c -dp_d -config_path SST/QUAD_COLLAGE -ID QC100001 -user_event 1</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>DG1;DG2</Platform>
+                <TestEnvironment>DG1_EMU;DG1_SIM;DG1_SOC;DG2EMU;DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY026" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_disable_enable.py -dp_f -dp_g -dp_h -dp_i -config_path SST/QUAD_COLLAGE -ID QC100001 -user_event 0</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_EMU;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY027" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_disable_enable.py -dp_f -dp_g -dp_h -dp_i -config_path SST/QUAD_COLLAGE -ID QC100001 -user_event 1</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_EMU;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test Name="collage_persistence_power_event.py" Owner="pkrishna" Priority="P1" Version="1" LastModifiedWW="2020.WW24.4">
+            <TestInstance Id="COLLY028" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_persistence_power_event.py -edp_a -dp_d -dp_e -config_path SST/DUAL_COLLAGE -ID DC100001 -selective CS</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY029" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_persistence_power_event.py -edp_a -dp_d -dp_e -dp_f -config_path SST/TRI_COLLAGE -ID TC100001 -selective CS</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY030" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_persistence_power_event.py -edp_a -dp_f -dp_g -config_path SST/DUAL_COLLAGE -ID DC100001 -selective CS</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY031" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_persistence_power_event.py -edp_a -dp_f -dp_g -dp_h -config_path SST/TRI_COLLAGE -ID TC100001 -selective CS</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY032" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_persistence_power_event.py -mipi_a -dp_d -dp_e -config_path SST/DUAL_COLLAGE -ID DC100001 -selective CS</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>LKF</Platform>
+                <TestEnvironment>LKF_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY033" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_persistence_power_event.py -edp_a -dp_d -dp_e -config_path SST/DUAL_COLLAGE -ID DC100001 -selective MONITOR_ON_OFF S3 S4</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY034" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_persistence_power_event.py -edp_a -dp_d -dp_e -dp_f -config_path SST/TRI_COLLAGE -ID TC100001 -selective MONITOR_ON_OFF S3 S4</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ICL:TGL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY035" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_persistence_power_event.py -edp_a -dp_f -dp_g -config_path SST/DUAL_COLLAGE -ID DC100001 -selective MONITOR_ON_OFF S3 S4</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY036" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_persistence_power_event.py -edp_a -dp_f -dp_g -dp_h -config_path SST/TRI_COLLAGE -ID TC100001 -selective MONITOR_ON_OFF S3 S4</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY037" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_persistence_power_event.py -edp_a -dp_b -dp_c -config_path SST/DUAL_COLLAGE -ID DC100001 -selective MONITOR_ON_OFF S3 S4</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>DG1;DG2</Platform>
+                <TestEnvironment>DG1_SOC;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY038" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_persistence_power_event.py -edp_a -dp_b -dp_c -dp_d -config_path SST/TRI_COLLAGE -ID TC100001 -selective MONITOR_ON_OFF S3 S4</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>DG1;DG2</Platform>
+                <TestEnvironment>DG1_SOC;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY039" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_persistence_power_event.py -mipi_a -dp_d -dp_e -config_path SST/DUAL_COLLAGE -ID DC100001 -selective MONITOR_ON_OFF S3 S4</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>LKF</Platform>
+                <TestEnvironment>LKF_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY040" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_persistence_power_event.py -edp_a -dp_b -dp_c -dp_d -config_path SST/TRI_COLLAGE -ID TC100001 -selective MONITOR_ON_OFF S3 S4</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>DG1;DG2</Platform>
+                <TestEnvironment>DG1_SOC;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="COLLY041" Grids="PreETM;ETM">
+                <CommandLine>python Tests\Collage\yangra\collage_persistence_power_event.py -mipi_a -dp_d -dp_e -config_path SST/DUAL_COLLAGE -ID DC100001 -selective MONITOR_ON_OFF S3 S4</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>LKF</Platform>
+                <TestEnvironment>LKF_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+    </Feature>
+</Display_Automation_2.0>

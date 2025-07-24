@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<VbtFields>
+	<!--Integrated display configuration -> Integrated MIPI configuration -> DSI0/1 configuration-->
+	<Field>
+		<Block>2</Block>
+		<Path>DisplayDeviceDataStructureEntry[{panel_index}].CompressionEnable</Path>
+		<Value>0x1</Value>
+	</Field>
+
+
+	<!--Integrated display configuration -> LFP panel configuration -> Panel #<current_panel> -->
+	<Field>
+		<Block>40</Block>
+		<Path>DpsPanelType{panel_index}</Path>
+		<Value>0x02</Value>
+	</Field>
+
+	<Field>
+		<Block>42</Block>
+		<Path>SeamlessDrrsMinRR[{panel_index}]</Path>
+		<Value>0x0</Value>
+	</Field>
+
+
+	<!--Integrated display configuration -> LFP panel configuration -> Panel #<current_panel> -> DTD timings (used only for VBT version < 229)-->
+	<Field>
+		<Block>42</Block>
+		<Path>FlatPanelDataStructureEntry[{panel_index}].PixelClock</Path>
+		<Value>0x6B30</Value>
+	</Field>
+
+	<Field>
+		<Block>42</Block>
+		<Path>FlatPanelDataStructureEntry[{panel_index}].HActiveLo</Path>
+		<Value>0xA0</Value>
+	</Field>
+
+	<Field>
+		<Block>42</Block>
+		<Path>FlatPanelDataStructureEntry[{panel_index}].HBlankLo</Path>
+		<Value>0x68</Value>
+	</Field>
+	
+	<Field>
+		<Block>42</Block>
+		<Path>FlatPanelDataStructureEntry[{panel_index}].HBlankHi</Path>
+		<Value>0x0</Value>
+	</Field>
+	
+	<Field>
+		<Block>42</Block>
+		<Path>FlatPanelDataStructureEntry[{panel_index}].HActiveHi</Path>
+		<Value>0x5</Value>
+	</Field>
+	
+	<Field>
+		<Block>42</Block>
+		<Path>FlatPanelDataStructureEntry[{panel_index}].VActiveLo</Path>
+		<Value>0x40</Value>
+	</Field>
+	
+	<Field>
+		<Block>42</Block>
+		<Path>FlatPanelDataStructureEntry[{panel_index}].VBlankLo</Path>
+		<Value>0x52</Value>
+	</Field>
+	
+	<Field>
+		<Block>42</Block>
+		<Path>FlatPanelDataStructureEntry[{panel_index}].VBlankHi</Path>
+		<Value>0x0</Value>
+	</Field>
+	
+	<Field>
+		<Block>42</Block>
+		<Path>FlatPanelDataStructureEntry[{panel_index}].VActiveHi</Path>
+		<Value>0xB</Value>
+	</Field>
+	
+	<Field>
+		<Block>42</Block>
+		<Path>FlatPanelDataStructureEntry[{panel_index}].HSyncOffsetLo</Path>
+		<Value>0x20</Value>
+	</Field>
+	
+	<Field>
+		<Block>42</Block>
+		<Path>FlatPanelDataStructureEntry[{panel_index}].HSyncWidthLo</Path>
+		<Value>0x20</Value>
+	</Field>
+	
+	<Field>
+		<Block>42</Block>
+		<Path>FlatPanelDataStructureEntry[{panel_index}].VSyncWidthLo</Path>
+		<Value>0x8</Value>
+	</Field>
+	
+	<Field>
+		<Block>42</Block>
+		<Path>FlatPanelDataStructureEntry[{panel_index}].VSyncOffsetLo</Path>
+		<Value>0x4</Value>
+	</Field>
+	
+	<Field>
+		<Block>42</Block>
+		<Path>FlatPanelDataStructureEntry[{panel_index}].VSyncWidthHi</Path>
+		<Value>0x0</Value>
+	</Field>
+	
+	<Field>
+		<Block>42</Block>
+		<Path>FlatPanelDataStructureEntry[{panel_index}].VSyncOffsetHi</Path>
+		<Value>0x0</Value>
+	</Field>
+	
+	<Field>
+		<Block>42</Block>
+		<Path>FlatPanelDataStructureEntry[{panel_index}].HSyncWidthHi</Path>
+		<Value>0x0</Value>
+	</Field>
+	
+	<Field>
+		<Block>42</Block>
+		<Path>FlatPanelDataStructureEntry[{panel_index}].HSyncOffsetHi</Path>
+		<Value>0x0</Value>
+	</Field>
+	
+	<Field>
+		<Block>42</Block>
+		<Path>FlatPanelDataStructureEntry[{panel_index}].HImgSizeLo</Path>
+		<Value>0x44</Value>
+	</Field>
+	
+	<Field>
+		<Block>42</Block>
+		<Path>FlatPanelDataStructureEntry[{panel_index}].VImgSizeLo</Path>
+		<Value>0x88</Value>
+	</Field>
+	
+	<Field>
+		<Block>42</Block>
+		<Path>FlatPanelDataStructureEntry[{panel_index}].VImgSizeHi</Path>
+		<Value>0x0</Value>
+	</Field>
+	
+	<Field>
+		<Block>42</Block>
+		<Path>FlatPanelDataStructureEntry[{panel_index}].HImgSizeHi</Path>
+		<Value>0x0</Value>
+	</Field>
+	
+	<Field>
+		<Block>42</Block>
+		<Path>FlatPanelDataStructureEntry[{panel_index}].HBorder</Path>
+		<Value>0x00</Value>
+	</Field>
+	
+	<Field>
+		<Block>42</Block>
+		<Path>FlatPanelDataStructureEntry[{panel_index}].VBorder</Path>
+		<Value>0x00</Value>
+	</Field>
+	
+	<Field>
+		<Block>42</Block>
+		<Path>FlatPanelDataStructureEntry[{panel_index}].Flags</Path>
+		<Value>0x18</Value>
+	</Field>
+
+
+	<!--Integrated display configuration -> LFP panel configuration -> Panel #<current_panel> -> DTD timings (used only for VBT version >= 229)-->
+	<Field>
+		<Block>58</Block>
+		<Path>GenericDisplayTimingDataEntry[{panel_index}].PixelClockKhz</Path>
+		<Value>0x42FE0</Value>
+	</Field>
+	
+	<Field>
+		<Block>58</Block>
+		<Path>GenericDisplayTimingDataEntry[{panel_index}].HActive</Path>
+		<Value>0x5A0</Value>
+	</Field>
+	
+	<Field>
+		<Block>58</Block>
+		<Path>GenericDisplayTimingDataEntry[{panel_index}].VActive</Path>
+		<Value>0xB40</Value>
+	</Field>
+	
+	<Field>
+		<Block>58</Block>
+		<Path>GenericDisplayTimingDataEntry[{panel_index}].HBlank</Path>
+		<Value>0x68</Value>
+	</Field>
+	
+	<Field>
+		<Block>58</Block>
+		<Path>GenericDisplayTimingDataEntry[{panel_index}].VBlank</Path>
+		<Value>0x52</Value>
+	</Field>
+	
+	<Field>
+		<Block>58</Block>
+		<Path>GenericDisplayTimingDataEntry[{panel_index}].HFrontPorch</Path>
+		<Value>0x20</Value>
+	</Field>
+	
+	<Field>
+		<Block>58</Block>
+		<Path>GenericDisplayTimingDataEntry[{panel_index}].VFrontPorch</Path>
+		<Value>0x44</Value>
+	</Field>
+	
+	<Field>
+		<Block>58</Block>
+		<Path>GenericDisplayTimingDataEntry[{panel_index}].HSync</Path>
+		<Value>0x20</Value>
+	</Field>
+	
+	<Field>
+		<Block>58</Block>
+		<Path>GenericDisplayTimingDataEntry[{panel_index}].VSync</Path>
+		<Value>0x8</Value>
+	</Field>
+	
+	<Field>
+		<Block>58</Block>
+		<Path>GenericDisplayTimingDataEntry[{panel_index}].HorizontalImageSize</Path>
+		<Value>0x44</Value>
+	</Field>
+	
+	<Field>
+		<Block>58</Block>
+		<Path>GenericDisplayTimingDataEntry[{panel_index}].VerticalImageSize</Path>
+		<Value>0x88</Value>
+	</Field>
+	
+	<Field>
+		<Block>58</Block>
+		<Path>GenericDisplayTimingDataEntry[{panel_index}].Flags</Path>
+		<Value>0xC0</Value>
+	</Field>
+
+	
+	<!--Integrated display configuration -> LFP panel configuration -> Panel #<current_panel> -> LFP PnP ID-->
+	<Field>
+		<Block>42</Block>
+		<Path>FlatPanelDataStructureEntry[{panel_index}].IdMfgName</Path>
+		<Value>0x8928</Value>
+	</Field>
+	
+	<Field>
+		<Block>42</Block>
+		<Path>FlatPanelDataStructureEntry[{panel_index}].IdProductCode</Path>
+		<Value>0x4</Value>
+	</Field>
+	
+	<Field>
+		<Block>42</Block>
+		<Path>FlatPanelDataStructureEntry[{panel_index}].IDSerialNumber</Path>
+		<Value>0xABC12300</Value>
+	</Field>
+	
+	<Field>
+		<Block>42</Block>
+		<Path>FlatPanelDataStructureEntry[{panel_index}].WeekOfMfg</Path>
+		<Value>0x27</Value>
+	</Field>
+	
+	<Field>
+		<Block>42</Block>
+		<Path>FlatPanelDataStructureEntry[{panel_index}].YearOfMfg</Path>
+		<Value>0x17</Value>
+	</Field>
+	
+	
+	<!--Integrated display configuration -> LFP panel configuration -> Panel #<current_panel> -> Backlight Control Parameters-->
+	<Field>
+		<Block>43</Block>
+		<Path>BacklightFeaturesEntry[{panel_index}].InverterType</Path>
+		<Value>0x2</Value>
+	</Field>
+	
+	<Field>
+		<Block>43</Block>
+		<Path>BrightnessControlMethodEntry[{panel_index}].PwmSourceSelection</Path>
+		<Value>0x2</Value>
+	</Field>
+	
+	<Field>
+		<Block>43</Block>
+		<Path>BrightnessControlMethodEntry[{panel_index}].PwmControllerSelection</Path>
+		<Value>0x{panel_index}</Value>
+	</Field>
+	
+	<Field>
+		<Block>43</Block>
+		<Path>BacklightFeaturesEntry[{panel_index}].InverterPolarity</Path>
+		<Value>0x00</Value>
+	</Field>
+	
+	<Field>
+		<Block>43</Block>
+		<Path>BacklightFeaturesEntry[{panel_index}].MinimumBrightness</Path>
+		<Value>0x6</Value>
+	</Field>
+	
+	<Field>
+		<Block>43</Block>
+		<Path>POSTBacklightBrightnessEntry[{panel_index}]</Path>
+		<Value>0xFF</Value>
+	</Field>
+	
+	<Field>
+		<Block>43</Block>
+		<Path>BacklightFeaturesEntry[{panel_index}].PWMFrequency</Path>
+		<Value>0xC8</Value>
+	</Field>
+
+
+<!--Integrated display configuration -> LFP panel configuration -> Panel #<current_panel> -> VESA DSC Parameters-->	
+	<Field>
+		<Block>56</Block>
+		<Path>CompressionParamDataStructEntry[{panel_index}].DSCAlgorithmRevision</Path>
+		<Value>0x11</Value>
+	</Field>
+	
+	<Field>
+		<Block>56</Block>
+		<Path>CompressionParamDataStructEntry[{panel_index}].BlockPredictionEnable</Path>
+		<Value>0x0</Value>
+	</Field>
+	
+	<Field>
+		<Block>56</Block>
+		<Path>CompressionParamDataStructEntry[{panel_index}].DSCRCBufferBlockSize</Path>
+		<Value>0x0</Value>
+	</Field>
+	
+	<Field>
+		<Block>56</Block>
+		<Path>CompressionParamDataStructEntry[{panel_index}].DSCRCBufferSize</Path>
+		<Value>0x0</Value>
+	</Field>
+	
+	<Field>
+		<Block>56</Block>
+		<Path>CompressionParamDataStructEntry[{panel_index}].DSCSlicesPerLine</Path>
+		<Value>0x2</Value>
+	</Field>
+	
+	<Field>
+		<Block>56</Block>
+		<Path>CompressionParamDataStructEntry[{panel_index}].DSCLineBufferDepth</Path>
+		<Value>0x1</Value>
+	</Field>
+	
+	<Field>
+		<Block>56</Block>
+		<Path>CompressionParamDataStructEntry[{panel_index}].DSCColorDepthCapabilities</Path>
+		<Value>0x2</Value>
+	</Field>
+	
+	<Field>
+		<Block>56</Block>
+		<Path>CompressionParamDataStructEntry[{panel_index}].DSCMaximumBitsPerPixel</Path>
+		<Value>0x3</Value>
+	</Field>
+	
+	<Field>
+		<Block>56</Block>
+		<Path>CompressionParamDataStructEntry[{panel_index}].DSCSliceHeight</Path>
+		<Value>0x20</Value>
+	</Field>
+
+
+<!--Integrated display configuration -> LFP panel configuration -> Panel #<current_panel> -> MIPI display settings-->
+	<Field>
+		<Block>52</Block>
+		<Path>MipiDataStructureEntry[{panel_index}].CommandMode</Path>
+		<Value>0x0</Value>
+	</Field>
+	
+	<Field>
+		<Block>52</Block>
+		<Path>MipiDataStructureEntry[{panel_index}].VideoTransferMode</Path>
+		<Value>0x2</Value>
+	</Field>
+	
+	<Field>
+		<Block>52</Block>
+		<Path>MipiDataStructureEntry[{panel_index}].RequiredBurstModeFreq</Path>
+		<Value>0x0</Value>
+	</Field>
+	
+	<Field>
+		<Block>52</Block>
+		<Path>MipiDataStructureEntry[{panel_index}].VideoModeColorFormat</Path>
+		<Value>0x4</Value>
+	</Field>
+	
+	<Field>
+		<Block>52</Block>
+		<Path>MipiDataStructureEntry[{panel_index}].DualLinkSupport</Path>
+		<Value>0x0</Value>
+	</Field>
+	
+	<Field>
+		<Block>42</Block>
+		<Path>PixelOverlapCount[{panel_index}]</Path>
+		<Value>0x0</Value>
+	</Field>
+	
+	<Field>
+		<Block>52</Block>
+		<Path>MipiDataStructureEntry[{panel_index}].PortSyncFeature</Path>
+		<Value>0x0</Value>
+	</Field>
+	
+	<Field>
+		<Block>52</Block>
+		<Path>MipiDataStructureEntry[{panel_index}].CABCSupport</Path>
+		<Value>0x0</Value>
+	</Field>
+	<!--Skipping 'CABC on/off commands' and 'Panel PWM/BkltController On/Off Commands' as value depends on port number. Not used for video mode anyway-->
+	<Field>
+		<Block>52</Block>
+		<Path>MipiDataStructureEntry[{panel_index}].RGBFlip</Path>
+		<Value>0x0</Value>
+	</Field>
+	
+	<Field>
+		<Block>52</Block>
+		<Path>MipiDataStructureEntry[{panel_index}].NumberOfLanes</Path>
+		<Value>0x3</Value>
+	</Field>
+	
+	<Field>
+		<Block>52</Block>
+		<Path>MipiDataStructureEntry[{panel_index}].BTADisable</Path>
+		<Value>0x1</Value>
+	</Field>
+	
+	<Field>
+		<Block>52</Block>
+		<Path>MipiDataStructureEntry[{panel_index}].ByteClockSelect</Path>
+		<Value>0x0</Value>
+	</Field>
+	
+	<Field>
+		<Block>52</Block>
+		<Path>MipiDataStructureEntry[{panel_index}].EOTDisabled</Path>
+		<Value>0x0</Value>
+	</Field>
+	
+	<Field>
+		<Block>52</Block>
+		<Path>MipiDataStructureEntry[{panel_index}].ClockStop</Path>
+		<Value>0x0</Value>
+	</Field>
+	
+	<Field>
+		<Block>52</Block>
+		<Path>MipiDataStructureEntry[{panel_index}].LPClockDuringLPM</Path>
+		<Value>0x0</Value>
+	</Field>
+	
+	<Field>
+		<Block>52</Block>
+		<Path>MipiDataStructureEntry[{panel_index}].BlankingPacketsDuringBLLP</Path>
+		<Value>0x0</Value>
+	</Field>
+	
+	<Field>
+		<Block>52</Block>
+		<Path>MipiDataStructureEntry[{panel_index}].TClkPrepare</Path>
+		<Value>0x32</Value>
+	</Field>
+	
+	<Field>
+		<Block>52</Block>
+		<Path>MipiDataStructureEntry[{panel_index}].TClkTrail</Path>
+		<Value>0x46</Value>
+	</Field>
+	
+	<Field>
+		<Block>52</Block>
+		<Path>MipiDataStructureEntry[{panel_index}].TClkPrepareClkZero</Path>
+		<Value>0x136</Value>
+	</Field>
+		
+	<Field>
+		<Block>52</Block>
+		<Path>MipiDataStructureEntry[{panel_index}].THSPrepare</Path>
+		<Value>0x32</Value>
+	</Field>
+	
+	<Field>
+		<Block>52</Block>
+		<Path>MipiDataStructureEntry[{panel_index}].THSTrail</Path>
+		<Value>0x3C</Value>
+	</Field>
+		
+	<Field>
+		<Block>52</Block>
+		<Path>MipiDataStructureEntry[{panel_index}].THSPrepareHSZero</Path>
+		<Value>0xC8</Value>
+	</Field>
+		
+	<Field>
+		<Block>52</Block>
+		<Path>MipiPpsEntry[{panel_index}].PanelPowerONDelay</Path>
+		<Value>0x1F4</Value>
+	</Field>
+		
+	<Field>
+		<Block>52</Block>
+		<Path>MipiPpsEntry[{panel_index}].PanelPowerOnToBacklightEnableDelay</Path>
+		<Value>0x1F4</Value>
+	</Field>
+		
+	<Field>
+		<Block>52</Block>
+		<Path>MipiPwmEntry[{panel_index}].PWMOnToBacklightEnableDelay</Path>
+		<Value>0x0</Value>
+	</Field>
+		
+	<Field>
+		<Block>52</Block>
+		<Path>MipiPwmEntry[{panel_index}].BacklightDisableToPWMOffDelay</Path>
+		<Value>0x0</Value>
+	</Field>
+		
+	<Field>
+		<Block>52</Block>
+		<Path>MipiPpsEntry[{panel_index}].BacklightDisableToPanelPowerOFFDelay</Path>
+		<Value>0x1F4</Value>
+	</Field>
+		
+	<Field>
+		<Block>52</Block>
+		<Path>MipiPpsEntry[{panel_index}].PanelPowerOFFDelay</Path>
+		<Value>0x1F4</Value>
+	</Field>
+		
+	<Field>
+		<Block>52</Block>
+		<Path>MipiPpsEntry[{panel_index}].PanelPowerCycleDelay</Path>
+		<Value>0x1388</Value>
+	</Field>
+	
+</VbtFields>

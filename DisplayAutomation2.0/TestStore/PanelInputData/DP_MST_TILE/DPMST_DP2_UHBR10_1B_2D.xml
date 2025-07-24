@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EDID>
+	<DELL_U3014>DELL_U3014_MST_EDID.bin</DELL_U3014>
+</EDID>
+
+<DPCD>
+	<DELL_MST_DP2>DP2_UHBR10_MST_DPCD.bin</DELL_MST_DP2>
+	<DELL_U3014>DELL_U3014_MST_DPCD.bin</DELL_U3014>
+</DPCD>
+
+<Topology>
+	<Branch>
+		<UpStrmBranchOutPort>0xffffffff</UpStrmBranchOutPort>
+		<ThisBranchInputPort>0</ThisBranchInputPort>
+		<TotalInputPorts>1</TotalInputPorts>
+		<TotalPhysicalPorts>3</TotalPhysicalPorts>
+		<TotalVirtualPorts>0</TotalVirtualPorts>
+		<TotalAvailablePBN>5400</TotalAvailablePBN>
+		<MaxLinkRate>1000</MaxLinkRate>
+		<MaxLaneCount>4</MaxLaneCount>
+		<BranchReplyDelay>0</BranchReplyDelay>
+		<LinkAddressDelay>0</LinkAddressDelay>
+		<RemoteI2ReadDelay>0</RemoteI2ReadDelay>
+		<RemoteI2WriteDelay>0</RemoteI2WriteDelay>
+		<RemoteDPCDReadDelay>0</RemoteDPCDReadDelay>
+		<RemoteDPCDWriteDelay>0</RemoteDPCDWriteDelay>
+		<EPRDelay>0</EPRDelay>
+		<AllocatePayloadDelay>0</AllocatePayloadDelay>
+		<ClearPayLoadDelay>0</ClearPayLoadDelay>
+		<BranchDPCD>DELL_MST_DP2</BranchDPCD>
+		<Display>
+			<UpStrmBranchOutPort>1</UpStrmBranchOutPort>
+			<ThisDisplayInputPort>0</ThisDisplayInputPort>
+			<TotalInputPorts>1</TotalInputPorts>
+			<TotalAvailablePBN>2560</TotalAvailablePBN>
+			<MaxLinkRate>540</MaxLinkRate>
+			<MaxLaneCount>4</MaxLaneCount>
+			<RemoteI2ReadDelay>0</RemoteI2ReadDelay>
+			<RemoteI2WriteDelay>0</RemoteI2WriteDelay>
+			<RemoteDPCDReadDelay>0</RemoteDPCDReadDelay>
+			<RemoteDPCDWriteDelay>0</RemoteDPCDWriteDelay>
+			<DisplayDPCD>DELL_U3014</DisplayDPCD>
+            <DisplayEDID>DELL_U3014</DisplayEDID>
+		</Display>
+		<Display>
+			<UpStrmBranchOutPort>2</UpStrmBranchOutPort>
+			<ThisDisplayInputPort>0</ThisDisplayInputPort>
+			<TotalInputPorts>1</TotalInputPorts>
+			<TotalAvailablePBN>2560</TotalAvailablePBN>
+			<MaxLinkRate>540</MaxLinkRate>
+			<MaxLaneCount>4</MaxLaneCount>
+			<RemoteI2ReadDelay>0</RemoteI2ReadDelay>
+			<RemoteI2WriteDelay>0</RemoteI2WriteDelay>
+			<RemoteDPCDReadDelay>0</RemoteDPCDReadDelay>
+			<RemoteDPCDWriteDelay>0</RemoteDPCDWriteDelay>
+			<DisplayDPCD>DELL_U3014</DisplayDPCD>
+            <DisplayEDID>DELL_U3014</DisplayEDID>
+		</Display>
+	</Branch>
+</Topology>

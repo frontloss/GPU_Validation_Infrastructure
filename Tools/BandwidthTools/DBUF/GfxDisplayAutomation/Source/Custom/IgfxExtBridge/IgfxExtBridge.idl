@@ -1,0 +1,81 @@
+// IgfxExtBridge.idl : IDL source for IgfxExtBridge.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (IgfxExtBridge.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+import "Display_Util.idl";
+import "MCCS_Util.idl";
+import "Power_Util.idl";
+import "TV_Setting.idl";
+import "D3D_Setting.idl";
+import "SG_Util.idl";
+
+[
+	uuid(9A650EBC-929B-4210-BA05-76D5D021B140),
+	version(1.0),
+	helpstring("IgfxExtBridge 1.0 Type Library")
+]
+
+library IGFXEXTBRIDGELib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(2CE674BB-62B3-45e9-899F-F90B6BC970A7),
+		helpstring("DisplayUtil Class")
+	]
+	coclass DisplayUtil
+	{	
+		[default] interface IDisplayUtil;	
+			
+	};	
+	
+	[
+		uuid(C1603752-CB01-412d-894E-FDDD113F1073),
+		helpstring("MCCSUtil Class")
+	]
+	coclass MCCSUtil
+	{				
+		[default] interface IMCCSUtil;		
+	};	 
+
+	[
+		uuid(6A344570-2BDF-49db-8B6C-3EA32F026991),
+		helpstring("PowerUtil Class")
+	]
+	coclass PowerUtil
+	{				
+		[default] interface IPowerUtil;		
+	};	 
+
+	[
+	uuid(635A3AE2-8A58-4b2d-B701-7AD0050EC81C),
+	helpstring("TVSetting Class")
+	]
+	coclass TVSetting
+	{
+		[default] interface ITVSetting;
+	};
+	[
+		uuid(2e9bbf19-0701-4675-ab17-b0d13e7cb124),
+		helpstring("D3DSetting Class")
+	]
+	coclass D3DSetting
+	{
+		[default] interface ID3DSetting;
+	}
+
+	[
+		uuid(2299C8C2-634E-4745-923A-DE0C8D03E7BB),
+		helpstring("SGUtil Class")
+	]
+	coclass SGUtil
+	{
+		[default] interface ISGUtil;
+	}
+};

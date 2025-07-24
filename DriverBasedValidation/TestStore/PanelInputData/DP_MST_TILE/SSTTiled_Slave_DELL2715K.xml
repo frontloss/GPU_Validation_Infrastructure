@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EDID>
+	<SSTTiled_Slave>5k_Tiled_Slave_DELL2715K_EDID.bin</SSTTiled_Slave>
+</EDID>
+
+<DPCD>
+	<SSTTiled_DPCD>5k_Tiled_DELL2715K_DPCD.bin</SSTTiled_DPCD>
+</DPCD>

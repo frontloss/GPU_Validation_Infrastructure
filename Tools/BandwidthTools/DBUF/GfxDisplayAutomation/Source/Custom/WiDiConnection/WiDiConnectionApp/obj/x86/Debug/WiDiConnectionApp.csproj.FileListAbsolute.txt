@@ -1,0 +1,12 @@
+C:\Users\INTEL\Documents\Visual Studio 2012\Projects\WiDiConnection\WiDiConnectionApp\obj\x86\Debug\WiDiConnectionApp.Properties.Resources.resources
+C:\Users\INTEL\Documents\Visual Studio 2012\Projects\WiDiConnection\WiDiConnectionApp\obj\x86\Debug\WiDiConnectionApp.csproj.GenerateResource.Cache
+C:\Users\INTEL\Documents\Visual Studio 2012\Projects\WiDiConnection\WiDiConnectionApp\bin\x86\Debug\WiDiConnectionApp.exe.config
+C:\Users\INTEL\Documents\Visual Studio 2012\Projects\WiDiConnection\WiDiConnectionApp\bin\x86\Debug\WiDiConnectionApp.exe
+C:\Users\INTEL\Documents\Visual Studio 2012\Projects\WiDiConnection\WiDiConnectionApp\bin\x86\Debug\WiDiConnectionApp.pdb
+C:\Users\INTEL\Documents\Visual Studio 2012\Projects\WiDiConnection\WiDiConnectionApp\bin\x86\Debug\Interop.IntelWiDiLib.dll
+C:\Users\INTEL\Documents\Visual Studio 2012\Projects\WiDiConnection\WiDiConnectionApp\obj\x86\Debug\WiDiConnectionApp.exe
+C:\Users\INTEL\Documents\Visual Studio 2012\Projects\WiDiConnection\WiDiConnectionApp\obj\x86\Debug\WiDiConnectionApp.pdb
+C:\Users\INTEL\Documents\Visual Studio 2012\Projects\WiDiConnection\bin\WiDiConnectionApp.exe.config
+C:\Users\INTEL\Documents\Visual Studio 2012\Projects\WiDiConnection\bin\WiDiConnectionApp.exe
+C:\Users\INTEL\Documents\Visual Studio 2012\Projects\WiDiConnection\bin\WiDiConnectionApp.pdb
+C:\Users\INTEL\Documents\Visual Studio 2012\Projects\WiDiConnection\WiDiConnectionApp\obj\x86\Debug\WiDiConnectionApp.Form1.resources

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Data>
+  <time value="1"></time>
+  <MaxQCFlipsThreshold value="20"></MaxQCFlipsThreshold>
+  <Dock value =" Dock1_2560x1600 ">
+    <TransactionID>0x00</TransactionID>
+    <!--ReceiverInterfaces-->
+    <NumOfDPConnectors>0x01</NumOfDPConnectors>
+    <NumOfHDMIConnectors>0x00</NumOfHDMIConnectors>
+    <!--ReceiverInterfaces-->
+
+    <!--AdapterCapabilities-->
+    <EndPointIndex>0x00</EndPointIndex>
+    <Version>0x02</Version>
+    <MaxPixelClock4_11>0x12</MaxPixelClock4_11>
+    <MaxPixelClock0_3>0xc</MaxPixelClock0_3>
+    <Reserved>0x00</Reserved>
+    <MST>0x01</MST>
+    <NumOfVideoStreams>0x01</NumOfVideoStreams>
+    <Audio>0x01</Audio>
+    <AVSync>0x00</AVSync>
+    <NumOfAudioStreams>0x01</NumOfAudioStreams>
+    <GTCMaster>0x00</GTCMaster>
+    <GTCSlave>0x00</GTCSlave>
+    <FastAux>0x00</FastAux>
+    <HBR>0x01</HBR>
+    <HBR2>0x00</HBR2>
+    <HDCP>0x01</HDCP>
+    <S3D>0x02</S3D>
+    <HBRAudio>0x00</HBRAudio>
+    <YCbCr444>0x01</YCbCr444>
+    <YCbCr422>0x00</YCbCr422>
+    <YOnly>0x00</YOnly>
+    <YCbCr444ColorDepth>0x01</YCbCr444ColorDepth>
+    <YCbCr422ColorDepth>0x00</YCbCr422ColorDepth>
+    <YOnlyColorDepth>0x00</YOnlyColorDepth>
+    <RGBColorDepth>0x00</RGBColorDepth>
+    <MaxHActive8_15>0x06</MaxHActive8_15>
+    <MaxHActive0_7>0x40</MaxHActive0_7>
+    <MaxVActive8_15>0x0a</MaxVActive8_15>
+    <MaxVActive0_7>0x00</MaxVActive0_7>
+    <!--AdapterCapabilities-->
+
+    <NumberOfPrograms>0x02</NumberOfPrograms>
+
+    <!--ProgramCapability-->
+    <Feature1>0x93</Feature1>
+    <Feature2>0x10</Feature2>
+    <!--AVCodecCapability-->
+    <AVBitDepthSupportYCbCr8_15>0x10</AVBitDepthSupportYCbCr8_15>
+    <AVBitDepthSupportYCbCr0_7>0x00</AVBitDepthSupportYCbCr0_7>
+    <AVBitDepthSupportRGB>0x00</AVBitDepthSupportRGB>
+    <AVMaxWidth8_15>0x0a</AVMaxWidth8_15>
+    <AVMaxWidth0_7>0x00</AVMaxWidth0_7>
+    <AVMaxHeight8_15>0x06</AVMaxHeight8_15>
+    <AVMaxHeight0_7>0x40</AVMaxHeight0_7>
+    <MaxMBPS24_31>0x00</MaxMBPS24_31>
+    <MaxMBPS16_23>0x0e</MaxMBPS16_23>
+    <MaxMBPS8_15>0xa6</MaxMBPS8_15>
+    <MaxMBPS0_7>0x00</MaxMBPS0_7>
+    <MaxFS16_23>0x00</MaxFS16_23>
+    <MaxFS8_15>0x3e</MaxFS8_15>
+    <MaxFS0_7>0x80</MaxFS0_7>
+    <AVMaxFrameRate>0x3c</AVMaxFrameRate>
+    <AVMaxBitRate8_15>0x74</AVMaxBitRate8_15>
+    <AVMaxBitRate0_7>0x1c</AVMaxBitRate0_7>
+    <CBPSizeCapability8_15>0x30</CBPSizeCapability8_15>
+    <CBPSizeCapability0_7>0xF6</CBPSizeCapability0_7>
+    <AVCConfiguration8_15>0x00</AVCConfiguration8_15>
+    <AVCConfiguration0_7>0x00</AVCConfiguration0_7>
+    <S3DFormat>0x00</S3DFormat>
+    <!--AVCodecCapability-->
+
+    <!--RawCapability-->
+    <RawBitDepthSupportYCbCr8_15>0x10</RawBitDepthSupportYCbCr8_15>
+    <RawBitDepthSupportYCbCr0_7>0x00</RawBitDepthSupportYCbCr0_7>
+    <RawBitDepthSupportRGB>0x00</RawBitDepthSupportRGB>
+    <RawMaxWidth8_15>0x0a</RawMaxWidth8_15>
+    <RawMaxWidth0_7>0x00</RawMaxWidth0_7>
+    <RawMaxHeight8_15>0x06</RawMaxHeight8_15>
+    <RawMaxHeight0_7>0x40</RawMaxHeight0_7>
+    <RawMaxFrameRate>0x3c</RawMaxFrameRate>
+    <RawMaxBitRate8_15>0x0c</RawMaxBitRate8_15>
+    <RawMaxBitRate0_7>0x1c</RawMaxBitRate0_7>
+    <!--RawCapability-->
+
+    <!--WSPCapability-->
+    <BitDepthSupport8_15>0x00</BitDepthSupport8_15>
+    <BitDepthSupport0_7>0x00</BitDepthSupport0_7>
+    <WSPMaxWidth8_15>0x00</WSPMaxWidth8_15>
+    <WSPMaxWidth0_7>0x00</WSPMaxWidth0_7>
+    <WSPMaxHeight8_15>0x00</WSPMaxHeight8_15>
+    <WSPMaxHeight0_7>0x00</WSPMaxHeight0_7>
+    <WSPMaxFrameRate>0x00</WSPMaxFrameRate>
+    <WSPMaxBitRate8_15>0x00</WSPMaxBitRate8_15>
+    <WSPMaxBitRate0_7>0x00</WSPMaxBitRate0_7>
+    <BlockMode>0x00</BlockMode>
+    <ComponentConfig>0x00</ComponentConfig>
+    <!--WSPCapability-->
+
+    <NumberOfVendorspecificCodecs>0x00</NumberOfVendorspecificCodecs>
+    <JitterHandlingCapability8_15>0x01</JitterHandlingCapability8_15>
+    <JitterHandlingCapability0_7>0x00</JitterHandlingCapability0_7>
+    <AudioBufferSizeCapability8_15>0x08</AudioBufferSizeCapability8_15>
+    <AudioBufferSizeCapability0_7>0x00</AudioBufferSizeCapability0_7>
+
+    <!--ProgramCapability-->
+  </Dock>
+
+</Data>
+
+  

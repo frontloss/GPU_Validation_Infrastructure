@@ -1,0 +1,1128 @@
+<SubEvents>
+  <SubEvent name = "PIPE_CONF_REGISTER_ENABLE">
+    <Platform Name = "HSW">
+      <Factor>13,14,15,16</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>76,77,78</Factor>
+    </Platform>
+    <Platform Name = "IVB">
+      <Factor>13,14,15</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "PIPE_CONF_REGISTER_DISABLE">
+    <Platform Name = "HSW">
+      <Factor>17,18,19,20</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>79,80,81</Factor>
+    </Platform>
+    <Platform Name = "IVB">
+      <Factor>17,18,19</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "VIDEO_DIP_CTRL_ENABLE">
+    <Platform Name = "HSW">
+      <Factor>21,22,23,24</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>21,22,23,24</Factor>
+    </Platform>
+    <Platform Name = "IVB">
+      <Factor>29,30,31</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "VIDEO_DIP_CTRL_DISABLE">
+    <Platform Name = "HSW">
+      <Factor>25,26,27,28</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>25,26,27,28</Factor>
+    </Platform>
+    <Platform Name = "IVB">
+      <Factor>32,33,34</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "PRIMARY_CTRL_ENABLE">
+    <Platform Name = "HSW">
+      <Factor>7,8,9</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>7,8,9</Factor>
+    </Platform>
+    <Platform Name = "SKL">
+      <Factor>576,577,578</Factor>
+    </Platform>
+    <Platform Name = "IVB">
+      <Factor>7,8,9</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "PRIMARY_CTRL_DISABLE">
+    <Platform Name = "HSW">
+      <Factor>10,11,12</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>10,11,12</Factor>
+    </Platform>
+    <Platform Name = "IVB">
+      <Factor>10,11,12</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "CURSOR_CTRL_ENABLE">
+    <Platform Name = "HSW">
+      <Factor>1,2,3</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>1,2,3</Factor>
+    </Platform>
+    <Platform Name = "IVB">
+      <Factor>1,2,3</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "CURSOR_CTRL_DISABLE">
+    <Platform Name = "HSW">
+      <Factor>4,5,6</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>4,5,6</Factor>
+    </Platform>
+    <Platform Name = "IVB">
+      <Factor>4,5,6</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "PIPE_DDI_CTRL_REGISTER">
+    <Platform Name = "HSW">
+      <Factor>35,36,37,38</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>35,36,37,38</Factor>
+    </Platform>
+    <Platform Name = "SKL">
+      <Factor>35,36,37,38</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "PLANE_SELECT">
+    <Platform Name = "HSW">
+      <Factor>48,49,50</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>48,49,50</Factor>
+    </Platform>
+  <Platform Name = "SKL">
+      <Factor>48,49,50</Factor>
+    </Platform>
+  <Platform Name = "CNL">
+      <Factor>48,49,50</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "CRT_PIPE_SELECT">
+    <Platform Name = "VLV">
+      <Factor>39</Factor>
+    </Platform>
+    <Platform Name = "IVB">
+      <Factor>58</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "EDP_PIPE_SELECT">
+    <Platform Name = "VLV">
+      <Factor>40,41</Factor>
+    </Platform>
+    <Platform Name = "CHV">
+      <Factor>40,41,526</Factor>
+    </Platform>
+    <Platform Name = "IVB">
+      <Factor>57</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "MIPI_PIPE_SELECT">
+    <Platform Name = "VLV">
+      <Factor>440,441</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "HDMI_PIPE_SELECT">
+    <Platform Name = "VLV">
+      <Factor>44,45</Factor>
+    </Platform>
+    <Platform Name = "IVB">
+      <Factor>51,52,53</Factor>
+    </Platform>
+    <Platform Name = "CHV">
+      <Factor>493,494,495</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "DP_PIPE_SELECT">
+    <Platform Name = "VLV">
+      <Factor>46,47</Factor>
+    </Platform>
+    <Platform Name = "CHV">
+      <Factor>527,528,529</Factor>
+    </Platform>
+    <Platform Name = "IVB">
+      <Factor>54,55,56</Factor>
+    </Platform>
+  </SubEvent>
+  
+  <SubEvent name = "CRT_ENABLED">
+    <Platform Name = "VLV">
+      <Factor>437</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "EDP_ENABLED">
+    <Platform Name = "VLV">
+      <Factor>438,439</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "MIPI_ENABLED">
+    <Platform Name = "VLV">
+      <Factor>440,441</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "HDMI_ENABLED">
+    <Platform Name = "VLV">
+      <Factor>442,443</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "DP_ENABLED">
+    <Platform Name = "VLV">
+      <Factor>444,445</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "LPSP_ENABLE">
+    <Platform Name = "HSW">
+      <Factor>63</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>63</Factor>
+    </Platform>
+    <Platform Name = "SKL">
+      <Factor>574</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "OVERLAY_ENABLE">
+    <Platform Name = "HSW">
+      <Factor>64,65,66</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>64,65,66</Factor>
+    </Platform>
+    <Platform Name = "VLV">
+      <Factor>599,600</Factor>
+    </Platform>
+        <Platform Name = "CHV">
+      <Factor>599,600</Factor>
+    </Platform>
+  </SubEvent>
+
+<SubEvent name = "SPRITE_ENABLED">
+    <Platform Name = "HSW">
+      <Factor>67,68,69</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>67,68,69</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "XVYCC_DISABLED_SPRITE_ENABLED">
+    <Platform Name = "HSW">
+      <Factor>70,71,72</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>70,71,72</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "SPRITE_DISABLED">
+    <Platform Name = "HSW">
+      <Factor>73,74,75</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>73,74,75</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "SPRITE_ON">
+    <Platform Name = "HSW">
+      <Factor>82,83,84</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>82,83,84</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "SPRITE_OFF">
+    <Platform Name = "HSW">
+      <Factor>85,86,87</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>85,86,87</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "PANEL_FITTER_ENABLE">
+    <Platform Name = "HSW">
+      <Factor>88,89,90</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>88,89,90</Factor>
+    </Platform>
+    <Platform Name = "VLV">
+      <Factor>594,595,596</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "SOURCE_PIPE_IMAGE">
+    <Platform Name = "HSW">
+      <Factor>91,92,93</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>91,92,93</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "TARGET_PANEL_FITTER_IMAGE">
+    <Platform Name = "HSW">
+      <Factor>94,95,96</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>94,95,96</Factor>
+    </Platform>
+  </SubEvent>
+
+
+  <SubEvent name = "PLL">
+    <Platform Name = "SKL">
+      <Factor>97,98,99,100,101</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "DPLL0_SSC">
+    <Platform Name = "SKL">
+      <Factor>102,103,104,105</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "DPLL1_SSC">
+    <Platform Name = "SKL">
+      <Factor>106,107,108,109</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "DPLL2_SSC">
+    <Platform Name = "SKL">
+      <Factor>110,111,112,113</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "DPLL3_SSC">
+    <Platform Name = "SKL">
+      <Factor>114,115,116,117</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "HTOTAL">
+    <Platform Name = "HSW">
+      <Factor>118,119,120,121</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>118,119,120,121</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "VTOTAL">
+    <Platform Name = "HSW">
+      <Factor>122,123,124,125</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>122,123,124,125</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "PF_INTERLACE_ENABLE">
+    <Platform Name = "HSW">
+      <Factor>126,127,128,129</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>126,127,128,129</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "PIPE_HOR_SOURCE_SIZE">
+    <Platform Name = "HSW">
+      <Factor>130,131,132</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>130,131,132</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "PIPE_VER_SOURCE_SIZE">
+    <Platform Name = "HSW">
+      <Factor>133,134,135</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>133,134,135</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "PF_HOR_WIN_SIZE">
+    <Platform Name = "HSW">
+      <Factor>136,137,138</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>136,137,138</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "PF_VER_WIN_SIZE">
+    <Platform Name = "HSW">
+      <Factor>139,140,141</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>139,140,141</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "FBC_REGISTER">
+    <Platform Name = "HSW">
+      <Factor>142</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>142</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "LATENCY_REGISTER_LSB">
+    <Platform Name = "HSW">
+      <Factor>143</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>143</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "LATENCY_REGISTER_MSB">
+    <Platform Name = "HSW">
+      <Factor>144</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>144</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "CURSOR_STATUS">
+    <Platform Name = "HSW">
+      <Factor>145,146,147</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>145,146,147</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "DISPLAY_PLANE_STATUS">
+    <Platform Name = "HSW">
+      <Factor>148,149,150</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>148,149,150</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "SPRITE_SIZE">
+    <Platform Name = "HSW">
+      <Factor>151,152,153</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>151,152,153</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "DISPLAY_WATERMARK_REGISTER">
+    <Platform Name = "HSW">
+      <Factor>154,155,156</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>308,309,310</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "SPRITE_WATERMARK_REGISTER">
+    <Platform Name = "HSW">
+      <Factor>157,158,159</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>311,312,313</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "CURSOR_WATERMARK_REGISTER">
+    <Platform Name = "HSW">
+      <Factor>160,161,162</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>160,161,162</Factor>
+    </Platform>
+  </SubEvent>
+
+
+  <SubEvent name = "WM_LP1_ENABLE">
+    <Platform Name = "HSW">
+      <Factor>163</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>163</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "WM_LP2_ENABLE">
+    <Platform Name = "HSW">
+      <Factor>164</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>164</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "WM_LP3_ENABLE">
+    <Platform Name = "HSW">
+      <Factor>165</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>165</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "WM_LP1_SPRITE">
+    <Platform Name = "HSW">
+      <Factor>166</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>302</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "WM_LP2_SPRITE">
+    <Platform Name = "HSW">
+      <Factor>167</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>303</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "WM_LP3_SPRITE">
+    <Platform Name = "HSW">
+      <Factor>168</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>304</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "WM_LP1_DISPLAY">
+    <Platform Name = "HSW">
+      <Factor>169</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>305</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "WM_LP2_DISPLAY">
+    <Platform Name = "HSW">
+      <Factor>170</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>306</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "WM_LP3_DISPLAY">
+    <Platform Name = "HSW">
+      <Factor>171</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>307</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "WM_LP1_CURSOR">
+    <Platform Name = "HSW">
+      <Factor>172</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>172</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "WM_LP2_CURSOR">
+    <Platform Name = "HSW">
+      <Factor>173</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>173</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "WM_LP3_CURSOR">
+    <Platform Name = "HSW">
+      <Factor>174</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>174</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "PLANE_1_A">
+    <Platform Name = "SKL">
+      <Factor>175,176,177,178,179,180,181,182,183,184,185,484</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "PLANE_1_B">
+    <Platform Name = "SKL">
+      <Factor>186,187,188,189,190,191,192,193,194,195,196,487</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "PLANE_1_C">
+    <Platform Name = "SKL">
+      <Factor>197,198,199,200,201,202,203,204,205,206,207,490</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "PLANE_2_A">
+    <Platform Name = "SKL">
+      <Factor>208,209,210,211,212,213,214,215,216,217,218,485</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "PLANE_2_B">
+    <Platform Name = "SKL">
+      <Factor>219,220,221,222,223,224,225,226,227,228,229,488</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "PLANE_2_C">
+    <Platform Name = "SKL">
+      <Factor>230,231,232,233,234,235,236,237,238,239,240,491</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "PLANE_3_A">
+    <Platform Name = "SKL">
+      <Factor>241,242,243,244,245,246,247,248,249,250,251,486</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "PLANE_3_B">
+    <Platform Name = "SKL">
+      <Factor>252,253,254,255,256,257,258,259,260,261,262,489</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "PLANE_3_C">
+    <Platform Name = "SKL">
+      <Factor>263,264,265,266,267,268,269,270,271,272,273,492</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "CFGCR1">
+    <Platform Name = "SKL">
+      <Factor>274,275,276,277,278,279,280</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "CFGCR2">
+    <Platform Name = "SKL">
+      <Factor>281,282,283,284,285,286,287</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "CFGCR3">
+    <Platform Name = "SKL">
+      <Factor>288,289,290,291,292,293,294</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "CDCLK_CTL">
+    <Platform Name = "SKL">
+      <Factor>288,289,290,291,292,293,294</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "PLL_ENABLE_STATUS">
+    <Platform Name = "SKL">
+      <Factor>458,459,460,461</Factor>
+    </Platform>
+  </SubEvent>
+  <!--deepcolor-->
+  <SubEvent name = "PIPE_12BPC">
+    <Platform Name = "HSW">
+      <Factor>314,315,316,317</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>314,315,316,317</Factor>
+    </Platform>
+    <Platform Name = "SKL">
+      <Factor>314,315,316,317</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "PIPE_10BPC">
+    <Platform Name = "HSW">
+      <Factor>318,319,320,321</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>318,319,320,321</Factor>
+    </Platform>
+    <Platform Name = "SKL">
+      <Factor>318,319,320,321</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "PIPE_8BPC">
+    <Platform Name = "HSW">
+      <Factor>322,323,324,325</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>322,323,324,325</Factor>
+    </Platform>
+    <Platform Name = "SKL">
+      <Factor>322,323,324,325</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "PIPE_6BPC">
+    <Platform Name = "HSW">
+      <Factor>326,327,328,329</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>326,327,328,329</Factor>
+    </Platform>
+    <Platform Name = "SKL">
+      <Factor>326,327,328,329</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "DEEPCOLOR_PIPE_DDI_CTRL_REGISTER">
+    <Platform Name = "HSW">
+      <Factor>330,331,332,333</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>330,331,332,333</Factor>
+    </Platform>
+    <Platform Name = "SKL">
+      <Factor>330,331,332,333</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "GCP_Packet_Enable">
+    <Platform Name = "HSW">
+      <Factor>334,335,336</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>334,335,336</Factor>
+    </Platform>
+    <Platform Name = "SKL">
+      <Factor>334,335,336</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "DITHERING_ENABLE">
+    <Platform Name = "BDW">
+      <Factor>337,338,339</Factor>
+    </Platform>
+    <Platform Name = "SKL">
+      <Factor>337,338,339</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "DITHERING_BPC">
+    <Platform Name = "BDW">
+      <Factor>340,341,342</Factor>
+    </Platform>
+    <Platform Name = "SKL">
+      <Factor>340,341,342</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "WB_SLIDER_LEVEL4">
+    <Platform Name = "HSW">
+      <Factor>343,344,345,346,347,348,349,350,351,352,353,354,355,356,357</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>343,344,345,346,347,348,349,350,351,352,353,354,355,356,357</Factor>
+    </Platform>
+    <Platform Name = "SKL">
+      <Factor>343,344,345,346,347,348,349,350,351,352,353,354,355,356,357</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "WB_SLIDER_LEVEL3">
+    <Platform Name = "HSW">
+      <Factor>358,359,360,361,362,363,364,365,366,367,368,369,370,371,372</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>358,359,360,361,362,363,364,365,366,367,368,369,370,371,372</Factor>
+    </Platform>
+    <Platform Name = "SKL">
+      <Factor>358,359,360,361,362,363,364,365,366,367,368,369,370,371,372</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "WB_SLIDER_LEVEL2">
+    <Platform Name = "HSW">
+      <Factor>373,374,375,376,377,378,379,380,381,382,383,384,385,386,387</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>373,374,375,376,377,378,379,380,381,382,383,384,385,386,387</Factor>
+    </Platform>
+    <Platform Name = "SKL">
+      <Factor>373,374,375,376,377,378,379,380,381,382,383,384,385,386,387</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "WB_SLIDER_LEVEL1">
+    <Platform Name = "HSW">
+      <Factor>388,389,390,391,392,393,394,395,396,397,398,399,400,401,402</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>388,389,390,391,392,393,394,395,396,397,398,399,400,401,402</Factor>
+    </Platform>
+    <Platform Name = "SKL">
+      <Factor>388,389,390,391,392,393,394,395,396,397,398,399,400,401,402</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "PIPE_ENABLE_STATUS">
+    <Platform Name = "HSW">
+      <Factor>403,404,405,406</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>403,404,405,406</Factor>
+    </Platform>
+    <Platform Name = "SKL">
+      <Factor>403,404,405,406</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "CSC_ENABLE_STATUS">
+    <Platform Name = "HSW">
+      <Factor>403,404,405,406</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>403,404,405,406</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "WIDEGAMUT_LP">
+    <Platform Name = "VLV">
+      <Factor>407,408,409,410,411,412,413,414,415,417,418,419,420,421,422,423,424</Factor>
+    </Platform>
+    <Platform Name = "CHV">
+      <Factor>496,497,498,499,500,501,502,503,504,505,506,507,508,509,510,511,512,513,514,515,516,517,518,519,520,521,522</Factor>
+    </Platform>
+    <SubEvent name = "WIDEGAMUT_LP_DE_GAMMA">
+      <Platform Name = "CHV">
+        <Factor>523,524,525</Factor>
+      </Platform>
+    </SubEvent>
+  </SubEvent>
+   <SubEvent name = "NARROW_GAMUT_ENABLE">
+    <Platform Name = "HSW">
+      <Factor>7,8,9,425,426,427</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>7,8,9,425,426,427</Factor>
+    </Platform>
+    <Platform Name = "SKL">
+      <Factor>576,577,578,428,429,430</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "NARROW_GAMUT_DISABLE">
+    <Platform Name = "HSW">
+      <Factor>10,11,12,431,432,433</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>10,11,12,431,432,433</Factor>
+    </Platform>
+    <Platform Name = "SKL">
+      <Factor>579,580,581,434,435,436</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "CURSOR_CSC_ENABLE">
+    <Platform Name = "HSW">
+      <Factor>1,2,3</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>1,2,3</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "CURSOR_CSC_DISABLE">
+    <Platform Name = "HSW">
+      <Factor>4,5,6</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>4,5,6</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "EDP_VERSION">
+    <Platform Name = "SKL">
+      <Factor>446</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "LINKRATE308">
+    <Platform Name = "SKL">
+      <Factor>447,448</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "LINKRATE337">
+    <Platform Name = "SKL">
+      <Factor>449,448</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "LINKRATE432">
+    <Platform Name = "SKL">
+      <Factor>450,451</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "LINKRATE450">
+    <Platform Name = "SKL">
+      <Factor>452,451</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "LINKRATE540">
+    <Platform Name = "SKL">
+      <Factor>453,454</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "LINKRATE617">
+    <Platform Name = "SKL">
+      <Factor>455,456</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "LINKRATE675">
+    <Platform Name = "SKL">
+      <Factor>457,456</Factor>
+    </Platform>
+  </SubEvent>
+  
+  <!--MIPI Specific-->
+  <SubEvent name = "DPI_HACTIVE">
+    <Platform Name = "VLV">
+      <Factor>462,463</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "DPI_VACTIVE">
+    <Platform Name = "VLV">
+      <Factor>464,465</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "MIPI_PIXEL_ALTERNATIVE">
+    <Platform Name = "VLV">
+      <Factor>466</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "MIPI_DUAL_LINK_MODE">
+    <Platform Name = "VLV">
+      <Factor>467</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "NonBurst_Sync_Pulse">
+    <Platform Name = "VLV">
+      <Factor>468,469</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "NonBurst_Sync_Events">
+    <Platform Name = "VLV">
+      <Factor>470,471</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "BurstMode">
+    <Platform Name = "VLV">
+      <Factor>472,473</Factor>
+    </Platform>
+  </SubEvent>
+  
+  <SubEvent name = "MIPI_ColorFormat_RGB565">
+    <Platform Name = "VLV">
+      <Factor>474,475</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "MIPI_ColorFormat_RGB666">
+    <Platform Name = "VLV">
+      <Factor>476,477</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "MIPI_ColorFormat_RGB666_Loosely_Packed">
+    <Platform Name = "VLV">
+      <Factor>478,479</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "MIPI_ColorFormat_RGB888">
+    <Platform Name = "VLV">
+      <Factor>480,481</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "MIPI_DATA_LANES">
+    <Platform Name = "VLV">
+      <Factor>482,483</Factor>
+    </Platform>
+  </SubEvent>
+  
+    <SubEvent name = "MIPI_DSI_Resolution">
+    <Platform Name = "VLV">
+      <Factor>536,537</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "MIPI_HORIZ_SYNC_PADDING_COUNT">
+    <Platform Name = "VLV">
+      <Factor>538,539</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "MIPI_HORIZ_BACK_PORCH_COUNT">
+    <Platform Name = "VLV">
+      <Factor>540,541</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "MIPI_HORIZ_FRONT_PORCH_COUNT">
+    <Platform Name = "VLV">
+      <Factor>542,543</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "MIPI_HORIZ_ACTIVE_AREA_COUNT">
+    <Platform Name = "VLV">
+      <Factor>544,545</Factor>
+    </Platform>
+  </SubEvent>
+  
+  <SubEvent name = "MIPI_VERT_SYNC_PADDING_COUNT">
+    <Platform Name = "VLV">
+      <Factor>546,547</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "MIPI_VERT_BACK_PORCH_COUNT">
+    <Platform Name = "VLV">
+      <Factor>548,549</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "MIPI_VERT_FRONT_PORCH_COUNT">
+    <Platform Name = "VLV">
+      <Factor>550,551</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "MIPI_HIGH_LOW_SWITCH_COUNT">
+    <Platform Name = "VLV">
+      <Factor>552,553</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "MIPI_Data_Width_CMD_Mode">
+    <Platform Name = "VLV">
+      <Factor>554,555</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "MIPI_INTR_STAT_REG">
+    <Platform Name = "VLV">
+      <Factor>556,557</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "MIPI_GEN_FIFO_STAT_REGISTER">
+    <Platform Name = "VLV">
+      <Factor>558,559</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "MIPI_DPHY_PARAM_REG">
+    <Platform Name = "VLV">
+      <Factor>560,561</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "MIPI_DEVICE_RESET_TIMER">
+    <Platform Name = "VLV">
+      <Factor>562,563</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "MIPI_TURN_AROUND_TIMEOUT_REG">
+    <Platform Name = "VLV">
+      <Factor>564,565</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "MIPI_Disable_Video_BTA">
+    <Platform Name = "VLV">
+      <Factor>566,567</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "MIPI_HS_TX_TIMEOUT_REG">
+    <Platform Name = "VLV">
+      <Factor>568,569</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "MIPI_LP_RX_TIMEOUT_REG">
+    <Platform Name = "VLV">
+      <Factor>570,571</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "MIPI_EOT_DISABLE_REGISTER">
+    <Platform Name = "VLV">
+      <Factor>572,573</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "MIPI_DITHERING_STATUS">
+    <Platform Name = "VLV">
+      <Factor>42,43</Factor>
+    </Platform>
+  </SubEvent>
+  
+  <SubEvent name = "AUD_PIN_ELD_CP_VLD_ENABLE">
+    <Platform Name = "HSW">
+      <Factor>530,531,532</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>530,531,532</Factor>
+    </Platform>
+  <Platform Name = "SKL">
+      <Factor>530,531,532</Factor>
+    </Platform>
+      <Platform Name = "CNL">
+      <Factor>530,531,532</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "AUD_PIN_ELD_CP_VLD_DISABLE">
+    <Platform Name = "HSW">
+      <Factor>533,534,535</Factor>
+    </Platform>
+    <Platform Name = "BDW">
+      <Factor>533,534,535</Factor>
+    </Platform>
+  <Platform Name = "SKL">
+      <Factor>533,534,535</Factor>
+    </Platform>
+      <Platform Name = "CNL">
+      <Factor>533,534,535</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "FW_BLC_SELF">
+    <Platform Name = "VLV">
+      <Factor>575</Factor>
+    </Platform>
+    <Platform Name = "CHV">
+      <Factor>575</Factor>
+    </Platform>
+  </SubEvent>
+  <SubEvent name = "PLANE_FIFO_DRAIN_LATENCY">
+    <Platform Name = "VLV">
+      <Factor>582,583</Factor>
+    </Platform>
+    <Platform Name = "CHV">
+      <Factor>582,583,584</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "PLANE_FIFO_DRAIN_PRECISION">
+    <Platform Name = "VLV">
+      <Factor>585,586</Factor>
+    </Platform>
+    <Platform Name = "CHV">
+      <Factor>585,586,587</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "SPRITE_FIFO_DRAIN_LATENCY">
+    <Platform Name = "VLV">
+      <Factor>588,589</Factor>
+    </Platform>
+    <Platform Name = "CHV">
+      <Factor>588,589,590</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "SPRITE_FIFO_DRAIN_PRECISION">
+    <Platform Name = "VLV">
+      <Factor>591,592</Factor>
+    </Platform>
+    <Platform Name = "CHV">
+      <Factor>591,592,593</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "PF_HRATIO">
+    <Platform Name = "VLV">
+      <Factor>597</Factor>
+    </Platform>
+    <Platform Name = "CHV">
+      <Factor>597</Factor>
+    </Platform>
+  </SubEvent>
+
+  <SubEvent name = "PF_VRATIO">
+    <Platform Name = "VLV">
+      <Factor>598</Factor>
+    </Platform>
+    <Platform Name = "CHV">
+      <Factor>598</Factor>
+    </Platform>
+  </SubEvent>
+</SubEvents>

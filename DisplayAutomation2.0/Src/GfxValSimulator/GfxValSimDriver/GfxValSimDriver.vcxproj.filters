@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Driver Files">
+      <UniqueIdentifier>{8E41214B-6785-4CFE-B992-037D68949A14}</UniqueIdentifier>
+      <Extensions>inf;inv;inx;mof;mc;</Extensions>
+    </Filter>
+    <Filter Include="Header Files\DPCore">
+      <UniqueIdentifier>{c532043b-ae4c-474a-b85c-fd9063026312}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\HDMICore">
+      <UniqueIdentifier>{d140aa30-5001-43f8-bafd-711be701de56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CommonCore">
+      <UniqueIdentifier>{8ba5ec80-f210-43cf-8105-fa63e9b11665}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DPCore">
+      <UniqueIdentifier>{4db0622c-0282-47ae-a493-a22e592b764d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SimDrvInterfaces">
+      <UniqueIdentifier>{b6afafe7-06dd-4d4f-a49c-5734e2c98409}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GenMMIOHandlers">
+      <UniqueIdentifier>{4ed7a19f-ce15-463c-9c23-9c3b7781d6da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GenMMIOHandlers">
+      <UniqueIdentifier>{788497de-acc0-420f-b815-44c2bb89f0ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SimDrvInterfaces">
+      <UniqueIdentifier>{8c5a69a5-b27b-4d9a-8233-4d0db5c75014}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CommonCore">
+      <UniqueIdentifier>{3ba40885-c521-459f-b5f3-888fa847d063}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\HDMICore">
+      <UniqueIdentifier>{64630dfd-13a8-45ad-b198-25b350be5ebb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PersistenceServices">
+      <UniqueIdentifier>{56c26127-090b-418a-88ad-fe75a5a70caa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PersistenceServices">
+      <UniqueIdentifier>{3a7e370f-bda6-407b-bf66-09eda8b9993d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\VBTSimulation">
+      <UniqueIdentifier>{6b1ed8c9-d088-412d-8f08-8c417de7b545}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\VBTSimulation">
+      <UniqueIdentifier>{be4871b7-3816-4451-a95d-ac7cafbdd0ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CommonCore\CommonInclude">
+      <UniqueIdentifier>{c70f9640-d1cc-488d-9834-e2960e516d79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GenMMIOHandlers\Gen13">
+      <UniqueIdentifier>{8544dfd0-5c47-4485-86ea-a1518d7adc2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GenMMIOHandlers\Gen13">
+      <UniqueIdentifier>{4ecee5ea-66d2-4ed9-a664-9b3ed06b8a26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GenMMIOHandlers\Gen14">
+      <UniqueIdentifier>{75e38892-0150-40ee-8699-efd4e6205d50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GenMMIOHandlers\Gen14">
+      <UniqueIdentifier>{7e3c8f40-8650-4119-a69d-b78dd153dd69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GenMMIOHandlers\Gen15">
+      <UniqueIdentifier>{eb985bb4-2a5c-46b5-aa88-e32649b682e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GenMMIOHandlers\Gen15">
+      <UniqueIdentifier>{f0ae74cd-4198-4c1a-9717-7eb69dafa832}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Inf Include="GfxValSimDriver.inf">
+      <Filter>Driver Files</Filter>
+    </Inf>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CommonCore\CommonCore.h">
+      <Filter>Header Files\CommonCore</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonCore\PortingLayer.h">
+      <Filter>Header Files\CommonCore</Filter>
+    </ClInclude>
+    <ClInclude Include="DPCore\AuxDefs.h">
+      <Filter>Header Files\DPCore</Filter>
+    </ClInclude>
+    <ClInclude Include="DPCore\AuxDPCDClient.h">
+      <Filter>Header Files\DPCore</Filter>
+    </ClInclude>
+    <ClInclude Include="DPCore\AuxInterface.h">
+      <Filter>Header Files\DPCore</Filter>
+    </ClInclude>
+    <ClInclude Include="DPCore\DPCDs.h">
+      <Filter>Header Files\DPCore</Filter>
+    </ClInclude>
+    <ClInclude Include="DPCore\I2CSlaves.h">
+      <Filter>Header Files\DPCore</Filter>
+    </ClInclude>
+    <ClInclude Include="DPCore\MSTTopology.h">
+      <Filter>Header Files\DPCore</Filter>
+    </ClInclude>
+    <ClInclude Include="DPCore\SidebandMessageHandlers.h">
+      <Filter>Header Files\DPCore</Filter>
+    </ClInclude>
+    <ClInclude Include="DPCore\SidebandUtil.h">
+      <Filter>Header Files\DPCore</Filter>
+    </ClInclude>
+    <ClInclude Include="DPCore\SST_MST_Common.h">
+      <Filter>Header Files\DPCore</Filter>
+    </ClInclude>
+    <ClInclude Include="DPCore\SSTDisplay.h">
+      <Filter>Header Files\DPCore</Filter>
+    </ClInclude>
+    <ClInclude Include="HDMICore\HDMIInterface.h">
+      <Filter>Header Files\HDMICore</Filter>
+    </ClInclude>
+    <ClInclude Include="DriverInterfaces\CommonIOCTL.h">
+      <Filter>Header Files\SimDrvInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="DriverInterfaces\CommonRxHandlers.h">
+      <Filter>Header Files\SimDrvInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="DriverInterfaces\DPHandlers.h">
+      <Filter>Header Files\SimDrvInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="DriverInterfaces\DPIOCTL.h">
+      <Filter>Header Files\SimDrvInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="DriverInterfaces\EDPIOCTL.h">
+      <Filter>Header Files\SimDrvInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="DriverInterfaces\HDMIHandlers.h">
+      <Filter>Header Files\SimDrvInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="DriverInterfaces\HDMIIOCTL.h">
+      <Filter>Header Files\SimDrvInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="DriverInterfaces\SimDriver.h">
+      <Filter>Header Files\SimDrvInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="DriverInterfaces\SimDrvToGfx.h">
+      <Filter>Header Files\SimDrvInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="DriverInterfaces\SIMDRV_GFX_COMMON.h">
+      <Filter>Header Files\SimDrvInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="GenMMIOHandlers\CommonMMIO.h">
+      <Filter>Header Files\GenMMIOHandlers</Filter>
+    </ClInclude>
+    <ClInclude Include="GenMMIOHandlers\Gen9InterruptRegisters.h">
+      <Filter>Header Files\GenMMIOHandlers</Filter>
+    </ClInclude>
+    <ClInclude Include="DriverInterfaces\DPCoreIOCTLCommonDefs.h">
+      <Filter>Header Files\SimDrvInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="DriverInterfaces\HDMICoreIOCTLCommonDefs.h">
+      <Filter>Header Files\SimDrvInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonCore\ExternalCallBacks.h">
+      <Filter>Header Files\CommonCore</Filter>
+    </ClInclude>
+    <ClInclude Include="GenMMIOHandlers\Gen9MMIO.h">
+      <Filter>Header Files\GenMMIOHandlers</Filter>
+    </ClInclude>
+    <ClInclude Include="HDMICore\GMBusInterface.h">
+      <Filter>Header Files\HDMICore</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonInclude\DisplayDefs.h">
+      <Filter>Header Files\CommonCore\CommonInclude</Filter>
+    </ClInclude>
+    <ClInclude Include="GenMMIOHandlers\Gen10InterruptRegisters.h">
+      <Filter>Header Files\GenMMIOHandlers</Filter>
+    </ClInclude>
+    <ClInclude Include="GenMMIOHandlers\Gen10LPInterruptRegisters.h">
+      <Filter>Header Files\GenMMIOHandlers</Filter>
+    </ClInclude>
+    <ClInclude Include="GenMMIOHandlers\Gen10MMIO.h">
+      <Filter>Header Files\GenMMIOHandlers</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonInclude\BitDefs.h">
+      <Filter>Header Files\CommonCore\CommonInclude</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonInclude\IntelGfxValSimCrimson.h">
+      <Filter>Header Files\CommonCore\CommonInclude</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonInclude\ETWLogging.h">
+      <Filter>Header Files\CommonCore\CommonInclude</Filter>
+    </ClInclude>
+    <ClInclude Include="PeristenceServices\PersistenceHandler.h">
+      <Filter>Header Files\PersistenceServices</Filter>
+    </ClInclude>
+    <ClInclude Include="GenMMIOHandlers\Gen11InterruptRegisters.h">
+      <Filter>Header Files\GenMMIOHandlers</Filter>
+    </ClInclude>
+    <ClInclude Include="GenMMIOHandlers\Gen11MMIO.h">
+      <Filter>Header Files\GenMMIOHandlers</Filter>
+    </ClInclude>
+    <ClInclude Include="GenMMIOHandlers\Gen11p5InterruptRegisters.h">
+      <Filter>Header Files\GenMMIOHandlers</Filter>
+    </ClInclude>
+    <ClInclude Include="GenMMIOHandlers\Gen11p5MMIO.h">
+      <Filter>Header Files\GenMMIOHandlers</Filter>
+    </ClInclude>
+    <ClInclude Include="VBTSimulation\VBTSimulation.h">
+      <Filter>Header Files\VBTSimulation</Filter>
+    </ClInclude>
+    <ClInclude Include="GenMMIOHandlers\Gen12\TGLLPMMIO.h">
+      <Filter>Header Files\GenMMIOHandlers</Filter>
+    </ClInclude>
+    <ClInclude Include="GenMMIOHandlers\Gen12\RKLMMIO.h">
+      <Filter>Header Files\GenMMIOHandlers</Filter>
+    </ClInclude>
+    <ClInclude Include="GenMMIOHandlers\Gen12\DG1InterruptRegisters.h">
+      <Filter>Header Files\GenMMIOHandlers</Filter>
+    </ClInclude>
+    <ClInclude Include="GenMMIOHandlers\Gen12\DG1MMIO.h">
+      <Filter>Header Files\GenMMIOHandlers</Filter>
+    </ClInclude>
+    <ClInclude Include="GenMMIOHandlers\Gen12\LKFRMMIO.h">
+      <Filter>Header Files\GenMMIOHandlers</Filter>
+    </ClInclude>
+    <ClInclude Include="GenMMIOHandlers\Gen12\Gen12CommonInterruptRegisters.h">
+      <Filter>Header Files\GenMMIOHandlers</Filter>
+    </ClInclude>
+    <ClInclude Include="GenMMIOHandlers\Gen12\Gen12CommonMMIO.h">
+      <Filter>Header Files\GenMMIOHandlers</Filter>
+    </ClInclude>
+    <ClInclude Include="GenMMIOHandlers\Gen12\ADLSMMIO.h">
+      <Filter>Header Files\GenMMIOHandlers</Filter>
+    </ClInclude>
+    <ClInclude Include="GenMMIOHandlers\Gen13\DG2MMIO.h">
+      <Filter>Header Files\GenMMIOHandlers\Gen13</Filter>
+    </ClInclude>
+    <ClInclude Include="GenMMIOHandlers\Gen13\Gen13CommonInterruptRegisters.h">
+      <Filter>Header Files\GenMMIOHandlers\Gen13</Filter>
+    </ClInclude>
+    <ClInclude Include="GenMMIOHandlers\Gen13\Gen13CommonMMIO.h">
+      <Filter>Header Files\GenMMIOHandlers\Gen13</Filter>
+    </ClInclude>
+    <ClInclude Include="GenMMIOHandlers\Gen13\ADLPMMIO.h">
+      <Filter>Header Files\GenMMIOHandlers\Gen13</Filter>
+    </ClInclude>
+    <ClInclude Include="DPCore\DPCDModel.h">
+      <Filter>Header Files\DPCore</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonInclude\ValSimCommonInclude.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GenMMIOHandlers\Gen14\Gen14CommonMMIO.h">
+      <Filter>Header Files\GenMMIOHandlers\Gen14</Filter>
+    </ClInclude>
+    <ClInclude Include="GenMMIOHandlers\Gen14\MTLMMIO.h">
+      <Filter>Header Files\GenMMIOHandlers\Gen14</Filter>
+    </ClInclude>
+    <ClInclude Include="GenMMIOHandlers\Gen14\Gen14CommonInterruptRegisters.h">
+      <Filter>Header Files\GenMMIOHandlers\Gen14</Filter>
+    </ClInclude>
+    <ClInclude Include="GenMMIOHandlers\Gen15\Gen15CommonMMIO.h">
+      <Filter>Header Files\GenMMIOHandlers\Gen15</Filter>
+    </ClInclude>
+    <ClInclude Include="GenMMIOHandlers\Gen15\LNLMMIO.h">
+      <Filter>Header Files\GenMMIOHandlers\Gen15</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CommonCore\CommonCore.c">
+      <Filter>Source Files\CommonCore</Filter>
+    </ClCompile>
+    <ClCompile Include="DPCore\AuxDPCDClient.c">
+      <Filter>Source Files\DPCore</Filter>
+    </ClCompile>
+    <ClCompile Include="DPCore\AuxInterface.c">
+      <Filter>Source Files\DPCore</Filter>
+    </ClCompile>
+    <ClCompile Include="DPCore\I2CSlaves.c">
+      <Filter>Source Files\DPCore</Filter>
+    </ClCompile>
+    <ClCompile Include="DPCore\MSTTopology.c">
+      <Filter>Source Files\DPCore</Filter>
+    </ClCompile>
+    <ClCompile Include="DPCore\SidebandMessageHandlers.c">
+      <Filter>Source Files\DPCore</Filter>
+    </ClCompile>
+    <ClCompile Include="DPCore\SideBandUtil.c">
+      <Filter>Source Files\DPCore</Filter>
+    </ClCompile>
+    <ClCompile Include="DPCore\SSTDisplay.c">
+      <Filter>Source Files\DPCore</Filter>
+    </ClCompile>
+    <ClCompile Include="DriverInterfaces\CommonRxHandlers.c">
+      <Filter>Source Files\SimDrvInterfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="DriverInterfaces\DPHandlers.c">
+      <Filter>Source Files\SimDrvInterfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="DriverInterfaces\EDPHandlers.c">
+      <Filter>Source Files\SimDrvInterfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="DriverInterfaces\HDMIHandlers.c">
+      <Filter>Source Files\SimDrvInterfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="DriverInterfaces\SimDriver.c">
+      <Filter>Source Files\SimDrvInterfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="DriverInterfaces\SimDrvToGfx.c">
+      <Filter>Source Files\SimDrvInterfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="GenMMIOHandlers\CommonMMIOHandlers.c">
+      <Filter>Source Files\GenMMIOHandlers</Filter>
+    </ClCompile>
+    <ClCompile Include="GenMMIOHandlers\Gen9MMIOHandlers.c">
+      <Filter>Source Files\GenMMIOHandlers</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonCore\PortingLayer.c">
+      <Filter>Source Files\CommonCore</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonCore\ExternalCallBacks.c">
+      <Filter>Source Files\CommonCore</Filter>
+    </ClCompile>
+    <ClCompile Include="HDMICore\GMBusInterface.c">
+      <Filter>Source Files\HDMICore</Filter>
+    </ClCompile>
+    <ClCompile Include="GenMMIOHandlers\Gen10MMIOHandlers.c">
+      <Filter>Source Files\GenMMIOHandlers</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonCore\ETWLogging.c">
+      <Filter>Source Files\CommonCore</Filter>
+    </ClCompile>
+    <ClCompile Include="PeristenceServices\PersistenceHandler.c">
+      <Filter>Source Files\PersistenceServices</Filter>
+    </ClCompile>
+    <ClCompile Include="GenMMIOHandlers\Gen11MMIOHandlers.c">
+      <Filter>Source Files\GenMMIOHandlers</Filter>
+    </ClCompile>
+    <ClCompile Include="GenMMIOHandlers\Gen11p5MMIOHandlers.c">
+      <Filter>Source Files\GenMMIOHandlers</Filter>
+    </ClCompile>
+    <ClCompile Include="VBTSimulation\VBTSimulation.c">
+      <Filter>Source Files\VBTSimulation</Filter>
+    </ClCompile>
+    <ClCompile Include="GenMMIOHandlers\Gen12\TGLLPMMIOHandlers.c">
+      <Filter>Source Files\GenMMIOHandlers</Filter>
+    </ClCompile>
+    <ClCompile Include="GenMMIOHandlers\Gen12\RKLMMIOHandlers.c">
+      <Filter>Source Files\GenMMIOHandlers</Filter>
+    </ClCompile>
+    <ClCompile Include="GenMMIOHandlers\Gen12\LKFRMMIOHandlers.c">
+      <Filter>Source Files\GenMMIOHandlers</Filter>
+    </ClCompile>
+    <ClCompile Include="GenMMIOHandlers\Gen12\DG1MMIOHandlers.c">
+      <Filter>Source Files\GenMMIOHandlers</Filter>
+    </ClCompile>
+    <ClCompile Include="GenMMIOHandlers\Gen12\Gen12CommonMMIOHandlers.c">
+      <Filter>Source Files\GenMMIOHandlers</Filter>
+    </ClCompile>
+    <ClCompile Include="GenMMIOHandlers\Gen12\ADLSMMIOHandlers.c">
+      <Filter>Source Files\GenMMIOHandlers</Filter>
+    </ClCompile>
+    <ClCompile Include="GenMMIOHandlers\Gen13\DG2MMIOHandlers.c">
+      <Filter>Source Files\GenMMIOHandlers\Gen13</Filter>
+    </ClCompile>
+    <ClCompile Include="GenMMIOHandlers\Gen13\Gen13CommonMMIOHandlers.c">
+      <Filter>Source Files\GenMMIOHandlers\Gen13</Filter>
+    </ClCompile>
+    <ClCompile Include="GenMMIOHandlers\Gen13\ADLPMMIOHandlers.c">
+      <Filter>Source Files\GenMMIOHandlers\Gen13</Filter>
+    </ClCompile>
+    <ClCompile Include="DPCore\DPCDModel.c">
+      <Filter>Source Files\DPCore</Filter>
+    </ClCompile>
+    <ClCompile Include="GenMMIOHandlers\Gen14\MTLMMIOHandlers.c">
+      <Filter>Source Files\GenMMIOHandlers\Gen14</Filter>
+    </ClCompile>
+    <ClCompile Include="GenMMIOHandlers\Gen15\LNLMMIOHandlers.c">
+      <Filter>Source Files\GenMMIOHandlers\Gen15</Filter>
+    </ClCompile>
+    <ClCompile Include="GenMMIOHandlers\Gen15\Gen15CommonMMIOHandlers.c">
+      <Filter>Source Files\GenMMIOHandlers\Gen15</Filter>
+    </ClCompile>
+    <ClCompile Include="GenMMIOHandlers\Gen14\Gen14CommonMMIOHandlers.c">
+      <Filter>Source Files\GenMMIOHandlers\Gen14</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <MessageCompile Include="Resources\IntelGfxValSimCrimson.man">
+      <Filter>Resource Files</Filter>
+    </MessageCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources\IntelGfxValSimCrimson.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

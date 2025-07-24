@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<EDID_CASES>
+<!--VFPDB is a block in edid which marks preferred the preferred mode. Below configs has
+ details of the panel index and corresponding resolution that is marked as preferred in that edid-->
+    <VFPDB>
+        <DP>
+            <Display type ="DP" panelindex="DPS134" hzRes="1920" vtRes="1080" rr="60"/>
+            <Display type ="DP" panelindex="DPS135" hzRes="1280" vtRes="768" rr="60"/>
+            <Display type ="DP" panelindex="DPS136" hzRes="1366" vtRes="768" rr="60"/>
+        </DP>
+        <HDMI>
+            <Display type ="HDMI" panelindex="HDM083" hzRes="1920" vtRes="1080" rr="60"/>
+            <Display type ="HDMI" panelindex="HDM084" hzRes="1280" vtRes="768" rr="60"/>
+            <Display type ="HDMI" panelindex="HDM085" hzRes="1366" vtRes="768" rr="60"/>
+        </HDMI>
+    </VFPDB>
+</EDID_CASES>

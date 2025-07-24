@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root id="root">
+  <DisplayTile id ="tile">
+    <SubMenuDisplaySettings id ="menu">
+      <feature name="SelectDisplay"/>
+      <TabDisplaySettings id="tab">
+        <feature name="Modes"/>
+        <feature name="RefreshRate"/>
+        <feature name="Rotation"/>
+        <feature name="DisplaySettings"/>
+      </TabDisplaySettings>
+      <TabColor id="tab">
+        <feature name="ColorDepth" />
+        <feature name="Gamma" />
+      </TabColor>
+    </SubMenuDisplaySettings>
+    <SubMenuMultipleDisplays id ="menu">
+      <feature name="Config"/>
+    </SubMenuMultipleDisplays>
+  </DisplayTile>
+  <OptionsTile id ="tile">
+    <SubMenuInformationCenter id ="menu">
+      <feature name="SystemInfo"/>
+    </SubMenuInformationCenter>
+  </OptionsTile>
+  
+  <ThreeDTile id ="tile">
+    <feature name="ThreeDBasicSettingFeatures"/>
+  </ThreeDTile>
+
+  <VideoTile id ="tile">
+    <feature name="VideoBasicSettingFeatures"/>
+  </VideoTile>
+
+  <DTCMGraphicsOptions id="Graphics_Options">
+    <feature name="DTCMFeature" />
+    <SubMenuOutputTo id="Output_To">
+      <feature name="DTCMSingleConfig" />
+      <SubMenuCloneDisplays id="Clone_Displays">
+        <feature name="DTCMCloneConfig" />
+      </SubMenuCloneDisplays>
+      <SubMenuExtendedDesktop id="Extended_Desktop">
+        <feature name="DTCMExtendConfig" />
+      </SubMenuExtendedDesktop>
+    </SubMenuOutputTo>
+    <SubMenuHotKeys id="Hot_Keys">
+      <feature name="DTCMHotKeys" />
+    </SubMenuHotKeys>
+  </DTCMGraphicsOptions>
+</Root>

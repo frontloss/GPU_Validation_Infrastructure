@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+   <Feature Name="DSB" Owner="asau1">
+
+     <Test LastModifiedWW="2018.WW46" Name="dsb_verification.py" Owner="asau1" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;ETM" Id="DIDSB001">
+         <CommandLine>python Tests\DSB\dsb_verification.py -TEST_TYPE trigger_dsb_on_four_pipe -EDP_A -DP_D -DP_E -HDMI_B -config extended</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL_LP;RYF;DG1</Platform>
+                <TestEnvironment>TGL_LP_SIM;TGL_LP_EMU;TGL_LP_SOC;RYF_SIM;RYF_EMU;RYF_SOC;DG1_SIM;DG1_EMU;DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="CI;PreETM;ETM" Id="DIDSB002">
+         <CommandLine>python Tests\DSB\dsb_verification.py -TEST_TYPE trigger_dsb_on_four_pipe_discrete_mmio -EDP_A -HDMI_B -DP_E -DP_D -config clone</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL_LP;RYF;DG1</Platform>
+                <TestEnvironment>TGL_LP_SIM;TGL_LP_EMU;TGL_LP_SOC;RYF_SIM;RYF_EMU;RYF_SOC;DG1_SIM;DG1_EMU;DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="CI;PreETM;ETM" Id="DIDSB003">
+         <CommandLine>python Tests\DSB\dsb_verification.py -TEST_TYPE trigger_dsb_on_four_pipe_during_Vblank -EDP_A -HDMI_B -DP_D -DP_E -config extended</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL_LP;RYF;DG1</Platform>
+                <TestEnvironment>TGL_LP_EMU;TGL_LP_SOC;RYF_EMU;RYF_SOC;DG1_EMU;DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="CI;PreETM;ETM" Id="DIDSB004">
+         <CommandLine>python Tests\DSB\dsb_verification.py -TEST_TYPE trigger_dsb_on_four_pipe_during_Vblank -EDP_A -HDMI_B -DP_D -DP_E -config clone -SINGLE_TRIGGER</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL_LP;RYF;DG1</Platform>
+                <TestEnvironment>TGL_LP_EMU;TGL_LP_SOC;RYF_EMU;RYF_SOC;DG1_EMU;DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="CI;PreETM;ETM" Id="DIDSB005">
+         <CommandLine>python Tests\DSB\dsb_verification.py -TEST_TYPE trigger_dsb_on_four_pipe_during_scanline -EDP_A -HDMI_B -DP_D -DP_E -config clone</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL_LP;RYF;DG1</Platform>
+                <TestEnvironment>TGL_LP_EMU;TGL_LP_SOC;RYF_EMU;RYF_SOC;DG1_EMU;DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="CI;PreETM;ETM" Id="DIDSB006">
+         <CommandLine>python Tests\DSB\dsb_verification.py -TEST_TYPE trigger_dsb_on_four_pipe_wait_for_usec -EDP_A -DP_E -HDMI_B -DP_D -config clone</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL_LP;RYF;DG1</Platform>
+                <TestEnvironment>TGL_LP_EMU;TGL_LP_SOC;RYF_EMU;RYF_SOC;DG1_EMU;DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="CI;PreETM;ETM" Id="DIDSB007">
+         <CommandLine>python Tests\DSB\dsb_verification.py -TEST_TYPE trigger_dsb_on_four_pipe_contiguous_polling -EDP_A -DP_E -DP_D -HDMI_B -config extended</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL_LP;RYF;DG1</Platform>
+                <TestEnvironment>TGL_LP_EMU;TGL_LP_SOC;RYF_EMU;RYF_SOC;DG1_EMU;DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="CI;PreETM;ETM" Id="DIDSB008">
+         <CommandLine>python Tests\DSB\dsb_verification.py -TEST_TYPE contiguous_trigger_dsb_on_single_pipe -EDP_A -config single</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL_LP;RYF;DG1;RKL</Platform>
+                <TestEnvironment>TGL_LP_EMU;TGL_LP_SOC;RYF_EMU;RYF_SOC;DG1_EMU;DG1_SOC;RKL_SIM;RKL_EMU;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="CI;PreETM;ETM" Id="DIDSB009">
+         <CommandLine>python Tests\DSB\dsb_verification.py -TEST_TYPE trigger_dsb_on_three_pipe -EDP_A -DP_D -HDMI_B -config extended</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SIM;RKL_EMU;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="CI;PreETM;ETM" Id="DIDSB010">
+         <CommandLine>python Tests\DSB\dsb_verification.py -TEST_TYPE trigger_dsb_on_three_pipe_discrete_mmio -EDP_A -HDMI_B -DP_D -config clone</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SIM;RKL_EMU;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="CI;PreETM;ETM" Id="DIDSB011">
+         <CommandLine>python Tests\DSB\dsb_verification.py -TEST_TYPE trigger_dsb_on_three_pipe_during_Vblank -EDP_A -HDMI_B -DP_D -config extended</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SIM;RKL_EMU;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="CI;PreETM;ETM" Id="DIDSB012">
+         <CommandLine>python Tests\DSB\dsb_verification.py -TEST_TYPE trigger_dsb_on_three_pipe_during_Vblank -EDP_A -HDMI_B -DP_D -config clone -SINGLE_TRIGGER</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SIM;RKL_EMU;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="CI;PreETM;ETM" Id="DIDSB013">
+         <CommandLine>python Tests\DSB\dsb_verification.py -TEST_TYPE trigger_dsb_on_three_pipe_during_scanline -EDP_A -HDMI_B -DP_D -config clone</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SIM;RKL_EMU;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="CI;PreETM;ETM" Id="DIDSB014">
+         <CommandLine>python Tests\DSB\dsb_verification.py -TEST_TYPE trigger_dsb_on_three_pipe_wait_for_usec -EDP_A -HDMI_B -DP_D -config clone</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SIM;RKL_EMU;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="CI;PreETM;ETM" Id="DIDSB015">
+         <CommandLine>python Tests\DSB\dsb_verification.py -TEST_TYPE trigger_dsb_on_three_pipe_contiguous_polling -EDP_A  -DP_D -HDMI_B -config extended</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SIM;RKL_EMU;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+   </Feature>
+</Display_Automation_2.0>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Sequences>
+  <Seq1>
+    <Config SINGLE ="a1"/>
+    <Config SINGLE ="a2"/>
+    <Config SINGLE ="a4"/>
+    <Config SINGLE ="b1"/>
+    <Config SINGLE ="b2"/>
+    <Config SINGLE ="b4"/>
+    <Config EXTENDED = "a1,a2"/>
+    <Config EXTENDED = "a2,a3"/>
+    <Config EXTENDED = "a3,a4"/>
+    <Config EXTENDED = "a1,b1"/>
+    <Config EXTENDED = "b2,b3"/>
+    <Config EXTENDED = "a4,b4"/>
+    <!--<Config CLONE="1,2"/>
+    <Config CLONE="2,3,1"/>-->
+    <Config EXTENDED="a1,a2,a3"/>
+    <Config EXTENDED="b1,b2,b4"/>
+    <Config EXTENDED="a4,b3,b1"/>
+    <Config EXTENDED="a1,a2,a3,a4"/>
+    <Config EXTENDED="a2,a3,a5,a6"/>
+    <Config EXTENDED="a1,a2,a4,a5"/>
+    <Config EXTENDED="a1,a3,a4,a5"/>
+    <Config EXTENDED="a1,b1,b2,b3"/>
+    <Config EXTENDED="a2,a3,b1,b4"/>
+    <Config EXTENDED="a1,a2,a3,a4,b1"/>
+    <Config EXTENDED="a3,a4,b1,b2,b3,b4"/>
+    <Config EXTENDED="a1,a2,a3,b1,b2,b3,b4"/>
+    <Config EXTENDED="a1,a2,a3,a4,b1,b2,b3,b4"/>
+    <Config SINGLE="a3"/>
+    <Config SINGLE="b3"/>
+  </Seq1>
+  <Seq2>
+    <Config SINGLE ="1"/>
+    <Config SINGLE ="2"/>
+    <Config EXTENDED = "1,2"/>
+    <Config EXTENDED="1,2,3"/>
+    <Config EXTENDED="3,1,2"/>
+    <Config SINGLE="3"/>
+  </Seq2>
+  <Single>
+    <Config SINGLE ="1"/>
+  </Single>
+  <Powereventsseq>
+    <Config SINGLE ="a1"/>
+    <Config CLONE ="a1,b1"/>
+    <Config SINGLE ="b1"/>
+    <Config EXTENDED ="a1,a2"/>
+    <Config EXTENDED ="a1,b1"/>
+    <Config EXTENDED="a1,a2,a3"/>
+    <Config EXTENDED="a1,a2,a3,a4"/>
+    <Config EXTENDED="a1,a3,a4,a5"/>
+    <Config EXTENDED="a1,a2,a5,a6"/>
+    <Config EXTENDED="a1,a2,b1,b2"/>
+    <Config EXTENDED="a1,a2,a3,b1,b2,b3"/>
+    <Config EXTENDED="a1,a2,a3,a4,b1,b2,b3,b4"/>
+  </Powereventsseq>
+  <Presi>
+    <Config SINGLE ="a1"/>
+    <Config EXTENDED ="a1,a2"/>
+    <Config EXTENDED ="a1,a2,a3"/>
+    <Config EXTENDED="a3,a2,a4,a1"/>
+    <Config EXTENDED="a2,a1"/>
+  </Presi>
+
+</Sequences>

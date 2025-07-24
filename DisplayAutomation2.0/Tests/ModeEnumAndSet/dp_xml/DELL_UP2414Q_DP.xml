@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<Display DPCD="DELL_UP2414Q_DPCD.txt" EDID="DELL_UP2414Q_DP.bin">
+	<Revision CreatedBy="P, Raghupathy" CreatedOn="WW22" CurrentRevision="1">
+		<RevisionHistory RevisionID="1" Name="Gurusamy, BalajiX" WW="WW23.3" Comments="Mode Reviewed and Verified" />
+	</Revision>
+	<GoldenModeTable>
+		<!-- <EDIDInstance ModeIndex="-" HActive="720" VActive="400" RefreshRate="70" Scanline="Progressive" Scaling="Default" PixelCLK="" /> Currently Driver does not support this mode-->
+		<EDIDInstance ModeIndex="21" HActive="640" VActive="480" RefreshRate="59" Scanline="Progressive" Scaling="Default" PixelCLK="25174800" />
+		<!-- <EDIDInstance ModeIndex="22" HActive="640" VActive="480" RefreshRate="60" Scanline="Progressive" Scaling="Default" PixelCLK="25200000" /> -->
+		<!-- <EDIDInstance ModeIndex="23" HActive="640" VActive="480" RefreshRate="75" Scanline="Progressive" Scaling="Default" PixelCLK="31500000" /> -->
+		<EDIDInstance ModeIndex="28" HActive="720" VActive="480" RefreshRate="59" Scanline="Progressive" Scaling="Default" PixelCLK="27000000" />
+		<!-- <EDIDInstance ModeIndex="29" HActive="720" VActive="480" RefreshRate="60" Scanline="Progressive" Scaling="Default" PixelCLK="27026900" /> -->
+		<!-- <EDIDInstance ModeIndex="34" HActive="720" VActive="576" RefreshRate="50" Scanline="Progressive" Scaling="Default" PixelCLK="27000000" /> -->
+		<!-- <EDIDInstance ModeIndex="39" HActive="800" VActive="600" RefreshRate="60" Scanline="Progressive" Scaling="Default" PixelCLK="40000000" /> -->
+		<!-- <EDIDInstance ModeIndex="40" HActive="800" VActive="600" RefreshRate="75" Scanline="Progressive" Scaling="Default" PixelCLK="49500000" /> -->
+		<!-- <EDIDInstance ModeIndex="45" HActive="1024" VActive="768" RefreshRate="59" Scanline="Progressive" Scaling="Default" PixelCLK="64935000" /> Mode is moved to media RR modes and no longer listed in CE modes by Yangra driver -->
+		<!-- <EDIDInstance ModeIndex="46" HActive="1024" VActive="768" RefreshRate="60" Scanline="Progressive" Scaling="Default" PixelCLK="65000000" /> -->
+		<!-- <EDIDInstance ModeIndex="47" HActive="1024" VActive="768" RefreshRate="75" Scanline="Progressive" Scaling="Default" PixelCLK="78750000" /> -->
+		<!-- <EDIDInstance ModeIndex="52" HActive="1152" VActive="864" RefreshRate="75" Scanline="Progressive" Scaling="Default" PixelCLK="108000000" /> -->
+		<EDIDInstance ModeIndex="61" HActive="1280" VActive="720" RefreshRate="50" Scanline="Progressive" Scaling="Default" PixelCLK="74250000" />
+		<EDIDInstance ModeIndex="62" HActive="1280" VActive="720" RefreshRate="59" Scanline="Progressive" Scaling="Default" PixelCLK="74175800" />
+		<!-- <EDIDInstance ModeIndex="63" HActive="1280" VActive="720" RefreshRate="60" Scanline="Progressive" Scaling="Default" PixelCLK="74250000" /> -->
+		<!-- <EDIDInstance ModeIndex="72" HActive="1280" VActive="800" RefreshRate="60" Scanline="Progressive" Scaling="Default" PixelCLK="83500000" /> -->
+		<!-- <EDIDInstance ModeIndex="81" HActive="1280" VActive="1024" RefreshRate="59" Scanline="Progressive" Scaling="Default" PixelCLK="107892100" /> Mode is moved to media RR modes and no longer listed in CE modes by Yangra driver -->
+		<!-- <EDIDInstance ModeIndex="82" HActive="1280" VActive="1024" RefreshRate="60" Scanline="Progressive" Scaling="Default" PixelCLK="108000000" /> -->
+		<!-- <EDIDInstance ModeIndex="83" HActive="1280" VActive="1024" RefreshRate="75" Scanline="Progressive" Scaling="Default" PixelCLK="135000000" /> -->
+		<!-- <EDIDInstance ModeIndex="100" HActive="1440" VActive="480" RefreshRate="59" Scanline="Interlaced" Scaling="Default" PixelCLK="" /> pixel replicated interlaced mode is not supported on DP interface for Yangra. Even though EDID indicates-->
+		<!-- <EDIDInstance ModeIndex="101" HActive="1440" VActive="480" RefreshRate="60" Scanline="Interlaced" Scaling="Default" PixelCLK="" /> pixel replicated interlaced mode is not supported on DP interface for Yangra. Even though EDID indicates-->
+		<!-- <EDIDInstance ModeIndex="106" HActive="1440" VActive="576" RefreshRate="50" Scanline="Interlaced" Scaling="Default" PixelCLK="" /> pixel replicated interlaced mode is not supported on DP interface for Yangra. Even though EDID indicates-->
+		<!-- <EDIDInstance ModeIndex="119" HActive="1600" VActive="1200" RefreshRate="59" Scanline="Progressive" Scaling="Default" PixelCLK="161838100" /> Mode is moved to media RR modes and no longer listed in CE modes by Yangra driver -->
+		<!-- <EDIDInstance ModeIndex="120" HActive="1600" VActive="1200" RefreshRate="60" Scanline="Progressive" Scaling="Default" PixelCLK="162000000" /> -->
+		<EDIDInstance ModeIndex="125" HActive="1680" VActive="1050" RefreshRate="59" Scanline="Progressive" Scaling="Default" PixelCLK="146250000" />
+		<!-- <EDIDInstance ModeIndex="126" HActive="1680" VActive="1050" RefreshRate="60" Scanline="Progressive" Scaling="Default" PixelCLK="146396200" /> -->
+		<!-- <EDIDInstance ModeIndex="139" HActive="1920" VActive="1080" RefreshRate="23" Scanline="Progressive" Scaling="Default" PixelCLK="74175800" /> -->
+		<!-- <EDIDInstance ModeIndex="140" HActive="1920" VActive="1080" RefreshRate="24" Scanline="Progressive" Scaling="Default" PixelCLK="74250000" /> -->
+		<!-- <EDIDInstance ModeIndex="141" HActive="1920" VActive="1080" RefreshRate="50" Scanline="Progressive" Scaling="Default" PixelCLK="148500000" /> -->
+		<!-- <EDIDInstance ModeIndex="142" HActive="1920" VActive="1080" RefreshRate="50" Scanline="Interlaced" Scaling="Default" PixelCLK="74250000" /> -->
+		<!-- <EDIDInstance ModeIndex="143" HActive="1920" VActive="1080" RefreshRate="59" Scanline="Progressive" Scaling="Default" PixelCLK="148351600" /> -->
+		<!-- <EDIDInstance ModeIndex="144" HActive="1920" VActive="1080" RefreshRate="60" Scanline="Progressive" Scaling="Default" PixelCLK="148500000" /> -->
+		<!-- <EDIDInstance ModeIndex="145" HActive="1920" VActive="1080" RefreshRate="59" Scanline="Interlaced" Scaling="Default" PixelCLK="74175800" /> -->
+		<!-- <EDIDInstance ModeIndex="146" HActive="1920" VActive="1080" RefreshRate="60" Scanline="Interlaced" Scaling="Default" PixelCLK="74250000" /> -->
+		<!-- <EDIDInstance ModeIndex="151" HActive="1920" VActive="1200" RefreshRate="59" Scanline="Progressive" Scaling="Default" PixelCLK="192963000" /> Mode is moved to media RR modes and no longer listed in CE modes by Yangra driver -->
+		<!-- <EDIDInstance ModeIndex="152" HActive="1920" VActive="1200" RefreshRate="60" Scanline="Progressive" Scaling="Default" PixelCLK="193156000" /> -->
+		<!-- <EDIDInstance ModeIndex="181" HActive="3840" VActive="2160" RefreshRate="29" Scanline="Progressive" Scaling="Default" PixelCLK="262750000" /> --> <!-- Non CEA Mode -->
+		<EDIDInstance ModeIndex="182" HActive="3840" VActive="2160" RefreshRate="30" Scanline="Progressive" Scaling="Default" PixelCLK="263012700" />
+	</GoldenModeTable>
+	<Platform Name="ICLLP" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+	</Platform>
+	<Platform Name="GLK" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">182=0x08</ModeControlFlag>
+	</Platform>
+    <Platform Name="CNL" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+	</Platform>
+	<Platform Name="CFL" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+	</Platform>
+	<Platform Name="KBL" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+	</Platform>
+		<Platform Name="SKL" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+	</Platform>
+	<Platform Name="ICLHP" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+	</Platform>
+	<Platform Name="LKF1" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+	</Platform>
+	<Platform Name="JSL" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x10">182=0x08</ModeControlFlag>
+	</Platform>
+	<Platform Name="TGL" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+	</Platform>
+	<Platform Name="DG1" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+	</Platform>
+	<Platform Name="DG2" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+	</Platform>
+	<Platform Name="RKL" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+	</Platform>
+	<Platform Name="ADLS" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+	</Platform>
+	<Platform Name="ADLP" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+	</Platform>
+	<Platform Name="MTL" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+	</Platform>
+	<Platform Name="ELG" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+	</Platform>
+	<Platform Name="LNL" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+	</Platform>
+	<Platform Name="PTL" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+	</Platform>
+	<Platform Name="NVL" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+	</Platform>
+	<Platform Name="CLS" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+	</Platform>
+</Display>
+<!--  ModeControlFlag 8 Bit Definition:
+	{
+	('colorFormat'	, c_ubyte, 2), # Bit 0,1
+	('reserved_2' 	, c_ubyte, 1), # Bit 2
+	('bpc'		  	, c_ubyte, 2), # Bit 3,4
+	('reserved_5' 	, c_ubyte, 1), # Bit 5
+	('pixelRepMode' , c_ubyte, 1), # Bit 6
+	('reserved_7' 	, c_ubyte, 1)  # Bit 7
+	}
+
+	| colorFormat_RGB 		= 00 |
+	| colorFormat_YUV420 	= 01 |
+	| colorFormat_YUV444 	= 10 |
+	| colorFormat_YUV422 	= 11 |
+
+	|  bpc_6bpc	 = 00  |
+	|  bpc_8bpc  = 01  |
+	|  bpc_10bpc = 10  |
+	|  bpc_12bpc = 11  |
+
+	pixelRepMode (0 = Not a Pixel Replicated Mode, 1 = Pixel Replicated Mode) -->

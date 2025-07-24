@@ -1,0 +1,177 @@
+<ULTFrameworkParams>
+  <ULTEscapeCode name ="ULT_CREATE_RESOURCE">
+    <DumpFilePath>DumpFiles\1920_1080_X_RGB.8.8.8.8</DumpFilePath>
+    <DumpFilePath>DumpFiles\1024_768_X_RGB.8.8.8.8</DumpFilePath>
+    <DumpFilePath>DumpFiles\1360_768_Y_RGB.8.8.8.8</DumpFilePath>
+    <FileIndex>1</FileIndex>
+  </ULTEscapeCode>
+  <ULTEscapeCode name ="ULT_SET_SRC_ADDRESS">
+    <SourceId>1</SourceId>
+    <SourceAddressFlags>FlipOnNextVSync</SourceAddressFlags>
+    <Duration> </Duration>
+  </ULTEscapeCode>
+  <ULTEscapeCode name ="ULT_GET_MPO_CAPS">
+    <SourceId>1</SourceId>
+  </ULTEscapeCode>
+  <ULTEscapeCode name ="ULT_MPO_GROUP_CAPS">
+    <SourceId></SourceId>
+  </ULTEscapeCode>
+  <ULTEscapeCode name ="ULT_CHECK_MPO">
+    <NumPaths>1</NumPaths>
+    <Pipe index ="1">
+      <Plane index ="1">
+        <Path>"Mapper\DumpFiles\1024_768_X_RGB.8.8.8.8"</Path>
+        <Enabled>True</Enabled>
+        <MPOFlags>1</MPOFlags>
+        <SourceRect>0,0,1024,768</SourceRect>
+        <DestRect>100,100,1124,868</DestRect>
+        <ClipRect>0,0,1360,768</ClipRect>
+        <MPORotation>MPO_ROTATION_IDENTITY</MPORotation>
+        <HwOrientation>MPO_ORIENTATION_DEFAULT</HwOrientation>
+        <MPOBlend>1</MPOBlend>
+        <MPOVideoFormat>MPO_VIDEO_FRAME_FORMAT_PROGRESSIVE</MPOVideoFormat>
+        <MPOYCbCrFlags>1</MPOYCbCrFlags>
+        <MPOStereoFormat>MPO_FORMAT_MONO</MPOStereoFormat>
+        <MPOStereoFlipMode>MPO_FLIP_NONE</MPOStereoFlipMode>
+        <StretchQuality>MPO_STRETCH_QUALITY_BILINEAR</StretchQuality>
+        <SurfaceMemOffsetInfo>
+          <SurfaceMemoryType>SURFACE_MEMORY_X_TILED</SurfaceMemoryType>
+          <TiledXOffset>1</TiledXOffset>
+          <TiledYOffset>2</TiledYOffset>
+          <TiledUVXOffset>3</TiledUVXOffset>
+          <TiledUVYOffset>4</TiledUVYOffset>
+          <UVDistance>5</UVDistance>
+          <AuxDistance>6</AuxDistance>
+        </SurfaceMemOffsetInfo>
+        <PixelFormat>SB_B8G8R8A8</PixelFormat>
+        <IsAsyncMMIOFlip>False</IsAsyncMMIOFlip>
+      </Plane>
+      <Plane index ="2">
+        <Path>Mapper\DumpFiles\1360_768_X_RGB.8.8.8.8</Path>
+        <Enabled>True</Enabled>
+        <MPOFlags>1</MPOFlags>
+        <SourceRect>0,0,1360,768</SourceRect>
+        <DestRect>0,0,1360,768</DestRect>
+        <ClipRect>0,0,1360,768</ClipRect>
+        <MPORotation>MPO_ROTATION_IDENTITY</MPORotation>
+        <HwOrientation>MPO_ORIENTATION_DEFAULT</HwOrientation>
+        <MPOBlend>1</MPOBlend>
+        <MPOVideoFormat>MPO_VIDEO_FRAME_FORMAT_PROGRESSIVE</MPOVideoFormat>
+        <MPOYCbCrFlags>1</MPOYCbCrFlags>
+        <MPOStereoFormat>MPO_FORMAT_MONO</MPOStereoFormat>
+        <MPOStereoFlipMode>MPO_FLIP_NONE</MPOStereoFlipMode>
+        <StretchQuality>MPO_STRETCH_QUALITY_BILINEAR</StretchQuality>
+        <SurfaceMemOffsetInfo>
+          <SurfaceMemoryType>SURFACE_MEMORY_X_TILED</SurfaceMemoryType>
+          <TiledXOffset>1</TiledXOffset>
+          <TiledYOffset>2</TiledYOffset>
+          <TiledUVXOffset>3</TiledUVXOffset>
+          <TiledUVYOffset>4</TiledUVYOffset>
+          <UVDistance>5</UVDistance>
+          <AuxDistance>6</AuxDistance>
+        </SurfaceMemOffsetInfo>
+        <PixelFormat>SB_B8G8R8A8</PixelFormat>
+        <IsAsyncMMIOFlip>False</IsAsyncMMIOFlip>
+      </Plane>
+    </Pipe>
+    <Pipe index ="2">
+      <Plane index ="1">
+        <Path>"Mapper\DumpFiles\1024_768_X_RGB.8.8.8.8.9.9"</Path>
+        <Enabled>True</Enabled>
+        <MPOFlags>1</MPOFlags>
+        <SourceRect>0,0,1024,768</SourceRect>
+        <DestRect>100,100,1124,868</DestRect>
+        <ClipRect>0,0,1360,768</ClipRect>
+        <MPORotation>MPO_ROTATION_IDENTITY</MPORotation>
+        <HwOrientation>MPO_ORIENTATION_DEFAULT</HwOrientation>
+        <MPOBlend>1</MPOBlend>
+        <MPOVideoFormat>MPO_VIDEO_FRAME_FORMAT_PROGRESSIVE</MPOVideoFormat>
+        <MPOYCbCrFlags>1</MPOYCbCrFlags>
+        <MPOStereoFormat>MPO_FORMAT_MONO</MPOStereoFormat>
+        <MPOStereoFlipMode>MPO_FLIP_NONE</MPOStereoFlipMode>
+        <StretchQuality>MPO_STRETCH_QUALITY_BILINEAR</StretchQuality>
+        <SurfaceMemOffsetInfo>
+          <SurfaceMemoryType>SURFACE_MEMORY_X_TILED</SurfaceMemoryType>
+          <TiledXOffset>1</TiledXOffset>
+          <TiledYOffset>2</TiledYOffset>
+          <TiledUVXOffset>3</TiledUVXOffset>
+          <TiledUVYOffset>4</TiledUVYOffset>
+          <UVDistance>5</UVDistance>
+          <AuxDistance>6</AuxDistance>
+        </SurfaceMemOffsetInfo>
+        <PixelFormat>SB_B8G8R8A8</PixelFormat>
+        <IsAsyncMMIOFlip>False</IsAsyncMMIOFlip>
+      </Plane>
+      <Plane index ="2">
+        <Path>Mapper\DumpFiles\1360_768_X_RGB.8.8.8.8</Path>
+        <Enabled>True</Enabled>
+        <MPOFlags>1</MPOFlags>
+        <SourceRect>0,0,1360,768</SourceRect>
+        <DestRect>0,0,1360,768</DestRect>
+        <ClipRect>0,0,1360,768</ClipRect>
+        <MPORotation>MPO_ROTATION_IDENTITY</MPORotation>
+        <HwOrientation>MPO_ORIENTATION_DEFAULT</HwOrientation>
+        <MPOBlend>1</MPOBlend>
+        <MPOVideoFormat>MPO_VIDEO_FRAME_FORMAT_PROGRESSIVE</MPOVideoFormat>
+        <MPOYCbCrFlags>1</MPOYCbCrFlags>
+        <MPOStereoFormat>MPO_FORMAT_MONO</MPOStereoFormat>
+        <MPOStereoFlipMode>MPO_FLIP_NONE</MPOStereoFlipMode>
+        <StretchQuality>MPO_STRETCH_QUALITY_BILINEAR</StretchQuality>
+        <SurfaceMemOffsetInfo>
+          <SurfaceMemoryType>SURFACE_MEMORY_X_TILED</SurfaceMemoryType>
+          <TiledXOffset>1</TiledXOffset>
+          <TiledYOffset>2</TiledYOffset>
+          <TiledUVXOffset>3</TiledUVXOffset>
+          <TiledUVYOffset>4</TiledUVYOffset>
+          <UVDistance>5</UVDistance>
+          <AuxDistance>6</AuxDistance>
+        </SurfaceMemOffsetInfo>
+        <PixelFormat>SB_B8G8R8A8</PixelFormat>
+        <IsAsyncMMIOFlip>False</IsAsyncMMIOFlip>
+      </Plane>
+    </Pipe>
+  </ULTEscapeCode>
+  <ULTEscapeCode name ="ULT_SET_SRC_ADD_MPO">
+    <NumPlanes>3</NumPlanes>
+    <SourceId>1</SourceId>
+    <SourceAddressFlags>FlipOnNextVSync</SourceAddressFlags>
+    <Plane index ="0">
+      <Path>"Mapper\DumpFiles\1024_768_X_RGB.8.8.8.8"</Path>
+      <Enabled>True</Enabled>
+      <Affected>True</Affected>
+      <MPOFlags>1</MPOFlags>
+      <SourceRect>0,0,1024,768</SourceRect>
+      <DestRect>100,100,1124,868</DestRect>
+      <ClipRect>0,0,1360,768</ClipRect>
+      <MPORotation>MPO_ROTATION_IDENTITY</MPORotation>
+      <HwOrientation>MPO_ORIENTATION_DEFAULT</HwOrientation>
+      <MPOBlend>1</MPOBlend>
+      <MPOVideoFormat>MPO_VIDEO_FRAME_FORMAT_PROGRESSIVE</MPOVideoFormat>
+      <MPOYCbCrFlags>1</MPOYCbCrFlags>
+      <MPOStereoFormat>MPO_FORMAT_MONO</MPOStereoFormat>
+      <MPOStereoFlipMode>MPO_FLIP_NONE</MPOStereoFlipMode>
+      <StretchQuality>MPO_STRETCH_QUALITY_BILINEAR</StretchQuality>
+    </Plane>
+    <Plane index ="2">
+      <Path>Mapper\DumpFiles\1360_768_X_RGB.8.8.8.8</Path>
+      <Enabled>True</Enabled>
+      <Affected>True</Affected>
+      <MPOFlags>1</MPOFlags>
+      <SourceRect>0,0,1360,768</SourceRect>
+      <DestRect>0,0,1360,768</DestRect>
+      <ClipRect>0,0,1360,768</ClipRect>
+      <MPORotation>MPO_ROTATION_IDENTITY</MPORotation>
+      <HwOrientation>MPO_ORIENTATION_DEFAULT</HwOrientation>
+      <MPOBlend>1</MPOBlend>
+      <MPOVideoFormat>MPO_VIDEO_FRAME_FORMAT_PROGRESSIVE</MPOVideoFormat>
+      <MPOYCbCrFlags>1</MPOYCbCrFlags>
+      <MPOStereoFormat>MPO_FORMAT_MONO</MPOStereoFormat>
+      <MPOStereoFlipMode>MPO_FLIP_NONE</MPOStereoFlipMode>
+      <StretchQuality>MPO_STRETCH_QUALITY_BILINEAR</StretchQuality>
+    </Plane>
+  </ULTEscapeCode>
+</ULTFrameworkParams>
+
+
+
+

@@ -1,0 +1,187 @@
+<Display_Automation_2.0>
+
+   <Feature Name="VirtualDisplay" Owner="agpatel">
+
+     <Test LastModifiedWW="2017.WW31" Name="virtual_display_basic.py" Owner="agpatel" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;GFT" Id="VRDIS001">
+         <CommandLine>python Tests\VirtualDisplay\virtual_display_basic.py -edp_a -config single</CommandLine>
+         <OS>WINRS1;WINRS2;WINRS3</OS>
+         <Platform>KBL_ULX;SKL_ULX;KBL_ULT;SKL_ULT;KBL_Halo;SKL_Halo;GLK;ICL;CNL_ULX;CFL_HALO;CFL_DT;CFL_ULT;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_SOC;TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Deployed@SKL_SOC,KBL_SOC,GLK_SOC,CFL_SOC</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="CI;PreETM;GFT" Id="VRDIS002">
+         <CommandLine>python Tests\VirtualDisplay\virtual_display_basic.py -edp_a -dp_b -config extended</CommandLine>
+         <OS>WINRS1;WINRS2;WINRS3</OS>
+         <Platform>KBL_Halo;SKL_Halo;CNL_ULX;CFL_HALO</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+	   
+	   	<TestInstance Grids="CI;PreETM;ETM" Id="VRDIS012">
+         <CommandLine>python Tests\VirtualDisplay\virtual_display_basic.py -mipi_a</CommandLine>
+         <OS>WINRS3</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Blocked@LKF</QualificationStatus>
+       </TestInstance>
+	   
+	   	<TestInstance Grids="CI;PreETM;ETM" Id="VRDIS015">
+         <CommandLine>python Tests\VirtualDisplay\virtual_display_basic.py -edp_a -virtual_displays 4</CommandLine>
+         <OS>WINRS3</OS>
+         <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+
+     <Test LastModifiedWW="2017.WW31" Name="virtual_display_s3.py" Owner="agpatel" Priority="P2" Version="1">
+
+       <TestInstance Grids="PreETM;GFT" Id="VRDIS003">
+         <CommandLine>python Tests\VirtualDisplay\virtual_display_s3.py -edp_a</CommandLine>
+         <OS>WINRS1;WINRS2;WINRS3</OS>
+         <Platform>KBL_ULX;SKL_ULX;KBL_ULT;SKL_ULT;KBL_Halo;SKL_Halo;GLK;ICL;CNL_ULX;CFL_HALO;CFL_DT;CFL_ULT;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_SOC;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Deployed@SKL_SOC,KBL_SOC,CFL_SOC</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="PreETM;GFT" Id="VRDIS004">
+         <CommandLine>python Tests\VirtualDisplay\virtual_display_s3.py -edp_a -dp_b -config clone</CommandLine>
+         <OS>WINRS1;WINRS2;WINRS3</OS>
+         <Platform>KBL_Halo;SKL_Halo;CNL_ULX;CFL_HALO</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Deployed@GLK_SOC,CFL_SOC</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+
+     <Test LastModifiedWW="2017.WW31" Name="virtual_display_hotplug_unplug.py" Owner="agpatel" Priority="P1" Version="1">
+
+       <TestInstance Grids="CI;PreETM;GFT" Id="VRDIS005">
+         <CommandLine>python Tests\VirtualDisplay\virtual_display_hotplug_unplug.py -edp_a -dp_b -config clone</CommandLine>
+         <OS>WINRS1;WINRS2;WINRS3</OS>
+         <Platform>KBL_ULX;SKL_ULX;KBL_ULT;SKL_ULT;GLK;CFL_HALO</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="CI;PreETM;GFT" Id="VRDIS006">
+         <CommandLine>python Tests\VirtualDisplay\virtual_display_hotplug_unplug.py -edp_a -dp_b -config extended</CommandLine>
+         <OS>WINRS1;WINRS2;WINRS3</OS>
+         <Platform>KBL_ULX;SKL_ULX;KBL_ULT;SKL_ULT;GLK;ICL;CFL_HALO;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_SOC;TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+	   
+	   	<TestInstance Grids="CI;PreETM;ETM" Id="VRDIS013">
+         <CommandLine>python Tests\VirtualDisplay\virtual_display_hotplug_unplug.py -mipi_a -dp_d -config extended</CommandLine>
+         <OS>WINRS3</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Blocked@LKF</QualificationStatus>
+       </TestInstance>	   
+
+     </Test>
+
+     <Test LastModifiedWW="2017.WW31" Name="virtual_display_displayswitch.py" Owner="agpatel" Priority="P1" Version="1">
+
+       <TestInstance Grids="CI;PreETM;GFT" Id="VRDIS007">
+         <CommandLine>python Tests\VirtualDisplay\virtual_display_displayswitch.py -edp_a -dp_c</CommandLine>
+         <OS>WINRS1;WINRS2;WINRS3</OS>
+         <Platform>KBL_ULX;SKL_ULX;KBL_ULT;SKL_ULT;CFL_HALO</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Deployed@SKL_SOC,KBL_SOC,CFL_SOC</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="CI;PreETM;GFT" Id="VRDIS008">
+         <CommandLine>python Tests\VirtualDisplay\virtual_display_displayswitch.py -edp_a -hdmi_c</CommandLine>
+         <OS>WINRS1;WINRS2;WINRS3</OS>
+         <Platform>KBL_Halo;SKL_Halo;CNL_ULX</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+
+     <Test LastModifiedWW="2017.WW31" Name="virtual_display_tdr.py" Owner="agpatel" Priority="P1" Version="1">
+
+       <TestInstance Grids="CI;PreETM;GFT" Id="VRDIS009">
+         <CommandLine>python Tests\VirtualDisplay\virtual_display_tdr.py -edp_a </CommandLine>
+         <OS>WINRS1;WINRS2;WINRS3</OS>
+         <Platform>KBL_ULX;SKL_ULX;KBL_ULT;SKL_ULT;KBL_Halo;SKL_Halo;GLK;CNL_ULX;CFL_HALO;CFL_DT;CFL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Deployed@SKL_SOC,KBL_SOC,GLK_SOC,CFL_SOC</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+
+     <Test LastModifiedWW="2017.WW31" Name="virtual_display_dynamic_add_remove.py" Owner="agpatel" Priority="P1" Version="1">
+
+       <TestInstance Grids="CI;PreETM;GFT" Id="VRDIS010">
+         <CommandLine>python Tests\VirtualDisplay\virtual_display_dynamic_add_remove.py -edp_a</CommandLine>
+         <OS>WINRS1;WINRS2;WINRS3</OS>
+         <Platform>KBL_ULX;SKL_ULX;KBL_ULT;SKL_ULT;KBL_Halo;SKL_Halo;GLK;ICL;CNL_ULX;CFL_HALO;CFL_DT;CFL_ULT;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_SOC;TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Deployed@SKL_SOC,KBL_SOC,GLK_SOC,CFL_SOC</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="CI;PreETM;GFT" Id="VRDIS011">
+         <CommandLine>python Tests\VirtualDisplay\virtual_display_dynamic_add_remove.py -edp_a -hdmi_c -config clone</CommandLine>
+         <OS>WINRS1;WINRS2;WINRS3</OS>
+         <Platform>KBL_Halo;SKL_Halo;GLK;CNL_ULX</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+	   
+	   	<TestInstance Grids="CI;PreETM;ETM" Id="VRDIS014">
+         <CommandLine>python Tests\VirtualDisplay\virtual_display_dynamic_add_remove.py -mipi_a</CommandLine>
+         <OS>WINRS3</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Blocked@LKF</QualificationStatus>
+       </TestInstance>
+	   
+       <TestInstance Grids="CI;PreETM;GFT" Id="VRDIS016">
+         <CommandLine>python Tests\VirtualDisplay\virtual_display_dynamic_add_remove.py -edp_a -virtual_displays 4</CommandLine>
+         <OS>WINRS3</OS>
+         <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_SOC;TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+
+   </Feature>
+</Display_Automation_2.0>

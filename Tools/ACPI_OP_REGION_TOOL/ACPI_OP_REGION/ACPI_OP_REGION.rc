@@ -1,0 +1,791 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\ACPI_OP_REGION.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ACPI_OP_REGION.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ACPI_OP_REGION"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ACPI_OP_REGION Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2007",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_ACPI_OP_REGION_DIALOG DIALOGEX 0, 0, 596, 351
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ACPI OpRegion Editor"
+MENU IDR_MENU_MAIN
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,397,7,50,16,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,539,26,50,16,NOT WS_VISIBLE
+    LTEXT           "",IDC_MAINFRAME,191,15,384,237
+    CONTROL         "",IDC_TREE_CTRL,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,7,15,183,237
+    PUSHBUTTON      "Refresh/Evaluate",IDC_BUTTON_REFRESH,246,286,98,32
+    PUSHBUTTON      "Load",IDC_BUTTON_LOAD,15,262,90,32,NOT WS_VISIBLE
+    PUSHBUTTON      "Save",IDC_BUTTON_SAVE,110,262,92,32,NOT WS_VISIBLE
+END
+
+IDD_DIALOG_LID DIALOGEX 0, 0, 271, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "NEw",IDOK,214,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,214,24,50,14
+    LTEXT           "Current Lid Status (Integrated)",IDC_CLID_LABEL,15,65,101,8
+    EDITTEXT        IDC_EDIT1,123,62,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_TREE1,"SysTreeView32",WS_BORDER | WS_TABSTOP,40,98,60,50
+END
+
+IDD_DIALOG_DRDY DIALOGEX 0, 0, 272, 93
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "This field indicates whether graphics driver is ready to process ACPI Video Extensions notifications from System BIOS.",IDC_STATIC_DRDY1,19,15,237,32
+    LTEXT           "Driver Readiness",IDC_STATIC_DRDY,20,46,73,13
+    COMBOBOX        IDC_COMBO_DRDY,108,45,98,30,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_CSTS DIALOGEX 0, 0, 272, 115
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "This field serves as a handshake mechanism between System BIOS ASL code and Graphics driver in order to process a specific graphics notification",IDC_STATIC_CSTS,19,17,237,32
+    LTEXT           "Notification Status",IDC_STATIC_CSTS1,21,68,73,13
+    COMBOBOX        IDC_COMBO_CSTS,107,66,98,30,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_CEVT DIALOGEX 0, 0, 267, 110
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "This field indicates what the current ACPI Video Extensions event trigger that is being serviced is. ASL sets this field to an appropriate value in response to a user activity.",IDC_STATIC_CEVT,16,17,237,32
+    LTEXT           "Current Event",IDC_STATIC_CEVT1,17,62,67,13
+    COMBOBOX        IDC_COMBO_CEVT,94,60,128,30,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_DIDL DIALOGEX 0, 0, 287, 154
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Evaluate _DOD:",IDC_STATIC_Dod,24,20,239,53
+    LISTBOX         IDC_STATIC_DIDL,21,53,90,73,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_DIDL,111,53,145,72,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG_CPDL DIALOGEX 0, 0, 293, 154
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "This field indicates what display devices (monitors) are currently connected to the previously enumerated connectors.",IDC_STATIC_CPDL,24,20,239,53
+    LISTBOX         IDC_LIST_CPDL,22,55,90,73,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_CPDL,112,55,145,73,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG_CADL DIALOGEX 0, 0, 267, 151
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "This field indicates what display devices (monitors) are currently active. ",IDC_STATIC_ASLP,20,17,225,45
+    LISTBOX         IDC_LIST_ASLP,20,47,86,71,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_ASLP,105,47,145,71,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG_NADL DIALOGEX 0, 0, 283, 157
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "This field indicates what display devices (monitors) are to switch to next on a subsequent hot-key display switch",IDC_STATIC_NADL,24,20,239,53
+    LISTBOX         IDC_LIST_NADL,23,51,90,73,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_NADL,113,51,145,73,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG_TIDX DIALOGEX 0, 0, 264, 120
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "This is the ASL specified Toggle Table index that needs to be used by graphics driver to determine the next display device combination. System BIOS can dynamically change this value but always PRIOR to sending to display switch notification to OS.  ",IDC_STATIC_TIDX,17,14,237,32
+    LTEXT           "Toggle Table Index",IDC_STATIC_TIDX1,15,62,73,13
+    COMBOBOX        IDC_COMBO_TIDX,104,61,98,30,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_CHPD DIALOGEX 0, 0, 270, 121
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "This field indicates if graphics driver currently supports Hot Plug monitor detection i.e., Monitor attachment/detachment causes IGD PCI Interrupt generation. Hot plug support can be disabled and re-enabled dynamically based on operating conditions.",IDC_STATIC_CHPD,18,15,237,32
+    LTEXT           "Current Hot Plug Enable Indicator ",IDC_STATIC_CHPD1,17,72,139,13
+    COMBOBOX        IDC_COMBO_CHPD,151,70,98,30,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_CLID DIALOGEX 0, 0, 237, 74
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Current Lid Status",IDC_STATIC_CLID,18,14,204,17
+    LTEXT           "Lid Status",IDC_STATIC_CLID1,19,36,67,13
+    COMBOBOX        IDC_COMBO_CLID,100,35,98,30,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_CDCK DIALOGEX 0, 0, 264, 97
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "This field indicates whether Mobile laptop is currently docked to the docking station or not. ",IDC_STATIC,20,17,237,32
+    LTEXT           "Current Dock Status",IDC_STATIC,19,55,67,13
+    COMBOBOX        IDC_COMBO_CDCK,118,52,98,30,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_NRDY DIALOGEX 0, 0, 268, 119
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "‘NRDY’ indicates the reason why driver is not ready when it indicates driver readiness via. ‘DRDY’. Also, ‘NRDY’ indicates the reason for failing the ASL notification when it indicates the failure via. ‘CSTS’.",IDC_STATIC_NRDY1,15,15,237,32
+    LTEXT           "Driver Ready",IDC_STATIC_NRDY,18,58,73,13
+    COMBOBOX        IDC_COMBO_NRDY,103,58,98,30,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_ARDY DIALOGEX 0, 0, 263, 93
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "This field indicates whether graphics driver is ready to process power conservation messages from System BIOS",IDC_STATIC_DRDY1,19,15,223,24
+    LTEXT           "Driver Readiness",IDC_STATIC_DRDY,20,46,73,13
+    COMBOBOX        IDC_COMBO_ARDY,108,45,98,30,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_TCHE DIALOGEX 0, 0, 305, 156
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "This field indicates which technologies are enabled. ASL code should trigger interrupts only if corresponding technology is enabled.",IDC_STATIC_DRDY1,19,15,237,32
+    LTEXT           "ALS Technology",IDC_STATIC_ALS,19,57,73,13
+    COMBOBOX        IDC_COMBO_ALS,107,56,98,30,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "BLC Technology",IDC_STATIC_BLC,19,81,73,13
+    COMBOBOX        IDC_COMBO_BLC,108,81,98,30,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "PFIT Technology",IDC_STATIC_PFIT,19,105,73,13
+    COMBOBOX        IDC_COMBO_PFIT,108,105,98,30,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_CBLV DIALOGEX 0, 0, 272, 93
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "It holds the current brightness level.  This field is updated by the graphics driver and retrieved by SBIOS for reference in stepping up or stepping down the brightness level in brightness hot key event",IDC_STATIC_CBLV1,19,15,237,32
+    LTEXT           "Current Brightness Level (%)",IDC_STATIC_CBLV,17,54,106,13
+    COMBOBOX        IDC_COMBO_CBLV,133,55,98,30,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_ASLC DIALOGEX 0, 0, 305, 156
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "_DGS returns the data for next toggle list",IDC_STATIC_DRDY1,20,18,237,32
+    LTEXT           "Set ALS Illuminance",IDC_STATIC_ASLC_ALS,19,57,73,13
+    COMBOBOX        IDC_COMBO_ALSC_ALS,127,57,139,30,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Set Backlight Brightness",IDC_STATIC_ASLC_BLC,19,81,94,13
+    COMBOBOX        IDC_COMBO_ALSC_BLC,128,82,138,30,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Panel Fitting",IDC_STATIC_ASLC_PFIT,19,105,73,13
+    COMBOBOX        IDC_COMBO_ALSC_PFIT,128,106,138,30,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_ASLI DIALOGEX 0, 0, 322, 179
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "The ‘ALSI’ field contains the current ALS luminance reading.",IDC_STATIC,22,21,277,30
+    LTEXT           "Current ALS Reading",IDC_STATIC,25,56,92,14
+    EDITTEXT        IDC_EDIT1,129,55,72,15,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG_BCLP DIALOGEX 0, 0, 326, 100
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "The ‘BCLP’ field holds the backlight brightness to be set.  This is  set before ASLE interrupt to set brightness is triggered.",IDC_STATIC,35,20,277,30
+    LTEXT           "Backlight Brightness",IDC_STATIC,29,50,92,14
+    EDITTEXT        IDC_EDIT1,128,48,72,15,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG_PFIT DIALOGEX 0, 0, 305, 156
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "The ‘PFIT’ field holds currently set or requested panel fitting state.  Panel fitting is the horizontal and vertical stretching or centering of a mode resolution on a local flat panel with a larger resolution.",IDC_STATIC_PFIT1,19,15,237,32
+    LTEXT           "Centering",IDC_STATIC_PFIT2,19,57,73,13
+    COMBOBOX        IDC_COMBO_PFIT_CNTR,107,56,98,30,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Text Mode Stretch",IDC_STATIC_PFIT3,19,81,73,13
+    COMBOBOX        IDC_COMBO_PFIT_STR,108,81,98,30,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Graphics Mode Stretch",IDC_STATIC_PFIT4,19,105,73,13
+    COMBOBOX        IDC_COMBO_PFIT_GRMS,108,105,98,30,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_ASLP DIALOGEX 0, 0, 300, 106
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "This field indicates suggests max sleep/poll time that ASL methods can use while awaiting driver handshaking of event processing. ",IDC_STATIC_ASLP,27,25,259,22
+    LTEXT           "ASL Sleep Time Out (in ms)",IDC_STATIC_ASLP1,27,56,92,14
+    EDITTEXT        IDC_EDIT_ASLP,137,56,72,15,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG_DGS_NEW DIALOGEX 0, 0, 329, 196
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Evaluate _DGS",IDC_STATIC_BCL1,20,18,237,19
+    CONTROL         "",IDC_LIST_BCL,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,18,43,288,82,WS_EX_CLIENTEDGE
+END
+
+IDD_DIALOG_DOS DIALOGEX 0, 0, 295, 152
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Evaluate _DSS",IDC_STATIC_CSTS,19,17,237,18
+    LTEXT           "Display Switching",IDC_STATIC_DOS1,21,49,73,13
+    COMBOBOX        IDC_COMBO_DOS1,102,50,98,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Auto-dimming",IDC_STATIC_DOS2,20,79,73,13
+    COMBOBOX        IDC_COMBO_DOS2,102,79,98,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_DSS DIALOGEX 0, 0, 272, 115
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Evaluate _DOS",IDC_STATIC_CSTS,19,17,237,18
+    LTEXT           "Display Switching",IDC_STATIC_CSTS1,21,49,73,13
+    COMBOBOX        IDC_COMBO_CSTS,102,50,98,30,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Auto-dimming",IDC_STATIC_CSTS2,20,79,73,13
+    COMBOBOX        IDC_COMBO_CSTS2,102,79,98,30,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_BCL DIALOGEX 0, 0, 329, 196
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Evaluate _DGS:",IDC_STATIC_DRDY1,20,18,237,19
+    CONTROL         "",IDC_BCL_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,18,43,248,82,WS_EX_CLIENTEDGE
+END
+
+IDD_DIALOG_DGS_CTRL DIALOGEX 0, 0, 329, 196
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Evaluate _DGS:",IDC_STATIC_DRDY1,20,18,237,19
+    CONTROL         "",IDC_DGS_LIST_CT,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,22,43,275,82,WS_EX_CLIENTEDGE
+END
+
+IDD_DIALOG_LID_SEQ DIALOGEX 0, 0, 334, 178
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,28,30,289,120
+END
+
+IDD_DIALOG_BCM_CTRL DIALOGEX 0, 0, 229, 83
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Evaluate _BCM (Set Brightness):",IDC_STATIC_BCM_CTRL,18,14,204,17
+    LTEXT           "Brightness Level",IDC_STATIC_BCM_CTRL1,19,36,67,13
+    COMBOBOX        IDC_COMBO_BCM_CTRL,100,35,98,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_DSS_CTRL DIALOGEX 0, 0, 283, 95
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Evaluate _DSS (Set Display Devices):",IDC_STATIC_DSS_CRTL,22,20,237,16
+    COMBOBOX        IDC_COMBO_DSS_CRTL2,135,50,98,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_DSS_CTRL1,21,50,98,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_DOD_CTRL DIALOGEX 0, 0, 324, 159
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Evaluate _DOD (Get Supported Devices on the platform):",IDC_STATIC_Dod,20,17,225,23
+    LISTBOX         IDC_LIST_DOD,20,47,86,71,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_DOD_CRTL,105,47,145,71,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG_SEQ_HKEY DIALOGEX 0, 0, 356, 198
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SEQ_HKEY_CTRL,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,31,32,289,120
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "ACPI_OP_REGION.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "ACPI_OP_REGION.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_ACPI_OP_REGION_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 589
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 344
+    END
+
+    IDD_DIALOG_LID, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 264
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_DIALOG_DRDY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 265
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_DIALOG_CSTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 264
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 108
+    END
+
+    IDD_DIALOG_CEVT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_DIALOG_DIDL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 280
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_DIALOG_CPDL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 286
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_DIALOG_CADL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_DIALOG_NADL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 276
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_DIALOG_TIDX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 113
+    END
+
+    IDD_DIALOG_CHPD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+
+    IDD_DIALOG_CLID, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_DIALOG_CDCK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_DIALOG_NRDY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_DIALOG_ARDY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_DIALOG_TCHE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 298
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDD_DIALOG_CBLV, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 265
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_DIALOG_ASLC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 298
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDD_DIALOG_ASLI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_DIALOG_BCLP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_DIALOG_PFIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 298
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDD_DIALOG_ASLP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 286
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_DIALOG_DGS_NEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+
+    IDD_DIALOG_DOS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 145
+    END
+
+    IDD_DIALOG_DSS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 264
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 108
+    END
+
+    IDD_DIALOG_BCL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+
+    IDD_DIALOG_DGS_CTRL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+
+    IDD_DIALOG_LID_SEQ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 327
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_DIALOG_BCM_CTRL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+
+    IDD_DIALOG_DSS_CTRL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 276
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DIALOG_DOD_CTRL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 317
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+
+    IDD_DIALOG_SEQ_HKEY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 349
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_MAIN MENU 
+BEGIN
+    POPUP "File"
+    BEGIN
+        POPUP "Load"
+        BEGIN
+            MENUITEM "From File",                   ID_LOAD_FROMFILE
+            MENUITEM "From System",                 ID_LOAD_FROMSYSTEM
+        END
+        MENUITEM "Save",                        ID_FILE_SAVE32773
+    END
+    POPUP "Options"
+    BEGIN
+        MENUITEM "Refresh Opregion",            ID_OPTIONS_REFRESHOPREGION
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About ACPI_OP_REGION..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\ACPI_OP_REGION.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,1393 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+    <Feature Name="DP_Basic" Owner="kraj">
+        <Test LastModifiedWW="2019.WW38" Name="dp_linkrate_lanecount.py" Owner="akumarv" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC003">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b 3840_2160_54Hz_648clk_8bpc.bin HBR2_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;RYF;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_EMU;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM;TGL_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC004">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b 3840_2160_54Hz_648clk_8bpc.bin HBR2_WSSC_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;RYF;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_EMU;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC005">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b 2048_1536_79Hz_359clk_8bpc.bin HBR_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>GLK;ICL;TGL;RYF;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM;TGL_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC006">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b 2048_1536_79Hz_359clk_8bpc.bin HBR_WSSC_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>GLK;ICL;TGL;RYF;DG1;JSL;EHLRKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC007">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b 1400_1050_100Hz_214clk_8bpc.bin LBR_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>GLK;ICL;TGL;RYF;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM;TGL_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC008">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b 1400_1050_100Hz_214clk_8bpc.bin LBR_WSSC_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>GLK;ICL;TGL;RYF;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC009">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b 1024_768_51Hz_54clk_8bpc.bin LBR_DPCD_LC_1.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>GLK;ICL;TGL;RYF;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM;TGL_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC010">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b 1152_864_75Hz_104clk_8bpc.bin LBR_DPCD_LC_2.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>GLK;ICL;TGL;RYF;DG1;JSL;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_EMU;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;;DG2_SIM;DG2_EMU;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM;TGL_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC011">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b 1152_864_65Hz_89clk_8bpc.bin HBR_DPCD_LC_1.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>GLK;ICL;TGL;RYF;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM;TGL_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC012">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b 1600_1200_65Hz_176clk_8bpc.bin HBR_DPCD_LC_2.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>GLK;ICL;TGL;RYF;DG1;JSL;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;;DG2_SIM;DG2_EMU;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM;TGL_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC013">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b 1600_1200_65Hz_176clk_8bpc.bin HBR2_DPCD_LC_1.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>GLK;ICL;TGL;RYF;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM;TGL_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC014">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b 2048_1536_79Hz_359clk_8bpc.bin HBR2_DPCD_LC_2.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>GLK;ICL;TGL;RYF;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM;TGL_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC017">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_c EDP_5K_5120_3200_60Hz_1042clk_8bpc.bin HBR3_WSSC_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;DG1;JSL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC018">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_c EDP_5K_5120_3200_60Hz_1042clk_8bpc.bin HBR3_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;DG1;JSL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SIM;DG2_EMU;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC019">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_c 3840_2160_54Hz_648clk_8bpc.bin HBR2_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;DG1;JSL;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;DG2_SIM;DG2_EMU;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC020">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_c 3840_2160_54Hz_648clk_8bpc.bin HBR2_WSSC_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC021">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_c 2048_1536_79Hz_359clk_8bpc.bin HBR_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>GLK;ICL;TGL;DG1;JSL;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;DG1_SIM;DG1_EMU;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;DG2_SIM;DG2_EMU;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC022">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_c 2048_1536_79Hz_359clk_8bpc.bin HBR_WSSC_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>GLK;ICL;TGL;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;DG1_SIM;DG1_EMU;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC023">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_c 1400_1050_100Hz_214clk_8bpc.bin LBR_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>GLK;ICL;TGL;DG1;JSL;EHL;RKL:DG2</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;DG2_SIM;DG2_EMU;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC024">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_c 1400_1050_100Hz_214clk_8bpc.bin LBR_WSSC_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>GLK;ICL;TGL;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC025">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_c 1024_768_51Hz_54clk_8bpc.bin LBR_DPCD_LC_1.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>GLK;ICL;TGL;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC026">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_c 1152_864_75Hz_104clk_8bpc.bin LBR_DPCD_LC_2.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>GLK;ICL;TGL;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC027">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_c 1152_864_65Hz_89clk_8bpc.bin HBR_DPCD_LC_1.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>GLK;ICL;TGL;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC028">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_c 1600_1200_65Hz_176clk_8bpc.bin HBR_DPCD_LC_2.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>GLK;ICL;TGL;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC029">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_c 1600_1200_65Hz_176clk_8bpc.bin HBR2_DPCD_LC_1.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>GLK;ICL;TGL;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC030">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_c 2048_1536_79Hz_359clk_8bpc.bin HBR2_DPCD_LC_2.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>GLK;ICL;TGL;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC031">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_c 2560_1440_65Hz_262clk_8bpc.bin HBR3_DPCD_LC_1.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;DG1;JSL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC032">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_c 3840_2160_60Hz_533clk_8bpc.bin HBR3_DPCD_LC_2.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;DG1;JSL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC033">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_d EDP_5K_5120_3200_60Hz_1042clk_8bpc.bin HBR3_WSSC_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;RYF;DG1;JSL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC034">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_d EDP_5K_5120_3200_60Hz_1042clk_8bpc.bin HBR3_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;RYF;DG1;JSL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC035">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_d 3840_2160_54Hz_648clk_8bpc.bin HBR2_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;RYF;LKF1;LKF_R;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;LKF_R_SIM;LKF_R_EMU;LKF_R_SOC;LKF_R_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC036">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_d 3840_2160_54Hz_648clk_8bpc.bin HBR2_WSSC_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;RYF;LKF1;LKF_R;DG1;JSL;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;LKF_R_SIM;LKF_R_EMU;LKF_R_SOC;LKF_R_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;DG2_SIM;DG2_EMU;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC037">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_d 2048_1536_79Hz_359clk_8bpc.bin HBR_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;RYF;LKF1;LKF_R;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;LKF_R_SIM;LKF_R_EMU;LKF_R_SOC;LKF_R_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC038">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_d 2048_1536_79Hz_359clk_8bpc.bin HBR_WSSC_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;RYF;LKF1;LKF_R;DG1;JSL;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;LKF_R_SIM;LKF_R_EMU;LKF_R_SOC;LKF_R_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;DG2_SIM;DG2_EMU;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC039">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_d 1400_1050_100Hz_214clk_8bpc.bin LBR_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;RYF;LKF1;LKF_R;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;LKF_R_SIM;LKF_R_EMU;LKF_R_SOC;LKF_R_DOD;DG1_SIM;DG1_EMU;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC040">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_d 1400_1050_100Hz_214clk_8bpc.bin LBR_WSSC_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;RYF;LKF1;LKF_R;DG1;JSL;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;LKF_R_SIM;LKF_R_EMU;LKF_R_SOC;LKF_R_DOD;DG1_SIM;DG1_EMU;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL;DG2_SIM;DG2_EMU;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC041">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_d 1024_768_51Hz_54clk_8bpc.bin LBR_DPCD_LC_1.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;RYF;LKF1;LKF_R;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;LKF_R_SIM;LKF_R_EMU;LKF_R_SOC;LKF_R_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC042">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_d 1152_864_75Hz_104clk_8bpc.bin LBR_DPCD_LC_2.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;RYF;LKF1;LKF_R;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;LKF_R_SIM;LKF_R_EMU;LKF_R_SOC;LKF_R_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC043">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_d 1152_864_65Hz_89clk_8bpc.bin HBR_DPCD_LC_1.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;RYF;LKF1;LKF_R;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;LKF_R_SIM;LKF_R_EMU;LKF_R_SOC;LKF_R_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC044">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_d 1600_1200_65Hz_176clk_8bpc.bin HBR_DPCD_LC_2.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;RYF;LKF1;LKF_R;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;LKF_R_SIM;LKF_R_EMU;LKF_R_SOC;LKF_R_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC045">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_d 1600_1200_65Hz_176clk_8bpc.bin HBR2_DPCD_LC_1.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;RYF;LKF1;LKF_R;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;LKF_R_SIM;LKF_R_EMU;LKF_R_SOC;LKF_R_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC046">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_d 2048_1536_79Hz_359clk_8bpc.bin HBR2_DPCD_LC_2.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;RYF;LKF1;LKF_R;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;LKF_R_SIM;LKF_R_EMU;LKF_R_SOC;LKF_R_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC047">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_d 2560_1440_65Hz_262clk_8bpc.bin HBR3_DPCD_LC_1.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;RYF;LKF1;LKF_R;DG1;JSL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;LKF_R_SIM;LKF_R_EMU;LKF_R_SOC;LKF_R_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC048">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_d 3840_2160_60Hz_533clk_8bpc.bin HBR3_DPCD_LC_2.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;RYF;LKF1;LKF_R;DG1;JSL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;LKF_R_SIM;LKF_R_EMU;LKF_R_SOC;LKF_R_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC049">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_e EDP_5K_5120_3200_60Hz_1042clk_8bpc.bin HBR3_WSSC_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;RYF</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC050">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_e EDP_5K_5120_3200_60Hz_1042clk_8bpc.bin HBR3_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;RYF</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC051">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_e 3840_2160_54Hz_648clk_8bpc.bin HBR2_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;LKF1;LKF_R;RYF</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;LKF_R_SIM;LKF_R_EMU;LKF_R_SOC;LKF_R_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC052">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_e 3840_2160_54Hz_648clk_8bpc.bin HBR2_WSSC_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;LKF1;LKF_R;RYF</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;LKF_R_SIM;LKF_R_EMU;LKF_R_SOC;LKF_R_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC053">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_e 2048_1536_79Hz_359clk_8bpc.bin HBR_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;LKF1;LKF_R;RYF</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;LKF_R_SIM;LKF_R_EMU;LKF_R_SOC;LKF_R_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC054">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_e 2048_1536_79Hz_359clk_8bpc.bin HBR_WSSC_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;LKF1;LKF_R;RYF</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;LKF_R_SIM;LKF_R_EMU;LKF_R_SOC;LKF_R_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC055">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_e 1400_1050_100Hz_214clk_8bpc.bin LBR_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;LKF1;LKF_R;RYF</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;LKF_R_SIM;LKF_R_EMU;LKF_R_SOC;LKF_R_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC056">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_e 1400_1050_100Hz_214clk_8bpc.bin LBR_WSSC_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;LKF1;LKF_R;RYF</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;LKF_R_SIM;LKF_R_EMU;LKF_R_SOC;LKF_R_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC057">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_e 1024_768_51Hz_54clk_8bpc.bin LBR_DPCD_LC_1.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;LKF1;LKF_R;RYF</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;LKF_R_SIM;LKF_R_EMU;LKF_R_SOC;LKF_R_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC058">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_e 1152_864_75Hz_104clk_8bpc.bin LBR_DPCD_LC_2.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;LKF1;LKF_R;RYF</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;LKF_R_SIM;LKF_R_EMU;LKF_R_SOC;LKF_R_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC059">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_e 1152_864_65Hz_89clk_8bpc.bin HBR_DPCD_LC_1.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;LKF1;LKF_R;RYF</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;LKF_R_SIM;LKF_R_EMU;LKF_R_SOC;LKF_R_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC060">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_e 1600_1200_65Hz_176clk_8bpc.bin HBR_DPCD_LC_2.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;LKF1;LKF_R;RYF</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;LKF_R_SIM;LKF_R_EMU;LKF_R_SOC;LKF_R_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC061">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_e 1600_1200_65Hz_176clk_8bpc.bin HBR2_DPCD_LC_1.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;LKF1;LKF_R;RYF</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;LKF_R_SIM;LKF_R_EMU;LKF_R_SOC;LKF_R_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC062">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_e 2048_1536_79Hz_359clk_8bpc.bin HBR2_DPCD_LC_2.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;LKF1;LKF_R;RYF</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;LKF_R_SIM;LKF_R_EMU;LKF_R_SOC;LKF_R_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC063">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_e 2560_1440_65Hz_262clk_8bpc.bin HBR3_DPCD_LC_1.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;LKF1;LKF_R;RYF</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;LKF_R_SIM;LKF_R_EMU;LKF_R_SOC;LKF_R_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC064">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_e 3840_2160_60Hz_533clk_8bpc.bin HBR3_DPCD_LC_2.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;LKF1;LKF_R;RYF</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;LKF_R_SIM;LKF_R_EMU;LKF_R_SOC;LKF_R_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC065">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_f EDP_5K_5120_3200_60Hz_1042clk_8bpc.bin HBR3_WSSC_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC066">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_f EDP_5K_5120_3200_60Hz_1042clk_8bpc.bin HBR3_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC067">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_f 3840_2160_54Hz_648clk_8bpc.bin HBR2_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC068">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_f 3840_2160_54Hz_648clk_8bpc.bin HBR2_WSSC_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC069">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_f 2048_1536_79Hz_359clk_8bpc.bin HBR_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC070">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_f 2048_1536_79Hz_359clk_8bpc.bin HBR_WSSC_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC071">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_f 1400_1050_100Hz_214clk_8bpc.bin LBR_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC072">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_f 1400_1050_100Hz_214clk_8bpc.bin LBR_WSSC_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC073">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_f 1024_768_51Hz_54clk_8bpc.bin LBR_DPCD_LC_1.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC074">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_f 1152_864_75Hz_104clk_8bpc.bin LBR_DPCD_LC_2.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC075">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_f 1152_864_65Hz_89clk_8bpc.bin HBR_DPCD_LC_1.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC076">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_f 1600_1200_65Hz_176clk_8bpc.bin HBR_DPCD_LC_2.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC077">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_f 1600_1200_65Hz_176clk_8bpc.bin HBR2_DPCD_LC_1.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC078">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_f 2048_1536_79Hz_359clk_8bpc.bin HBR2_DPCD_LC_2.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC079">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_f 2560_1440_65Hz_262clk_8bpc.bin HBR3_DPCD_LC_1.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC080">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_f 3840_2160_60Hz_533clk_8bpc.bin HBR3_DPCD_LC_2.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC081">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b EDP_3000_2000_70Hz_607clk_8bpc.bin HBR2_WSSC_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>GLK;ICL;TGL;RYF;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC082">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b EDP_3000_2000_70Hz_607clk_8bpc.bin HBR2_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>GLK;ICL;TGL;RYF;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM;TGL_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC083">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_c EDP_3000_2000_70Hz_607clk_8bpc.bin HBR2_WSSC_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>GLK;ICL;TGL;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC084">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_c EDP_3000_2000_70Hz_607clk_8bpc.bin HBR2_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>GLK;ICL;TGL;DG1;JSL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC085">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_g EDP_5K_5120_3200_60Hz_1042clk_8bpc.bin HBR3_WSSC_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC086">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_g EDP_5K_5120_3200_60Hz_1042clk_8bpc.bin HBR3_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC087">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_g 3840_2160_54Hz_648clk_8bpc.bin HBR2_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC088">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_g 3840_2160_54Hz_648clk_8bpc.bin HBR2_WSSC_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC089">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_g 2048_1536_79Hz_359clk_8bpc.bin HBR_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC090">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_g 2048_1536_79Hz_359clk_8bpc.bin HBR_WSSC_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC091">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_g 1400_1050_100Hz_214clk_8bpc.bin LBR_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC092">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_g 1400_1050_100Hz_214clk_8bpc.bin LBR_WSSC_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC093">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_g 1024_768_51Hz_54clk_8bpc.bin LBR_DPCD_LC_1.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC094">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_g 1152_864_75Hz_104clk_8bpc.bin LBR_DPCD_LC_2.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC095">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_g 1152_864_65Hz_89clk_8bpc.bin HBR_DPCD_LC_1.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC096">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_g 1600_1200_65Hz_176clk_8bpc.bin HBR_DPCD_LC_2.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC097">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_g 1600_1200_65Hz_176clk_8bpc.bin HBR2_DPCD_LC_1.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC098">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_g 2048_1536_79Hz_359clk_8bpc.bin HBR2_DPCD_LC_2.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC099">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_g 2560_1440_65Hz_262clk_8bpc.bin HBR3_DPCD_LC_1.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC100">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_g 3840_2160_60Hz_533clk_8bpc.bin HBR3_DPCD_LC_2.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC101">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_h EDP_5K_5120_3200_60Hz_1042clk_8bpc.bin HBR3_WSSC_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC102">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_h EDP_5K_5120_3200_60Hz_1042clk_8bpc.bin HBR3_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC103">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_h 3840_2160_54Hz_648clk_8bpc.bin HBR2_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC104">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_h 3840_2160_54Hz_648clk_8bpc.bin HBR2_WSSC_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC105">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_h 2048_1536_79Hz_359clk_8bpc.bin HBR_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC106">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_h 2048_1536_79Hz_359clk_8bpc.bin HBR_WSSC_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC107">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_h 1400_1050_100Hz_214clk_8bpc.bin LBR_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC108">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_h 1400_1050_100Hz_214clk_8bpc.bin LBR_WSSC_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC109">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_h 1024_768_51Hz_54clk_8bpc.bin LBR_DPCD_LC_1.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC110">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_h 1152_864_75Hz_104clk_8bpc.bin LBR_DPCD_LC_2.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC111">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_h 1152_864_65Hz_89clk_8bpc.bin HBR_DPCD_LC_1.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC112">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_h 1600_1200_65Hz_176clk_8bpc.bin HBR_DPCD_LC_2.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC113">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_h 1600_1200_65Hz_176clk_8bpc.bin HBR2_DPCD_LC_1.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC114">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_h 2048_1536_79Hz_359clk_8bpc.bin HBR2_DPCD_LC_2.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC115">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_h 2560_1440_65Hz_262clk_8bpc.bin HBR3_DPCD_LC_1.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC116">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_h 3840_2160_60Hz_533clk_8bpc.bin HBR3_DPCD_LC_2.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC117">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_i EDP_5K_5120_3200_60Hz_1042clk_8bpc.bin HBR3_WSSC_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC118">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_i EDP_5K_5120_3200_60Hz_1042clk_8bpc.bin HBR3_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC119">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_i 3840_2160_54Hz_648clk_8bpc.bin HBR2_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC120">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_i 3840_2160_54Hz_648clk_8bpc.bin HBR2_WSSC_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC121">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_i 2048_1536_79Hz_359clk_8bpc.bin HBR_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC122">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_i 2048_1536_79Hz_359clk_8bpc.bin HBR_WSSC_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC123">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_i 1400_1050_100Hz_214clk_8bpc.bin LBR_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC124">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_i 1400_1050_100Hz_214clk_8bpc.bin LBR_WSSC_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC125">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_i 1024_768_51Hz_54clk_8bpc.bin LBR_DPCD_LC_1.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC126">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_i 1152_864_75Hz_104clk_8bpc.bin LBR_DPCD_LC_2.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC127">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_i 1152_864_65Hz_89clk_8bpc.bin HBR_DPCD_LC_1.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC128">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_i 1600_1200_65Hz_176clk_8bpc.bin HBR_DPCD_LC_2.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC129">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_i 1600_1200_65Hz_176clk_8bpc.bin HBR2_DPCD_LC_1.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC130">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_i 2048_1536_79Hz_359clk_8bpc.bin HBR2_DPCD_LC_2.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC131">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_i 2560_1440_65Hz_262clk_8bpc.bin HBR3_DPCD_LC_1.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC132">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_i 3840_2160_60Hz_533clk_8bpc.bin HBR3_DPCD_LC_2.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC133">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_a EDP_5K_5120_3200_60Hz_1042clk_8bpc.bin HBR3_WSSC_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RYF;DG1;RKL</Platform>
+                <TestEnvironment>RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC134">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_a EDP_5K_5120_3200_60Hz_1042clk_8bpc.bin HBR3_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RYF;DG1;RKL</Platform>
+                <TestEnvironment>RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC135">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_a 3840_2160_54Hz_648clk_8bpc.bin HBR2_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL;RYF;DG1;RKL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_EMU;DG1_SOC;DG1_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC136">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_a 3840_2160_54Hz_648clk_8bpc.bin HBR2_WSSC_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL;RYF;DG1;RKL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_EMU;DG1_SOC;DG1_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC137">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_a 2048_1536_79Hz_359clk_8bpc.bin HBR_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL;RYF;DG1;RKL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC138">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_a 2048_1536_79Hz_359clk_8bpc.bin HBR_WSSC_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL;RYF;DG1;RKL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC139">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_a 1400_1050_100Hz_214clk_8bpc.bin LBR_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL;RYF;DG1;RKL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC140">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_a 1400_1050_100Hz_214clk_8bpc.bin LBR_WSSC_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL;RYF;DG1;RKL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC141">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_a 1024_768_51Hz_54clk_8bpc.bin LBR_DPCD_LC_1.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL;RYF;DG1;RKL;DG2</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;RKL_SOC;RKL_DOD;RKL_SIM;DG2_SIM;DG2_EMU;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC142">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_a 1152_864_75Hz_104clk_8bpc.bin LBR_DPCD_LC_2.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL;RYF;DG1;RKL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC143">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_a 1152_864_65Hz_89clk_8bpc.bin HBR_DPCD_LC_1.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL;RYF;DG1;RKL;DG2</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;RKL_SOC;RKL_DOD;RKL_SIM;DG2_SIM;DG2_EMU;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC144">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_a 1600_1200_65Hz_176clk_8bpc.bin HBR_DPCD_LC_2.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL;RYF;DG1;RKL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC145">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_a 1600_1200_65Hz_176clk_8bpc.bin HBR2_DPCD_LC_1.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL;RYF;DG1;RKL;DG2</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;RKL_SOC;RKL_DOD;RKL_SIM;DG2_SIM;DG2_EMU;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC146">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_a 2048_1536_79Hz_359clk_8bpc.bin HBR2_DPCD_LC_2.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL;RYF;DG1;RKL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC147">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_a 2560_1440_65Hz_262clk_8bpc.bin HBR3_DPCD_LC_1.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RYF;DG1;RKL;DG1;DG2</Platform>
+                <TestEnvironment>RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_EMU;DG1_SOC;DG1_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SIM;DG2_EMU;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC148">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_a 3840_2160_60Hz_533clk_8bpc.bin HBR3_DPCD_LC_2.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RYF;DG1;RKL</Platform>
+                <TestEnvironment>RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC149">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b EDP_5K_5120_3200_60Hz_1042clk_8bpc.bin HBR3_WSSC_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RYF;DG1;JSL;RKL</Platform>
+                <TestEnvironment>RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC150">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b EDP_5K_5120_3200_60Hz_1042clk_8bpc.bin HBR3_DPCD.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RYF;DG1;JSL;RKL</Platform>
+                <TestEnvironment>RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM;TGL_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC151">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b 2560_1440_65Hz_262clk_8bpc.bin HBR3_DPCD_LC_1.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RYF;DG1;JSL;RKL</Platform>
+                <TestEnvironment>RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM;TGL_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPBSC152">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b 3840_2160_60Hz_533clk_8bpc.bin HBR3_DPCD_LC_2.txt</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RYF;DG1;JSL;RKL</Platform>
+                <TestEnvironment>RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_SOC;DG1_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@RYF_SIM;TGL_SIM</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI" Id="DPBSC153">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b 3840_2160_54Hz_648clk_8bpc.bin HBR2_WSSC_DPCD.txt -SSC</CommandLine>
+                <OS>WinRS6</OS>
+                <Platform>TGL;DG1;DG2;RKL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;DG1_SIM;DG1_EMU;DG1_SOC;DG1_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI" Id="DPBSC154">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_c 3840_2160_54Hz_648clk_8bpc.bin HBR2_WSSC_DPCD.txt -SSC</CommandLine>
+                <OS>WinRS6</OS>
+                <Platform>TGL;DG1;DG2;RKL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;DG1_SIM;DG1_EMU;DG1_SOC;DG1_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI" Id="DPBSC155">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_d 3840_2160_54Hz_648clk_8bpc.bin HBR2_WSSC_DPCD.txt -SSC</CommandLine>
+                <OS>WinRS6</OS>
+                <Platform>TGL;DG1;DG2;RKL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;DG1_SIM;DG1_EMU;DG1_SOC;DG1_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI" Id="DPBSC156">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_e 3840_2160_54Hz_648clk_8bpc.bin HBR2_WSSC_DPCD.txt -SSC</CommandLine>
+                <OS>WinRS6</OS>
+                <Platform>TGL;DG1;DG2;RKL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;DG1_SIM;DG1_EMU;DG1_SOC;DG1_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI" Id="DPBSC157">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_f 3840_2160_54Hz_648clk_8bpc.bin HBR2_WSSC_DPCD.txt -SSC</CommandLine>
+                <OS>WinRS6</OS>
+                <Platform>TGL;DG1;DG2;RKL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;DG1_SIM;DG1_EMU;DG1_SOC;DG1_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI" Id="DPBSC158">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_g 3840_2160_54Hz_648clk_8bpc.bin HBR2_WSSC_DPCD.txt -SSC</CommandLine>
+                <OS>WinRS6</OS>
+                <Platform>TGL;DG1;DG2;RKL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;DG1_SIM;DG1_EMU;DG1_SOC;DG1_DOD;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+    </Feature>
+</Display_Automation_2.0>

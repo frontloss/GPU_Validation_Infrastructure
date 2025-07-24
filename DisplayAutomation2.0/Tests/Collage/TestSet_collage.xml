@@ -1,0 +1,67 @@
+<Display_Automation_2.0>
+    <Feature Name="Collage" Owner="pkrishna">
+
+        <Test LastModifiedWW="2019.WW28" Name="collage_horizontal_vertical_with_powerevents.py" Owner="pkrishna"
+              Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="COLGE001">
+                <CommandLine>python Tests\Collage\collage_horizontal_vertical_with_powerevents.py -dp_b -dp_c -tp1 MST -xml1 DPMST_1Branch_2SSTDisplays.xml -tp2 MST -xml2 DPMST_1Branch_2SSTDisplays.xml -colmode Hor -NP 2</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3</OS>
+                <Platform>KBL_ULX;SKL_ULT;SKL_Halo;GLK;CFL_Halo;CFL_ULT</Platform>
+                <TestEnvironment>KBL_SOC;SKL_SOC;GLK_SOC;CFL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>collage_horizontal_vertical_with_powerevents.py
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+
+        <Test LastModifiedWW="2019.WW28" Name="collage_horizontal_vertical_with_powerevents.py" Owner="pkrishna"
+              Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="COLGE002">
+                <CommandLine>python Tests\Collage\collage_horizontal_vertical_with_powerevents.py -dp_b -dp_c -tp1 SST -xml1 DPSST_DELL_U2711.xml -tp2 SST -xml2 DPSST_DELL_U3011.xml -colmode Ver -NP 2</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3</OS>
+                <Platform>KBL_ULX;SKL_ULT;SKL_Halo;GLK;CFL_Halo;CFL_ULT</Platform>
+                <TestEnvironment>KBL_SOC;SKL_SOC;GLK_SOC;CFL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@GLK_SOC,CFL_SOC</QualificationStatus>
+            </TestInstance>
+        </Test>
+
+        <Test LastModifiedWW="2019.WW28" Name="collage_config_switching.py" Owner="pkrishna" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="COLGE003">
+                <CommandLine>python Tests\Collage\collage_config_switching.py -dp_b -dp_c -tp1 MST -xml1 DPMST_1Branch_1MSTDisplay.xml -tp2 MST -xml2 DPMST_1Branch_1MSTDisplay.xml -colmode Ver -NP 2 -config SINGLE</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3</OS>
+                <Platform>KBL_ULX;SKL_ULT;SKL_Halo;GLK;CFL_Halo;CFL_ULT</Platform>
+                <TestEnvironment>KBL_SOC;SKL_SOC;GLK_SOC;CFL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@CFL_SOC</QualificationStatus>
+            </TestInstance>
+        </Test>
+
+        <Test LastModifiedWW="2019.WW28" Name="collage_hotplug_unplug.py" Owner="pkrishna" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="COLGE004">
+                <CommandLine>python Tests\Collage\collage_hotplug_unplug.py -dp_b -dp_c -tp1 MST -xml1 DPMST_1Branch_1MSTDisplay.xml -tp2 MST -xml2 DPMST_1Branch_1MSTDisplay.xml -colmode Hor -NP 2</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3</OS>
+                <Platform>KBL_ULX;SKL_ULT;SKL_Halo;GLK;CFL_Halo;CFL_ULT</Platform>
+                <TestEnvironment>KBL_SOC;SKL_SOC;GLK_SOC;CFL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@GLK_SOC,CFL_SOC</QualificationStatus>
+            </TestInstance>
+        </Test>
+
+        <Test LastModifiedWW="2019.WW28" Name="collage_modeset.py" Owner="pkrishna" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="COLGE005">
+                <CommandLine>python Tests\Collage\collage_modeset.py -dp_b -dp_c -tp1 MST -xml1 DPMST_1Branch_1MSTDisplay.xml -tp2 MST -xml2 DPMST_1Branch_1MSTDisplay.xml -colmode Hor -NP 2</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3</OS>
+                <Platform>KBL_ULX;SKL_ULT;SKL_Halo;GLK;CFL_Halo;CFL_ULT</Platform>
+                <TestEnvironment>KBL_SOC;SKL_SOC;GLK_SOC;CFL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@GLK_SOC,CFL_SOC</QualificationStatus>
+            </TestInstance>
+        </Test>
+
+    </Feature>
+</Display_Automation_2.0>

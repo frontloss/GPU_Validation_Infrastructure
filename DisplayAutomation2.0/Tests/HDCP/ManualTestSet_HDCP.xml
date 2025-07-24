@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2_0_Manual>
+    <Feature Name="HDCP" Owner="creddyy">
+        <SubFeature Name="HDCP_1_4" Owner="creddyy">
+			<Test Id="TI-1285100" Name="HDCP1.4 Hotplug and Unplug_semi_Auto" Grids="Manual CI">
+                <CommandLine>python Tests\HDCP\hdcp_hotplug_unplug.py -Display1 "EDP Panel" -Display2 "Type 0 DP Tiled Panel (port G)" -config extended -hotplug true</CommandLine>
+                <OS>Win20H1;Win20H2;Win21H2</OS>
+                <Platform>TGL</Platform>
+                <ExecutionTime>40m</ExecutionTime>
+            </Test>
+            <Test Id="TI-1285100" Name="HDCP1.4 Hotplug and Unplug_semi_Auto" Grids="Manual CI">
+                <CommandLine>python Tests\HDCP\hdcp_hotplug_unplug.py -Display1 "EDP Panel" -Display2 "Type 0 DP Tiled Panel (port D)" -config extended -hotplug true</CommandLine>
+                <OS>Win19H1;Win19H2;Win20H1;Win20H2;Win21H2</OS>
+                <Platform>RKL</Platform>
+                <ExecutionTime>40m</ExecutionTime>
+            </Test>
+            <Test Id="TI-1285100" Name="HDCP1.4 Hotplug and Unplug_semi_Auto" Grids="Manual CI">
+                <CommandLine>python Tests\HDCP\hdcp_hotplug_unplug.py -Display1 "EDP Panel" -Display2 "Type 0 DP Tiled Panel (port B)" -config extended -hotplug true</CommandLine>
+                <OS>Win20H1;Win20H2;Win21H2</OS>
+                <Platform>ICL</Platform>
+                <ExecutionTime>40m</ExecutionTime>
+            </Test>
+			<Test Id="TI-1745034" Name="HDCP 1.4 Hot plug and unplug_in_CS_Semi_Auto" Grids="Manual CI">
+                <CommandLine>python Tests\HDCP\hdcp_hotplug_unplug_power_event.py -Display1 "EDP Panel" -Display2 "Type 0 DP Tiled Panel (port F)" -config clone -power_event cs -hotplug true</CommandLine>
+                <OS>Win20H1;Win20H2;Win21H2</OS>
+                <Platform>TGL</Platform>
+                <ExecutionTime>40m</ExecutionTime>
+            </Test>
+            <Test Id="TI-1745034" Name="HDCP 1.4 Hot plug and unplug_in_CS_Semi_Auto" Grids="Manual CI">
+                <CommandLine>python Tests\HDCP\hdcp_hotplug_unplug_power_event.py -Display1 "EDP Panel" -Display2 "Type 0 HDMI Panel (port B)" -config clone -power_event cs -hotplug true</CommandLine>
+                <OS>Win19H1;Win19H2;Win20H1;Win20H2;Win21H2</OS>
+                <Platform>RKL</Platform>
+                <ExecutionTime>40m</ExecutionTime>
+            </Test>
+			<Test Id="TI-1285104" Name="HDCP1.4 Hotplug and Unplug in CS with Tri-Display" Grids="Manual CI">
+                <CommandLine>python Tests\HDCP\hdcp_hotplug_unplug_power_event.py -Display1 "EDP Panel" -Display2 "Type 0 DP Panel (port D)" -Display3 "Type 0 HDMI Panel (port B)" -config clone -hotplug true -power_event cs</CommandLine>
+                <OS>Win19H1;Win19H2;Win20H1;Win20H2;Win21H2</OS>
+                <Platform>TGL;RKL</Platform>
+                <ExecutionTime>40m</ExecutionTime>
+            </Test>
+			<Test Id="TI-1285116" Name="HDCP 1.4 Hotplug and unplug in S4_Semi_Auto" Grids="Manual CI">
+                <CommandLine>python Tests\HDCP\hdcp_hotplug_unplug_power_event.py -Display1 "EDP Panel" -Display2 "Type 0 HDMI Panel (port B)" -config clone -power_event s4 -hotplug true</CommandLine>
+                <OS>Win19H1;Win19H2;Win20H1;Win20H2;Win21H2</OS>
+                <Platform>TGL;RKL</Platform>
+                <ExecutionTime>40m</ExecutionTime>
+            </Test>
+			<Test Id="TI-1285116" Name="HDCP1.4 Hotplug and Unplug in S4 with Tri-Display" Grids="Manual CI">
+                <CommandLine>python Tests\HDCP\hdcp_hotplug_unplug_power_event.py -Display1 "EDP Panel" -Display2 "Type 0 DP Tiled Panel (port B)" -Display3 "Type 0 HDMI Panel (port C)" -config extended -power_event s4 -hotplug true</CommandLine>
+                <OS>Win20H1;Win20H2;Win21H2</OS>
+                <Platform>ICL</Platform>
+                <ExecutionTime>40m</ExecutionTime>
+            </Test>
+            <Test Id="TI-1745524" Name="HDCP_1_4_DP_MST_semi_Auto" Grids="Manual CI">
+                <CommandLine>python Tests\HDCP\hdcp_repeater.py -Display1 "Type 0 DP MST Panel (port D)" -Display2 "Type 0 DP Panel Depth 2 (port D)" -Display3 "Type 0 DP Panel Depth 3 (port D)" -depth 3 -hotplug true</CommandLine>
+                <OS>Win19H1;Win19H2;Win20H1;20H2</OS>
+                <Platform>TGL;RKL</Platform>
+                <ExecutionTime>40m</ExecutionTime>
+            </Test>
+            <Test Id="TI-1745524" Name="HDCP_1_4_DP_MST_semi_Auto" Grids="Manual CI">
+                <CommandLine>python Tests\HDCP\hdcp_repeater.py -Display1 "Type 0 DP MST Panel (port F)" -Display2 "Type 0 DP Panel Depth 2 (port F)" -Display3 "Type 0 DP Panel Depth 3 (port F)" -depth 3 -hotplug true</CommandLine>
+                <OS>Win19H1;Win19H2;Win20H1;Win20H2;Win21H2</OS>
+                <Platform>ADLP</Platform>
+                <ExecutionTime>40m</ExecutionTime>
+            </Test>
+        </SubFeature>
+
+        <SubFeature Name="HDCP_2_2" Owner="creddyy">
+			<Test Id="TI-1286291" Name="HDCP 2.2 Hot plug and unplug_Semi_Auto" Grids="Manual CI">
+                <CommandLine>python Tests\HDCP\hdcp_hotplug_unplug.py -Display1 "EDP Panel" -Display2 "Type 1 DP Panel (port D)" -config extended -hdcptype 1 -hotplug true</CommandLine>
+                <OS>Win19H1;Win19H2;Win20H1;Win20H2;Win21H2</OS>
+                <Platform>TGL;RKL</Platform>
+                <ExecutionTime>40m</ExecutionTime>
+            </Test>
+			<Test Id="TI-1286053" Name="HDCP2.2 Hotplug and Unplug with HDMI_DP" Grids="Manual CI">
+                <CommandLine>python Tests\HDCP\hdcp_hotplug_unplug.py -Display1 "EDP Panel" -Display2 "Type 1 DP Panel (port B)" -Display3 "Type 1 HDMI Panel (port C)" -config clone -hdcptype 1 -hotplug true</CommandLine>
+                <OS>Win20H1;Win20H2;Win21H2</OS>
+                <Platform>ICL</Platform>
+                <ExecutionTime>40m</ExecutionTime>
+            </Test>
+			<Test Id="TI-1286298" Name="HDCP 2.2 Hot plug and unplug in CS_Semi_Auto" Grids="Manual CI">
+                <CommandLine>python Tests\HDCP\hdcp_hotplug_unplug_power_event.py -Display1 "EDP Panel" -Display2 "Type 1 DP Panel (port E)" -Display3 "Type 1 HDMI Panel (port D)" -config clone -hdcptype 1 -hotplug true -power_event cs</CommandLine>
+                <OS>Win20H1;Win20H2;Win21H2</OS>
+                <Platform>TGL</Platform>
+                <ExecutionTime>40m</ExecutionTime>
+            </Test>
+            <Test Id="TI-1286298" Name="HDCP 2.2 Hot plug and unplug in CS_Semi_Auto" Grids="Manual CI">
+                <CommandLine>python Tests\HDCP\hdcp_hotplug_unplug_power_event.py -Display1 "EDP Panel" -Display2 "Type 1 DP Panel (port D)" -Display3 "Type 1 HDMI Panel (port C)" -config clone -hdcptype 1 -hotplug true -power_event cs</CommandLine>
+                <OS>Win20H1;Win20H2;Win21H2</OS>
+                <Platform>RKL</Platform>
+                <ExecutionTime>40m</ExecutionTime>
+            </Test>
+            <Test Id="TI-1286298" Name="HDCP 2.2 Hot plug and unplug in CS_Semi_Auto" Grids="Manual CI">
+                <CommandLine>python Tests\HDCP\hdcp_hotplug_unplug_power_event.py -Display1 "EDP Panel" -Display2 "Type 1 DP Panel (port B)" -Display3 "Type 1 HDMI Panel (port C)" -config clone -hdcptype 1 -hotplug true -power_event cs</CommandLine>
+                <OS>Win20H1;Win20H2;Win21H2</OS>
+                <Platform>ICL</Platform>
+                <ExecutionTime>40m</ExecutionTime>
+            </Test>
+			<Test Id="TI-1286299" Name="HDCP2.2 Hotplug and Unplug in S4 with HDMI_DP" Grids="Manual CI">
+                <CommandLine>python Tests\HDCP\hdcp_hotplug_unplug_power_event.py -Display1 "EDP Panel" -Display2 "Type 1 DP Panel (port D)" -config clone -power_event s4 -hdcptype 1 -hotplug true</CommandLine>
+                <OS>Win19H1;Win19H2;Win20H1;Win20H2;Win21H2</OS>
+                <Platform>TGL;RKL</Platform>
+                <ExecutionTime>40m</ExecutionTime>
+            </Test>
+            <Test Id="TI-145333" Name="HDCP2.2_Hot_unplug_plug_1.4_semi_auto" Grids="Manual CI">
+                <CommandLine>python Tests\HDCP\hdcp_replug_with_type_0.py -Display1 "EDP Panel" -Display2 "Type 1 DP Panel (port E)" -Display3 "Type 1 HDMI Panel (port D)" -config extended -hdcptype 1 -hotplug true</CommandLine>
+                <OS>Win20H1;Win20H2;Win21H2</OS>
+                <Platform>TGL</Platform>
+                <ExecutionTime>40m</ExecutionTime>
+            </Test>
+            <Test Id="TI-1745333" Name="HDCP2.2_Hot_unplug_plug_1.4_semi_auto" Grids="Manual CI">
+                <CommandLine>python Tests\HDCP\hdcp_replug_with_type_0.py -Display1 "EDP Panel" -Display2 "Type 1 HDMI Panel (port C)" -Display3 "Type 1 DP Panel (port D)" -config extended -hdcptype 1 -hotplug true</CommandLine>
+                <OS>Win19H1;Win19H2;Win20H1;Win20H2;Win21H2</OS>
+                <Platform>RKL</Platform>
+                <ExecutionTime>40m</ExecutionTime>
+            </Test>
+            <Test Id="TI-1286298" Name="HDCP 2.2 Hot plug and unplug in CS_Semi_Auto" Grids="Manual CI">
+                <CommandLine>python Tests\HDCP\hdcp_hotplug_unplug_power_event.py -Display1 "EDP Panel" -Display2 "Type 1 DP Panel (port F)" -Display3 "Type 1 HDMI Panel (port B)" -config clone -hdcptype 1 -hotplug true -power_event cs</CommandLine>
+                <OS>Win20H1;Win20H2;Win21H2</OS>
+                <Platform>ADLP</Platform>
+                <ExecutionTime>40m</ExecutionTime>
+            </Test>
+            <Test Id="TI-1745333" Name="HDCP2.2_Hot_unplug_plug_1.4_semi_auto" Grids="Manual CI">
+                <CommandLine>python Tests\HDCP\hdcp_replug_with_type_0.py -Display1 "EDP Panel" -Display2 "Type 1 HDMI Panel (port B)" -Display3 "Type 1 DP Panel (port G)" -config extended -hdcptype 1 -hotplug true</CommandLine>
+                <OS>Win20H1;Win20H2;Win21H2</OS>
+                <Platform>ADLP</Platform>
+                <ExecutionTime>40m</ExecutionTime>
+            </Test>
+        </SubFeature>
+    </Feature>
+</Display_Automation_2_0_Manual>

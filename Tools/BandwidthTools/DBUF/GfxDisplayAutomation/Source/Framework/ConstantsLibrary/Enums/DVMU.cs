@@ -1,0 +1,91 @@
+﻿namespace Intel.VPG.Display.Automation
+{
+    public enum FunctionName
+    {
+        OPEN,
+        PROGRAMEDID,
+        PLUG,
+        UNPLUG,
+        HELP,
+        Install,
+        PlugEnumerate,
+        UnplugEnumerate,
+        CaptureFrame,
+        CheckCorruption,
+        SimulationFramework,
+        SimulationFeature,
+    }
+    public enum DVMU_PORT
+    {
+        PORTA = 0x00,
+        PORTB,
+        PORTC,
+        PORTD,
+        None
+    }
+    public enum InfoFrameType
+    {
+        AVI,
+        SPD,
+        AUDIO,
+        VENDOR,
+        GMP,
+        GCP
+    }
+    public enum FunctionInfoFrame
+    {
+        ComputeHDMIColorFormat,
+        ComputeActiveFormatInfo,
+        ComputeBarInfo,
+        ComputeScanInfo,
+        ComputeColorimetry,
+        ComputePictureAspectRatio,
+        ComputeActiveFormatAspectRatio,
+        ComputeNonUniformPictureScaling,
+        ComputePixelRepetition,
+        ComputeExtendedColorimetry,
+        ComputeLinePixelBarData,
+        ComputeRGBQuantizationRange,
+        ComputeITContent,
+        ComputeYCCQuantizationRange,
+        ComputeITContentType,
+        FillHeaderDataAvi,
+        AllAvi,
+        FillHeaderDataAudio,
+        ComputeAudioCodingType,
+        ComputeAudioChannelCount,
+        ComputeSamplingFrequency,
+        ComputeSampleSize,
+        ComputeDownMixInhibit,
+        ComputeLevelShiftValue,
+        ComputeLFEPlaybackLevelInfo,
+        SpeakerPlacement,
+        AllAudio,
+        FillHeaderDataVendor,
+        ComputeRegistrationIdentifier,
+        ComputeHdmiVideoFormat,
+        Compute3DStructure,
+        Compute3DExtendedData,
+        ComputeHdmiVicResolutionList,
+        Compute3DTransmissionVideoFormatsResolList,
+        AllVendor,
+        FillHeaderDataSpd,
+        ComputeVendorName,
+        ComputeProductDescription,
+        ComputeSourceDeviceInformation,
+        AllSpd,
+        FillHeaderDataGMP,
+        ComputeGMPBodyPacket,
+        ComputeGBDBodyPacket,
+        AllGMP,
+        GetDeepColor,
+        GetAVMUTE,
+        AllGCP
+    }
+    public enum HotPlugStates
+    {
+        Plug,
+        Unplug
+    }
+
+}

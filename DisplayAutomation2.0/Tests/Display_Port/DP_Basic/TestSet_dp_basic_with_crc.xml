@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+    <Feature Name="DP_Basic_with_crc" Owner="ecpabolu">
+        <Test LastModifiedWW="2018.WW20" Name="1024_768_51Hz_54clk_8bpc_LBR_DPCD_LC_1" Owner="gyd" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPCRC001">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b 1024_768_51Hz_54clk_8bpc.bin LBR_DPCD_LC_1.txt</CommandLine>
+                <OS>WinRS3</OS>
+                <Platform>TGL;DG1</Platform>
+                <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW20" Name="1152_864_75Hz_104clk_8bpc_LBR_DPCD_LC_2" Owner="gyd" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPCRC002">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b 1152_864_75Hz_104clk_8bpc.bin LBR_DPCD_LC_2.txt</CommandLine>
+                <OS>WinRS3</OS>
+                <Platform>TGL;DG1</Platform>
+                <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW20" Name="1152_864_65Hz_89clk_8bpc_HBR_DPCD_LC_1" Owner="gyd" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPCRC003">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b 1152_864_65Hz_89clk_8bpc.bin HBR_DPCD_LC_1.txt</CommandLine>
+                <OS>WinRS3</OS>
+                <Platform>TGL;DG1</Platform>
+                <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW20" Name="1400_1050_100Hz_214clk_8bpc_LBR_DPCD" Owner="gyd" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPCRC004">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b 1400_1050_100Hz_214clk_8bpc.bin LBR_DPCD.txt</CommandLine>
+                <OS>WinRS3</OS>
+                <Platform>TGL;DG1</Platform>
+                <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW20" Name="1600_1200_65Hz_176clk_8bpc_HBR_DPCD_LC_2" Owner="gyd" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPCRC005">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b 1600_1200_65Hz_176clk_8bpc.bin HBR_DPCD_LC_2.txt</CommandLine>
+                <OS>WinRS3</OS>
+                <Platform>TGL;DG1</Platform>
+                <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW20" Name="1600_1200_65Hz_176clk_8bpc_HBR2_DPCD_LC_1" Owner="gyd" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPCRC006">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b 1600_1200_65Hz_176clk_8bpc.bin HBR2_DPCD_LC_1.txt</CommandLine>
+                <OS>WinRS3</OS>
+                <Platform>TGL;DG1</Platform>
+                <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW20" Name="2048_1536_79Hz_359clk_8bpc_HBR_DPCD" Owner="gyd" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPCRC007">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b 2048_1536_79Hz_359clk_8bpc.bin HBR_DPCD.txt</CommandLine>
+                <OS>WinRS3</OS>
+                <Platform>TGL;DG1</Platform>
+                <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW20" Name="2048_1536_79Hz_359clk_8bpc_HBR2_DPCD_LC_2" Owner="gyd" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPCRC008">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b 2048_1536_79Hz_359clk_8bpc.bin HBR2_DPCD_LC_2.txt</CommandLine>
+                <OS>WinRS3</OS>
+                <Platform>TGL;DG1</Platform>
+                <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW20" Name="2560_1440_65Hz_262clk_8bpc_HBR3_DPCD_LC_1" Owner="gyd" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPCRC009">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b 2560_1440_65Hz_262clk_8bpc.bin HBR3_DPCD_LC_1.txt</CommandLine>
+                <OS>WinRS3</OS>
+                <Platform>TGL;DG1</Platform>
+                <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW20" Name="3840_2160_54Hz_648clk_8bpc_HBR2_DPCD" Owner="gyd" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPCRC010">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b 3840_2160_54Hz_648clk_8bpc.bin HBR2_DPCD.txt</CommandLine>
+                <OS>WinRS3</OS>
+                <Platform>TGL;DG1</Platform>
+                <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW20" Name="3840_2160_60Hz_533clk_8bpc_HBR3_DPCD_LC_2" Owner="gyd" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPCRC011">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b 3840_2160_60Hz_533clk_8bpc.bin HBR3_DPCD_LC_2.txt</CommandLine>
+                <OS>WinRS3</OS>
+                <Platform>TGL;DG1</Platform>
+                <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW20" Name="EDP_3000_2000_70Hz_607clk_8bpc_HBR2_DPCD" Owner="gyd" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPCRC012">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b EDP_3000_2000_70Hz_607clk_8bpc.bin HBR2_DPCD.txt</CommandLine>
+                <OS>WinRS3</OS>
+                <Platform>TGL;DG1</Platform>
+                <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW20" Name="EDP_5K_5120_3200_60Hz_1042clk_8bpc_HBR3_DPCD" Owner="gyd" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPCRC013">
+                <CommandLine>python Tests\Display_port\DP_Basic\dp_linkrate_lanecount.py -dp_b EDP_5K_5120_3200_60Hz_1042clk_8bpc.bin HBR3_DPCD.txt</CommandLine>
+                <OS>WinRS3</OS>
+                <Platform>TGL;DG1</Platform>
+                <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+            </TestInstance>
+        </Test>
+    </Feature>
+</Display_Automation_2.0>

@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+   <Feature Name="hdmi_voltage_swing" Owner="gyd">
+     <Test LastModifiedWW="2017.WW23" Name="gen9_voltage_swing" Owner="gyd" Priority="P2" Version="1">
+       <TestInstance Grids="GFT" Id="VOSWI001" Status="Developed">
+         <CommandLine>python Tests\Hdmi\Voltageswing\gen9_voltage_swing.py -HDMI_B HDMI_DELL.EDID</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>SKL_ULT;SKL_ULX;SKL_HALO;KBL_ULT;KBL_ULX;KBL_HALO;CFL_ULT;CFL_ULX;CFL_HALO</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="GFT" Id="VOSWI002" Status="Developed">
+         <CommandLine>python Tests\Hdmi\Voltageswing\gen9_voltage_swing.py -HDMI_C HDMI_DELL.EDID</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>SKL_ULT;SKL_ULX;SKL_HALO;KBL_ULT;KBL_ULX;KBL_HALO;CFL_ULT;CFL_ULX;CFL_HALO</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+         <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="GFT" Id="VOSWI003" Status="Developed">
+         <CommandLine>python Tests\Hdmi\Voltageswing\gen9_voltage_swing.py -HDMI_D HDMI_DELL.EDID</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>SKL_ULT;SKL_ULX;SKL_HALO;KBL_ULT;KBL_ULX;KBL_HALO;CFL_ULT;CFL_ULX;CFL_HALO</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+         <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+     <Test LastModifiedWW="2017.WW23" Name="voltage_swing" Owner="gyd" Priority="P2" Version="1">
+       <TestInstance Grids="GFT" Id="VOSWI004" Status="Developed">
+         <CommandLine>python Tests\Hdmi\Voltageswing\voltage_swing.py -HDMI_B HDMI_DELL.EDID</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>SKL_ULT;SKL_ULX;SKL_HALO;KBL_ULT;KBL_ULX;KBL_HALO;CFL_ULT;CFL_ULX;CFL_HALO;CNL_ULT;CNL_ULX;CNL_HALO</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="GFT" Id="VOSWI005" Status="Developed">
+         <CommandLine>python Tests\Hdmi\Voltageswing\voltage_swing.py -HDMI_C HDMI_DELL.EDID</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>SKL_ULT;SKL_ULX;SKL_HALO;KBL_ULT;KBL_ULX;KBL_HALO;CFL_ULT;CFL_ULX;CFL_HALO;CNL_ULT;CNL_ULX;CNL_HALO;GLK</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+         <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="GFT" Id="VOSWI006" Status="Developed">
+         <CommandLine>python Tests\Hdmi\Voltageswing\voltage_swing.py -HDMI_D HDMI_DELL.EDID</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>SKL_ULT;SKL_ULX;SKL_HALO;KBL_ULT;KBL_ULX;KBL_HALO;CFL_ULT;CFL_ULX;CFL_HALO;CNL_ULT;CNL_ULX;CNL_HALO</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+         <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="GFT" Id="VOSWI007" Status="Developed">
+         <CommandLine>python Tests\Hdmi\Voltageswing\voltage_swing.py -HDMI_F HDMI_DELL.EDID</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>CNL_ULT;CNL_ULX;CNL_HALO</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+         <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="GFT" Id="VOSWI008" Status="Developed">
+         <CommandLine>python Tests\Hdmi\Voltageswing\voltage_swing.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>GLK</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+         <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+   </Feature>
+</Display_Automation_2.0>

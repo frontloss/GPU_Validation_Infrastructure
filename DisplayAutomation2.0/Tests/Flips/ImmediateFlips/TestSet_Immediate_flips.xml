@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+    <Feature Name="Immediate Flips" Owner="imahendr">
+        <Test LastModifiedWW="2017.WW30" Name="mpo_plane_format_media_resize.py" Owner="anshetty" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="IMFLP001" Status="Developed">
+                <CommandLine>python Tests\Flips\ImmediateFlips\async_flips_stream.py -EDP_A -stream TREX</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>SKL;KBL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@SKL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="IMFLP002" Status="Developed">
+                <CommandLine>python Tests\Flips\ImmediateFlips\async_flips_stream.py -EDP_A -stream DX12SDK</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>SKL;KBL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;GFT" Id="IMFLP003" Status="Valid">
+                <CommandLine>python Tests\Flips\ImmediateFlips\async_flips_stream.py -EDP_A -stream DREAD</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>SKL;KBL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@SKL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;GFT" Id="IMFLP004" Status="Valid">
+                <CommandLine>python Tests\Flips\ImmediateFlips\async_flips_stream.py -EDP_A -stream GOW4</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>SKL;KBL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;GFT" Id="IMFLP005" Status="Valid">
+                <CommandLine>python Tests\Flips\ImmediateFlips\async_flips_stream.py -EDP_A -stream UE4_SUN</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>SKL;KBL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;GFT" Id="IMFLP006" Status="Valid">
+                <CommandLine>python Tests\Flips\ImmediateFlips\async_flips_stream.py -EDP_A -stream DX12SDK_WINDOW</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>SKL;KBL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@SKL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;GFT" Id="IMFLP007" Status="Valid">
+                <CommandLine>python Tests\Flips\ImmediateFlips\async_flips_stream.py -EDP_A -stream ISLE</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>SKL;KBL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;GFT" Id="IMFLP008" Status="Valid">
+                <CommandLine>python Tests\Flips\ImmediateFlips\async_flips_stream.py -EDP_A -stream BF4</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>SKL;KBL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@SKL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;GFT" Id="IMFLP009" Status="Valid">
+                <CommandLine>python Tests\Flips\ImmediateFlips\async_flips_stream.py -EDP_A -stream UE4_ELEM</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>SKL;KBL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="IMFLP010" Status="Developed">
+                <CommandLine>python Tests\Flips\ImmediateFlips\async_flips_stream.py -MIPI_A -stream TREX</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="IMFLP011" Status="Developed">
+                <CommandLine>python Tests\Flips\ImmediateFlips\async_flips_stream.py -MIPI_A -stream DX12SDK</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;GFT" Id="IMFLP012" Status="Valid">
+                <CommandLine>python Tests\Flips\ImmediateFlips\async_flips_stream.py -MIPI_A -stream DREAD</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;GFT" Id="IMFLP013" Status="Valid">
+                <CommandLine>python Tests\Flips\ImmediateFlips\async_flips_stream.py -MIPI_A -stream GOW4</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;GFT" Id="IMFLP014" Status="Valid">
+                <CommandLine>python Tests\Flips\ImmediateFlips\async_flips_stream.py -MIPI_A -stream UE4_SUN</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;GFT" Id="IMFLP015" Status="Valid">
+                <CommandLine>python Tests\Flips\ImmediateFlips\async_flips_stream.py -MIPI_A -stream DX12SDK_WINDOW</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;GFT" Id="IMFLP016" Status="Valid">
+                <CommandLine>python Tests\Flips\ImmediateFlips\async_flips_stream.py -MIPI_A -stream ISLE</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;GFT" Id="IMFLP017" Status="Valid">
+                <CommandLine>python Tests\Flips\ImmediateFlips\async_flips_stream.py -MIPI_A -stream BF4</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;GFT" Id="IMFLP018" Status="Valid">
+                <CommandLine>python Tests\Flips\ImmediateFlips\async_flips_stream.py -MIPI_A -stream UE4_ELEM</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+    </Feature>
+</Display_Automation_2.0>

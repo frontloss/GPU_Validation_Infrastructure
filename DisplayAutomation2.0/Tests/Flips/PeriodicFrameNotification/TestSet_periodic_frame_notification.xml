@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+    <Feature Name="Periodic Frame Notifiation" Owner="imahendr">
+        <Test LastModifiedWW="2017.WW01" Name="pfn_basic.py" Owner="imahendr" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="PFRNT001">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_basic.py -EDP_A</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>KBL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT002">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_basic.py -EDP_A -HDMI_B</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>KBL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT003">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_basic.py -EDP_A -HDMI_B -DP_C</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>KBL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT013">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_basic.py -MIPI_A</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT014">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_basic.py -MIPI_A -HDMI_E</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT025">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_basic.py -MIPI_A -DP_D</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT015">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_basic.py -MIPI_A -HDMI_E -DP_D</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT029">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_basic.py -MIPI_A -DP_B</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>EHL</Platform>
+                <TestEnvironment>EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT030">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_basic.py -MIPI_A -HDMI_B -DP_C</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>EHL</Platform>
+                <TestEnvironment>EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW01" Name="pfn_media.py" Owner="imahendr" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="PFRNT004">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_media.py -EDP_A</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>KBL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT005">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_media.py -EDP_A -HDMI_B</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>KBL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT006">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_media.py -EDP_A -HDMI_B -DP_C</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>KBL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT016">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_media.py -MIPI_A</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT017">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_media.py -MIPI_A -HDMI_E</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT026">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_media.py -MIPI_A -DP_D</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT018">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_media.py -MIPI_A -HDMI_E -DP_D</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT031">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_media.py -MIPI_A -DP_B</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>EHL</Platform>
+                <TestEnvironment>EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT032">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_media.py -MIPI_A -HDMI_B -DP_C</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>EHL</Platform>
+                <TestEnvironment>EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW01" Name="pfn_modes.py" Owner="imahendr" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="PFRNT007">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_modes.py -EDP_A</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>KBL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT008">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_modes.py -EDP_A -HDMI_B</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>KBL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT009">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_modes.py -EDP_A -HDMI_B -DP_C</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>KBL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT019">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_modes.py -MIPI_A</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT020">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_modes.py -MIPI_A -HDMI_E</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT027">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_modes.py -MIPI_A -DP_D</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT021">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_modes.py -MIPI_A -HDMI_E -DP_D</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT033">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_modes.py -MIPI_A -DP_B</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>EHL</Platform>
+                <TestEnvironment>EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT034">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_modes.py -MIPI_A -HDMI_E -DP_B</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>EHL</Platform>
+                <TestEnvironment>EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW01" Name="pfn_3d_apps.py" Owner="imahendr" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="PFRNT010">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_3d_apps.py -EDP_A</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>KBL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT011">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_3d_apps.py -EDP_A -HDMI_B</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>KBL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT012">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_3d_apps.py -EDP_A -HDMI_B -DP_C</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>KBL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT022">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_3d_apps.py -MIPI_A</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT023">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_3d_apps.py -MIPI_A -HDMI_E</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT028">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_3d_apps.py -MIPI_A -DP_D</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT024">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_3d_apps.py -MIPI_A -HDMI_E -DP_D</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT035">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_3d_apps.py -MIPI_A -DP_B</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>EHL</Platform>
+                <TestEnvironment>EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PFRNT036">
+                <CommandLine>python Tests\Flips\PeriodicFrameNotification\pfn_3d_apps.py -MIPI_A -HDMI_E -DP_B</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>EHL</Platform>
+                <TestEnvironment>EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+    </Feature>
+</Display_Automation_2.0>

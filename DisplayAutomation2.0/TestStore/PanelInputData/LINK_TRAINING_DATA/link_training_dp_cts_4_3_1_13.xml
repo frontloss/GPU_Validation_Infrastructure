@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This xml should only work for EDID where Link Bw is 2.7Gbps and LaneCount is 4 -->
+<!-- DP 1.4 CTS -->
+<!-- This test covers below steps of 4.3.1.13 -->
+<!-- Step 4, 5, 7, 8, 9, 10 and 17 -->
+<DPCDModel>
+    <DPCDModelData>
+        <ulTriggerOffsetForTrans>0x103</ulTriggerOffsetForTrans>
+
+        <!-- TC 1 -->
+        <transaction>
+            <inputStartingOffsets>[]</inputStartingOffsets>
+            <inputValues>[]</inputValues>
+            <responseStartingOffsets>[0x202]</responseStartingOffsets>
+            <responseValues>[[0x11, 0x11, 0x80, 0x00, 0x00, 0x00]]</responseValues>
+        </transaction>
+
+        <!-- TC 2 -->
+        <transaction>
+            <inputStartingOffsets>[]</inputStartingOffsets>
+            <inputValues>[]</inputValues>
+            <responseStartingOffsets>[0x202]</responseStartingOffsets>
+            <responseValues>[[0x77, 0x11, 0x80, 0x00, 0x0, 0x0]]</responseValues>
+        </transaction>
+
+        <!-- TC 3 -->
+        <transaction>
+            <inputStartingOffsets>[]</inputStartingOffsets>
+            <inputValues>[]</inputValues>
+            <responseStartingOffsets>[0x202]</responseStartingOffsets>
+            <responseValues>[[0x77, 0x11, 0x80, 0x00, 0x00, 0x00]]</responseValues>
+        </transaction>
+
+        <!-- TC 4 -->
+        <transaction>
+            <inputStartingOffsets>[]</inputStartingOffsets>
+            <inputValues>[]</inputValues>
+            <responseStartingOffsets>[0x202]</responseStartingOffsets>
+            <responseValues>[[0x77, 0x11, 0x80, 0x00, 0x00, 0x00]]</responseValues>
+        </transaction>
+
+        <!-- TC 5 -->
+        <transaction>
+            <inputStartingOffsets>[]</inputStartingOffsets>
+            <inputValues>[]</inputValues>
+            <responseStartingOffsets>[0x202]</responseStartingOffsets>
+            <responseValues>[[0x77, 0x11, 0x80, 0x00, 0x00, 0x00]]</responseValues>
+        </transaction>
+
+        <!-- TC 6 -->
+        <transaction>
+            <inputStartingOffsets>[]</inputStartingOffsets>
+            <inputValues>[]</inputValues>
+            <responseStartingOffsets>[0x202]</responseStartingOffsets>
+            <responseValues>[[0x77, 0x11, 0x80, 0x00, 0x00, 0x00]]</responseValues>
+        </transaction>
+
+        <!-- TC 7 -->
+        <transaction>
+            <inputStartingOffsets>[]</inputStartingOffsets>
+            <inputValues>[]</inputValues>
+            <responseStartingOffsets>[0x202]</responseStartingOffsets>
+            <responseValues>[[0x77, 0x11, 0x80, 0x00, 0x00, 0x00]]</responseValues>
+        </transaction>
+
+        <!-- TC 8 -->
+        <transaction>
+            <inputStartingOffsets>[]</inputStartingOffsets>
+            <inputValues>[]</inputValues>
+            <responseStartingOffsets>[0x202]</responseStartingOffsets>
+            <responseValues>[[0x11, 0x00, 0x80, 0x00, 0x00, 0x00]]</responseValues>
+        </transaction>
+
+        <!-- TC 9 -->
+        <transaction>
+            <inputStartingOffsets>[]</inputStartingOffsets>
+            <inputValues>[]</inputValues>
+            <responseStartingOffsets>[0x202]</responseStartingOffsets>
+            <responseValues>[[0x77, 0x00, 0x81, 0x00, 0x00, 0x00]]</responseValues>
+        </transaction>
+    </DPCDModelData>
+    <LTExpectedData>
+        <Platform Name="TGL" Port="DP_B, DP_D, DP_E, DP_F, DP_G">
+            <crLTIter>1</crLTIter>
+            <eqLTIter>1</eqLTIter>
+            <ltVoltage>0</ltVoltage>
+            <ltPreemp>0</ltPreemp>
+            <linkRateCheck>0</linkRateCheck>
+            <linkRate>0xA8C</linkRate>
+        </Platform>
+        <Platform Name="ICL" Port="DP_B, DP_C, DP_D, DP_E, DP_F">
+            <crLTIter>1</crLTIter>
+            <eqLTIter>1</eqLTIter>
+            <ltVoltage>0</ltVoltage>
+            <ltPreemp>0</ltPreemp>
+            <linkRateCheck>0</linkRateCheck>
+            <linkRate>0xA8C</linkRate>
+        </Platform>
+        <Platform Name="DG2" Port="DP_A, DP_B, DP_C, DP_D, DP_E">
+            <crLTIter>1</crLTIter>
+            <eqLTIter>1</eqLTIter>
+            <ltVoltage>0</ltVoltage>
+            <ltPreemp>0</ltPreemp>
+            <linkRateCheck>0</linkRateCheck>
+            <linkRate>0xA8C</linkRate>
+        </Platform>
+        <Platform Name="ADLP" Port="DP_A, DP_B, DP_F, DP_G, DP_H, DP_I">
+            <crLTIter>1</crLTIter>
+            <eqLTIter>1</eqLTIter>
+            <ltVoltage>0</ltVoltage>
+            <ltPreemp>0</ltPreemp>
+            <linkRateCheck>0</linkRateCheck>
+            <linkRate>0xA8C</linkRate>
+        </Platform>
+        <Platform Name="MTL" Port="DP_A, DP_B, DP_F, DP_G, DP_H, DP_I">
+            <crLTIter>1</crLTIter>
+            <eqLTIter>1</eqLTIter>
+            <ltVoltage>0</ltVoltage>
+            <ltPreemp>0</ltPreemp>
+            <linkRateCheck>0</linkRateCheck>
+            <linkRate>0xA8C</linkRate>
+        </Platform>
+        <Platform Name="LNL" Port="DP_A, DP_B, DP_F, DP_G, DP_H, DP_I">
+            <crLTIter>1</crLTIter>
+            <eqLTIter>1</eqLTIter>
+            <ltVoltage>0</ltVoltage>
+            <ltPreemp>0</ltPreemp>
+            <linkRateCheck>0</linkRateCheck>
+            <linkRate>0xA8C</linkRate>
+        </Platform>
+        <Platform Name="PTL" Port="DP_A, DP_B, DP_F, DP_G, DP_H, DP_I">
+            <crLTIter>1</crLTIter>
+            <eqLTIter>1</eqLTIter>
+            <ltVoltage>0</ltVoltage>
+            <ltPreemp>0</ltPreemp>
+            <linkRateCheck>0</linkRateCheck>
+            <linkRate>0xA8C</linkRate>
+        </Platform>
+        <Platform Name="NVL" Port="DP_A, DP_B, DP_F, DP_G, DP_H, DP_I">
+            <crLTIter>1</crLTIter>
+            <eqLTIter>1</eqLTIter>
+            <ltVoltage>0</ltVoltage>
+            <ltPreemp>0</ltPreemp>
+            <linkRateCheck>0</linkRateCheck>
+            <linkRate>0xA8C</linkRate>
+        </Platform>
+    </LTExpectedData>
+</DPCDModel>
+
+

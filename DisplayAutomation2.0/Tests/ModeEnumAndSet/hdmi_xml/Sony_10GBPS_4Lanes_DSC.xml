@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<Display DPCD="NONE" EDID="Sony_HDMI_2_1_10GBPS.bin">
+	<Revision CreatedBy="ashamshe" CreatedOn="WW22" CurrentRevision="1">
+		<RevisionHistory RevisionID="1" Name="Shamsheer Ahmed" WW="WW23.3" Comments="Add Edid and modes for HDMI 2.1 Modeenum and set" />
+		<RevisionHistory RevisionID="2" Name="Praburaj Krishna" WW="WW9_2_2022" Comments="Added support for ELG"/>
+	</Revision>
+	<GoldenModeTable>
+		<!--<EDIDInstance ModeIndex="583" HActive="7680" VActive="4320" RefreshRate="60" Scanline="Progressive" Scaling="Default" PixelCLK="1200000000" />-->
+		<EDIDInstance ModeIndex="584" HActive="7680" VActive="4320" RefreshRate="30" Scanline="Progressive" Scaling="Default" PixelCLK="1200000000" />
+		<!--<EDIDInstance ModeIndex="585" HActive="5120" VActive="2160" RefreshRate="120" Scanline="Progressive" Scaling="Default" PixelCLK="1200000000" />-->
+		<!--<EDIDInstance ModeIndex="586" HActive="5120" VActive="2160" RefreshRate="100" Scanline="Progressive" Scaling="Default" PixelCLK="1200000000" />-->
+		<!--<EDIDInstance ModeIndex="587" HActive="5120" VActive="2160" RefreshRate="60" Scanline="Progressive" Scaling="Default" PixelCLK="1200000000" />-->
+		<!--<EDIDInstance ModeIndex="592" HActive="4096" VActive="2160" RefreshRate="23" Scanline="Progressive" Scaling="Default" PixelCLK="296703296" /> -->
+	</GoldenModeTable>
+	<!-- Mode Index 583,585,586,587,592 are commented out for now ;
+			Applying only one mode as applying multiple high res modes is causing system hang and other issues
+			Mode index 592 requires DSC support ; Will be enabled after DSC is implemented in Driver -->
+
+	<Platform Name="MTL" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+	</Platform>
+	<Platform Name="ELG" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+	</Platform>
+	<Platform Name="LNL" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+	</Platform>
+	<Platform Name="PTL" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+	</Platform>
+	<Platform Name="NVL" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+	</Platform>
+	<Platform Name="CLS" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+	</Platform>
+
+	<HDMI2_1>
+	<FRL type="Normal">
+	    <max_value>12</max_value>
+		<lanes>4</lanes>
+	</FRL>
+	<DSC enable="1">
+	<max_value>10</max_value>
+	</DSC>
+	</HDMI2_1>
+
+</Display>
+<!--  ModeControlFlag 8 Bit Definition:
+	{
+	('colorFormat'	, c_ubyte, 2), # Bit 0,1
+	('reserved_2' 	, c_ubyte, 1), # Bit 2
+	('bpc'		  	, c_ubyte, 2), # Bit 3,4
+	('reserved_5' 	, c_ubyte, 1), # Bit 5
+	('pixelRepMode' , c_ubyte, 1), # Bit 6
+	('reserved_7' 	, c_ubyte, 1)  # Bit 7
+	}
+
+	| colorFormat_RGB 		= 00 |
+	| colorFormat_YUV420 	= 01 |
+	| colorFormat_YUV444 	= 10 |
+	| colorFormat_YUV422 	= 11 |
+
+	|  bpc_6bpc	 = 00  |
+	|  bpc_8bpc  = 01  |
+	|  bpc_10bpc = 10  |
+	|  bpc_12bpc = 11  |
+
+	pixelRepMode (0 = Not a Pixel Replicated Mode, 1 = Pixel Replicated Mode) -->

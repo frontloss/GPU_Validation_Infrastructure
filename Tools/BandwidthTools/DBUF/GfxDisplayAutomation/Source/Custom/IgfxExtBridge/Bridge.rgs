@@ -1,0 +1,28 @@
+HKCR
+{
+	IgfxExtBridge.DisplayUtil.1 = s 'DisplayUtil Class'
+	{
+		CLSID = s '{2CE674BB-62B3-45e9-899F-F90B6BC970A7}'
+	}
+	IgfxExtBridge.DisplayUtil = s 'DisplayUtil Class'
+	{
+		CLSID = s '{2CE674BB-62B3-45e9-899F-F90B6BC970A7}'
+		CurVer = s 'IgfxExtBridge.DisplayUtil.1'
+	}
+	
+	NoRemove CLSID
+	{
+		ForceRemove {2CE674BB-62B3-45e9-899F-F90B6BC970A7} = s 'DisplayUtil Class'
+		{
+			ProgID = s 'IgfxExtBridge.DisplayUtil.1'
+			VersionIndependentProgID = s 'IgfxExtBridge.DisplayUtil'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{9A650EBC-929B-4210-BA05-76D5D021B140}'
+		}
+	}
+}

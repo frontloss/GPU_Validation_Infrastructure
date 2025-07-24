@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!-- Refer DisplayAutomation2.0/Libs/manual/modules/mode_xml_parser.py for parsing -->
+<Dock Name="Realtek_DP21_MST_Hub">
+	<Displays Count="1">
+		<Display Index="1" Name="Sony XBR-85Z9G"       Connector = "HDMI"    />
+	</Displays>
+
+	<Verification1>
+		<Display Index="1" HActive="7680" VActive="4320" RefreshRate="60" Scaling="MDS" AudioChannels="6"
+				 AudioSampleRates="[32,44.1,48,88.2,96,176.4,192]" />
+	</Verification1>
+</Dock>
+
+<!--  ModeControlFlag 8 Bit Definition:
+
+    Connector:
+    DP
+    HDMI
+    Type-C
+    TBT
+    DVI
+    mDP
+    VGA
+
+    Scaling:
+    Default
+    MDS
+    MAR
+    CI
+     -->

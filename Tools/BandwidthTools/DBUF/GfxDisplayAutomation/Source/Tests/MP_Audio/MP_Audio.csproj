@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8881C767-6137-4E48-8049-7641B2102623}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Intel.VPG.Display.Automation</RootNamespace>
+    <AssemblyName>MP_Audio</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Framework\AccessInterface\AccessInterface.csproj">
+      <Project>{0f59313c-058e-451e-bdad-2999e4241455}</Project>
+      <Name>AccessInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\ConstantsLibrary\ConstantsLibrary.csproj">
+      <Project>{b8edd54e-47a8-4e78-a31d-d29c6d521fc2}</Project>
+      <Name>ConstantsLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\CoreLibrary\CoreLibrary.csproj">
+      <Project>{3942ed5d-d917-4f23-9ee0-fc90da902dff}</Project>
+      <Name>CoreLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\Logger\Logger.csproj">
+      <Project>{ec0587c7-cf34-4309-b4b5-d1eb051032b4}</Project>
+      <Name>Logger</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MP_AudioSingleSource.cs" />
+    <Compile Include="MP_Audio_DisplaySwitchAfter_CS.cs" />
+    <Compile Include="MP_Audio_DisplaySwitchAfter_S3.cs" />
+    <Compile Include="MP_Audio_DisplaySwitchAfter_S4.cs" />
+    <Compile Include="MP_Audio_ModeChangeAfter_CS.cs" />
+    <Compile Include="MP_Audio_ModeChangeAfter_S3.cs" />
+    <Compile Include="MP_Audio_ModeChangeAfter_S4.cs" />
+    <Compile Include="MP_Audio_Monitor_Turn_Off.cs" />
+    <Compile Include="MP_Audio_Monitor_Turn_Off_DisplaySwitch.cs" />
+    <Compile Include="MP_Audio_Monitor_Turn_Off_HP.cs" />
+    <Compile Include="MP_Audio_Single_Source_HP_S3.cs" />
+    <Compile Include="MP_Audio_Without_Video_Basic.cs" />
+    <Compile Include="MP_Audio_Without_Video_HP_Multi_Source.cs" />
+    <Compile Include="MP_Audio_Without_Video_HP_Single_Source.cs" />
+    <Compile Include="MP_Audio_Without_Video_MultiSource.cs" />
+    <Compile Include="MP_Audio_Without_Video_SingleSource.cs" />
+    <Compile Include="MP_Audio_Multi_Source_HP.cs" />
+    <Compile Include="MP_Audio_Single_Source_HP_S4.cs" />
+    <Compile Include="MP_AudioBasic.cs" />
+    <Compile Include="MP_AudioLPSPBasic.cs" />
+    <Compile Include="MP_AudioMultiSource.cs" />
+    <Compile Include="MP_AudioMultiSourceDisplayModeset.cs" />
+    <Compile Include="MP_AudioMultiSourceDisplaySwitching.cs" />
+    <Compile Include="MP_AudioMultiSource_S3.cs" />
+    <Compile Include="MP_AudioMultiSource_S4.cs" />
+    <Compile Include="MP_AudioSingleSourceDisableEnable.cs" />
+    <Compile Include="MP_AudioSingleSourceDisplayModeset.cs" />
+    <Compile Include="MP_AudioSingleSourceDisplaySwitching.cs" />
+    <Compile Include="MP_AudioSingleSource_S3.cs" />
+    <Compile Include="MP_AudioSingleSource_S4.cs" />
+    <Compile Include="MP_Audio_Base.cs" />
+    <Compile Include="MP_Audio_HP.cs" />
+    <Compile Include="MP_Audio_LPSP_HP_S4.cs" />
+    <Compile Include="MP_Audio_Modeset.cs" />
+    <Compile Include="MP_Audio_Multi_Source_CS.cs" />
+    <Compile Include="MP_Audio_Multi_Source_HP_CS.cs" />
+    <Compile Include="MP_Audio_Multi_Source_HP_S3.cs" />
+    <Compile Include="MP_Audio_Multi_Source_HP_S4.cs" />
+    <Compile Include="MP_Audio_S3.cs" />
+    <Compile Include="MP_Audio_S4.cs" />
+    <Compile Include="MP_Audio_Single_Source_CS.cs" />
+    <Compile Include="MP_Audio_Single_Source_HP_CS.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assemblies\Mapper\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MP_Audio.sln" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

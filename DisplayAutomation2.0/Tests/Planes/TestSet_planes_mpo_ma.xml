@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+    <Feature Name="Multiplane Overlay" Owner="sooryar">
+        <Test LastModifiedWW="2019.WW39" Name="mpo_ma_single_plane_scaling.py" Owner="anshetty" Priority="P1" Version="1">
+            <TestInstance Grids="CI;GFT" Id="MPOMA001">
+                <CommandLine>python Tests\Planes\MPO\MultiAdapter\mpo_ma_single_plane_scaling.py -gfx_0 -edp_a -gfx_1 -hdmi_b -input_pixelformat SB_B8G8R8A8 -input_tileformat SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG1</Platform>
+                <TestEnvironment>DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="MPOMA002">
+                <CommandLine>python Tests\Planes\MPO\MultiAdapter\mpo_ma_single_plane_scaling.py -gfx_0 -edp_a -gfx_1 -hdmi_b -input_pixelformat SB_R10G10B10A2 -input_tileformat SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG1</Platform>
+                <TestEnvironment>DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="MPOMA003">
+                <CommandLine>python Tests\Planes\MPO\MultiAdapter\mpo_ma_single_plane_scaling.py -gfx_0 -edp_a -gfx_1 -hdmi_b -input_pixelformat SB_NV12YUV420 -input_tileformat SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG1</Platform>
+                <TestEnvironment>DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="MPOMA004">
+                <CommandLine>python Tests\Planes\MPO\MultiAdapter\mpo_ma_single_plane_scaling.py -gfx_0 -edp_a -gfx_1 -hdmi_b -input_pixelformat SB_YUV422 -input_tileformat SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG1</Platform>
+                <TestEnvironment>DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="MPOMA005">
+                <CommandLine>python Tests\Planes\MPO\MultiAdapter\mpo_ma_single_plane_scaling.py -gfx_0 -edp_a -gfx_1 -hdmi_b -input_pixelformat SB_NV12YUV420 SB_B8G8R8A8 -input_tileformat SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG1</Platform>
+                <TestEnvironment>DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="MPOMA006">
+                <CommandLine>python Tests\Planes\MPO\MultiAdapter\mpo_ma_single_plane_scaling.py -gfx_0 -edp_a -gfx_1 -hdmi_b -input_pixelformat SB_NV12YUV420 SB_R10G10B10A2 -input_tileformat SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG1</Platform>
+                <TestEnvironment>DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="MPOMA007">
+                <CommandLine>python Tests\Planes\MPO\MultiAdapter\mpo_ma_single_plane_scaling.py -gfx_0 -edp_a -gfx_1 -hdmi_b -input_pixelformat SB_P010YUV420 SB_B8G8R8A8 -input_tileformat SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG1</Platform>
+                <TestEnvironment>DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2019.WW39" Name="mpo_ma_two_planes_scaling.py" Owner="anshetty" Priority="P1" Version="1">
+            <TestInstance Grids="CI;GFT" Id="MPOMA008">
+                <CommandLine>python Tests\Planes\MPO\MultiAdapter\mpo_ma_two_planes_scaling.py -gfx_0 -edp_a -gfx_1 -hdmi_b -input_pixelformat SB_B8G8R8A8 -input_tileformat SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG1</Platform>
+                <TestEnvironment>DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="MPOMA009">
+                <CommandLine>python Tests\Planes\MPO\MultiAdapter\mpo_ma_two_planes_scaling.py -gfx_0 -edp_a -gfx_1 -hdmi_b -input_pixelformat SB_R10G10B10A2 -input_tileformat SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG1</Platform>
+                <TestEnvironment>DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="MPOMA010">
+                <CommandLine>python Tests\Planes\MPO\MultiAdapter\mpo_ma_two_planes_scaling.py -gfx_0 -edp_a -gfx_1 -hdmi_b -input_pixelformat SB_NV12YUV420 -input_tileformat SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG1</Platform>
+                <TestEnvironment>DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="MPOMA011">
+                <CommandLine>python Tests\Planes\MPO\MultiAdapter\mpo_ma_two_planes_scaling.py -gfx_0 -edp_a -gfx_1 -hdmi_b -input_pixelformat SB_YUV422 -input_tileformat SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG1</Platform>
+                <TestEnvironment>DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="MPOMA012">
+                <CommandLine>python Tests\Planes\MPO\MultiAdapter\mpo_ma_two_planes_scaling.py -gfx_0 -edp_a -gfx_1 -hdmi_b -input_pixelformat SB_NV12YUV420 SB_B8G8R8A8 -input_tileformat SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG1</Platform>
+                <TestEnvironment>DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="MPOMA013">
+                <CommandLine>python Tests\Planes\MPO\MultiAdapter\mpo_ma_two_planes_scaling.py -gfx_0 -edp_a -gfx_1 -hdmi_b -input_pixelformat SB_YUV422 SB_B8G8R8A8 -input_tileformat SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG1</Platform>
+                <TestEnvironment>DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="MPOMA014">
+                <CommandLine>python Tests\Planes\MPO\MultiAdapter\mpo_ma_two_planes_scaling.py -gfx_0 -edp_a -gfx_1 -hdmi_b -input_pixelformat SB_P010YUV420 SB_B8G8R8A8 -input_tileformat SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG1</Platform>
+                <TestEnvironment>DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2019.WW39" Name="mpo_ma_format_switch.py" Owner="anshetty" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOMA015">
+                <CommandLine>python Tests\Planes\MPO\MultiAdapter\mpo_ma_format_switch.py -gfx_0 -edp_a -gfx_1 -hdmi_b -input_xml MA_RGB8_NV12.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG1</Platform>
+                <TestEnvironment>DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="MPOMA01016">
+                <CommandLine>python Tests\Planes\MPO\MultiAdapter\mpo_ma_format_switch.py -gfx_0 -edp_a -gfx_1 -hdmi_b -input_xml MA_RGB8_RGB10.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG1</Platform>
+                <TestEnvironment>DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+    </Feature>
+</Display_Automation_2.0>

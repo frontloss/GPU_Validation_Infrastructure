@@ -1,0 +1,644 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+    <Feature Name="HDCP" Owner="sv9">
+        <Test LastModifiedWW="2017.WW39" Name="hdcp_activate_deactivate.py" Owner="sv9" Priority="P1" Version="1">
+            <TestInstance Grids="PreETM" Id="HDCPE039">
+                <CommandLine>python Tests\HDCP\hdcp_activate_deactivate.py -edp_a -hdcptype 1</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;KBL_ULX;CFL_HALO;KBL_ULX;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE040">
+                <CommandLine>python Tests\HDCP\hdcp_activate_deactivate.py -hdmi_b -hdcptype 1</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE041">
+                <CommandLine>python Tests\HDCP\hdcp_activate_deactivate.py -hdmi_c -hdcptype 1</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE043">
+                <CommandLine>python Tests\HDCP\hdcp_activate_deactivate.py -dp_b -hdcptype 1</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE045">
+                <CommandLine>python Tests\HDCP\hdcp_activate_deactivate.py -edp_a -hdmi_b -config clone -hdcptype 1</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>KBL_ULX;CFL_HALO;KBL_ULX;CNL_ULX</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE046">
+                <CommandLine>python Tests\HDCP\hdcp_activate_deactivate.py -edp_a -hdmi_c -config clone -hdcptype 1</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE048">
+                <CommandLine>python Tests\HDCP\hdcp_activate_deactivate.py -edp_a -dp_b -config clone -hdcptype 1</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;KBL_ULX;CFL_HALO;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE061">
+                <CommandLine>python Tests\HDCP\hdcp_activate_deactivate.py -hdmi_c -dp_b -config extended -hdcptype 1</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE066">
+                <CommandLine>python Tests\HDCP\hdcp_activate_deactivate.py -edp_a -hdmi_c -dp_b -config clone -hdcptype 1</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;CNL_ULX;JSL</Platform>
+                <TestEnvironment>JSL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+                        <TestInstance Grids="PreETM" Id="HDCPE001">
+                <CommandLine>python Tests\HDCP\hdcp_activate_deactivate.py -mipi_a -hdmi_d -dp_e -config clone -hdcptype 1</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>NONE</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+
+        </Test>
+        <Test LastModifiedWW="2017.WW39" Name="hdcp_activate_deactivate_multi_session.py" Owner="sv9" Priority="P1" Version="1">
+            <TestInstance Grids="PreETM" Id="HDCPE116">
+                <CommandLine>python Tests\HDCP\hdcp_activate_deactivate_multi_session.py -hdmi_b -hdcptype 1</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE117">
+                <CommandLine>python Tests\HDCP\hdcp_activate_deactivate_multi_session.py -hdmi_c -hdcptype 1</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;KBL_ULX;CFL_HALO;KBL_ULX;CNL_ULX</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE119">
+                <CommandLine>python Tests\HDCP\hdcp_activate_deactivate_multi_session.py -dp_b -hdcptype 1</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;KBL_ULX;CFL_HALO;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE121">
+                <CommandLine>python Tests\HDCP\hdcp_activate_deactivate_multi_session.py -edp_a -hdmi_b -config clone -hdcptype 1</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>KBL_ULX;CFL_HALO;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE122">
+                <CommandLine>python Tests\HDCP\hdcp_activate_deactivate_multi_session.py -edp_a -hdmi_c -config clone -hdcptype 1</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;KBL_ULX;CFL_HALO;CNL_ULX</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE124">
+                <CommandLine>python Tests\HDCP\hdcp_activate_deactivate_multi_session.py -edp_a -dp_b -config clone -hdcptype 1</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE137">
+                <CommandLine>python Tests\HDCP\hdcp_activate_deactivate_multi_session.py -hdmi_c -dp_b -config extended -hdcptype 1</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE142">
+                <CommandLine>python Tests\HDCP\hdcp_activate_deactivate_multi_session.py -edp_a -hdmi_c -dp_b -config clone -hdcptype 1</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;CNL_ULX</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW39" Name="hdcp_power_event.py" Owner="sv9" Priority="P1" Version="1">
+            <TestInstance Grids="PreETM" Id="HDCPE192">
+                <CommandLine>python Tests\HDCP\hdcp_power_event.py -hdmi_b -hdcptype 1 -power_event cs</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>KBL_ULX;CFL_HALO;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE193">
+                <CommandLine>python Tests\HDCP\hdcp_power_event.py -hdmi_c -hdcptype 1 -power_event cs</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE195">
+                <CommandLine>python Tests\HDCP\hdcp_power_event.py -dp_b -hdcptype 1 -power_event cs</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;KBL_ULX;CFL_HALO;CNL_ULX</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE218">
+                <CommandLine>python Tests\HDCP\hdcp_power_event.py -edp_a -hdmi_c -dp_b -config clone -hdcptype 1 -power_event cs</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;KBL_ULX;CFL_HALO;KBL_ULX;CNL_ULX</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW39" Name="hdcp_display_mode_change.py" Owner="sv9" Priority="P1" Version="1">
+            <TestInstance Grids="PreETM" Id="HDCPE268">
+                <CommandLine>python Tests\HDCP\hdcp_display_mode_change.py -hdmi_b -hdcptype 1</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE269">
+                <CommandLine>python Tests\HDCP\hdcp_display_mode_change.py -hdmi_c -hdcptype 1</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE271">
+                <CommandLine>python Tests\HDCP\hdcp_display_mode_change.py -dp_b -hdcptype 1</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;KBL_ULX;CFL_HALO;CNL_ULX</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE294">
+                <CommandLine>python Tests\HDCP\hdcp_display_mode_change.py -edp_a -hdmi_c -dp_b -config clone -hdcptype 1</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;CNL_ULT;JSL</Platform>
+                <TestEnvironment>JSL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="PreETM" Id="HDCPE002">
+                <CommandLine>python Tests\HDCP\hdcp_display_mode_change.py -mipi_a -hdmi_d -dp_e -config clone -hdcptype 1</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>NONE</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+        </Test>
+        <Test LastModifiedWW="2017.WW39" Name="hdcp_hotplug_unplug.py" Owner="sv9" Priority="P1" Version="1">
+            <TestInstance Grids="PreETM" Id="HDCPE337">
+                <CommandLine>python Tests\HDCP\hdcp_hotplug_unplug.py -edp_a -hdmi_b -config clone -hdcptype 1 -hotplug true</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>KBL_ULX;CFL_HALO;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE338">
+                <CommandLine>python Tests\HDCP\hdcp_hotplug_unplug.py -edp_a -hdmi_c -config clone -hdcptype 1 -hotplug true</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;KBL_ULX;CFL_HALO;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE345">
+                <CommandLine>python Tests\HDCP\hdcp_hotplug_unplug.py -edp_a -dp_b -config extended -hdcptype 1 -hotplug true</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;CNL_ULX</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE348">
+                <CommandLine>python Tests\HDCP\hdcp_hotplug_unplug.py -edp_a -hdmi_c -dp_b -config clone -hdcptype 1 -hotplug true</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW39" Name="hdcp_hotplug_unplug_power_event.py" Owner="sv9" Priority="P1" Version="1">
+            <TestInstance Grids="PreETM" Id="HDCPE377">
+                <CommandLine>python Tests\HDCP\hdcp_hotplug_unplug_power_event.py -edp_a -hdmi_b -config clone -hdcptype 1 -hotplug true -power_event cs</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>KBL_ULX;CFL_HALO;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE378">
+                <CommandLine>python Tests\HDCP\hdcp_hotplug_unplug_power_event.py -edp_a -hdmi_c -config clone -hdcptype 1 -hotplug true -power_event cs</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;KBL_ULX;CFL_HALO;CNL_ULX</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE385">
+                <CommandLine>python Tests\HDCP\hdcp_hotplug_unplug_power_event.py -edp_a -dp_b -config extended -hdcptype 1 -hotplug true -power_event cs</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE388">
+                <CommandLine>python Tests\HDCP\hdcp_hotplug_unplug_power_event.py -edp_a -hdmi_c -dp_b -config clone -hdcptype 1 -hotplug true -power_event cs</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;KBL_ULX;CFL_HALO;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW39" Name="hdcp_hotplug_unplug_power_event.py" Owner="sv9" Priority="P1" Version="1">
+            <TestInstance Grids="PreETM" Id="HDCPE417">
+                <CommandLine>python Tests\HDCP\hdcp_hotplug_unplug_power_event.py -edp_a -hdmi_b -config clone -hdcptype 1 -hotplug true -power_event MTO</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>CNL_ULX</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE418">
+                <CommandLine>python Tests\HDCP\hdcp_hotplug_unplug_power_event.py -edp_a -hdmi_c -config clone -hdcptype 1 -hotplug true -power_event MTO</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;KBL_ULX;CFL_HALO;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE425">
+                <CommandLine>python Tests\HDCP\hdcp_hotplug_unplug_power_event.py -edp_a -dp_b -config extended -hdcptype 1 -hotplug true -power_event MTO</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;KBL_ULX;CFL_HALO;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE428">
+                <CommandLine>python Tests\HDCP\hdcp_hotplug_unplug_power_event.py -edp_a -hdmi_c -dp_b -config clone -hdcptype 1 -hotplug true -power_event MTO</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;CNL_ULX</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE497">
+                <CommandLine>python Tests\HDCP\hdcp_hdcp_hotplug_unplug_power_event.py -edp_a -hdmi_b -config clone -hdcptype 1 -hotplug true -power_event s3</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>KBL_ULX;CFL_HALO;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE498">
+                <CommandLine>python Tests\HDCP\hdcp_hdcp_hotplug_unplug_power_event.py -edp_a -hdmi_c -config clone -hdcptype 1 -hotplug true -power_event s3</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;KBL_ULX;CFL_HALO;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE505">
+                <CommandLine>python Tests\HDCP\hdcp_hdcp_hotplug_unplug_power_event.py -edp_a -dp_b -config extended -hdcptype 1 -hotplug true -power_event s3</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;CNL_ULX</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW39" Name="hdcp_power_event.py" Owner="sv9" Priority="P1" Version="1">
+            <TestInstance Grids="PreETM" Id="HDCPE556">
+                <CommandLine>python Tests\HDCP\hdcp_power_event.py -hdmi_b -hdcptype 1 -power_event MTO</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>KBL_ULX;CFL_HALO;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE557">
+                <CommandLine>python Tests\HDCP\hdcp_power_event.py -hdmi_c -hdcptype 1 -power_event MTO</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE559">
+                <CommandLine>python Tests\HDCP\hdcp_power_event.py -dp_b -hdcptype 1 -power_event MTO</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;KBL_ULX;CFL_HALO;CNL_ULX</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE561">
+                <CommandLine>python Tests\HDCP\hdcp_power_event.py -edp_a -hdmi_b -config clone -hdcptype 1 -power_event MTO</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>KBL_ULX;CFL_HALO;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE562">
+                <CommandLine>python Tests\HDCP\hdcp_power_event.py -edp_a -hdmi_c -config clone -hdcptype 1 -power_event MTO</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;CNL_ULX</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE564">
+                <CommandLine>python Tests\HDCP\hdcp_power_event.py -edp_a -dp_b -config clone -hdcptype 1 -power_event MTO</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;KBL_ULX;CFL_HALO;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE582">
+                <CommandLine>python Tests\HDCP\hdcp_power_event.py -edp_a -hdmi_c -dp_b -config clone -hdcptype 1 -power_event MTO</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;KBL_ULX;CFL_HALO;CNL_ULX;JSL</Platform>
+                <TestEnvironment>JSL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+                        <TestInstance Grids="PreETM" Id="HDCPE003">
+                <CommandLine>python Tests\HDCP\hdcp_power_event.py -mipi_a -hdmi_d -dp_e -config clone -hdcptype 1 -power_event MTO</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>NONE</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE632">
+                <CommandLine>python Tests\HDCP\hdcp_power_event.py -hdmi_b -hdcptype 1 -power_event s3</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE633">
+                <CommandLine>python Tests\HDCP\hdcp_power_event.py -hdmi_c -hdcptype 1 -power_event s3</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;KBL_ULX;CFL_HALO;CNL_ULX</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE635">
+                <CommandLine>python Tests\HDCP\hdcp_power_event.py -dp_b -hdcptype 1 -power_event s3</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;KBL_ULX;CFL_HALO;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE637">
+                <CommandLine>python Tests\HDCP\hdcp_power_event.py -edp_a -hdmi_b -config clone -hdcptype 1 -power_event s3</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>CNL_ULX</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE638">
+                <CommandLine>python Tests\HDCP\hdcp_power_event.py -edp_a -hdmi_c -config clone -hdcptype 1 -power_event s3</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;KBL_ULX;CFL_HALO;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE640">
+                <CommandLine>python Tests\HDCP\hdcp_power_event.py -edp_a -dp_b -config clone -hdcptype 1 -power_event s3</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;KBL_ULX;CFL_HALO;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE005">
+                <CommandLine>python Tests\HDCP\hdcp_power_event.py -edp_a -hdmi_d -dp_e -config clone -hdcptype 1 -power_event s3</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>NONE</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE708">
+                <CommandLine>python Tests\HDCP\hdcp_power_event.py -hdmi_b -hdcptype 1 -power_event s4</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE709">
+                <CommandLine>python Tests\HDCP\hdcp_power_event.py -hdmi_c -hdcptype 1 -power_event s4</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;KBL_ULX;CFL_HALO;CNL_ULX</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE711">
+                <CommandLine>python Tests\HDCP\hdcp_power_event.py -dp_b -hdcptype 1 -power_event s4</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;KBL_ULX;CFL_HALO;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE713">
+                <CommandLine>python Tests\HDCP\hdcp_power_event.py -edp_a -hdmi_b -config clone -hdcptype 1 -power_event s4</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE714">
+                <CommandLine>python Tests\HDCP\hdcp_power_event.py -edp_a -hdmi_c -config clone -hdcptype 1 -power_event s4</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;KBL_ULX;CFL_HALO;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE729">
+                <CommandLine>python Tests\HDCP\hdcp_power_event.py -hdmi_c -dp_b -config extended -hdcptype 1 -power_event s4</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;CNL_ULT;JSL</Platform>
+                <TestEnvironment>JSL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="PreETM" Id="HDCPE007">
+                <CommandLine>python Tests\HDCP\hdcp_power_event.py -hdmi_d -dp_e -config extended -hdcptype 1 -power_event s4</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>NONE</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+
+            <TestInstance Grids="PreETM" Id="HDCPE734">
+                <CommandLine>python Tests\HDCP\hdcp_power_event.py -edp_a -hdmi_c -dp_b -config clone -hdcptype 1 -power_event s4</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW39" Name="hdcp_tdr.py" Owner="sv9" Priority="P1" Version="1">
+            <TestInstance Grids="PreETM" Id="HDCPE784">
+                <CommandLine>python Tests\HDCP\hdcp_tdr.py -hdmi_b -hdcptype 1</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>KBL_ULX;CFL_HALO;CNL_ULT</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE785">
+                <CommandLine>python Tests\HDCP\hdcp_tdr.py -hdmi_c -hdcptype 1</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;KBL_ULX;CFL_HALO;CNL_ULX</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="PreETM" Id="HDCPE787">
+                <CommandLine>python Tests\HDCP\hdcp_tdr.py -dp_b -hdcptype 1</CommandLine>
+                <OS>19H1,19H2,20H1</OS>
+                <Platform>GLK;CNL_ULX</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+    </Feature>
+</Display_Automation_2.0>

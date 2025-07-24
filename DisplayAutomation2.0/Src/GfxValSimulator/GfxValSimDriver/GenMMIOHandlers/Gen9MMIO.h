@@ -1,0 +1,38 @@
+#ifndef __GEN9MMIO_H__
+#define __GEN9MMIO_H__
+
+#include "..\\CommonCore\\PortingLayer.h"
+#include "Gen9InterruptRegisters.h"
+#include "CommonMMIO.h"
+
+#define DDI_AUX_CTL_A_SKL 0x64010
+#define DDI_AUX_CTL_B_SKL 0x64110
+#define DDI_AUX_CTL_C_SKL 0x64210
+#define DDI_AUX_CTL_D_SKL 0x64310
+
+#define DDI_AUX_DATA_A_START_SKL 0x64014 // 64014h - 64027h
+#define DDI_AUX_DATA_A_END_SKL 0x64024
+
+#define DDI_AUX_DATA_B_START_SKL 0x64114 // 64114h - 64127h
+#define DDI_AUX_DATA_B_END_SKL 0x64124
+
+#define DDI_AUX_DATA_C_START_SKL 0x64214 // 64214h - 64227h
+#define DDI_AUX_DATA_C_END_SKL 0x64224
+
+#define DDI_AUX_DATA_D_START_SKL 0x64314 // 64314h - 64327h
+#define DDI_AUX_DATA_D_END_SKL 0x64324
+
+#define GMBUS0 0xC5100
+#define GMBUS1 0xC5104
+#define GMBUS2 0xC5108
+#define GMBUS3 0xC510C
+
+BOOLEAN GEN9MMIOHANDLERS_RegisterGeneralMMIOHandHandlers(PMMIO_INTERFACE pstMMIOInterface);
+
+BOOLEAN GEN9MMIOHANDLERS_GenSpecificMMIOInitialization(PMMIO_INTERFACE pstMMIOInterface);
+
+BOOLEAN GEN9MMIOHANDLERS_SetLiveStateForPort(PMMIO_INTERFACE pstMMIOInterface, PORT_TYPE ePortType, BOOLEAN bAttach);
+
+// bIsHPD == FALSE ==> SPI
+BOOLEAN GEN9MMIOHANDLERS_SetupInterruptRegistersForHPDorSPI(PMMIO_INTERFACE pstMMIOInterface, PORT_TYPE ePortType, BOOLEAN bAttach, BOOLEAN bIsHPD);
+#endif

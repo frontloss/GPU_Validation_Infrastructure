@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Data>
+  <NumAudioEndPoint>
+    <Platform id ="HSW" MaxSupportedEndpoints="2"></Platform>
+    <Platform id ="BDW" MaxSupportedEndpoints="2"></Platform>
+    <Platform id ="SKL" MaxSupportedEndpoints="2"></Platform>
+    <Platform id ="KBL" MaxSupportedEndpoints="2"></Platform>
+  </NumAudioEndPoint>
+  </Data>

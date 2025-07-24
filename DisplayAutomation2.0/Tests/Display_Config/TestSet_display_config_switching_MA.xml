@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+    <Feature Name="Display_Config" Owner="vveluru">
+        <Test LastModifiedWW="2017.WW28" Name="apply_configuration_ddc.py" Owner="vveluru" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWMA001">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -gfx_0 -dp_b -gfx_1 -dp_d</CommandLine>
+                <OS>19H1;19H2;20H1</OS>
+                <Platform>DG1;DG2</Platform>
+                <TestEnvironment>DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@DG1_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWMA002">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -gfx_0 -dp_c -gfx_1 -hdmi_d</CommandLine>
+                <OS>19H1;19H2;20H1</OS>
+                <Platform>DG1;DG2</Platform>
+                <TestEnvironment>DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@DG1_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWMA003">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -gfx_0 -dp_d -gfx_1 -dp_d</CommandLine>
+                <OS>19H1;19H2;20H1</OS>
+                <Platform>DG1;DG2</Platform>
+                <TestEnvironment>DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@DG1_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWMA004">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -gfx_0 -dp_b -gfx_1 -dp_a</CommandLine>
+                <OS>19H1;19H2;20H1</OS>
+                <Platform>DG1;DG2</Platform>
+                <TestEnvironment>DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@DG1_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWMA005">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -gfx_0 -hdmi_b -gfx_1 -dp_a</CommandLine>
+                <OS>19H1;19H2;20H1</OS>
+                <Platform>DG1;DG2</Platform>
+                <TestEnvironment>DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@DG1_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWMA006">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -gfx_0 -dp_d -gfx_1 -dp_a</CommandLine>
+                <OS>19H1;19H2;20H1</OS>
+                <Platform>DG1;DG2</Platform>
+                <TestEnvironment>DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@DG1_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWMA007">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -gfx_0 -dp_b -gfx_1 -hdmi_a</CommandLine>
+                <OS>19H1;19H2;20H1</OS>
+                <Platform>DG1;DG2</Platform>
+                <TestEnvironment>DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@DG1_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWMA008">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -gfx_0 -dp_b -gfx_1 -hdmi_b</CommandLine>
+                <OS>19H1;19H2;20H1</OS>
+                <Platform>DG1;DG2</Platform>
+                <TestEnvironment>DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@DG1_SOC</QualificationStatus>
+            </TestInstance>
+        </Test>
+    </Feature>
+</Display_Automation_2.0>

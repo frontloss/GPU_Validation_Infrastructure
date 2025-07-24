@@ -1,0 +1,75 @@
+<ULTFrameworkParams>
+  <ULTEscapeCode name ="ULT_CREATE_RESOURCE">
+    <DumpFilePath>DumpFiles\1024_768_Y_RGB.8.8.8.8\DeskTop5_1024_768.bin</DumpFilePath>
+      <FileIndex>0</FileIndex>
+  </ULTEscapeCode>
+  <ULTEscapeCode name ="ULT_SET_SRC_ADDRESS">
+    <SourceId>0</SourceId>
+    <SourceAddressFlags>FlipOnNextVSync</SourceAddressFlags>
+    <Duration> </Duration>
+  </ULTEscapeCode>
+  <ULTEscapeCode name ="ULT_GET_MPO_CAPS">
+    <SourceId>0</SourceId>
+  </ULTEscapeCode>
+  <ULTEscapeCode name ="ULT_MPO_GROUP_CAPS">
+    <SourceId>0</SourceId>
+  </ULTEscapeCode>
+  <ULTEscapeCode name ="ULT_CHECK_MPO">
+    <NumPaths>1</NumPaths>
+    <Pipe index ="1">
+      <Plane index ="1">
+        <Path>"Mapper\DumpFiles\1024_768_Y_RGB.8.8.8.8"</Path>
+        <Enabled>True</Enabled>
+        <MPOFlags>0</MPOFlags>
+        <SourceRect>0,0,1024,768</SourceRect>
+        <DestRect>0,0,1920,1080</DestRect>
+        <ClipRect>0,0,1920,1080</ClipRect>
+        <MPORotation>MPO_ROTATION_90</MPORotation>
+        <HwOrientation>MPO_ORIENTATION_DEFAULT</HwOrientation>
+        <MPOBlend>1</MPOBlend>
+        <MPOVideoFormat>MPO_VIDEO_FRAME_FORMAT_PROGRESSIVE</MPOVideoFormat>
+        <MPOYCbCrFlags>1</MPOYCbCrFlags>
+        <MPOStereoFormat>MPO_FORMAT_MONO</MPOStereoFormat>
+        <MPOStereoFlipMode>MPO_FLIP_NONE</MPOStereoFlipMode>
+        <StretchQuality>MPO_STRETCH_QUALITY_HIGH</StretchQuality>
+        <SurfaceMemOffsetInfo>
+          <SurfaceMemoryType>SURFACE_MEMORY_Y_LEGACY_TILED</SurfaceMemoryType>
+          <TiledXOffset>1</TiledXOffset>
+          <TiledYOffset>2</TiledYOffset>
+          <TiledUVXOffset>3</TiledUVXOffset>
+          <TiledUVYOffset>4</TiledUVYOffset>
+          <UVDistance>5</UVDistance>
+          <AuxDistance>6</AuxDistance>
+        </SurfaceMemOffsetInfo>
+        <PixelFormat>SB_B8G8R8A8</PixelFormat>
+        <IsAsyncMMIOFlip>False</IsAsyncMMIOFlip>
+      </Plane>
+    </Pipe>
+  </ULTEscapeCode>
+  <ULTEscapeCode name ="ULT_SET_SRC_ADD_MPO">
+    <NumPlanes>1</NumPlanes>
+    <SourceId>0</SourceId>
+    <SourceAddressFlags>FlipOnNextVSync</SourceAddressFlags>
+    <Plane index ="1">
+      <Path>"Mapper\DumpFiles\1024_768_Y_RGB.8.8.8.8"</Path>
+      <Enabled>True</Enabled>
+      <Affected>True</Affected>
+      <MPOFlags>0</MPOFlags>
+     <SourceRect>0,0,1024,768</SourceRect>
+        <DestRect>0,0,1920,1080</DestRect>
+        <ClipRect>0,0,1920,1080</ClipRect>
+      <MPORotation>MPO_ROTATION_90</MPORotation>
+      <HwOrientation>MPO_ORIENTATION_DEFAULT</HwOrientation>
+      <MPOBlend>1</MPOBlend>
+      <MPOVideoFormat>MPO_VIDEO_FRAME_FORMAT_PROGRESSIVE</MPOVideoFormat>
+      <MPOYCbCrFlags>1</MPOYCbCrFlags>
+      <MPOStereoFormat>MPO_FORMAT_MONO</MPOStereoFormat>
+      <MPOStereoFlipMode>MPO_FLIP_NONE</MPOStereoFlipMode>
+      <StretchQuality>MPO_STRETCH_QUALITY_HIGH</StretchQuality>
+    </Plane>
+  </ULTEscapeCode>
+</ULTFrameworkParams>
+
+
+
+

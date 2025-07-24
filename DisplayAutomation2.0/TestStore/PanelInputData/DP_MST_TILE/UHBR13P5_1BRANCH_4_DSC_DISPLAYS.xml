@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EDID>
+	<DP_4K_120HZ>DP_3840_2160_120hz.bin</DP_4K_120HZ>
+</EDID>
+
+<DPCD>
+	<UHBR13P5_LC4_MST>UHBR13P5_LC4_MST_DSC_PASS_THROUGH_DPCD.bin</UHBR13P5_LC4_MST>
+	<UHBR13P5_LC4_SST>UHBR13P5_LC4_SST_DPCD.bin</UHBR13P5_LC4_SST>
+</DPCD>
+
+<Topology>
+	<Branch>
+		<UpStrmBranchOutPort>0xffffffff</UpStrmBranchOutPort>
+		<ThisBranchInputPort>0</ThisBranchInputPort>
+		<TotalInputPorts>1</TotalInputPorts>
+		<TotalPhysicalPorts>4</TotalPhysicalPorts>
+		<TotalVirtualPorts>0</TotalVirtualPorts>
+		<TotalAvailablePBN>7736</TotalAvailablePBN>
+		<MaxLinkRate>1350</MaxLinkRate>
+		<MaxLaneCount>4</MaxLaneCount>
+		<BranchReplyDelay>0</BranchReplyDelay>
+		<LinkAddressDelay>0</LinkAddressDelay>
+		<RemoteI2ReadDelay>0</RemoteI2ReadDelay>
+		<RemoteI2WriteDelay>0</RemoteI2WriteDelay>
+		<RemoteDPCDReadDelay>0</RemoteDPCDReadDelay>
+		<RemoteDPCDWriteDelay>0</RemoteDPCDWriteDelay>
+		<EPRDelay>0</EPRDelay>
+		<AllocatePayloadDelay>0</AllocatePayloadDelay>
+		<ClearPayLoadDelay>0</ClearPayLoadDelay>
+		<BranchDPCD>UHBR13P5_LC4_MST</BranchDPCD>
+		<Display>
+			<UpStrmBranchOutPort>1</UpStrmBranchOutPort>
+			<ThisDisplayInputPort>0</ThisDisplayInputPort>
+			<TotalInputPorts>1</TotalInputPorts>
+			<TotalAvailablePBN>7736</TotalAvailablePBN>
+			<MaxLinkRate>1350</MaxLinkRate>
+			<MaxLaneCount>4</MaxLaneCount>
+			<RemoteI2ReadDelay>0</RemoteI2ReadDelay>
+			<RemoteI2WriteDelay>0</RemoteI2WriteDelay>
+			<RemoteDPCDReadDelay>0</RemoteDPCDReadDelay>
+			<RemoteDPCDWriteDelay>0</RemoteDPCDWriteDelay>
+			<DisplayDPCD>UHBR13P5_LC4_SST</DisplayDPCD>
+			<DisplayEDID>DP_4K_120HZ</DisplayEDID>
+		</Display>
+		<Display>
+			<UpStrmBranchOutPort>2</UpStrmBranchOutPort>
+			<ThisDisplayInputPort>0</ThisDisplayInputPort>
+			<TotalInputPorts>1</TotalInputPorts>
+			<TotalAvailablePBN>7736</TotalAvailablePBN>
+			<MaxLinkRate>1350</MaxLinkRate>
+			<MaxLaneCount>4</MaxLaneCount>
+			<RemoteI2ReadDelay>0</RemoteI2ReadDelay>
+			<RemoteI2WriteDelay>0</RemoteI2WriteDelay>
+			<RemoteDPCDReadDelay>0</RemoteDPCDReadDelay>
+			<RemoteDPCDWriteDelay>0</RemoteDPCDWriteDelay>
+			<DisplayDPCD>UHBR13P5_LC4_SST</DisplayDPCD>
+			<DisplayEDID>DP_4K_120HZ</DisplayEDID>
+		</Display>
+		<Display>
+			<UpStrmBranchOutPort>3</UpStrmBranchOutPort>
+			<ThisDisplayInputPort>0</ThisDisplayInputPort>
+			<TotalInputPorts>1</TotalInputPorts>
+			<TotalAvailablePBN>7736</TotalAvailablePBN>
+			<MaxLinkRate>1350</MaxLinkRate>
+			<MaxLaneCount>4</MaxLaneCount>
+			<RemoteI2ReadDelay>0</RemoteI2ReadDelay>
+			<RemoteI2WriteDelay>0</RemoteI2WriteDelay>
+			<RemoteDPCDReadDelay>0</RemoteDPCDReadDelay>
+			<RemoteDPCDWriteDelay>0</RemoteDPCDWriteDelay>
+			<DisplayDPCD>UHBR13P5_LC4_SST</DisplayDPCD>
+			<DisplayEDID>DP_4K_120HZ</DisplayEDID>
+		</Display>
+		<Display>
+			<UpStrmBranchOutPort>4</UpStrmBranchOutPort>
+			<ThisDisplayInputPort>0</ThisDisplayInputPort>
+			<TotalInputPorts>1</TotalInputPorts>
+			<TotalAvailablePBN>7736</TotalAvailablePBN>
+			<MaxLinkRate>1350</MaxLinkRate>
+			<MaxLaneCount>4</MaxLaneCount>
+			<RemoteI2ReadDelay>0</RemoteI2ReadDelay>
+			<RemoteI2WriteDelay>0</RemoteI2WriteDelay>
+			<RemoteDPCDReadDelay>0</RemoteDPCDReadDelay>
+			<RemoteDPCDWriteDelay>0</RemoteDPCDWriteDelay>
+			<DisplayDPCD>UHBR13P5_LC4_SST</DisplayDPCD>
+			<DisplayEDID>DP_4K_120HZ</DisplayEDID>
+		</Display>
+	</Branch>
+</Topology>

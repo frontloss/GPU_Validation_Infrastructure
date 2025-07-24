@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root id="root">
+  <DisplayTile id ="tile" automationId="TextOnTile" uiaName="Display" patternMethod="TilesInvoke" cAutomationId="" controlType="">
+    <MainMenu id ="tab" automationId="MenuItem" controlType="MenuItem" patternMethod="ExpandCollapse">
+      <SubMenuDisplaySettings id ="menu" automationId="MenuItem_0" controlType="MenuItem" patternMethod="Invoke">
+        <feature name="SelectDisplay"/>
+        <TabDisplaySettings id="tab" automationId="basicAdvOptions" controlType="Custom" cAutomationId="HorizontalList_0" patternMethod="SendKey">
+          <TabBasicDisplaySettings id ="tab" automationId="basicAdvOptions" controlType="Custom" cAutomationId="HorizontalList_0" patternMethod="SendKey">
+            <feature name="Modes"/>
+            <feature name="RefreshRate"/>
+            <feature name="Rotation"/>
+            <feature name="DisplaySettings"/>
+          </TabBasicDisplaySettings>
+          <TabAdvancedDisplaySettings id ="tab" automationId="basicAdvOptions" controlType="Custom" cAutomationId="HorizontalList_1" patternMethod="SendKey">
+            <feature name =""/>
+          </TabAdvancedDisplaySettings>
+        </TabDisplaySettings>
+        <TabColor id="tab" uiaName="Color" controlType="RadioButton" patternMethod="SelectionItem">
+          <TabBasicColor id ="tab" automationId="basicAdvOptions" controlType="Custom" cAutomationId="HorizontalList_0" patternMethod="SendKey">
+            <feature name="ColorDepth" />
+            <feature name ="Gamma" />
+          </TabBasicColor>
+          <TabAdvancedColor id ="tab" automationId="basicAdvOptions" controlType="Custom" cAutomationId="HorizontalList_1" patternMethod="SendKey">
+            <feature name ="XvyccYcbcr"/>
+          </TabAdvancedColor>
+        </TabColor>
+      </SubMenuDisplaySettings>
+      <SubMenuMultipleDisplays id ="menu" automationId="MenuItem_1" controlType="MenuItem" patternMethod="Invoke">
+        <feature name="Config"/>
+      </SubMenuMultipleDisplays>
+      <SubMenuAudioSettings id ="menu" automationId="MenuItem_2" controlType="MenuItem" patternMethod="Invoke">
+        <feature name="ChangeAudioSource"/>
+      </SubMenuAudioSettings>
+    </MainMenu>
+  </DisplayTile>
+  <OptionsTile id ="tile" automationId="TextOnTile" uiaName="Options and Support" patternMethod="TilesInvoke">
+    <MenuOptions id ="menu" automationId="MenuItem" controlType="MenuItem" patternMethod="ExpandCollapse">
+      <SubMenuInformationCenter id ="menu" automationId="MenuItem_1"  controlType="MenuItem" patternMethod="Invoke">
+        <feature name="SystemInfo"/>
+      </SubMenuInformationCenter>
+    </MenuOptions>
+  </OptionsTile>
+  
+  <ThreeDTile id ="tile" automationId="TextOnTile" uiaName="3D" patternMethod="TilesInvoke">
+    <feature name="ThreeDBasicSettingFeatures"/>
+  </ThreeDTile>
+
+  <VideoTile id ="tile" automationId="TextOnTile" uiaName="Video" patternMethod="TilesInvoke">
+    <feature name="VideoBasicSettingFeatures"/>
+  </VideoTile>
+
+  <Graphics_Properties id ="Graphics_Properties..." uiaName="Graphics Properties..." controlType="MenuItem" automationId="31060" patternMethod="ExpandCollapse">
+    <feature name ="Graphics_Properties"/>
+  </Graphics_Properties>
+  <Graphics_Options id ="Graphics_Options" uiaName="Graphics Options" controlType="MenuItem" patternMethod="ExpandCollapse">
+    <feature name="DTCMFeature" />
+    <Output_To id="Output_To">
+      <feature name="DTCMSingleConfig" />
+      <Clone_Displays id="Clone_Displays">
+        <feature name="DTCMCloneConfig" />
+      </Clone_Displays>
+      <Extended_Desktop id="Extended_Desktop">
+        <feature name="DTCMExtendConfig" />
+      </Extended_Desktop>
+    </Output_To>
+    <Hot_Keys id="Hot_Keys" uiaName="Hot Keys" controlType="MenuItem" patternMethod="ExpandCollapse">
+      <Enable id ="Enable" uiaName ="Enable" controlType="MenuItem" patternMethod="Invoke">
+        <feature name="DTCMHotKeys" />
+      </Enable>
+    </Hot_Keys>
+  </Graphics_Options>
+</Root>

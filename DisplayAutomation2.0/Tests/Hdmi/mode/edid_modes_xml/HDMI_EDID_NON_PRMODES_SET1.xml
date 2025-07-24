@@ -1,0 +1,287 @@
+<Display Type="HDMI" EDID="HDMI_EDID_NON_PRMODES_SET1.bin" DPCD="">
+    <EdidModes>
+        <EdidMode modeIndex="1" edidModeCategory="DTD" vic="0" HzRes="3840" VtRes="2160" BPP="32BPP" refreshRate="60"
+                  scanlineOrdering="PROGRESSIVE" scaling="MDS" rotation="ROTATE_0" isNativeMode="1"
+                  isYUV420Mode="0">
+            <ExpectedParameters pixelClockMHz="594.0" Hactive="3840" Vactive="2160" Hblank="560" Vblank="90"
+                                Htotal="4400" Vtotal="2250" PictureAspectRatio=""/>
+        </EdidMode>
+        <EdidMode modeIndex="2" edidModeCategory="DTD" vic="0" HzRes="1920" VtRes="1080" BPP="32BPP" refreshRate="60"
+                  scanlineOrdering="PROGRESSIVE" scaling="MDS" rotation="ROTATE_0" isNativeMode="0"
+                  isYUV420Mode="0">
+            <ExpectedParameters pixelClockMHz="148.5" Hactive="1920" Vactive="1080" Hblank="280" Vblank="45"
+                                Htotal="2200" Vtotal="1125" PictureAspectRatio=""/>
+        </EdidMode>
+        <EdidMode modeIndex="3" edidModeCategory="DTD" vic="0" HzRes="1920" VtRes="540" BPP="32BPP" refreshRate="60"
+                  scanlineOrdering="INTERLACED" scaling="MDS" rotation="ROTATE_0" isNativeMode="0"
+                  isYUV420Mode="0">
+            <ExpectedParameters pixelClockMHz="74.25" Hactive="1920" Vactive="540" Hblank="280" Vblank="22"
+                                Htotal="2200" Vtotal="562" PictureAspectRatio=""/>
+        </EdidMode>
+        <EdidMode modeIndex="4" edidModeCategory="DTD" vic="0" HzRes="2560" VtRes="1440" BPP="32BPP" refreshRate="60"
+                  scanlineOrdering="PROGRESSIVE" scaling="MDS" rotation="ROTATE_0" isNativeMode="0"
+                  isYUV420Mode="0">
+            <ExpectedParameters pixelClockMHz="241.5" Hactive="2560" Vactive="1440" Hblank="160" Vblank="41"
+                                Htotal="2720" Vtotal="1481" PictureAspectRatio=""/>
+        </EdidMode>
+        <EdidMode modeIndex="5" edidModeCategory="DTD" vic="0" HzRes="1366" VtRes="768" BPP="32BPP" refreshRate="60"
+                  scanlineOrdering="PROGRESSIVE" scaling="MDS" rotation="ROTATE_0" isNativeMode="0"
+                  isYUV420Mode="0">
+            <ExpectedParameters pixelClockMHz="85.5" Hactive="1366" Vactive="768" Hblank="426" Vblank="30" Htotal="1792"
+                                Vtotal="798" PictureAspectRatio=""/>
+        </EdidMode>
+        <EdidMode modeIndex="6" edidModeCategory="CEA" vic="39" HzRes="1920" VtRes="1080" BPP="32BPP" refreshRate="50"
+                  scanlineOrdering="INTERLACED" scaling="MDS" rotation="ROTATE_0" isNativeMode="0"
+                  isYUV420Mode="0">
+            <ExpectedParameters pixelClockMHz="72" Hactive="1920" Vactive="1080" Hblank="384" Vblank="85" Htotal="2304"
+                                Vtotal="1250" PictureAspectRatio="16:9"/>
+        </EdidMode>
+        <EdidMode modeIndex="7" edidModeCategory="CEA" vic="46" HzRes="1920" VtRes="1080" BPP="32BPP" refreshRate="120"
+                  scanlineOrdering="INTERLACED" scaling="MDS" rotation="ROTATE_0" isNativeMode="0"
+                  isYUV420Mode="0">
+            <ExpectedParameters pixelClockMHz="148.5" Hactive="1920" Vactive="1080" Hblank="280" Vblank="22.5"
+                                Htotal="2200" Vtotal="1125" PictureAspectRatio="16:9"/>
+        </EdidMode>
+        <EdidMode modeIndex="8" edidModeCategory="CEA" vic="64" HzRes="1920" VtRes="1080" BPP="32BPP" refreshRate="100"
+                  scanlineOrdering="PROGRESSIVE" scaling="MDS" rotation="ROTATE_0" isNativeMode="0"
+                  isYUV420Mode="0">
+            <ExpectedParameters pixelClockMHz="297" Hactive="1920" Vactive="1080" Hblank="720" Vblank="45" Htotal="2640"
+                                Vtotal="1125" PictureAspectRatio="16:9"/>
+        </EdidMode>
+        <EdidMode modeIndex="9" edidModeCategory="CEA" vic="73" HzRes="1920" VtRes="1080" BPP="32BPP" refreshRate="25"
+                  scanlineOrdering="PROGRESSIVE" scaling="MDS" rotation="ROTATE_0" isNativeMode="0"
+                  isYUV420Mode="0">
+            <ExpectedParameters pixelClockMHz="74.25" Hactive="1920" Vactive="1080" Hblank="720" Vblank="45"
+                                Htotal="2640" Vtotal="1125" PictureAspectRatio="64:27"/>
+        </EdidMode>
+        <EdidMode modeIndex="10" edidModeCategory="CEA" vic="17" HzRes="720" VtRes="576" BPP="32BPP" refreshRate="50"
+                  scanlineOrdering="PROGRESSIVE" scaling="MDS" rotation="ROTATE_0" isNativeMode="0"
+                  isYUV420Mode="0">
+            <ExpectedParameters pixelClockMHz="27" Hactive="720" Vactive="576" Hblank="144" Vblank="49" Htotal="864"
+                                Vtotal="625" PictureAspectRatio="4:3"/>
+        </EdidMode>
+        <EdidMode modeIndex="11" edidModeCategory="CEA" vic="48" HzRes="720" VtRes="480" BPP="32BPP" refreshRate="120"
+                  scanlineOrdering="PROGRESSIVE" scaling="MDS" rotation="ROTATE_0" isNativeMode="0"
+                  isYUV420Mode="0">
+            <ExpectedParameters pixelClockMHz="54" Hactive="720" Vactive="480" Hblank="138" Vblank="45" Htotal="858"
+                                Vtotal="525" PictureAspectRatio="4:3"/>
+        </EdidMode>
+        <EdidMode modeIndex="12" edidModeCategory="CEA" vic="53" HzRes="720" VtRes="576" BPP="32BPP" refreshRate="200"
+                  scanlineOrdering="PROGRESSIVE" scaling="MDS" rotation="ROTATE_0" isNativeMode="0"
+                  isYUV420Mode="0">
+            <ExpectedParameters pixelClockMHz="108" Hactive="720" Vactive="576" Hblank="144" Vblank="49" Htotal="864"
+                                Vtotal="625" PictureAspectRatio="16:9"/>
+        </EdidMode>
+        <EdidMode modeIndex="13" edidModeCategory="CEA" vic="4" HzRes="1280" VtRes="720" BPP="32BPP" refreshRate="60"
+                  scanlineOrdering="PROGRESSIVE" scaling="MDS" rotation="ROTATE_0" isNativeMode="0"
+                  isYUV420Mode="0">
+            <ExpectedParameters pixelClockMHz="74.25" Hactive="1280" Vactive="720" Hblank="370" Vblank="30"
+                                Htotal="1650" Vtotal="750" PictureAspectRatio="16:9"/>
+        </EdidMode>
+        <EdidMode modeIndex="14" edidModeCategory="CEA" vic="41" HzRes="1280" VtRes="720" BPP="32BPP" refreshRate="100"
+                  scanlineOrdering="PROGRESSIVE" scaling="MDS" rotation="ROTATE_0" isNativeMode="0"
+                  isYUV420Mode="0">
+            <ExpectedParameters pixelClockMHz="148.5" Hactive="1280" Vactive="720" Hblank="700" Vblank="30"
+                                Htotal="1980" Vtotal="750" PictureAspectRatio="16:9"/>
+        </EdidMode>
+        <EdidMode modeIndex="15" edidModeCategory="CEA" vic="60" HzRes="1280" VtRes="720" BPP="32BPP" refreshRate="24"
+                  scanlineOrdering="PROGRESSIVE" scaling="MDS" rotation="ROTATE_0" isNativeMode="0"
+                  isYUV420Mode="0">
+            <ExpectedParameters pixelClockMHz="59.4" Hactive="1280" Vactive="720" Hblank="2020" Vblank="30"
+                                Htotal="3300" Vtotal="750" PictureAspectRatio="16:9"/>
+        </EdidMode>
+        <EdidMode modeIndex="16" edidModeCategory="CEA" vic="62" HzRes="1280" VtRes="720" BPP="32BPP" refreshRate="30"
+                  scanlineOrdering="PROGRESSIVE" scaling="MDS" rotation="ROTATE_0" isNativeMode="0"
+                  isYUV420Mode="0">
+            <ExpectedParameters pixelClockMHz="74.25" Hactive="1280" Vactive="720" Hblank="2020" Vblank="30"
+                                Htotal="3300" Vtotal="750" PictureAspectRatio="16:9"/>
+        </EdidMode>
+        <EdidMode modeIndex="17" edidModeCategory="CEA" vic="83" HzRes="1680" VtRes="720" BPP="32BPP" refreshRate="60"
+                  scanlineOrdering="PROGRESSIVE" scaling="MDS" rotation="ROTATE_0" isNativeMode="0"
+                  isYUV420Mode="0">
+            <ExpectedParameters pixelClockMHz="99" Hactive="1680" Vactive="720" Hblank="520" Vblank="30" Htotal="2200"
+                                Vtotal="750" PictureAspectRatio="64:27"/>
+        </EdidMode>
+        <EdidMode modeIndex="18" edidModeCategory="CEA" vic="86" HzRes="2560" VtRes="1080" BPP="32BPP" refreshRate="24"
+                  scanlineOrdering="PROGRESSIVE" scaling="MDS" rotation="ROTATE_0" isNativeMode="0"
+                  isYUV420Mode="0">
+            <ExpectedParameters pixelClockMHz="99" Hactive="2560" Vactive="1080" Hblank="1190" Vblank="20" Htotal="3750"
+                                Vtotal="1100" PictureAspectRatio="64:27"/>
+        </EdidMode>
+        <EdidMode modeIndex="19" edidModeCategory="CEA" vic="92" HzRes="2560" VtRes="1080" BPP="32BPP" refreshRate="120"
+                  scanlineOrdering="PROGRESSIVE" scaling="MDS" rotation="ROTATE_0" isNativeMode="0"
+                  isYUV420Mode="0">
+            <ExpectedParameters pixelClockMHz="495" Hactive="2560" Vactive="1080" Hblank="740" Vblank="170"
+                                Htotal="3300" Vtotal="1250" PictureAspectRatio="64:27"/>
+        </EdidMode>
+        <EdidMode modeIndex="20" edidModeCategory="CEA" vic="95" HzRes="3840" VtRes="2160" BPP="32BPP" refreshRate="30"
+                  scanlineOrdering="PROGRESSIVE" scaling="MDS" rotation="ROTATE_0" isNativeMode="0"
+                  isYUV420Mode="0">
+            <ExpectedParameters pixelClockMHz="297" Hactive="3840" Vactive="2160" Hblank="560" Vblank="90" Htotal="4400"
+                                Vtotal="2250" PictureAspectRatio="16:9"/>
+        </EdidMode>
+        <EdidMode modeIndex="21" edidModeCategory="CEA" vic="106" HzRes="3840" VtRes="2160" BPP="32BPP" refreshRate="50"
+                  scanlineOrdering="PROGRESSIVE" scaling="MDS" rotation="ROTATE_0" isNativeMode="0"
+                  isYUV420Mode="0">
+            <ExpectedParameters pixelClockMHz="594" Hactive="3840" Vactive="2160" Hblank="1440" Vblank="90"
+                                Htotal="5280" Vtotal="2250" PictureAspectRatio="64:27"/>
+        </EdidMode>
+        <EdidMode modeIndex="22" edidModeCategory="CEA" vic="98" HzRes="4096" VtRes="2160" BPP="32BPP" refreshRate="24"
+                  scanlineOrdering="PROGRESSIVE" scaling="MDS" rotation="ROTATE_0" isNativeMode="0"
+                  isYUV420Mode="0">
+            <ExpectedParameters pixelClockMHz="297" Hactive="4096" Vactive="2160" Hblank="1404" Vblank="90"
+                                Htotal="5500" Vtotal="2250" PictureAspectRatio="256:135"/>
+        </EdidMode>
+        <EdidMode modeIndex="23" edidModeCategory="STD" vic="0" HzRes="640" VtRes="480" BPP="32BPP" refreshRate="60"
+                  scanlineOrdering="PROGRESSIVE" scaling="MDS" rotation="ROTATE_0" isNativeMode="0"
+                  isYUV420Mode="0">
+            <ExpectedParameters pixelClockMHz="0.0" Hactive="0" Vactive="0" Hblank="0" Vblank="0" Htotal="0" Vtotal="0"
+                                PictureAspectRatio=""/>
+        </EdidMode>
+        <EdidMode modeIndex="24" edidModeCategory="STD" vic="0" HzRes="800" VtRes="600" BPP="32BPP" refreshRate="60"
+                  scanlineOrdering="PROGRESSIVE" scaling="MDS" rotation="ROTATE_0" isNativeMode="0"
+                  isYUV420Mode="0">
+            <ExpectedParameters pixelClockMHz="0.0" Hactive="0" Vactive="0" Hblank="0" Vblank="0" Htotal="0" Vtotal="0"
+                                PictureAspectRatio=""/>
+        </EdidMode>
+        <EdidMode modeIndex="25" edidModeCategory="STD" vic="0" HzRes="1024" VtRes="768" BPP="32BPP" refreshRate="60"
+                  scanlineOrdering="PROGRESSIVE" scaling="MDS" rotation="ROTATE_0" isNativeMode="0"
+                  isYUV420Mode="0">
+            <ExpectedParameters pixelClockMHz="0.0" Hactive="0" Vactive="0" Hblank="0" Vblank="0" Htotal="0" Vtotal="0"
+                                PictureAspectRatio=""/>
+        </EdidMode>
+        <EdidMode modeIndex="26" edidModeCategory="STD" vic="0" HzRes="1280" VtRes="1024" BPP="32BPP" refreshRate="60"
+                  scanlineOrdering="PROGRESSIVE" scaling="MDS" rotation="ROTATE_0" isNativeMode="0"
+                  isYUV420Mode="0">
+            <ExpectedParameters pixelClockMHz="0.0" Hactive="0" Vactive="0" Hblank="0" Vblank="0" Htotal="0" Vtotal="0"
+                                PictureAspectRatio=""/>
+        </EdidMode>
+    </EdidModes>
+    <UnSupportedModes>
+        <EdidModeIndexes Platform="ICL,ICLLP,CNL,LKF1,ICLHP,TGL,RYF,JSL,DG1,RKL,DG2" SKU="">3,6</EdidModeIndexes>
+		<!--Below modes should not be enumerated by the driver in any legacy Platform-->
+        <EdidModeIndexes Platform="GLK" SKU="">3,6,17</EdidModeIndexes>
+        <!-- Below is the template for NON Mode edid modes which should blocked by driver-->
+        <!--<NonEdidModes Platform="ICL,ICLLP,CNL" SKU="">
+                  <Mode HzRes="3840" VtRes="2160" BPP="32BPP" refreshRate="59" scanlineOrdering="PROGRESSIVE" scaling="MDS" rotation="ROTATE_0" isNativeMode="0" isYUV420Mode="0">
+                    <ExpectedParameters pixelClockMHz="594.0" Hactive="3840" Vactive="2160" Hblank="560" Vblank="90" Htotal="4400" Vtotal="2250" PictureAspectRatio="" />
+                  </Mode>
+                </NonEdidModes>-->
+    </UnSupportedModes>
+    <ApplyModes>
+        <EdidModeIndexes Platform="ICL,ICLLP,CNL,GLK,LKF1,ICLHP,TGL,RYF,JSL,DG1,RKL,DG2" SKU="">1,2,5,7,8,10,11,12,13,14,15,16,18,19,20,21,22</EdidModeIndexes>
+        <!--TODO check why ModeIndexes : 3(DTD),6 are not enumerated and 4(DTD),9,19 Failed to Apply-->
+        <DeepColorModes Platform="ICL,ICLLP,CNL,GLK,LKF1,ICLHP,TGL,RYF,JSL,DG1,RKL,DG2" SKU="">
+            <Mode modeName="RGB_12BPC_1280_720_60P" EdidModeIndex="13">
+                <sourcePixelFormat>RGB</sourcePixelFormat>
+                <sourceBPC>12</sourceBPC>
+                <expectedPixelFormat>RGB</expectedPixelFormat>
+                <expectedBPC>12</expectedBPC>
+            </Mode>
+            <Mode modeName="RGB_12BPC_1920_1080_60P" EdidModeIndex="2">
+                <sourcePixelFormat>RGB</sourcePixelFormat>
+                <sourceBPC>12</sourceBPC>
+                <expectedPixelFormat>RGB</expectedPixelFormat>
+                <expectedBPC>12</expectedBPC>
+            </Mode>
+            <Mode modeName="RGB_12BPC_3840_2160_30P" EdidModeIndex="20">
+                <sourcePixelFormat>RGB</sourcePixelFormat>
+                <sourceBPC>12</sourceBPC>
+                <expectedPixelFormat>RGB</expectedPixelFormat>
+                <expectedBPC>12</expectedBPC>
+            </Mode>
+            <Mode modeName="YUV444_8BPC_1280_720_60P" EdidModeIndex="13">
+                <sourcePixelFormat>YUV444</sourcePixelFormat>
+                <sourceBPC>8</sourceBPC>
+                <expectedPixelFormat>YUV444</expectedPixelFormat>
+                <expectedBPC>8</expectedBPC>
+            </Mode>
+            <Mode modeName="YUV444_8BPC_1920_1080_60P" EdidModeIndex="2">
+                <sourcePixelFormat>YUV444</sourcePixelFormat>
+                <sourceBPC>8</sourceBPC>
+                <expectedPixelFormat>YUV444</expectedPixelFormat>
+                <expectedBPC>8</expectedBPC>
+            </Mode>
+            <Mode modeName="YUV444_8BPC_2560_1080_120P" EdidModeIndex="19">
+                <sourcePixelFormat>YUV444</sourcePixelFormat>
+                <sourceBPC>8</sourceBPC>
+                <expectedPixelFormat>YUV444</expectedPixelFormat>
+                <expectedBPC>8</expectedBPC>
+            </Mode>
+            <Mode modeName="YUV444_8BPC_3840_2160_30P" EdidModeIndex="20">
+                <sourcePixelFormat>YUV444</sourcePixelFormat>
+                <sourceBPC>8</sourceBPC>
+                <expectedPixelFormat>YUV444</expectedPixelFormat>
+                <expectedBPC>8</expectedBPC>
+            </Mode>
+            <Mode modeName="YUV444_8BPC_3840_2160_60P" EdidModeIndex="1">
+                <sourcePixelFormat>YUV444</sourcePixelFormat>
+                <sourceBPC>8</sourceBPC>
+                <expectedPixelFormat>YUV444</expectedPixelFormat>
+                <expectedBPC>8</expectedBPC>
+            </Mode>
+            <Mode modeName="YUV444_12BPC_1280_720_60P" EdidModeIndex="13">
+                <sourcePixelFormat>YUV444</sourcePixelFormat>
+                <sourceBPC>12</sourceBPC>
+                <expectedPixelFormat>YUV444</expectedPixelFormat>
+                <expectedBPC>12</expectedBPC>
+            </Mode>
+            <Mode modeName="YUV444_12BPC_1920_1080_60P" EdidModeIndex="2">
+                <sourcePixelFormat>YUV444</sourcePixelFormat>
+                <sourceBPC>12</sourceBPC>
+                <expectedPixelFormat>YUV444</expectedPixelFormat>
+                <expectedBPC>12</expectedBPC>
+            </Mode>
+            <Mode modeName="YUV444_12BPC_3840_2160_30P" EdidModeIndex="20">
+                <sourcePixelFormat>YUV444</sourcePixelFormat>
+                <sourceBPC>12</sourceBPC>
+                <expectedPixelFormat>YUV444</expectedPixelFormat>
+                <expectedBPC>12</expectedBPC>
+            </Mode>
+        </DeepColorModes>
+        <DeepColorModes Platform="ICL,ICLLP,LKF1,ICLHP,TGL,RYF,JSL,DG1,RKL,DG2" SKU="">
+            <Mode modeName="RGB_10BPC_1280_720_60P" EdidModeIndex="13">
+                <sourcePixelFormat>RGB</sourcePixelFormat>
+                <sourceBPC>10</sourceBPC>
+                <expectedPixelFormat>RGB</expectedPixelFormat>
+                <expectedBPC>10</expectedBPC>
+            </Mode>
+            <Mode modeName="RGB_10BPC_1920_1080_60P" EdidModeIndex="2">
+                <sourcePixelFormat>RGB</sourcePixelFormat>
+                <sourceBPC>10</sourceBPC>
+                <expectedPixelFormat>RGB</expectedPixelFormat>
+                <expectedBPC>10</expectedBPC>
+            </Mode>
+            <Mode modeName="RGB_10BPC_3840_2160_30P" EdidModeIndex="20">
+                <sourcePixelFormat>RGB</sourcePixelFormat>
+                <sourceBPC>10</sourceBPC>
+                <expectedPixelFormat>RGB</expectedPixelFormat>
+                <expectedBPC>10</expectedBPC>
+            </Mode>
+            <Mode modeName="YUV444_10BPC_1280_720_60P" EdidModeIndex="13">
+                <sourcePixelFormat>YUV444</sourcePixelFormat>
+                <sourceBPC>10</sourceBPC>
+                <expectedPixelFormat>YUV444</expectedPixelFormat>
+                <expectedBPC>10</expectedBPC>
+            </Mode>
+            <Mode modeName="YUV444_10BPC_1920_1080_60P" EdidModeIndex="2">
+                <sourcePixelFormat>YUV444</sourcePixelFormat>
+                <sourceBPC>10</sourceBPC>
+                <expectedPixelFormat>YUV444</expectedPixelFormat>
+                <expectedBPC>10</expectedBPC>
+            </Mode>
+            <Mode modeName="YUV444_10BPC_3840_2160_30P" EdidModeIndex="20">
+                <sourcePixelFormat>YUV444</sourcePixelFormat>
+                <sourceBPC>10</sourceBPC>
+                <expectedPixelFormat>YUV444</expectedPixelFormat>
+                <expectedBPC>10</expectedBPC>
+            </Mode>
+        </DeepColorModes>
+    </ApplyModes>
+    <EDIDInfo>
+        <LTE340MhzScramble>0</LTE340MhzScramble>'
+        <RRCapable>0</RRCapable>
+        <SCDCPresent>0</SCDCPresent>
+        <MaxTMDSClockSupported>600</MaxTMDSClockSupported>
+    </EDIDInfo>
+</Display>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="WatermarkSln">
+</Property><Property Name="Solution File" Value="C:\WORK\Auto\WatermarkSln\WatermarkSln.sln">
+</Property><Property Name="Date" Value="Friday, April 25, 2014">
+</Property><Property Name="Time" Value="16:17 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="WatermarkSln.sln" Description="File successfully backed up as C:\WORK\Auto\WatermarkSln\Backup\WatermarkSln.sln">
+</Event><Event ErrorLevel="0" Project="CalculateWatermark" Source="CalculateWatermark\CalculateWatermark.csproj" Description="Project file successfully backed up as C:\WORK\Auto\WatermarkSln\Backup\CalculateWatermark\CalculateWatermark.csproj">
+</Event><Event ErrorLevel="0" Project="CalculateWatermark" Source="CalculateWatermark\CalculateWM.cs" Description="File successfully backed up as C:\WORK\Auto\WatermarkSln\Backup\CalculateWatermark\CalculateWM.cs">
+</Event><Event ErrorLevel="0" Project="CalculateWatermark" Source="CalculateWatermark\CalculateWM.Designer.cs" Description="File successfully backed up as C:\WORK\Auto\WatermarkSln\Backup\CalculateWatermark\CalculateWM.Designer.cs">
+</Event><Event ErrorLevel="0" Project="CalculateWatermark" Source="CalculateWatermark\Program.cs" Description="File successfully backed up as C:\WORK\Auto\WatermarkSln\Backup\CalculateWatermark\Program.cs">
+</Event><Event ErrorLevel="0" Project="CalculateWatermark" Source="CalculateWatermark\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\WORK\Auto\WatermarkSln\Backup\CalculateWatermark\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="CalculateWatermark" Source="CalculateWatermark\Properties\Resources.Designer.cs" Description="File successfully backed up as C:\WORK\Auto\WatermarkSln\Backup\CalculateWatermark\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="CalculateWatermark" Source="CalculateWatermark\Properties\Settings.Designer.cs" Description="File successfully backed up as C:\WORK\Auto\WatermarkSln\Backup\CalculateWatermark\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="CalculateWatermark" Source="CalculateWatermark\Properties\Settings.settings" Description="File successfully backed up as C:\WORK\Auto\WatermarkSln\Backup\CalculateWatermark\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="CalculateWatermark" Source="CalculateWatermark\App.config" Description="File successfully backed up as C:\WORK\Auto\WatermarkSln\Backup\CalculateWatermark\App.config">
+</Event><Event ErrorLevel="0" Project="CalculateWatermark" Source="CalculateWatermark\CalculateWM.resx" Description="File successfully backed up as C:\WORK\Auto\WatermarkSln\Backup\CalculateWatermark\CalculateWM.resx">
+</Event><Event ErrorLevel="0" Project="CalculateWatermark" Source="CalculateWatermark\Properties\Resources.resx" Description="File successfully backed up as C:\WORK\Auto\WatermarkSln\Backup\CalculateWatermark\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="CalculateWatermark" Source="CalculateWatermark\CalculateWatermark.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="CalculateWatermark" Source="CalculateWatermark\CalculateWatermark.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="" Source="WatermarkSln.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="WatermarkSln.sln" Description="Converted">
+</Event></UpgradeLog>

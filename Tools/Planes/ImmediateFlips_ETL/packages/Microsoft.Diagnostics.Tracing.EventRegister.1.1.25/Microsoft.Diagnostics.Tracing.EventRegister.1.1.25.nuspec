@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+  <metadata minClientVersion="2.5">
+    <id>Microsoft.Diagnostics.Tracing.EventRegister</id>
+    <version>1.1.25</version>
+    <title>Microsoft EventRegister Tool</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <licenseUrl>http://go.microsoft.com/fwlink/?LinkId=329770</licenseUrl>
+    <projectUrl>http://go.microsoft.com/fwlink/?LinkID=317375</projectUrl>
+    <iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>This package includes eventRegister.exe, which enables validation and registration of user defined EventSource classes. It supports both BCL event sources (classes derived from System.Diagnostics.Tracing.EventSource) and NuGet event sources (classes derived from Microsoft.Diagnostics.Tracing.EventSource).</description>
+    <summary>EventRegister is a tool that enables validation and registration of EventSources.</summary>
+    <copyright>Copyright (c) Microsoft Corporation</copyright>
+    <tags>eventRegister EventSource Microsoft ETW Validation</tags>
+  </metadata>
+</package>

@@ -1,0 +1,71 @@
+########################################################################################################################
+# @file         dual_lfp_adjustment_driver_disable_enable.py
+# @brief        This file verifies if panel misalignment adjustment when top border or bottom border are configured for
+#               dual LFP has sustained or not, after driver disable, and also again after driver enable.
+#
+# @details      CommandLine: python dual_lfp_adjustment_driver_disable_enable.py -mipi_a -mipi_c -border 100 -panel1 top
+#               -panel2 bottom
+# @author       Sri Sumanth Geesala, Neha3 Kumari
+########################################################################################################################
+
+from Libs.Core import display_essential
+from Tests.LFP_Common.Dual_LFP_Adjustment.dual_lfp_adjustment_base import *
+
+
+##
+# @brief        This class contains basic Dual Lfp Adjustment tests with driver enable and disable
+class DualLfpAdjustmentDriverDisableEnable(DualLfpAdjustmentBase):
+
+    ##
+    # @brief        This test is configuring the border values in vbt and then disabling and enabling the driver to
+    #               reflect the changes.
+    # @return       None
+    def test_1(self):
+        logging.info("configuring border values in vbt with border value :{0}  ".format(self.border_value))
+        # configure the border values in vbt, and do driver disable/enable
+        self.configure_borders_in_vbt()
+        # driver disable/enable
+        logging.info('doing a restart of display driver after setting VBT')
+        status, reboot_required = display_essential.restart_gfx_driver()
+        if status is False:
+            self.fail('restarting display driver failed')
+
+    ##
+    # @brief        The test is to disable and enable the driver,verify the scalar register and reset VBT to default
+    #               state.
+    # @return       None
+    def test_2(self):
+        # driver disable/enable
+        logging.info('doing a disable-enable of display driver')
+        status, reboot_required = display_essential.restart_gfx_driver()
+        if status is False:
+            self.fail('restarting display driver failed')
+        # verify scalar registers for the current configuration
+        self.verify_scalar_register_programming()
+
+        # If panel is DSC enabled, verify DSC parameters
+        if self.DSC_enabled:
+            self.verify_dsc()
+
+        # resetting vbt and doing driver disable/enable to reflect the changes
+        logging.info('Resetting VBT to default state')
+        if self.gfx_vbt.reset() is False:
+            self.fail('Reset Vbt failed')
+        # driver disable/enable
+        logging.info('doing a restart of display driver after resetting VBT')
+        status, reboot_required = display_essential.restart_gfx_driver()
+        if status is False:
+            self.fail('restarting display driver failed')
+
+    ##
+    # @brief        The test is to indicate the end of Dual LFP driver enable, disable tests
+    # @return       None
+    def test_3(self):
+        logging.info('Verification ended')
+
+
+if __name__ == '__main__':
+    TestEnvironment.initialize()
+    results = unittest.TextTestRunner(verbosity=2).run(
+        reboot_helper.get_test_suite('DualLfpAdjustmentDriverDisableEnable'))
+    TestEnvironment.cleanup(results)

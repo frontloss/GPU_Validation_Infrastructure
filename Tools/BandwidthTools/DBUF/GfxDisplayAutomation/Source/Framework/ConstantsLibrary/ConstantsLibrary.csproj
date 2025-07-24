@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B8EDD54E-47A8-4E78-A31D-D29C6D521FC2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Intel.VPG.Display.Automation</RootNamespace>
+    <AssemblyName>Intel.VPG.Display.Automation.ConstantsLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug64|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug64\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationTypes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\ParseAttribute.cs" />
+    <Compile Include="Attributes\TestAttribute.cs" />
+    <Compile Include="Configuration\FeatureConfigurationElement.cs" />
+    <Compile Include="Configuration\FeatureSection.cs" />
+    <Compile Include="Configuration\GenericCaptureToolConfigHandler.cs" />
+    <Compile Include="Entities\ACPI\APCI.cs" />
+    <Compile Include="Entities\Audio\AudioDataProvider.cs" />
+    <Compile Include="Entities\Chronometer\ChronometerParams.cs" />
+    <Compile Include="Entities\Chronometer\ProfileInfo.cs" />
+    <Compile Include="Entities\Color\DeepColorParams.cs" />
+    <Compile Include="Entities\Color\NarrowGamutParams.cs" />
+    <Compile Include="Entities\Color\WideGamutParams.cs" />
+    <Compile Include="Entities\Common\EventInfo.cs" />
+    <Compile Include="Entities\Common\RebootAnalysysInfo.cs" />
+    <Compile Include="Entities\Common\RebootDataProvider.cs" />
+    <Compile Include="Entities\CRC\CRCArgs.cs" />
+    <Compile Include="Entities\CRC\CrcGoldenDataArgs.cs" />
+    <Compile Include="Entities\CRC\VerifyCRCArgs.cs" />
+    <Compile Include="Entities\Cursor\AppDetail.cs" />
+    <Compile Include="Entities\Cursor\AppHandle.cs" />
+    <Compile Include="Entities\Cursor\CursorInfo.cs" />
+    <Compile Include="Entities\Cursor\MoveCursorPos.cs" />
+    <Compile Include="Entities\Desktop\SetUpDesktopArgs.cs" />
+    <Compile Include="Entities\Desktop\StaticFormArgs.cs" />
+    <Compile Include="Entities\Display\CollageParam.cs" />
+    <Compile Include="Entities\Display\ConnectorType.cs" />
+    <Compile Include="Entities\Display\DBufInfo.cs" />
+    <Compile Include="Entities\Display\DisplayColorInfo.cs" />
+    <Compile Include="Entities\Display\DisplayScaling.cs" />
+    <Compile Include="Entities\Display\DisplaySequence.cs" />
+    <Compile Include="Entities\Display\DisplayUIDMapper.cs" />
+    <Compile Include="Entities\Display\DisplayVRRInfo.cs" />
+    <Compile Include="Entities\Display\Dongle.cs" />
+    <Compile Include="Entities\Display\EdidInfo.cs" />
+    <Compile Include="Entities\Display\MMIORW.cs" />
+    <Compile Include="Entities\Display\PipeDbufInfo.cs" />
+    <Compile Include="Entities\Display\PipePlaneParams.cs" />
+    <Compile Include="Entities\Display\QuantizationRangeParams.cs" />
+    <Compile Include="Entities\Display\WatermarkParams.cs" />
+    <Compile Include="Entities\Driver\DpcdInfo.cs" />
+    <Compile Include="Entities\Driver\DriverEscapeParams.cs" />
+    <Compile Include="Entities\Driver\InstallParams.cs" />
+    <Compile Include="Entities\Driver\ULT_FW_EscapeParams.cs" />
+    <Compile Include="Entities\DSR\DsrInputOutput.cs" />
+    <Compile Include="Entities\DVMU\HotPlugUnPlugContext.cs" />
+    <Compile Include="Entities\Environment\DriverInfo.cs" />
+    <Compile Include="Entities\Common\DuplicatesDictionary.cs" />
+    <Compile Include="Entities\Environment\MachineInfo.cs" />
+    <Compile Include="Entities\Display\DisplayConfig.cs" />
+    <Compile Include="Entities\Display\DisplayInfo.cs" />
+    <Compile Include="Entities\Display\DisplayList.cs" />
+    <Compile Include="Entities\Display\DisplayConfigList.cs" />
+    <Compile Include="Entities\Display\DisplayMode.cs" />
+    <Compile Include="Entities\Display\DisplayModeList.cs" />
+    <Compile Include="Entities\Display\DisplayInfoCollection.cs" />
+    <Compile Include="Entities\DVMU\PlugParams.cs" />
+    <Compile Include="Entities\DVMU\HotPlugUnplug.cs" />
+    <Compile Include="Entities\DVMU\InfoFrame.cs" />
+    <Compile Include="Entities\Environment\OSInfo.cs" />
+    <Compile Include="Entities\Environment\PlatformDetails.cs" />
+    <Compile Include="Entities\HDCP\HDCPParams.cs" />
+    <Compile Include="Entities\ImageProcessing\ImageProcessingParams.cs" />
+    <Compile Include="Entities\Net\NetParam.cs" />
+    <Compile Include="Entities\Net\NetworkAdapter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entities\Overlay\OverlayParams.cs" />
+    <Compile Include="Entities\PanelBLC\PanelBLC.cs" />
+    <Compile Include="Entities\Power\CPUStateParam.cs" />
+    <Compile Include="Entities\Power\CSParam.cs" />
+    <Compile Include="Entities\Power\LidSwitchParams.cs" />
+    <Compile Include="Entities\PSR\PsrInputOutput.cs" />
+    <Compile Include="Entities\Registry\RegistryParams.cs" />
+    <Compile Include="Entities\WIGIG\WIGIGParams.cs" />
+    <Compile Include="Entities\WindowsAutomationUI\CaptureSettingsFeatureConfigurationElement.cs" />
+    <Compile Include="Entities\WindowsAutomationUI\CaptureSettingsNavigationConfigurationElement.cs" />
+    <Compile Include="Entities\XvyccYcbcr\XvYcc.cs" />
+    <Compile Include="Enums\Audio.cs" />
+    <Compile Include="Enums\Chronometer.cs" />
+    <Compile Include="Enums\Color.cs" />
+    <Compile Include="Enums\CUI.cs" />
+    <Compile Include="Enums\Driver.cs" />
+    <Compile Include="Enums\DsrState.cs" />
+    <Compile Include="Enums\DVMU.cs" />
+    <Compile Include="Enums\HDCP.cs" />
+    <Compile Include="Enums\ImageProcessOptions.cs" />
+    <Compile Include="Enums\KeyCode.cs" />
+    <Compile Include="Enums\Network.cs" />
+    <Compile Include="Enums\OverlayPlaybackOptions.cs" />
+    <Compile Include="Enums\Power.cs" />
+    <Compile Include="Enums\PsrState.cs" />
+    <Compile Include="Enums\RebootReason.cs" />
+    <Compile Include="Enums\Watermark.cs" />
+    <Compile Include="Enums\Wigig.cs" />
+    <Compile Include="Extensions\NetworkExtensions.cs" />
+    <Compile Include="Extensions\Orientation.cs" />
+    <Compile Include="Extensions\TestPostProcessing.cs" />
+    <Compile Include="Extensions\UIExtensions.cs" />
+    <Compile Include="Framework\FunctionalBase.cs" />
+    <Compile Include="Interfaces\Action\IGetAllMethod.cs" />
+    <Compile Include="Interfaces\Action\ISetAllMethod.cs" />
+    <Compile Include="Interfaces\Action\ISetNoArgs.cs" />
+    <Compile Include="Interfaces\Action\IVisibleMethod.cs" />
+    <Compile Include="Interfaces\Action\IEnabledMethod.cs" />
+    <Compile Include="Interfaces\Action\IParse.cs" />
+    <Compile Include="Interfaces\Action\IVisible.cs" />
+    <Compile Include="Interfaces\Action\INavigate.cs" />
+    <Compile Include="Interfaces\Action\IGetAll.cs" />
+    <Compile Include="Interfaces\Action\ISetMethod.cs" />
+    <Compile Include="Interfaces\Action\IGetMethod.cs" />
+    <Compile Include="Interfaces\Action\ISet.cs" />
+    <Compile Include="Interfaces\Action\IGet.cs" />
+    <Compile Include="Interfaces\IApplicationManager.cs" />
+    <Compile Include="Interfaces\IAccessInterface.cs" />
+    <Compile Include="Framework\ParamInfo.cs" />
+    <Compile Include="Entities\Power\PowerParams.cs" />
+    <Compile Include="Enums\Action.cs" />
+    <Compile Include="Configuration\ApplicationSettings.cs" />
+    <Compile Include="Configuration\IApplicationSettings.cs" />
+    <Compile Include="Caching\CacheCollection.cs" />
+    <Compile Include="Caching\ICacheWrapper.cs" />
+    <Compile Include="Caching\StandaloneCache.cs" />
+    <Compile Include="Interfaces\IMessage.cs" />
+    <Compile Include="Attributes\ActionTargetAttribute.cs" />
+    <Compile Include="Framework\Message.cs" />
+    <Compile Include="Framework\TestException.cs" />
+    <Compile Include="Enums\Constants.cs" />
+    <Compile Include="Enums\Display.cs" />
+    <Compile Include="Enums\Features.cs" />
+    <Compile Include="Extensions\CommonExtensions.cs" />
+    <Compile Include="Extensions\DisplayExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UIHandlers\UIABaseHandler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Logger\Logger.csproj">
+      <Project>{ec0587c7-cf34-4309-b4b5-d1eb051032b4}</Project>
+      <Name>Logger</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entities\CUI\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!-- Refer DisplayAutomation2.0/Libs/manual/modules/mode_xml_parser.py for parsing -->
+<Dock Name="HP_TBT_Dock_120W_G2">
+	<Displays Count="4">
+		<Display Index="1" Name="DELL 3219Q"   Connector = "Type-C"/>
+		<Display Index="2" Name="BENQ SW320"   Connector = "DP"    />
+		<Display Index="3" Name="ACER H277HK"  Connector = "DP"    />
+		<Display Index="4" Name="BENQ XL2730Z" Connector = "TBT"   />
+	</Displays>
+
+	<Verification1>
+		<Display Index="1" HActive="3840" VActive="2160" RefreshRate="60" Scaling="MDS" />
+		<Display Index="2" HActive="2560" VActive="1440" RefreshRate="60" Scaling="MDS" />
+		<Display Index="3" HActive="2560" VActive="1440" RefreshRate="60" Scaling="MDS" />
+		<Display Index="4" HActive="1920" VActive="1080" RefreshRate="60" Scaling="MDS" />
+	</Verification1>
+</Dock>
+
+<!--  ModeControlFlag 8 Bit Definition:
+
+    Connector:
+    DP
+    HDMI
+    Type-C
+    TBT
+    DVI
+    mDP
+    VGA
+
+    Scaling:
+    Default
+    MDS
+    MAR
+    CI
+     -->

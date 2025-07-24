@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<Display DPCD="" EDID="" DISPLAY_TECH="MST" TOPOLOGY_PATH="DP_MST_TILE\MST_DSC_1_BRANCH_1_4K_60_RB2_120_NON_CVT_RB2_AUDIO_DISPLAY.xml">
+    <Revision CreatedBy="Krishnan, Praburaj" CreatedOn="WW29" CurrentRevision="1">
+        <RevisionHistory RevisionID="1" Name="Krishnan, Praburaj" WW="WW29" Comments="4k@60Hz is RB2 mode (CVT) and 4k@120Hz is RB2 (Non-standard) with audio support"/>
+    </Revision>
+    <GoldenModeTable>
+        <EDIDInstance ModeIndex="1" HActive="3840" VActive="2160" RefreshRate="60" Scanline="Progressive" Scaling="Default" PixelCLK="522610000"/>
+        <EDIDInstance ModeIndex="2" HActive="3840" VActive="2160" RefreshRate="120" Scanline="Progressive" Scaling="Default" PixelCLK="1052750000"/>
+    </GoldenModeTable>
+    <Platform Name="TGL" SKU="">
+        <IgnoreModeIndex>None</IgnoreModeIndex>
+        <ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+        <ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+    </Platform>
+    <Platform Name="DG1" SKU="">
+        <IgnoreModeIndex>None</IgnoreModeIndex>
+        <ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+        <ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+    </Platform>
+    <Platform Name="DG2" SKU="">
+        <IgnoreModeIndex>None</IgnoreModeIndex>
+        <ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+        <ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+    </Platform>
+    <Platform Name="RKL" SKU="">
+        <IgnoreModeIndex>None</IgnoreModeIndex>
+        <ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+        <ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+    </Platform>
+    <Platform Name="ADLS" SKU="">
+        <IgnoreModeIndex>None</IgnoreModeIndex>
+        <ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+        <ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+    </Platform>
+    <Platform Name="ADLP" SKU="">
+        <IgnoreModeIndex>None</IgnoreModeIndex>
+        <ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+        <!--Only on ADL-P, for a mode with hblank = 80 DSC will not be enabled if the display supports audio. But this mode can be supported when FEC is disabled.
+        For platforms before/after ADL-P mode with hblank = 80  can be supported with DSC.-->
+        <ModeControlFlag CommonValue="0x08">1=0x108;2=0x188</ModeControlFlag>
+    </Platform>
+    <Platform Name="MTL" SKU="">
+        <IgnoreModeIndex>None</IgnoreModeIndex>
+        <ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+        <ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+    </Platform>
+    <Platform Name="ELG" SKU="">
+        <IgnoreModeIndex>None</IgnoreModeIndex>
+        <ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+        <ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+    </Platform>
+    <Platform Name="LNL" SKU="">
+        <IgnoreModeIndex>None</IgnoreModeIndex>
+        <ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+        <ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+    </Platform>
+    <Platform Name="PTL" SKU="">
+        <IgnoreModeIndex>None</IgnoreModeIndex>
+        <ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+        <ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+    </Platform>
+    <Platform Name="NVL" SKU="">
+        <IgnoreModeIndex>None</IgnoreModeIndex>
+        <ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+        <ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+    </Platform>
+    <Platform Name="CLS" SKU="">
+        <IgnoreModeIndex>None</IgnoreModeIndex>
+        <ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+        <ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+    </Platform>
+</Display>
+        <!--  ModeControlFlag 16 Bit Definition:
+            {
+            ('colorFormat'	        , c_ubyte, 2), # Bit 0,1
+            ('reserved_2' 	        , c_ubyte, 1), # Bit 2
+            ('bpc'		  	        , c_ubyte, 2), # Bit 3,4
+            ('reserved_5' 	        , c_ubyte, 1), # Bit 5
+            ('pixelRepMode'         , c_ubyte, 1), # Bit 6
+            ('is_fec_not_capable'   , c_ubyte, 1), # Bit 7
+            ('is_dsc_not_capable'   , c_ubyte, 1), # Bit 8
+            ('reserved_9'           , c_ubyte, 7), # Bit 9 to 15
+            }
+
+            | colorFormat_RGB 		= 00 |
+            | colorFormat_YUV420 	= 01 |
+            | colorFormat_YUV444 	= 10 |
+            | colorFormat_YUV422 	= 11 |
+
+            |  bpc_6bpc	 = 00  |
+            |  bpc_8bpc  = 01  |
+            |  bpc_10bpc = 10  |
+            |  bpc_12bpc = 11  |
+
+            pixelRepMode (0 = Not a Pixel Replicated Mode, 1 = Pixel Replicated Mode) -->

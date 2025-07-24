@@ -1,0 +1,417 @@
+<Display_Automation_2.0>
+    <Feature Name="Install_Uninstall2" Owner="npdoriwa">
+        <Test LastModifiedWW="2019.WW10" Name="gfx_driver_install_disable_enable.py" Owner="npdoriwa" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="INTUN001">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_install_disable_enable.py -edp_a</CommandLine>
+                <OS>WINRS3;WINRS2</OS>
+                <Platform>KBL_ULX;CFL_HALO;GLK;TGL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC;DG1_SIM;DG1_SOC;EHL_SIM;EHL_SOC;RKL_SIM;RKL_SOC;DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC,GLK_SOC,CFL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="INTUN002">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_install_disable_enable.py -mipi_a</CommandLine>
+                <OS>WINRS3;WINRS2</OS>
+                <Platform>GLK;TGL;EHL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC;EHL_SIM;EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="INTUN003">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_install_disable_enable.py -edp_a -dp_b -hdmi_c -config extended</CommandLine>
+                <OS>WINRS3;WINRS2</OS>
+                <Platform>KBL_HALO;GLK;TGL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC;DG1_SIM;DG1_SOC;EHL_SIM;EHL_SOC;RKL_SIM;RKL_SOC;DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="INTUN031">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_install_disable_enable.py -edp_a -driver_type UWD_DC</CommandLine>
+                <OS>WINRS3;WINRS2</OS>
+                <Platform>KBL_ULX;CFL_HALO;GLK;TGL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC;DG1_SIM;DG1_SOC;EHL_SIM;EHL_SOC;RKL_SIM;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC,GLK_SOC,CFL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="INTUN032">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_install_disable_enable.py -mipi_a -driver_type UWD_DC</CommandLine>
+                <OS>WINRS3;WINRS2</OS>
+                <Platform>GLK;TGL;EHL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC;EHL_SIM;EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="INTUN033">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_install_disable_enable.py -edp_a -dp_b -hdmi_c -config extended -driver_type UWD_DC</CommandLine>
+                <OS>WINRS3;WINRS2</OS>
+                <Platform>KBL_HALO;GLK;TGL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC;DG1_SIM;DG1_SOC;EHL_SIM;EHL_SOC;RKL_SIM;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC,GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="INTUN034">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_install_disable_enable.py -edp_a -driver_type UWD_DCH</CommandLine>
+                <OS>WINRS3;WINRS2</OS>
+                <Platform>KBL_ULX;CFL_HALO;GLK;ICL;LKF_R;DG1;DG2</Platform>
+                <TestEnvironment>ICL_SOC;LKF_R_SOC;LKF_R_DOD;LKF_R_SIM;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="INTUN035">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_install_disable_enable.py -mipi_a -driver_type UWD_DCH</CommandLine>
+                <OS>WINRS3;WINRS2</OS>
+                <Platform>GLK;LKF1;LKF_R</Platform>
+                <TestEnvironment>LKF1_SOC;LKF_R_SOC;LKF_R_DOD;LKF_R_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="INTUN036">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_install_disable_enable.py -edp_a -dp_b -hdmi_c -config extended -driver_type UWD_DCH</CommandLine>
+                <OS>WINRS3;WINRS2</OS>
+                <Platform>KBL_HALO;GLK;ICL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+			<TestInstance Grids="GFT" Id="INTUN049">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_install_disable_enable.py -mipi_a -mipi_c -dp_d -config extended -driver_type UWD_DCH</CommandLine>
+                <OS>19H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="INTUN044">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_install_disable_enable.py -mipi_a -mipi_b -hdmi_c -config extended</CommandLine>
+                <OS>WINRS3</OS>
+                <Platform>EHL</Platform>
+                <TestEnvironment>EHL_SIM;EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+			<TestInstance Grids="GFT" Id="INTUN050">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_install_disable_enable.py -mipi_a -mipi_b -dp_d -dp_e -config extended -driver_type UWD_DCH</CommandLine>
+                <OS>WINRS3</OS>
+                <Platform>LKF_R</Platform>
+                <TestEnvironment>LKF_R_SIM;LKF_R_SOC;LKF_R_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+			<TestInstance Grids="GFT" Id="INTUN051">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_install_disable_enable.py -edp_a -edp_b -dp_d -dp_e -config extended -driver_type UWD_DCH</CommandLine>
+                <OS>WINRS3</OS>
+                <Platform>LKF_R</Platform>
+                <TestEnvironment>LKF_R_SIM;LKF_R_SOC;LKF_R_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="INTUN061">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_install_disable_enable.py -edp_a -driver_type UWD_DCH_D</CommandLine>
+                <OS>WINRS3</OS>
+                <Platform>DG1;DG2</Platform>
+                <TestEnvironment>DG1_SOC;DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="INTUN062">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_install_disable_enable.py -dp_a -hdmi_b -dp_c -dp_d -config extended -driver_type UWD_DCH_D</CommandLine>
+                <OS>WINRS3</OS>
+                <Platform>DG1;DG2</Platform>
+                <TestEnvironment>DG1_SOC;DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2019.WW10" Name="gfx_driver_uninstall.py" Owner="npdoriwa" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="INTUN011">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_uninstall.py -edp_a</CommandLine>
+                <OS>WINRS3;WINRS2</OS>
+                <Platform>KBL_ULX;CFL_HALO;GLK;TGL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC;DG1_SIM;DG1_SOC;EHL_SIM;EHL_SOC;RKL_SIM;RKL_SOC;DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC,GLK_SOC,CFL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="INTUN012">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_uninstall.py -mipi_a</CommandLine>
+                <OS>WINRS3;WINRS2</OS>
+                <Platform>GLK;TGL;EHL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC;EHL_SIM;EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="INTUN013">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_uninstall.py -edp_a -dp_b -hdmi_c -config extended</CommandLine>
+                <OS>WINRS3;WINRS2</OS>
+                <Platform>KBL_HALO;GLK;TGL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC;DG1_SIM;DG1_SOC;EHL_SIM;EHL_SOC;RKL_SIM;RKL_SOC;DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC,GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="INTUN037">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_uninstall.py -edp_a -driver_type UWD_DC</CommandLine>
+                <OS>WINRS3;WINRS2</OS>
+                <Platform>KBL_ULX;CFL_HALO;GLK;TGL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC;DG1_SIM;DG1_SOC;EHL_SIM;EHL_SOC;RKL_SIM;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="INTUN038">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_uninstall.py -mipi_a -driver_type UWD_DC</CommandLine>
+                <OS>WINRS3;WINRS2</OS>
+                <Platform>GLK;TGL;EHL;RKL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC;LKF1_DOD;EHL_SIM;EHL_SOC;RKL_SIM;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="INTUN039">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_uninstall.py -edp_a -dp_b -hdmi_c -config extended -driver_type UWD_DC</CommandLine>
+                <OS>WINRS3;WINRS2</OS>
+                <Platform>KBL_HALO;GLK;TGL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC;DG1_SIM;DG1_SOC;EHL_SIM;EHL_SOC;RKL_SIM;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="INTUN052">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_uninstall.py -mipi_a -mipi_c -dp_d -config extended -driver_type UWD_DCH</CommandLine>
+                <OS>WINRS3</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="INTUN041">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_uninstall.py -edp_a -driver_type UWD_DCH</CommandLine>
+                <OS>WINRS3;WINRS2</OS>
+                <Platform>KBL_ULX;CFL_HALO;GLK;ICL;LKF_R;DG1;DG2</Platform>
+                <TestEnvironment>ICL_SOC;LKF_R_SOC;LKF_R_DOD;LKF_R_SIM;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="INTUN042">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_uninstall.py -mipi_a -driver_type UWD_DCH</CommandLine>
+                <OS>WINRS3;WINRS2</OS>
+                <Platform>GLK;LKF1;LKF_R</Platform>
+                <TestEnvironment>LKF1_SOC;LKF_R_SOC;LKF_R_DOD;LKF_R_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="INTUN043">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_uninstall.py -edp_a -dp_b -hdmi_c -config extended -driver_type UWD_DCH</CommandLine>
+                <OS>WINRS3;WINRS2</OS>
+                <Platform>KBL_HALO;GLK;ICL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="INTUN045">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_uninstall.py -mipi_a -mipi_b -hdmi_c -config extended -driver_type UWD_DC</CommandLine>
+                <OS>WINRS3</OS>
+                <Platform>EHL</Platform>
+                <TestEnvironment>EHL_SIM;EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+			<TestInstance Grids="GFT" Id="INTUN053">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_uninstall.py -mipi_a -mipi_b -dp_d -dp_e -config extended -driver_type UWD_DCH</CommandLine>
+                <OS>WINRS3</OS>
+                <Platform>LKF_R</Platform>
+                <TestEnvironment>LKF_R_SIM;LKF_R_SOC;LKF_R_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+			<TestInstance Grids="GFT" Id="INTUN054">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_uninstall.py -edp_a -edp_b -dp_d -dp_e -config extended -driver_type UWD_DCH</CommandLine>
+                <OS>WINRS3</OS>
+                <Platform>LKF_R</Platform>
+                <TestEnvironment>LKF_R_SIM;LKF_R_SOC;LKF_R_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="INTUN063">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_uninstall.py -edp_a -driver_type UWD_DCH_D</CommandLine>
+                <OS>WINRS3</OS>
+                <Platform>DG1;DG2</Platform>
+                <TestEnvironment>DG1_SOC;DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="INTUN064">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_uninstall.py -dp_a -hdmi_b -dp_c -dp_d -config extended -driver_type UWD_DCH_D</CommandLine>
+                <OS>WINRS3</OS>
+                <Platform>DG1;DG2</Platform>
+                <TestEnvironment>DG1_SOC;DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2019.WW10" Name="gfx_driver_upgrade.py" Owner="npdoriwa" Priority="P2" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="INTUN021">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_upgrade.py -edp_a</CommandLine>
+                <OS>WINRS3;WINRS2</OS>
+                <Platform>KBL_ULX;CFL_HALO;GLK;TGL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>TGL_SOC;DG1_SOC;EHL_SOC;RKL_SOC;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC,GLK_SOC,CFL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="INTUN022">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_upgrade.py -mipi_a</CommandLine>
+                <OS>WINRS3;WINRS2</OS>
+                <Platform>GLK;TGL;EHL</Platform>
+                <TestEnvironment>TGL_SOC;LKF1_DOD;EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="INTUN023">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_upgrade.py -edp_a -dp_b -hdmi_c -config extended</CommandLine>
+                <OS>WINRS3;WINRS2</OS>
+                <Platform>KBL_HALO;GLK;TGL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>TGL_SOC;DG1_SOC;EHL_SOC;RKL_SOC;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC,GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="INTUN046">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_upgrade.py -mipi_a -mipi_b -hdmi_c -config extended</CommandLine>
+                <OS>WINRS3</OS>
+                <Platform>EHL</Platform>
+                <TestEnvironment>EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+			<TestInstance Grids="GFT" Id="INTUN055">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_upgrade.py -edp_a -driver_type UWD_DCH</CommandLine>
+                <OS>19H1</OS>
+                <Platform>KBL_ULX;CFL_HALO;GLK;ICL;LKF_R;DG1;DG2</Platform>
+                <TestEnvironment>ICL_SOC;LKF_R_DOD;LKF_R_SOC;DG1_SOC;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC,GLK_SOC,CFL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="INTUN056">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_upgrade.py -mipi_a -driver_type UWD_DCH</CommandLine>
+                <OS>19H1</OS>
+                <Platform>GLK;LKF1;LKF_R</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD;LKF_R_SOC;LKF_R_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="INTUN057">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_upgrade.py -edp_a -dp_b -hdmi_c -config extended -driver_type UWD_DCH</CommandLine>
+                <OS>19H1</OS>
+                <Platform>KBL_HALO;GLK;ICL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_SOC;DG1_SOC;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC,GLK_SOC</QualificationStatus>
+            </TestInstance>
+			<TestInstance Grids="GFT" Id="INTUN058">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_upgrade.py -mipi_a -mipi_c -dp_d -config extended -driver_type UWD_DCH</CommandLine>
+                <OS>19H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+			<TestInstance Grids="GFT" Id="INTUN059">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_upgrade.py -mipi_a -mipi_b -dp_d -dp_e -config extended -driver_type UWD_DCH</CommandLine>
+                <OS>19H1</OS>
+                <Platform>LKF_R</Platform>
+                <TestEnvironment>LKF_R_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+			<TestInstance Grids="GFT" Id="INTUN060">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_upgrade.py -edp_a -edp_b -dp_d -dp_e -config extended -driver_type UWD_DCH</CommandLine>
+                <OS>19H1</OS>
+                <Platform>LKF_R</Platform>
+                <TestEnvironment>LKF_R_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW03" Name="gfx_driver_downgrade.py" Owner="agpatel" Priority="P2" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="INTUN026">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_downgrade.py -edp_a</CommandLine>
+                <OS>WINRS3;WINRS2</OS>
+                <Platform>KBL_ULX;CFL_HALO;GLK;ICL;TGL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;DG1_SOC;EHL_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC,GLK_SOC,CFL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="INTUN027">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_downgrade.py -mipi_a</CommandLine>
+                <OS>WINRS3;WINRS2</OS>
+                <Platform>GLK;ICL;LKF1;TGL;EHL</Platform>
+                <TestEnvironment>ICL_SOC;LKF1_SOC;TGL_SOC;LKF1_DOD;EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="INTUN028">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_downgrade.py -edp_a -dp_b -hdmi_c -config extended</CommandLine>
+                <OS>WINRS3;WINRS2</OS>
+                <Platform>KBL_HALO;GLK;ICL;TGL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;DG1_SOC;EHL_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC,GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="INTUN030">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_downgrade.py -mipi_a -mipi_c -dp_d -config extended</CommandLine>
+                <OS>WINRS3</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="INTUN047">
+                <CommandLine>python Tests\Install_Uninstall2\gfx_driver_downgrade.py -mipi_a -mipi_b -hdmi_c -config extended</CommandLine>
+                <OS>WINRS3</OS>
+                <Platform>EHL</Platform>
+                <TestEnvironment>EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+    </Feature>
+</Display_Automation_2.0>

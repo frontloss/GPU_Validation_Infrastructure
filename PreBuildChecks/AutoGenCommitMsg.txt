@@ -1,0 +1,15 @@
+[Val_Infra] Tools : Updating Auto-generated files
+
+Description: Updating Auto-generated files
+
+Feature: core_lib
+No_of_Test_Affected: 0
+Platforms: All
+Risk: Low
+Related-to: VSDI-XXXX
+
+GTA TP/ETM ID details: Not Required
+
+Checklist   -  details for below check list items:
+- Test Design review required                                NO
+- Test updated or added as part of OEM Escape                NO

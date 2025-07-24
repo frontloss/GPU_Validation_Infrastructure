@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EDID>
+	<MST_Tiled_DELL2414>DELL_UP2414Q_SST_EDID.bin</MST_Tiled_DELL2414>
+</EDID>
+
+<DPCD>
+	<MST_Tiled_DPCD>DELL_UP2414Q_SST_DPCD.bin</MST_Tiled_DPCD>
+</DPCD>
+
+<Topology>
+	<Display>
+		<UpStrmBranchOutPort>8</UpStrmBranchOutPort>
+		<ThisDisplayInputPort>0</ThisDisplayInputPort>
+		<TotalInputPorts>1</TotalInputPorts>
+		<TotalAvailablePBN>2560</TotalAvailablePBN>
+		<MaxLinkRate>540</MaxLinkRate>
+		<MaxLaneCount>4</MaxLaneCount>
+		<RemoteI2ReadDelay>0</RemoteI2ReadDelay>
+		<RemoteI2WriteDelay>0</RemoteI2WriteDelay>
+		<RemoteDPCDReadDelay>0</RemoteDPCDReadDelay>
+		<RemoteDPCDWriteDelay>0</RemoteDPCDWriteDelay>
+		<DisplayDPCD>MST_Tiled_DPCD</DisplayDPCD>
+        	<DisplayEDID>MST_Tiled_DELL2414</DisplayEDID>
+	</Display>	
+</Topology>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ADK_Benchmark_Value iteration ="6">
+  <DeviceStart field ="Driver/Device Time on Start/Enum" activity ="Start">
+    <Platform id ="HSWM">
+      <OS Win8="46" Win8.1="46"/>
+    </Platform>
+    <Platform id ="HSWU">
+      <OS Win8="46" Win8.1="46"/>
+    </Platform>
+    <Platform id ="VLV">
+      <OS Win8="46" Win8.1="46"/>
+    </Platform>
+    <Platform id ="BDW">
+      <OS Win8="55" Win8.1="55"/>
+    </Platform>
+  </DeviceStart >
+
+  <DeviceEnum field ="Driver/Device Time on Start/Enum" activity ="Enum">
+    <Platform id ="HSWM">
+      <OS Win8="12" Win8.1="12"/>
+    </Platform>
+    <Platform id ="HSWU">
+      <OS Win8="12" Win8.1="12"/>
+    </Platform>
+    <Platform id ="VLV">
+      <OS Win8="12" Win8.1="12"/>
+    </Platform>
+    <Platform id ="BDW">
+      <OS Win8="15" Win8.1="15"/>
+    </Platform>
+  </DeviceEnum >
+
+  <S3_Suspend_Device field ="S3: Driver/Device Time to Execute on SuspendDevice">
+    <Platform id ="HSWM">
+      <OS Win8="173" Win8.1="173"/>
+    </Platform>
+    <Platform id ="HSWU">
+      <OS Win8="173" Win8.1="173"/>
+    </Platform>
+    <Platform id ="VLV">
+      <OS Win8="173" Win8.1="173"/>
+    </Platform>
+    <Platform id ="BDW">
+      <OS Win8="150" Win8.1="150"/>
+    </Platform>
+  </S3_Suspend_Device >
+
+  <S3_Query_Device field ="S3: Driver/Device Time to Execute on QueryDevices">
+    <Platform id ="HSWM">
+      <OS Win8="3" Win8.1="3"/>
+    </Platform>
+    <Platform id ="HSWU">
+      <OS Win8="3" Win8.1="3"/>
+    </Platform>
+    <Platform id ="VLV">
+      <OS Win8="3" Win8.1="3"/>
+    </Platform>
+    <Platform id ="BDW">
+      <OS Win8="3" Win8.1="3"/>
+    </Platform>
+  </S3_Query_Device >
+
+  <S3_Resume_Device field ="S3: Driver/Device Time to Execute on ResumeDevice">
+    <Platform id ="HSWM">
+      <OS Win8="186" Win8.1="186"/>
+    </Platform>
+    <Platform id ="HSWU">
+      <OS Win8="186" Win8.1="186"/>
+    </Platform>
+    <Platform id ="VLV">
+      <OS Win8="186" Win8.1="186"/>
+    </Platform>
+    <Platform id ="BDW">
+      <OS Win8="180" Win8.1="180"/>
+    </Platform>
+  </S3_Resume_Device >
+
+  <S4_Suspend_Device field ="S4 Hibernate: Driver/Device Time to Execute on SuspendDevice">
+    <Platform id ="HSWM">
+      <OS Win8="173" Win8.1="173"/>
+    </Platform>
+    <Platform id ="HSWU">
+      <OS Win8="173" Win8.1="173"/>
+    </Platform>
+    <Platform id ="VLV">
+      <OS Win8="173" Win8.1="173"/>
+    </Platform>
+    <Platform id ="BDW">
+      <OS Win8="150" Win8.1="150"/>
+    </Platform>
+  </S4_Suspend_Device >
+
+  <S4_Query_Device field ="S4 Hibernate: Driver/Device Time to Execute on QueryDevices">
+    <Platform id ="HSWM">
+      <OS Win8="3" Win8.1="3"/>
+    </Platform>
+    <Platform id ="HSWU">
+      <OS Win8="3" Win8.1="3"/>
+    </Platform>
+    <Platform id ="VLV">
+      <OS Win8="3" Win8.1="3"/>
+    </Platform>
+    <Platform id ="BDW">
+      <OS Win8="3" Win8.1="3"/>
+    </Platform>
+  </S4_Query_Device >
+
+  <S4_Resume_Device field ="S4 Hibernate: Driver/Device Time to Execute on ResumeDevice">
+    <Platform id ="HSWM">
+      <OS Win8="186" Win8.1="186"/>
+    </Platform>
+    <Platform id ="HSWU">
+      <OS Win8="186" Win8.1="186"/>
+    </Platform>
+    <Platform id ="VLV">
+      <OS Win8="186" Win8.1="186"/>
+    </Platform>
+    <Platform id ="BDW">
+      <OS Win8="180" Win8.1="180"/>
+    </Platform>
+  </S4_Resume_Device >
+
+  <S3_Application_Suspend_Time_HKCMD field ="During S3 Suspend Flow: Application Suspend Time">
+    <Platform id ="HSWM" key ="igfxHK.exe">
+      <OS Win8="1" Win8.1="1"/>
+    </Platform>
+    <Platform id ="HSWU" key ="igfxHK.exe">
+      <OS Win8="1" Win8.1="1"/>
+    </Platform>
+    <Platform id ="VLV" key ="igfxHK.exe">
+      <OS Win8="5" Win8.1="5"/>
+    </Platform>
+    <Platform id ="BDW" key ="igfxHK.exe">
+      <OS Win8="3" Win8.1="3"/>
+    </Platform>
+  </S3_Application_Suspend_Time_HKCMD >
+
+  <S3_Application_Suspend_Time_IGFXPERS field ="During S3 Suspend Flow: Application Suspend Time">
+    <Platform id ="HSWM" key ="igfxEM.exe">
+      <OS Win8="1" Win8.1="1"/>
+    </Platform>
+    <Platform id ="HSWU" key ="igfxEM.exe">
+      <OS Win8="1" Win8.1="1"/>
+    </Platform>
+    <Platform id ="VLV" key ="igfxEM.exe">
+      <OS Win8="5" Win8.1="5"/>
+    </Platform>
+    <Platform id ="BDW" key ="igfxEM.exe">
+      <OS Win8="3" Win8.1="3"/>
+    </Platform>
+  </S3_Application_Suspend_Time_IGFXPERS >
+
+  <S3_Application_Suspend_Time_IGFXTRAY field ="During S3 Suspend Flow: Application Suspend Time">
+    <Platform id ="HSWM" key ="igfxTray.exe">
+      <OS Win8="1" Win8.1="1"/>
+    </Platform>
+    <Platform id ="HSWU" key ="igfxTray.exe">
+      <OS Win8="1" Win8.1="1"/>
+    </Platform>
+    <Platform id ="VLV" key ="igfxTray.exe">
+      <OS Win8="5" Win8.1="5"/>
+    </Platform>
+    <Platform id ="BDW" key ="igfxTray.exe">
+      <OS Win8="3" Win8.1="3"/>
+    </Platform>
+  </S3_Application_Suspend_Time_IGFXTRAY >
+
+  <S4_Application_Suspend_Time_HKCMD field ="S4 Hibernate: Application Suspend Time">
+    <Platform id ="HSWM" key ="igfxHK.exe">
+      <OS Win8="1" Win8.1="1"/>
+    </Platform>
+    <Platform id ="HSWU" key ="igfxHK.exe">
+      <OS Win8="1" Win8.1="1"/>
+    </Platform>
+    <Platform id ="VLV" key ="igfxHK.exe">
+      <OS Win8="5" Win8.1="5"/>
+    </Platform>
+    <Platform id ="BDW" key ="igfxHK.exe">
+      <OS Win8="3" Win8.1="3"/>
+    </Platform>
+  </S4_Application_Suspend_Time_HKCMD >
+
+  <S4_Application_Suspend_Time_IGFXPERS field ="S4 Hibernate: Application Suspend Time">
+    <Platform id ="HSWM" key ="igfxEM.exe">
+      <OS Win8="1" Win8.1="1"/>
+    </Platform>
+    <Platform id ="HSWU" key ="igfxEM.exe">
+      <OS Win8="1" Win8.1="1"/>
+    </Platform>
+    <Platform id ="VLV" key ="igfxEM.exe">
+      <OS Win8="5" Win8.1="5"/>
+    </Platform>
+    <Platform id ="BDW" key ="igfxEM.exe">
+      <OS Win8="3" Win8.1="3"/>
+    </Platform>
+  </S4_Application_Suspend_Time_IGFXPERS >
+
+  <S4_Application_Suspend_Time_IGFXTRAY field ="S4 Hibernate: Application Suspend Time">
+    <Platform id ="HSWM" key ="igfxTray.exe">
+      <OS Win8="1" Win8.1="1"/>
+    </Platform>
+    <Platform id ="HSWU" key ="igfxTray.exe">
+      <OS Win8="1" Win8.1="1"/>
+    </Platform>
+    <Platform id ="VLV" key ="igfxTray.exe">
+      <OS Win8="5" Win8.1="5"/>
+    </Platform>
+    <Platform id ="BDW" key ="igfxTray.exe">
+      <OS Win8="3" Win8.1="3"/>
+    </Platform>
+  </S4_Application_Suspend_Time_IGFXTRAY >
+
+  <Process_Shutdown_time_HKCMD field ="During 7 Shutdown Flow: Process Shutdown time">
+    <Platform id ="HSWM" key ="igfxHK.exe">
+      <OS Win8="120" Win8.1="120"/>
+    </Platform>
+    <Platform id ="HSWU" key ="igfxHK.exe">
+      <OS Win8="120" Win8.1="120"/>
+    </Platform>
+    <Platform id ="VLV" key ="igfxHK.exe">
+      <OS Win8="120" Win8.1="120"/>
+    </Platform>
+    <Platform id ="BDW" key ="igfxHK.exe">
+      <OS Win8="100" Win8.1="100"/>
+    </Platform>
+  </Process_Shutdown_time_HKCMD >
+
+  <Process_Shutdown_time_IGFXPERS field ="During 7 Shutdown Flow: Process Shutdown time">
+    <Platform id ="HSWM" key ="igfxEM.exe">
+      <OS Win8="120" Win8.1="120"/>
+    </Platform>
+    <Platform id ="HSWU" key ="igfxEM.exe">
+      <OS Win8="120" Win8.1="120"/>
+    </Platform>
+    <Platform id ="VLV" key ="igfxEM.exe">
+      <OS Win8="120" Win8.1="120"/>
+    </Platform>
+    <Platform id ="BDW" key ="igfxEM.exe">
+      <OS Win8="100" Win8.1="100"/>
+    </Platform>
+  </Process_Shutdown_time_IGFXPERS >
+
+  <Process_Shutdown_time_IGFXTRAY field ="During 7 Shutdown Flow: Process Shutdown time">
+    <Platform id ="HSWM" key ="igfxTray.exe">
+      <OS Win8="120" Win8.1="120"/>
+    </Platform>
+    <Platform id ="HSWU" key ="igfxTray.exe">
+      <OS Win8="120" Win8.1="120"/>
+    </Platform>
+    <Platform id ="VLV" key ="igfxTray.exe">
+      <OS Win8="120" Win8.1="120"/>
+    </Platform>
+    <Platform id ="BDW" key ="igfxTray.exe">
+      <OS Win8="100" Win8.1="100"/>
+    </Platform>
+  </Process_Shutdown_time_IGFXTRAY >
+
+  <Hybrid_Shutdown_time_HKCMD field ="Hybrid Boot Shutdown Flow: Process Shutdown Time">
+    <Platform id ="HSWM" key ="igfxHK.exe">
+      <OS Win8="120" Win8.1="120"/>
+    </Platform>
+    <Platform id ="HSWU" key ="igfxHK.exe">
+      <OS Win8="120" Win8.1="120"/>
+    </Platform>
+    <Platform id ="VLV" key ="igfxHK.exe">
+      <OS Win8="120" Win8.1="120"/>
+    </Platform>
+    <Platform id ="BDW" key ="igfxHK.exe">
+      <OS Win8="100" Win8.1="100"/>
+    </Platform>
+  </Hybrid_Shutdown_time_HKCMD >
+
+  <Hybrid_Shutdown_time_IGFXPERS field ="Hybrid Boot Shutdown Flow: Process Shutdown Time">
+    <Platform id ="HSWM" key ="igfxEM.exe">
+      <OS Win8="120" Win8.1="120"/>
+    </Platform>
+    <Platform id ="HSWU" key ="igfxEM.exe">
+      <OS Win8="120" Win8.1="120"/>
+    </Platform>
+    <Platform id ="VLV" key ="igfxEM.exe">
+      <OS Win8="120" Win8.1="120"/>
+    </Platform>
+    <Platform id ="BDW" key ="igfxEM.exe">
+      <OS Win8="100" Win8.1="100"/>
+    </Platform>
+  </Hybrid_Shutdown_time_IGFXPERS >
+
+  <Hybrid_Shutdown_time_IGFXTRAY field ="Hybrid Boot Shutdown Flow: Process Shutdown Time">
+    <Platform id ="HSWM" key ="igfxTray.exe">
+      <OS Win8="120" Win8.1="120"/>
+    </Platform>
+    <Platform id ="HSWU" key ="igfxTray.exe">
+      <OS Win8="120" Win8.1="120"/>
+    </Platform>
+    <Platform id ="VLV" key ="igfxTray.exe">
+      <OS Win8="120" Win8.1="120"/>
+    </Platform>
+    <Platform id ="BDW" key ="igfxTray.exe">
+      <OS Win8="100" Win8.1="100"/>
+    </Platform>
+  </Hybrid_Shutdown_time_IGFXTRAY >
+
+</ADK_Benchmark_Value>

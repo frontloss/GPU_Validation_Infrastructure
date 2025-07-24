@@ -1,0 +1,28 @@
+import ctypes
+
+'''
+Register instance and offset 
+'''
+PPS2_0_A = 0x6B208
+PPS2_1_A = 0x6BA08
+PPS2_0_B = 0x78278
+PPS2_1_B = 0x78378
+PPS2_0_C = 0x78478
+PPS2_1_C = 0x78578
+
+
+##
+# @note     Source: https://gfxspecs.intel.com/Predator/Home/Index/50160
+class DSC_PICTURE_PARAMETER_SET_2_FIELDS(ctypes.LittleEndianStructure):
+    _fields_ = [
+        ("pic_height", ctypes.c_uint32, 16),
+        ("pic_width", ctypes.c_uint32, 16)
+    ]
+
+
+class DSC_PICTURE_PARAMETER_SET_2(ctypes.Union):
+    _anonymous_ = ("u",)
+    _fields_ = [
+        ("u", DSC_PICTURE_PARAMETER_SET_2_FIELDS),
+        ("asUint", ctypes.c_uint32) ]
+

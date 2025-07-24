@@ -1,0 +1,42 @@
+/*! 
+\mainpage 
+
+<a href="https://securewiki.ith.intel.com/display/GfxDisplay/Display_Automation+2.0"><b>Display Automation Wiki Page</b></a>
+
+\section Introduction
+--------------------
+DisplayAutomation2.0 is  the automation framework used for validation of Display features. \n
+Tests are primarily written in Python aided by underlying libraries or helper functions written in Python and/or C.\n
+
+<b>Folder-Structure</b>
+-----------------
+'bin' will contain all C DLLs & external tools \n
+'Docs' contains tools for code documentation generation and coding guidelines \n
+'Libs' contains the common libraries, which can be used by the tests \n
+'Logs' folder will be the location of log generation, once test completes \n
+'registers' contain the python headers for all hw registers \n
+'Samples' contain few code test samples to refer as to how to use any library and write a test. \n
+'Setup' folder contain the pre-requisite installer for DisplayAutomation2.0 \n
+'Src' contains the 'C' DLL source code projects. \n
+'Tests' folder contains the test scripts, sub-foldered as individual features \n
+
+<b>Pre-requisites</b>
+---------------
+Run 'build64.bat' from root folder to generate all DLLs in 'bin' folder. This needs to be done on a machine with VS2013 installed. \n
+Run 'setup.bat' on the Target machine from DisplayAutomation2.0 root. This install all required packages to run the test. \n
+Run 'env_setup.bat' to initialize the environment variables. This will restart the machine. \n
+From DisplayAutomation2.0, run any test with following sample commandline. \n
+	python Tests/DisplaySwitch/apply_configuration_ddc.py -edp_a
+
+<b>To-Do</b>
+------
+New 'C' based DLL needs to be added as part of Src/MasterSolution.sln and will be automatically built by build64.bat \n
+Follow python unittest framework for test script coding. \n
+Good to run sanity_check.py before checking-in the code; sanity_check.py will check for any inclusion errors \n
+Create and update feature.xml in Tests/Feature when a new test is added, modified or a new commandline is updated. \n
+
+<b>Not-To-Do</b>
+----------
+Dont check-in the dll along with the source, since dll building will be taken care by 'build64.bat' \n
+
+*/

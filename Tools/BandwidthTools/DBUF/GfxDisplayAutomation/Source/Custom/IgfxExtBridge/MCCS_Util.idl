@@ -1,0 +1,27 @@
+import "oaidl.idl";
+import "ocidl.idl";
+import "igfxBridgeUDT.idl";
+
+	[
+		object,
+		uuid(0F470F34-D410-4dc8-A3F9-3C36D65D8BCF),
+		dual,
+		helpstring("IMCCSUtil Interface"),
+		pointer_default(unique)
+	]
+
+	interface IMCCSUtil : IDispatch
+	{
+		[id(1),  helpstring("method Open")] HRESULT Open([in]DWORD monitorID,[out]DWORD *pHandle,[out]IGFX_ERROR_CODES *pExtraErrorCode,[out]BSTR *pErrorDescription); 		
+		[id(2),  helpstring("method Close")] HRESULT Close([in]DWORD dwHandle,[out]BSTR *pErrorDescription);
+		[id(3),  helpstring("method Max")] HRESULT Max([in]DWORD dwHandle,[in]DWORD controlCode,[in]DWORD size,[in,out]DWORD *pVal,[out]IGFX_ERROR_CODES *pExtraErrorCode,[out]BSTR *pErrorDescription);
+		[id(4),  helpstring("method Min")] HRESULT Min([in]DWORD dwHandle,[in]DWORD controlCode,[in]DWORD size,[in,out]DWORD *pVal,[out]IGFX_ERROR_CODES *pExtraErrorCode,[out]BSTR *pErrorDescription);
+		[id(5),  helpstring("method ResetControl")] HRESULT ResetControl([in]DWORD dwHandle,[in]DWORD controlCode,[in]DWORD size,[out]IGFX_ERROR_CODES *pExtraErrorCode,[out]BSTR *pErrorDescription);
+		[id(6),  helpstring("method GetCurrent")] HRESULT GetCurrent([in]DWORD dwHandle,[in]DWORD controlCode,[in]DWORD size,[in,out]DWORD *pVal,[out]IGFX_ERROR_CODES *pExtraErrorCode,[out]BSTR *pErrorDescription);
+		[id(7),  helpstring("method SetCurrent")] HRESULT SetCurrent([in]DWORD dwHandle,[in]DWORD controlCode,[in]DWORD size,[in]DWORD pVal,[out]IGFX_ERROR_CODES *pExtraErrorCode,[out]BSTR *pErrorDescription);
+		[id(8),  helpstring("method GetCapability")] HRESULT GetCapability([in]DWORD monitorID,[out]BSTR *pCapabilities,[in,out]DWORD *pSize,[out]BSTR *pErrorDescription);
+		[id(9),  helpstring("method ParseCapabilityCmds")] HRESULT ParseCapabilityCmds([in]BSTR *pCapabilities,[in]DWORD *pCmdArray,[out]DWORD *pTotalCmds,[out]BSTR *pErrorDescription);
+		[id(10), helpstring("method ParseCapabilityVCP")] HRESULT ParseCapabilityVCP([in]BSTR *pCapabilities,[in]DWORD *pVcpArray,[out]DWORD *pTotalCmds,[out]BSTR *pErrorDescription);
+		[id(11), helpstring("method Get")] HRESULT Get([in,out]IGFX_MCCS_DATA *pBuffer,[out]IGFX_ERROR_CODES *pExtraErrorCode,[out]BSTR *pErrorDescription);
+		[id(12), helpstring("method Set")] HRESULT Set([in,out]IGFX_MCCS_DATA *pBuffer,[out]IGFX_ERROR_CODES *pExtraErrorCode,[out]BSTR *pErrorDescription);
+	 };

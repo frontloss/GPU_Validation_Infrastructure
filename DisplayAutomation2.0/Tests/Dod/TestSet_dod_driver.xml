@@ -1,0 +1,15 @@
+<Display_Automation_2.0>
+    <Feature Name="Dod" Owner="npdoriwa">
+        <Test LastModifiedWW="2020.WW42" Name="gfx_dod_driver_display_switch_disable_enable.py" Owner="npdoriwa" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DODDS001">
+                <CommandLine>python Tests\Dod\gfx_dod_driver_display_switch_disable_enable.py -edp_a -dp_b -hdmi_c</CommandLine>
+                <OS>WINRS3;WINRS2</OS>
+                <Platform>ICL;LKF1;TGL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;DG1_SOC;EHL_SOC;RKL_SOC;DG2_SOC;ADLP_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+    </Feature>
+</Display_Automation_2.0>

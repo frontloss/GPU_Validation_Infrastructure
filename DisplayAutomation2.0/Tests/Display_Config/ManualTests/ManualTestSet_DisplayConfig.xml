@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2_0_Manual>
+    <Feature Name="Display Config" Owner="bvenkate">
+        <SubFeature Name="Scaling" Owner="bvenkate">
+            <Test Id="TI-1131730" Name="Applying scaling DP Tiled" Grids="Manual CI">
+                <CommandLine> python .\Tests\Display_Config\ManualTests\apply_scaling_sd.py -Display1 "eDP" -Display2 "USB-C => DP (Tiled)"</CommandLine>
+                <OS>WinRS4;WinRS5;Win19H1</OS>
+                <Platform>KBL_ULX</Platform>
+                <ExecutionTime>20m</ExecutionTime>
+            </Test>
+        </SubFeature>
+    </Feature>
+</Display_Automation_2_0_Manual>

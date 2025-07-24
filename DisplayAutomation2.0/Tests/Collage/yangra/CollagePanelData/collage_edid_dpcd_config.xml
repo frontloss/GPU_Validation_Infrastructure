@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--This file contains the display details like display type, EDID and DPCD for each display to be plugged-->
+<Test Feature="Collage" CreatedBy="pkrishna" Revision="1.1">
+
+    <SST>
+
+        <DUAL_COLLAGE>
+
+            <!--Configuration which will be used to test all dual collage scenarios -->
+            <CONFIGURATION id="DC100001" name="2_dp_identical_panels">
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS011" type="DP" edid="DELL_UP3216Q_DP.bin" dpcd="DELL_UP3216Q_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS011" type="DP" edid="DELL_UP3216Q_DP.bin" dpcd="DELL_UP3216Q_DPCD.txt" is_child_display="True"/>
+            </CONFIGURATION>
+            <CONFIGURATION id="DC100002" name="2_hdmi_identical_panels">
+                <DISPLAY gfx_index="gfx_0" panel_index="HDM011" type="HDMI" edid="DELL_UP2414Q_HDMI.bin" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="HDM011" type="HDMI" edid="DELL_UP2414Q_HDMI.bin" is_child_display="True"/>
+            </CONFIGURATION>
+            <CONFIGURATION id="DC100003" name="1_dp_1_hdmi_panels">
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS010" type="DP" edid="DELL_UP2414Q_DP.bin" dpcd="DELL_UP2414Q_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="HDM011" type="HDMI" edid="DELL_UP2414Q_HDMI.bin" is_child_display="True"/>
+            </CONFIGURATION>
+            <!-- configuration which will be used to test dual collage scenarios with different RB timings -->
+            <CONFIGURATION id="DC100004" name="2_dp_with_different_rb_timings">
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS115" type="DP" edid="DP_4k_RB1.bin" dpcd="HBR3_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS116" type="DP" edid="DP_4k_RB2.bin" dpcd="HBR3_DPCD.txt" is_child_display="True"/>
+            </CONFIGURATION>
+            <!-- configuration which will be used to test dual collage scenarios with different slice per line -->
+            <CONFIGURATION id="DC100005" name="2_dp_with_different_slice_per_line">
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS059" type="DP" edid="1920_1080_144hz_340clk.bin" dpcd="vdsc_1_2_lbr_lc4_s1.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS099" type="DP" edid="1920_1080_144hz_340clk.bin" dpcd="vdsc_1_2_lbr_lc4_s2.txt" is_child_display="True"/>
+            </CONFIGURATION>
+
+            <!--Configuration which will be used for Hybrid config switching - Collage display + External display(DP/HDMI) -->
+            <CONFIGURATION id="DC100006" name="hybrid_config_1">
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS016" type="DP" edid="LGUltraHD_DP.bin" dpcd="LGUltraHD_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="HDM015" type="HDMI" edid="LGUltraHD_HDMI.bin" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS003" type="DP" edid="Acer_H277HK_DP.bin" dpcd="Acer_H277HK_DPCD.txt" is_child_display="False"/>
+            </CONFIGURATION>
+            <CONFIGURATION id="DC100007" name="hybrid_config_2">
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS016" type="DP" edid="LGUltraHD_DP.bin" dpcd="LGUltraHD_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="HDM015" type="HDMI" edid="LGUltraHD_HDMI.bin" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="HDM006" type="HDMI" edid="Dell_P2415Q_HDMI.bin" is_child_display="False"/>
+            </CONFIGURATION>
+            <!--Collage with 2 VDSC panel -->
+            <CONFIGURATION id="DC100008" name="2_dp_vdsc_identical_panels">
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS057" type="DP" edid="3840_2160_60Hz_533clk_12bpc.bin" dpcd="vdsc_1_2_hbr3_lc_2.txt" is_child_display="True" is_vdsc_required = "True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS057" type="DP" edid="3840_2160_60Hz_533clk_12bpc.bin" dpcd="vdsc_1_2_hbr3_lc_2.txt" is_child_display="True" is_vdsc_required = "True"/>
+            </CONFIGURATION>
+            <!--Collage with 1 VDSC and 1 Non VDSC panel -->
+            <CONFIGURATION id="DC100009" name="1_dp_vdsc_1_dp_non_vdsc_panels">
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS057" type="DP" edid="3840_2160_60Hz_533clk_12bpc.bin" dpcd="vdsc_1_2_hbr3_lc_2.txt" is_child_display="True" is_vdsc_required = "True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS041" type="DP" edid="3840_2160_60Hz_533clk_8bpc.bin" dpcd="HBR3_DPCD_LC_2.txt" is_child_display="True" is_vdsc_required = "False"/>
+            </CONFIGURATION>
+            <!-- configuration which will be used to test dual collage scenarios with different CD clock -->
+            <CONFIGURATION id="DC100010" name="2_dp_with_different_cd_clock">
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS116" type="DP" edid="DP_4k_RB2.bin" dpcd="HBR3_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS119" type="DP" edid="DP_4K_60HZ_CVT.bin" dpcd="HBR3_DPCD.txt" is_child_display="True"/>
+            </CONFIGURATION>
+            <!--Collage with 2 identical YUV420 panels - HSD-16017382598-->
+            <CONFIGURATION id="DC100011" name="2_hdmi_yuv420_identical_panels">
+                <DISPLAY gfx_index="gfx_0" panel_index="HDM003" type="HDMI" edid="Acer_H277HK_HDMI" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="HDM003" type="HDMI" edid="Acer_H277HK_HDMI" is_child_display="True"/>
+            </CONFIGURATION>
+            <!--Collage with 1 DP and 1 HDMI identical YUV420 panels - HSD-16017382598-->
+            <CONFIGURATION id="DC100012" name="1_dp_1_hdmi_yuv420_panels">
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS016" type="DP" edid="LGUltraHD_DP.bin" dpcd="LGUltraHD_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="HDM015" type="HDMI" edid="LGUltraHD_HDMI.bin" is_child_display="True"/>
+            </CONFIGURATION>
+            <!--Collage with 2 HDMI panels with different screen size - VSRI-5981-->
+            <CONFIGURATION id="DC100014" name="2_hdmi_panels_different_screen_size">
+                <DISPLAY gfx_index="gfx_0" panel_index="HDM011" type="HDMI" edid="DELL_UP2414Q_HDMI.bin" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="HDM016" type="HDMI" edid="Philips_288P6_HDMI.bin" is_child_display="True"/>
+            </CONFIGURATION>
+            <!--Collage with 1 DP and 1 HDMI panels with different screen size - VSRI-5981-->
+            <CONFIGURATION id="DC100015" name="1_dp_1_hdmi_panels_different_screen_size">
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS026" type="DP" edid="DELL_UP2414Q_SST_EDID.bin" dpcd="DELL_UP2414Q_SST_DPCD.bin" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="HDM016" type="HDMI" edid="Philips_288P6_HDMI.bin" is_child_display="True"/>
+            </CONFIGURATION>
+            <!-- Collage with 1 DP RGB and 1 HDMI YUV native mode non-identical (different screen width) - HSD-16017382598/VSRI-5981 -->
+            <CONFIGURATION id="DC100016" name="1_dp_rgb_1_hdmi_yuv420_non_identical_panels">
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS004" type="DP" edid="Acer_K242HQK_DP.bin" DPCD="Acer_K242HQK_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="HDM003" type="HDMI" edid="Acer_H277HK_HDMI" is_child_display="True"/>
+            </CONFIGURATION>
+            <!--Collage with 1 DP and 1 HDMI panels with different native resolutions - VSRI-5981-->
+            <CONFIGURATION id="DC100017" name="1_dp_1_hdmi_panels_different_native_resolutions">
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS021" type="DP" edid="DELL_U2913WM_DP.bin" dpcd="DELL_U2913WM_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="HDM011" type="HDMI" edid="DELL_UP2414Q_HDMI.bin" is_child_display="True"/>
+            </CONFIGURATION>
+            <!--Collage with 2 HDMI panels with different native resolutions - VSRI-5981-->
+            <CONFIGURATION id="DC100018" name="2_hdmi_panels_different_native_resolutions">
+                <DISPLAY gfx_index="gfx_0" panel_index="HDM008" type="HDMI" edid="DELL_U2713HM_HDMI.bin" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="HDM009" type="HDMI" edid="DELL_U2913WM_HDMI.bin"  is_child_display="True"/>
+            </CONFIGURATION>
+
+        </DUAL_COLLAGE>
+
+        <TRI_COLLAGE>
+
+            <!--Configuration which will be used to test all tri collage scenarios -->
+            <CONFIGURATION id="TC100001" name="3_dp_identical_panels">
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS011" type="DP" edid="DELL_UP3216Q_DP.bin" dpcd="DELL_UP3216Q_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS011" type="DP" edid="DELL_UP3216Q_DP.bin" dpcd="DELL_UP3216Q_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS011" type="DP" edid="DELL_UP3216Q_DP.bin" dpcd="DELL_UP3216Q_DPCD.txt" is_child_display="True"/>
+            </CONFIGURATION>
+            <CONFIGURATION id="TC100002" name="2_dp_identical_1_hdmi_panels">
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS010" type="DP" edid="DELL_UP2414Q_DP.bin" dpcd="DELL_UP3216Q_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS010" type="DP" edid="DELL_UP2414Q_DP.bin" dpcd="DELL_UP3216Q_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="HDM011" type="HDMI" edid="DELL_UP2414Q_HDMI.bin" is_child_display="True"/>
+            </CONFIGURATION>
+            <CONFIGURATION id="TC100003" name="1_dp_2_hdmi_identical_panels">
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS016" type="DP" edid="LGUltraHD_DP.bin" dpcd="LGUltraHD_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="HDM015" type="HDMI" edid="LGUltraHD_HDMI.bin" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="HDM015" type="HDMI" edid="LGUltraHD_HDMI.bin" is_child_display="True"/>
+            </CONFIGURATION>
+            <CONFIGURATION id="TC100004" name="3_hdmi_identical_panels">
+                <DISPLAY gfx_index="gfx_0" panel_index="HDM006" type="HDMI" edid="Dell_P2415Q_HDMI.bin" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="HDM006" type="HDMI" edid="Dell_P2415Q_HDMI.bin" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="HDM006" type="HDMI" edid="Dell_P2415Q_HDMI.bin" is_child_display="True"/>
+            </CONFIGURATION>
+            <!--Collage with 2 DP and 1 HDMI identical YUV420 panels - HSD-16017382598-->
+            <CONFIGURATION id="TC100005" name="2_dp_identical_1_hdmi_yuv420_panels">
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS006" type="DP" edid="Benq_SW320_DP.bin" dpcd="Benq_SW320_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS006" type="DP" edid="Benq_SW320_DP.bin" dpcd="Benq_SW320_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="HDM005" type="HDMI" edid="BenQ_SW320_HDMI.bin" is_child_display="True"/>
+            </CONFIGURATION>
+            <!-- Collage with 3 DP panels with different screen size - VSRI-5981 -->
+            <CONFIGURATION id="TC100006" name="3_dp_non_identical_panels_different_screen_size">
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS019" type="DP" edid="Samsung_U28E590D_DP.bin" dpcd="Samsung_U28E590D_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS003" type="DP" edid="Acer_H277HK_DP.bin" dpcd="Acer_H277HK_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS006" type="DP" edid="Benq_SW320_DP.bin" dpcd="Benq_SW320_DPCD.txt" is_child_display="True"/>
+            </CONFIGURATION>
+            <!-- Collage with 3 DP panels with different resolutions- VSRI-5981 -->
+            <CONFIGURATION id="TC100007" name="3_dp_non_identical_panels_different_resolutions">
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS008" type="DP" edid="DELL_U2312HM_DP.bin" dpcd="DELL_U2312HM_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS003" type="DP" edid="Acer_H277HK_DP.bin" dpcd="Acer_H277HK_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS022" type="DP" edid="DP_3011.EDID" dpcd="DP_3011_DPCD.txt" is_child_display="True"/>
+            </CONFIGURATION>
+
+        </TRI_COLLAGE>
+
+        <QUAD_COLLAGE>
+            <!-- Configuration which will be used to test all quad collage scenarios -->
+            <CONFIGURATION id="QC100001" name="4_dp_identical_panels">
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS011" type="DP" edid="DELL_UP3216Q_DP.bin" dpcd="DELL_UP3216Q_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS011" type="DP" edid="DELL_UP3216Q_DP.bin" dpcd="DELL_UP3216Q_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS011" type="DP" edid="DELL_UP3216Q_DP.bin" dpcd="DELL_UP3216Q_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS011" type="DP" edid="DELL_UP3216Q_DP.bin" dpcd="DELL_UP3216Q_DPCD.txt" is_child_display="True"/>
+            </CONFIGURATION>
+            <!-- Configuration which will be used to test all quad collage scenarios that can be used for GEN11+ platforms -->
+            <CONFIGURATION id="QC100002" name="4_dp_identical_panels_1920_1080">
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS008" type="DP" edid="DELL_U2312HM_DP.bin" dpcd="DELL_U2312HM_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS008" type="DP" edid="DELL_U2312HM_DP.bin" dpcd="DELL_U2312HM_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS008" type="DP" edid="DELL_U2312HM_DP.bin" dpcd="DELL_U2312HM_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS008" type="DP" edid="DELL_U2312HM_DP.bin" dpcd="DELL_U2312HM_DPCD.txt" is_child_display="True"/>
+            </CONFIGURATION>
+            <!-- Configuration which will be used to test all quad collage scenarios with 4 different panels having different screen size - VSRI-5981 -->
+            <CONFIGURATION id="QC100003" name="4_dp_non_identical_panels_different_screen_size">
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS019" type="DP" edid="Samsung_U28E590D_DP.bin" dpcd="Samsung_U28E590D_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS003" type="DP" edid="Acer_H277HK_DP.bin" dpcd="Acer_H277HK_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS006" type="DP" edid="Benq_SW320_DP.bin" dpcd="Benq_SW320_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS017" type="DP" edid="Philips_288P6_DP.bin" dpcd="Philips_288P6_DPCD.txt" is_child_display="True"/>
+            </CONFIGURATION>
+            <!-- Configuration which will be used to test all quad collage scenarios with 4 different panels having different native resolutions - VSRI-5981 -->
+            <CONFIGURATION id="QC100004" name="4_dp_non_identical_panels_different_resolutions">
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS008" type="DP" edid="DELL_U2312HM_DP.bin" dpcd="DELL_U2312HM_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS003" type="DP" edid="Acer_H277HK_DP.bin" dpcd="Acer_H277HK_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS022" type="DP" edid="DP_3011.EDID" dpcd="DP_3011_DPCD.txt" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" panel_index="DPS015" type="DP" edid="LENOVO_L2251x_Wide_DP.bin" dpcd="LENOVO_L2251x_Wide_DPCD.txt" is_child_display="True"/>
+            </CONFIGURATION>
+        </QUAD_COLLAGE>
+    </SST>
+    <MST>
+         <DUAL_COLLAGE>
+
+            <!--Configuration which will be used to test all dual collage scenarios -->
+            <CONFIGURATION id="DC200001" name="2_dp_identical_panels">
+                <DISPLAY gfx_index="gfx_0" type = 'DP' topology = "MST" xml = "UHBR10_LC1_5K_30HZ_MST_DISPLAY.xml" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" type = 'DP' topology = "MST" xml = "UHBR10_LC1_5K_30HZ_MST_DISPLAY.xml" is_child_display="True"/>
+            </CONFIGURATION>
+            <!--Collage with 2 DP MST panels with different screen size - VSRI-5981-->
+            <CONFIGURATION id="DC200002" name="2_dp_non_identical_panels_different_screen_size">
+                <DISPLAY gfx_index="gfx_0" type = 'DP' topology = "MST" xml = "UHBR10_LC1_4K_60HZ_MST_DISPLAY.xml" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" type = 'DP' topology = "MST" xml = "UHBR10_LC1_4K_60HZ_70H_40V_MST_DISPLAY.xml" is_child_display="True"/>
+            </CONFIGURATION>
+             <!--Collage with 2 DP MST panels with different native resolutions- VSRI-5981-->
+            <CONFIGURATION id="DC200003" name="2_dp_non_identical_panels_different_screen_size">
+                <DISPLAY gfx_index="gfx_0" type = 'DP' topology = "MST" xml = "UHBR10_LC1_5K_60HZ_30HZ_MST_DISPLAY.xml" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" type = 'DP' topology = "MST" xml = "UHBR10_LC1_5K_30HZ_MST_DISPLAY.xml" is_child_display="True"/>
+            </CONFIGURATION>
+             <!--Collage with 2 DP MST Tiled panels - Negative testing -->
+            <CONFIGURATION id="DC200004" name="2_dp_identical_tiled_panels">
+                <DISPLAY gfx_index="gfx_0" type = 'DP' topology = "MST" xml = "MST_Tiled_Basic.xml" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" type = 'DP' topology = "MST" xml = "MST_Tiled_Basic.xml" is_child_display="True"/>
+            </CONFIGURATION>
+
+        </DUAL_COLLAGE>
+        <TRI_COLLAGE>
+
+            <!--Configuration which will be used to test all TRI collage scenarios -->
+            <CONFIGURATION id="TC200001" name="3_dp_identical_panels">
+                <DISPLAY gfx_index="gfx_0" type = 'DP' topology = "MST" xml = "UHBR10_LC1_5K_30HZ_MST_DISPLAY.xml" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" type = 'DP' topology = "MST" xml = "UHBR10_LC1_5K_30HZ_MST_DISPLAY.xml" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" type = 'DP' topology = "MST" xml = "UHBR10_LC1_5K_30HZ_MST_DISPLAY.xml" is_child_display="True"/>
+            </CONFIGURATION>
+
+        </TRI_COLLAGE>
+        <QUAD_COLLAGE>
+
+            <!--Configuration which will be used to test all Quad collage scenarios -->
+            <CONFIGURATION id="QC200001" name="4_dp_identical_panels">
+                <DISPLAY gfx_index="gfx_0" type = 'DP' topology = "MST" xml = "UHBR10_LC1_5K_30HZ_MST_DISPLAY.xml" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" type = 'DP' topology = "MST" xml = "UHBR10_LC1_5K_30HZ_MST_DISPLAY.xml" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" type = 'DP' topology = "MST" xml = "UHBR10_LC1_5K_30HZ_MST_DISPLAY.xml" is_child_display="True"/>
+                <DISPLAY gfx_index="gfx_0" type = 'DP' topology = "MST" xml = "UHBR10_LC1_5K_30HZ_MST_DISPLAY.xml" is_child_display="True"/>
+            </CONFIGURATION>
+
+        </QUAD_COLLAGE>
+    </MST>
+
+</Test>

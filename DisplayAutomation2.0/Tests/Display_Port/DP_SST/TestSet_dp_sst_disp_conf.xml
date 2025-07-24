@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+    <Feature Name="DP_SST_Disp_Conf" Owner="akumarv">
+        <Test LastModifiedWW="2018.WW41" Name="display_config_switching.py" Owner="akumarv" Priority="P3" Version="1">
+            <TestInstance Grids="ETM;PreETM;CI" Id="DPSSTConf1">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -dp_b -dp_c -user_event 0x0E</CommandLine>
+                <OS>WinRS3</OS>
+                <Platform>GLK;SKL;CFL;KBL;CNL;ICL_LP;ICL_HP;TGL_LP;DG1;RKL</Platform>
+                <TestEnvironment>GLK_SOC;ICL_LP_SOC;ICL_HP_SOC;TGL_LP_SOC;ICL_HP_DOD;DG1_SOC;RKL_SOC;RKL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="DPSSTConf2">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -dp_d -dp_e -user_event 0x0E</CommandLine>
+                <OS>WinRS3</OS>
+                <Platform>GLK;SKL;CFL;KBL;CNL;ICL_LP;ICL_HP;TGL_LP;DG1</Platform>
+                <TestEnvironment>GLK_SOC;ICL_LP_SOC;ICL_HP_SOC;TGL_LP_SOC;ICL_HP_DOD;DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+    </Feature>
+</Display_Automation_2.0>

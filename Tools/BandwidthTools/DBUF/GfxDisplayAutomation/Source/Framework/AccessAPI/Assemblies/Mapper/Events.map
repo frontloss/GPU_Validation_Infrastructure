@@ -1,0 +1,1383 @@
+<Events>
+  <Event name = "XVYCC_ENABLE">
+    <Register>PIPE_CONF_REGISTER_ENABLE</Register>
+    <Register>VIDEO_DIP_CTRL_ENABLE</Register>
+    <Register>PRIMARY_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "XVYCC_ENABLE_CURSOR">
+    <Register>CURSOR_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLE">
+    <Register>PIPE_CONF_REGISTER_DISABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_DISABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLE_1080">
+    <Register>PIPE_CONF_REGISTER_DISABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLE_1080_CURSOR">
+    <Register>CURSOR_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLE_CURSOR">
+    <Register>CURSOR_CTRL_DISABLE</Register>
+  </Event>
+  <Event name = "YCBCR_ENABLE">
+    <Register>PIPE_CONF_REGISTER_ENABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "YCBCR_ENABLE_CURSOR">
+    <Register>CURSOR_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED">
+    <Register>XVYCC_DISABLED_SPRITE_ENABLED</Register>
+    <Register>PIPE_CONF_REGISTER_DISABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_DISABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED_CURSOR">
+    <Register>CURSOR_CTRL_DISABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED_Win7">
+    <Register>XVYCC_DISABLED_SPRITE_ENABLED</Register>
+    <Register>PIPE_CONF_REGISTER_DISABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_DISABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED_Win7_CURSOR">
+    <Register>CURSOR_CTRL_DISABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED_1080">
+    <Register>SPRITE_CSC_ENABLED</Register>
+    <Register>PIPE_CONF_REGISTER_DISABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED_1080_CURSOR">
+    <Register>CURSOR_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED_1080_SPRITE">
+    <Register>SPRITE_CSC_ENABLED</Register>
+    <Register>PIPE_CONF_REGISTER_DISABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED_1080_SPRITE_CURSOR">
+    <Register>CURSOR_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED_SPRITE">
+    <Register>SPRITE_ON</Register>
+    <Register>PIPE_CONF_REGISTER_DISABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_DISABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED_SPRITE_CURSOR">
+    <Register>CURSOR_CTRL_DISABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED_Win7_1080">
+    <Register>SPRITE_CSC_ENABLED</Register>
+    <Register>PIPE_CONF_REGISTER_DISABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED_Win7_1080_CURSOR">
+    <Register>CURSOR_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED_Win7_SPRITE">
+    <Register>XVYCC_DISABLED_SPRITE_ENABLED</Register>
+    <Register>PIPE_CONF_REGISTER_DISABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_DISABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED_Win7_SPRITE_CURSOR">
+    <Register>CURSOR_CTRL_DISABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED_Win7_1080_SPRITE">
+    <Register>SPRITE_ON</Register>
+    <Register>PIPE_CONF_REGISTER_DISABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED_Win7_1080_SPRITE_CURSOR">
+    <Register>CURSOR_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED_YCBCR">
+    <Register>SPRITE_ON</Register>
+    <Register>PIPE_CONF_REGISTER_DISABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_DISABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED_YCBCR_CURSOR">
+    <Register>CURSOR_CTRL_DISABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED_YCBCR_SPRITE">
+    <Register>SPRITE_ON</Register>
+    <Register>PIPE_CONF_REGISTER_DISABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_DISABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED_YCBCR_SPRITE_CURSOR">
+    <Register>CURSOR_CTRL_DISABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED_YCBCR_1080">
+    <Register>SPRITE_ON</Register>
+    <Register>PIPE_CONF_REGISTER_DISABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED_YCBCR_1080_CURSOR">
+    <Register>CURSOR_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED_YCBCR_1080_SPRITE">
+    <Register>SPRITE_ON</Register>
+    <Register>PIPE_CONF_REGISTER_DISABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED_YCBCR_1080_SPRITE_CURSOR">
+    <Register>CURSOR_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED_YCBCR_Win7">
+    <Register>XVYCC_DISABLED_SPRITE_ENABLED</Register>
+    <Register>PIPE_CONF_REGISTER_DISABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_DISABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED_YCBCR_Win7_CURSOR">
+    <Register>CURSOR_CTRL_DISABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED_YCBCR_Win7_1080">
+    <Register>SPRITE_ON</Register>
+    <Register>PIPE_CONF_REGISTER_DISABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED_YCBCR_Win7_1080_CURSOR">
+    <Register>CURSOR_CTRL_ENABLE</Register>
+  </Event>
+<Event name = "XVYCC_DISABLED_SPRITE_ENABLED_YCBCR_Win7_SPRITE">
+    <Register>XVYCC_DISABLED_SPRITE_ENABLED</Register>
+    <Register>PIPE_CONF_REGISTER_DISABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_DISABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED_YCBCR_Win7_SPRITE_CURSOR">
+    <Register>CURSOR_CTRL_DISABLE</Register>
+  </Event>
+<Event name = "XVYCC_DISABLED_SPRITE_ENABLED_YCBCR_Win7_1080_SPRITE">
+    <Register>SPRITE_ON</Register>
+    <Register>PIPE_CONF_REGISTER_DISABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_SPRITE_ENABLED_YCBCR_Win7_1080_SPRITE_CURSOR">
+    <Register>CURSOR_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "SPRITE_ENABLED_NON_XVYCC">
+    <Register>SPRITE_CSC_ENABLED</Register>
+    <Register>PIPE_CONF_REGISTER_DISABLE</Register>
+  </Event>
+  <Event name = "SPRITE_ENABLED_NON_XVYCC_CLONE">
+    <Register>XVYCC_DISABLED_SPRITE_ENABLED</Register>
+    <Register>PIPE_CONF_REGISTER_DISABLE</Register>
+  </Event>
+  <Event name = "XVYCC_ENABLED_SPRITE_ENABLED">
+    <Register>SPRITE_CSC_ENABLED</Register>
+    <Register>PIPE_CONF_REGISTER_ENABLE</Register>
+    <Register>VIDEO_DIP_CTRL_ENABLE</Register>
+    <Register>PRIMARY_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "XVYCC_ENABLED_SPRITE_ENABLED_CURSOR">
+    <Register>CURSOR_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "XVYCC_ENABLED_SPRITE_ENABLED_Win7">
+    <Register>SPRITE_CSC_ENABLED</Register>
+    <Register>PIPE_CONF_REGISTER_ENABLE</Register>
+    <Register>VIDEO_DIP_CTRL_ENABLE</Register>
+    <Register>PRIMARY_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "XVYCC_ENABLED_SPRITE_ENABLED_Win7_CURSOR">
+    <Register>CURSOR_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "XVYCC_ENABLED_SPRITE_OFF">
+    <Register>XVYCC_DISABLED_SPRITE_ENABLED</Register>
+    <Register>PIPE_CONF_REGISTER_ENABLE</Register>
+    <Register>VIDEO_DIP_CTRL_ENABLE</Register>
+    <Register>PRIMARY_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "XVYCC_ENABLED_SPRITE_OFF_CURSOR">
+    <Register>CURSOR_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "YCBCR_ENABLED_SPRITE_OFF">
+    <Register>XVYCC_DISABLED_SPRITE_ENABLED</Register>
+    <Register>PIPE_CONF_REGISTER_ENABLE</Register>
+    <Register>VIDEO_DIP_CTRL_ENABLE</Register>
+    <Register>PRIMARY_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "YCBCR_ENABLED_SPRITE_OFF_CURSOR">
+    <Register>CURSOR_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "YCBCR_ENABLED_SPRITE_ENABLED">
+    <Register>SPRITE_CSC_ENABLED</Register>
+    <Register>PIPE_CONF_REGISTER_ENABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "YCBCR_ENABLED_SPRITE_ENABLED_CURSOR">
+    <Register>CURSOR_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "YCBCR_ENABLED_SPRITE_ENABLED_Win7">
+    <Register>SPRITE_CSC_ENABLED</Register>
+    <Register>PIPE_CONF_REGISTER_ENABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "YCBCR_ENABLED_SPRITE_ENABLED_Win7_CURSOR">
+    <Register>CURSOR_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "XVYCC_ENABLED_SPRITE_ENABLED_CURSOR">
+    <Register>SPRITE_CSC_ENABLED</Register>
+    <Register>PIPE_CONF_REGISTER_ENABLE</Register>
+    <Register>VIDEO_DIP_CTRL_ENABLE</Register>
+    <Register>PRIMARY_CTRL_ENABLE</Register>
+    <Register>CURSOR_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "YCBCR_DISABLE">
+    <Register>PIPE_CONF_REGISTER_DISABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_DISABLE</Register>
+  </Event>
+  <Event name = "YCBCR_DISABLE_CURSOR">
+    <Register>CURSOR_CTRL_DISABLE</Register>
+  </Event>
+
+  <Event name = "XVYCC_ENABLED_CLONE_SPRITE_DISABLED">
+    <Register>SPRITE_DISABLED</Register>
+    <Register>PIPE_CONF_REGISTER_ENABLE</Register>
+    <Register>VIDEO_DIP_CTRL_ENABLE</Register>
+    <Register>PRIMARY_CTRL_ENABLE</Register>
+  </Event>
+
+  <Event name = "XVYCC_ENABLED_CLONE_SPRITE_DISABLED_CURSOR">
+    <Register>CURSOR_CTRL_ENABLE</Register>
+  </Event>
+
+  <Event name = "YCBCR_ENABLED_CLONE_SPRITE_DISABLED">
+    <Register>SPRITE_DISABLED</Register>
+    <Register>PIPE_CONF_REGISTER_ENABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_ENABLE</Register>
+  </Event>
+
+  <Event name = "YCBCR_ENABLED_CLONE_SPRITE_DISABLED_CURSOR">
+    <Register>CURSOR_CTRL_ENABLE</Register>
+  </Event>
+
+  <Event name = "XVYCC_DISABLED_CLONE_SPRITE_DISABLED">
+    <Register>SPRITE_DISABLED</Register>
+    <Register>PIPE_CONF_REGISTER_DISABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_DISABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_CLONE_SPRITE_DISABLED_SPRITE">
+    <Register>SPRITE_DISABLED</Register>
+    <Register>PIPE_CONF_REGISTER_DISABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_DISABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_CLONE_SPRITE_DISABLED_CURSOR">
+    <Register>CURSOR_CTRL_DISABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_CLONE_SPRITE_DISABLED_SPRITE_CURSOR">
+    <Register>CURSOR_CTRL_DISABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_CLONE_SPRITE_DISABLED_1080">
+    <Register>SPRITE_CSC_ENABLED</Register>
+    <Register>PIPE_CONF_REGISTER_DISABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_CLONE_SPRITE_DISABLED_1080_SPRITE">
+    <Register>SPRITE_DISABLED</Register>
+    <Register>PIPE_CONF_REGISTER_DISABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_CLONE_SPRITE_DISABLED_1080_CURSOR">
+    <Register>CURSOR_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "XVYCC_DISABLED_CLONE_SPRITE_DISABLED_1080_SPRITE_CURSOR">
+    <Register>CURSOR_CTRL_ENABLE</Register>
+  </Event>
+  <Event name = "NON_HDMI_PANEL">
+    <Register>PIPE_CONF_REGISTER_DISABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_DISABLE</Register>
+  </Event>
+  <Event name = "NON_HDMI_PANEL_SPRITE">
+    <Register>SPRITE_ON</Register>
+    <Register>PIPE_CONF_REGISTER_DISABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_DISABLE</Register>
+  </Event>
+  <Event name = "NON_HDMI_PANEL_CURSOR">
+    <Register>CURSOR_CTRL_DISABLE</Register>
+  </Event>
+  <Event name = "NON_HDMI_PANEL_SPRITE_CURSOR">
+    <Register>CURSOR_CTRL_DISABLE</Register>
+  </Event>
+
+  <Event name = "CLONE_MODE_SPRITE_DISABLE">
+    <Register>SPRITE_OFF</Register>
+    <Register>PIPE_CONF_REGISTER_DISABLE</Register>
+    <Register>VIDEO_DIP_CTRL_DISABLE</Register>
+    <Register>PRIMARY_CTRL_DISABLE</Register>
+  </Event>
+
+  <Event name = "CLONE_MODE_SPRITE_DISABLE_CURSOR">
+    <Register>CURSOR_CTRL_DISABLE</Register>
+  </Event>
+  
+  <Event name = "PIPE_SELECT">
+    <Register>PIPE_DDI_CTRL_REGISTER</Register>
+  </Event>
+  <Event name = "PLANE_SELECT">
+    <Register>PLANE_SELECT</Register>
+  </Event>
+  <Event name = "CRT_PIPE_SELECT">
+    <Register>CRT_PIPE_SELECT</Register>
+  </Event>
+  <Event name = "EDP_PIPE_SELECT">
+    <Register>EDP_PIPE_SELECT</Register>
+  </Event>
+  <Event name = "MIPI_PIPE_SELECT">
+    <Register>MIPI_PIPE_SELECT</Register>
+  </Event>
+  <Event name = "HDMI_PIPE_SELECT">
+    <Register>HDMI_PIPE_SELECT</Register>
+  </Event>
+  <Event name = "DP_PIPE_SELECT">
+    <Register>DP_PIPE_SELECT</Register>
+  </Event>
+
+  <Event name = "CRT_ENABLED">
+    <Register>CRT_ENABLED</Register>
+  </Event>
+  <Event name = "EDP_ENABLED">
+    <Register>EDP_ENABLED</Register>
+  </Event>
+  <Event name = "MIPI_ENABLED">
+    <Register>MIPI_ENABLED</Register>
+  </Event>
+  <Event name = "HDMI_ENABLED">
+    <Register>HDMI_ENABLED</Register>
+  </Event>
+  <Event name = "DP_ENABLED">
+    <Register>DP_ENABLED</Register>
+  </Event>
+  
+  <Event name = "LPSP_ENABLE">
+    <Register>LPSP_ENABLE</Register>
+  </Event>
+  <Event name = "OVERLAY_ENABLE">
+    <Register>SPRITE_ON</Register>
+  </Event>
+  <Event name = "PANEL_FITTER_ENABLE">
+    <Register>PANEL_FITTER_ENABLE</Register>
+  </Event>
+  <Event name = "SOURCE_PIPE_IMAGE">
+    <Register>SOURCE_PIPE_IMAGE</Register>
+  </Event>
+  <Event name = "TARGET_PANEL_FITTER_IMAGE">
+    <Register>TARGET_PANEL_FITTER_IMAGE</Register>
+  </Event>
+  <Event name = "PLL">
+    <Register>PLL</Register>
+  </Event>
+  <Event name = "DPLL0_SSC">
+    <Register>DPLL0_SSC</Register>
+  </Event>
+  <Event name = "DPLL1_SSC">
+    <Register>DPLL1_SSC</Register>
+  </Event>
+  <Event name = "DPLL2_SSC">
+    <Register>DPLL2_SSC</Register>
+  </Event>
+  <Event name = "DPLL3_SSC">
+    <Register>DPLL3_SSC</Register>
+  </Event>
+  <Event name = "HTOTAL">
+    <Register>HTOTAL</Register>
+  </Event>
+  <Event name = "VTOTAL">
+    <Register>VTOTAL</Register>
+  </Event>
+  <Event name = "PF_INTERLACE_ENABLE">
+    <Register>PF_INTERLACE_ENABLE</Register>
+  </Event>
+  <Event name = "PIPE_HOR_SOURCE_SIZE">
+    <Register>PIPE_HOR_SOURCE_SIZE</Register>
+  </Event>
+  <Event name = "PIPE_VER_SOURCE_SIZE">
+    <Register>PIPE_VER_SOURCE_SIZE</Register>
+  </Event>
+  <Event name = "PF_HOR_WIN_SIZE">
+    <Register>PF_HOR_WIN_SIZE</Register>
+  </Event>
+  <Event name = "PF_VER_WIN_SIZE">
+    <Register>PF_VER_WIN_SIZE</Register>
+  </Event>
+  <Event name = "FBC_REGISTER">
+    <Register>FBC_REGISTER</Register>
+  </Event>
+
+  <Event name = "LATENCY_REGISTER_LSB">
+    <Register>LATENCY_REGISTER_LSB</Register>
+  </Event>
+  <Event name = "LATENCY_REGISTER_MSB">
+    <Register>LATENCY_REGISTER_MSB</Register>
+  </Event>
+  <Event name = "CURSOR_STATUS">
+    <Register>CURSOR_STATUS</Register>
+  </Event>
+  <Event name = "DISPLAY_PLANE_STATUS">
+    <Register>DISPLAY_PLANE_STATUS</Register>
+  </Event>
+
+  <Event name = "SPRITE_SIZE">
+    <Register>SPRITE_SIZE</Register>
+  </Event>
+
+  <Event name = "SPRITE_VERTICAL_SIZE">
+    <Register>SPRITE_VERTICAL_SIZE</Register>
+  </Event>
+  
+  <Event name = "DISPLAY_WATERMARK_REGISTER">
+    <Register>DISPLAY_WATERMARK_REGISTER</Register>
+  </Event>
+  <Event name = "SPRITE_WATERMARK_REGISTER">
+    <Register>SPRITE_WATERMARK_REGISTER</Register>
+  </Event>
+  <Event name = "CURSOR_WATERMARK_REGISTER">
+    <Register>CURSOR_WATERMARK_REGISTER</Register>
+  </Event>
+
+  <Event name = "WM_LP1_ENABLE">
+    <Register>WM_LP1_ENABLE</Register>
+  </Event>
+    <Event name = "WM_LP2_ENABLE">
+    <Register>WM_LP2_ENABLE</Register>
+  </Event>
+  <Event name = "WM_LP3_ENABLE">
+    <Register>WM_LP3_ENABLE</Register>
+  </Event>
+  <Event name = "WM_LP1_SPRITE">
+    <Register>WM_LP1_SPRITE</Register>
+  </Event>
+  <Event name = "WM_LP2_SPRITE">
+    <Register>WM_LP2_SPRITE</Register>
+  </Event>
+  <Event name = "WM_LP3_SPRITE">
+    <Register>WM_LP3_SPRITE</Register>
+  </Event>
+  <Event name = "WM_LP1_DISPLAY">
+    <Register>WM_LP1_DISPLAY</Register>
+  </Event>
+  <Event name = "WM_LP2_DISPLAY">
+    <Register>WM_LP2_DISPLAY</Register>
+  </Event>
+  <Event name = "WM_LP3_DISPLAY">
+    <Register>WM_LP3_DISPLAY</Register>
+  </Event>
+  <Event name = "WM_LP1_CURSOR">
+    <Register>WM_LP1_CURSOR</Register>
+  </Event>
+  <Event name = "WM_LP2_CURSOR">
+    <Register>WM_LP2_CURSOR</Register>
+  </Event>
+  <Event name = "WM_LP3_CURSOR">
+    <Register>WM_LP3_CURSOR</Register>
+  </Event>
+  <Event name = "PLANE_1_A">
+    <Register>PLANE_1_A</Register>
+  </Event>
+  <Event name = "PLANE_1_B">
+    <Register>PLANE_1_B</Register>
+  </Event>
+  <Event name = "PLANE_1_C">
+    <Register>PLANE_1_C</Register>
+  </Event>
+   <Event name = "PLANE_2_A">
+    <Register>PLANE_2_A</Register>
+  </Event>
+  <Event name = "PLANE_2_B">
+    <Register>PLANE_2_B</Register>
+  </Event>
+  <Event name = "PLANE_2_C">
+    <Register>PLANE_2_C</Register>
+  </Event>
+  <Event name = "PLANE_3_A">
+    <Register>PLANE_3_A</Register>
+  </Event>
+  <Event name = "PLANE_3_B">
+    <Register>PLANE_3_B</Register>
+  </Event>
+  <Event name = "PLANE_3_C">
+    <Register>PLANE_3_C</Register>
+  </Event>
+  <Event name = "CFGCR1">
+    <Register>CFGCR1</Register>
+  </Event>
+  <Event name = "CFGCR2">
+    <Register>CFGCR2</Register>
+  </Event>
+  <Event name = "CFGCR3">
+    <Register>CFGCR3</Register>
+  </Event>
+  <Event name = "CDCLK_CTL">
+    <Register>CDCLK_CTL</Register>
+  </Event>
+  <Event name = "PLL_ENABLE_STATUS">
+    <Register>PLL_ENABLE_STATUS</Register>
+  </Event>
+  <!-- DeepColor Events  -->
+  <Event name = "HDMI_12_DEEPCOLOR_ENABLED">
+    <Register>PIPE_12BPC</Register>
+    <Register>GCP_Packet_Enable</Register>
+  </Event>
+  <Event name = "DP_10_DEEPCOLOR_ENABLED">
+    <Register>PIPE_10BPC</Register>
+  </Event>
+  <Event name = "DP_12_DEEPCOLOR_ENABLED">
+    <Register>PIPE_12BPC</Register>
+  </Event>
+  <Event name = "EDP_10_DEEPCOLOR_ENABLED">
+    <Register>PIPE_10BPC</Register>
+  </Event>
+  <Event name = "HDMI_12_DEEPCOLOR_DISABLED">
+    <Register>PIPE_8BPC</Register>
+  </Event>
+  <Event name = "HDMI_10_DEEPCOLOR_DISABLED">
+    <Register>PIPE_8BPC</Register>
+  </Event>
+  <Event name = "HDMI_8_DEEPCOLOR_DISABLED">
+    <Register>PIPE_8BPC</Register>
+  </Event>
+  <Event name = "DP_10_DEEPCOLOR_DISABLED">
+    <Register>PIPE_8BPC</Register>
+  </Event>
+  <Event name = "DP_12_DEEPCOLOR_DISABLED">
+    <Register>PIPE_8BPC</Register>
+  </Event>
+  <Event name = "CRT_8_DEEPCOLOR_DISABLED">
+    <Register>PIPE_8BPC</Register>
+  </Event>
+  <Event name = "EDP_6_DEEPCOLOR_DISABLED">
+    <Register>PIPE_6BPC</Register>
+  </Event>
+  <Event name = "EDP_8_DEEPCOLOR_DISABLED">
+    <Register>PIPE_8BPC</Register>
+  </Event>
+  <Event name = "DITHERING_ENABLE">
+    <Register>DITHERING_ENABLE</Register>
+  </Event>
+  <Event name = "DITHERING_BPC">
+    <Register>DITHERING_BPC</Register>
+  </Event>
+  <Event name = "DP_8_DEEPCOLOR_DISABLED">
+    <Register>PIPE_8BPC</Register>
+  </Event>
+  <!--DITHERING_LP-->
+  <Event name = "DITHERING_DISABLE">
+    <Register>DITHERING_DISABLE</Register>
+  </Event>
+  <Event name = "DITHERING_TYPE">
+    <Register>DITHERING_TYPE</Register>
+  </Event>
+  <Event name = "BPC_8">
+    <Register>PIPE_8BPC</Register>
+  </Event>
+  <Event name = "BPC_10">
+    <Register>PIPE_10BPC</Register>
+  </Event>
+  <Event name = "BPC_12">
+    <Register>PIPE_12BPC</Register>
+  </Event>
+  <Event name = "BPC_6">
+    <Register>PIPE_6BPC</Register>
+  </Event>
+  <!--WIDE_GAMUT-->
+  <Event name = "WB_SLIDER_LEVEL4">
+    <Register>WB_SLIDER_LEVEL4</Register>
+  </Event>
+  <Event name = "WB_SLIDER_LEVEL3">
+    <Register>WB_SLIDER_LEVEL3</Register>
+  </Event>
+  <Event name = "WB_SLIDER_LEVEL2">
+    <Register>WB_SLIDER_LEVEL2</Register>
+  </Event>
+  <Event name = "WB_SLIDER_LEVEL1">
+    <Register>WB_SLIDER_LEVEL1</Register>
+  </Event>
+  <Event name = "WB_SLIDER_LEVEL5">
+    <Register>WB_SLIDER_LEVEL1</Register>
+  </Event>
+  <Event name = "PIPE_CSC">
+    <Register>PIPE_ENABLE_STATUS</Register>
+    <Register>PRIMARY_CTRL_ENABLE</Register>
+  </Event>
+   <Event name = "WIDEGAMUT_LP">
+    <Register>WIDEGAMUT_LP</Register>
+  </Event>
+  <Event name = "WIDEGAMUT_LP_DE_GAMMA">
+    <Register>WIDEGAMUT_LP_DE_GAMMA</Register>
+  </Event>
+  <Event name = "NARROW_GAMUT_ENABLE">
+    <Register>NARROW_GAMUT_ENABLE</Register>
+  </Event>
+  <Event name = "NARROW_GAMUT_DISABLE">
+    <Register>NARROW_GAMUT_DISABLE</Register>
+  </Event>
+  <Event name = "CURSOR_CSC_ENABLE">
+    <Register>CURSOR_CSC_ENABLE</Register>
+  </Event>
+  <Event name = "CURSOR_CSC_DISABLE">
+    <Register>CURSOR_CSC_DISABLE</Register>
+  </Event>
+  <Event name = "LINKRATE308">
+    <Register>LINKRATE308</Register>
+  </Event>
+  <Event name = "LINKRATE337">
+    <Register>LINKRATE337</Register>
+  </Event>
+  <Event name = "LINKRATE432">
+    <Register>LINKRATE432</Register>
+  </Event>
+  <Event name = "LINKRATE450">
+    <Register>LINKRATE450</Register>
+  </Event>
+  <Event name = "LINKRATE540">
+    <Register>LINKRATE540</Register>
+  </Event>
+  <Event name = "LINKRATE617">
+    <Register>LINKRATE617</Register>
+  </Event>
+  <Event name = "LINKRATE675">
+    <Register>LINKRATE675</Register>
+  </Event>
+  <Event name = "EDP_VERSION">
+    <Register>EDP_VERSION</Register>
+  </Event>
+
+  <Event name = "CDClock_168">
+    <Register>CDClock_168</Register>
+  </Event>
+  <Event name = "CDClock_336">
+    <Register>CDClock_336</Register>
+  </Event>
+  <Event name = "CDClock_528">
+    <Register>CDClock_528</Register>
+  </Event>
+  
+  <Event name = "CDClock_79.2">
+    <Register>CDClock_79.2</Register>
+  </Event>
+  <Event name = "CDClock_158.4">
+    <Register>CDClock_158.4</Register>
+  </Event>
+  <Event name = "CDClock_316.8">
+    <Register>CDClock_316.8</Register>
+  </Event>
+
+  <Event name = "IS_AUDIO_96_BCLK">
+    <Register>IS_AUDIO_96_BCLK</Register>
+  </Event>
+  
+  <!--MIPI Specific-->
+  <Event name = "DPI_HACTIVE">
+    <Register>DPI_HACTIVE</Register>
+  </Event>
+  <Event name = "DPI_VACTIVE">
+    <Register>DPI_VACTIVE</Register>
+  </Event>
+  <Event name = "Dual_Link_Pixel_Alternative_Mode">
+    <Register>Dual_Link_Pixel_Alternative_Mode</Register>
+  </Event>
+  <Event name = "Dual_Link_Front_Back_Mode">
+    <Register>Dual_Link_Front_Back_Mode</Register>
+  </Event>
+  <Event name = "MIPI_PIXEL_OVERLAP_COUNT">
+    <Register>MIPI_PIXEL_OVERLAP_COUNT</Register>
+  </Event>
+  <Event name = "MIPI_DUAL_LINK_MODE">
+    <Register>MIPI_DUAL_LINK_MODE</Register>
+  </Event>
+  <Event name = "MIPI_VIDEO_MODE">
+    <Register>MIPI_VIDEO_MODE</Register>
+  </Event>
+  
+  <Event name = "NonBurst_Sync_Pulse">
+    <Register>NonBurst_Sync_Pulse</Register>
+  </Event>
+  <Event name = "NonBurst_Sync_Events">
+    <Register>NonBurst_Sync_Events</Register>
+  </Event>
+  <Event name = "BurstMode">
+    <Register>BurstMode</Register>
+  </Event>
+
+  <Event name = "MIPI_ColorFormat_RGB565">
+    <Register>MIPI_ColorFormat_RGB565</Register>
+  </Event>
+  <Event name = "MIPI_ColorFormat_RGB666">
+    <Register>MIPI_ColorFormat_RGB666</Register>
+  </Event>
+  <Event name = "MIPI_ColorFormat_RGB666_Loosely_Packed">
+    <Register>MIPI_ColorFormat_RGB666_Loosely_Packed</Register>
+  </Event>
+  <Event name = "MIPI_ColorFormat_RGB888">
+    <Register>MIPI_ColorFormat_RGB888</Register>
+  </Event>
+  <Event name = "MIPI_ColorFormat_Not_Supported">
+    <Register>MIPI_ColorFormat_Not_Supported</Register>
+  </Event>
+  <Event name = "MIPI_DATA_LANES">
+    <Register>MIPI_DATA_LANES</Register>
+  </Event>
+  
+  <Event name = "MIPI_DSI_Resolution">
+    <Register>MIPI_DSI_Resolution</Register>
+  </Event>
+  <Event name = "MIPI_HORIZ_SYNC_PADDING_COUNT">
+    <Register>MIPI_HORIZ_SYNC_PADDING_COUNT</Register>
+  </Event>
+  <Event name = "MIPI_HORIZ_BACK_PORCH_COUNT">
+    <Register>MIPI_HORIZ_BACK_PORCH_COUNT</Register>
+  </Event>
+  <Event name = "MIPI_HORIZ_FRONT_PORCH_COUNT">
+    <Register>MIPI_HORIZ_FRONT_PORCH_COUNT</Register>
+  </Event>
+  <Event name = "MIPI_HORIZ_ACTIVE_AREA_COUNT">
+    <Register>MIPI_HORIZ_ACTIVE_AREA_COUNT</Register>
+  </Event>
+  <Event name = "MIPI_VERT_SYNC_PADDING_COUNT">
+    <Register>MIPI_VERT_SYNC_PADDING_COUNT</Register>
+  </Event>
+  <Event name = "MIPI_VERT_BACK_PORCH_COUNT">
+    <Register>MIPI_VERT_BACK_PORCH_COUNT</Register>
+  </Event>
+  <Event name = "MIPI_VERT_FRONT_PORCH_COUNT">
+    <Register>MIPI_VERT_FRONT_PORCH_COUNT</Register>
+  </Event>
+  <Event name = "MIPI_HIGH_LOW_SWITCH_COUNT">
+    <Register>MIPI_HIGH_LOW_SWITCH_COUNT</Register>
+  </Event>
+  <Event name = "MIPI_Data_Width_CMD_Mode">
+    <Register>MIPI_Data_Width_CMD_Mode</Register>
+  </Event>
+  
+  <Event name = "MIPI_INTR_STAT_REG">
+    <Register>MIPI_INTR_STAT_REG</Register>
+  </Event>
+  <Event name = "MIPI_GEN_FIFO_STAT_REGISTER">
+    <Register>MIPI_GEN_FIFO_STAT_REGISTER</Register>
+  </Event>
+  <Event name = "MIPI_DPHY_PARAM_REG">
+    <Register>MIPI_DPHY_PARAM_REG</Register>
+  </Event>
+  <Event name = "MIPI_DEVICE_RESET_TIMER">
+    <Register>MIPI_DEVICE_RESET_TIMER</Register>
+  </Event>
+  <Event name = "MIPI_TURN_AROUND_TIMEOUT_REG">
+    <Register>MIPI_TURN_AROUND_TIMEOUT_REG</Register>
+  </Event>
+  <Event name = "MIPI_Disable_Video_BTA">
+    <Register>MIPI_Disable_Video_BTA</Register>
+  </Event>
+  <Event name = "MIPI_HS_TX_TIMEOUT_REG">
+    <Register>MIPI_HS_TX_TIMEOUT_REG</Register>
+  </Event>
+  <Event name = "MIPI_LP_RX_TIMEOUT_REG">
+    <Register>MIPI_LP_RX_TIMEOUT_REG</Register>
+  </Event>
+  <Event name = "MIPI_EOT_DISABLE_REGISTER">
+    <Register>MIPI_EOT_DISABLE_REGISTER</Register>
+  </Event>
+  
+  <!--AUDIO-->
+  <Event name = "AUDIO_ENABLE">
+    <Register>AUD_PIN_ELD_CP_VLD_ENABLE</Register>
+  </Event>
+  <Event name = "AUDIO_DISABLE">
+    <Register>AUD_PIN_ELD_CP_VLD_DISABLE</Register>
+  </Event>
+  <Event name = "AUDIO_REG_LP">
+    <Register>AUD_PIN_ELD_CP_VLD_LP</Register>
+  </Event>
+  <Event name = "AUD_PIPE_ENABLE_LP">
+    <Register>PIPE_ENABLE_STATUS</Register>
+  </Event>
+  <!--AUDIO-->
+
+  <!--PND-->
+  <Event name = "PND_Max_FIFO_ENABLE">
+    <Register>FW_BLC_SELF</Register>
+  </Event>
+  <Event name = "PLANE_FIFO_DRAIN_LATENCY">
+    <Register>PLANE_FIFO_DRAIN_LATENCY</Register>
+  </Event>
+  <Event name = "PLANE_FIFO_DRAIN_PRECISION">
+    <Register>PLANE_FIFO_DRAIN_PRECISION</Register>
+  </Event>
+
+  <Event name = "SPRITE_FIFO_DRAIN_LATENCY">
+    <Register>SPRITE_FIFO_DRAIN_LATENCY</Register>
+  </Event>
+  <Event name = "SPRITE_FIFO_DRAIN_PRECISION">
+    <Register>SPRITE_FIFO_DRAIN_PRECISION</Register>
+  </Event>
+  <Event name = "PF_HRATIO">
+    <Register>PF_HRATIO</Register>
+  </Event>
+  <Event name = "PF_VRATIO">
+    <Register>PF_VRATIO</Register>
+  </Event>
+  <!--PND-->
+
+  <!--CNL-->
+  <Event name = "CDCLOCK_168">
+    <Register>CDCLOCK_168</Register>
+  </Event>
+  <Event name = "CDCLOCK_336">
+    <Register>CDCLOCK_336</Register>
+  </Event>
+  <Event name = "CDCLOCK_528">
+    <Register>CDCLOCK_528</Register>
+  </Event>
+  <!--CNL-->
+  <!--ColorConversion-->
+  <Event name = "PIPE_ENABLE">
+    <Register>PRIMARY_CTRL_ENABLE</Register>
+  </Event>>
+  <Event name = "SPRITE1">
+    <Register>SPRITE1</Register>
+  </Event>
+  <Event name = "SPRITE2">
+    <Register>SPRITE2</Register>
+  </Event>
+  <!--CRC-->
+  <Event name = "CRC_CTRL">
+    <Register>CRC_CTRL</Register>
+  </Event>>
+  <Event name = "CRC_SCRAMBLE">
+    <Register>CRC_SCRAMBLE</Register>
+  </Event>
+  <Event name = "CRC_RES">
+    <Register>CRC_RES</Register>
+  </Event>
+  <Event name = "PIPE_CRC_CTRL">
+    <Register>PIPE_CRC_CTRL</Register>
+  </Event>
+  <Event name = "PIPE_CRC_RES">
+    <Register>PIPE_CRC_RES</Register>
+  </Event>
+  <!--PLL_CHV-->
+  <Event name = "DP_PLL">
+    <Register>DP_PLL</Register>
+  </Event>
+  <Event name = "EDP_PLL">
+    <Register>DP_PLL</Register>
+  </Event>
+  <Event name = "HDMI_PLL">
+    <Register>HDMI_PLL</Register>
+  </Event>
+  <Event name = "DPLL0">
+    <Register>PLL0</Register>
+  </Event>
+  <Event name = "DPLL1">
+    <Register>PLL1</Register>
+  </Event>
+  <Event name = "DPLL2">
+    <Register>PLL2</Register>
+  </Event>
+  <!--Multi Plane Overlay-->
+  <Event name ="MPO">
+    <Register>MPO_SKL</Register>
+  </Event>
+  <!--Multi Plane Overlay-->
+  <!--NV12-->
+  <Event name ="NV12">
+    <Register>NV12</Register>
+  </Event>
+  <!--NV12-->
+  <Event name ="Plane_Scalars_Enabled">
+    <Register>Plane_Scalars_Enabled</Register>
+  </Event>
+  
+  <!--CNL Registers-->
+  <Event name ="PLANE_1_CTL">
+    <Register>PLANE_1_CTL</Register>
+  </Event>
+  <Event name ="PLANE_2_CTL">
+    <Register>PLANE_2_CTL</Register>
+  </Event>
+  <Event name ="PLANE_3_CTL">
+    <Register>PLANE_3_CTL</Register>
+  </Event>
+  <Event name ="PLANE_4_CTL">
+    <Register>PLANE_4_CTL</Register>
+  </Event>
+  
+  <Event name ="PLANE_1_Size">
+    <Register>PLANE_1_Size</Register>
+  </Event>
+  <Event name ="PLANE_2_Size">
+    <Register>PLANE_2_Size</Register>
+  </Event>
+  <Event name ="PLANE_3_Size">
+    <Register>PLANE_3_Size</Register>
+  </Event>
+    <Event name ="PLANE_4_Size">
+    <Register>PLANE_4_Size</Register>
+  </Event>
+
+  <Event name ="Plane_Scalar_1_Win_Size">
+    <Register>Plane_Scalar_1_Win_Size</Register>
+  </Event>
+  <Event name ="Plane_Scalar_2_Win_Size">
+    <Register>Plane_Scalar_2_Win_Size</Register>
+  </Event>
+
+  <Event name ="Plane_Scalar_1_Enable">
+    <Register>Plane_Scalar_1_Enable</Register>
+  </Event>
+  <Event name ="Plane_Scalar_2_Enable">
+    <Register>Plane_Scalar_2_Enable</Register>
+  </Event>
+  
+  <Event name ="Plane_Scalar_1_Binding">
+    <Register>Plane_Scalar_1_Binding</Register>
+  </Event>
+  <Event name ="Plane_Scalar_2_Binding">
+    <Register>Plane_Scalar_2_Binding</Register>
+  </Event>
+  
+  <!--Smart Frame-->
+  <Event name ="SmartFrame_Enable">
+    <Register>Smart_Frame_Enable</Register>
+  </Event>
+  <Event name ="SmartFrame_Media">
+    <Register>SmartFrame_Media</Register>
+  </Event>
+  <Event name ="SmartFrame_Disable">
+    <Register>Smart_Frame_Disable</Register>
+  </Event>
+  <!--Smart Frame-->
+
+  <!--HTOTAL-->
+  <Event name ="HACTIVE">
+    <Register>HACTIVE</Register>
+  </Event>
+  <Event name ="VACTIVE">
+    <Register>VACTIVE</Register>
+  </Event>
+
+  <!--Watermark Registers.-->
+  <Event name ="PLANE_1_BUF_CFG">
+    <Register>PLANE_1_BUF_CFG</Register>
+  </Event>
+  <Event name ="PLANE_2_BUF_CFG">
+    <Register>PLANE_2_BUF_CFG</Register>
+  </Event>
+  <Event name ="PLANE_3_BUF_CFG">
+    <Register>PLANE_3_BUF_CFG</Register>
+  </Event>
+  <Event name ="PLANE_4_BUF_CFG">
+    <Register>PLANE_4_BUF_CFG</Register>
+  </Event>
+
+  <Event name ="PLANE_1_NV12_BUF_CFG">
+    <Register>PLANE_1_NV12_BUF_CFG</Register>
+  </Event>
+  <Event name ="PLANE_2_NV12_BUF_CFG">
+    <Register>PLANE_2_NV12_BUF_CFG</Register>
+  </Event>
+  <Event name ="PLANE_3_NV12_BUF_CFG">
+    <Register>PLANE_3_NV12_BUF_CFG</Register>
+  </Event>
+  <Event name ="PLANE_4_NV12_BUF_CFG">
+    <Register>PLANE_4_NV12_BUF_CFG</Register>
+  </Event>
+  
+    <Event name ="WM_LINETIME">
+    <Register>WM_LINETIME</Register>
+  </Event>
+
+  <Event name ="PLANE_1_WM_BASE">
+    <Register>PLANE_1_WM_BASE</Register>
+  </Event>
+  <Event name ="PLANE_2_WM_BASE">
+    <Register>PLANE_2_WM_BASE</Register>
+  </Event>
+  <Event name ="PLANE_3_WM_BASE">
+    <Register>PLANE_3_WM_BASE</Register>
+  </Event>
+  <Event name ="PLANE_4_WM_BASE">
+    <Register>PLANE_4_WM_BASE</Register>
+  </Event>
+
+  <Event name ="PLANE_1_WM_TRANS">
+    <Register>PLANE_1_WM_TRANS</Register>
+  </Event>
+  <Event name ="PLANE_2_WM_TRANS">
+    <Register>PLANE_2_WM_TRANS</Register>
+  </Event>
+  <Event name ="PLANE_3_WM_TRANS">
+    <Register>PLANE_3_WM_TRANS</Register>
+  </Event>
+  <Event name ="PLANE_4_WM_TRANS">
+    <Register>PLANE_4_WM_TRANS</Register>
+  </Event>
+  <!--PANEL_FITTER-->
+  <Event name ="PANEL_FITTER">
+    <Register>PANEL_FITTER</Register>
+  </Event>
+  
+  <!--Start of PSR1-->
+  <Event name ="PSR1_CTRL_EDP_REG">
+    <Register>PSR1_CTRL_EDP_REG</Register>
+  </Event>
+  <Event name ="PSR1_STATUS_REG">
+    <Register>PSR1_STATUS_REG</Register>
+  </Event>
+  <Event name ="PSR1_PERF_CNT_REG">
+    <Register>PSR1_PERF_CNT_REG</Register>
+  </Event>
+  <Event name ="PORT_CTRL_EDP_REG">
+    <Register>PORT_CTRL_EDP_REG</Register>
+  </Event>
+  <!--End of PSR1-->
+
+  <!--Start of PSR2-->
+  <Event name ="PSR2_CTRL_EDP_REG">
+    <Register>PSR2_CTRL_EDP_REG</Register>
+  </Event>
+  <Event name ="PSR2_STAT_REG_PSR2STATUS">
+    <Register>PSR2_STAT_REG_PSR2STATUS</Register>
+  </Event>
+  <Event name ="PSR2_STAT_REG_LINKSTATUS">
+    <Register>PSR2_STAT_REG_LINKSTATUS</Register>
+  </Event>
+  <!--End of PSR2-->
+
+  <!--MBO-->
+  <Event name = "MBO_ENABLE">
+    <Register>SRD_CTL_MBO_EN</Register>
+  </Event>
+  <Event name = "MBO_DISABLE">
+    <Register>SRD_CTL_MBO_DIS</Register>
+  </Event>
+  <Event name = "PSR_STATUS_REG">
+    <Register>PSR_STATUS_REG</Register>
+  </Event>
+  <Event name = "MBO_NV12_EN">
+    <Register>MBO_NV12_EN</Register>
+  </Event>
+  <Event name = "DC6_STATE_DIS">
+    <Register>DC6_STATE_DIS</Register>
+  </Event>
+  <Event name = "DC6_STATE_EN">
+    <Register>DC6_STATE_EN</Register>
+  </Event>
+  <!--End of MBO-->
+  
+  <!--MIPI_HTOTAL-->
+  <Event name ="MIPI_HACTIVE">
+    <Register>MIPI_HACTIVE</Register>
+  </Event>
+  <Event name ="MIPI_LANECOUNT">
+    <Register>MIPI_LANECOUNT</Register>
+  </Event>
+  <Event name ="MIPI_BitsPerPixel">
+    <Register>MIPI_BitsPerPixel</Register>
+  </Event>
+  <Event name = "DC5_COUNTER">
+    <Register>DC5_COUNTER</Register>
+  </Event>
+  <Event name = "DC6_COUNTER">
+    <Register>DC6_COUNTER</Register>
+  </Event>
+  <Event name = "DC_STATE">
+    <Register>DC_STATE</Register>
+  </Event>
+  <Event name = "COMMAND_VIDEO_MODE">
+    <Register>COMMAND_VIDEO_MODE</Register>
+  </Event>
+  <Event name = "PWM">
+    <Register>PWM</Register>
+  </Event>
+  <Event name = "DMC_VERSION">
+    <Register>DMC_VERSION</Register>
+  </Event>
+
+  <!-- MIPI DSR -->
+  <Event name ="MIPI_DEVICE_READY_REG">
+    <Register>MIPI_DEVICE_READY_REG</Register>
+  </Event>
+  <Event name ="MIPI_DSI_FUNC_PRG_REG">
+    <Register>MIPI_DSI_FUNC_PRG_REG</Register>
+  </Event>
+  <Event name ="DSI_PLL_ENABLE_Register">
+    <Register>DSI_PLL_ENABLE_Register</Register>
+  </Event>
+  <Event name ="DE_PLL_ENABLE_Register">
+    <Register>DE_PLL_ENABLE_Register</Register>
+  </Event>
+  <Event name ="PWR_WELL_CTL2_Register">
+    <Register>PWR_WELL_CTL2_Register</Register>
+  </Event>
+  <Event name ="DC_STATE_EN_Register">
+    <Register>DC_STATE_EN_Register</Register>
+  </Event>
+  <Event name ="DE_PWR_1_Register">
+    <Register>DE_PWR_1_Register</Register>
+  </Event>
+   <Event name ="VRR_Enable">
+    <Register>VRR_Enable</Register>
+  </Event> 
+  <Event name ="VRR_Max">
+    <Register>VRR_Max</Register>
+  </Event>
+  <Event name ="VRR_Min">
+    <Register>VRR_Min</Register>
+  </Event>
+  <Event name ="VRR_flipdone">
+    <Register>VRR_flipdone</Register>
+  </Event>
+  <Event name ="VRR_Status">
+    <Register>VRR_Status</Register>
+  </Event>
+  <Event name ="DP_TP_CTL">
+    <Register>DP_TP_CTL</Register>
+  </Event>
+  <Event name ="TRANS_CONF_ENABLE">
+    <Register>TRANS_CONF_ENABLE</Register>
+  </Event>
+  <Event name = "AUDIO_PW">
+    <Register>AUDIO_PW</Register>
+   </Event>
+  
+  <Event name = "PF_PD_ENABLE">
+    <Register>PF_PD_ENABLE</Register>
+  </Event>
+  <Event name = "PIPE_CS_RGB">
+    <Register>PIPE_CONF_REGISTER_DISABLE</Register>
+  </Event>
+
+  <Event name = "TRANS_DDI_PORT_WIDTH">
+    <Register>TRANS_DDI_PORT_WIDTH</Register>
+  </Event>
+  
+  <Event name = "TRANS_DDI_MODE_SEL_DP_SST">
+    <Register>TRANS_DDI_MODE_SEL_DP_SST</Register>
+  </Event>
+
+  <Event name = "EDP_Vswing_Emp_Sel">
+    <Register>EDP_Vswing_Emp_Sel</Register>
+  </Event>
+  <Event name = "EDP_Port_Reversal_4Lane_Caps">
+    <Register>EDP_Port_Reversal_4Lane_Caps</Register>
+  </Event>
+  <Event name = "DDI_BUF_DP_PORT_WIDTH">
+    <Register>DDI_BUF_DP_PORT_WIDTH</Register>
+  </Event>
+  <Event name = "DEEPCOLOR_PIPE_DDI_CTRL_REGISTER">
+    <Register>DEEPCOLOR_PIPE_DDI_CTRL_REGISTER</Register>
+  </Event>
+  <Event name = "DITHERING_BPC_6">
+    <Register>DITHERING_BPC_6</Register>
+  </Event>
+  <Event name = "DITHERING_BPC_8">
+    <Register>DITHERING_BPC</Register>
+  </Event>
+  <Event name = "DITHERING_BPC_10">
+    <Register>DITHERING_BPC_10</Register>
+  </Event>
+
+  <!--HDR-->
+  <Event name ="HDR_METADATA">
+    <Register>VIDEO_DIP_VSC_DATA_0</Register>
+  </Event>
+  <Event name ="HDR_PIPE_BPC_10">
+    <Register>HDR_BPC_10</Register>
+  </Event>
+  <Event name ="HDR_PIPE_BPC_12">
+    <Register>HDR_BPC_12</Register>
+  </Event>
+  <Event name ="HDR_4K2K@30COLOR">
+    <Register>HDR_PIPECSC</Register>
+    <Register>HDR_PIPEGAMMA</Register>
+    <Register>HDR_PIPEGAMMA_MODE</Register>
+  </Event>
+  <Event name ="HDR_4K2K@60COLOR">
+    <Register>HDR_PIPECSC</Register>
+    <Register>HDR_PIPEGAMMA</Register>
+    <Register>HDR_PIPEGAMMA_MODE</Register>
+  </Event>
+
+  <Event name ="HDR_CSCCOEFF">
+    <Register>HDR_CSCCOEFF</Register>
+  </Event>
+  <Event name ="HDR_CSCPOSTOFF">
+    <Register>HDR_CSCPOSTOFF</Register>
+  </Event>
+
+  <!--WiGig Specific-->
+ <Event name="WDE_Transcoder_CTL0_Register">
+   <Register>WDE_Transcoder_CTL0_Enable</Register>
+ </Event>
+ <Event name="WIGIG_DP_Transcoder_CTL_Pipe_Select">
+   <Register>WDE_Transcoder_CTL0_Pipe_Select</Register>
+ </Event>
+ <Event name="WIGIG_DP2_Transcoder_CTL_Pipe_Select">
+   <Register>WDE_Transcoder_CTL1_Pipe_Select</Register>
+ </Event>
+ <Event name="WDE_Transcoder_CTL1_Register">
+   <Register>WDE_Transcoder_CTL1_Enable</Register>
+ </Event>
+ <Event name="Horizontal_Resolution_Register">
+  <Register>Horizontal_Resolution_Register</Register>
+ </Event>
+ <Event name="Vertical_Resolution_Register">
+   <Register>Vertical_Resolution_Register</Register>
+ </Event>
+ <Event name="FrameCounter">
+  <Register>QCFrameCount</Register>
+  </Event>
+
+  <Event name="VDSC_ENABLED">
+    <Register>VDSC_ENABLED</Register>
+  </Event>
+  <Event name="POWERWELL_PG1_ENABLED">
+    <Register>POWERWELL_PG1_ENABLED</Register>
+  </Event>
+  <Event name="POWERWELL_PG2_ENABLED">
+    <Register>POWERWELL_PG2_ENABLED</Register>
+  </Event>
+  <Event name="POWERWELL_PG3_ENABLED">
+    <Register>POWERWELL_PG3_ENABLED</Register>
+  </Event>
+  <Event name="POWERWELL_PG4_ENABLED">
+    <Register>POWERWELL_PG4_ENABLED</Register>
+  </Event>
+  <Event name="PWR_WELL_CTL_DDI2">
+    <Register>PWR_WELL_CTL_DDI2</Register>
+  </Event>
+  <Event name="PWR_WELL_CTL_AUX2">
+    <Register>PWR_WELL_CTL_AUX2</Register>
+  </Event>
+
+  <Event name="PWR_WELL_CTL2_Register_ALL_ON">
+    <Register>PWR_WELL_CTL2_Register_ALL_ON</Register>
+  </Event>
+  <Event name="PWR_WELL_CTL_DDI2_ALL_ON">
+    <Register>PWR_WELL_CTL_DDI2_ALL_ON</Register>
+  </Event>
+  
+  <!--MPO Python Events-->
+  <Event name = "PIXEL_FORMAT_PLANE1">
+    <Register>PIXEL_FORMAT_PLANE1</Register>
+  </Event>
+  <Event name = "PIXEL_FORMAT_PLANE2">
+    <Register>PIXEL_FORMAT_PLANE2</Register>
+  </Event>
+  <Event name = "PIXEL_FORMAT_PLANE3">
+    <Register>PIXEL_FORMAT_PLANE3</Register>
+  </Event>
+  <Event name = "TILED_SURFACE_PLANE1">
+    <Register>TILED_SURFACE_PLANE1</Register>
+  </Event>
+  <Event name = "TILED_SURFACE_PLANE2">
+    <Register>TILED_SURFACE_PLANE2</Register>
+  </Event>
+  <Event name = "TILED_SURFACE_PLANE3">
+    <Register>TILED_SURFACE_PLANE3</Register>
+  </Event>
+  <Event name = "ENABLE_SCALER_SCALER1">
+    <Register>ENABLE_SCALER_SCALER1</Register>
+  </Event>
+  <Event name = "ENABLE_SCALER_SCALER2">
+    <Register>ENABLE_SCALER_SCALER2</Register>
+  </Event>
+  <Event name = "PS_WIN_XPOS_SCALER1">
+    <Register>PS_WIN_XPOS_SCALER1</Register>
+  </Event>
+  <Event name = "PS_WIN_XPOS_SCALER2">
+    <Register>PS_WIN_XPOS_SCALER2</Register>
+  </Event>
+  <Event name = "PS_WIN_YPOS_SCALER1">
+    <Register>PS_WIN_YPOS_SCALER1</Register>
+  </Event>
+  <Event name = "PS_WIN_YPOS_SCALER2">
+    <Register>PS_WIN_YPOS_SCALER2</Register>
+  </Event>
+  <Event name = "PS_WIN_XSZ_SCALER1">
+    <Register>PS_WIN_XSZ_SCALER1</Register>
+  </Event>
+  <Event name = "PS_WIN_XSZ_SCALER2">
+    <Register>PS_WIN_XSZ_SCALER2</Register>
+  </Event>
+  <Event name = "PS_WIN_YSZ_SCALER1">
+    <Register>PS_WIN_YSZ_SCALER1</Register>
+  </Event>
+  <Event name = "PS_WIN_YSZ_SCALER2">
+    <Register>PS_WIN_YSZ_SCALER2</Register>
+  </Event>
+  <Event name = "PLANE_XPOS_PLANE1">
+    <Register>PLANE_XPOS_PLANE1</Register>
+  </Event>
+  <Event name = "PLANE_XPOS_PLANE2">
+    <Register>PLANE_XPOS_PLANE2</Register>
+  </Event>
+  <Event name = "PLANE_XPOS_PLANE3">
+    <Register>PLANE_XPOS_PLANE3</Register>
+  </Event>
+  <Event name = "PLANE_YPOS_PLANE1">
+    <Register>PLANE_YPOS_PLANE1</Register>
+  </Event>
+  <Event name = "PLANE_YPOS_PLANE2">
+    <Register>PLANE_YPOS_PLANE2</Register>
+  </Event>
+  <Event name = "PLANE_YPOS_PLANE3">
+    <Register>PLANE_YPOS_PLANE3</Register>
+  </Event>
+  <Event name = "PLANE_SIZE_WIDTH_PLANE1">
+    <Register>PLANE_SIZE_WIDTH_PLANE1</Register>
+  </Event>
+  <Event name = "PLANE_SIZE_WIDTH_PLANE2">
+    <Register>PLANE_SIZE_WIDTH_PLANE2</Register>
+  </Event>
+  <Event name = "PLANE_SIZE_WIDTH_PLANE3">
+    <Register>PLANE_SIZE_WIDTH_PLANE3</Register>
+  </Event>
+  <Event name = "PLANE_SIZE_HEIGHT_PLANE1">
+    <Register>PLANE_SIZE_HEIGHT_PLANE1</Register>
+  </Event>
+  <Event name = "PLANE_SIZE_HEIGHT_PLANE2">
+    <Register>PLANE_SIZE_HEIGHT_PLANE2</Register>
+  </Event>
+  <Event name = "PLANE_SIZE_HEIGHT_PLANE3">
+    <Register>PLANE_SIZE_HEIGHT_PLANE3</Register>
+  </Event>
+  <!--HDMI Mode set-->
+  <Event name = "HDMI_MODESET">
+    <Register>TRANS_DDI_MODE_SEL_HDMI</Register>
+    <Register>HDMI_VIDEO_DIP_CTL</Register>
+  </Event>
+  <Event name = "TRANS_CONF_ENABLE_BIT">
+    <Register>TRANS_CONF_ENABLE_BIT</Register>
+  </Event>
+</Events>
+

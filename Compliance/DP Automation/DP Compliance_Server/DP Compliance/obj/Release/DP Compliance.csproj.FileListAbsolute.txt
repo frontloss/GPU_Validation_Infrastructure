@@ -1,0 +1,9 @@
+C:\Users\asheshum\Desktop\DP Compliance Automation\New Tools Friday\DP Compliance\DP Compliance\obj\Release\DP_Compliance.Form1.resources
+C:\Users\asheshum\Desktop\DP Compliance Automation\New Tools Friday\DP Compliance\DP Compliance\obj\Release\DP_Compliance.Properties.Resources.resources
+C:\Users\asheshum\Desktop\DP Compliance Automation\New Tools Friday\DP Compliance\DP Compliance\obj\Release\DP Compliance.csproj.GenerateResource.Cache
+C:\Users\asheshum\Desktop\DP Compliance Automation\New Tools Friday\DP Compliance\DP Compliance\bin\Release\DP Compliance.exe.config
+C:\Users\asheshum\Desktop\DP Automation Code\DP Compliance_WW08_2016\DP Compliance\bin\Release\DP Compliance.exe.config
+C:\Users\Administrator\Desktop\sdpr automation ww16 FIX\DP Automation WW 15\DP Compliance_WW15_new_code\DP Compliance\bin\Release\DP Compliance.exe.config
+C:\Users\Administrator\Desktop\sdpr automation ww16 FIX\DP Automation WW 15\DP Compliance_WW15_new_code\DP Compliance\obj\Release\DP_Compliance.Form1.resources
+C:\Users\Administrator\Desktop\sdpr automation ww16 FIX\DP Automation WW 15\DP Compliance_WW15_new_code\DP Compliance\obj\Release\DP_Compliance.Properties.Resources.resources
+C:\Users\Administrator\Desktop\sdpr automation ww16 FIX\DP Automation WW 15\DP Compliance_WW15_new_code\DP Compliance\obj\Release\DP Compliance.csproj.GenerateResource.Cache

@@ -1,0 +1,1387 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+    <Feature Name="MPO" Owner="imahendr">
+        <Test LastModifiedWW="2016.WW49" Name="mpo_display_switch_sd.py" Owner="anshetty" Priority="P2" Version="1">
+            <TestInstance Grids="GFT" Id="MPOUI001">
+                <CommandLine>python Tests\MPO\UI\mpo_display_switch_sd.py -EDP_A -HDMI_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL;KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@ICL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="" Id="MPOUI114">
+                <CommandLine>python Tests\MPO\UI\mpo_display_switch_sd.py -MIPI_A -DP_D</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="" Id="MPOUI143">
+                <CommandLine>python Tests\MPO\UI\mpo_display_switch_sd.py -MIPI_A -DP_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>EHL</Platform>
+                <TestEnvironment>EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI002">
+                <CommandLine>python Tests\MPO\UI\mpo_display_switch_sd.py -EDP_A -HDMI_B -DP_C</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL;KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2016.WW49" Name="planeformat_display_switch_sd.py" Owner="smithab" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOUI003">
+                <CommandLine>python Tests\MPO\UI\planeformat_display_switch_sd.py -EDP_A -HDMI_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI004">
+                <CommandLine>python Tests\MPO\UI\planeformat_display_switch_sd.py -EDP_A -HDMI_B -DP_C</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI005">
+                <CommandLine>python Tests\MPO\UI\planeformat_display_switch_sd.py -EDP_A -HDMI_B -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI115">
+                <CommandLine>python Tests\MPO\UI\planeformat_display_switch_sd.py -MIPI_A -HDMI_E -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI136">
+                <CommandLine>python Tests\MPO\UI\planeformat_display_switch_sd.py -MIPI_A -DP_D -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI137">
+                <CommandLine>python Tests\MPO\UI\planeformat_display_switch_sd.py -MIPI_A -DP_B -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>EHL</Platform>
+                <TestEnvironment>EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI045">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_display_switch_sd.py -EDP_A -DP_C DELL_U2312HM_DP.bin DELL_U2312HM_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI116">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_display_switch_sd.py -MIPI_A -DP_D DELL_U2312HM_DP.bin DELL_U2312HM_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI138">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_display_switch_sd.py -MIPI_A -DP_B DELL_U2312HM_DP.bin DELL_U2312HM_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>EHL</Platform>
+                <TestEnvironment>EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI046">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_display_switch_sd.py -EDP_A -HDMI_B DELL_UP2414Q_HDMI.bin -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI047">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_display_switch_sd.py -EDP_A -DP_C DELL_UP2414Q_DP.bin DELL_UP2414Q_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI048">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_display_switch_sd.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI049">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_display_switch_sd.py -EDP_A -DP_C LENOVO_L2251x_Wide_DP.bin LENOVO_L2251x_Wide_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI080">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_display_switch_sd.py -EDP_A -DP_C DELL_U2312HM_DP.bin DELL_U2312HM_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI081">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_display_switch_sd.py -EDP_A -HDMI_B DELL_UP2414Q_HDMI.bin -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI082">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_display_switch_sd.py -EDP_A -DP_C DELL_UP2414Q_DP.bin DELL_UP2414Q_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI083">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_display_switch_sd.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI084">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_display_switch_sd.py -EDP_A -DP_C LENOVO_L2251x_Wide_DP.bin LENOVO_L2251x_Wide_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2016.WW49" Name="planeformat_resolution_switch.py" Owner="anshetty" Priority="P2" Version="1">
+            <TestInstance Grids="GFT" Id="MPOUI006" Status="Valid">
+                <CommandLine>python Tests\MPO\UI\planeformat_resolution_switch.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI007">
+                <CommandLine>python Tests\MPO\UI\planeformat_resolution_switch.py -EDP_A -HDMI_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI008">
+                <CommandLine>python Tests\MPO\UI\planeformat_resolution_switch.py -EDP_A -HDMI_B -DP_C</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI009" Status="Valid">
+                <CommandLine>python Tests\MPO\UI\planeformat_resolution_switch.py -EDP_A -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI117" Status="Valid">
+                <CommandLine>python Tests\MPO\UI\planeformat_resolution_switch.py -MIPI_A -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2016.WW49" Name="planeformat_resolution_switch_window.py" Owner="smithab" Priority="P2" Version="1">
+            <TestInstance Grids="GFT" Id="MPOUI010">
+                <CommandLine>python Tests\MPO\UI\planeformat_resolution_switch_window.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI011">
+                <CommandLine>python Tests\MPO\UI\planeformat_resolution_switch_window.py -EDP_A -HDMI_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI012">
+                <CommandLine>python Tests\MPO\UI\planeformat_resolution_switch_window.py -EDP_A -HDMI_B -DP_C</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI013">
+                <CommandLine>python Tests\MPO\UI\planeformat_resolution_switch_window.py -EDP_A -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI134">
+                <CommandLine>python Tests\MPO\UI\planeformat_resolution_switch_window.py -MIPI_A -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI050">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_resolution_switch_window.py -EDP_A -DP_C DELL_U2312HM_DP.bin DELL_U2312HM_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI051">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_resolution_switch_window.py -EDP_A -DP_C DELL_UP2414Q_DP.bin DELL_UP2414Q_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@CFL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI052">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_resolution_switch_window.py -EDP_A -HDMI_B DELL_UP2414Q_HDMI.bin -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI118">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_resolution_switch_window.py -MIPI_A -HDMI_E DELL_UP2414Q_HDMI.bin -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI053">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_resolution_switch_window.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI054">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_resolution_switch_window.py -EDP_A -DP_C LENOVO_L2251x_Wide_DP.bin LENOVO_L2251x_Wide_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI119">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_resolution_switch_window.py -MIPI_A -DP_D LENOVO_L2251x_Wide_DP.bin LENOVO_L2251x_Wide_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI139">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_resolution_switch_window.py -MIPI_A -DP_B LENOVO_L2251x_Wide_DP.bin LENOVO_L2251x_Wide_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>EHL</Platform>
+                <TestEnvironment>EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI085">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_resolution_switch_window.py -EDP_A -DP_C DELL_U2312HM_DP.bin DELL_U2312HM_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI086">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_resolution_switch_window.py -EDP_A -DP_C DELL_UP2414Q_DP.bin DELL_UP2414Q_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI087">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_resolution_switch_window.py -EDP_A -HDMI_B DELL_UP2414Q_HDMI.bin -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI088">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_resolution_switch_window.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI089">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_resolution_switch_window.py -EDP_A -DP_C LENOVO_L2251x_Wide_DP.bin LENOVO_L2251x_Wide_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2016.WW49" Name="planeformat_rotation.py" Owner="anshetty" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOUI014" Status="Valid">
+                <CommandLine>python Tests\MPO\UI\planeformat_rotation.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI015">
+                <CommandLine>python Tests\MPO\UI\planeformat_rotation.py -EDP_A -HDMI_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI016">
+                <CommandLine>python Tests\MPO\UI\planeformat_rotation.py -EDP_A -HDMI_B -DP_C</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI017" Status="Valid">
+                <CommandLine>python Tests\MPO\UI\planeformat_rotation.py -EDP_A -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@CFL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI120" Status="Valid">
+                <CommandLine>python Tests\MPO\UI\planeformat_rotation.py -MIPI_A -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI112" Status="Valid">
+                <CommandLine>python Tests\MPO\UI\planeformat_rotation.py -EDP_A -DP_C -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI113" Status="Valid">
+                <CommandLine>python Tests\MPO\UI\planeformat_rotation.py -EDP_A -HDMI_B -DP_C -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI055">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_rotation.py -EDP_A -DP_C DELL_U2312HM_DP.bin DELL_U2312HM_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI135">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_rotation.py -MIPI_A -DP_D DELL_U2312HM_DP.bin DELL_U2312HM_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI140">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_rotation.py -MIPI_A -DP_B DELL_U2312HM_DP.bin DELL_U2312HM_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>EHL</Platform>
+                <TestEnvironment>EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI056">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_rotation.py -EDP_A -DP_C DELL_UP2414Q_DP.bin DELL_UP2414Q_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI057">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_rotation.py -EDP_A -HDMI_B DELL_UP2414Q_HDMI.bin -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI058">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_rotation.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@CFL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI059">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_rotation.py -EDP_A -DP_C LENOVO_L2251x_Wide_DP.bin LENOVO_L2251x_Wide_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI090">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_rotation.py -EDP_A -DP_C DELL_U2312HM_DP.bin DELL_U2312HM_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI091">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_rotation.py -EDP_A -DP_C DELL_UP2414Q_DP.bin DELL_UP2414Q_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI092">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_rotation.py -EDP_A -HDMI_B DELL_UP2414Q_HDMI.bin -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI093">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_rotation.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI094">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_rotation.py -EDP_A -DP_C LENOVO_L2251x_Wide_DP.bin LENOVO_L2251x_Wide_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2016.WW49" Name="mpo_rotation.py" Owner="smithab" Priority="P2" Version="1">
+            <TestInstance Grids="GFT" Id="MPOUI018" Status="Valid">
+                <CommandLine>python Tests\MPO\UI\mpo_rotation.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL;KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@ICL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI019">
+                <CommandLine>python Tests\MPO\UI\mpo_rotation.py -EDP_A -HDMI_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL;KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI020">
+                <CommandLine>python Tests\MPO\UI\mpo_rotation.py -EDP_A -HDMI_B -DP_C</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL;KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@CFL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI110">
+                <CommandLine>python Tests\MPO\UI\mpo_rotation.py -EDP_A -DP_C</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL;KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2016.WW50" Name="planeformat_resolution_switch_snapmode.py" Owner="anshetty" Priority="P2" Version="1">
+            <TestInstance Grids="GFT" Id="MPOUI021" Status="Valid">
+                <CommandLine>python Tests\MPO\UI\planeformat_resolution_switch_snapmode.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI022">
+                <CommandLine>python Tests\MPO\UI\planeformat_resolution_switch_snapmode.py -EDP_A -HDMI_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI023">
+                <CommandLine>python Tests\MPO\UI\planeformat_resolution_switch_snapmode.py -EDP_A -HDMI_B -DP_C</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI024" Status="Valid">
+                <CommandLine>python Tests\MPO\UI\planeformat_resolution_switch_snapmode.py -EDP_A -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI121" Status="Valid">
+                <CommandLine>python Tests\MPO\UI\planeformat_resolution_switch_snapmode.py -MIPI_A -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2016.WW50" Name="planeformat_logoff_s0ix_s3s4.py" Owner="smithab" Priority="P2" Version="1">
+            <TestInstance Grids="GFT" Id="MPOUI025">
+                <CommandLine>python Tests\MPO\UI\planeformat_logoff_s0ix_s3s4.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI026">
+                <CommandLine>python Tests\MPO\UI\planeformat_logoff_s0ix_s3s4.py -EDP_A -EXPECTED_PIXELFORMAT NV12_YUV_420 RGB_8888</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI122">
+                <CommandLine>python Tests\MPO\UI\planeformat_logoff_s0ix_s3s4.py -MIPI_A -EXPECTED_PIXELFORMAT NV12_YUV_420 RGB_8888</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI060">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_logoff_s0ix_s3s4.py -EDP_A -DP_C DELL_U2312HM_DP.bin DELL_U2312HM_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI061">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_logoff_s0ix_s3s4.py -EDP_A -DP_C DELL_UP2414Q_DP.bin DELL_UP2414Q_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI123">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_logoff_s0ix_s3s4.py -MIPI_A -DP_D DELL_UP2414Q_DP.bin DELL_UP2414Q_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI141">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_logoff_s0ix_s3s4.py -MIPI_A -DP_B DELL_UP2414Q_DP.bin DELL_UP2414Q_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>EHL</Platform>
+                <TestEnvironment>EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI062">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_logoff_s0ix_s3s4.py -EDP_A -HDMI_B DELL_UP2414Q_HDMI.bin -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI063">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_logoff_s0ix_s3s4.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI064">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_logoff_s0ix_s3s4.py -EDP_A -DP_C LENOVO_L2251x_Wide_DP.bin LENOVO_L2251x_Wide_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI095">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_logoff_s0ix_s3s4.py -EDP_A -DP_C DELL_U2312HM_DP.bin DELL_U2312HM_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI096">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_logoff_s0ix_s3s4.py -EDP_A -DP_C DELL_UP2414Q_DP.bin DELL_UP2414Q_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI097">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_logoff_s0ix_s3s4.py -EDP_A -HDMI_B DELL_UP2414Q_HDMI.bin -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI098">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_logoff_s0ix_s3s4.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI099">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_logoff_s0ix_s3s4.py -EDP_A -DP_C LENOVO_L2251x_Wide_DP.bin LENOVO_L2251x_Wide_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI131">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\planeformat_logoff_s0ix_s3s4.py -EDP_A -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL;GLK;CNL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2016.WW50" Name="mpo_hotplug_unplug.py" Owner="smithab" Priority="P2" Version="1">
+            <TestInstance Grids="GFT" Id="MPOUI027">
+                <CommandLine>python Tests\MPO\UI\mpo_hotplug_unplug.py -EDP_A -HDMI_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL;KBL_ULT;CFL;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI145">
+                <CommandLine>python Tests\MPO\UI\mpo_hotplug_unplug.py -EDP_A -HDMI_C</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>GLK;ICL</Platform>
+                <TestEnvironment>ICL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI146">
+                <CommandLine>python Tests\MPO\UI\mpo_hotplug_unplug.py -EDP_A -HDMI_D</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>CFL_H</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI028">
+                <CommandLine>python Tests\MPO\UI\mpo_hotplug_unplug.py -EDP_A -HDMI_B -DP_C</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL;KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI147">
+                <CommandLine>python Tests\MPO\UI\mpo_hotplug_unplug.py -EDP_A -HDMI_C -DP_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>GLK;ICL</Platform>
+                <TestEnvironment>ICL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI148">
+                <CommandLine>python Tests\MPO\UI\mpo_hotplug_unplug.py -EDP_A -HDMI_D -DP_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>CFL_H</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2016.WW50" Name="mpo_hotplug_unplug_stress.py" Owner="anshetty" Priority="P2" Version="1">
+            <TestInstance Grids="GFT" Id="MPOUI029">
+                <CommandLine>python Tests\MPO\UI\mpo_hotplug_unplug_stress.py -EDP_A -HDMI_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL;KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI149">
+                <CommandLine>python Tests\MPO\UI\mpo_hotplug_unplug_stress.py -EDP_A -HDMI_C</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>GLK;ICL</Platform>
+                <TestEnvironment>ICL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI150">
+                <CommandLine>python Tests\MPO\UI\mpo_hotplug_unplug_stress.py -EDP_A -HDMI_D</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>CFL_H</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI030">
+                <CommandLine>python Tests\MPO\UI\mpo_hotplug_unplug_stress.py -EDP_A -HDMI_B -DP_C</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL;KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI151">
+                <CommandLine>python Tests\MPO\UI\mpo_hotplug_unplug_stress.py -EDP_A -HDMI_C -DP_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>GLK;ICL</Platform>
+                <TestEnvironment>ICL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI152">
+                <CommandLine>python Tests\MPO\UI\mpo_hotplug_unplug_stress.py -EDP_A -HDMI_D -DP_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>CFL_H</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2016.WW50" Name="mpo_planeformat_48hz.py" Owner="imahendr" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOUI031">
+                <CommandLine>python Tests\MPO\UI\mpo_planeformat_48hz.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI032">
+                <CommandLine>python Tests\MPO\UI\mpo_planeformat_48hz.py -EDP_A -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2016.WW50" Name="mpo_planeformat_media_tdr.py" Owner="anshetty" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOUI033">
+                <CommandLine>python Tests\MPO\UI\mpo_planeformat_media_tdr.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI034">
+                <CommandLine>python Tests\MPO\UI\mpo_planeformat_media_tdr.py -EDP_A -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI124">
+                <CommandLine>python Tests\MPO\UI\mpo_planeformat_media_tdr.py -MIPI_A -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2016.WW50" Name="mpo_planeformat_media.py" Owner="imahendr" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOUI035" Status="Valid">
+                <CommandLine>python Tests\MPO\UI\mpo_planeformat_media.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI036">
+                <CommandLine>python Tests\MPO\UI\mpo_planeformat_media.py -EDP_A -HDMI_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI037">
+                <CommandLine>python Tests\MPO\UI\mpo_planeformat_media.py -EDP_A -HDMI_B -DP_C</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI038" Status="Valid">
+                <CommandLine>python Tests\MPO\UI\mpo_planeformat_media.py -EDP_A -EXPECTED_PIXELFORMAT NV12_YUV_420 RGB_8888</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI125" Status="Valid">
+                <CommandLine>python Tests\MPO\UI\mpo_planeformat_media.py -MIPI_A -EXPECTED_PIXELFORMAT NV12_YUV_420 RGB_8888</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI065">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_planeformat_media.py -EDP_A -DP_C DELL_U2312HM_DP.bin DELL_U2312HM_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI066">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_planeformat_media.py -EDP_A -DP_C DELL_UP2414Q_DP.bin DELL_UP2414Q_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI067">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_planeformat_media.py -EDP_A -HDMI_B DELL_UP2414Q_HDMI.bin -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI126">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_planeformat_media.py -MIPI_A -HDMI_E DELL_UP2414Q_HDMI.bin -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI068">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_planeformat_media.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI069">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_planeformat_media.py -EDP_A -DP_C LENOVO_L2251x_Wide_DP.bin LENOVO_L2251x_Wide_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI100">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_planeformat_media.py -EDP_A -DP_C DELL_U2312HM_DP.bin DELL_U2312HM_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI101">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_planeformat_media.py -EDP_A -DP_C DELL_UP2414Q_DP.bin DELL_UP2414Q_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI102">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_planeformat_media.py -EDP_A -HDMI_B DELL_UP2414Q_HDMI.bin -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI103">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_planeformat_media.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL_Halo</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI104">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_planeformat_media.py -EDP_A -DP_C LENOVO_L2251x_Wide_DP.bin LENOVO_L2251x_Wide_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2016.WW18" Name="mpo_overlay.py" Owner="anshetty" Priority="P2" Version="1">
+            <TestInstance Grids="GFT" Id="MPOUI039" Status="Valid">
+                <CommandLine>python Tests\MPO\UI\mpo_overlay.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI040" Status="Valid">
+                <CommandLine>python Tests\MPO\UI\mpo_overlay.py -EDP_A -EXPECTED_PIXELFORMAT NV12_YUV_420 RGB_8888</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI127" Status="Valid">
+                <CommandLine>python Tests\MPO\UI\mpo_overlay.py -MIPI_A -EXPECTED_PIXELFORMAT NV12_YUV_420 RGB_8888</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI111" Status="Valid">
+                <CommandLine>python Tests\MPO\UI\mpo_overlay.py -EDP_A -HDMI_B -DP_C -EXPECTED_PIXELFORMAT NV12_YUV_420 RGB_8888</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI070">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_overlay.py -EDP_A -DP_C DELL_U2312HM_DP.bin DELL_U2312HM_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI071">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_overlay.py -EDP_A -DP_C DELL_UP2414Q_DP.bin DELL_UP2414Q_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI128">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_overlay.py -MIPI_A -DP_D DELL_UP2414Q_DP.bin DELL_UP2414Q_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI142">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_overlay.py -MIPI_A -DP_B DELL_UP2414Q_DP.bin DELL_UP2414Q_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>EHL</Platform>
+                <TestEnvironment>EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI072">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_overlay.py -EDP_A -HDMI_B DELL_UP2414Q_HDMI.bin -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI073">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_overlay.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI074">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_overlay.py -EDP_A -DP_C LENOVO_L2251x_Wide_DP.bin LENOVO_L2251x_Wide_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI105">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_overlay.py -EDP_A -DP_C DELL_U2312HM_DP.bin DELL_U2312HM_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI106">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_overlay.py -EDP_A -DP_C DELL_UP2414Q_DP.bin DELL_UP2414Q_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI107">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_overlay.py -EDP_A -HDMI_B DELL_UP2414Q_HDMI.bin -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI108">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_overlay.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI109">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_overlay.py -EDP_A -DP_C LENOVO_L2251x_Wide_DP.bin LENOVO_L2251x_Wide_DPCD.txt -CONFIG EXTENDED -EXPECTED_PIXELFORMAT YUV_422_PACKED_8_BPC</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2016.WW18" Name="planeformat_lidswitch.py" Owner="anshetty" Priority="P2" Version="1">
+            <TestInstance Grids="GFT" Id="MPOUI041" Status="Valid">
+                <CommandLine>python Tests\MPO\UI\planeformat_lidswitch.py -EDP_A -HDMI_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL;KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2016.WW18" Name="mpo_3d_apps.py" Owner="imahendr" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOUI042" Status="Valid">
+                <CommandLine>python Tests\MPO\UI\mpo_3d_apps.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL;KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI129" Status="Valid">
+                <CommandLine>python Tests\MPO\UI\mpo_3d_apps.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI043">
+                <CommandLine>python Tests\MPO\UI\mpo_3d_apps.py -EDP_A -HDMI_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL;KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI044">
+                <CommandLine>python Tests\MPO\UI\mpo_3d_apps.py -EDP_A -HDMI_B -DP_C</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL;KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI075">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_3d_apps.py -EDP_A -DP_C DELL_U2312HM_DP.bin DELL_U2312HM_DPCD.txt -CONFIG EXTENDED</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@CFL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI076">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_3d_apps.py -EDP_A -DP_C DELL_UP2414Q_DP.bin DELL_UP2414Q_DPCD.txt -CONFIG EXTENDED</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI077">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_3d_apps.py -EDP_A -HDMI_B DELL_UP2414Q_HDMI.bin -CONFIG EXTENDED</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI078">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_3d_apps.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt -CONFIG EXTENDED</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI130">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_3d_apps.py -MIPI_A -DP_D HP_Z27q_DP.bin HP_Z27q_DPCD.txt -CONFIG EXTENDED</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI144">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_3d_apps.py -MIPI_A -DP_B HP_Z27q_DP.bin HP_Z27q_DPCD.txt -CONFIG EXTENDED</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>EHL</Platform>
+                <TestEnvironment>EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOUI079">
+                <CommandLine>python Tests\MPO\UI\SecondaryMPO\mpo_3d_apps.py -EDP_A -DP_C LENOVO_L2251x_Wide_DP.bin LENOVO_L2251x_Wide_DPCD.txt -CONFIG EXTENDED</CommandLine>
+                <OS>WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+    </Feature>
+</Display_Automation_2.0>

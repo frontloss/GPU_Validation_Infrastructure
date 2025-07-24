@@ -1,0 +1,379 @@
+######################################################################################
+# @file         gen13_dbuf_table.py
+# @addtogroup   PyLibs_DisplayWatermark
+# @brief        Gen13 DBuf distribution table
+# @author       Suraj Gaikwad, Bhargav Adigarla
+######################################################################################
+
+from Libs.Feature.display_watermark.watermark_utils import DBUF_SLICE_END, DBUF_HALF_SLICE_END, DBUF_HALF_SLICE_SIZE, \
+    DBUF_FULL_BLOCK_END
+
+##
+# DBuf distribution across different slices for Gen13
+# DG2 BSpec: https://gfxspecs.intel.com/Predator/Home/Index/49255?dstFilter=DG2&mode=Filter
+# ADL-P BSpec: https://gfxspecs.intel.com/Predator/Home/Index/49255?dstFilter=ADL&mode=Filter
+
+# Gen13 DBuf distribution dictionary
+# Key = Bitwise Enabled Pipes, Considering Pipe A, Pipe B , Pipe C and Pipe D as bit 0, 1, 2 and 3 respectively.
+# Values = Allocation start and end, DBuf slices enabled, MBus joined mode (Not for DG2)
+
+##
+# DG2 DBuf distribution dictionary
+gen13_dg2_dbuf_distribution = {
+
+    ##
+    # KEY ==> BIT_PipeD, BIT_PipeC, BIT_PipeB, BIT_PipeA
+
+    # Pipe A
+    0b0001: {
+        'allocation': (                     # DBuf Pipe boundary details
+            (0, DBUF_SLICE_END),            # Pipe A DBuf boundaries
+            (0, 0),                         # Pipe B DBuf boundaries
+            (0, 0),                         # Pipe C DBuf boundaries
+            (0, 0),                         # Pipe D DBuf boundaries
+        ),
+        'slices_enabled': ['S0', 'S1'],     # DBuf Slices enabled
+    },
+
+    # Pipe B
+    0b0010: {
+        'allocation': (
+            (0, 0),
+            (0, DBUF_SLICE_END),
+            (0, 0),
+            (0, 0),
+        ),
+        'slices_enabled': ['S0', 'S1'],
+    },
+
+    # Pipe A + Pipe B
+    0b0011: {
+        'allocation': (
+            (0, DBUF_HALF_SLICE_END),
+            (DBUF_HALF_SLICE_SIZE, DBUF_SLICE_END),
+            (0, 0),
+            (0, 0),
+        ),
+        'slices_enabled': ['S0', 'S1'],
+    },
+
+    # Pipe C
+    0b0100: {
+        'allocation': (
+            (0, 0),
+            (0, 0),
+            (0, DBUF_SLICE_END),
+            (0, 0),
+        ),
+        'slices_enabled': ['S2', 'S3'],
+    },
+
+    # Pipe A + Pipe C
+    0b0101: {
+        'allocation': (
+            (0, DBUF_SLICE_END),
+            (0, 0),
+            (0, DBUF_SLICE_END),
+            (0, 0),
+        ),
+        'slices_enabled': ['S0', 'S1', 'S2', 'S3'],
+    },
+
+    # Pipe B + Pipe C
+    0b0110: {
+        'allocation': (
+            (0, 0),
+            (0, DBUF_SLICE_END),
+            (0, DBUF_SLICE_END),
+            (0, 0),
+        ),
+        'slices_enabled': ['S0', 'S1', 'S2', 'S3'],
+    },
+
+    # Pipe A + Pipe B + Pipe C
+    0b0111: {
+        'allocation': (
+            (0, DBUF_HALF_SLICE_END),
+            (DBUF_HALF_SLICE_SIZE, DBUF_SLICE_END),
+            (0, DBUF_SLICE_END),
+            (0, 0),
+        ),
+        'slices_enabled': ['S0', 'S1', 'S2', 'S3'],
+    },
+
+    # Pipe D
+    0b1000: {
+        'allocation': (
+            (0, 0),
+            (0, 0),
+            (0, 0),
+            (0, DBUF_SLICE_END),
+        ),
+        'slices_enabled': ['S2', 'S3'],
+    },
+
+    # Pipe A + Pipe D
+    0b1001: {
+        'allocation': (
+            (0, DBUF_SLICE_END),
+            (0, 0),
+            (0, 0),
+            (0, DBUF_SLICE_END),
+        ),
+        'slices_enabled': ['S0', 'S1', 'S2', 'S3'],
+    },
+
+    # Pipe B + Pipe D
+    0b1010: {
+        'allocation': (
+            (0, 0),
+            (0, DBUF_SLICE_END),
+            (0, 0),
+            (0, DBUF_SLICE_END),
+        ),
+        'slices_enabled': ['S0', 'S1', 'S2', 'S3'],
+    },
+
+    # Pipe A + Pipe B + Pipe D
+    0b1011: {
+        'allocation': (
+            (0, DBUF_HALF_SLICE_END),
+            (DBUF_HALF_SLICE_SIZE, DBUF_SLICE_END),
+            (0, 0),
+            (0, DBUF_SLICE_END),
+        ),
+        'slices_enabled': ['S0', 'S1', 'S2', 'S3'],
+    },
+
+    # Pipe C + Pipe D
+    0b1100: {
+        'allocation': (
+            (0, 0),
+            (0, 0),
+            (0, DBUF_HALF_SLICE_END),
+            (DBUF_HALF_SLICE_SIZE, DBUF_SLICE_END),
+        ),
+        'slices_enabled': ['S2', 'S3'],
+    },
+
+    # Pipe A + Pipe C + Pipe D
+    0b1101: {
+        'allocation': (
+            (0, DBUF_SLICE_END),
+            (0, 0),
+            (0, DBUF_HALF_SLICE_END),
+            (DBUF_HALF_SLICE_SIZE, DBUF_SLICE_END),
+        ),
+        'slices_enabled': ['S0', 'S1', 'S2', 'S3'],
+    },
+
+    # Pipe B + Pipe C + Pipe D
+    0b1110: {
+        'allocation': (
+            (0, 0),
+            (0, DBUF_SLICE_END),
+            (0, DBUF_HALF_SLICE_END),
+            (DBUF_HALF_SLICE_SIZE, DBUF_SLICE_END),
+        ),
+        'slices_enabled': ['S0', 'S1', 'S2', 'S3'],
+    },
+
+    # Pipe A + Pipe B + Pipe C + Pipe D
+    0b1111: {
+        'allocation': (
+            (0, DBUF_HALF_SLICE_END),
+            (DBUF_HALF_SLICE_SIZE, DBUF_SLICE_END),
+            (0, DBUF_HALF_SLICE_END),
+            (DBUF_HALF_SLICE_SIZE, DBUF_SLICE_END),
+        ),
+        'slices_enabled': ['S0', 'S1', 'S2', 'S3'],
+    },
+}
+
+##
+# ADL-P DBuf distribution dictionary
+gen13_adlp_dbuf_distribution = {
+
+    ##
+    # KEY ==> BIT_PipeD, BIT_PipeC, BIT_PipeB, BIT_PipeA
+
+    # Pipe A
+    0b0001: {
+        'allocation': (                                 # DBuf allocation boundaries across different pipes
+            (0, DBUF_FULL_BLOCK_END),                   # Pipe A DBuf boundaries
+            (0, 0),                                     # Pipe B DBuf boundaries
+            (0, 0),                                     # Pipe C DBuf boundaries
+            (0, 0),                                     # Pipe D DBuf boundaries
+        ),
+        'slices_enabled': ['S0', 'S1', 'S2', 'S3'],     # DBuf slices enabled
+        'mbus_joined': True                             # MBus joined mose status
+    },
+
+    # Pipe B
+    0b0010: {
+        'allocation': (
+            (0, 0),
+            (0, DBUF_FULL_BLOCK_END),
+            (0, 0),
+            (0, 0),
+        ),
+        'slices_enabled': ['S0', 'S1', 'S2', 'S3'],
+        'mbus_joined': True
+    },
+
+    # Pipe A + Pipe B
+    0b0011: {
+        'allocation': (
+            (0, DBUF_SLICE_END),
+            (0, DBUF_SLICE_END),
+            (0, 0),
+            (0, 0),
+        ),
+        'slices_enabled': ['S0', 'S1', 'S2', 'S3'],
+        'mbus_joined': False
+    },
+
+    # Pipe C
+    0b0100: {
+        'allocation': (
+            (0, 0),
+            (0, 0),
+            (0, DBUF_SLICE_END),
+            (0, 0),
+        ),
+        'slices_enabled': ['S2', 'S3'],
+        'mbus_joined': False
+    },
+
+    # Pipe A + Pipe C
+    0b0101: {
+        'allocation': (
+            (0, DBUF_SLICE_END),
+            (0, 0),
+            (0, DBUF_SLICE_END),
+            (0, 0),
+        ),
+        'slices_enabled': ['S0', 'S1', 'S2', 'S3'],
+        'mbus_joined': False
+    },
+
+    # Pipe B + Pipe C
+    0b0110: {
+        'allocation': (
+            (0, 0),
+            (0, DBUF_SLICE_END),
+            (0, DBUF_SLICE_END),
+            (0, 0),
+        ),
+        'slices_enabled': ['S2', 'S3'],
+        'mbus_joined': False
+    },
+
+    # Pipe A + Pipe B + Pipe C
+    0b0111: {
+        'allocation': (
+            (0, DBUF_SLICE_END),
+            (0, DBUF_SLICE_END),
+            (0, DBUF_SLICE_END),
+            (0, 0),
+        ),
+        'slices_enabled': ['S0', 'S1', 'S2', 'S3'],
+        'mbus_joined': False
+    },
+
+    # Pipe D
+    0b1000: {
+        'allocation': (
+            (0, 0),
+            (0, 0),
+            (0, 0),
+            (0, DBUF_SLICE_END),
+        ),
+        'slices_enabled': ['S0', 'S1'],
+        'mbus_joined': False
+    },
+
+    # Pipe A + Pipe D
+    0b1001: {
+        'allocation': (
+            (0, DBUF_SLICE_END),
+            (0, 0),
+            (0, 0),
+            (0, DBUF_SLICE_END),
+        ),
+        'slices_enabled': ['S0', 'S1'],
+        'mbus_joined': False
+    },
+
+    # Pipe B + Pipe D
+    0b1010: {
+        'allocation': (
+            (0, 0),
+            (0, DBUF_SLICE_END),
+            (0, 0),
+            (0, DBUF_SLICE_END),
+        ),
+        'slices_enabled': ['S0', 'S1', 'S2', 'S3'],
+        'mbus_joined': False
+    },
+
+    # Pipe A + Pipe B + Pipe D
+    0b1011: {
+        'allocation': (
+            (0, DBUF_SLICE_END),
+            (0, DBUF_SLICE_END),
+            (0, 0),
+            (0, DBUF_SLICE_END),
+        ),
+        'slices_enabled': ['S0', 'S1', 'S2', 'S3'],
+        'mbus_joined': False
+    },
+
+    # Pipe C + Pipe D
+    0b1100: {
+        'allocation': (
+            (0, 0),
+            (0, 0),
+            (0, DBUF_SLICE_END),
+            (0, DBUF_SLICE_END),
+        ),
+        'slices_enabled': ['S0', 'S1', 'S2', 'S3'],
+        'mbus_joined': False
+    },
+
+    # Pipe A + Pipe C + Pipe D
+    0b1101: {
+        'allocation': (
+            (0, DBUF_SLICE_END),
+            (0, 0),
+            (0, DBUF_SLICE_END),
+            (0, DBUF_SLICE_END),
+        ),
+        'slices_enabled': ['S0', 'S1', 'S2', 'S3'],
+        'mbus_joined': False
+    },
+
+    # Pipe B + Pipe C + Pipe D
+    0b1110: {
+        'allocation': (
+            (0, 0),
+            (0, DBUF_SLICE_END),
+            (0, DBUF_SLICE_END),
+            (0, DBUF_SLICE_END),
+        ),
+        'slices_enabled': ['S0', 'S1', 'S2', 'S3'],
+        'mbus_joined': False
+    },
+
+    # Pipe A + Pipe B + Pipe C + Pipe D
+    0b1111: {
+        'allocation': (
+            (0, DBUF_SLICE_END),
+            (0, DBUF_SLICE_END),
+            (0, DBUF_SLICE_END),
+            (0, DBUF_SLICE_END),
+        ),
+        'slices_enabled': ['S0', 'S1', 'S2', 'S3'],
+        'mbus_joined': False
+    },
+}

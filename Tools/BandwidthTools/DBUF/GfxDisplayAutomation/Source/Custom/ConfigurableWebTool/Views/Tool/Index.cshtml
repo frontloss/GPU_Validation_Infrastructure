@@ -1,0 +1,307 @@
+﻿@model Intel.VPG.Display.Automation.ToolViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <script type="text/javascript" src="../../Scripts/jquery-1.7.1.min.js"></script>
+</head>
+<body style="background-color:lightgray">
+    <div>
+        <div>
+            <img id="HeaderImage" border="0" src="/Images/ToolImage1.png" alt="Pulpit rock">
+        </div>
+    </div>
+    <div>
+        <table id="ToolTable">
+            <tr>
+                <td>
+                    <label id="TestNameLabel">Test Name</label>                    
+                </td>
+                <td>
+                    <input id="TestName" type="text" />                   
+                </td>                                 
+            </tr>
+            <tr>
+                <td>@Html.DropDownListFor(model => model.list, Model.list)</td>
+                <td>
+                    <select id="interface"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table id="ParameterTable" border="1">
+                        <tr>
+                            <th>Parameters</th>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <button id="AddCommandButton" type="button">AddCommand</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <select id="commandLine" size="10" style="width:inherit;" />
+                </td>                              
+            </tr>
+            <tr>
+                <td>
+                    <button id="DelCommand">Delete Command</button>
+               </td>
+                <td> 
+                     <button id="DelAllCommand">Delete All</button>  
+                </td>  
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Execution Mode
+                      <input type="radio" id="ExecutionModeBatch" name="EM" value="Batch">
+                            Batch 
+                       <input type="radio" id="ExecutionModeLocal" name="EM" value="Local">Local
+                        </legend>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="ExecuteButton" type="button">Execute</button>
+                    <a id="logHyperlink" href="#">Log</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script type="text/javascript">  
+        $(document).load("change", "#TestName", function () {
+            document.getElementById("logHyperlink").style.visibility = "hidden";
+            document.getElementById("commandLine").style.visibility = "hidden";
+        });
+        $(document).on("change", "#TestName", function () {           
+            var testName  =  $(this).val();
+            $.ajax({
+                url: '@Url.Action("TestNameChanged", "Tool")',
+                type: 'POST',
+                data: { 'argTestName': testName},/*Input paramaeter for the function*/
+                dataType: 'json',
+                success: function (response) {
+                    document.getElementById("logHyperlink").style.visibility = "hidden";
+                },
+                error: function (error) {
+                    alert('Unexpected error');
+                }
+            });
+        });
+        $("#list").change(function () {
+            var selValue = $(this).val();
+            $.ajax({
+                url: '@Url.Action("GetInterfaceForFeature", "Tool")',
+                type: 'POST',
+                data: { 'selectedFeature': selValue },/*Input paramaeter for the function*/
+                dataType: 'json',
+                success: function (response) {
+                    var items = "<option value=\"  select \"> select Interface </option>";
+
+                    $.each(response.interfaceList, function (i, item) {
+                        items += "<option value=\"" + item + "\">" + item + "</option>";
+                    });
+                    $("#interface").html(items);
+                },
+                error: function (error) {
+                    alert('Unexpected error');
+                }
+            });
+        });
+        $("#interface").change(function () {
+            var selValue = $(this).val();
+            $.ajax({
+                url: '@Url.Action("GetParameterForInterface", "Tool")',
+                type: 'POST',
+                data: { 'selectedInterface': selValue },/*Input paramaeter for the function*/
+                dataType: 'json',
+                success: function (response) {
+                    var items = "<tr id=label> <th colspan=2 > Parameter </th> </tr>";
+                    console.log(JSON.stringify(response.parameterList));
+                    $.each(response.parameterList, function (i, item) {
+                       
+                        console.log(JSON.stringify(item));                                            
+
+                        items += "<tr> <td>" + i + " </td>";
+                        var count = "param";
+                        items += "<td>";
+                        console.log(JSON.stringify(item));
+                        if ($(item).length > 0) {
+
+                            items += "<select id=\"" + count + "\" name=\""+i+"\"  width=50> <option value=\"  select \"> select </option>"
+                            $.each(item, function (idx, topic) {
+                                items += "<option value=\"" + topic + "\"  name=\"" + i + "\">" + topic + "</option>";
+                            });
+                            items += "</select>"
+
+                        }
+                        else {
+                            items += "<input id=\"" + count + "\" type=text name=\"" + i + "\"/>";
+                        }
+                        items += "</td>";
+                        items += "</tr>";
+                    });
+
+                    $("#ParameterTable").html(items);
+                },
+                error: function (error) {
+                    alert('Unexpected error');
+                }
+            });
+        });
+        $(document).on("change", "#param", function () {            
+            var paramName = $(this).find('option:selected').attr("name");
+            if (paramName == null)
+                paramName = $(this).attr("name");
+            var paramVal = $(this).find('option:selected').val();
+            if (paramVal == null)
+                paramVal = paramVal = $(this).val();
+            $.ajax({
+                url: '@Url.Action("UpdateParameterDictionary", "Tool")',
+                type: 'POST',
+                data: { 'argParameter': paramName, 'argParamValue': paramVal },/*Input paramaeter for the function*/
+                dataType: 'json',
+                success: function (response) { },
+                error: function (error) {
+                    alert('Unexpected error');
+                }
+            });
+        });
+            $("#AddCommandButton").click(function () {
+                $.ajax({
+                    url: '@Url.Action("AddCommandButtonClicked", "Tool")',
+                    type: 'POST',
+                    data: {},/*Input paramaeter for the function*/
+                    dataType: 'json',
+                    success: function (response) {
+                        console.log(JSON.stringify(response.command))
+                        var items = response.command;                    
+                        $("#commandLine").append(new Option(items));
+                        document.getElementById("commandLine").style.visibility = "visible";
+                    },
+                    error: function (error) {
+                        alert('Unexpected error');
+                    }
+                });
+            });
+        $("#DelCommand").click(function () {
+            var index = $("#commandLine option:selected").index();
+            index = parseInt(index, 10);
+            if (index >= 0) {
+                var selectedStr = $("#commandLine option:selected").val();
+                $('option:selected', "#commandLine").remove();
+                $.ajax({
+                    url: '@Url.Action("DelCommandClicked", "Tool")',
+                    type: 'POST',
+                    data: {'argIndex':index},/*Input paramaeter for the function*/
+                    dataType: 'json',
+                    success: function (response) {
+                        var count = $("#commandLine option").size();
+                        count = parseInt(count, 10);
+                        if(count==0)
+                            document.getElementById("commandLine").style.visibility = "hidden";
+                    },
+                    error: function (error) {
+                        alert('Unexpected error');
+                    }
+                });
+            }            
+        });
+        $("#DelAllCommand").click(function () {
+            var count = $("#commandLine option").size();
+            count = parseInt(count, 10);
+            $("#commandLine option").remove();
+            if (count > 0) {               
+                $.ajax({
+                    url: '@Url.Action("DelAllCommandClicked", "Tool")',
+                    type: 'POST',
+                    data: {},/*Input paramaeter for the function*/
+                    dataType: 'json',
+                    success: function (response) {
+                        document.getElementById("commandLine").style.visibility = "hidden";
+                    },
+                    error: function (error) {
+                        alert('Unexpected error');
+                    }
+                });
+            }
+        });
+       
+        $("#ExecutionModeBatch").change(function () {        
+            $.ajax({
+                url: '@Url.Action("ExecutionModeSelected", "Tool")',
+                type: 'POST',
+                data: { 'argExecutionMode': "Batch" },/*Input paramaeter for the function*/
+                dataType: 'json',
+                success: function (response) {               
+                },
+                error: function (error) {
+                    alert('Unexpected error');
+                }
+            });
+        });
+        $("#ExecutionModeLocal").change(function () {
+            var selValue = $(this).val();
+            $.ajax({
+                url: '@Url.Action("ExecutionModeSelected", "Tool")',
+                type: 'POST',
+                data: { 'argExecutionMode': "Local" },/*Input paramaeter for the function*/
+                dataType: 'json',
+                success: function (response) {
+                },
+                error: function (error) {
+                    alert('Unexpected error');
+                }
+            });
+        });
+        $("#ExecuteButton").click(function () {
+            $.ajax({
+                url: '@Url.Action("ExecuteButtonClicked", "Tool")',
+                type: 'POST',
+                data: {},/*Input paramaeter for the function*/
+                dataType: 'json',
+                success: function (response) {
+                    document.getElementById("logHyperlink").style.visibility = "visible";
+                },
+                error: function (error) {
+                    alert('Unexpected error');
+                }
+            });
+        });
+        $(document).on("click", "#logHyperlink", function () {
+            $.ajax({
+                url: '@Url.Action("LogHyperlinkClicked", "Tool")',
+                type: 'POST',
+                data: {},/*Input paramaeter for the function*/
+                dataType: 'json',
+                success: function (response) {
+                },
+                error: function (error) {
+                    alert('Unexpected error');
+                }
+            });
+         });
+        $("#Open").live('click', function (e) {            
+            $.ajax({
+                url: '@Url.Action("OpenClicked", "Tool")',
+                type: 'POST',
+                data: {},/*Input paramaeter for the function*/
+                dataType: 'json',
+                success: function (response) {
+                    var k = 0;
+                },
+                error: function (error) {
+                    alert('Unexpected error');
+                }
+            });
+        });           
+    </script>
+</body>
+</html>

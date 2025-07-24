@@ -1,0 +1,1992 @@
+import "ocidl.idl";
+
+typedef [uuid(F6042533-B986-407a-87F7-02E542B3E351)]
+enum GENERIC
+{
+	MAX_GAMMA_ELEMENTS	= 256,
+	MAX_NUM_MCCS_CTLS	= 0xFF, // Same as CUI_MAX_NUM_MCCS_PARAMS UserStructs.h
+	MAX_NUM_VALUES		= 0x0F, // same as CUI_MAX_NUM_VALUES UserStructs.h
+	MAX_VALID_CONFIG	= 140,
+	MAX_GRAPHICS_MODE	= 1200,
+	BAR_INFO_SIZE		= 8,
+	MAX_MONITORS_PER_ADAPTER = 6,	// The maximum number of monitors that can be attached to one Graphics Device
+	IGFX_FLAG_HDMI_DEIVCE_SUPPORT	= (1<<31),
+	IGFX_FLAG_NIVO_DEIVCE_SUPPORT	= (1<<30),
+	IGFX_FLAG_DP_DEVICE_SUPPORT = (1<<29),
+	// Start : Moved from IGFX_ERROR_CODES
+	// Aspect Scaling Refer igfxcfg\Publics.h and Source\inc\common\dispcomp.h
+	IGFX_CENTERING		= 0x01,
+	IGFX_PANEL_FITTING	= 0x02,
+	IGFX_ASPECT_SCALING	= 0x04,
+	IGFX_SCALING_CUSTOM	= 0x08,
+
+
+	// for PF2 Media Scalar
+	IGFX_MEDIASCALING_FS			= 0x10,
+	IGFX_MEDIASCALING_MAS			= 0x20,
+	IGFX_MAINTAIN_DISPLAY_SCALING	= 0x40,
+
+	
+	IGFX_DATA_NOT_AVAILABLE			= 0x00000000,
+	IGFX_DISABLE_DRIVER_PERSISTENCE	= 0x00000001,
+	IGFX_ENABLE_DRIVER_PERSISTENCE	= 0x00000002,	
+	IGFX_DOUBLE_PRESISION_GAMMA		= 0x1000
+	// End : Moved from IGFX_ERROR_CODES
+
+}GENERIC;
+
+// Generic Error Codes
+typedef [uuid(20F6C13C-B9A8-4fe6-8146-40312E4ECCFF)]
+enum MCCS_STATUS_CODE
+{
+	MCCS_OPEN			= 0x01,
+	MCCS_CLOSE			= 0x02,
+	MCCS_GET_MAX		= 0x03,
+	MCCS_GET_MIN		= 0x04,
+	MCCS_GET_CURRENT	= 0x05,
+	MCCS_SET_CURRENT	= 0x06,
+	MCCS_RESET_CONTROL	= 0x07,
+	MCCS_GET_SUPPORTED	= 0x08,
+	MCCS_GET_POSSIBLE	= 0x09
+}MCCS_STATUS_CODE;
+
+// Definition of values for orientation
+typedef [uuid(45CDBED3-EB9F-4dd5-9D65-BCFAF9B56320)]
+enum DISPLAY_ORIENTATION
+{
+	IGFX_DISPLAY_ORIENTATION_0		= 0x00,
+	IGFX_DISPLAY_ORIENTATION_90		= 0x01,
+	IGFX_DISPLAY_ORIENTATION_180	= 0x02,
+	IGFX_DISPLAY_ORIENTATION_270	= 0x03
+}DISPLAY_ORIENTATION;
+
+
+
+
+// Definition of dwFlags member
+typedef [uuid(687079F5-8076-4eb4-8336-6FB7AC2F253D)]
+enum DISPLAY_DEVICE_CONFIG_FLAG
+{
+	IGFX_DISPLAY_DEVICE_CONFIG_FLAG_SINGLE	= 	(0x1),// Single-Display. Default 
+	IGFX_DISPLAY_DEVICE_CONFIG_FLAG_DDTWIN	= 	(0x2),// Dual-Display Twin
+	IGFX_DISPLAY_DEVICE_CONFIG_FLAG_DDCLONE	= 	(0x3),// Dual-Display Clone
+	IGFX_DISPLAY_DEVICE_CONFIG_FLAG_DDZOOM	= 	(0x4),// Dual-Display Zoom
+	IGFX_DISPLAY_DEVICE_CONFIG_FLAG_DDEXTD	= 	(0x5),// Dual-Display Zoom
+	IGFX_DISPLAY_DEVICE_CONFIG_FLAG_DUAL_HORZCOLLAGE	=(0x6),// Dual Horizontal Collage 
+	IGFX_DISPLAY_DEVICE_CONFIG_FLAG_DUAL_VERTCOLLAGE	=(0x7),// Dual Vertical Collage 
+	IGFX_DISPLAY_DEVICE_CONFIG_FLAG_TRI_HORZCOLLAGE		=(0x8),// Tri Horizontal Collage 
+	IGFX_DISPLAY_DEVICE_CONFIG_FLAG_TRI_VERTCOLLAGE		=(0x9),// Tri Vertical Collage 
+}DISPLAY_DEVICE_CONFIG_FLAG;
+
+
+
+/************************************************************
+*            Get/Set RR Specific Flags/Data Structures		*
+*************************************************************/
+typedef [uuid(16FBBD97-4D23-4787-86A7-AF5FE0027268)]
+enum REFRESHRATE_FLAGS
+{
+    INTERLACED			= 0x01,
+	PROGRESSIVE			= 0x02,
+    MAX_REFRESH_RATE	= 0x14
+}REFRESHRATE_FLAGS;
+
+typedef [uuid(AC23D61C-1F5E-4c0a-9FD4-CD023A1785A5)]
+enum DISPLAY_CONFIG_CODES
+{
+	IGFX_DISPLAY_CONFIG_FLAG_HORIZONTAL_PANNING	=	0x0001,// Horizontal panning
+	IGFX_DISPLAY_CONFIG_FLAG_VERTICAL_PANNING	=	0x0002,// Vertical panning
+	IGFX_DISPLAY_CONFIG_FLAG_HORIZONTAL_SCALING	=	0x0004,// Horizontal scaling
+	IGFX_DISPLAY_CONFIG_FLAG_VERTICAL_SCALING	=	0x0008,// Vertical scaling
+	IGFX_DISPLAY_CONFIG_FLAG_PHYSICAL_WIDTH		=	0x0010,// Physical width
+	IGFX_DISPLAY_CONFIG_FLAG_PHYSICAL_HEIGHT	=	0x0020,// Physical height
+	IGFX_DISPLAY_CONFIG_FLAG_DISPLAY_WIDTH		=	0x0040,// Display width
+	IGFX_DISPLAY_CONFIG_FLAG_DISPLAY_HEIGHT		=	0x0080,// Display height
+	IGFX_DISPLAY_CONFIG_FLAG_ORIENTATION		=	0x0100,// Orientation
+	IGFX_DISPLAY_CONFIG_FLAG_VIEWPORT			=	0x0200,// Viewport while panning
+	IGFX_DISPLAY_CONFIG_FLAG_ROTATION			=	0x0400,// Rotation 
+	IGFX_DISPLAY_CONFIG_FLAG_ROTATION_PORTRAIT	=	0x0800,// Portrait policy
+	IGFX_DISPLAY_CONFIG_FLAG_ROTATION_LANDSCAPE	=	0x1000// Portrait policy
+}DISPLAY_CONFIG_CODES;
+
+
+ 
+typedef [uuid(10B686D9-FF06-4c92-9042-79A8992B658B)]
+enum IGFX_ERROR_CODES
+{
+	IGFX_SUCCESS				= 0x0000,
+	IGFX_REGISTRATION_ERROR		= 0x0001,
+	IGFX_INVALID_EVENTHANDLE	= 0x0002,
+	IGFX_INVALID_EVENTMASK		= 0x0003,
+	IGFX_CORRUPT_BUFFER			= 0x0004,
+	IGFX_UNSUPPORTED_GUID		= 0x0005,
+	IGFX_GETCONFIGURATION_ERROR	= 0x0006,
+	IGFX_DEREGISTRATION_ERROR	= 0x0007,
+	IGFX_INVALIDMONITOR_ID		= 0x0008,
+	IGFX_INVALIDCONFIG_FLAG		= 0x0009,
+	IGFX_SETCONFIGATION_ERROR	= 0x000A,
+	//Begin of Definition for Error codes for MCCS related stuff
+	IGFX_INVALID_MCCS_HANDLE				= 0x000C,
+	IGFX_INVALID_MCCS_CONTROLCODE			= 0x000D,
+	IGFX_INVALID_MCCS_SIZE					= 0x000E,
+	IGFX_MCCS_DRIVER_ERROR					= 0x000F,
+	IGFX_MCCS_DEVICE_ERROR					= 0x0010,
+	IGFX_MCCS_INVALID_MONITOR				= 0x0011,
+	//End of MCCS
+
+	//Definition of error codes for PowerAPI.
+	IGFX_POWER_API_NOT_SUPPORTED			= 0x0013,
+	IGFX_POWER_API_LOCKED					= 0x0014,
+	IGFX_POWER_API_INVALID_UNLOCK_REQUEST	= 0x0015,
+	IGFX_INVALID_POWER_HANDLE				= 0x0016,
+	IGFX_INVALID_POWER_POLICY				= 0x0017,
+	IGFX_UNSUPPORTED_POWER_POLICY			= 0x0018,
+	IGFX_POWERDEVICE_ERROR					= 0x0019,
+	IGFX_INVALID_DISPLAYID					= 0x001A,
+
+	// Error codes for Aspect Scaling 
+	IGFX_WRONG_ASPECT_PREFERENCE			= 0x001B,
+	IGFX_INVAILD_OPERATING_MODE				= 0x001C,
+	
+	// Error codes for Gamma
+	IGFX_INVALID_GAMMA_RAMP					= 0x001D,
+
+	// Error codes for TV Connectors
+	IGFX_INVALID_CONNECTOR_SELECTION		= 0x001E,
+
+	// Error Code for Get/Set RR RCR
+	IGFX_INVALID_DEVICE_COMBINATION			= 0x001F,
+	IGFX_SETCLONE_FAILED					= 0x0020,
+	IGFX_INVALID_RESOLUTION					= 0x0021,
+	IGFX_INVALID_CONFIGURATION				= 0x0022,
+
+	 // Error Code for : PWM RCR 
+	IGFX_UNSUPPORTED_INVERTER				= 0x0023,
+	IGFX_BACKLIGHT_PARAMS_INVALID_FREQ		= 0x0024,
+	
+	// Error  code for  ICUIEXternal8 : 933710 
+	IGFX_FAILURE                            = 0x0025,
+
+	// Error codes for MCCS
+	IGFX_INVALID_INDEX						= 0x0026,
+
+	//persistance enable/disable
+	IGFX_INVALID_INPUT						= 0x0027,
+
+	// Error Code for Set Configuration
+	IGFX_INCORRECT_RESOLUTION_FORMAT		= 0x0028,
+	IGFX_INVALID_ORIENTATION_COMBINATION	= 0x0029,
+	IGFX_INVALID_ORIENTATION				= 0x002A,
+
+	//Error codes for Custom Mode
+	 IGFX_INVALID_CUSTOM_MODE				= 0x002B,
+	 IGFX_EXISTING_MODE						= 0x002C,
+	 IGFX_EXISTING_BASIC_MODE 				= 0x002D,
+	 IGFX_EXISTING_ADVANCED_MODE			= 0x002E,
+	 IGFX_EXCEEDING_BW_LIMITATION			= 0x002F,
+	 IGFX_EXISTING_INSUFFICIENT_MEMORY		= 0x0030,
+
+	//Error codes for unsupported features
+	IGFX_UNSUPPORTED_FEATURE				= 0x0031,	// Added for Overlay feature removed for Cantiga
+
+	// Error code for PF2
+	IGFX_PF2_MEDIA_SCALING_NOT_SUPPORTED	= 0x0032,
+
+	// Error codes for AVI InfoFrame RCR: 1022131
+	IGFX_INVALID_QUAN_RANGE					= 0x0033,
+	IGFX_INVALID_SCAN_INFO					= 0x0034,
+
+
+
+	//Error code for I2C/DDC Bus access
+	IGFX_INVALID_BUS_TYPE					= 0x0035,
+	IGFX_INVALID_OPERATION_TYPE				= 0x0036,
+	IGFX_INVALID_BUS_DATA_SIZE				= 0x0037,
+	IGFX_INVALID_BUS_ADDRESS				= 0x0038,
+	IGFX_INVALID_BUS_DEVICE					= 0x0039,
+	IGFX_INVALID_BUS_FLAGS					= 0x0040,
+
+	// Error codes for RCR: 1022465
+	IGFX_INVALID_POWER_PLAN					= 0x0041,
+	IGFX_INVALID_POWER_OPERATION			= 0x0042,
+
+	//Error codes for AUX API
+	IGFX_INVALID_AUX_DEVICE					= 0x0043,
+	IGFX_INVALID_AUX_ADDRESS				= 0x0044,
+	IGFX_INVALID_AUX_DATA_SIZE				= 0x0045,
+	IGFX_AUX_DEFER							= 0x0046,
+	IGFX_AUX_TIMEOUT						= 0x0047,
+	IGFX_AUX_INCOMPLETE_WRITE				= 0x0048,
+
+	// Error codes for PAR: CUI 3.5
+	IGFX_INVALID_PAR_VALUE					= 0x0049,
+	IGFX_NOT_ENOUGH_RESOURCE 				= 0x004A,
+	IGFX_NO_S3D_MODE  						= 0x004B,
+
+	IGFX_LAYOUT_ERROR						= 0x0037,
+
+	IGFX_UNSUPPORTED_VERSION				= 0x0050,
+	// Error codes for PAR: CUI 3.5
+	IGFX_S3D_ALREADY_IN_USE_BY_ANOTHER_PROCESS	= 0x004C,
+	IGFX_S3D_INVALID_MODE_FORMAT			= 0x004D,
+	IGFX_S3D_INVALID_MONITOR_ID				= 0x004E,
+	IGFX_S3D_DEVICE_NOT_PRIMARY				= 0x004F,
+	IGFX_S3D_INVALID_GPU_MODE				= 0x0050,
+
+	//Error Codes for Turbo Overclocking
+	IGFX_INADEQUATE_PRIVILEGES				= 0x0051,
+
+
+	IGFX_PWR_INVALID_DISPLAY				= 0x0052,
+	IGFX_PWR_INVALID_PARAMETER				= 0x0053,
+	IGFX_PWR_OPERATION_FAILED				= 0x0054,
+
+	//Default error code.
+	UNKNOWN_ERROR							= 0x03E7
+}IGFX_ERROR_CODES;
+
+
+// Intel specific display types
+typedef [uuid(FB098838-2757-421e-AD78-48B1338341D3)]
+enum IGFX_DISPLAY_TYPES
+{
+	IGFX_NULL_DEVICE						= 0x0000,
+	IGFX_CRT								= 0x0001,
+	IGFX_LocalFP							= 0x0002,
+	IGFX_ExternalFP							= 0x0003,
+	IGFX_TV									= 0x0004,
+	IGFX_HDMI				                = 0x0005,//HDMI Television
+	IGFX_NIVO								= 0x0006,
+	IGFX_DP									= 0x0007
+}IGFX_DISPLAY_TYPES;
+
+
+	/************************************************************
+	*            TV Connector Specific Flags					*
+	*************************************************************/
+typedef [uuid(77929DBC-01E6-45c8-A6DD-DC0DD6CD676D)]
+enum IGFX_TV_CONNECTOR_FLAGS
+{
+	IGFX_FORCE_TV						= (1<<17),
+	IGFX_FLAG_DACMODERGB				= (1<<0 ),	// SCART
+	IGFX_FLAG_DACMODEYC					= (1<<1 ),	// SVIDEO
+	IGFX_FLAG_DACMODECOMPOSITE			= (1<<2 ),	// RCA Composite
+	IGFX_FLAG_DACMODEHDTV				= (1<<3 ),
+	IGFX_FLAG_DACMODEHDRGB				= (1<<4 ), 
+	IGFX_FLAG_DACMODECOMPONENT			= (1<<5 ),	// Component YPrPb
+	IGFX_FLAG_DACMODEDCONNECTOR			= IGFX_FLAG_DACMODECOMPONENT, // flag for d-connector, same as component
+	IGFX_FLAG_AUTO_CONNECTOR_SELECTION	=(1<<6)
+}IGFX_TV_CONNECTOR_FLAGS;
+
+typedef [uuid(F3A19AD9-97AA-4e89-A2DA-9C656131ECCF)]
+enum IGFX_SDVO_CMD_STATUS
+{
+	IGFX_SDVO_POWER_ON_STATE	        		= 0,
+	IGFX_SDVO_SUCCESS               			= 1,
+	IGFX_SDVO_COMMAND_NOT_SUPPORTED         	= 2,
+	IGFX_SDVOINVALID_ARGUEMENT         			= 3,
+	IGFX_SDVO_PENDING               			= 4,
+	IGFX_SDVO_TARGET_NOT_SPECIFIED      		= 5,
+	IGFX_SDVO_DEVICE_SCALING_NOT_SUPPORTED		= 6
+}IGFX_SDVO_CMD_STATUS;
+
+
+typedef [uuid(60591CB6-E8D6-4adb-8073-917D4E698B8F)]
+enum CUIErrorCode
+{
+
+   CUIERROR_NO_ERROR = 0,       //This is must because caller's buffer is already 0-ed
+   CUIERROR_INVALID_DRIVERNAME,  // Caller never set the Vdd name, so DeviceIOControl
+                                     // calls can never be made.
+   CUIERROR_INVALID_EDID,            // Invalid EDID version retrieved from driver.
+   CUIERROR_UNKNOWN_OPERATING_SYSTEM,   // Can't determine OS running on.
+   CUIERROR_INVALID_DDC,         // Unknown DDC Value obtained from the Driver, or DDC not supported.
+   CUIERROR_DRIVER_FAIL,         // Actual Call into Driver Failed.
+   CUIERROR_INCORRECT_DEVICE,    // Call made to guid that supports different type of device only.
+   CUIERROR_DRIVER_NOTSUPPORTED, // Actual Call into Driver returned not supported code.
+   CUIERROR_INVALID_STATE,       // Something needed to be set ahead of the current call, and was not.
+                                 // Also applies to when you forget to set the Device Context.
+   CUIERROR_REGISTRY,            // Error reading or writing to registry.
+   CUIERROR_UNKNOWN_GENERIC,     // General Error code that covers anything not covered by the other codes.
+   CUIERROR_INVALID_PARAMETER,   // Input Parameter is wrong...
+                                 // CheckMode2 Related Error Code 
+   CUIERROR_CFG_DRV_NOT_SUPPORT, // The resolution is not supportable from display Driver 
+   CUIERROR_CFG_DRV_NOT_SUPPORT_PRIMARY,   //Primary display mode is not supportable 
+   CUIERROR_CFG_DRV_NOT_SUPPORT_SECONDARY,  //Secondary Mode is not supportable 
+   CUIERROR_CFG_DEV_NOT_SUPPORT,           //Display Device does not support this configuration 
+   CUIERROR_CFG_DEV_NOT_SUPPORT_PRIMARY,   //Display Device does not support for requested primary mode 
+   CUIERROR_CFG_DEV_NOT_SUPPORT_SECONDARY, //Display Device does not Support for requested secondary mode
+   CUIERROR_CFG_DEV_NOT_SUPPORT_THIRD, //Display Device does not Support for requested secondary mode
+   CUIERROR_CFG_DEV_NOT_SUPPORT_FOURTH, //Display Device does not Support for requested secondary mode
+
+
+   CUIERROR_OUT_OF_MEMORY,
+   CUIERROR_CUSTOMMODE_INVALID_PARAMETER,		//Invalid mode detail
+   CUIERROR_EXISTING_MODE,						//Custom mode already exists
+   CUIERROR_CUSTOMMODE_EXISTING_BASIC_MODE,		//Basic Custom mode already exists
+   CUIERROR_CUSTOMMODE_EXISTING_DETAIL_MODE,	//Detail Custom mode already exists
+   CUIERROR_CUSTOMMODE_OUT_OF_BW_LIMIT,			//The mode is exceeding the BW cap of the HW
+   CUIERROR_CUSTOMMODE_INSUFFICIENT_MEMORY,		//Driver has insufficient memory to allocate for this mode
+   CUIERROR_CUSTOMMODE_INVALID_LFP_RR,			//The specified RR is not supported on the LFP
+
+   CUIERROR_AUX_DEFER,							//Reciever not ready, re-initiate transaction after sometime
+   CUIERROR_AUX_TIMEOUT,								//Reciever did not respond within the timeout period mentioned in display port 1.1a specification
+   CUIERROR_AUX_INCOMPLETE_WRITE,		//The write operation resulted in partial write
+
+   CUIERROR_MAX_ERROR							// Just a placeholder
+}CUIErrorCode;
+
+
+//Structure Definition for DFGT
+typedef [uuid(563776B8-0D4D-43c3-A2A9-3B22E26123F4)]
+struct IGFX_DFGT_POLICY_1_0
+{
+	BOOL bEnabled;
+	
+}IGFX_DFGT_POLICY_1_0;
+
+
+//Structure Definition for DPST
+typedef [uuid(CEBBAEBD-5A0A-4a1b-89D9-F014E9F17837)] 
+struct IGFX_DPST_POLICY_1_0
+{
+	BOOL  bEnabledDC;
+	BOOL  bReserved1; //Reserved for now.
+	ULONG ulMaxLevels;
+	ULONG ulCurrentAggressivenessDC;
+	ULONG ulReserved2; //Reserved for now.
+}IGFX_DPST_POLICY_1_0;
+
+typedef [uuid(E376E512-AD0A-49ef-84B6-E80FD2EF3E47)] 
+struct GAMMARAMP
+{
+	unsigned short Red[MAX_GAMMA_ELEMENTS];
+	unsigned short Green[MAX_GAMMA_ELEMENTS];
+	unsigned short Blue[MAX_GAMMA_ELEMENTS];
+} GAMMARAMP;
+
+
+typedef [uuid(355488D2-EE9C-4871-B199-A09F4B095D23)]
+struct REFRESHRATE
+{
+	unsigned short usRefRate;
+	unsigned short usReserved; // for usScanType Interlaced or progressive
+}REFRESHRATE;
+
+typedef [uuid(6FD4DC75-C81E-42c8-BEEE-56AB20C94B80)]
+struct DISPLAY_CONFIG
+{
+	DWORD uidMonitorPrimary;	//primary Monitor ID
+	DWORD uidMonitorSecondary;	// Secondary Monitor ID
+	DWORD XResolution;			// Horizontal Resolution to Set
+	DWORD YResolution;			// Vertical Resolution to Set
+	DWORD BPP;					// Bits;er;ixel/Color Depth to Set
+}DISPLAY_CONFIG;
+
+
+typedef [uuid(30D7ECBC-01D0-4c77-9957-980CAC468C98)]
+struct IGFX_EXTV_DATA
+{
+    DWORD           dwValue;    //Current Value
+    DWORD           dwDefault;  //Default Value 
+    DWORD           dwMin;      //Minimium Value 
+    DWORD           dwMax;      //Maximium Value 
+    DWORD           dwStep;     //Adjustment value for each step
+}IGFX_EXTV_DATA;
+
+
+typedef [uuid(3DBB0A2F-A205-4367-84F2-FAD0F5A6CE2E)]
+struct IGFX_TV_PARAMETER_DATA
+{ 
+	DWORD           dwFlags;
+	// Standard TV parameters 
+	DWORD           dwMode;
+	DWORD           dwTVStandard;
+	DWORD			dwAvailableTVStandard;
+	IGFX_EXTV_DATA   PositionX;  
+	IGFX_EXTV_DATA   PositionY; 
+	IGFX_EXTV_DATA   SizeX; 
+	IGFX_EXTV_DATA   SizeY; 
+	IGFX_EXTV_DATA   Brightness; 
+	IGFX_EXTV_DATA   Contrast; 
+	IGFX_EXTV_DATA   Flicker; 
+	// Extended TV parameters 
+	IGFX_EXTV_DATA   Sharpness; 
+	IGFX_EXTV_DATA   AdaptiveFlicker; 
+	IGFX_EXTV_DATA   TwoDFlicker; 
+	IGFX_EXTV_DATA   Saturation; 
+	IGFX_EXTV_DATA   Hue; 
+	IGFX_EXTV_DATA   DotCrawl; 
+	IGFX_EXTV_DATA   LumaFilter; 
+	IGFX_EXTV_DATA   ChromaFilter;
+	DWORD			 dwLetterBox;
+}IGFX_TV_PARAMETER_DATA;
+
+typedef [uuid(8A111648-F11E-416e-9961-E90A2883F7B7)]
+struct IGFX_POWER_PARAMS_0
+{
+    UINT	uiInverterType;
+	ULONG	ulInverterFrequency;	//units of Hz
+}IGFX_POWER_PARAMS_0;
+
+typedef [uuid(8A401310-E453-4bee-8E25-F8F2D91FDFFE)]
+struct IGFX_DVMT_1_0
+{
+	DWORD dwMinDVMTMemory;
+	DWORD dwMaxDVMTMemory;
+    DWORD dwCurrentUsedDVMTMemory;
+	DWORD dwTotalSystemMemory; // Reserved for Vista
+}IGFX_DVMT_1_0;
+
+typedef [uuid(603E3171-697B-49e8-B42B-97915BCF96E6)]
+struct IGFX_OVERLAY_1_0
+{
+	BOOL bIsOverlayActive;
+}IGFX_OVERLAY_1_0;
+
+typedef [uuid(5C6D4330-77DF-4bfb-8418-59CDF372988E)]
+struct IGFX_EDID_1_0
+{
+	  DWORD dwDisplayDevice; // IN 
+	  DWORD dwEDIDBlock;// IN 
+	  DWORD dwEDIDVersion;
+	  unsigned char EDID_Data[256];
+}IGFX_EDID_1_0;
+
+
+typedef [uuid(699B8927-2389-41ba-8ABB-D10B3A1C4CA9)]
+struct IGFX_CUSTOM_SCALING
+{
+	DWORD	dwCustomScalingMax;
+	DWORD	dwCustomScalingMin;
+	DWORD	dwCustomScalingCurrent;
+	DWORD	dwCustomScalingStep;
+	DWORD	dwCustomScalingDefault;
+}IGFX_CUSTOM_SCALING;
+
+
+typedef [uuid(5DC79B60-54FF-411e-9A32-868AB497C473)]
+struct IGFX_DISPLAY_RESOLUTION
+{
+	DWORD dwHzRes;
+	DWORD dwVtRes;
+	DWORD dwRR;
+	DWORD dwBPP;
+}IGFX_DISPLAY_RESOLUTION;
+
+typedef [uuid(4655D88F-0BA0-42e3-9BB7-DD485B5377BC)]
+struct IGFX_DISPLAY_RESOLUTION_EX
+{
+	DWORD dwHzRes;				// Horizontal Resolution
+	DWORD dwVtRes;				// Vertical Resolution
+	DWORD dwRR;					// Refresh Rate
+	DWORD dwBPP;				// Color Depth
+	DWORD dwSupportedStandard;	// Reserved
+	DWORD dwPreferredStandard;	// Reserved
+	WORD  InterlaceFlag;		// Resreved
+}IGFX_DISPLAY_RESOLUTION_EX;
+
+typedef [uuid(40AE4AA9-166C-403a-AA2C-9C2DBC2AF951)]
+struct IGFX_SCALING_1_0
+{
+	 DWORD					dwPrimaryDevice;
+	 DWORD					dwSecondaryDevice;
+	 DWORD					dwOperatingMode;
+	 BOOL					bIsSecondaryDevice; //If secondary device information is required!
+	 IGFX_DISPLAY_RESOLUTION	PrimaryResolution; //  in 
+	 IGFX_DISPLAY_RESOLUTION	SecondaryResolution;//in 
+	 DWORD					dwCurrentAspectOption;
+	 DWORD					dwSupportedAspectOption;
+	 IGFX_CUSTOM_SCALING		customScalingX;
+	 IGFX_CUSTOM_SCALING		customScalingY;
+}IGFX_SCALING_1_0;
+
+typedef [uuid(55C2CBF9-5D69-45f7-B8A7-10245AF39AC6)]
+struct IGFX_VERSION_HEADER
+{
+	DWORD dwVersion;
+	DWORD dwReserved;
+}IGFX_VERSION_HEADER;
+
+
+#define SCALING_VERSIONS_SUPPORTED                      1
+#define IS_SCALING_VERSION_SUPPORTED(x)     (x <= SCALING_VERSIONS_SUPPORTED)
+typedef [uuid(C023E063-0303-4faf-96F9-6FC27635CCCD)] 
+struct IGFX_SCALING_2_0
+{
+	IGFX_VERSION_HEADER	versionHeader;
+#if IS_SCALING_VERSION_SUPPORTED(1)
+	DWORD	dwDeviceID;
+	IGFX_DISPLAY_RESOLUTION_EX resolution;
+	DWORD	dwSupportedAspectOption;
+	DWORD	dwCurrentAspectOption;
+	IGFX_CUSTOM_SCALING	customScalingX;
+	IGFX_CUSTOM_SCALING	customScalingY;
+#endif
+} IGFX_SCALING_2_0;
+
+#define GE_VERSIONS_SUPPORTED	1
+#define IS_GE_VERSION_SUPPORTED(x)	(x<=GE_VERSIONS_SUPPORTED)
+#define CSC_COEFFICIENTS	3
+typedef [uuid(8203E244-A8D5-4414-9FE0-6D5CCE5E710D)]
+struct IGFX_GAMUT_EXPANSION
+{
+IGFX_VERSION_HEADER	versionHeader;
+#if IS_GE_VERSION_SUPPORTED(1)
+	DWORD	dwDeviceID;
+	BOOL		bIsFeatureSupported;
+	DWORD	dwGamutExpansionLevel;
+	BOOL		bUseCustomCSC;
+	float		CustomCSCMatrix[CSC_COEFFICIENTS][CSC_COEFFICIENTS];
+	DWORD	dwReserved;
+#endif
+}IGFX_GAMUT_EXPANSION;
+
+// DOWNSCALING RCR 
+
+typedef [uuid(1C456BDA-CCDE-4451-BC31-6B6426A7892D)]
+struct IGFX_DOWNSCALING_DATA
+{
+	BOOL 					bIsSupported;
+	IGFX_DISPLAY_RESOLUTION	MaxSupportedMode;
+	IGFX_DISPLAY_RESOLUTION	SourceMode;
+	IGFX_DISPLAY_RESOLUTION	LastMode;	 
+}IGFX_DOWNSCALING_DATA;
+
+// ICUIDownScale Interface Definitions End
+
+//END
+
+typedef [uuid(96F2DFD2-8639-4fbb-BBD9-4C29100E56BF)] 
+struct IGFX_MCCS_DATA
+{
+		DWORD	Cmd;
+		UINT	uiHandle;
+		DWORD	dwDevice;
+		UINT	uiControlCode;
+		UINT	uiSize;
+		DWORD	dwNCValueIndex;
+		DWORD	dwValue;
+		UINT	iNumSupportedControls;
+     	UINT	iSupportedControls[MAX_NUM_MCCS_CTLS];
+		UINT	iNCValue[MAX_NUM_VALUES];
+}IGFX_MCCS_DATA;
+
+
+typedef [uuid(36403B87-63E7-4fd5-8F1F-5C077F0B03A8)]
+struct IGFX_TV_FORMAT_EX
+{
+	DWORD	dwReserved;
+	DWORD	dwDevice;
+	DWORD	dwTVStandard;
+	DWORD	dwTVType;
+	DWORD	dwAvailableTVStd;
+
+}IGFX_TV_FORMAT_EX;
+
+typedef [uuid(9E48E080-E305-4a4c-9DCF-6E71660979EE)]
+struct IGFX_CONNECTOR_STATUS
+{
+	DWORD dwConnectorSupported;
+	DWORD dwConnectorDispAttached;
+	DWORD dwConnectorDispActive;
+}IGFX_CONNECTOR_STATUS;
+
+
+
+typedef [uuid(E22906E9-7D79-4c08-9E17-E29924059B2E)] 
+struct IGFX_OVERLAY_COLOR_DATA
+{
+    long lValue;    // Current Value
+    long lDefault;  // Default Value 
+    long lMin;      // Minimium Value 
+    long lMax;      // Maximium Value 
+    long lStep;     // Adjustment value for each step
+}IGFX_OVERLAY_COLOR_DATA;
+
+
+typedef [uuid(211A2CB3-6EC4-4c71-9142-752E9DF0A3BF)] 
+struct IGFX_OVERLAY_COLOR_SETTINGS
+{
+	DWORD dwFlags;
+	IGFX_OVERLAY_COLOR_DATA GammaSettings;
+	IGFX_OVERLAY_COLOR_DATA BrightnessSettings;
+	IGFX_OVERLAY_COLOR_DATA SaturationSettings;
+	IGFX_OVERLAY_COLOR_DATA ContrastSettings;
+	IGFX_OVERLAY_COLOR_DATA HueSettings;
+}IGFX_OVERLAY_COLOR_SETTINGS;
+
+
+typedef [uuid(7DC8A9A6-BE8D-4989-8679-B864B160B73F)]
+struct IGFX_FEATURE_SUPPORT_ARGS
+{
+	 DWORD		dwFeatureSupport;
+	DWORD		Reserved1;
+}IGFX_FEATURE_SUPPORT_ARGS;
+
+typedef [uuid(07F5914B-1D7C-44f9-A927-98DF6E26EF16)]
+struct IGFX_ERROR
+{
+  BOOL ErrorOccured;         // TRUE or FALSE
+  DWORD LastSystemErrorVal;     // return from GetLastError() api call.
+  //CUIErrorCode ExtendedError;   //
+  BSTR  ExtendedErrorBstr;      // Optional Use, use for Test purposes only!
+}IGFX_ERROR;
+
+
+typedef [uuid(0107C991-905B-45c8-B6CD-EDCF95F55EB7)]
+struct IGFX_VENDOR_OPCODE_ARGS
+{
+	IGFX_ERROR				ErrorInfo;	// Reserved Parameter
+	GUID					guid;
+	DWORD 					dwDeviceAddress;
+	DWORD 					dwOpcode;
+	BYTE   					ParamIn[8];
+	DWORD 					dwParamInCount;
+	BYTE   					Return[8];
+	DWORD	 				dwReturnCount;
+	IGFX_SDVO_CMD_STATUS 	CmdStatus;
+	DWORD 					Reserved1;
+	DWORD 					Reserved2;
+}IGFX_VENDOR_OPCODE_ARGS;
+
+//	SDVO Vendor Opcode End	
+
+typedef [uuid(42278E6C-B522-452e-A5F9-97010B594386)]
+struct IGFX_CONFIG_DATA
+{ 
+    DWORD       dwOperatingMode;
+    DWORD       dwPriDevUID; 		//Device on Primary Display( For Single Pipe Simultaneous mode, both devices are here )
+    DWORD       dwSecDevUID; 		//Device on Secondary Display
+}IGFX_CONFIG_DATA; 
+
+typedef [uuid(3FE31558-C8B7-4f75-8480-81C74E05F0D9)]
+struct IGFX_TEST_CONFIG
+{ 
+    DWORD 				dwNumTotalCfg;		//Total of validation configuration in the following array 
+	DWORD				dwReserved1;		// Reserved
+	DWORD				dwReserved2;		// Reserved
+    IGFX_CONFIG_DATA	ConfigList[MAX_VALID_CONFIG];	//Valid device combinations, upto 7 devices
+}IGFX_TEST_CONFIG;
+
+
+typedef [uuid(3EF814DA-5B38-4934-9FB3-7BA962E2801E)]
+struct IGFX_VIDEO_MODE_LIST
+{
+	DWORD					dwOperatingMode;
+	DWORD					dwPriDevUID;
+	DWORD					dwSecDevUID;
+	BOOL					bIsPrimary;
+    WORD					vmlNumModes;        // Number of video modes in list
+	DWORD					dwReserved1;		// Reserved
+	DWORD					dwReserved2;		// Reserved
+    IGFX_DISPLAY_RESOLUTION	vmlModes[MAX_GRAPHICS_MODE];		// List of video modes
+}IGFX_VIDEO_MODE_LIST;
+
+typedef [uuid(EBB526B5-CD25-468d-97E8-7800D7B3E250)]
+struct IGFX_DESKTOP_GAMMA_ARGS
+{
+	DWORD dwDeviceUID;
+	DWORD dwFlags;	// Reserved
+	long  lGammaValues[9];
+}IGFX_DESKTOP_GAMMA_ARGS;
+
+
+typedef [uuid(92CACCFA-0C92-409c-8E48-797AEDA2F74B)]
+struct IGFX_DISPLAY_POSITION
+{
+	int	iLeft;			// Position - Left		*********************************************************** 
+	int	iRight;			// Position - Right		** Position Fields are optional. They are valid only for **
+	int	iTop;			// Position - Top		** Secondary Display device in Extended Desktop.		 **
+	int	iBottom;		// Position - Bottom	***********************************************************
+
+}IGFX_DISPLAY_POSITION;
+
+typedef [uuid(DDAC4497-6E1F-4943-83FC-67749CD0F353)] 
+struct IGFX_DISPLAY_CONFIG_DATA_EX{     
+    DWORD	dwDisplayUID;   // Display Device UID for this display 
+	IGFX_DISPLAY_RESOLUTION_EX	Resolution;      // Display Mode
+	IGFX_DISPLAY_POSITION	Position;	// Display Position
+	DWORD			dwTvStandard;		// Reserved
+	BOOL			bIsHDTV;			// Reserved
+	DWORD			dwOrientation;		// Orientation
+	DWORD			dwScaling;			// Reserved
+	DWORD			dwFlags;			// Flags
+}IGFX_DISPLAY_CONFIG_DATA_EX;
+
+typedef [uuid(0A3A39A0-3B45-486b-B0DD-7373A334F1CF)]
+struct IGFX_DISPLAY_CONFIG_DATA
+{     
+    DWORD						dwDisplayUID;   // Display Device UID for this display 
+	IGFX_DISPLAY_RESOLUTION_EX	Resolution;     // Display Mode for this display
+	IGFX_DISPLAY_POSITION		Position;		// Display Position
+	DWORD						dwTvStandard;	// Reserved
+	BOOL						bIsHDTV;		// Reserved
+	DWORD						dwOrientation;	// Orientation
+	DWORD						dwScaling;		// Reserved	
+}IGFX_DISPLAY_CONFIG_DATA;
+
+#define MONITOR_CONTROLLER_VERSIONS_SUPPORTED                      1
+#define IS_MONITOR_CONTROLLLER_VERSION_SUPPORTED(x)			     (x <= MONITOR_CONTROLLER_VERSIONS_SUPPORTED)
+
+typedef [uuid(B4297023-A533-4fa6-B432-B838A10EE166)] //DEFINE_GUID(<<name>>, 0xb4297023, 0xa533, 0x4fa6, 0xb4, 0x32, 0xb8, 0x38, 0xa1, 0xe, 0xe1, 0x66);
+struct IGFX_MONITOR_CONTROL_HEADER
+{
+	DWORD		dwVersion;
+	DWORD		dwReserved; //for internal use only
+	IGFX_ERROR	ErrorInfo;
+}IGFX_DIPSLAY_CONFIG_HEADER;
+
+//Collage
+#define BEZEL_VERSION_SUPPORTED                      1
+#define IS_BEZEL_VERSION_SUPPORTED(x)				(x <= BEZEL_VERSION_SUPPORTED)
+#define MAX_MULTIPLE_DISPLAYS									3
+typedef [uuid(1C5C9CC9-4413-4cff-9E5D-53B6785AF91B)] //DEFINE_GUID(<<name>>, 0x1c5c9cc9, 0x4413, 0x4cff, 0x9e, 0x5d, 0x53, 0xb6, 0x78, 0x5a, 0xf9, 0x1b);
+struct IGFX_BEZEL_VALUES
+{
+    DWORD lBezelX;
+    DWORD lBezelY;
+    DWORD lMaxBezelX;
+    DWORD lMaxBezelY;
+}IGFX_BEZEL_VALUES;
+
+typedef [uuid(DA29D67A-7FD7-4302-B18F-0949371682BC)] //DEFINE_GUID(<<name>>, 0xda29d67a, 0x7fd7, 0x4302, 0xb1, 0x8f, 0x9, 0x49, 0x37, 0x16, 0x82, 0xbc);
+ struct IGFX_BEZEL_CONFIG
+{
+	IGFX_VERSION_HEADER versionHeader;
+#if IS_BEZEL_VERSION_SUPPORTED(1)
+    BOOL bEnableBezelCorrection;
+    IGFX_BEZEL_VALUES bezelValues[ MAX_MULTIPLE_DISPLAYS - 1 ];
+#endif
+#if IS_BEZEL_VERSION_SUPPORTED(2)
+	//For future use.
+#endif
+}IGFX_BEZEL_CONFIG;
+
+
+#define COLLAGE_STATUS_VERSION_SUPPORTED                     1
+#define IS_COLLAGE_STATUS_VERSION_SUPPORTED(x)     (x <= COLLAGE_STATUS_VERSION_SUPPORTED)
+typedef [uuid(0FE052A2-5678-427d-ADBB-A09BEDAF98D0)] //DEFINE_GUID(<<name>>, 0xfe052a2, 0x5678, 0x427d, 0xad, 0xbb, 0xa0, 0x9b, 0xed, 0xaf, 0x98, 0xd0);
+struct IGFX_COLLAGE_STATUS
+{
+	IGFX_VERSION_HEADER				versionHeader;
+#if IS_COLLAGE_STATUS_VERSION_SUPPORTED(1)
+/*OUT*/		BOOL		bIsCollageModeSupported;
+/*OUT*/		BOOL		bDefaultCollageStatus;  //Reserved
+/*INOUT*/	BOOL		bIsCollageModeEnabled;
+#endif
+#if IS_COLLAGE_STATUS_VERSION_SUPPORTED(2)
+	//For future extention
+#endif 
+}IGFX_COLLAGE_STATUS;
+
+
+
+//Collage End
+
+
+
+#define VIDEO_MODELIST_VERSIONS_SUPPORTED                      1
+#define IS_VIDEO_MODELIST_VERSION_SUPPORTED(x)     (x <= VIDEO_MODELIST_VERSIONS_SUPPORTED)
+
+typedef [uuid(0608FCA2-BF1D-41a1-A283-F77AC3D0F1A4)]
+struct IGFX_VIDEO_MODE_LIST_EX
+{
+	IGFX_VERSION_HEADER				versionHeader;
+#if IS_VIDEO_MODELIST_VERSION_SUPPORTED(1)
+	DWORD			dwOpMode;
+	UINT			uiNDisplays;	// Number of active displays
+	IGFX_DISPLAY_CONFIG_DATA_EX	DispCfg[MAX_MONITORS_PER_ADAPTER]; 
+	DWORD			dwDeviceID;		
+	DWORD			dwFlags;		// Flags: IGFX_VIDEO_MODE_LIST_SIZE_ONLY - to retrieve in
+	WORD			vmlNumModes;        // Number of video modes in list
+	DWORD			dwReserved;		// Reserved    
+	IGFX_DISPLAY_RESOLUTION_EX	vmlModes[1];		// Array of modes
+#endif	
+#if IS_VIDEO_MODELIST_VERSION_SUPPORTED(2)
+	// add new code here for future releases
+#endif
+} IGFX_VIDEO_MODE_LIST_EX;
+
+
+
+typedef [uuid(BAC3C5D5-F9F6-47b2-A374-11625CC842E2)]
+struct IGFX_SYSTEM_CONFIG_DATA
+{
+	DWORD						dwOpMode;	// Operating Mode
+	IGFX_DISPLAY_CONFIG_DATA	PriDispCfg;	// Primary Display Device Config Data
+	IGFX_DISPLAY_CONFIG_DATA	SecDispCfg;	// Secondary Display Device Config Data
+}IGFX_SYSTEM_CONFIG_DATA;
+
+
+typedef [uuid(1B6DC7D4-B5DC-45cd-A4DA-35DCC7E9B98B)] 
+struct IGFX_MEDIA_SCALAR
+{
+	BOOL bSupported;		// Is Media Scalar Supported (Get)
+	BOOL bEnable;			// Is Media Scalar Enabled (Get), Enable Media Scaling (SET)
+	DWORD MediaScalingOption; 		// Media FS or Media MAS (Get/Set)
+	IGFX_DISPLAY_RESOLUTION	SourceMode; // Mode to set (Set)
+	IGFX_DISPLAY_RESOLUTION	LastMode;	// Mode that was set before enabling Media Scalar (Set)
+}IGFX_MEDIA_SCALAR;
+
+
+
+//CUI 2.5 Features starts here
+//Custom Modes
+typedef [uuid(EA3D4FE0-D9CA-48df-AB0B-D6480FDFD165)] 
+struct IGFX_CUSTOM_MODE
+{
+	DWORD dwHzRes;
+	DWORD dwVtRes;
+	DWORD dwRR;
+	DWORD dwBPP;
+	BOOL	bInterlacedMode;		
+}IGFX_CUSTOM_MODE;
+
+typedef [uuid(251260B7-BD17-4bec-A94B-3A66A13940D7)]
+struct IGFX_ADVANCED_MODE
+{
+	DWORD dwBPP;		//Color quality
+	DWORD dwHFPorch; 	//Hrozontal front porch
+	DWORD dwHBPorch; 	//Hrozontal back porch
+	DWORD dwHSWidth; 	//Hrozontal Sync width
+	DWORD dwHActive; 	//Hrozontal Active pixels
+	BOOL  bHSPolarity;	//Hrozontal Sync polarity
+	float fHSRate; 		//Hrozontal Scan rate
+	DWORD dwVFPorch; 	//Vertical front porch
+	DWORD dwVBPorch; 	//Vertical back porch
+	DWORD dwVSWidth; 	//Vertical Sync width
+	DWORD dwVActive; 	//Vertical Active pixels
+	BOOL  bVSPolarity;	//Vertical Sync polarity
+	float fVSRate; 		//Vertical Scan rate
+	float fPixelClock;	//Pixel Clock
+	BOOL	bInterlacedMode;			
+}IGFX_ADVANCED_MODE;
+
+
+typedef [uuid(EF82D81B-1EF2-4ff3-BC99-D73BD83F54F3)]
+struct IGFX_CUSTOM_MODELIST
+{
+	DWORD	dwDisplayUID;   	// Display Device UID for this display
+	DWORD dwFlags;				// Flags
+	DWORD	dwTotalModes;   	// Number of custom modes for this display 
+	IGFX_CUSTOM_MODE	ModeList[MAX_GRAPHICS_MODE]; // List of custom modes	
+}IGFX_CUSTOM_MODELIST;
+
+
+typedef [uuid(907D51FE-820D-4def-A8ED-CE2A894120F4)]
+struct IGFX_CUSTOM_MODE_TIMING_DATA
+{
+	DWORD	dwDisplayUID;   	// Display Device UID for this display
+	DWORD dwFlags;		// Cuurently a reserved parameter
+	IGFX_CUSTOM_MODE	AddedMode;	// Added custom mode
+	IGFX_ADVANCED_MODE TimingInfo; //Timing details of the added mode	
+}IGFX_CUSTOM_MODE_TIMING_DATA;
+
+
+
+typedef [uuid(58EE272B-F456-4f38-8144-200F67364403)]
+struct IGFX_ADD_BASIC_CUSTOM_MODE_DATA
+{
+	DWORD	dwDisplayUID;   	// Display Device UID for this display
+	DWORD dwFlags;		// Cuurently a reserved parameter
+	BOOL	bForcedModeAddition; // Specifies whether overwrite an existing mode
+	float fUnderscan;			//Underscan Percentage
+	DWORD dwTimingStandard;		//Desired timing standard
+	IGFX_CUSTOM_MODE BasicMode;	// Basic mode details
+}IGFX_ADD_BASIC_CUSTOM_MODE_DATA;
+
+//Add a mode by specifying the entire timing details
+
+
+typedef [uuid(926E14AE-28E9-41b5-9F3E-9480147D2C26)]
+struct IGFX_ADD_ADVANCED_CUSTOM_MODE_DATA
+{
+	DWORD	dwDisplayUID;   	// Display Device UID for this display
+	DWORD dwFlags;		// Cuurently a reserved parameter
+	BOOL	bForcedModeAddition; // Specifies whether overwrite an existing mode
+	IGFX_ADVANCED_MODE AdvancedMode; // Advanced Mode Details	
+}IGFX_ADD_ADVANCED_CUSTOM_MODE_DATA;
+
+
+//End of Custom modes
+typedef [uuid(5FCC50CF-919D-40f3-BDF5-0E22A882DDCD)]
+enum IGFX_MEDIA_FEATURE_TYPES
+{
+ IGFX_MEDIA_FEATURE_CVT 			=	0x0001, // CVT Feature
+ IGFX_MEDIA_FEATURE_FMD 			=	0x0002, // Film mode detection 
+ IGFX_MEDIA_FEATURE_NOISE_REDUCTION =	0x0004, // Noise Reduction
+ IGFX_MEDIA_FEATURE_SHARPNESS 		=	0x0008, // Sharpness 
+ IGFX_MEDIA_FEATURE_COLOR 			=	0x0010, // Procamp 
+ IGFX_MEDIA_FEATURE_SCALING			=	0x0020, // NLAS
+ IGFX_MEDIA_FEATURE_TCC				=	0x0040, // TCC
+ IGFX_MEDIA_FEATURE_STE				=	0x0080, // STE
+ IGFX_MEDIA_FEATURE_ACE				=	0x0100, // ACE
+ IGFX_MEDIA_FEATURE_IS				=	0x0200, // IS
+ IGFX_MEDIA_FEATURE_GC				=	0x0400 // GC
+}IGFX_MEDIA_FEATURE_TYPES;
+
+//Media Settings features
+typedef [uuid(B23322B3-E18E-41af-8E10-6AEC7EC13720)] 
+struct IGFX_MEDIA_SETTINGS_DATA
+{
+    float fValue;    // Current Value
+    float fDefault;  // Default Value 
+    float fMin;      // Minimium Value 
+    float fMax;      // Maximium Value 
+    float fStep;     // Adjustment value for each step
+}IGFX_MEDIA_SETTINGS_DATA;
+
+typedef [uuid(3486DC90-3D15-465c-AFA5-F8D9122DE7D2)] 
+struct IGFX_MEDIA_ENABLE_DATA
+{
+    BOOL bEnable;		// Current Value
+    BOOL bDefault;	// Default Value 
+}IGFX_MEDIA_ENABLE_DATA;
+
+//Video quality
+
+
+typedef [uuid(9D0D7CBA-D168-4c1f-9ECB-6206310E4175)] 
+struct IGFX_VIDEO_QUALITY_DATA
+{
+	DWORD	dwSupportedFeatures;
+	IGFX_MEDIA_ENABLE_DATA	EnableFMD; //Film mode detection
+	IGFX_MEDIA_ENABLE_DATA	AlwaysEnableNR; // Noise Reduction 
+	IGFX_MEDIA_ENABLE_DATA	AlwaysEnableSharpness; //Sharpness
+	DWORD	dwFlags;		//Reserved
+	IGFX_MEDIA_SETTINGS_DATA SharpnessSettings;
+}IGFX_VIDEO_QUALITY_DATA;
+
+
+typedef [uuid(4B18998E-E5ED-4fbb-9E9F-FC63467A4A5D)] 
+struct IGFX_MEDIA_COLOR_DATA
+{
+	DWORD	dwSupportedFeatures;
+	IGFX_MEDIA_ENABLE_DATA	EnableAlways; //Enable Always
+	DWORD	dwFlags;		//Reserved
+	IGFX_MEDIA_SETTINGS_DATA HueSettings;
+	IGFX_MEDIA_SETTINGS_DATA SaturationSettings;
+	IGFX_MEDIA_SETTINGS_DATA ContrastSettings;
+	IGFX_MEDIA_SETTINGS_DATA BrightnessSettings;	
+}IGFX_MEDIA_COLOR_DATA;
+
+
+
+typedef [uuid(4E276FE3-852C-464b-A55F-35209DBD0F4E)] 
+struct IGFX_MEDIA_SCALING_DATA
+{
+	DWORD	dwSupportedFeatures;
+	IGFX_MEDIA_ENABLE_DATA	EnableNLAS; //Enable NLAS
+	DWORD	dwFlags;		//Reserved
+	IGFX_MEDIA_SETTINGS_DATA VerticalCropSettings;
+	IGFX_MEDIA_SETTINGS_DATA HLinearRegionSettings;
+	IGFX_MEDIA_SETTINGS_DATA NonLinearCropSettings;
+}IGFX_MEDIA_SCALING_DATA;
+
+
+//end of media seetings apis
+
+
+// For AVI Info-Frame RCR -1022131 Added by Shubha
+// Data Structure
+typedef [uuid(9BFE95AB-DF7B-4b03-A7D3-47BC3CE4D165)]
+struct IGFX_AVIINFOFRAME
+{
+	UINT  uiTypeCode;                   // Reserved
+	UINT  uiVersion;                   // Reserved
+	UINT  uiLength;                    // Reserved
+
+	BOOL  bR3R0Valid;                  // Reserved
+	BOOL  bITContent;                 // IT Content
+
+	BYTE  barInfo[BAR_INFO_SIZE];    // Reserved
+
+	DWORD dwDeviceID;                 // Device ID
+
+	DWORD dwActiveFormatAspectRatio;  // Reserved       
+	DWORD dwNonUniformScaling;        // Reserved       
+	DWORD dwRGBYCCIndicator;          // Reserved       
+	DWORD dwExtColorimetry;           // Reserved       
+
+	DWORD dwPixelFactor;               // Reserved       
+	DWORD bBarInfoValid;              // Reserved        
+	DWORD dwColorimetry;               // Reserved       
+	DWORD dwAspectRatio;                // Reserved       
+	DWORD dwQuantRange;                 // Quantization Range
+	DWORD dwVideoCode;                  // Reserved       
+	DWORD dwScanInfo;                   // Scan Information
+
+	DWORD dwFlags;                      // Flags
+
+} IGFX_AVIINFOFRAME;
+
+
+typedef [uuid(2DD1AFA1-881C-4cf5-BE3F-E22659DEEBC5)] 
+struct IGFX_SYSTEM_CONFIG_DATA_N_VIEW 
+{
+	DWORD			dwOpMode;		// Operating Mode
+	DWORD			dwFlags;		// Flags
+	UINT			uiSize;			// Reserved
+	UINT			uiNDisplays;	// Reserved
+	IGFX_DISPLAY_CONFIG_DATA_EX	DispCfg[1];	// Array of Display Data
+}IGFX_SYSTEM_CONFIG_DATA_N_VIEW;
+
+typedef [uuid(A1D915F6-3517-496f-8BFA-9208BBA8A2B5)]
+struct IGFX_SYSTEM_CONFIG_DATA_N_VIEWS
+    {
+    DWORD dwOpMode;
+    DWORD dwFlags;
+    UINT uiSize;
+    UINT uiNDisplays; //1...6
+    IGFX_DISPLAY_CONFIG_DATA_EX DispCfg[ 6 ];
+    } 	IGFX_SYSTEM_CONFIG_DATA_N_VIEWS;
+
+
+// Structure definition
+typedef [uuid(985A7694-2949-4e80-8B9E-A719F55CAAE2)]
+struct IGFX_DISPLAY_CONFIG_1_1
+{
+	// Filled in by the client/caller
+	UINT	nSize;						// Filled in by the caller allocating the structure
+	
+	// Device identification
+	DWORD	uidMonitor;					// Unique ID number for the requested monitor
+
+	// Flags member describing validity of output members
+	DWORD	dwFlags;					// Flag bitmask
+
+	// Following methods are returned by the interface
+	// Panning related
+	BOOL	bHorizontalPanningEnabled;	// Horizontal panning enabled ?
+	BOOL	bVerticalPanningEnabled;	// Vertical panning enabled ?
+	POINT	ptViewPortPosition;			// Viewport position when in panning
+
+	// Panel fitting related
+	LONG	lHorizontalScaling;			// Horizontal scaling: -1, 0, 1
+	LONG	lVerticalScaling;			// Vertical scaling: -1, 0, 1
+	UINT	ulPhysicalWidth;			// Physical width of display
+	UINT	ulPhysicalHeight;			// Physical width of display
+	UINT	ulDisplayWidth;				// Resolution X
+	UINT	ulDisplayHeight;			// Resolution Y
+	
+	// Rotation related
+	BOOL	bRotationEnabled;			// Rotation Enabled?
+	BOOL	bPortraitPolicy;			// Portrait orientation policy
+	BOOL	bLandscapePolicy;			// Landscape orientation policy
+	DWORD	dwOrientation;				// Orientation of the display
+
+}IGFX_DISPLAY_CONFIG_1_1;
+
+// Data Structure
+typedef [uuid(BBD627C9-B745-4684-839C-C6350B20239D)]
+struct IGFX_AVI_INFOFRAME
+{
+            UINT  uiTypeCode;                   // Reserved
+            UINT  uiVersion;                   // Reserved
+            UINT  uiLength;                    // Reserved
+
+            BOOL  bR3R0Valid;                  // Reserved
+            BOOL  bITContent;                 // IT Content
+
+            BYTE  barInfo[BAR_INFO_SIZE];    // Reserved
+
+            DWORD dwDeviceID;                 // Device ID
+
+            DWORD dwActiveFormatAspectRatio;  // Reserved       
+            DWORD dwNonUniformScaling;        // Reserved       
+            DWORD dwRGBYCCIndicator;          // Reserved       
+            DWORD dwExtColorimetry;           // Reserved       
+
+            DWORD dwPixelFactor;               // Reserved       
+            DWORD bBarInfoValid;              // Reserved        
+            DWORD dwColorimetry;               // Reserved       
+            DWORD dwAspectRatio;                // Reserved       
+            DWORD dwQuantRange;                 // Quantization Range
+            DWORD dwVideoCode;                  // Reserved       
+            DWORD dwScanInfo;                   // Scan Information
+
+            DWORD dwFlags;                      // Flags
+
+} IGFX_AVI_INFOFRAME;
+
+//AVI_INFOFRAME_EX  START
+#define AVI_INFOFRAME_VERSIONS_SUPPORTED                     1
+#define IS_AVI_INFOFRAME_VERSION_SUPPORTED(x) (x <= AVI_INFOFRAME_VERSIONS_SUPPORTED)
+
+#define IGFX_GRAPHICS_CONTENT_TYPE                     1
+#define IGFX_PHOTO_CONTENT_TYPE                        2
+#define IGFX_CINEMA_CONTENT_TYPE                       4
+#define IGFX_GAME_CONTENT_TYPE                         8
+
+#define IGFX_ASPECT_RATIO_4_3						   1
+#define IGFX_ASPECT_RATIO_16_9						   2
+
+typedef [uuid(D64FD045-48ED-4c2d-98C5-140B16471C4C)]      //DEFINE_GUID(<<name>>, 0xd64fd045, 0x48ed, 0x4c2d, 0x98, 0xc5, 0x14, 0xb, 0x16, 0x47, 0x1c, 0x4c);
+struct IGFX_AVI_INFOFRAME_EX
+{
+	   	  IGFX_VERSION_HEADER versionHeader;
+#if IS_AVI_INFOFRAME_VERSION_SUPPORTED(1)
+	      IGFX_AVI_INFOFRAME aviFrameInfo;
+ /*OUT*/  DWORD dwSupportedAspectRatios;   //Supported Aspect ratios.
+/*OUT*/	  DWORD dwSupportedITContentTypes; //Supported IT contents.
+/*INOUT*/ DWORD dwITContentTypeValue;      //current Get/Set value.
+#endif
+#if IS_AVI_INFOFRAME_VERSION_SUPPORTED(2)
+     // For Future use
+#endif
+}IGFX_AVI_INFOFRAME_EX;
+//AVI_INFOFRAME_EX  END
+
+typedef [uuid(DED5BE46-59BE-463f-A43B-E4600E59D07D)]
+struct DEVICE_DISPLAYS 
+{
+	UINT	nSize;
+	WCHAR	strDeviceName[40]; 			// Win32 Graphics Device Name 
+	DWORD	dwFlags;					// Configuration of the Monitors
+	DWORD	primaryMonitorID;			// ID of the Primary Monitor
+	UINT 	nMonitors;				// number of elements in the array of ID’s
+	DWORD	monitorIDs[MAX_MONITORS_PER_ADAPTER];	// Array of Monitor ID’s attached 
+}DEVICE_DISPLAYS;
+
+typedef [uuid(130B77C6-7910-4bc3-9049-1AE555088729)]
+enum OSTYPE
+{
+	XP =  1729,
+	VISTA
+}OSTYPE;
+
+
+typedef [uuid(6B40625D-A978-42d2-B1DF-4CC1A38CC3AB)]
+enum DISPLAY_RELATED
+{
+	UNKNOWN = -1,
+    //#region CRT
+        CRT1 = 1,// (1<<0),
+        CRT2 = 2,//(1<<1),
+        CRT3 = 4,//(1<<2),
+        CRT4 = 8,//(1<<3),
+    //#endregion CRT 
+    
+    //#region TV
+        TV1 = 16,//(1<<4),   //TV
+        TV2	= 32,//(1<<5),
+        TV3	= 64,//(1<<6),
+        TV4	= 128,//(1<<7),
+    //#endregion TV
+    
+    //#region External DFP
+        DFP1 = 256,//(1<<8),   //Extennal DFP 
+        DFP2 = 512,//(1<<9),
+        DFP3 = 1024,//(1<<10),
+        DFP4 = 2048,//(1<<11),
+    //#endregion External DFP
+
+    //#region Internal DFP
+        LFP1 = 4096,//(1<<12),  //Internal LFP
+        LFP2 = 8192,//(1<<13),
+        LFP3 = 16384,//(1<<14),
+        LFP4 = 32768,//(1<<15),
+    //#endregion Internal DFP
+
+    //#region DISPLAY_DEVICE_TYPES
+        CRT = CRT1, 
+        TV  = TV1,
+        DFP = DFP1,
+        LFP = LFP1,
+        ALL_DEVICES = (CRT | TV | DFP | LFP ),
+    //#endregion DISPLAY_DEVICE_TYPES
+
+//#region DISPLAYUID
+        DISPLAYUID_DFP = 0x3030300,
+        DISPLAYUID_CRT = 0x1010100,
+        DISPLAYUID_TV  = 0x2090200,
+        DISPLAYUID_LFP = 0x4070400,
+    //#endregion DISPLAYUID
+
+}DISPLAY_RELATED;
+
+typedef [uuid(1438740C-8CEF-498d-A56C-FCAC6280F02F)]
+enum OPERATING_MODE
+{
+   SD=(1<<0),
+   DT=(1<<1),
+   DC=(1<<2), 
+   ED=(1<<3)
+}OPERATING_MODE;
+
+typedef [uuid(898DA772-E7DC-47e3-AB0D-32DEB2748816)]
+enum NEW_DEVICE_TYPE
+{
+   NEWPRIMARY_DEVICE = 0,
+   NEWSECONDARY_DEVICE = 1
+}NEW_DEVICE_TYPE;
+
+// Definition of pdwStatus DWORD flag used in EnumAttachableDevices method
+typedef [uuid(7673D240-6271-4842-9D70-11BF16DB99AE)]
+enum DISPLAY_DEVICE_STATUS
+{
+	IGFX_DISPLAY_DEVICE_NOTATTACHED	= (0x001),	// No display device currently attached
+	IGFX_DISPLAY_DEVICE_ATTACHED	= (0x002),	// Attached
+	IGFX_DISPLAY_DEVICE_OVERRIDE	= (0x004),	// Policy indicates Unattached device will be treated as Attached
+	IGFX_DISPLAY_DEVICE_ACTIVE		= (0x010),	// Active device 
+	IGFX_DISPLAY_DEVICE_PRIMARY		= (0x100),	// Primary Display Device
+	IGFX_DISPLAY_DEVICE_SECONDARY	= (0x200),	// Secondary Display Device
+	IGFX_DISPLAY_DEVICE_ALL			= IGFX_DISPLAY_DEVICE_NOTATTACHED | IGFX_DISPLAY_DEVICE_ATTACHED | IGFX_DISPLAY_DEVICE_OVERRIDE |
+									  IGFX_DISPLAY_DEVICE_ACTIVE | IGFX_DISPLAY_DEVICE_PRIMARY | IGFX_DISPLAY_DEVICE_SECONDARY
+}DISPLAY_DEVICE_STATUS;
+
+typedef [uuid(EE9596B4-E36C-45fb-9028-3086186BE00A)]
+struct DISPLAY_MODE
+{
+   int vmHzRes;
+   int vmVtRes;
+   int vmPixelDepth;
+   int vmRefreshRate;
+}DISPLAY_MODE;
+
+typedef [uuid(75543EA9-CB6A-4a8d-A438-536103B91CB5)]
+enum IGFX_COLOR_QUALITIES
+{
+IGFX_COLOR_QUALITY_8   = 	8, // 8 BPP 
+IGFX_COLOR_QUALITY_16  = 	16,// 16 BPP 
+IGFX_COLOR_QUALITY_32  =	32,// 32 BPP 
+IGFX_COLOR_QUALITY_ALL =	(IGFX_COLOR_QUALITY_8 | IGFX_COLOR_QUALITY_16 | IGFX_COLOR_QUALITY_32)// 8, 16 and 32 BPP s at a shot
+}IGFX_COLOR_QUALITIES;
+
+typedef [uuid(CBB76BDD-E13F-47a6-B23A-ABB83E77F671)]
+enum IGFX_TIMING_STANDARDS
+{
+IGFX_TIMING_STANDARD_GTF 	= 0x0001,	// GTF 
+IGFX_TIMING_STANDARD_CVT 	 = 0x0002,	// CVT 
+IGFX_TIMING_STANDARD_CVT_RB  = 0x0003,	// CVT-RB 
+IGFX_TIMING_STANDARD_CEA_861_B = 0x0004	// CE 861
+}IGFX_TIMING_STANDARDS;
+
+typedef [uuid(2786A068-0EE5-4c59-9E4E-C2C8B2169B00)]
+enum IGFX_CUSTOM_MODES
+{
+IGFX_BASIC_CUSTOM_MODES   =	0x0001,	// Modes added using basic mode details
+IGFX_ADVANCED_CUSTOM_MODES = 0x0002	// Modes added using timing details 
+}IGFX_CUSTOM_MODES;
+
+typedef [uuid(cedce755-27d8-4ed0-969d-b487ee4e14cf)]
+struct IGFX_COLOR_DATA
+{
+	float fValue; // Current Value
+	float fDefault; //Default Value
+	float fMin; //Minimum Value
+	float fMax; //Maximum Value
+	float fStep; //Adjustment value for each step
+}IGFX_COLOR_DATA;
+
+typedef [uuid(bb6844be-0b8f-4d33-96c1-807346eb41b0)]
+struct IGFX_HUESAT_INFO
+{
+	BOOL bIsFeatureSupported; //Supported? TRUE:FALSE
+	BOOL bIsRGB;//RGB(TRUE) or YUV(FALSE)
+	DWORD dwDeviceID;//Device ID
+	IGFX_COLOR_DATA HueSettings;//Hue Settings
+	IGFX_COLOR_DATA SaturationSettings;//Saturation Settings
+	DWORD dwFlags;//Reserved
+}IGFX_HUESAT_INFO;
+
+
+typedef [uuid(AF259B5A-2EA3-4705-8EEE-61333A43623D)]
+struct IGFX_DISPLAY_CSC_MATRIX
+    {
+    float fLFPCSCMatrix_601[3][3];
+	float fLFPCSCMatrix_709[3][3];
+	UCHAR flag;
+    } 	IGFX_DISPLAY_CSC_MATRIX;
+
+typedef [uuid(6BD1EE22-8CD6-4da7-887C-674691A6B7BD)]
+struct IGFX_SOURCE_DISPLAY_CSC_DATA
+    {
+    BOOL bEnable;
+    ULONG ulReserved;
+	IGFX_DISPLAY_CSC_MATRIX CSCMatrix;
+    DWORD dwIsSupported;
+    DWORD dwFlag;
+    } 	IGFX_SOURCE_DISPLAY_CSC_DATA;
+
+typedef [uuid(7e4b0552-868d-40df-9b04-bb6852dfac92)]
+struct IGFX_VIDEO_QUALITY_DATA_EX
+{
+	IGFX_VIDEO_QUALITY_DATA VideoQualityData; 
+	IGFX_MEDIA_ENABLE_DATA EnableDriverPreference; //Driver Preference
+	IGFX_MEDIA_ENABLE_DATA EnableOptimalSharpness; //Optimal Sharpness
+	IGFX_MEDIA_SETTINGS_DATA NoiseReductionSettings; //Noise Reduction Settings
+	DWORD dwFlags; //Reserved
+}IGFX_VIDEO_QUALITY_DATA_EX;
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+//-----------------------------------------------------------------------------
+//           POWER - IPS and Power Plan Settings
+//-----------------------------------------------------------------------------
+
+// {9EE756C6-4D97-4b5d-BB93-B854E727A674}
+//static const GUID IGFX_GET_SET_POWER_INFO_GUID = { 0x9ee756c6, 0x4d97, 0x4b5d, { 0xbb, 0x93, 0xb8, 0x54, 0xe7, 0x27, 0xa6, 0x74 } };
+
+#define IGFX_POWER_FBC					0x01
+#define IGFX_POWER_GSV					0x02
+#define IGFX_POWER_CXSR					0x04
+#define IGFX_POWER_DPST					0x08
+#define IGFX_POWER_ALS					0x10
+#define IGFX_POWER_SRD					0x20 
+#define IGFX_POWER_DPS					0x40
+#define IGFX_POWER_GRS					0x80
+#define IGFX_POWER_FEATURE_SETTINGS		0x01 // Feature Setting operation
+#define IGFX_POWER_PLAN_SETTINGS				0x03 // Power Plan Setting operation
+#define IGFX_POWER_IPS_SETTINGS				0x04 //Turbo Settings
+#define IGFX_POWER_OC_SETTINGS				0x05 //Turbo over clocking Settings
+
+#define IGFX_POWERSTATE_DC        1<<0 
+#define IGFX_POWERSTATE_AC        1<<1 
+
+typedef [uuid(5c3776fb-4c3a-4155-8610-4db04142e6b0)]
+enum IGFX_IPS_DEVICE
+{
+	IGFX_PWRCONS_IPS_DEVICE_UNKNOWN,
+	IGFX_PWRCONS_IPS_DEVICE_CPU,
+	IGFX_PWRCONS_IPS_DEVICE_GFX
+}IGFX_IPS_DEVICE;
+typedef [uuid(258731d9-1a70-41db-87aa-75f9b840ea10)]
+enum IGFX_POWER_PLAN
+{
+	IGFX_PWR_PLAN_GET_CURRENT,
+	IGFX_PWR_PLAN_BEST_POWER_SAVINGS,
+	IGFX_PWR_PLAN_BETTER_POWER_SAVINGS,
+	IGFX_PWR_PLAN_GOOD_POWER_SAVINGS,
+	IGFX_PWR_PLAN_DISABLE_POWER_SAVINGS,
+	IGFX_PWR_PLAN_CUSTOM,
+	IGFX_NUM_OF_PWR_USER_PLANS
+}IGFX_POWER_PLAN;
+
+typedef [uuid(6e83f78c-243d-4a45-87ff-ca64bb465c44)]
+
+struct IGFX_POWER_CONSERVATION_DATA
+{
+	DWORD dwPowerState; //Power State
+	DWORD dwOperation; //To mention operation: Plan, Feature or Backlight
+	IGFX_POWER_PLAN PowerPlan; //Power Plan
+	DWORD dwDisplayDevice; //Display Device
+	DWORD dwCapability; //For Get, Capability -- features we are supporting in driver
+	DWORD dwChangedFeatures; //For Set, Features CUI wants to change values in dwEnabledFeature
+	DWORD dwEnabledFeatures; //Current Status -- enabled features
+	DWORD dwDPSTCurLevel;//DPST Current Level
+	DWORD dwDPSTTotalLevel;//DPST Supported MAX Level
+	DWORD dwGSVCurLevel;//Graphics P State Level, Current Level
+	DWORD dwGSVTotalLevel;//Graphics P State Level, Supported MAX Level
+	BOOL bIsMFD;//Whether MFD is supported ot not
+	BOOL IsSupportForStaticDRRS;//Static DRRS RCR enabled for Vista 1022287
+	DWORD dwRR[20];//Refresh Rate array
+	DWORD dwLowRR;//Current Low RR
+	DWORD dwNumRR;//Number of Refresh Rates
+	IGFX_IPS_DEVICE IPSDevice;//Reserved
+	BOOL bIsIPSSupported;//Reserved
+	BOOL bEnableIPS;//Reserved
+	DWORD dwIPSREnderFrequency;//Reserved
+	DWORD dwFlags;//Reserved
+}IGFX_POWER_CONSERVATION_DATA;
+
+typedef [uuid(8cdee4b5-8a21-430b-aa01-5211ec08820e)]
+struct IGFX_ADB_POLICY_1_0
+{
+	BOOL bEnabledDC; //TRUE if enabled, FALSE otherwise
+	BOOL bEnabledAC; //Reserved for now
+	ULONG ulReserved1;
+	ULONG ulReserved2;
+	ULONG ulReserved3; //Reserved for now
+}IGFX_ADB_POLICY_1_0;
+
+typedef [uuid(9b0a6f2f-c8b8-4293-8224-bb2e02b37784)]
+struct IGFX_D3D_INFO
+{
+	long lBasicVal;//Basic value
+	long lBasicValDef;//Default value-basic
+	long lVertexProcessingVal;//Vertex processing
+	long lVertexProcessingValDef;//Default value - vp
+	long lTextureQualityVal;//Texture Quality
+	long lTextureQualityValDef;//Default value - tq
+	long lAnisotrophicVal;//Anisotrophic filtering
+	long lAnisotrophicValDef;//Default value - aniso
+	long lFlipVsyncVal;//Wait on flip vsync
+	long lFlipVsyncValDef;//Default value - async
+	DWORD dwFlags;//Reserved
+}IGFX_D3D_INFO;
+
+
+//D3D EX
+#define D3D_VERSION_SUPPORTED                      4
+#define IS_D3D_VERSION_SUPPORTED(x)     (x <= D3D_VERSION_SUPPORTED)
+
+#define IGFX_D3D_AIL_ENABLE 0//def value
+#define IGFX_D3D_AIL_DISABLE 1 // not set
+#define IGFX_D3D_CUSTOM_MSAA_APPLICATION_CHOICE	0 //default value 
+#define IGFX_D3D_CUSTOM_MSAA_DISABLED			1
+#define IGFX_D3D_CUSTOM_MSAA_2X					2
+#define IGFX_D3D_CUSTOM_MSAA_4X					4
+#define IGFX_D3D_CUSTOM_MSAA_8X					8
+
+// Flags for D3D
+#define IGFX_D3D_MSAA_VALID				0x40
+
+//Flags for D3D AIL
+#define IGFX_D3D_AIL_VALID              0x20
+
+typedef [uuid(18C9ECDB-7D36-40f8-A70D-C418015480BF)]
+ struct IGFX_D3D_INFO_EX
+{
+	IGFX_VERSION_HEADER				versionHeader;
+#if IS_D3D_VERSION_SUPPORTED(1)
+	long lBasicVal;						// Basic value
+	long lBasicValDef;					// Default value - basic
+				
+	long lVertexProcessingVal;			// Vertex Processing
+	long lVertexProcessingValDef;		// Default value - vp
+
+	long lTextureQualityVal;			// Texture quality
+	long lTextureQualityValDef;			// Default value - tq
+
+	long lAnisotropicVal;				// Anisotropic Filtering
+	long lAnisotropicValDef;			// Default value - aniso		
+
+	long lFlipVSyncVal;					// Wait on Flip Vsync
+	long lFlipVSyncValDef;				// Default value - async
+
+	DWORD dwFlags;  					// Reserved
+#endif
+#if IS_D3D_VERSION_SUPPORTED(2)
+	// AIL
+	long lAILVal;                       //Application Intelligence Layer
+	long lAILDef;                       //Default value
+#endif
+#if IS_D3D_VERSION_SUPPORTED(3)
+	long lMSAAVal;				//MSAA Value
+	long lMSAADef;			     //Default value - anti-aliasing
+#endif
+#if IS_D3D_VERSION_SUPPORTED(4)
+	long lCMAAVal;
+	long lCMAADef;						//Default Value -  CMAA
+#endif
+}IGFX_D3D_INFO_EX;
+
+typedef [uuid(A3C7BC45-E69C-44ec-9F16-B58547084552)]
+struct IGFX_SYSTEM_IGPU_STATUS_STRUCT
+{	
+	BOOL	bIsGPUSwitchinProgress;	  
+	BYTE	ConfigType; //Non SG, SG Muxed, Muxless
+	BYTE	TPVType;	//ATI or NVIDIA
+	BYTE	MLScheme;	//Fixed or Dynamic
+	BYTE	Display;	//will be 1 if IGPU is driving the display
+	BYTE	Render;	//will be 1 if IGPU is rendering
+	BYTE	Reserved1;
+	BYTE	Reserved2;  
+	BYTE	Reserved3;
+}IGFX_SYSTEM_IGPU_STATUS_STRUCT;
+
+//
+#define VERSIONS_SUPPORTED                      4
+#define IS_MEDIA_VERSION_SUPPORTED(x)     (x <= VERSIONS_SUPPORTED)
+#define IS_PERSISTENCE_VERSION_SUPPORTED(x) (x <= VERSIONS_SUPPORTED)
+#define IGFX_MEDIA_QUALITY_DENOISE_LUMA_CHROMA	1
+#define IGFX_MEDIA_QUALITY_DENOISE_LUMA			0
+#define IGFX_MEDIA_COLOR_INPUTRANGE_APP_SETTING		0
+#define IGFX_MEDIA_COLOR_INPUTRANGE_LIMITED		1
+#define IGFX_MEDIA_COLOR_INPUTRANGE_FULL		2
+
+
+typedef [uuid(9DA3FCA2-C79E-4df9-BBEB-1FA912221BC0)]
+struct IGFX_VIDEO_HEADER
+{
+	DWORD dwVersion;
+	DWORD dwReserved;
+}IGFX_VIDEO_HEADER;
+
+
+typedef [uuid(9650548E-0980-4a1e-B676-D587F3C8830E)]
+struct IGFX_VIDEO_QUALITY_DATA_EX2
+{
+	IGFX_VIDEO_HEADER	header;
+#if IS_MEDIA_VERSION_SUPPORTED(1)
+	// IGFX_VIDEO_QUALITY_DATA
+	DWORD	dwSupportedFeatures;
+	BOOL	bCurrentFMD;					// Current Value
+	BOOL	bDefaultFMD;					// Default Value 
+	BOOL	bCurrentNR;						// Current Value
+	BOOL	bDefaultNR;						// Default Value 
+	BOOL	bCurrentSharpness;				// Current Value
+	BOOL	bDefaultSharpness;				// Default Value 
+	DWORD	dwFlags;						// Reserved
+	float	fSharpnessCurrent;				// Current Value
+	float	fSharpnessDefault;				// Default Value 
+	float	fSharpnessMin;					// Minimium Value 
+	float	fSharpnessMax;					// Maximium Value 
+	float	fSharpnessStep;					// Adjustment value for each step
+	// Denoise Autodetect
+	BOOL	bCurrentDriverPreference;		// Current Value
+	BOOL	bDefaultDriverPreference;		// Default Value 
+	// Optimal Sharpness
+	BOOL	bCurrentOptimalSharpness;		// Current Value
+	BOOL	bDefaultOptimalSharpness;		// Default Value 
+	// Noise Reduction
+	float	fNoiseReductionCurrent;				// Current Value
+	float	fNoiseReductionDefault;				// Default Value 
+	float	fNoiseReductionMin;					// Minimium Value 
+	float	fNoiseReductionMax;					// Maximium Value 
+	float	fNoiseReductionStep;					// Adjustment value for each step
+	DWORD	dwFlags2;						// Reserved
+	BOOL bEnableDenoiseAutoDetect;			//enable - 1, disable - 0
+	BOOL bEnableDenoiseAutoDetectDef;	
+	
+	BOOL bSkinToneEnhancement;
+	BOOL bSkinToneEnhancementDef;
+
+	BOOL bAutoContrastEnhancement;
+	BOOL bAutoContrastEnhancementDef;
+#endif
+#if IS_MEDIA_VERSION_SUPPORTED(2)
+	// Skin ToneEnhancement
+	float	fSkinToneEnhancementCurrent;						// Current Value
+	float	fSkinToneEnhancementDefault;				// Default Value 
+	float	fSkinToneEnhancementMin;					// Minimium Value 
+	float	fSkinToneEnhancementMax;					// Maximium Value 
+	float	fSkinToneEnhancementStep;					// Adjustment value for each step
+#endif
+#if IS_MEDIA_VERSION_SUPPORTED(3)
+	// Denoise: Luma and Chroma, ImageStabilization
+	DWORD	dwNoiseReductionType;						// Noise Type
+	DWORD	dwNoiseReductionTypeDef;					// Default value
+	BOOL	bImageStabilization;						// ImageStabilization
+	BOOL	bImageStabilizationDef;						// IS Default value
+	// Noise Reduction (Luma and Chroma)
+	float	fNoiseReductionLCCurrent;				// Current Value
+	float	fNoiseReductionLCDefault;				// Default Value 
+	float	fNoiseReductionLCMin;					// Minimium Value 
+	float	fNoiseReductionLCMax;					// Maximium Value 
+	float	fNoiseReductionLCStep;					// Adjustment value for each step
+#endif
+#if IS_MEDIA_VERSION_SUPPORTED(4)
+	float	fACELevelCurrent;				// Current Value
+	float	fACELevelDefault;				// Default Value 
+	float	fACELevelMin;					// Minimium Value 
+	float	fACELevelMax;					// Maximium Value 
+	float	fACELevelStep;					// Adjustment value for each step
+#endif
+}IGFX_VIDEO_QUALITY_DATA_EX2;
+
+
+
+typedef [uuid(2F992B84-25CD-4de5-8C8E-5657C00E4D88)]
+struct IGFX_MEDIA_COLOR_DATA_EX2
+{
+	IGFX_VIDEO_HEADER	header;
+#if IS_MEDIA_VERSION_SUPPORTED(1)
+	DWORD	dwSupportedFeatures;
+	BOOL	bEnableColor;		// Current Value
+    BOOL	bDefaultColor;	// Default Value 
+	DWORD	dwFlags;		//Reserved
+
+	float	fHueCurrent;    // Current Value
+    float	fHueDefault;  // Default Value 
+    float	fHueMin;      // Minimium Value 
+    float	fHueMax;      // Maximium Value 
+    float	fHueStep;     // Adjustment value for each step
+
+	float	fSaturationCurrent;    // Current Value
+    float	fSaturationDefault;  // Default Value 
+    float	fSaturationMin;      // Minimium Value 
+    float	fSaturationMax;      // Maximium Value 
+    float	fSaturationStep;     // Adjustment value for each step
+
+	float	fContrastCurrent;    // Current Value
+    float	fContrastDefault;  // Default Value 
+    float	fContrastMin;      // Minimium Value 
+    float	fContrastMax;      // Maximium Value 
+    float	fContrastStep;     // Adjustment value for each step
+
+	float	fBrightnessCurrent;    // Current Value
+    float	fBrightnessDefault;  // Default Value 
+    float	fBrightnessMin;      // Minimium Value 
+    float	fBrightnessMax;      // Maximium Value 
+    float	fBrightnessStep;     // Adjustment value for each step
+
+	BOOL bTotalColorControl; //enable - 1, disable - 0
+	BOOL bTotalColorControlDef;
+	float	fRedCurrent;    // Current Value
+    float	fRedDefault;  // Default Value 
+    float	fRedMin;      // Minimium Value 
+    float	fRedMax;      // Maximium Value 
+    float	fRedStep;     // Adjustment value for each step
+
+	float	fGreenCurrent;    // Current Value
+    float	fGreenDefault;  // Default Value 
+    float	fGreenMin;      // Minimium Value 
+    float	fGreenMax;      // Maximium Value 
+    float	fGreenStep;     // Adjustment value for each step
+
+	float	fBlueCurrent;    // Current Value
+    float	fBlueDefault;  // Default Value 
+    float	fBlueMin;      // Minimium Value 
+    float	fBlueMax;      // Maximium Value 
+    float	fBlueStep;     // Adjustment value for each step
+
+	float	fYellowCurrent;    // Current Value
+    float	fYellowDefault;  // Default Value 
+    float	fYellowMin;      // Minimium Value 
+    float	fYellowMax;      // Maximium Value 
+    float	fYellowStep;     // Adjustment value for each step
+
+	float	fCyanCurrent;    // Current Value
+    float	fCyanDefault;  // Default Value 
+    float	fCyanMin;      // Minimium Value 
+    float	fCyanMax;      // Maximium Value 
+    float	fCyanStep;     // Adjustment value for each step
+	
+	float	fMagentaCurrent;    // Current Value
+    float	fMagentaDefault;  // Default Value 
+    float	fMagentaMin;      // Minimium Value 
+    float	fMagentaMax;      // Maximium Value 
+    float	fMagentaStep;     // Adjustment value for each step
+#endif
+#if IS_MEDIA_VERSION_SUPPORTED(2)
+	// add new code here for future releases
+
+	//Media Input Range RCR:1023753
+	DWORD dwInputYUVRange;
+	DWORD dwInputYUVRangeDef;
+#endif
+}IGFX_MEDIA_COLOR_DATA_EX2;
+
+typedef [uuid(0A8B3748-DDD0-4ab8-8C54-BF17364857F5)] //DEFINE_GUID(<<name>>, 0xa8b3748, 0xddd0, 0x4ab8, 0x8c, 0x54, 0xbf, 0x17, 0x36, 0x48, 0x57, 0xf5);
+struct IGFX_MEDIA_SCALING_DATA_EX2
+{
+	IGFX_VIDEO_HEADER	header;
+#if IS_MEDIA_VERSION_SUPPORTED(1)
+	DWORD	dwSupportedFeatures;
+	BOOL	bEnableNLAS;		// Current Value
+    BOOL	bDefaultNLAS;	// Default Value 
+	DWORD	dwFlags;		//Reserved
+	float	fVerticalCropCurrent;    // Current Value
+    float	fVerticalCropDefault;  // Default Value 
+    float	fVerticalCropMin;      // Minimium Value 
+    float	fVerticalCropMax;      // Maximium Value 
+    float	fVerticalCropStep;     // Adjustment value for each step
+
+	float	fHLinearRegionCurrent;    // Current Value
+    float	fHLinearRegionDefault;  // Default Value 
+    float	fHLinearRegionMin;      // Minimium Value 
+    float	fHLinearRegionMax;      // Maximium Value 
+    float	fHLinearRegionStep;     // Adjustment value for each step
+
+	float	fNonLinearCropCurrent;    // Current Value
+    float	fNonLinearCropDefault;  // Default Value 
+    float	fNonLinearCropMin;      // Minimium Value 
+    float	fNonLinearCropMax;      // Maximium Value 
+    float	fNonLinearCropStep;     // Adjustment value for each step
+#endif
+#if IS_MEDIA_VERSION_SUPPORTED(2)
+	// add new code here for future releases
+#endif
+}IGFX_MEDIA_SCALING_DATA_EX2;
+
+
+
+typedef [uuid(25416282-2EC5-425a-9F29-DBCDE0FA92F4)]   //DEFINE_GUID(<<name>>, 0x25416282, 0x2ec5, 0x425a, 0x9f, 0x29, 0xdb, 0xcd, 0xe0, 0xfa, 0x92, 0xf4);
+enum MEDIA_GAMUT_COMPRESSION_VALUES
+{
+	IGFX_MEDIA_GAMUT_COMPRESSION_DISABLED = 0,
+	IGFX_MEDIA_GAMUT_COMPRESSION_RELATIVE = 1,
+	IGFX_MEDIA_GAMUT_COMPRESSION_PERCEPTUAL = 2
+}MEDIA_GAMUT_COMPRESSION_VALUES;
+
+typedef [uuid(57B8A330-4E6C-4cfc-8EDC-0FD5A1FA5C79)]      //DEFINE_GUID(<<name>>, 0x57b8a330, 0x4e6c, 0x4cfc, 0x8e, 0xdc, 0xf, 0xd5, 0xa1, 0xfa, 0x5c, 0x79);
+struct IGFX_MEDIA_GAMUT_MAPPING
+{
+	/*IN*/		IGFX_VERSION_HEADER	versionHeader;
+
+#if IS_MEDIA_VERSION_SUPPORTED(1)	
+
+	/*OUT*/		DWORD	dwSupportedFeatures;
+	/*INOUT*/	DWORD	dwMediaGamutCompressionVal;
+	/*OUT*/		DWORD	dwMediaGamutCompressionValDef;
+	/*INOUT*/	DWORD	dwFlags;
+#endif
+}IGFX_MEDIA_GAMUT_MAPPING;
+
+
+
+#define CONFIGEX_VERSIONS_SUPPORTED	1
+#define IS_CONFIGEX_VERSION_SUPPORTED(x)	(x<=CONFIGEX_VERSIONS_SUPPORTED)
+
+typedef [uuid(0127C6DA-5609-4532-89F7-A8667A62888C)]
+struct 
+{ 
+    DWORD       dwOperatingMode;
+	DWORD       dwNDisplays;		//Number of displays
+    DWORD       dwPriDevUID; 		//Device on Primary Display( For Single Pipe Simultaneous mode, both devices are here )
+    DWORD       dwSecDevUID; 		//Device on Secondary Display
+	DWORD       dwThirdDevUID; 		//Device on Third Display
+	DWORD       dwFourthDevUID; 	//Device on Fourth Display
+}IGFX_CONFIG_DATA_EX;
+
+typedef [uuid(427D299B-9161-4dbf-AE58-CE80D6712A58)]
+struct 
+{ 
+	IGFX_VERSION_HEADER versionHeader;
+#if IS_CONFIGEX_VERSION_SUPPORTED(1)
+    DWORD 				dwNumTotalCfg;		//Total of validation configuration in the following array 
+	DWORD				dwReserved1;		// Reserved
+	DWORD				dwReserved2;
+    IGFX_CONFIG_DATA_EX	ConfigList[MAX_VALID_CONFIG];	//Valid device combinations, upto 7 devices
+#endif
+}IGFX_TEST_CONFIG_EX;
+
+//***************************************************************
+// Structure Definition for IGFX_AUX_INFO  STARTS
+//***************************************************************
+
+#define IGFX_MAX_AUX_BUFSIZE 16
+// Native AUX
+#define IGFX_AUX_WRITE					8
+#define IGFX_AUX_READ					9
+ // I2C on AUX
+#define IGFX_I2C_AUX_WRITE				0
+#define IGFX_I2C_AUX_READ				1
+#define IGFX_I2C_AUX_WRITE_STATUS_REQ	2
+// I2C with MOT set
+#define IGFX_I2C_AUX_WRITE_MOT			4
+#define IGFX_I2C_AUX_READ_MOT			5
+#define IGFX_I2C_AUX_WRITE_STATUS_REQ_MOT 6
+
+typedef [uuid(1970505e-817e-462b-a8b1-227455370b55)]
+struct IGFX_AUX_INFO
+{
+	DWORD	dwDeviceUID;//Display Device ID
+	DWORD	dwOpType;//Operation type
+	DWORD	dwSize;//Size of the data buffer
+	DWORD	dwAddress;//Address to read or write from
+	BYTE	Data[IGFX_MAX_AUX_BUFSIZE];//Data Buffer for read/write
+}IGFX_AUX_INFO;
+
+//***************************************************************
+// Structure Definition for IGFX_AUX_INFO  ENDS
+//***************************************************************
+
+
+//IGFX_BUS_INFO
+#define IGFX_BUS_I2C 0x0001
+//default bus is DDC
+#define IGFX_BUS_DDC 0x0002
+#define IGFX_BUS_GET 0x0001
+#define IGFX_BUS_SET 0x0002
+#define IGFX_MAX_DATA_SIZE 0x0080
+#define IGFX_MAX_BUS_BUFSIZE 0x0080
+#define IGFX_BUS_NO_INDEXING	0x0001
+#define IGFX_BUS_USE_INDEXING	0x0000
+
+//static DWORD dwBlockDevice[] =
+//{ 0x70, 0x72, 0x74, 0xFF}; //0x6E, 0x6F are removed as requested by Marketing
+//
+//static DWORD dwBlockAddress[] =
+//{ 0x70, 0x72, 0x74, 0xFF};
+
+
+typedef [uuid(D49BF5D9-A2F3-414b-95FC-8A98CFBB5A90)]
+struct IGFX_BUS_INFO
+{
+	DWORD	dwDeviceUID;
+	DWORD	dwOpType;
+	DWORD	dwSize;
+	DWORD	dwAddress;
+	DWORD	dwSubAddress;
+	DWORD	dwFlags;
+	BYTE	byBusType;
+	BYTE	Data[IGFX_MAX_BUS_BUFSIZE];
+} IGFX_BUS_INFO;
+
+//***************************************************************
+// Structure Definition for IGFX_SOURCE_HDMI_GBD_GUID  STARTS
+//***************************************************************
+#define GBD_DATA_SIZE 28
+typedef [uuid(25fcc1da-39e5-4d02-ac33-0374d268ad59)]
+struct IGFX_MEDIA_SOURCE_HDMI_GBD
+{ 
+WORD Version; //field (=1.3 only supported) [indicates HDMI 1.3 GBD profile]
+			  //High byte = 1, Low byte = 3
+DWORD Size;   //(HDMI P0 GBD payload size)
+//GBD_P0_HDMI_1_3 HdmiGBD; //Data/Payload (send directly to HDMI 1.3 sink)
+BYTE GBDPayLoad[GBD_DATA_SIZE];
+}IGFX_MEDIA_SOURCE_HDMI_GBD;
+
+typedef [uuid(4cbfa50e-e9d1-4213-b687-28dcd1347496)]
+struct IGFX_SOURCE_HDMI_GBD_DATA
+{
+/*IN*/ DWORD dwSourceID;
+//In case of extended desktop id=0 means primary, 1-secondary and so on
+//In case of clone, there is only one id=0
+/*OUT*/ BOOL IsXVYCCSupported;
+//Returns TRUE if there is an HDMI display associated with ulSourceID which 
+//can support xvYCC
+/*OUT*/ BOOL IsXVYCCEnabled;
+//Returns CUI+display status of xvYCC
+//If 2 HDMI displays are in clone, return TRUE if one of the display has xvYCC enabled & is capable
+/*IN*/ DWORD dwFlags;
+//To indicate type
+/*IN*/ IGFX_MEDIA_SOURCE_HDMI_GBD MediaSourceHDMIGBD;
+//Applied to the HDMI display associated with source ID
+//In case of clone with single source ID, driver applies this to xvYCC enabled displays internally
+}IGFX_SOURCE_HDMI_GBD_DATA;
+
+//***************************************************************
+// Structure Definition for IGFX_SOURCE_HDMI_GBD_GUID  ENDs
+//***************************************************************
+
+//XVYCC Structure Definition starts
+typedef [uuid(048bc691-5b3c-4070-8cc5-01db5fc3d111)]
+struct IGFX_XVYCC_INFO
+{
+	BOOL bEnableXvYCC;					// Enabled or Disabled
+	BOOL bIsXvYCCSupported;				// Supported(HDMI)/Unsupported(Non HDMI)
+	DWORD dwDeviceID;					// Device ID [HDMI Device]
+	DWORD dwFlags;  					// Reserved
+}IGFX_XVYCC_INFO;
+//XVYCC Structure Definition ends
+
+//YCBCR Structure Definition starts
+typedef [uuid(03623AE4-945C-45ec-B32D-C50282598D85)]
+struct IGFX_YCBCR_INFO
+{
+	BOOL bEnableYCbCr;					// Enabled or Disabled
+	BOOL bIsYCbCrSupported;				// Supported(HDMI)/Unsupported(Non HDMI)
+
+	DWORD dwDeviceID;					// Device ID [HDMI Device]
+	DWORD dwFlags;  					// Reserved
+
+} IGFX_YCBCR_INFO;
+//YCBCR Structure Definition starts
+
+//Audio topology defination start
+typedef [uuid(C99CBF80-C812-4AB2-838D-5E5BA31E7D71)]
+struct IGFX_AUDIO_FEATURE_INFO
+{
+	IGFX_VERSION_HEADER versionHeader;
+	DWORD dwNumberofAudio;
+	DWORD dwAudioCapDisplays[3];
+	DWORD dwAudioConfig;
+	DWORD dwActiveAudioDisplays[3];
+	DWORD dwAudioWoutVideo;
+	DWORD dwAudioSupport;
+	DWORD dwAudioWOVideoSupport;
+} IGFX_AUDIO_FEATURE_INFO;
+
+
+//Color Gamut (Color Accuracy) Structure Definition starts
+#define GAMUT_VERSIONS_SUPPORTED	1
+#define IS_GAMUT_VERSION_SUPPORTED(x)	(x<=GAMUT_VERSIONS_SUPPORTED)
+typedef [uuid(34351E2B-3248-4d92-9A86-C223ADA222EC)]
+struct IGFX_GAMUT
+{
+	/*IN*/	IGFX_VERSION_HEADER	versionHeader;
+#if IS_GAMUT_VERSION_SUPPORTED(1)
+	/*IN*/	DWORD	dwDeviceUID;
+	/*OUT*/	BOOL	bIsFeatureSupported;
+	/*INOUT*/	BOOL	bEnableDisable;	
+	/*INOUT*/	DWORD	dwReserved;
+#endif
+}IGFX_GAMUT;
+
+
+
+typedef [uuid(B7B5138A-4FE4-4564-AC06-0212C400BA1B)]      //DEFINE_GUID(<<name>>, 0xb7b5138a, 0x4fe4, 0x4564, 0xac, 0x6, 0x2, 0x12, 0xc4, 0x0, 0xba, 0x1b);
+struct IGFX_GOP_VERSION
+{
+	ULONG ulMajorVersion;
+	ULONG ulMinorVersion;
+	ULONG ulBuildNumber;
+	BOOLEAN bGOP_VBIOS;
+}IGFX_GOP_VERSION;
+
+//Color Gamut (Color Accuracy) Structure Definition ends
+
+///Restor Graphics
+#define RESTORE_GRAPHICS_DEFAULT_VERSION_SUPPORTED   1
+#define IS_RESTORE_GRAPHICS_DEFAULT_VERSION_SUPPORTED(x) (x <= RESTORE_GRAPHICS_DEFAULT_VERSION_SUPPORTED)
+
+typedef [uuid(B7354D53-F75E-4330-8279-84A8824DFF50)]   //DEFINE_GUID(<<name>>, 0xb7354d53, 0xf75e, 0x4330, 0x82, 0x79, 0x84, 0xa8, 0x82, 0x4d, 0xff, 0x50);
+struct IGFX_RESTORE_GRAPHICS_DEFAULT_VERSION_HEADER
+{
+	DWORD dwVersion;
+	DWORD dwReserved;
+    IGFX_ERROR	ErrorInfo;
+}IGFX_RESTORE_GRAPHICS_DEFAULT_VERSION_HEADER;
+
+typedef [uuid(E5FDE929-A42F-46f3-BED4-CA16D0704A29)] //DEFINE_GUID(<<name>>, 0xe5fde929, 0xa42f, 0x46f3, 0xbe, 0xd4, 0xca, 0x16, 0xd0, 0x70, 0x4a, 0x29);
+struct IGFX_RESTORE_GRAPHICS_DEFAULT_INFO
+{
+	IGFX_RESTORE_GRAPHICS_DEFAULT_VERSION_HEADER header;
+#if IS_RESTORE_GRAPHICS_DEFAULT_VERSION_SUPPORTED(1)
+#endif
+
+#if IS_RESTORE_GRAPHICS_DEFAULT_VERSION_SUPPORTED(2)  
+     // add new code here for future releases
+#endif
+
+}IGFX_RESTORE_GRAPHICS_DEFAULT_INFO;
+
+
+/*typedef [uuid(6e5c80de-0cd5-4c4b-98b0-b1f3c2b29d5b)]
+struct IGFX_BUS_INFO
+{
+	DWORD	dwDeviceUID;//Display Device ID
+	DWORD	dwOpType;//Operation Type
+	DWORD	dwSize;//Size of the data buffer
+	DWORD	dwAddress;//Address to read or write from
+	DWORD	dwSubAddress;//Offset address
+	DWORD	dwFlags;//Indicates whether indexing is required or not	
+	BYTE	byBusType;//Bus type - DDC/I2C
+	BYTE	Data[IGFX_MAX_BUS_BUFSIZE];//Data buffer for read/write
+}IGFX_BUS_INFO;
+
+
+
+typedef [uuid(82001425-75b3-4d7c-9f9a-1391dbab65ff)]
+struct IGFX_HDMI_INFOFRAME
+{
+	IGFX_ERROR ErrorInfo;
+	DWORD dwDeviceID;
+    GUID Guid;
+    IGFX_HDMI_COMMAND dwCommand;
+    UCHAR ucType;
+    UCHAR ucSize;
+    IGFX_VS_IF VS_INFOFRAME;    
+}IGFX_HDMI_INFOFRAME;
+typedef [uuid(e668a2b1-ed2d-4801-ab17-44eb0a1bb4dc)]
+struct IGFX_MBM_INFO
+{
+	BOOL bIsFeatureSupported; //Is the feature supported?
+	BOOL bEnableMBM; //Is MBM Enabled?
+	DWORD dwDisplayUID; //Display Device ID
+	DWORD dwFlags; //Reserved
+}IGFX_MBM_INFO;
+
+typedef [uuid(1f079a07-cbae-4b24-89ed-35fbd24d454c)]
+struct IGFX_DLCAPS
+{
+	DWORD dwFlags; //Refers to the Nivo device
+	DWORD dwDLVersion; //Refers to Stack Version Details LOWORD-minor version HIWORD-major version
+	DWORD dwNumDevices;//Maximum possible NIVO devices of a particular type
+	DWORD dwReserved1;//On GET call,IGD spec version
+	DWORD dwReserved2;//Reserved, can be used for future use
+}IGFX_DLCAPS;
+
+typedef [uuid(2aa87200-e2ca-40b4-b007-e6b8bf91c954)]
+struct IGFX_ERROR
+{
+	BOOLEAN ErrorOccured;         // TRUE or FALSE
+	DWORD LastSystemErrorVal;     // return from GetLastError() api call.
+    //enum CUIErrorCode ExtendedError;  
+	BSTR  ExtendedErrorBstr;      // Optional Use, use for Test purposes only!
+}IGFX_ERROR; */

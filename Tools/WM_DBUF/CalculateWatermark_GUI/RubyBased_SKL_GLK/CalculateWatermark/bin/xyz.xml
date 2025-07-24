@@ -1,0 +1,13 @@
+<?xml-stylesheet type='text/xsl' href='DisplayTest.xsl'?>
+<Report
+  title="Display Test Automation">
+<Log
+    time="2/11/2017 9:58:17 AM"
+    level="INFO"><![CDATA[*************************** System Summary ***************************]]><br />
+<![CDATA[System Name: AKUMARV-MOBL]]><br />
+</Log>
+<Log
+    time="2/11/2017 9:58:17 AM"
+    level="WARN"><![CDATA[Exception data is StartIndex cannot be less than zero.
+Parameter name: startIndex]]><br />
+</Log>

@@ -1,0 +1,1 @@
+mm -w 8 -n -pci 20010 > tenh_offset.txt

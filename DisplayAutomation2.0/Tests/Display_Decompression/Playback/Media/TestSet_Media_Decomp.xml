@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+  <Feature Name="Media_Decomp" Owner="joshipra">
+
+    <Test LastModifiedWW="2020.WW51" Name="media_decomp_basic.py" Owner="joshipra" Priority="P1" Version="1">
+      <TestInstance Grids="CI;ETM;GFT" Id="MD001">
+        <CommandLine>python Tests\Display_Decompression\Playback\Media\media_decomp_basic.py -edp_a -pixel_format YUV_420</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>TGL</Platform>
+        <TestEnvironment>TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;ETM;GFT" Id="MD002">
+        <CommandLine>python Tests\Display_Decompression\Playback\Media\media_decomp_basic.py -edp_a -hdmi_b SINK_HDM007 -dp_g SINK_DPS007 -dp_h SINK_DPS009 -pixel_format YUV_420</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>TGL</Platform>
+        <TestEnvironment>TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;ETM;GFT" Id="MD003">
+        <CommandLine>python Tests\Display_Decompression\Playback\Media\media_decomp_basic.py -edp_a -hdmi_b SINK_HDM007 -dp_d SINK_DPS007 -dp_e SINK_DPS009 -pixel_format YUV_420</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>TGL</Platform>
+        <TestEnvironment>TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;ETM;GFT" Id="MD004">
+        <CommandLine>python Tests\Display_Decompression\Playback\Media\media_decomp_basic.py  -edp_a -hdmi_b SINK_HDM007 -dp_c SINK_DPS007 -dp_d SINK_DPS009 -pixel_format YUV_420</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>TGL</Platform>
+        <TestEnvironment>TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+    </Test>
+
+    <Test LastModifiedWW="2020.WW51" Name="media_decomp_max_resolution.py" Owner="joshipra" Priority="P2" Version="1">
+      <TestInstance Grids="CI;ETM;GFT" Id="MD005">
+        <CommandLine>python Tests\Display_Decompression\Playback\Media\media_decomp_max_resolution.py -edp_a -hdmi_b SINK_HDM007 -dp_d SINK_DPS007 -dp_e SINK_DPS009 -pixel_format YUV_420</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>TGL</Platform>
+        <TestEnvironment>TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;ETM;GFT" Id="MD006">
+        <CommandLine>python Tests\Display_Decompression\Playback\Media\media_decomp_max_resolution.py -edp_a -hdmi_b SINK_HDM011 -dp_c SINK_DPS007 -dp_d SINK_DPS009 -pixel_format YUV_420</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>TGL</Platform>
+        <TestEnvironment>TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+	  <TestInstance Grids="CI;ETM;GFT" Id="MD007">
+        <CommandLine>python Tests\Display_Decompression\Playback\Media\media_decomp_max_resolution.py -edp_a -hdmi_b SINK_HDM011 -dp_g SINK_DPS007 -dp_h SINK_DPS009 -pixel_format YUV_420</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>TGL</Platform>
+        <TestEnvironment>TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+    </Test>
+  </Feature>
+
+</Display_Automation_2.0>

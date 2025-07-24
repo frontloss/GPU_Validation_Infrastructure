@@ -1,0 +1,545 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+    <Feature Name="Multiplane Overlay" Owner="imahendr">
+        <Test LastModifiedWW="2017.WW5" Name="mpo_3d_apps_media_resize_p010.py" Owner="anshetty" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOPX001">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_3d_apps_media_resize_p010.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOPX028">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_3d_apps_media_resize_p010.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW5" Name="mpo_3d_apps_media_resize_p012.py" Owner="anshetty" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOPX002">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_3d_apps_media_resize_p012.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOPX029">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_3d_apps_media_resize_p012.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW5" Name="mpo_3d_apps_media_resize_p016.py" Owner="anshetty" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOPX003">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_3d_apps_media_resize_p016.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOPX030">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_3d_apps_media_resize_p016.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW5" Name="mpo_3d_apps_media_snapmode_p010.py" Owner="anshetty" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOPX004">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_3d_apps_media_snapmode_p010.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOPX031">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_3d_apps_media_snapmode_p010.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW5" Name="mpo_3d_apps_media_snapmode_p012.py" Owner="anshetty" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOPX005">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_3d_apps_media_snapmode_p012.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOPX032">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_3d_apps_media_snapmode_p012.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW5" Name="mpo_3d_apps_media_snapmode_p016.py" Owner="anshetty" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOPX006">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_3d_apps_media_snapmode_p016.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOPX033">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_3d_apps_media_snapmode_p016.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW6" Name="mpo_3d_apps_media_youtube_resize_p010.py" Owner="anshetty" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOPX007">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_3d_apps_media_youtube_resize_p010.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOPX034">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_3d_apps_media_youtube_resize_p010.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW6" Name="mpo_3d_apps_media_youtube_resize_p012.py" Owner="anshetty" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOPX008">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_3d_apps_media_youtube_resize_p012.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOPX035">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_3d_apps_media_youtube_resize_p012.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW6" Name="mpo_3d_apps_media_youtube_resize_p016.py" Owner="anshetty" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOPX009">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_3d_apps_media_youtube_resize_p016.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOPX036">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_3d_apps_media_youtube_resize_p016.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW6" Name="mpo_plane_format_scaling_p010.py" Owner="anshetty" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOPX010">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_scaling_p010.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOPX037">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_scaling_p010.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW6" Name="mpo_plane_format_scaling_p012.py" Owner="anshetty" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOPX011">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_scaling_p012.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOPX038">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_scaling_p012.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW6" Name="mpo_plane_format_scaling_p016.py" Owner="anshetty" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOPX012">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_scaling_p016.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOPX039">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_scaling_p016.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW5" Name="mpo_media_youtube_snapmode_p010.py" Owner="smithab" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOPX013">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_media_youtube_snapmode_p010.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOPX040">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_media_youtube_snapmode_p010.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW5" Name="mpo_media_youtube_snapmode_p012.py" Owner="smithab" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOPX014">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_media_youtube_snapmode_p012.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOPX041">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_media_youtube_snapmode_p012.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW5" Name="mpo_media_youtube_snapmode_p016.py" Owner="smithab" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOPX015">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_media_youtube_snapmode_p016.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOPX042">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_media_youtube_snapmode_p016.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW5" Name="mpo_plane_format_media_resize_p010.py" Owner="smithab" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOPX016">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_media_resize_p010.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOPX043">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_media_resize_p010.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW5" Name="mpo_plane_format_media_resize_p012.py" Owner="smithab" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOPX017">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_media_resize_p012.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOPX044">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_media_resize_p012.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW5" Name="mpo_plane_format_media_resize_p016.py" Owner="smithab" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOPX018">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_media_resize_p016.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOPX045">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_media_resize_p016.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW5" Name="mpo_plane_format_media_snapmode_p010.py" Owner="smithab" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOPX019">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_media_snapmode_p010.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOPX046">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_media_snapmode_p010.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW5" Name="mpo_plane_format_media_snapmode_p012.py" Owner="smithab" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOPX020">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_media_snapmode_p012.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOPX047">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_media_snapmode_p012.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW5" Name="mpo_plane_format_media_snapmode_p016.py" Owner="smithab" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOPX021">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_media_snapmode_p016.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOPX048">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_media_snapmode_p016.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW6" Name="mpo_plane_format_media_youtube_resize_p010.py" Owner="smithab" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOPX022">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_media_youtube_resize_p010.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOPX049">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_media_youtube_resize_p010.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW6" Name="mpo_plane_format_media_youtube_resize_p012.py" Owner="smithab" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOPX023">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_media_youtube_resize_p012.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOPX050">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_media_youtube_resize_p012.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW6" Name="mpo_plane_format_media_youtube_resize_p016.py" Owner="smithab" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOPX024">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_media_youtube_resize_p016.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOPX051">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_media_youtube_resize_p016.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW6" Name="mpo_plane_format_up_down_scaling_p010.py" Owner="smithab" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOPX025">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_up_down_scaling_p010.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOPX052">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_up_down_scaling_p010.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW6" Name="mpo_plane_format_up_down_scaling_p012.py" Owner="smithab" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOPX026">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_up_down_scaling_p012.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOPX053">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_up_down_scaling_p012.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2017.WW6" Name="mpo_plane_format_up_down_scaling_p016.py" Owner="smithab" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPOPX027">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_up_down_scaling_p016.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPOPX054">
+                <CommandLine>python Tests\MPO\Flip\GEN10\mpo_plane_format_up_down_scaling_p016.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+    </Feature>
+</Display_Automation_2.0>

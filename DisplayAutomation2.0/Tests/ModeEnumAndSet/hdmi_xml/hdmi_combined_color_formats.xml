@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<Display DPCD="NONE" EDID="HDMI_EDID_COMBINED_COLOR_FORMAT.bin">
+	<Revision CreatedBy="Supriya, Krishnamurthi" CreatedOn="WW16" CurrentRevision="1">
+		<RevisionHistory RevisionID="1" Name="Supriya, Krishnamurthi" WW="WW23" Comments="Mode Reviewed and Verified" />
+		<RevisionHistory RevisionID="2" Name="Gouthamn" WW="WW45" Comments="Modified EDID file. Corrected YUV 4:2:0 capability block to support combined mode : HSD-16017449774. Added VIC 95 mode for negative testing and VIC 97 mode for positive testing" />
+	</Revision>
+	<GoldenModeTable>
+		<EDIDInstance ModeIndex="1" HActive="3840" VActive="2160" RefreshRate="60" Scanline="Progressive" Scaling="Default" PixelCLK="594000000" />
+		<!-- Negative testing: YUV420 mode is not supported for pixel clock lesser than 590 Mhz, hence YUV420 mode shouldn't be enumerated by driver for below mode-->
+		<EDIDInstance ModeIndex="2" HActive="3840" VActive="2160" RefreshRate="30" Scanline="Progressive" Scaling="Default" PixelCLK="297000000" />
+		<!-- Check if RGB+YUV444 mode gets reported correctly -->
+		<EDIDInstance ModeIndex="3" HActive="3840" VActive="2160" RefreshRate="30" Scanline="Progressive" Scaling="Default" PixelCLK="297000000" />
+	</GoldenModeTable>
+	<Platform Name="JSL" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">1=0x08;1=0x09;1=0x0A;1=0x0B;2=0x09;3=0x08;3=0x0A;3=0x0B</ModeControlFlag><!-- One mode supports multiple color formats. Provide each supported color format with ";" separation-->
+	</Platform>
+	<Platform Name="TGL" SKU="">
+		<IgnoreModeIndex>2</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">1=0x08;1=0x09;1=0x0A;1=0x0B;2=0x09;3=0x08;3=0x0A;3=0x0B</ModeControlFlag><!-- One mode supports multiple color formats. Provide each supported color format with ";" separation-->
+	</Platform>
+	<Platform Name="DG1" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">1=0x08;1=0x09;1=0x0A;1=0x0B;2=0x09;3=0x08;3=0x0A;3=0x0B</ModeControlFlag><!-- One mode supports multiple color formats. Provide each supported color format with ";" separation-->
+	</Platform>
+	<Platform Name="DG2" SKU="">
+		<IgnoreModeIndex>2</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">1=0x08;1=0x09;1=0x0A;1=0x0B;2=0x09;3=0x08;3=0x0A;3=0x0B</ModeControlFlag><!-- One mode supports multiple color formats. Provide each supported color format with ";" separation-->
+	</Platform>
+	<Platform Name="RKL" SKU="">
+		<IgnoreModeIndex>None</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">1=0x08;1=0x09;1=0x0A;1=0x0B;2=0x09;3=0x08;3=0x0A;3=0x0B</ModeControlFlag><!-- One mode supports multiple color formats. Provide each supported color format with ";" separation-->
+	</Platform>
+	<Platform Name="ADLS" SKU="">
+		<IgnoreModeIndex>2</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">1=0x08;1=0x09;1=0x0A;1=0x0B;2=0x09;3=0x08;3=0x0A;3=0x0B</ModeControlFlag><!-- One mode supports multiple color formats. Provide each supported color format with ";" separation-->
+	</Platform>
+	<Platform Name="ADLP" SKU="">
+		<IgnoreModeIndex>2</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">1=0x08;1=0x09;1=0x0A;1=0x0B;2=0x09;3=0x08;3=0x0A;3=0x0B</ModeControlFlag><!-- One mode supports multiple color formats. Provide each supported color format with ";" separation-->
+	</Platform>
+	<Platform Name="MTL" SKU="">
+		<IgnoreModeIndex>2</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">1=0x08;1=0x09;1=0x0A;1=0x0B;2=0x09;3=0x08;3=0x0A;3=0x0B</ModeControlFlag><!-- One mode supports multiple color formats. Provide each supported color format with ";" separation-->
+	</Platform>
+	<Platform Name="ELG" SKU="">
+		<IgnoreModeIndex>2</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">1=0x08;1=0x09;1=0x0A;1=0x0B;2=0x09;3=0x08;3=0x0A;3=0x0B</ModeControlFlag><!-- One mode supports multiple color formats. Provide each supported color format with ";" separation-->
+	</Platform>
+	<Platform Name="LNL" SKU="">
+		<IgnoreModeIndex>2</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">1=0x08;1=0x09;1=0x0A;1=0x0B;2=0x09;3=0x08;3=0x0A;3=0x0B</ModeControlFlag><!-- One mode supports multiple color formats. Provide each supported color format with ";" separation-->
+	</Platform>
+	<Platform Name="PTL" SKU="">
+		<IgnoreModeIndex>2</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">1=0x08;1=0x09;1=0x0A;1=0x0B;2=0x09;3=0x08;3=0x0A;3=0x0B</ModeControlFlag><!-- One mode supports multiple color formats. Provide each supported color format with ";" separation-->
+	</Platform>
+	<Platform Name="NVL" SKU="">
+		<IgnoreModeIndex>2</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">1=0x08;1=0x09;1=0x0A;1=0x0B;2=0x09;3=0x08;3=0x0A;3=0x0B</ModeControlFlag><!-- One mode supports multiple color formats. Provide each supported color format with ";" separation-->
+	</Platform>
+	<Platform Name="CLS" SKU="">
+		<IgnoreModeIndex>2</IgnoreModeIndex>
+		<ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+		<ModeControlFlag CommonValue="0x08">1=0x08;1=0x09;1=0x0A;1=0x0B;2=0x09;3=0x08;3=0x0A;3=0x0B</ModeControlFlag><!-- One mode supports multiple color formats. Provide each supported color format with ";" separation-->
+	</Platform>
+</Display>
+<!--  ModeControlFlag 8 Bit Definition:m
+	{
+	('colorFormat'	, c_ubyte, 2), # Bit 0,1
+	('reserved_2' 	, c_ubyte, 1), # Bit 2
+	('bpc'		  	, c_ubyte, 2), # Bit 3,4
+	('reserved_5' 	, c_ubyte, 1), # Bit 5
+	('pixelRepMode' , c_ubyte, 1), # Bit 6
+	('reserved_7' 	, c_ubyte, 1)  # Bit 7
+	}
+
+	| colorFormat_RGB 		= 00 |
+	| colorFormat_YUV420 	= 01 |
+	| colorFormat_YUV444 	= 10 |
+	| colorFormat_YUV422 	= 11 |
+
+	|  bpc_6bpc	 = 00  |
+	|  bpc_8bpc  = 01  |
+	|  bpc_10bpc = 10  |
+	|  bpc_12bpc = 11  |
+
+	pixelRepMode (0 = Not a Pixel Replicated Mode, 1 = Pixel Replicated Mode) -->

@@ -1,0 +1,9 @@
+Binary Files are not allowed Git Repository. 
+Please manually Add RmExport.dll here to build the solution.
+
+Path: 
+	..\DRAM_BW\Include\RmExport.dll
+
+How to Generate the file: 
+	Build the following project from Gfx Driver code base
+	..\gfx-driver\Tools\Display\Exports\ResourceManager

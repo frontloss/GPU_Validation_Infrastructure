@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PanelInputData>
+    <Revision CreatedBy="P, Raghupathy" CreatedOn="WW15" CurrentRevision="4">
+		<RevisionHistory RevisionID="4" RevisedBy="Venkatesh, Bharath" RevisedOn="WW3" Comment="New EDP5k with 60Hz edid added" />
+        <RevisionHistory RevisionID="3" RevisedBy="D S, Vinod" RevisedOn="WW28" Comment="EDP entries addition" />
+		<RevisionHistory RevisionID="2" RevisedBy="Gurusamy, BalajiX" RevisedOn="WW18" Comment="Cleanup and Check-in" />
+        <RevisionHistory RevisionID="1" RevisedBy="Kumar, DushyanthX" RevisedOn="WW15" Comment="Adding Panel list and Verification" />
+    </Revision>
+            
+    <DefaultPanelList>
+		<PanelPlatform Platform="KBL" 	EDP="EDP007" HDMI="HDM025" DP="DPS022"/>
+        <PanelPlatform Platform="GLK" 	EDP="EDP007" HDMI="HDM025" DP="DPS022"/>
+        <PanelPlatform Platform="ICLLP" EDP="EDP007" HDMI="HDM025" DP="DPS022"/>
+        <PanelPlatform Platform="ICLHP" EDP="EDP007" HDMI="HDM025" DP="DPS022"/>
+		<PanelPlatform Platform="LKF1" 	EDP="NA"     HDMI="HDM025" DP="DPS022"/>
+        <PanelPlatform Platform="JSL" 	EDP="EDP007" HDMI="HDM025" DP="DPS022"/>
+		<PanelPlatform Platform="TGL" 	EDP="EDP007" HDMI="HDM025" DP="DPS022"/>
+        <PanelPlatform Platform="DG1" 	EDP="EDP007" HDMI="HDM025" DP="DPS022"/>
+    </DefaultPanelList>
+
+    <PanelCaps>
+		<!-- HDMI Display EDID -->
+		<PanelInstance PanelIndex="HDM001" EDID="Acer_CB240HYK_HDMI.bin" 						DPCD="NA" Description="ACR_2.0_3840x2160_600MHZ" Owner="bgurusax" 	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM002" EDID="Acer_CB281HK_HDMI.bin"  						DPCD="NA" Description="ACR_2.0_3840x2160_600MHZ" Owner="bgurusax" 	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM003" EDID="Acer_H277HK_HDMI.bin"   						DPCD="NA" Description="ACR_2.0_3840x2160_600MHZ" Owner="bgurusax" 	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM004" EDID="ASUS_PG279_HDMI.bin"    						DPCD="NA" Description="ACI_1.4_2560x1440_300MHZ" Owner="akaleem"  	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM005" EDID="BenQ_SW320_HDMI.bin"    						DPCD="NA" Description="BNQ_2.0_3840x2160_600MHZ" Owner="bgurusax" 	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM006" EDID="Dell_P2415Q_HDMI.bin"   						DPCD="NA" Description="DEL_1.4_3840x2160_300MHZ" Owner="bgurusax" 	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM007" EDID="Dell_U2410_HDMI.bin"    						DPCD="NA" Description="DEL_1.4_1920x1200_170MHZ" Owner="bgurusax" 	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM008" EDID="DELL_U2713HM_HDMI.bin" 						DPCD="NA" Description="DEL_1.4_1920x1080_170MHZ" Owner="akaleem"  	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM009" EDID="DELL_U2913WM_HDMI.bin" 						DPCD="NA" Description="DEL_1.4_2560x1080_190MHZ" Owner="akaleem"  	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM010" EDID="DELL_U3014_HDMI.bin" 							DPCD="NA" Description="DEL_1.4_2560X1600_280MHZ" Owner="akaleem"  	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM011" EDID="DELL_UP2414Q_HDMI.bin" 						DPCD="NA" Description="DEL_1.4_3840X2160_300MHZ" Owner="akaleem"  	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM012" EDID="DELL_UP3216Q_HDMI.bin" 						DPCD="NA" Description="DEL_1.4_3840X2160_300MHZ" Owner="akaleem"  	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM013" EDID="LENOVO_Pro2840m_HDMI.bin" 						DPCD="NA" Description="LEN_1.4_1920x1080_150MHZ" Owner="akaleem"  	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM014" EDID="LG_OLED55B7AU_HDMI.bin" 						DPCD="NA" Description="GSM_2.0_3840x2160_600MHZ" Owner="bgurusax" 	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM015" EDID="LGUltraHD_HDMI.bin" 							DPCD="NA" Description="GSM_2.0_3840x2160_600MHZ" Owner="akaleem"  	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM016" EDID="Philips_288P6_HDMI.bin" 						DPCD="NA" Description="PHL_1.4_3840x2160_300MHZ" Owner="bgurusax" 	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM017" EDID="SAMSUNG_S23A950D_HDMI.bin" 					DPCD="NA" Description="SAM_1.4_1920x1080_230MHZ" Owner="akaleem"  	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM018" EDID="Samsung_U28E590D_HDMI_P2.bin" 					DPCD="NA" Description="SAM_2.0_3840x2160_600MHZ" Owner="bgurusax" 	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM019" EDID="Samsung_UN65HU8550FXZA_HDMITV_P2.bin"  		DPCD="NA" Description="SAM_2.0_3840X2160_600MHZ" Owner="bgurusax" 	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM020" EDID="SHARP_PN_K321_HDMI.bin" 						DPCD="NA" Description="SHP_1.4_3840X2160_300MHZ" Owner="akaleem"  	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM021" EDID="Acer_K242HQK_HDMI.bin"  						DPCD="NA" Description="ACR_2.0_3840x2160_600MHZ" Owner="bgurusax" 	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM022" EDID="HDMI_4k_60_10_12_BPC_SCALAR.bin" 				DPCD="NA" Description="DEL_1.4_1920x1080_170MHZ" Owner="akaleem"  	PanelType="SYN" />
+		<PanelInstance PanelIndex="HDM023" EDID="HDMI_3011_xvycc_Remove_RGB.EDID" 				DPCD="NA" Description="DEL_1.4_1920x1200_180MHZ" Owner="imahendr" 	PanelType="SYN" />
+		<PanelInstance PanelIndex="HDM024" EDID="HDMI_DELL.EDID" 								DPCD="NA" Description="DEL_1.4_1920x1200_170MHZ" Owner="imahendr" 	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM025" EDID="HDMI_Dell_3011.EDID" 							DPCD="NA" Description="DEL_1.4_1920x1080_180MHZ" Owner="imahendr" 	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM026" EDID="HDMI_Dell_U2709_YCBCR.EDID" 					DPCD="NA" Description="DEL_1.4_1920x1080_170MHZ" Owner="imahendr" 	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM027" EDID="HDMI_DELL_U2711.EDID" 							DPCD="NA" Description="DEL_1.4_1920x1080_170MHZ" Owner="anshetty" 	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM028" EDID="HDMI_DELL_U2711_DeepClr_8bpc.EDID" 			DPCD="NA" Description="DEL_1.4_1920x1080_170MHZ" Owner="imahendr" 	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM029" EDID="HDMI_DELL_U2711_DeepClr_10bpc.EDID" 			DPCD="NA" Description="DEL_1.4_1920x1080_170MHZ" Owner="imahendr" 	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM030" EDID="HDMI_DELL_U2711_XVYCC.EDID" 					DPCD="NA" Description="DEL_1.4_1920x1080_170MHZ" Owner="imahendr" 	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM031" EDID="HDMI_EDID_1_4_MODES.bin" 						DPCD="NA" Description="SAM_1.4_1920x1080_230MHZ" Owner="gyd" 		PanelType="SYN" />
+		<PanelInstance PanelIndex="HDM032" EDID="HDMI_EDID_NON_PRMODES_SET1.bin" 				DPCD="NA" Description="MEI_2.0_3840x2160_600MHZ" Owner="gyd" 		PanelType="SYN" />
+		<PanelInstance PanelIndex="HDM033" EDID="HDMI_EDID_NON_PRMODES_SET1_SCDC.bin" 			DPCD="NA" Description="MEI_2.0_3840x2160_600MHZ" Owner="gyd" 		PanelType="SYN" />
+		<PanelInstance PanelIndex="HDM034" EDID="HDMI_EDID_NON_PRMODES_SET2.bin" 				DPCD="NA" Description="MEI_2.0_3840x2160_600MHZ" Owner="gyd" 		PanelType="SYN" />
+		<PanelInstance PanelIndex="HDM035" EDID="HDMI_EDID_NON_PRMODES_SET2_SCDC.bin" 			DPCD="NA" Description="MEI_2.0_3840x2160_600MHZ" Owner="gyd" 		PanelType="SYN" />
+		<PanelInstance PanelIndex="HDM036" EDID="HDMI_EDID_NON_PRMODES_SET3.bin" 				DPCD="NA" Description="MEI_2.0_3840x2160_600MHZ" Owner="gyd" 		PanelType="SYN" />
+		<PanelInstance PanelIndex="HDM037" EDID="HDMI_EDID_NON_PRMODES_SET3_SCDC.bin" 			DPCD="NA" Description="MEI_2.0_3840x2160_600MHZ" Owner="gyd" 		PanelType="SYN" />
+		<PanelInstance PanelIndex="HDM038" EDID="HDMI_EDID_NON_PRMODES_SET4.bin" 				DPCD="NA" Description="MEI_2.0_3840x2160_600MHZ" Owner="gyd" 		PanelType="SYN" />
+		<PanelInstance PanelIndex="HDM039" EDID="HDMI_EDID_NON_PRMODES_SET4_SCDC.bin" 			DPCD="NA" Description="MEI_2.0_3840x2160_600MHZ" Owner="gyd" 		PanelType="SYN" />
+		<PanelInstance PanelIndex="HDM040" EDID="HDMI_EDID_YUV420_1920_1080_60HzMode.bin" 		DPCD="NA" Description="GSM_1.4_1920x1080_160MHZ" Owner="gyd" 		PanelType="SYN" />
+		<PanelInstance PanelIndex="HDM041" EDID="HDMI_EDID_YUV420_1920_1080_60HzMode_SCDC.bin" 	DPCD="NA" Description="GSM_1.4_1920x1080_160MHZ" Owner="gyd" 		PanelType="SYN" />
+		<PanelInstance PanelIndex="HDM042" EDID="HDMI_EDID_YUV420_3840_2160_60HzMode.bin" 		DPCD="NA" Description="DEL_1.4_1920x1080_170MHZ" Owner="gyd" 		PanelType="SYN" />
+		<PanelInstance PanelIndex="HDM043" EDID="HDMI_EDID_YUV420_3840_2160_60HzMode_SCDC.bin" 	DPCD="NA" Description="DEL_1.4_1920x1080_170MHZ" Owner="gyd" 		PanelType="SYN" />
+		<PanelInstance PanelIndex="HDM044" EDID="HDMI_EDID_YUV420_MODES.bin" 					DPCD="NA" Description="GSM_1.4_1920x1080_160MHZ" Owner="gyd" 		PanelType="SYN" />
+		<PanelInstance PanelIndex="HDM045" EDID="HDMI_EDID_YUV420_MODES_SCDC.bin" 				DPCD="NA" Description="GSM_1.4_1920x1080_160MHZ" Owner="gyd" 		PanelType="SYN" />
+		<PanelInstance PanelIndex="HDM046" EDID="HDMI_HP.EDID" 									DPCD="NA" Description="HWP_1.4_1920x1200_170MHZ" Owner="imahendr" 	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM047" EDID="LG_27UD88-W_HDMI.bin" 							DPCD="NA" Description="GSM_2.0_3840x2160_600MHZ" Owner="akaleem"  	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM048" EDID="Non_Audio_Dell_2414Q_HDMI.bin" 				DPCD="NA" Description="DEL_2.0_3840x2160_300MHZ" Owner="rohitku1" 	PanelType="PHY" />
+		<PanelInstance PanelIndex="HDM049" EDID="rgb_quantization_samsung.EDID" 				DPCD="NA" Description="SAM_1.4_1920x1080_230MHZ" Owner="imahendr" 	PanelType="SYN" />
+		<PanelInstance PanelIndex="HDM050" EDID="SamsungJS9500_HDR.bin"  						DPCD="NA" Description="SAM_2.0_3840X2160_600MHZ" Owner="smithab" 	PanelType="PHY" />
+		
+		<!-- DP-SST Display EDID and DPCD : Description format = HRESxVRES@RR_BPC_LINKRATE_LANECOUNT_SSCSTATE_FEATURE_MAKE (FEATURE & MAKE are optional) -->
+		<PanelInstance PanelIndex="DPS001" EDID="Acer_CB240HYK_DP.bin" 				DPCD="Acer_CB240HYK_DPCD.txt" 			Description="ACR_3840x2160_40MHZ_5.4_4LANE" 					 Owner="bgurusax" PanelType="PHY" />
+		<PanelInstance PanelIndex="DPS002" EDID="Acer_CB281HK_DP.bin" 				DPCD="Acer_CB281HK_DPCD.txt" 			Description="MST_3840x2160_70MHZ_5.4_4LANE" 					 Owner="bgurusax" PanelType="PHY" />
+		<PanelInstance PanelIndex="DPS003" EDID="Acer_H277HK_DP.bin" 				DPCD="Acer_H277HK_DPCD.txt" 			Description="ACR_3840x2160_600MHZ_5.4_4LANE" 					 Owner="bgurusax" PanelType="PHY" />
+		<PanelInstance PanelIndex="DPS004" EDID="Acer_K242HQK_DP.bin" 				DPCD="Acer_K242HQK_DPCD.txt" 			Description="ACR_3840x2160_600MHZ_5.4_4LANE" 					 Owner="bgurusax" PanelType="PHY" />
+		<PanelInstance PanelIndex="DPS005" EDID="ASUS_PG279Q_DP.bin" 				DPCD="ASUS_PG279Q_DPCD.txt" 			Description="ACI_2560x1440_590MHZ_5.4_4LANE" 					 Owner="akaleem"  PanelType="PHY" />
+		<PanelInstance PanelIndex="DPS006" EDID="Benq_SW320_DP.bin" 				DPCD="Benq_SW320_DPCD.txt" 				Description="BNQ_3840x2160_600MHZ_5.4_4LANE" 					 Owner="bgurusax" PanelType="PHY" />
+		<PanelInstance PanelIndex="DPS007" EDID="Dell_P2415Q_DP.bin" 				DPCD="Dell_P2415Q_DPCD.txt" 			Description="DEL_3840x2160_300MHZ_5.4_4LANE" 					 Owner="bgurusax" PanelType="PHY" />
+		<PanelInstance PanelIndex="DPS008" EDID="DELL_U2312HM_DP.bin" 				DPCD="DELL_U2312HM_DPCD.txt" 			Description="DEL_1920x1080_170MHZ_2.7_4LANE" 					 Owner="akaleem"  PanelType="PHY" />
+		<PanelInstance PanelIndex="DPS009" EDID="Dell_U2410_DP.bin" 				DPCD="Dell_U2410_DPCD.txt" 				Description="DEL_1920x1200_170MHZ_2.7_4LANE" 					 Owner="bgurusax" PanelType="PHY" />
+		<PanelInstance PanelIndex="DPS010" EDID="DELL_UP2414Q_DP.bin" 				DPCD="DELL_UP2414Q_DPCD.txt" 			Description="DEL_3840x2160_300MHZ_2.7_4LANE" 					 Owner="akaleem"  PanelType="PHY" />
+		<PanelInstance PanelIndex="DPS011" EDID="DELL_UP3216Q_DP.bin" 				DPCD="DELL_UP3216Q_DPCD.txt" 			Description="DEL_3840x2160_540MHZ_5.4_4LANE" 					 Owner="akaleem"  PanelType="PHY" />
+		<PanelInstance PanelIndex="DPS012" EDID="HP_2310e_DP.bin" 					DPCD="HP_2310e_DPCD.txt" 				Description="HWP_1920x1080_170MHZ_2.7_4LANE" 					 Owner="akaleem"  PanelType="PHY" />
+		<PanelInstance PanelIndex="DPS013" EDID="HP_Z27q_DP.bin" 					DPCD="HP_Z27q_DPCD.txt" 				Description="HWP_2560x1600_540MHZ_2.7_4LANE" 					 Owner="akaleem"  PanelType="PHY" />
+		<PanelInstance PanelIndex="DPS014" EDID="Lenovo_3053PWA_DP.bin" 			DPCD="Lenovo_3053PWA_DPCD.txt" 			Description="LEN_2560x1600_300MHZ_5.4_4LANE" 					 Owner="bgurusax" PanelType="PHY" />
+		<PanelInstance PanelIndex="DPS015" EDID="LENOVO_L2251x_Wide_DP.bin" 		DPCD="LENOVO_L2251x_Wide_DPCD.txt" 		Description="LEN_1680x1050_200MHZ_2.7_4LANE" 					 Owner="akaleem"  PanelType="PHY" />
+		<PanelInstance PanelIndex="DPS016" EDID="LGUltraHD_DP.bin" 					DPCD="LGUltraHD_DPCD.txt" 				Description="GSM_3840x2160_560MHZ_5.4_4LANE" 					 Owner="akaleem"  PanelType="PHY" />
+		<PanelInstance PanelIndex="DPS017" EDID="Philips_288P6_DP.bin" 				DPCD="Philips_288P6_DPCD.txt" 			Description="PHL_3840x2160_600MHZ_5.4_4LANE" 					 Owner="bgurusax" PanelType="PHY" />
+		<PanelInstance PanelIndex="DPS018" EDID="SAMSUNG_S23A950D_DP.bin" 			DPCD="SAMSUNG_S23A950D_DPCD.txt" 		Description="SAM_1920x1080_300MHZ_2.7_4LANE" 					 Owner="akaleem"  PanelType="PHY" />
+		<PanelInstance PanelIndex="DPS019" EDID="Samsung_U28E590D_DP.bin" 			DPCD="Samsung_U28E590D_DPCD.txt" 		Description="SAM_3840x2160_600MHZ_5.4_4LANE" 					 Owner="bgurusax" PanelType="PHY" />
+		<PanelInstance PanelIndex="DPS020" EDID="ViewSonic_SMM121720221_DP.bin" 	DPCD="ViewSonic_SMM121720221_DPCD.txt" 	Description="VSC_1920x1080_170MHZ_2.7_4LANE" 					 Owner="akaleem"  PanelType="PHY" />
+		<PanelInstance PanelIndex="DPS021" EDID="DELL_U2913WM_DP.bin" 				DPCD="DELL_U2913WM_DPCD.txt" 			Description="DEL_2560x1080_190MHZ_5.4_4LANE" 					 Owner="akaleem"  PanelType="PHY" />
+		<PanelInstance PanelIndex="DPS022" EDID="DP_3011.EDID" 						DPCD="DP_3011_DPCD.txt" 				Description="DEL_2560x1600_280MHZ_2.7_4LANE" 					 Owner="imahendr" PanelType="PHY" />
+		<PanelInstance PanelIndex="DPS023" EDID="DP_HP_ZR2240W.EDID" 				DPCD="DP_HP_ZR2240W_DPCD.txt" 			Description="HWP_1920x1080_170MHZ_2.7_4LANE" 					 Owner="imahendr" PanelType="PHY" />
+		<PanelInstance PanelIndex="DPS024" EDID="DELL_3008WFP_SST_EDID.bin" 		DPCD="DELL_3008WFP_SST_DPCD.bin" 		Description="DEL_2500x1600_280MHZ_2.7_4LANE" 					 Owner="snkulkar" PanelType="PHY" />
+		<PanelInstance PanelIndex="DPS025" EDID="DELL_U3011_SST_EDID.bin" 			DPCD="DELL_U3011_SST_DPCD.bin" 			Description="DEL_2500x1600_280MHZ_2.7_4LANE" 					 Owner="snkulkar" PanelType="PHY" />
+		<PanelInstance PanelIndex="DPS026" EDID="DELL_UP2414Q_SST_EDID.bin" 		DPCD="DELL_UP2414Q_SST_DPCD.bin" 		Description="DEL_3840x2160_300MHZ_2.7_4LANE" 					 Owner="snkulkar" PanelType="PHY" />
+		<PanelInstance PanelIndex="DPS027" EDID="DELL_U2711_SST_EDID.bin" 			DPCD="DELL_U2711_SST_DPCD.bin" 			Description="DEL_2560x1440_300MHZ_2.7_4LANE" 					 Owner="snkulkar" PanelType="PHY" />
+		<PanelInstance PanelIndex="DPS028" EDID="3840_2160_54Hz_648clk_8bpc.bin" 	DPCD="HBR2_DPCD.txt" 					Description="3840x2160@54Hz_8bpc_5.4Gbps_4lane_NoSSC_SEC"        Owner="rp3" 	  PanelType="SYN" />
+		<PanelInstance PanelIndex="DPS029" EDID="3840_2160_54Hz_648clk_8bpc.bin" 	DPCD="HBR2_WSSC_DPCD.txt" 				Description="3840x2160@54Hz_8bpc_5.4Gbps_4lane_SSC_SEC" 		 Owner="rp3" 	  PanelType="SYN" />
+		<PanelInstance PanelIndex="DPS030" EDID="2048_1536_79Hz_359clk_8bpc.bin" 	DPCD="HBR_DPCD.txt" 					Description="2048x1536@79Hz_8bpc_2.7Gbps_4lane_NoSSC_SEC" 		 Owner="rp3" 	  PanelType="SYN" />
+		<PanelInstance PanelIndex="DPS031" EDID="2048_1536_79Hz_359clk_8bpc.bin" 	DPCD="HBR_WSSC_DPCD.txt" 				Description="2048x1536@79Hz_8bpc_2.7Gbps_4lane_SSC_SEC" 		 Owner="rp3" 	  PanelType="SYN" />
+		<PanelInstance PanelIndex="DPS032" EDID="1400_1050_100Hz_214clk_8bpc.bin" 	DPCD="LBR_DPCD.txt" 					Description="1400x1050@100Hz_8bpc_1.62Gbps_4lane_NoSSC_SEC" 	 Owner="rp3" 	  PanelType="SYN" />
+		<PanelInstance PanelIndex="DPS033" EDID="1400_1050_100Hz_214clk_8bpc.bin" 	DPCD="LBR_WSSC_DPCD.txt" 				Description="1400x1050@100Hz_8bpc_1.62Gbps_4lane_SSC_SEC" 		 Owner="rp3" 	  PanelType="SYN" />
+		<PanelInstance PanelIndex="DPS034" EDID="1024_768_51Hz_54clk_8bpc.bin"   	DPCD="LBR_DPCD_LC_1.txt" 				Description="1024x768@51Hz_8bpc_1.62Gbps_1lane_NoSSC_SEC" 		 Owner="rp3" 	  PanelType="SYN" />
+		<PanelInstance PanelIndex="DPS035" EDID="1152_864_75Hz_104clk_8bpc.bin"  	DPCD="LBR_DPCD_LC_2.txt" 				Description="1152x864@75Hz_8bpc_1.62Gbps_2lane_NoSSC_SEC" 		 Owner="rp3" 	  PanelType="SYN" />
+		<PanelInstance PanelIndex="DPS036" EDID="1152_864_65Hz_89clk_8bpc.bin"   	DPCD="HBR_DPCD_LC_1.txt" 				Description="1152x864@65Hz_8bpc_2.7Gbps_1lane_NoSSC_SEC"  		 Owner="rp3" 	  PanelType="SYN" />
+		<PanelInstance PanelIndex="DPS037" EDID="1600_1200_65Hz_176clk_8bpc.bin" 	DPCD="HBR_DPCD_LC_2.txt" 				Description="1600x1200@65Hz_8bpc_2.7Gbps_2lane_NoSSC_SEC" 		 Owner="rp3" 	  PanelType="SYN" />
+		<PanelInstance PanelIndex="DPS038" EDID="1600_1200_65Hz_176clk_8bpc.bin" 	DPCD="HBR2_DPCD_LC_1.txt" 				Description="1600x1200@65Hz_8bpc_5.4Gbps_1lane_NoSSC_SEC" 		 Owner="rp3" 	  PanelType="SYN" />
+		<PanelInstance PanelIndex="DPS039" EDID="2048_1536_79Hz_359clk_8bpc.bin" 	DPCD="HBR2_DPCD_LC_2.txt" 				Description="2048x1536@79Hz_8bpc_5.4Gbps_2lane_NoSSC_SEC" 		 Owner="rp3" 	  PanelType="SYN" />
+		<PanelInstance PanelIndex="DPS040" EDID="2560_1440_65Hz_262clk_8bpc.bin" 	DPCD="HBR3_DPCD_LC_1.txt" 				Description="2560x1440@65Hz_8bpc_8.1Gbps_1lane_NoSSC_SEC" 		 Owner="rp3" 	  PanelType="SYN" />
+		<PanelInstance PanelIndex="DPS041" EDID="3840_2160_60Hz_533clk_8bpc.bin" 	DPCD="HBR3_DPCD_LC_2.txt" 				Description="3840x2160@60Hz_8bpc_8.1Gbps_2lane_NoSSC_SEC" 		 Owner="rp3" 	  PanelType="SYN" />
+		<PanelInstance PanelIndex="DPS042" EDID="DP_3011.EDID" 						DPCD="vdsc.txt" 						Description="DEL_2560x1600_280MHZ_5.4_4LANE" 					 Owner="ecpabolu" PanelType="SYN" />
+		
+		<!-- EDP Display EDID and DPCD : Description format = HRESxVRES@RR_BPC_LINKRATE_LANECOUNT_SSCSTATE_FEATURE_MAKE (FEATURE & MAKE are optional) -->
+		<PanelInstance PanelIndex="EDP001" EDID="EDP_5K_5120_3200_60Hz_1042clk_8bpc.bin" 				DPCD="HBR3_WSSC_DPCD.txt" 										 Description="5120x3200@60Hz_8bpc_8.1Gbps_4lane_SSC_SHP"          Owner="rp3" 	   PanelType="PHY" />
+		<PanelInstance PanelIndex="EDP002" EDID="EDP_5K_5120_3200_60Hz_1042clk_8bpc.bin" 				DPCD="HBR3_DPCD.txt" 											 Description="5120x3200@60Hz_8bpc_8.1Gbps_4lane_NoSSC_SHP"        Owner="rp3" 	   PanelType="PHY" />
+		<PanelInstance PanelIndex="EDP003" EDID="EDP_3000_2000_70Hz_607clk_8bpc.bin" 					DPCD="HBR2_WSSC_DPCD.txt" 										 Description="3000x2000@70Hz_8bpc_5.4Gbps_4lane_SSC_SEC" 		  Owner="akaleem"  PanelType="PHY" />
+		<PanelInstance PanelIndex="EDP004" EDID="EDP_3000_2000_70Hz_607clk_8bpc.bin" 					DPCD="HBR2_DPCD.txt" 											 Description="3000x2000@70Hz_8bpc_5.4Gbps_4lane_NoSSC_SEC" 		  Owner="akaleem"  PanelType="PHY" />
+		<PanelInstance PanelIndex="EDP005" EDID="EDP_1920_1080.EDID" 									DPCD="EDP_1920_1080_DPCD.txt" 									 Description="LGD_1920x1080_2.7_2LANE" 		     				  Owner="agolwala" PanelType="PHY" />
+		<PanelInstance PanelIndex="EDP006" EDID="eDP_AUO_1366x768_60Hz_40Hz_NonPSR_6BPC_69_30.bin" 		DPCD="eDP_AUO_1366x768_60Hz_40Hz_NonPSR_6BPC_69_30_DPCD.txt" 	 Description="NonPSR_1366x768_2.7_1LANE" 	     				  Owner="bgurusax" PanelType="PHY" />
+		<PanelInstance PanelIndex="EDP007" EDID="eDP_CMN_1920x1080_60Hz_NonPSR_8BPC_138_77.bin" 		DPCD="eDP_CMN_1920x1080_60Hz_NonPSR_8BPC_138_77_DPCD.txt" 		 Description="NonPSR_1920x1080_2.7_2LANE"	     				  Owner="bgurusax" PanelType="PHY" />
+		<PanelInstance PanelIndex="EDP008" EDID="eDP_CMN_1920x1080_60Hz_PSR_8BPC_138_77.bin" 			DPCD="eDP_CMN_1920x1080_60Hz_PSR_8BPC_138_77_DPCD.txt" 			 Description="PSR_1920x1080_2.7_2LANE" 		     				  Owner="bgurusax" PanelType="PHY" />
+		<PanelInstance PanelIndex="EDP009" EDID="eDP_AUO_1920x1080_60Hz_PSR2_6BPC_141_00.bin" 			DPCD="eDP_AUO_1920x1080_60Hz_PSR2_6BPC_141_00_DPCD.txt" 		 Description="PSR2_1920x1080_2.7_2LANE" 	     				  Owner="bgurusax" PanelType="PHY" />
+		<PanelInstance PanelIndex="EDP010" EDID="eDP_AUO_1920x1080_60Hz_90Hz_PSR2_DSC_6BPC_214_00.bin" 	DPCD="eDP_AUO_1920x1080_60Hz_90Hz_PSR2_DSC_6BPC_214_00_DPCD.txt" Description="VDSC-PSR2_1920x1080_2.7_2LANE"     				  Owner="bgurusax" PanelType="PHY" />
+		<PanelInstance PanelIndex="EDP011" EDID="eDP_CMN_1920x1080_60Hz_48Hz_PSR_8BPC_138_77.bin" 		DPCD="eDP_CMN_1920x1080_60Hz_48Hz_PSR_8BPC_138_77_DPCD.txt" 	 Description="48Hz-PSR_1920x1080_2.7_2LANE"      				  Owner="bgurusax" PanelType="PHY" />
+		<PanelInstance PanelIndex="EDP012" EDID="eDP_LGD_1920x1080_60Hz_40Hz_ASSR_6BPC_137.69.bin" 		DPCD="eDP_LGD_1920x1080_60Hz_40Hz_ASSR_6BPC_137.69_DPCD.txt" 	 Description="ASSR_1920x1080_2.7_2LANE" 	     				  Owner="bgurusax" PanelType="PHY" />
+		<PanelInstance PanelIndex="EDP013" EDID="eDP_SHP_2560x1440_60Hz_NonPSR_8BPC_241_50.bin" 		DPCD="eDP_SHP_2560x1440_60Hz_NonPSR_8BPC_241_50_DPCD.txt" 		 Description="NonPSR_2560x1400_2.7_4LANE" 	     				  Owner="bgurusax" PanelType="PHY" />
+		<PanelInstance PanelIndex="EDP014" EDID="eDP_SHP_3200x1800_60Hz_40Hz_PSR2_8BPC_373_25.bin" 		DPCD="eDP_SHP_3200x1800_60Hz_40Hz_PSR2_8BPC_373_25_DPCD.txt" 	 Description="PSR2_3200x1800_3.24_4LANE" 	     				  Owner="bgurusax" PanelType="PHY" />
+		<PanelInstance PanelIndex="EDP015" EDID="eDP_SHP_3840x2160_60Hz_PSR2_8BPC_533_25.bin" 			DPCD="eDP_SHP_3840x2160_60Hz_PSR2_8BPC_533_25_DPCD.txt" 		 Description="PSR2_3840x2160_Max4.32_4LANE"      				  Owner="bgurusax" PanelType="PHY" />
+		<PanelInstance PanelIndex="EDP016" EDID="1024_768_64Hz_69clk_8bpc.bin" 							DPCD="2_16_DPCD_LC_1.txt" 										 Description="1024x768@64Hz_8bpc_2.16Gbps_1lane_NoSSC_SEC" 		  Owner="rp3" 	   PanelType="SYN" />
+		<PanelInstance PanelIndex="EDP017" EDID="1600_1200_50Hz_135clk_8bpc.bin" 						DPCD="2_16_DPCD_LC_2.txt" 										 Description="1600x1200@50Hz_8bpc_2.16Gbps_2lane_NoSSC_SEC"		  Owner="rp3" 	   PanelType="SYN" />
+		<PanelInstance PanelIndex="EDP018" EDID="1152_864_75Hz_104clk_8bpc.bin" 						DPCD="3_24_DPCD_LC_1.txt" 										 Description="1152x864@75Hz_8bpc_3.24Gbps_1lane_NoSSC_SEC" 		  Owner="rp3" 	   PanelType="SYN" />
+		<PanelInstance PanelIndex="EDP019" EDID="1400_1050_100Hz_214clk_8bpc.bin" 						DPCD="3_24_DPCD_LC_2.txt" 										 Description="1400x1050@100Hz_8bpc_3.24Gbps_2lane_NoSSC_SEC"	  Owner="rp3" 	   PanelType="SYN" />
+		<PanelInstance PanelIndex="EDP020" EDID="1600_1200_50Hz_135clk_8bpc.bin" 						DPCD="4_32_DPCD_LC_1.txt" 										 Description="1600x1200@50Hz_8bpc_4.32Gbps_1lane_NoSSC_SEC"		  Owner="rp3" 	   PanelType="SYN" />
+		<PanelInstance PanelIndex="EDP021" EDID="2560_1440_54Hz_283clk_8bpc.bin" 						DPCD="4_32_DPCD_LC_2.txt" 										 Description="2560x1440@54Hz_8bpc_4.32Gbps_2lane_NoSSC_SEC"		  Owner="rp3" 	   PanelType="SYN" />
+		<PanelInstance PanelIndex="EDP022" EDID="1400_1050_100Hz_214clk_8bpc.bin" 						DPCD="6_48_DPCD_LC_1.txt" 										 Description="1400x1050@100Hz_8bpc_6.48Gbps_1lane_NoSSC_SEC"	  Owner="rp3" 	   PanelType="SYN" />
+		<PanelInstance PanelIndex="EDP023" EDID="3440_1440_59Hz_419_8bpc.bin" 							DPCD="6_48_DPCD_LC_2.txt" 										 Description="3440x1440@59Hz_8bpc_6.48Gbps_2lane_NoSSC_SEC"		  Owner="rp3" 	   PanelType="SYN" />
+		<PanelInstance PanelIndex="EDP024" EDID="1400_1050_100Hz_214clk_8bpc.bin" 						DPCD="6_48_WSSC_DPCD.txt" 										 Description="1400x1050@100Hz_8bpc_6.48Gbps_4lane_SSC_SEC"		  Owner="rp3" 	   PanelType="SYN" />
+        <PanelInstance PanelIndex="EDP025" EDID="1400_1050_100Hz_214clk_8bpc.bin" 	                    DPCD="3_24_DPCD.txt" 					                         Description="1400x1050@100Hz_8bpc_3.24Gbps_4lane_NoSSC_SEC" 	  Owner="vds"      PanelType="SYN" />
+		<PanelInstance PanelIndex="EDP026" EDID="1400_1050_100Hz_214clk_8bpc.bin" 	                    DPCD="2_16_DPCD.txt" 					                         Description="1400x1050@100Hz_8bpc_2.16Gbps_4lane_NoSSC_SEC" 	  Owner="vds"      PanelType="SYN" />
+		<PanelInstance PanelIndex="EDP027" EDID="1400_1050_100Hz_214clk_8bpc.bin" 	                    DPCD="4_32_DPCD.txt" 					                         Description="1400x1050@100Hz_8bpc_4.32Gbps_4lane_NoSSC_SEC" 	  Owner="vds"      PanelType="SYN" />
+		<PanelInstance PanelIndex="EDP028" EDID="1400_1050_100Hz_214clk_8bpc.bin" 	                    DPCD="6_48_WSSC_DPCD.txt" 				                         Description="1400x1050@100Hz_8bpc_6.48Gbps_4lane_SSC_SEC" 		  Owner="vds"      PanelType="SYN" />
+		<PanelInstance PanelIndex="EDP029" EDID="1400_1050_100Hz_214clk_8bpc.bin" 	                    DPCD="4_32_WSSC_DPCD.txt" 				                         Description="1400x1050@100Hz_8bpc_4.32Gbps_4lane_SSC_SEC" 		  Owner="rp3" 	   PanelType="SYN" />
+		<PanelInstance PanelIndex="EDP030" EDID="1400_1050_100Hz_214clk_8bpc.bin" 	                    DPCD="3_24_WSSC_DPCD.txt" 				                         Description="1400x1050@100Hz_8bpc_3.24Gbps_4lane_SSC_SEC" 		  Owner="rp3" 	   PanelType="SYN" />
+		<PanelInstance PanelIndex="EDP031" EDID="1400_1050_100Hz_214clk_8bpc.bin" 	                    DPCD="2_16_WSSC_DPCD.txt" 				                         Description="1400x1050@100Hz_8bpc_2.16Gbps_4lane_SSC_SEC" 		  Owner="rp3" 	   PanelType="SYN" />
+		<PanelInstance PanelIndex="EDP032" EDID="1400_1050_100Hz_214clk_8bpc.bin" 	                    DPCD="6_48_DPCD.txt" 					                         Description="1400x1050@100Hz_8bpc_6.48Gbps_4lane_NoSSC_SEC" 	  Owner="rp3" 	   PanelType="SYN" />
+        <PanelInstance PanelIndex="EDP033" EDID="eDP_SHP_3840x2160_60Hz_PSR2_8BPC_533_25.bin" 	        DPCD="vdsc.txt" 					                             Description="PSR2_3840x2160_Max4.32_4LANE_VDSC" 				  Owner="vds" 	   PanelType="SYN" />
+		<PanelInstance PanelIndex="EDP034" EDID="eDP_SHP_3840x2160_60Hz_PSR2_8BPC_533_25.bin" 			DPCD="eDP_SHP_3840x2160_60Hz_PSR_8BPC_533_25_DPCD.txt"			 Description="PSR_3840x2160_Max4.32_4LANE"       				  Owner="rp3" 	   PanelType="SYN" />
+		<PanelInstance PanelIndex="EDP035" EDID="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" 				DPCD="HBR3_WSSC_DPCD.txt" 										 Description="5120x3200@60Hz_8bpc_8.1Gbps_4lane_SSC_SHP"       	  Owner="rp3" 	   PanelType="SYN" />
+		<PanelInstance PanelIndex="EDP036" EDID="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" 				DPCD="HBR3_DPCD.txt" 											 Description="5120x3200@60Hz_8bpc_8.1Gbps_4lane_NoSSC_SHP"        Owner="rp3" 	   PanelType="SYN" />
+		<PanelInstance PanelIndex="EDP037" EDID="eDP_CMN_1920x1080_60Hz_40Hz_8BPC.bin" 					DPCD="eDP_CMN_1920x1080_60Hz_40Hz_8BPC_DPCD.txt"			 	 Description="1920x1080@60Hz_40Hz_8bpc_2.7Gbps_2lane_NoSSC_CMN"   Owner="ashishas" PanelType="PHY" />
+		<!-- MIPI Display EDID and DPCD -->
+		<PanelInstance PanelIndex="MIP001" EDID="NONE" DPCD="NONE" Description="NONE" Owner="NONE" PanelType="NONE"/>
+		     
+    </PanelCaps>
+</PanelInputData>

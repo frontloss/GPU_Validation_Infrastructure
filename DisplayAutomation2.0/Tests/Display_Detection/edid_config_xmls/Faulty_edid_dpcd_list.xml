@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Displays>
+    <DP>
+        <Display case ="ext_block_mismatch_1" edid="3840_2160_60Hz_533clk_12bpc_extFlagCheck.bin" dpcd="HBR2_DPCD.txt" panelindex="DPS080" hzRes="3840" vtRes="2160"/>
+        <Display case ="ext_block_mismatch_2" edid="3840_2160_60Hz_533clk_8bpc_extFlagCheck2.bin" dpcd="HBR2_DPCD.txt" panelindex="DPS081" hzRes="3840" vtRes="2160" hzRes1="1368" vtRes1="767" rr1="60" scaling1="MDS"/>
+        <Display case ="base_checksum_mismatch" edid="SAMSUNG_S23A950D_DP_chksum_mismatch.bin" dpcd="SAMSUNG_S23A950D_DPCD.txt" panelindex="DPS075" hzRes="1920" vtRes="1080"/>
+        <Display case ="ext_checksum_mismatch" edid="SAMSUNG_S23A950D_DP_ext_chksum_mismatch.bin" dpcd="SAMSUNG_S23A950D_DPCD.txt" panelindex="DPS076" hzRes="1920" vtRes="1080"/>
+        <Display case ="header_mismatch" edid="SAMSUNG_S23A950D_DP_header_mismatch.bin" dpcd="SAMSUNG_S23A950D_DPCD.txt" panelindex="DPS077" hzRes="1920" vtRes="1080"/>
+        <Display case ="edid_rev_mismatch" edid="SAMSUNG_S23A950D_DP_Ver_Rev_mismatch.bin" dpcd="SAMSUNG_S23A950D_DPCD.txt" panelindex="DPS078" hzRes="1920" vtRes="1080"/>
+        <Display case ="edid_version_mismatch" edid="SAMSUNG_S23A950D_DP_ver_mismatch.bin" dpcd="SAMSUNG_S23A950D_DPCD.txt" panelindex="DPS079" hzRes="1920" vtRes="1080"/>
+        <Display case ="range_limits_inclusion_violation" edid="HP_Z27q_DP_no_range_limits_violation.bin" dpcd="HP_Z27q_DPCD.txt" panelindex="DPS082" hzRes="2560" vtRes="1600"/>
+        <Display case ="feature_support_not_set_1" edid="Acer_CB281HK_DP.bin" dpcd="Acer_CB281HK_DPCD.txt" panelindex="DPS002" hzRes="3840" vtRes="2160"/>
+        <Display case ="feature_support_not_set_2" edid="Acer_CB281HK_DP_GTF_SEC_CURVE_FeatureBitNotSet.bin" dpcd="Acer_CB281HK_DPCD.txt" panelindex="DPS083" hzRes="3840" vtRes="2160"/>
+        <Display case ="feature_support_not_set_3" edid="Acer_CB281HK_DP_CVT_SUPPORT_FeatureBitNotSet.bin" dpcd="Acer_CB281HK_DPCD.txt" panelindex="DPS084" hzRes="3840" vtRes="2160"/>
+    </DP>
+    <HDMI>
+        <Display  case ="ext_block_mismatch_1" edid="HDMI_EDID_1_4_MODES_extFlagCheck.bin" dpcd="NONE" panelindex="HDM056" hzRes="1920" vtRes="1080"/>
+        <Display  case ="ext_block_mismatch_2" edid="HDMI_EDID_1_4_MODES_extFlagCheck2.bin" dpcd="NONE" panelindex="HDM060" hzRes="1920" vtRes="1080" hzRes1="1366" vtRes1="768" rr1="60" scaling1="MDS"/>
+        <Display  case ="ext_checksum_mismatch" edid="HDMI_EDID_1_4_MODES_ext_chksum_mismatch.bin" dpcd="NONE" panelindex="HDM058" hzRes="1920" vtRes="1080"/>
+        <Display  case ="header_mismatch" edid="Acer_CB240HYK_HDMI_header_mismatch.bin" dpcd="NONE" panelindex="HDM059" hzRes="3840" vtRes="2160"/>
+        <Display case ="edid_rev_mismatch" edid="HDMI_3840_2160_60Hz_594_Rev_mismatch.bin" dpcd="None" panelindex="HDM061" hzRes="3840" vtRes="2160"/>
+        <Display case ="edid_version_mismatch" edid="HDMI_3840_2160_60Hz_594_ver_mismatch.bin" dpcd="None" panelindex="HDM062" hzRes="3840" vtRes="2160"/>
+        <Display  case ="base_checksum_mismatch" edid="HDMI_3840_2160_60Hz_594_base_chksum_mismatch.bin" dpcd="NONE" panelindex="HDM057" hzRes="3840" vtRes="2160"/>
+    </HDMI>
+</Displays>

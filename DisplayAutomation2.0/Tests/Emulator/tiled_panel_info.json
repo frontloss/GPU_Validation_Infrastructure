@@ -1,0 +1,24 @@
+{
+  "mst_tiled_info": {
+    "MST_TILE_1": {
+      "name": "MST_TILE_1",
+      "tiled_dpcd_path": "Sharp_pk21_DPCD.bin",
+      "master_tiled_edid_path": "Sharp_pk21_Master_EDID.bin",
+      "slave_tiled_edid_path": "Sharp_pk21_Slave_EDID.bin"
+    }
+  },
+  "sst_tiled_info": {
+    "SST_TILE_1": {
+      "name": "SST_TILE_1",
+      "tiled_dpcd_path": "DELL_U2715_DPCD.bin",
+      "master_tiled_edid_path": "DELL_U2715_M.EDID",
+      "slave_tiled_edid_path": "DELL_U2715_S.EDID"
+    },
+    "SST_TILE_2": {
+      "name": "SST_TILE_2",
+      "tiled_dpcd_path": "DELL_U2715_DPCD.bin",
+      "master_tiled_edid_path": "DELL_U2715_M.EDID",
+      "slave_tiled_edid_path": ""
+    }
+  }
+}

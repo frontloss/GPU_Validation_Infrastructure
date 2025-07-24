@@ -1,0 +1,230 @@
+﻿<DriverTestConfiguration xmlns="http://schemas.datacontract.org/2004/07/Microsoft.DriverKit"
+                         xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <InstallCommands>
+    <DriverTestCommand>
+      <Architecture>amd64</Architecture>
+      <Arguments>/q /norestart /log %SystemDrive%\DriverTest\Logs\DotNetInstall.log</Arguments>
+      <BinaryFile>%SystemDrive%\DriverTest\Setup\dotNetFx40_Full_x86_x64.exe</BinaryFile>
+      <DisplayText>Installing .NET Framework (possible reboot)</DisplayText>
+      <KeyFile>Testing\dotNetFx40_Full_x86_x64.exe</KeyFile>
+      <LogPath>%SystemDrive%\DriverTest\Logs\DotNetInstall*.log|%SystemDrive%\DriverTest\Logs\DotNetInstall*.html</LogPath>
+      <RemoteOnly>true</RemoteOnly>
+    </DriverTestCommand>
+    <DriverTestCommand>
+      <Architecture>x86</Architecture>
+      <Arguments>/q /norestart /log %SystemDrive%\DriverTest\Logs\DotNetInstall.log</Arguments>
+      <BinaryFile>%SystemDrive%\DriverTest\Setup\dotNetFx40_Full_x86_x64.exe</BinaryFile>
+      <DisplayText>Installing .NET Framework (possible reboot)</DisplayText>
+      <KeyFile>Testing\dotNetFx40_Full_x86_x64.exe</KeyFile>
+      <LogPath>%SystemDrive%\DriverTest\Logs\DotNetInstall*.log|%SystemDrive%\DriverTest\Logs\DotNetInstall*.html</LogPath>
+      <RemoteOnly>true</RemoteOnly>
+    </DriverTestCommand>   
+    <DriverTestCommand>
+      <Architecture i:nil="true"/>
+      <Arguments>/q /log %SystemDrive%\DriverTest\Logs\vcredist_%TARGET_ARCHITECTURE%.log</Arguments>
+      <BinaryFile>%SystemDrive%\DriverTest\Setup\%TARGET_ARCHITECTURE%\vcredist_%TARGET_ARCHITECTURE%.exe</BinaryFile>
+      <DisplayText>Installing VC Redist (%TARGET_ARCHITECTURE%)</DisplayText>
+      <KeyFile>%VS_INSTALL_FOLDER%\VC\redist\1033\vcredist_%TARGET_ARCHITECTURE%.exe</KeyFile>
+      <LogPath>%SystemDrive%\DriverTest\Logs\vcredist_%TARGET_ARCHITECTURE%.log</LogPath>
+      <RemoteOnly>true</RemoteOnly>
+    </DriverTestCommand>
+    <DriverTestCommand>
+      <Architecture>amd64</Architecture>
+      <Arguments>/i "%SystemDrive%\DriverTest\Setup\Test Authoring and Execution Framework x86-x86_en-us.msi" /qb- KITSROOT="%ProgramFiles%\Windows Kits\8.1" KITTARGET=1 /l*v "%SystemDrive%\DriverTest\Logs\Test Authoring and Execution Framework x86-x86_en-us.msi_install.log"</Arguments>
+      <BinaryFile>msiexec.exe</BinaryFile>
+      <DisplayText>Installing test automation (x86)</DisplayText>
+      <KeyFile>Testing\Runtimes\Test Authoring and Execution Framework x86-x86_en-us.msi</KeyFile>
+      <LogPath>%SystemDrive%\DriverTest\Logs\Test Authoring and Execution Framework x86-x86_en-us.msi_install.log</LogPath>
+      <RemoteOnly>false</RemoteOnly>
+    </DriverTestCommand>
+    <DriverTestCommand>
+      <Architecture>amd64</Architecture>
+      <Arguments>/i "%SystemDrive%\DriverTest\Setup\Test Authoring and Execution Framework x64-x64_en-us.msi" /qb- KITSROOT="%ProgramFiles(x86)%\Windows Kits\8.1" KITTARGET=1 /l*v "%SystemDrive%\DriverTest\Logs\Test Authoring and Execution Framework x64-x64_en-us.msi_install.log"</Arguments>
+      <BinaryFile>msiexec.exe</BinaryFile>
+      <DisplayText>Installing test automation (x64)</DisplayText>
+      <KeyFile>Testing\Runtimes\Test Authoring and Execution Framework x64-x64_en-us.msi</KeyFile>
+      <LogPath>%SystemDrive%\DriverTest\Logs\Test Authoring and Execution Framework x64-x64_en-us.msi_install.log</LogPath>
+      <RemoteOnly>false</RemoteOnly>
+    </DriverTestCommand>
+    <DriverTestCommand>
+      <Architecture>x86</Architecture>
+      <Arguments>/i "%SystemDrive%\DriverTest\Setup\Test Authoring and Execution Framework %TARGET_ARCHITECTURE%-%TARGET_ARCHITECTURE%_en-us.msi" /qb- KITSROOT="%ProgramFiles%\Windows Kits\8.1" KITTARGET=1 /l*v "%SystemDrive%\DriverTest\Logs\Test Authoring and Execution Framework %TARGET_ARCHITECTURE%-%TARGET_ARCHITECTURE%_en-us.msi_install.log"</Arguments>
+      <BinaryFile>msiexec.exe</BinaryFile>
+      <DisplayText>Installing test automation (%TARGET_ARCHITECTURE%)</DisplayText>
+      <KeyFile>Testing\Runtimes\Test Authoring and Execution Framework %TARGET_ARCHITECTURE%-%TARGET_ARCHITECTURE%_en-us.msi</KeyFile>
+      <LogPath>%SystemDrive%\DriverTest\Logs\Test Authoring and Execution Framework %TARGET_ARCHITECTURE%-%TARGET_ARCHITECTURE%_en-us.msi_install.log</LogPath>
+      <RemoteOnly>false</RemoteOnly>
+    </DriverTestCommand>
+    <DriverTestCommand>
+      <Architecture>arm</Architecture>
+      <Arguments>/i "%SystemDrive%\DriverTest\Setup\Test Authoring and Execution Framework %TARGET_ARCHITECTURE%-%TARGET_ARCHITECTURE%_en-us.msi" /qb- KITSROOT="%ProgramFiles%\Windows Kits\8.1" KITTARGET=1 /l*v "%SystemDrive%\DriverTest\Logs\Test Authoring and Execution Framework %TARGET_ARCHITECTURE%-%TARGET_ARCHITECTURE%_en-us.msi_install.log"</Arguments>
+      <BinaryFile>msiexec.exe</BinaryFile>
+      <DisplayText>Installing test automation (%TARGET_ARCHITECTURE%)</DisplayText>
+      <KeyFile>Testing\Runtimes\Test Authoring and Execution Framework %TARGET_ARCHITECTURE%-%TARGET_ARCHITECTURE%_en-us.msi</KeyFile>
+      <LogPath>%SystemDrive%\DriverTest\Logs\Test Authoring and Execution Framework %TARGET_ARCHITECTURE%-%TARGET_ARCHITECTURE%_en-us.msi_install.log</LogPath>
+      <RemoteOnly>false</RemoteOnly>
+    </DriverTestCommand>
+    <DriverTestCommand>
+      <Architecture>amd64</Architecture>
+      <Arguments>/i "%SystemDrive%\DriverTest\Setup\X86 Debuggers And Tools-x86_en-us.msi" /qb- /l*v "%SystemDrive%\DriverTest\Logs\X86 Debuggers And Tools-x86_en-us.msi_install.log"</Arguments>
+      <BinaryFile>msiexec.exe</BinaryFile>
+      <DisplayText>Installing debuggers (x86)</DisplayText>
+      <KeyFile>Debuggers\Redist\X86 Debuggers And Tools-x86_en-us.msi</KeyFile>
+      <LogPath>%SystemDrive%\DriverTest\Logs\X86 Debuggers And Tools-x86_en-us.msi_install.log</LogPath>
+      <RemoteOnly>false</RemoteOnly>
+    </DriverTestCommand>
+    <DriverTestCommand>
+      <Architecture i:nil="true"/>
+      <Arguments>/i "%SystemDrive%\DriverTest\Setup\%TARGET_ARCHITECTURE% Debuggers And Tools-%TARGET_ARCHITECTURE%_en-us.msi" /qb- /l*v "%SystemDrive%\DriverTest\Logs\%TARGET_ARCHITECTURE% Debuggers And Tools-%TARGET_ARCHITECTURE%_en-us.msi_install.log"</Arguments>
+      <BinaryFile>msiexec.exe</BinaryFile>
+      <DisplayText>Installing debuggers (%TARGET_ARCHITECTURE%)</DisplayText>
+      <KeyFile>Debuggers\Redist\%TARGET_ARCHITECTURE% Debuggers And Tools-%TARGET_ARCHITECTURE%_en-us.msi</KeyFile>
+      <LogPath>%SystemDrive%\DriverTest\Logs\%TARGET_ARCHITECTURE% Debuggers And Tools-%TARGET_ARCHITECTURE%_en-us.msi_install.log</LogPath>
+      <RemoteOnly>false</RemoteOnly>
+    </DriverTestCommand>
+    <DriverTestCommand>
+      <Architecture i:nil="true"/>
+      <Arguments>/i "%SystemDrive%\DriverTest\Setup\Windows Driver Testing Framework (WDTF) Runtime Libraries-%TARGET_ARCHITECTURE%_en-us.msi" /qb- KITTARGET=1 /l*v "%SystemDrive%\DriverTest\Logs\Windows Driver Testing Framework (WDTF) Runtime Libraries-%TARGET_ARCHITECTURE%_en-us.msi_install.log"</Arguments>
+      <BinaryFile>msiexec.exe</BinaryFile>
+      <DisplayText>Installing driver test framework</DisplayText>
+      <KeyFile>Testing\Runtimes\Windows Driver Testing Framework (WDTF) Runtime Libraries-%TARGET_ARCHITECTURE%_en-us.msi</KeyFile>
+      <LogPath>%SystemDrive%\DriverTest\Logs\Windows Driver Testing Framework (WDTF) Runtime Libraries-%TARGET_ARCHITECTURE%_en-us.msi_install.log|%SystemDrive%\WDTFInstallText.log</LogPath>
+      <RemoteOnly>false</RemoteOnly>
+    </DriverTestCommand>
+    <DriverTestCommand>
+      <Architecture i:nil="true"/>
+      <Arguments>/s %SystemDrive%\DriverTest\WTTLogcm.dll</Arguments>
+      <BinaryFile>regsvr32.exe</BinaryFile>
+      <DisplayText>Registering logging components</DisplayText>
+      <KeyFile>tools\%TARGET_ARCHITECTURE%\WTTLogcm.dll</KeyFile>
+      <LogPath i:nil="true"/>
+      <RemoteOnly>false</RemoteOnly>
+    </DriverTestCommand>
+  </InstallCommands>
+  <InstallFiles xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <a:string>Testing\Runtimes\*.msi</a:string>
+    <a:string>Testing\Runtimes\*.cab</a:string>
+    <a:string>Testing\Runtimes\DTUninstall.js</a:string>
+    <a:string>Testing\Runtimes\CreateRestore.js</a:string>
+    <a:string>Testing\dotNetFx40_Full_x86_x64.exe</a:string>
+    <a:string>Debuggers\Redist\*.msi</a:string>
+    <a:string>Debuggers\Redist\*.cab</a:string>
+    <a:string>tools\%TARGET_ARCHITECTURE%\wttlog.dll</a:string>
+    <a:string>tools\%TARGET_ARCHITECTURE%\wttlogcm.dll</a:string>
+    <a:string>tools\%TARGET_ARCHITECTURE%\devcon.exe</a:string>
+    <a:string>tools\%TARGET_ARCHITECTURE%\traceview.exe</a:string>
+    <a:string>tools\%TARGET_ARCHITECTURE%\tracefmt.exe</a:string>
+    <a:string>tools\%TARGET_ARCHITECTURE%\tracelog.exe</a:string>
+    <a:string>%VS_INSTALL_FOLDER%\Common7\IDE\Remote Debugger\%TARGET_ARCHITECTURE%</a:string>
+    <a:string>%VS_INSTALL_FOLDER%\VC\redist\1033\vcredist_%TARGET_ARCHITECTURE%.exe</a:string>
+    <a:string>Testing\Tests\Utilities\%TARGET_ARCHITECTURE%\DriverTestTasks.dll</a:string>
+  </InstallFiles>
+  <LocalRunFiles xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <a:string>tools\%TARGET_ARCHITECTURE%\wttlog.dll</a:string>
+    <a:string>tools\%TARGET_ARCHITECTURE%\wttlogcm.dll</a:string>
+    <a:string>tools\%TARGET_ARCHITECTURE%\Microsoft.Wtt.Log.dll</a:string>
+    <a:string>tools\%TARGET_ARCHITECTURE%\Microsoft.Windows.LogoKit.Diagnostics.LogAnnotation.dll</a:string>
+    <a:string>tools\%TARGET_ARCHITECTURE%\WlkLogAnnotation.dll</a:string>
+    <a:string>%VS_INSTALL_FOLDER%\VC\redist\Debug_NonRedist\%TARGET_ARCHITECTURE%\Microsoft.VC110.DebugCRT\msvcr110d.dll</a:string>
+  </LocalRunFiles>
+  <LocalRunTargets xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <a:string>Run</a:string>
+    <a:string>Run</a:string>
+    <a:string>Run</a:string>
+    <a:string>Run</a:string>
+    <a:string>Run</a:string>
+    <a:string>Run</a:string>
+  </LocalRunTargets>
+  <RelativeTargets xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <a:string>Setup</a:string>
+    <a:string>Setup</a:string>
+    <a:string>Setup</a:string>
+    <a:string>Setup</a:string>
+    <a:string>Setup</a:string>
+    <a:string>Setup</a:string>
+    <a:string>Setup</a:string>
+    <a:string></a:string>
+    <a:string></a:string>
+    <a:string></a:string>
+    <a:string></a:string>
+    <a:string></a:string>
+    <a:string></a:string>
+    <a:string>msvsmon</a:string>    
+    <a:string>Setup\%TARGET_ARCHITECTURE%</a:string>
+    <a:string>Run</a:string>
+  </RelativeTargets>
+  <UninstallCommands>
+    <DriverTestCommand>
+      <Architecture i:nil="true"/>
+      <Arguments>/s /u %SystemDrive%\DriverTest\WTTLogcm.dll</Arguments>
+      <BinaryFile>regsvr32.exe</BinaryFile>
+      <DisplayText>Unregistering logging components</DisplayText>
+      <KeyFile>tools\%TARGET_ARCHITECTURE%\WTTLogcm.dll</KeyFile>
+      <LogPath i:nil="true"/>
+      <RemoteOnly>false</RemoteOnly>
+    </DriverTestCommand>
+    <DriverTestCommand>
+      <Architecture>amd64</Architecture>
+      <Arguments>/x "%SystemDrive%\DriverTest\Setup\Test Authoring and Execution Framework x86-x86_en-us.msi" /qb- REMOVE=ALL KITTARGET=1 /l*v "%SystemDrive%\DriverTest\Logs\Test Authoring and Execution Framework x86-x86_en-us.msi_uninstall.log"</Arguments>
+      <BinaryFile>msiexec.exe</BinaryFile>
+      <DisplayText>Uninstalling test automation (x86)</DisplayText>
+      <KeyFile>Testing\Runtimes\Test Authoring and Execution Framework x86-x86_en-us.msi</KeyFile>
+      <LogPath>%SystemDrive%\DriverTest\Logs\Test Authoring and Execution Framework x86-x86_en-us.msi_uninstall.log</LogPath>
+      <RemoteOnly>false</RemoteOnly>
+    </DriverTestCommand>
+    <DriverTestCommand>
+      <Architecture i:nil="true"/>
+      <Arguments>/x "%SystemDrive%\DriverTest\Setup\Test Authoring and Execution Framework %TARGET_ARCHITECTURE%-%TARGET_ARCHITECTURE%_en-us.msi" /qb- REMOVE=ALL KITTARGET=1 /l*v "%SystemDrive%\DriverTest\Logs\Test Authoring and Execution Framework %TARGET_ARCHITECTURE%-%TARGET_ARCHITECTURE%_en-us.msi_uninstall.log"</Arguments>
+      <BinaryFile>msiexec.exe</BinaryFile>
+      <DisplayText>Uninstalling test automation (%TARGET_ARCHITECTURE%)</DisplayText>
+      <KeyFile>Testing\Runtimes\Test Authoring and Execution Framework %TARGET_ARCHITECTURE%-%TARGET_ARCHITECTURE%_en-us.msi</KeyFile>
+      <LogPath>%SystemDrive%\DriverTest\Logs\Test Authoring and Execution Framework %TARGET_ARCHITECTURE%-%TARGET_ARCHITECTURE%_en-us.msi_uninstall.log</LogPath>
+      <RemoteOnly>false</RemoteOnly>
+    </DriverTestCommand>
+    <DriverTestCommand>
+      <Architecture>amd64</Architecture>
+      <Arguments>/x "%SystemDrive%\DriverTest\Setup\X86 Debuggers And Tools-x86_en-us.msi" /qb- REMOVE=ALL /l*v "%SystemDrive%\DriverTest\Logs\X86 Debuggers And Tools-x86_en-us.msi_uninstall.log"</Arguments>
+      <BinaryFile>msiexec.exe</BinaryFile>
+      <DisplayText>Uninstalling debuggers (x86)</DisplayText>
+      <KeyFile>Debuggers\Redist\X86 Debuggers And Tools-x86_en-us.msi</KeyFile>
+      <LogPath>%SystemDrive%\DriverTest\Logs\X86 Debuggers And Tools-x86_en-us.msi_uninstall.log</LogPath>
+      <RemoteOnly>false</RemoteOnly>
+    </DriverTestCommand>
+    <DriverTestCommand>
+      <Architecture i:nil="true"/>
+      <Arguments>/x "%SystemDrive%\DriverTest\Setup\%TARGET_ARCHITECTURE% Debuggers And Tools-%TARGET_ARCHITECTURE%_en-us.msi" /qb- REMOVE=ALL /l*v "%SystemDrive%\DriverTest\Logs\%TARGET_ARCHITECTURE% Debuggers And Tools-%TARGET_ARCHITECTURE%_en-us.msi_uninstall.log"</Arguments>
+      <BinaryFile>msiexec.exe</BinaryFile>
+      <DisplayText>Uninstalling debuggers (%TARGET_ARCHITECTURE%)</DisplayText>
+      <KeyFile>Debuggers\Redist\%TARGET_ARCHITECTURE% Debuggers And Tools-%TARGET_ARCHITECTURE%_en-us.msi</KeyFile>
+      <LogPath>%SystemDrive%\DriverTest\Logs\%TARGET_ARCHITECTURE% Debuggers And Tools-%TARGET_ARCHITECTURE%_en-us.msi_uninstall.log</LogPath>
+      <RemoteOnly>false</RemoteOnly>
+    </DriverTestCommand>
+    <DriverTestCommand>
+      <Architecture i:nil="true"/>
+      <Arguments>/x "%SystemDrive%\DriverTest\Setup\Windows Driver Testing Framework (WDTF) Runtime Libraries-%TARGET_ARCHITECTURE%_en-us.msi" /qb- KITTARGET=1 REMOVE=ALL /l*v "%SystemDrive%\DriverTest\Logs\Windows Driver Testing Framework (WDTF) Runtime Libraries-%TARGET_ARCHITECTURE%_en-us.msi_uninstall.log"</Arguments>
+      <BinaryFile>msiexec.exe</BinaryFile>
+      <DisplayText>Uninstalling driver test framework</DisplayText>
+      <KeyFile>Testing\Runtimes\Windows Driver Testing Framework (WDTF) Runtime Libraries-%TARGET_ARCHITECTURE%_en-us.msi</KeyFile>
+      <LogPath>%SystemDrive%\DriverTest\Logs\Windows Driver Testing Framework (WDTF) Runtime Libraries-%TARGET_ARCHITECTURE%_en-us.msi_uninstall.log|%SystemDrive%\WDTFInstallText.log</LogPath>
+      <RemoteOnly>false</RemoteOnly>
+    </DriverTestCommand>
+    <DriverTestCommand>
+      <Architecture i:nil="true"/>
+      <Arguments>/c "copy /y %SystemDrive%\DriverTest\Setup\DTUninstall.js %ALLUSERSPROFILE%\DTUninstall.js &gt; %SystemDrive%\DriverTest\Logs\Copy_automation_uninstall_script.log 2&gt;&amp;1"</Arguments>
+      <BinaryFile>cmd.exe</BinaryFile>
+      <DisplayText>Copy automation uninstall script</DisplayText>
+      <KeyFile>tools\%TARGET_ARCHITECTURE%\dtsvc.exe</KeyFile>
+      <LogPath>%SystemDrive%\DriverTest\Logs\Copy_automation_uninstall_script.log</LogPath>
+      <RemoteOnly>true</RemoteOnly>
+    </DriverTestCommand>
+    <DriverTestCommand>
+      <Architecture i:nil="true"/>
+      <Arguments>%ALLUSERSPROFILE%\DTUninstall.js > %ALLUSERSPROFILE%\DTUninstall_Start.log</Arguments>
+      <BinaryFile>cscript.exe</BinaryFile>
+      <DisplayText>Removing automation user</DisplayText>
+      <KeyFile>Testing\Runtimes\DTUninstall.js</KeyFile>
+      <LogPath i:nil="true"/>
+      <RemoteOnly>true</RemoteOnly>
+    </DriverTestCommand>
+  </UninstallCommands>
+</DriverTestConfiguration>

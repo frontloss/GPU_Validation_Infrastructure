@@ -1,0 +1,82 @@
+<!-- EDP Parameters with LinkRate and Lane Count combinations. -->
+<eDP_Link_Lane_Config>
+  <Config_Name name ="EDP_L1_Rate_1_Bpc_8">
+     <Lane_Count>Lanes_1</Lane_Count>    
+     <Link_Rate>UI_Rate_1</Link_Rate>
+    <EDID_Name>EDP_1024_768_51Hz_54clk_8bpc.EDID</EDID_Name>
+    <DPCD_Name>EDP_L1_R_1_DPCD.bin</DPCD_Name>
+    <Run>true</Run>
+    <Platform>All</Platform>
+  </Config_Name>
+  <Config_Name name ="EDP_L2_Rate_1_Bpc_8">
+    <Lane_Count>Lanes_2</Lane_Count>
+    <Link_Rate>UI_Rate_1</Link_Rate>
+    <EDID_Name>EDP_1152_864_75Hz_104clk_8bpc.EDID</EDID_Name>
+    <DPCD_Name>EDP_L2_R_1_DPCD.bin</DPCD_Name>
+    <Run>true</Run>
+    <Platform>All</Platform>
+  </Config_Name>
+  <Config_Name name ="EDP_L4_Rate_1_Bpc_8">
+    <Lane_Count>Lanes_4</Lane_Count>
+    <Link_Rate>UI_Rate_1</Link_Rate>
+    <EDID_Name>EDP_1400_1050_100Hz_214clk_8bpc.EDID</EDID_Name>
+    <DPCD_Name>EDP_L4_R_1_DPCD.bin</DPCD_Name>
+    <Run>true</Run>
+    <Platform>All</Platform>
+  </Config_Name>
+  <Config_Name name ="EDP_L1_Rate_4_Bpc_8">
+    <Lane_Count>Lanes_1</Lane_Count>
+    <Link_Rate>UI_Rate_4</Link_Rate>
+    <EDID_Name>EDP_1152_864_65Hz_89clk_8bpc.EDID</EDID_Name>
+    <DPCD_Name>EDP_L1_R_4_DPCD.bin</DPCD_Name>
+    <Run>true</Run>
+    <Platform>All</Platform>
+  </Config_Name>
+  <Config_Name name ="EDP_L2_Rate_4_Bpc_8">
+    <Lane_Count>Lanes_2</Lane_Count>
+    <Link_Rate>UI_Rate_4</Link_Rate>
+    <EDID_Name>EDP_1600_1200_65Hz_176clk_8bpc.EDID</EDID_Name>
+    <DPCD_Name>EDP_L2_R_4_DPCD.bin</DPCD_Name>
+    <Run>true</Run>
+    <Platform>All</Platform>
+  </Config_Name>
+  <Config_Name name ="EDP_L4_Rate_4_Bpc_8">
+    <Lane_Count>Lanes_4</Lane_Count>
+    <Link_Rate>UI_Rate_4</Link_Rate>
+    <EDID_Name>EDP_2048_1536_79Hz_359clk_8bpc.EDID</EDID_Name>
+    <DPCD_Name>EDP_L4_R_4_DPCD.bin</DPCD_Name>
+    <Run>true</Run>
+    <Platform>All</Platform>
+  </Config_Name>
+
+  <Config_Name name ="EDP_L1_Rate_7_Bpc_8">
+    <Lane_Count>Lanes_1</Lane_Count>
+    <Link_Rate>UI_Rate_7</Link_Rate>
+    <EDID_Name>EDP_1600_1200_65Hz_176clk_8bpc.EDID</EDID_Name>
+    <DPCD_Name>EDP_L1_R_7_DPCD.bin</DPCD_Name>
+    <Run>true</Run>
+    <Platform>All</Platform>
+  </Config_Name>
+  <Config_Name name ="EDP_L2_Rate_7_Bpc_8">
+    <Lane_Count>Lanes_2</Lane_Count>
+    <Link_Rate>UI_Rate_7</Link_Rate>
+    <EDID_Name>EDP_2048_1536_79Hz_359clk_8bpc.EDID</EDID_Name>
+    <DPCD_Name>EDP_L2_R_7_DPCD.bin</DPCD_Name>
+    <Run>true</Run>
+    <Platform>All</Platform>
+  </Config_Name>
+  <Config_Name name ="EDP_L4_Rate_7_Bpc_8">
+    <Lane_Count>Lanes_4</Lane_Count>
+    <Link_Rate>UI_Rate_7</Link_Rate>
+    <EDID_Name>EDP_2048_1536_79Hz_359clk_8bpc.EDID</EDID_Name>
+    <DPCD_Name>EDP_L4_R_7_DPCD.bin</DPCD_Name>
+    <Run>true</Run>
+    <Platform>All</Platform>
+  </Config_Name>
+  
+  
+</eDP_Link_Lane_Config>
+
+
+
+

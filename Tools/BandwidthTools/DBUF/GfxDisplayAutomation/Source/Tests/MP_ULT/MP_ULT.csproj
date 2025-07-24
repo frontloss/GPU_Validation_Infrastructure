@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A4ED276-2D7F-4E5D-A7F8-0AA079C325A7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Intel.VPG.Display.Automation</RootNamespace>
+    <AssemblyName>MP_ULT</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MP_ULT_Base.cs" />
+    <Compile Include="MP_ULT_MPO_OnePlane.cs" />
+    <Compile Include="MP_ULT_MPO_Plane_DisableEnable.cs" />
+    <Compile Include="MP_ULT_MPO_Rotation.cs" />
+    <Compile Include="MP_ULT_MPO_Single_Plane_Basic.cs" />
+    <Compile Include="MP_ULT_MPO_Snap_Basic.cs" />
+    <Compile Include="MP_ULT_MPO_Snap_NV12_NonNV12.cs" />
+    <Compile Include="MP_ULT_MPO_Snap_Resize.cs" />
+    <Compile Include="MP_ULT_MPO_Snap_Resize_NV12_NonNV12.cs" />
+    <Compile Include="MP_ULT_MPO_ThreePlane.cs" />
+    <Compile Include="MP_ULT_MPO_TwoPlane.cs" />
+    <Compile Include="MP_ULT_MPO_YTiling_Snap_Basic.cs" />
+    <Compile Include="MP_ULT_NV12_FullScreen_Basic.cs" />
+    <Compile Include="MP_ULT_NV12_HighResolution.cs" />
+    <Compile Include="MP_ULT_NV12_Rotation.cs" />
+    <Compile Include="MP_ULT_NV12_Scaling.cs" />
+    <Compile Include="MP_ULT_NV12_Snap_Basic.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Framework\AccessInterface\AccessInterface.csproj">
+      <Project>{0f59313c-058e-451e-bdad-2999e4241455}</Project>
+      <Name>AccessInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\ConstantsLibrary\ConstantsLibrary.csproj">
+      <Project>{b8edd54e-47a8-4e78-a31d-d29c6d521fc2}</Project>
+      <Name>ConstantsLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\CoreLibrary\CoreLibrary.csproj">
+      <Project>{3942ed5d-d917-4f23-9ee0-fc90da902dff}</Project>
+      <Name>CoreLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\Logger\Logger.csproj">
+      <Project>{ec0587c7-cf34-4309-b4b5-d1eb051032b4}</Project>
+      <Name>Logger</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Assemblies\Mapper\CharmsPlaneParams.xml" />
+    <Content Include="Assemblies\Mapper\NV12PlaneParams.xml" />
+    <Content Include="Assemblies\Mapper\YTilingPlaneParams.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>XCopy "$(ProjectDir)Assemblies" "$(TargetDir)" /Y /S /E</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

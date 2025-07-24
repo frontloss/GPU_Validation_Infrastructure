@@ -1,0 +1,1295 @@
+<Display_Automation_2.0>
+    <Feature Name="ModeEnumAndSet" Owner="rp3">
+        <Test LastModifiedWW="2020.WW23" Name="display_mode_enumeration.py" Owner="rp3" Priority="P1" Version="2">
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU001">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b -xml Tests\ModeEnumAndSet\dp_xml\ASUS_PG279Q_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL;CNL;SKL;GLK;ICL_LP;ICL_HP;TGL_LP;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;ICL_LP_SIM;ICL_LP_SOC;TGL_LP_SIM;TGL_LP_SOC;ICL_HP_SIM;ICL_HP_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@SKL_SOC,KBL_SOC,GLK_SOC,CFL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU002">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b -xml Tests\ModeEnumAndSet\dp_xml\DELL_U2312HM_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL;CNL;SKL;GLK;ICL_LP;ICL_HP;TGL_LP;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;ICL_LP_SIM;ICL_LP_SOC;TGL_LP_SIM;TGL_LP_SOC;ICL_HP_SIM;ICL_HP_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@SKL_SOC,KBL_SOC,GLK_SOC,CFL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU003">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b -xml Tests\ModeEnumAndSet\dp_xml\DELL_UP2414Q_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL;CNL;SKL;GLK;ICL_LP;ICL_HP;TGL_LP;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;ICL_LP_SIM;ICL_LP_SOC;TGL_LP_SIM;TGL_LP_SOC;ICL_HP_SIM;ICL_HP_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@SKL_SOC,KBL_SOC,GLK_SOC,CFL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU004">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b -xml Tests\ModeEnumAndSet\dp_xml\DELL_UP3216Q_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL;CNL;SKL;GLK;ICL_LP;ICL_HP;TGL_LP;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;ICL_LP_SIM;ICL_LP_SOC;TGL_LP_SIM;TGL_LP_SOC;ICL_HP_SIM;ICL_HP_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@SKL_SOC,KBL_SOC,GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU005">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b -xml Tests\ModeEnumAndSet\dp_xml\HP_2310e_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL;CNL;SKL;GLK;ICL_LP;ICL_HP;TGL_LP;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;ICL_LP_SIM;ICL_LP_SOC;TGL_LP_SIM;TGL_LP_SOC;ICL_HP_SIM;ICL_HP_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@SKL_SOC,KBL_SOC,GLK_SOC,CFL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU006">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b -xml Tests\ModeEnumAndSet\dp_xml\HP_Z27q_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL;CNL;SKL;GLK;ICL_LP;ICL_HP;TGL_LP;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;ICL_LP_SIM;ICL_LP_SOC;TGL_LP_SIM;TGL_LP_SOC;ICL_HP_SIM;ICL_HP_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@SKL_SOC,KBL_SOC,GLK_SOC,CFL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU007">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b -xml Tests\ModeEnumAndSet\dp_xml\LENOVO_L2251x_Wide_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL;CNL;SKL;GLK;ICL_LP;ICL_HP;TGL_LP;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;ICL_LP_SIM;ICL_LP_SOC;TGL_LP_SIM;TGL_LP_SOC;ICL_HP_SIM;ICL_HP_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@SKL_SOC,KBL_SOC,GLK_SOC,CFL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU008">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b -xml Tests\ModeEnumAndSet\dp_xml\LG_UltraHD_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL;CNL;SKL;GLK;ICL_LP;ICL_HP;TGL_LP;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;ICL_LP_SIM;ICL_LP_SOC;TGL_LP_SIM;TGL_LP_SOC;ICL_HP_SIM;ICL_HP_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@SKL_SOC,KBL_SOC,GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU009">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b -xml Tests\ModeEnumAndSet\dp_xml\SAMSUNG_S23A950D_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>CNL;GLK;ICL_LP;ICL_HP;TGL_LP;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;ICL_LP_SIM;ICL_LP_SOC;TGL_LP_SIM;TGL_LP_SOC;ICL_HP_SIM;ICL_HP_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU010">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b -xml Tests\ModeEnumAndSet\dp_xml\ViewSonic_SMM121720221_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL;CNL;SKL;GLK;ICL_LP;ICL_HP;TGL_LP;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;ICL_LP_SIM;ICL_LP_SOC;TGL_LP_SIM;TGL_LP_SOC;ICL_HP_SIM;ICL_HP_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@SKL_SOC,KBL_SOC,GLK_SOC,CFL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU101">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b -xml Tests\ModeEnumAndSet\dp_xml\eDP_4K_60Hz_120Hz_DisplayID.xml</CommandLine>
+                <OS>Win19H1</OS>
+                <Platform>KBL;CFL;SKL</Platform>
+                <TestEnvironment>GLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+			<TestInstance Grids="CI;PreETM;ETM" Id="MDENU159">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b -xml Tests\ModeEnumAndSet\dp_xml\DELL_ALIENWARE_AW2521HFL_240Hz_DP.xml</CommandLine>
+                <OS>Win21H2</OS>
+                <Platform>TGL_LP;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>TGL_LP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+			<TestInstance Grids="CI;PreETM;ETM" Id="MDENU160">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b -xml Tests\ModeEnumAndSet\dp_xml\Acer_Predator_27_INCH_XB272_240Hz_DP.xml</CommandLine>
+                <OS>Win21H2</OS>
+                <Platform>TGL_LP;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>TGL_LP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+			<TestInstance Grids="CI;PreETM;ETM" Id="MDENU161">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b -xml Tests\ModeEnumAndSet\dp_xml\DELL_U3218_M_300Hz_360Hz_DP.xml</CommandLine>
+                <OS>Win21H2</OS>
+                <Platform>TGL_LP;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>TGL_LP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU158">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_b_native -xml Tests\ModeEnumAndSet\hdmi_xml\TCL_T246MC_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>ICL_LP;ICL_HP;TGL_LP;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;ICL_LP_SIM;ICL_LP_SOC;TGL_LP_SIM;TGL_LP_SOC;ICL_HP_SIM;ICL_HP_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@SKL_SOC,KBL_SOC,GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU011">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_c_native -xml Tests\ModeEnumAndSet\hdmi_xml\ASUS_PG279_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL;CNL;SKL;GLK;ICL_LP;ICL_HP;TGL_LP;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;ICL_LP_SIM;ICL_LP_SOC;TGL_LP_SIM;TGL_LP_SOC;ICL_HP_SIM;ICL_HP_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@SKL_SOC,KBL_SOC,GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU012">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_c -xml Tests\ModeEnumAndSet\hdmi_xml\DELL_U2713HM_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL;CNL;SKL;GLK;ICL_LP;ICL_HP;TGL_LP;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;ICL_LP_SIM;ICL_LP_SOC;TGL_LP_SIM;TGL_LP_SOC;ICL_HP_SIM;ICL_HP_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@SKL_SOC,KBL_SOC,GLK_SOC,CFL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU013">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_c_native -xml Tests\ModeEnumAndSet\hdmi_xml\DELL_U2913WM_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL;CNL;SKL;GLK;ICL_LP;ICL_HP;TGL_LP;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;ICL_LP_SIM;ICL_LP_SOC;TGL_LP_SIM;TGL_LP_SOC;ICL_HP_SIM;ICL_HP_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@SKL_SOC,KBL_SOC,GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU014">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_c -xml Tests\ModeEnumAndSet\hdmi_xml\DELL_U3014_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL;CNL;SKL;GLK;ICL_LP;ICL_HP;TGL_LP;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;ICL_LP_SIM;ICL_LP_SOC;TGL_LP_SIM;TGL_LP_SOC;ICL_HP_SIM;ICL_HP_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@SKL_SOC,KBL_SOC,GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU015">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_c_native -xml Tests\ModeEnumAndSet\hdmi_xml\DELL_UP2414Q_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL;CNL;SKL;GLK;ICL_LP;ICL_HP;TGL_LP;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;ICL_LP_SIM;ICL_LP_SOC;TGL_LP_SIM;TGL_LP_SOC;ICL_HP_SIM;ICL_HP_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@SKL_SOC,KBL_SOC,GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU016">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_c_native -xml Tests\ModeEnumAndSet\hdmi_xml\DELL_UP3216Q_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL;CNL;SKL;GLK;ICL_LP;ICL_HP;TGL_LP;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;ICL_LP_SIM;ICL_LP_SOC;TGL_LP_SIM;TGL_LP_SOC;ICL_HP_SIM;ICL_HP_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@SKL_SOC,KBL_SOC,GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU017">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_c -xml Tests\ModeEnumAndSet\hdmi_xml\LENOVO_Pro2840m_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL;CNL;SKL;GLK;ICL_LP;ICL_HP;TGL_LP;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;ICL_LP_SIM;ICL_LP_SOC;TGL_LP_SIM;TGL_LP_SOC;ICL_HP_SIM;ICL_HP_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@SKL_SOC,KBL_SOC,GLK_SOC,CFL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU018">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_c_native -xml Tests\ModeEnumAndSet\hdmi_xml\LG_UltraHD_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>CNL;GLK;ICL_LP;ICL_HP;TGL_LP;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;ICL_LP_SIM;ICL_LP_SOC;TGL_LP_SIM;TGL_LP_SOC;ICL_HP_SIM;ICL_HP_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU019">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_c -xml Tests\ModeEnumAndSet\hdmi_xml\SAMSUNG_S23A950D_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>CNL;GLK;ICL_LP;ICL_HP;TGL_LP;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;ICL_LP_SIM;ICL_LP_SOC;TGL_LP_SIM;TGL_LP_SOC;ICL_HP_SIM;ICL_HP_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU020">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_c_native -xml Tests\ModeEnumAndSet\hdmi_xml\SHARP_PNK321_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>CNL;GLK;ICL_LP;ICL_HP;TGL_LP;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;ICL_LP_SIM;ICL_LP_SOC;TGL_LP_SIM;TGL_LP_SOC;ICL_HP_SIM;ICL_HP_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU021">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_e -xml Tests\ModeEnumAndSet\dp_xml\ASUS_PG279Q_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>LKF1;LKF_R</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;LKF1_DOD;LKF_R_SIM:LKF_R_DOD:LKF_R_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU022">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_e -xml Tests\ModeEnumAndSet\dp_xml\DELL_U2312HM_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>LKF1;LKF_R</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;LKF1_DOD;LKF_R_SIM:LKF_R_DOD:LKF_R_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU023">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_e -xml Tests\ModeEnumAndSet\dp_xml\DELL_UP2414Q_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>LKF1;LKF_R</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;LKF1_DOD;LKF_R_SIM:LKF_R_DOD:LKF_R_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU024">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_e -xml Tests\ModeEnumAndSet\dp_xml\DELL_UP3216Q_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>LKF1;LKF_R</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;LKF1_DOD;LKF_R_SIM:LKF_R_DOD:LKF_R_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU025">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_e -xml Tests\ModeEnumAndSet\dp_xml\HP_2310e_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>LKF1;LKF_R</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;LKF1_DOD;LKF_R_SIM:LKF_R_DOD:LKF_R_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU026">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_e -xml Tests\ModeEnumAndSet\dp_xml\HP_Z27q_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>LKF1;LKF_R</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;LKF1_DOD;LKF_R_SIM:LKF_R_DOD:LKF_R_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU027">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_e -xml Tests\ModeEnumAndSet\dp_xml\LENOVO_L2251x_Wide_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>LKF1;LKF_R</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;LKF1_DOD;LKF_R_SIM:LKF_R_DOD:LKF_R_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU028">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_e -xml Tests\ModeEnumAndSet\dp_xml\LG_UltraHD_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>LKF1;LKF_R</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;LKF1_DOD;LKF_R_SIM:LKF_R_DOD:LKF_R_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU029">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_e -xml Tests\ModeEnumAndSet\dp_xml\SAMSUNG_S23A950D_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>LKF1;LKF_R</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;LKF1_DOD;LKF_R_SIM:LKF_R_DOD:LKF_R_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU030">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_e -xml Tests\ModeEnumAndSet\dp_xml\ViewSonic_SMM121720221_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>LKF1;LKF_R</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;LKF1_DOD;LKF_R_SIM:LKF_R_DOD:LKF_R_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU031">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_d_native -xml Tests\ModeEnumAndSet\hdmi_xml\ASUS_PG279_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU032">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_d -xml Tests\ModeEnumAndSet\hdmi_xml\DELL_U2713HM_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU033">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_d_native -xml Tests\ModeEnumAndSet\hdmi_xml\DELL_U2913WM_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU034">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_d -xml Tests\ModeEnumAndSet\hdmi_xml\DELL_U3014_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU035">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_d_native -xml Tests\ModeEnumAndSet\hdmi_xml\DELL_UP2414Q_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU036">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_d_native -xml Tests\ModeEnumAndSet\hdmi_xml\DELL_UP3216Q_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU037">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_d -xml Tests\ModeEnumAndSet\hdmi_xml\LENOVO_Pro2840m_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU038">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_d_native -xml Tests\ModeEnumAndSet\hdmi_xml\LG_UltraHD_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU039">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_d -xml Tests\ModeEnumAndSet\hdmi_xml\SAMSUNG_S23A950D_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU040">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_d_native -xml Tests\ModeEnumAndSet\hdmi_xml\SHARP_PNK321_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU041">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_c_native -xml Tests\ModeEnumAndSet\hdmi_xml\Acer_CB240HYK_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>GLK</Platform>
+                <TestEnvironment>GLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU042">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_c_native -xml Tests\ModeEnumAndSet\hdmi_xml\Acer_CB281HK_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>GLK</Platform>
+                <TestEnvironment>GLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU043">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_c_native -xml Tests\ModeEnumAndSet\hdmi_xml\Acer_H277HK_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>GLK</Platform>
+                <TestEnvironment>GLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU044">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_c_native -xml Tests\ModeEnumAndSet\hdmi_xml\BenQ_SW320_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>GLK</Platform>
+                <TestEnvironment>GLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU045">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_c_native -xml Tests\ModeEnumAndSet\hdmi_xml\Dell_P2415Q_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>GLK</Platform>
+                <TestEnvironment>GLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU046">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_c -xml Tests\ModeEnumAndSet\hdmi_xml\Dell_U2410_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>GLK</Platform>
+                <TestEnvironment>GLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU047">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_c_native -xml Tests\ModeEnumAndSet\hdmi_xml\LG_OLED55B7AU_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>GLK</Platform>
+                <TestEnvironment>GLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU048">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_c_native -xml Tests\ModeEnumAndSet\hdmi_xml\Philips_288P6_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>GLK</Platform>
+                <TestEnvironment>GLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU049">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_c_native -xml Tests\ModeEnumAndSet\hdmi_xml\Samsung_U28E590D_HDMI_P2.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>GLK</Platform>
+                <TestEnvironment>GLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU050">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_c_native -xml Tests\ModeEnumAndSet\hdmi_xml\Samsung_UN65HU8550FXZA_HDMITV_P2.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>GLK</Platform>
+                <TestEnvironment>GLK_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU051">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b -xml Tests\ModeEnumAndSet\dp_xml\Acer_CB240HYK_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>GLK;EHL;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;EHL_SOC;EHL_SIM;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU052">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b -xml Tests\ModeEnumAndSet\dp_xml\Acer_CB281HK_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>GLK;EHL;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;EHL_SOC;EHL_SIM;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU053">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b -xml Tests\ModeEnumAndSet\dp_xml\Acer_H277HK_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>GLK;EHL;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;EHL_SOC;EHL_SIM;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU054">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b -xml Tests\ModeEnumAndSet\dp_xml\Acer_K242HQK_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>GLK;EHL;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;EHL_SOC;EHL_SIM;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU055">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b -xml Tests\ModeEnumAndSet\dp_xml\Benq_SW320_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>GLK;EHL;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;EHL_SOC;EHL_SIM;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU056">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b -xml Tests\ModeEnumAndSet\dp_xml\Dell_P2415Q_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>GLK;EHL;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;EHL_SOC;EHL_SIM;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU057">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b -xml Tests\ModeEnumAndSet\dp_xml\Dell_U2410_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>GLK;EHL;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;EHL_SOC;EHL_SIM;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU058">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b -xml Tests\ModeEnumAndSet\dp_xml\Lenovo_3053PWA_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>GLK;EHL;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;EHL_SOC;EHL_SIM;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU059">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b -xml Tests\ModeEnumAndSet\dp_xml\Philips_288P6_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>GLK;EHL;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;EHL_SOC;EHL_SIM;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU060">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b -xml Tests\ModeEnumAndSet\dp_xml\Samsung_U28E590D_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>GLK;EHL;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>GLK_SOC;EHL_SOC;EHL_SIM;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU061">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_d_native -xml Tests\ModeEnumAndSet\hdmi_xml\Acer_CB240HYK_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>ICL_LP;ICL_HP;LKF1;TGL;EHL;RYF;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>ICL_LP_SOC;ICL_LP_SIM;ICL_HP_SOC;ICL_HP_SIM;LKF1_SOC;LKF1_SIM;TGL_SOC;TGL_SIM;EHL_SOC;EHL_SIM;LKF1_DOD;RYF_SIM;RYF_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU062">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_d_native -xml Tests\ModeEnumAndSet\hdmi_xml\Acer_CB281HK_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>ICL_LP;ICL_HP;LKF1;TGL;EHL;RYF;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>ICL_LP_SOC;ICL_LP_SIM;ICL_HP_SOC;ICL_HP_SIM;LKF1_SOC;LKF1_SIM;TGL_SOC;TGL_SIM;EHL_SOC;EHL_SIM;LKF1_DOD;RYF_SIM;RYF_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU063">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_d_native -xml Tests\ModeEnumAndSet\hdmi_xml\Acer_H277HK_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>ICL_LP;ICL_HP;LKF1;TGL;EHL;RYF;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>ICL_LP_SOC;ICL_LP_SIM;ICL_HP_SOC;ICL_HP_SIM;LKF1_SOC;LKF1_SIM;TGL_SOC;TGL_SIM;EHL_SOC;EHL_SIM;LKF1_DOD;RYF_SIM;RYF_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU064">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_d_native -xml Tests\ModeEnumAndSet\hdmi_xml\BenQ_SW320_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>ICL_LP;ICL_HP;LKF1;TGL;EHL;RYF;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>ICL_LP_SOC;ICL_LP_SIM;ICL_HP_SOC;ICL_HP_SIM;LKF1_SOC;LKF1_SIM;TGL_SOC;TGL_SIM;EHL_SOC;EHL_SIM;LKF1_DOD;RYF_SIM;RYF_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU065">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_d_native -xml Tests\ModeEnumAndSet\hdmi_xml\Dell_P2415Q_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>ICL_LP;ICL_HP;LKF1;TGL;EHL;RYF;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>ICL_LP_SOC;ICL_LP_SIM;ICL_HP_SOC;ICL_HP_SIM;LKF1_SOC;LKF1_SIM;TGL_SOC;TGL_SIM;EHL_SOC;EHL_SIM;LKF1_DOD;RYF_SIM;RYF_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU066">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_d -xml Tests\ModeEnumAndSet\hdmi_xml\Dell_U2410_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>ICL_LP;ICL_HP;LKF1;TGL;EHL;RYF;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>ICL_LP_SOC;ICL_LP_SIM;ICL_HP_SOC;ICL_HP_SIM;LKF1_SOC;LKF1_SIM;TGL_SOC;TGL_SIM;EHL_SOC;EHL_SIM;LKF1_DOD;RYF_SIM;RYF_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU067">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_d_native -xml Tests\ModeEnumAndSet\hdmi_xml\LG_OLED55B7AU_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>ICL_LP;ICL_HP;LKF1;TGL;EHL;RYF;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>ICL_LP_SOC;ICL_LP_SIM;ICL_HP_SOC;ICL_HP_SIM;LKF1_SOC;LKF1_SIM;TGL_SOC;TGL_SIM;EHL_SOC;EHL_SIM;LKF1_DOD;RYF_SIM;RYF_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU068">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_d_native -xml Tests\ModeEnumAndSet\hdmi_xml\Philips_288P6_HDMI.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>ICL_LP;ICL_HP;LKF1;TGL;EHL;RYF;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>ICL_LP_SOC;ICL_LP_SIM;ICL_HP_SOC;ICL_HP_SIM;LKF1_SOC;LKF1_SIM;TGL_SOC;TGL_SIM;EHL_SOC;EHL_SIM;LKF1_DOD;RYF_SIM;RYF_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU069">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_d_native -xml Tests\ModeEnumAndSet\hdmi_xml\Samsung_U28E590D_HDMI_P2.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>ICL_LP;ICL_HP;LKF1;TGL;EHL;RYF;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>ICL_LP_SOC;ICL_LP_SIM;ICL_HP_SOC;ICL_HP_SIM;LKF1_SOC;LKF1_SIM;TGL_SOC;TGL_SIM;EHL_SOC;EHL_SIM;LKF1_DOD;RYF_SIM;RYF_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU070">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_d_native -xml Tests\ModeEnumAndSet\hdmi_xml\Samsung_UN65HU8550FXZA_HDMITV_P2.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>ICL_LP;ICL_HP;LKF1;TGL;EHL;RYF;DG1;RKL;DG2;ADLS</Platform>
+                <TestEnvironment>ICL_LP_SOC;ICL_LP_SIM;ICL_HP_SOC;ICL_HP_SIM;LKF1_SOC;LKF1_SIM;TGL_SOC;TGL_SIM;EHL_SOC;EHL_SIM;LKF1_DOD;RYF_SIM;RYF_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU071">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_e -xml Tests\ModeEnumAndSet\dp_xml\Acer_CB240HYK_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>ICL_LP;ICL_HP;LKF1;TGL;RYF;LKF_R</Platform>
+                <TestEnvironment>ICL_LP_SOC;ICL_LP_SIM;ICL_HP_SOC;ICL_HP_SIM;LKF1_SOC;LKF1_SIM;TGL_SOC;TGL_SIM;LKF1_DOD;RYF_SIM;RYF_SOC;LKF_R_SIM:LKF_R_DOD:LKF_R_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU072">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_e -xml Tests\ModeEnumAndSet\dp_xml\Acer_CB281HK_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>ICL_LP;ICL_HP;LKF1;TGL;RYF;LKF_R</Platform>
+                <TestEnvironment>ICL_LP_SOC;ICL_LP_SIM;ICL_HP_SOC;ICL_HP_SIM;LKF1_SOC;LKF1_SIM;TGL_SOC;TGL_SIM;LKF1_DOD;RYF_SIM;RYF_SOC;LKF_R_SIM:LKF_R_DOD:LKF_R_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU073">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_e -xml Tests\ModeEnumAndSet\dp_xml\Acer_H277HK_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>ICL_LP;ICL_HP;LKF1;TGL;RYF;LKF_R</Platform>
+                <TestEnvironment>ICL_LP_SOC;ICL_LP_SIM;ICL_HP_SOC;ICL_HP_SIM;LKF1_SOC;LKF1_SIM;TGL_SOC;TGL_SIM;LKF1_DOD;RYF_SIM;RYF_SOC;LKF_R_SIM:LKF_R_DOD:LKF_R_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU074">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_e -xml Tests\ModeEnumAndSet\dp_xml\Acer_K242HQK_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>ICL_LP;ICL_HP;LKF1;TGL;RYF;LKF_R</Platform>
+                <TestEnvironment>ICL_LP_SOC;ICL_LP_SIM;ICL_HP_SOC;ICL_HP_SIM;LKF1_SOC;LKF1_SIM;TGL_SOC;TGL_SIM;LKF1_DOD;RYF_SIM;RYF_SOC;LKF_R_SIM:LKF_R_DOD:LKF_R_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU075">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_e -xml Tests\ModeEnumAndSet\dp_xml\Benq_SW320_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>ICL_LP;ICL_HP;LKF1;TGL;RYF;LKF_R</Platform>
+                <TestEnvironment>ICL_LP_SOC;ICL_LP_SIM;ICL_HP_SOC;ICL_HP_SIM;LKF1_SOC;LKF1_SIM;TGL_SOC;TGL_SIM;LKF1_DOD;RYF_SIM;RYF_SOC;LKF_R_SIM:LKF_R_DOD:LKF_R_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU076">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_e -xml Tests\ModeEnumAndSet\dp_xml\Dell_P2415Q_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>ICL_LP;ICL_HP;LKF1;TGL;RYF;LKF_R</Platform>
+                <TestEnvironment>ICL_LP_SOC;ICL_LP_SIM;ICL_HP_SOC;ICL_HP_SIM;LKF1_SOC;LKF1_SIM;TGL_SOC;TGL_SIM;LKF1_DOD;RYF_SIM;RYF_SOC;LKF_R_SIM:LKF_R_DOD:LKF_R_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU077">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_e -xml Tests\ModeEnumAndSet\dp_xml\Dell_U2410_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>ICL_LP;ICL_HP;LKF1;TGL;RYF;LKF_R</Platform>
+                <TestEnvironment>ICL_LP_SOC;ICL_LP_SIM;ICL_HP_SOC;ICL_HP_SIM;LKF1_SOC;LKF1_SIM;TGL_SOC;TGL_SIM;LKF1_DOD;RYF_SIM;RYF_SOC;LKF_R_SIM:LKF_R_DOD:LKF_R_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU078">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_e -xml Tests\ModeEnumAndSet\dp_xml\Lenovo_3053PWA_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>ICL_LP;ICL_HP;LKF1;TGL;RYF;LKF_R</Platform>
+                <TestEnvironment>ICL_LP_SOC;ICL_LP_SIM;ICL_HP_SOC;ICL_HP_SIM;LKF1_SOC;LKF1_SIM;TGL_SOC;TGL_SIM;LKF1_DOD;RYF_SIM;RYF_SOC;LKF_R_SIM:LKF_R_DOD:LKF_R_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU079">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_e -xml Tests\ModeEnumAndSet\dp_xml\Philips_288P6_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>ICL_LP;ICL_HP;LKF1;TGL;RYF;LKF_R</Platform>
+                <TestEnvironment>ICL_LP_SOC;ICL_LP_SIM;ICL_HP_SOC;ICL_HP_SIM;LKF1_SOC;LKF1_SIM;TGL_SOC;TGL_SIM;LKF1_DOD;RYF_SIM;RYF_SOC;LKF_R_SIM:LKF_R_DOD:LKF_R_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU080">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_e -xml Tests\ModeEnumAndSet\dp_xml\Samsung_U28E590D_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>ICL_LP;ICL_HP;LKF1;TGL;RYF;LKF_R</Platform>
+                <TestEnvironment>ICL_LP_SOC;ICL_LP_SIM;ICL_HP_SOC;ICL_HP_SIM;LKF1_SOC;LKF1_SIM;TGL_SOC;TGL_SIM;LKF1_DOD;RYF_SIM;RYF_SOC;LKF_R_SIM:LKF_R_DOD:LKF_R_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU081">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_a -xml Tests\ModeEnumAndSet\dp_xml\ASUS_PG279Q_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SIM;RYF_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU082">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_a -xml Tests\ModeEnumAndSet\dp_xml\DELL_U2312HM_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SIM;RYF_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU083">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_a -xml Tests\ModeEnumAndSet\dp_xml\DELL_UP2414Q_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SIM;RYF_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU084">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_a -xml Tests\ModeEnumAndSet\dp_xml\DELL_UP3216Q_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SIM;RYF_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU085">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_a -xml Tests\ModeEnumAndSet\dp_xml\HP_2310e_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SIM;RYF_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU086">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_a -xml Tests\ModeEnumAndSet\dp_xml\HP_Z27q_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SIM;RYF_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU087">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_a -xml Tests\ModeEnumAndSet\dp_xml\LENOVO_L2251x_Wide_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SIM;RYF_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU088">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_a -xml Tests\ModeEnumAndSet\dp_xml\LG_UltraHD_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SIM;RYF_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU089">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_a -xml Tests\ModeEnumAndSet\dp_xml\SAMSUNG_S23A950D_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SIM;RYF_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU090">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_a -xml Tests\ModeEnumAndSet\dp_xml\ViewSonic_SMM121720221_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SIM;RYF_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU091">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_a_native -xml Tests\ModeEnumAndSet\dp_xml\ASUS_PG279Q_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SIM;RYF_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU092">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_a_native -xml Tests\ModeEnumAndSet\dp_xml\DELL_U2312HM_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SIM;RYF_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU093">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_a_native -xml Tests\ModeEnumAndSet\dp_xml\DELL_UP2414Q_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SIM;RYF_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU094">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_a_native -xml Tests\ModeEnumAndSet\dp_xml\DELL_UP3216Q_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SIM;RYF_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU095">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_a_native -xml Tests\ModeEnumAndSet\dp_xml\HP_2310e_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SIM;RYF_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU096">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_a_native -xml Tests\ModeEnumAndSet\dp_xml\HP_Z27q_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SIM;RYF_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU097">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_a_native -xml Tests\ModeEnumAndSet\dp_xml\LENOVO_L2251x_Wide_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SIM;RYF_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU098">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_a_native -xml Tests\ModeEnumAndSet\dp_xml\LG_UltraHD_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SIM;RYF_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU099">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_a -xml Tests\ModeEnumAndSet\dp_xml\SAMSUNG_S23A950D_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SIM;RYF_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU100">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_a_native -xml Tests\ModeEnumAndSet\dp_xml\ViewSonic_SMM121720221_DP.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SIM;RYF_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU102">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -edp_a SINK_EDP044 -xml Tests\ModeEnumAndSet\edp_xml\eDP_4K_60Hz_120Hz_DisplayID.xml</CommandLine>
+                <OS>Win19H1</OS>
+                <Platform>ICL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU103">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_d -xml Tests\ModeEnumAndSet\dp_xml\DP_YUV420.xml</CommandLine>
+                <OS>Win19H1</OS>
+                <Platform>ICL_LP;LKF1;TGL;RKL;ADL-S;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SOC;LKF1_SOC;TGL_LP_SOC;RKL_SIM;RKL_SOC;ADL-S_SIM;ADL-S_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU104">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b_plus -xml Tests\ModeEnumAndSet\dp_xml\DP_YUV420.xml</CommandLine>
+                <OS>Win19H1</OS>
+                <Platform>ICL_LP;TGL;RKL;ADL-S;DG1</Platform>
+                <TestEnvironment>ICL_LP_SOC;TGL_LP_SOC;RKL_SIM;RKL_SOC;ADL-S_SIM;ADL-S_SOC;DG1_SIM;DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU105">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b_plus -xml Tests\ModeEnumAndSet\dp_xml\DELL_U4919DW_DP.xml</CommandLine>
+                <OS>Win19H1</OS>
+                <Platform>KBL;GLK;ICL_LP;TGL;RKL;ADL-S;DG1;JSL;DG2</Platform>
+                <TestEnvironment>KBL_SOC;GLK_SOC;ICL_LP_SOC;TGL_LP_SOC;RKL_SIM;RKL_SOC;ADL-S_SIM;ADL-S_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU106">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b_plus -xml Tests\ModeEnumAndSet\dp_xml\DP_YUV422.xml</CommandLine>
+                <OS>Win19H1</OS>
+                <Platform>DG2;ADLP</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU107">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_c -xml Tests\ModeEnumAndSet\dp_xml\DP_YUV422.xml</CommandLine>
+                <OS>Win19H1</OS>
+                <Platform>DG2;ADLP</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU108">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_d -xml Tests\ModeEnumAndSet\dp_xml\DP_YUV422.xml</CommandLine>
+                <OS>Win19H1</OS>
+                <Platform>DG2;ADLP</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU109">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b -xml Tests\ModeEnumAndSet\dp_xml\DP_EIGHT_BLK_EDID.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>ICL_LP;LKF1;TGL_LP;DG1;RKL;DG2;ADLS;ADLP</Platform>
+                <TestEnvironment>ICL_LP_SOC;LKF1_SOC;TGL_LP_SOC;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU110">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_d -xml Tests\ModeEnumAndSet\dp_xml\DP_EIGHT_BLK_EDID.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>LKF1;</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU111">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b -xml Tests\ModeEnumAndSet\dp_xml\DP_10BPC.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>TGL_LP;DG1;RKL;DG2;ADLS;ADLP;MTL</Platform>
+                <TestEnvironment>TGL_LP_SOC;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU112">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_b -xml Tests\ModeEnumAndSet\dp_xml\DP_12BPC.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>TGL_LP;DG1;RKL;DG2;ADLS;ADLP;MTL</Platform>
+                <TestEnvironment>TGL_LP_SOC;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU125">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_b_native -xml Tests\ModeEnumAndSet\hdmi_xml\Benq_HDR_10_BPC.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>ICL_LP;ICL_HP;LKF1;TGL;EHL;RYF;DG1;RKL;DG2;ADLS;ADLP</Platform>
+                <TestEnvironment>ICL_LP_SOC;ICL_LP_SIM;ICL_HP_SOC;ICL_HP_SIM;LKF1_SOC;LKF1_SIM;TGL_SOC;TGL_SIM;EHL_SOC;EHL_SIM;LKF1_DOD;RYF_SIM;RYF_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU126">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_b_native -xml Tests\ModeEnumAndSet\hdmi_xml\HDMI_RGB_12_BPC.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>ICL_LP;ICL_HP;LKF1;TGL;EHL;RYF;DG1;RKL;DG2;ADLS;ADLP</Platform>
+                <TestEnvironment>ICL_LP_SOC;ICL_LP_SIM;ICL_HP_SOC;ICL_HP_SIM;LKF1_SOC;LKF1_SIM;TGL_SOC;TGL_SIM;EHL_SOC;EHL_SIM;LKF1_DOD;RYF_SIM;RYF_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU113">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_b_native -xml Tests\ModeEnumAndSet\hdmi_xml\HDMI_YUV_420_Deepcolor.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>ICL_LP;ICL_HP;LKF1;TGL;EHL;RYF;DG1;RKL;DG2;ADLS;ADLP</Platform>
+                <TestEnvironment>ICL_LP_SOC;ICL_LP_SIM;ICL_HP_SOC;ICL_HP_SIM;LKF1_SOC;LKF1_SIM;TGL_SOC;TGL_SIM;EHL_SOC;EHL_SIM;LKF1_DOD;RYF_SIM;RYF_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="ETM;PreETM;CI" Id="MDENU114">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_b_native -xml Tests\ModeEnumAndSet\hdmi_xml\HDMI_YUV_444_Deepcolor.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>ICL_LP;ICL_HP;LKF1;TGL;EHL;RYF;DG1;RKL;DG2;ADLS;ADLP;MTL</Platform>
+                <TestEnvironment>ICL_LP_SOC;ICL_LP_SIM;ICL_HP_SOC;ICL_HP_SIM;LKF1_SOC;LKF1_SIM;TGL_SOC;TGL_SIM;EHL_SOC;EHL_SIM;LKF1_DOD;RYF_SIM;RYF_SOC;DG1_SIM;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>None</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU125">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_b_native -xml Tests\ModeEnumAndSet\hdmi_xml\Acer_XG270HU_Non_STD_Frequency.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>TGL_LP;DG1;RKL;DG2;ADLS;ADLP;MTL;ELG</Platform>
+                <TestEnvironment>TGL_LP_SOC;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU126">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_b_native -xml Tests\ModeEnumAndSet\hdmi_xml\ASUS_XG248Q_Non_STD_Frequency.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>TGL_LP;DG1;RKL;DG2;ADLS;ADLP;MTL;ELG</Platform>
+                <TestEnvironment>TGL_LP_SOC;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU127">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_b_native -xml Tests\ModeEnumAndSet\hdmi_xml\LG_38WK95C_VRR_Non_STD_Frequency.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>TGL_LP;DG1;RKL;DG2;ADLS;ADLP;MTL;ELG</Platform>
+                <TestEnvironment>TGL_LP_SOC;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU115">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_d_plus -xml Tests\ModeEnumAndSet\dp_xml\DP_HDMI2_1_PCON_3GBPS_DSC.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>TGL_LP;DG1;RKL;DG2;ADLS;ADLP;MTL</Platform>
+                <TestEnvironment>TGL_LP_SOC;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU116">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_d_plus -xml Tests\ModeEnumAndSet\dp_xml\DP_HDMI2_1_PCON_6GBPS_3Lanes_DSC.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>TGL_LP;DG1;RKL;DG2;ADLS;ADLP;MTL</Platform>
+                <TestEnvironment>TGL_LP_SOC;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU117">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_d_plus -xml Tests\ModeEnumAndSet\dp_xml\DP_HDMI2_1_PCON_6GBPS_4Lanes_DSC.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>TGL_LP;DG1;RKL;DG2;ADLS;ADLP;MTL</Platform>
+                <TestEnvironment>TGL_LP_SOC;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU118">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_d_plus -xml Tests\ModeEnumAndSet\dp_xml\DP_HDMI2_1_PCON_8GBPS_DSC.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>TGL_LP;DG1;RKL;DG2;ADLS;ADLP;MTL</Platform>
+                <TestEnvironment>TGL_LP_SOC;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU119">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_d_plus -xml Tests\ModeEnumAndSet\dp_xml\DP_HDMI2_1_PCON_10GBPS_DSC.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>TGL_LP;DG1;RKL;DG2;ADLS;ADLP;MTL</Platform>
+                <TestEnvironment>TGL_LP_SOC;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU120">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_d_plus -xml Tests\ModeEnumAndSet\dp_xml\DP_HDMI2_1_PCON_12GBPS_DSC.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>TGL_LP;DG1;RKL;DG2;ADLS;ADLP;MTL</Platform>
+                <TestEnvironment>TGL_LP_SOC;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU121">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_d_plus -xml Tests\ModeEnumAndSet\dp_xml\DP_HDMI2_1_PCON_6GBPS_4Lanes_NON_DSC.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>TGL_LP;DG1;RKL;DG2;ADLS;ADLP;MTL</Platform>
+                <TestEnvironment>TGL_LP_SOC;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU122">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_d_plus -xml Tests\ModeEnumAndSet\dp_xml\DP_HDMI2_1_PCON_8GBPS_NON_DSC.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>TGL_LP;DG1;RKL;DG2;ADLS;ADLP;MTL</Platform>
+                <TestEnvironment>TGL_LP_SOC;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU123">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_d_plus -xml Tests\ModeEnumAndSet\dp_xml\DP_HDMI2_1_PCON_10GBPS_NON_DSC.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>TGL_LP;DG1;RKL;DG2;ADLS;ADLP;MTL</Platform>
+                <TestEnvironment>TGL_LP_SOC;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU124">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_d_plus -xml Tests\ModeEnumAndSet\dp_xml\DP_HDMI2_1_PCON_12GBPS_NON_DSC.xml</CommandLine>
+                <OS>WinRS2;WinRS3</OS>
+                <Platform>TGL_LP;DG1;RKL;DG2;ADLS;ADLP;MTL</Platform>
+                <TestEnvironment>TGL_LP_SOC;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU113">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_f_native -xml Tests\ModeEnumAndSet\hdmi_xml\Sony_8GBPS_4Lanes_DSC.xml</CommandLine>
+                <OS>20H1;20H2</OS>
+                <Platform>MTL</Platform>
+                <TestEnvironment>MTL_SIM;MTL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@MTL_SIM,MTL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU114">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_f_native -xml Tests\ModeEnumAndSet\hdmi_xml\Sony_8GBPS_4Lanes_NON_DSC.xml</CommandLine>
+                <OS>20H1;20H2</OS>
+                <Platform>MTL</Platform>
+                <TestEnvironment>MTL_SIM;MTL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@MTL_SIM,MTL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU115">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_f_native -xml Tests\ModeEnumAndSet\hdmi_xml\Sony_10GBPS_4Lanes_DSC.xml</CommandLine>
+                <OS>20H1;20H2</OS>
+                <Platform>MTL</Platform>
+                <TestEnvironment>MTL_SIM;MTL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@MTL_SIM,MTL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU116">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_f_native -xml Tests\ModeEnumAndSet\hdmi_xml\Sony_10GBPS_4Lanes_NON_DSC.xml</CommandLine>
+                <OS>20H1;20H2</OS>
+                <Platform>MTL</Platform>
+                <TestEnvironment>MTL_SIM;MTL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@MTL_SIM,MTL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU117">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_f_native -xml Tests\ModeEnumAndSet\hdmi_xml\Sony_12GBPS_4Lanes_DSC.xml</CommandLine>
+                <OS>20H1;20H2</OS>
+                <Platform>MTL</Platform>
+                <TestEnvironment>MTL_SIM;MTL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@MTL_SIM,MTL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU118">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -hdmi_f_native -xml Tests\ModeEnumAndSet\hdmi_xml\Sony_12GBPS_4Lanes_NON_DSC.xml</CommandLine>
+                <OS>20H1;20H2</OS>
+                <Platform>MTL</Platform>
+                <TestEnvironment>MTL_SIM;MTL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@MTL_SIM,MTL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU119">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_d -xml Tests\ModeEnumAndSet\dp_xml\DP_5k_2k_VIC_modes.xml</CommandLine>
+                <OS>20H1;20H2;21H1;21H2</OS>
+                <Platform>TGL_LP;DG1;RKL;DG2;ADLS;ADLP;MTL;ELG</Platform>
+                <TestEnvironment>TGL_LP_SOC;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC;ADLP_SIM;ADLP_SOC;MTL_SIM;MTL_SOC;ELG_SIM;ELG_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU120">
+                <CommandLine>python Tests\ModeEnumAndSet\display_mode_enumeration.py -dp_f -xml Tests\ModeEnumAndSet\dp_xml\DP_5k_2k_VIC_modes.xml</CommandLine>
+                <OS>20H1;20H2;21H1;21H2</OS>
+                <Platform>TGL_LP;DG1;RKL;DG2;ADLS;ADLP;MTL;ELG</Platform>
+                <TestEnvironment>TGL_LP_SOC;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC;ADLP_SIM;ADLP_SOC;MTL_SIM;MTL_SOC;ELG_SIM;ELG_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU121">
+                <CommandLine>python Tests\ModeEnumAndSet\display_modeset_custom_modes.py -DP_B -XML Tests\ModeEnumAndSet\dp_xml\Acer_CB240HYK_DP.xml -CUSTOM_MODES_XML Tests\ModeEnumAndSet\dp_xml\DP_Custom_Modes.xml</CommandLine>
+                <OS>20H1;20H2;21H1;21H2</OS>
+                <Platform>TGL_LP;DG1;RKL;DG2;ADLS;ADLP;MTL;ELG;LNL</Platform>
+                <TestEnvironment>TGL_LP_SOC;DG1_SOC;DG2_SIM;DG2_SOC;RKL_SIM;RKL_SOC;ADLS_SIM;ADLS_SOC;ADLP_SIM;ADLP_SOC;MTL_SIM;MTL_SOC;ELG_SIM;ELG_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="MDENU122">
+                <CommandLine>python Tests\ModeEnumAndSet\display_modeset_custom_modes.py -HDMI_B_NATIVE -XML Tests\ModeEnumAndSet\hdmi_xml\LG_OLED55B7AU_HDMI_PARADE_TYPE2_PLUS_DONGLE.xml</CommandLine>
+                <OS>20H1;20H2;21H1;21H2</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+    </Feature>
+</Display_Automation_2.0>

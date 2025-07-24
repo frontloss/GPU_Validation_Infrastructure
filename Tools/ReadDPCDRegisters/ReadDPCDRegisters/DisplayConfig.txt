@@ -1,0 +1,999 @@
+
+====================================== GET DISPLAY CONFIGURATION ======================================
+
+
+Number of Path Array is 2 and Number of Mode Array is 4
+********************************************* PATH INDEX 0 *********************************************
+DISPLAYCONFIG_PATH_SOURCE_INFO
+SourceInfo.AdapterId.HighPart = 0  SourceInfo.AdapterId.LowPart = 726514 Id = 0
+SourceInfo.ModeInfoIdx = 1 SourceInfo.StatusFlags = 1
+
+DISPLAYCONFIG_PATH_TARGET_INFO
+TargetInfo.AdapterId.HighPart = 0  TargetInfo.AdapterId.LowPart = 726514 TargetInfo.ModeInfoIdx = 0
+TargetInfo.Id = 265988 TargetInfo.OutputTechnology = DISPLAYCONFIG_OUTPUT_TECHNOLOGY_INTERNAL
+TargetInfo.Rotaion = DISPLAYCONFIG_ROTATION_IDENTITY TargetInfo.Scaling = DISPLAYCONFIG_SCALING_IDENTITY
+TargetInfo.RefreshRate.Numerator = 241500000 TargetInfo.RefreshRate.Denominator = 4025600
+TargetInfo.ScanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+TargetInfo.TargetAvailable = True TargetInfo.StatusFlags = 1
+
+Flags = 1
+*********************************************************************************************************
+
+********************************************* PATH INDEX 1 *********************************************
+DISPLAYCONFIG_PATH_SOURCE_INFO
+SourceInfo.AdapterId.HighPart = 0  SourceInfo.AdapterId.LowPart = 726514 Id = 1
+SourceInfo.ModeInfoIdx = 3 SourceInfo.StatusFlags = 1
+
+DISPLAYCONFIG_PATH_TARGET_INFO
+TargetInfo.AdapterId.HighPart = 0  TargetInfo.AdapterId.LowPart = 726514 TargetInfo.ModeInfoIdx = 2
+TargetInfo.Id = 224795 TargetInfo.OutputTechnology = DISPLAYCONFIG_OUTPUT_TECHNOLOGY_DISPLAYPORT_EXTERNAL
+TargetInfo.Rotaion = DISPLAYCONFIG_ROTATION_IDENTITY TargetInfo.Scaling = DISPLAYCONFIG_SCALING_IDENTITY
+TargetInfo.RefreshRate.Numerator = 594000000 TargetInfo.RefreshRate.Denominator = 9900000
+TargetInfo.ScanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+TargetInfo.TargetAvailable = True TargetInfo.StatusFlags = 1
+
+Flags = 1
+*********************************************************************************************************
+
+********************************************* MODE INDEX 0 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_TARGET Id = 265988
+AdapterId.HighPart = 0  AdapterId.LowPart = 726514
+
+DISPLAYCONFIG_TARGET_MODE
+TargetMode.TargetVideoSignalInfo.pixelRate = 241500000
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Numerator = 88786
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Denominator = 1
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Numerator = 241500000
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Denominator = 4025600
+TargetMode.TargetVideoSignalInfo.activeSize.cx = 2560 TargetMode.TargetVideoSignalInfo.activeSize.cy = 1440
+TargetMode.TargetVideoSignalInfo.totalSize.cx = 2720 TargetMode.TargetVideoSignalInfo.totalSize.cy = 1480
+TargetMode.TargetVideoSignalInfo.videoStandard = 255
+TargetMode.TargetVideoSignalInfo.scanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+*********************************************************************************************************
+
+********************************************* MODE INDEX 1 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_SOURCE Id = 0
+AdapterId.HighPart = 0  AdapterId.LowPart = 726514
+
+DISPLAYCONFIG_SOURCE_MODE
+SourceMode.Width = 2560 SourceMode.Height = 1440 SourceMode.PixelFormat = DISPLAYCONFIG_PIXELFORMAT_32BPP
+SourceMode.Position.x = 0 SourceMode.Position.y = 0
+*********************************************************************************************************
+
+********************************************* MODE INDEX 2 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_TARGET Id = 224795
+AdapterId.HighPart = 0  AdapterId.LowPart = 726514
+
+DISPLAYCONFIG_TARGET_MODE
+TargetMode.TargetVideoSignalInfo.pixelRate = 594000000
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Numerator = 135000
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Denominator = 1
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Numerator = 594000000
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Denominator = 9900000
+TargetMode.TargetVideoSignalInfo.activeSize.cx = 3840 TargetMode.TargetVideoSignalInfo.activeSize.cy = 2160
+TargetMode.TargetVideoSignalInfo.totalSize.cx = 4400 TargetMode.TargetVideoSignalInfo.totalSize.cy = 2250
+TargetMode.TargetVideoSignalInfo.videoStandard = 255
+TargetMode.TargetVideoSignalInfo.scanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+*********************************************************************************************************
+
+********************************************* MODE INDEX 3 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_SOURCE Id = 1
+AdapterId.HighPart = 0  AdapterId.LowPart = 726514
+
+DISPLAYCONFIG_SOURCE_MODE
+SourceMode.Width = 3840 SourceMode.Height = 2160 SourceMode.PixelFormat = DISPLAYCONFIG_PIXELFORMAT_32BPP
+SourceMode.Position.x = 2560 SourceMode.Position.y = 0
+*********************************************************************************************************
+`````````````````````````````````````````````````````````````````````````````````````````````````````````
+Display Config Info:
+Size = 1248 ConfigType = EXTENDED NumDisplay = 2
+DISPLAY_PATH_INFO { 0 }: PathIndex = 0 TargetID = 265988 SourceID = 0 IsActive = True MonitorFriendlyDeviceName = LQ125T1JX03
+DISPLAY_PATH_INFO { 1 }: PathIndex = 1 TargetID = 224795 SourceID = 1 IsActive = True MonitorFriendlyDeviceName = PN-K321
+`````````````````````````````````````````````````````````````````````````````````````````````````````````
+Display Config Error Code is DISPLAY_CONFIG_ERROR_SUCCESS
+
+================================================= END =================================================
+
+
+====================================== GET DISPLAY CONFIGURATION ======================================
+
+
+Number of Path Array is 2 and Number of Mode Array is 4
+********************************************* PATH INDEX 0 *********************************************
+DISPLAYCONFIG_PATH_SOURCE_INFO
+SourceInfo.AdapterId.HighPart = 0  SourceInfo.AdapterId.LowPart = 726514 Id = 0
+SourceInfo.ModeInfoIdx = 1 SourceInfo.StatusFlags = 1
+
+DISPLAYCONFIG_PATH_TARGET_INFO
+TargetInfo.AdapterId.HighPart = 0  TargetInfo.AdapterId.LowPart = 726514 TargetInfo.ModeInfoIdx = 0
+TargetInfo.Id = 265988 TargetInfo.OutputTechnology = DISPLAYCONFIG_OUTPUT_TECHNOLOGY_INTERNAL
+TargetInfo.Rotaion = DISPLAYCONFIG_ROTATION_IDENTITY TargetInfo.Scaling = DISPLAYCONFIG_SCALING_IDENTITY
+TargetInfo.RefreshRate.Numerator = 241500000 TargetInfo.RefreshRate.Denominator = 4025600
+TargetInfo.ScanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+TargetInfo.TargetAvailable = True TargetInfo.StatusFlags = 1
+
+Flags = 1
+*********************************************************************************************************
+
+********************************************* PATH INDEX 1 *********************************************
+DISPLAYCONFIG_PATH_SOURCE_INFO
+SourceInfo.AdapterId.HighPart = 0  SourceInfo.AdapterId.LowPart = 726514 Id = 1
+SourceInfo.ModeInfoIdx = 3 SourceInfo.StatusFlags = 1
+
+DISPLAYCONFIG_PATH_TARGET_INFO
+TargetInfo.AdapterId.HighPart = 0  TargetInfo.AdapterId.LowPart = 726514 TargetInfo.ModeInfoIdx = 2
+TargetInfo.Id = 224795 TargetInfo.OutputTechnology = DISPLAYCONFIG_OUTPUT_TECHNOLOGY_DISPLAYPORT_EXTERNAL
+TargetInfo.Rotaion = DISPLAYCONFIG_ROTATION_IDENTITY TargetInfo.Scaling = DISPLAYCONFIG_SCALING_IDENTITY
+TargetInfo.RefreshRate.Numerator = 594000000 TargetInfo.RefreshRate.Denominator = 9900000
+TargetInfo.ScanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+TargetInfo.TargetAvailable = True TargetInfo.StatusFlags = 1
+
+Flags = 1
+*********************************************************************************************************
+
+********************************************* MODE INDEX 0 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_TARGET Id = 265988
+AdapterId.HighPart = 0  AdapterId.LowPart = 726514
+
+DISPLAYCONFIG_TARGET_MODE
+TargetMode.TargetVideoSignalInfo.pixelRate = 241500000
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Numerator = 88786
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Denominator = 1
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Numerator = 241500000
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Denominator = 4025600
+TargetMode.TargetVideoSignalInfo.activeSize.cx = 2560 TargetMode.TargetVideoSignalInfo.activeSize.cy = 1440
+TargetMode.TargetVideoSignalInfo.totalSize.cx = 2720 TargetMode.TargetVideoSignalInfo.totalSize.cy = 1480
+TargetMode.TargetVideoSignalInfo.videoStandard = 255
+TargetMode.TargetVideoSignalInfo.scanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+*********************************************************************************************************
+
+********************************************* MODE INDEX 1 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_SOURCE Id = 0
+AdapterId.HighPart = 0  AdapterId.LowPart = 726514
+
+DISPLAYCONFIG_SOURCE_MODE
+SourceMode.Width = 2560 SourceMode.Height = 1440 SourceMode.PixelFormat = DISPLAYCONFIG_PIXELFORMAT_32BPP
+SourceMode.Position.x = 0 SourceMode.Position.y = 0
+*********************************************************************************************************
+
+********************************************* MODE INDEX 2 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_TARGET Id = 224795
+AdapterId.HighPart = 0  AdapterId.LowPart = 726514
+
+DISPLAYCONFIG_TARGET_MODE
+TargetMode.TargetVideoSignalInfo.pixelRate = 594000000
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Numerator = 135000
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Denominator = 1
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Numerator = 594000000
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Denominator = 9900000
+TargetMode.TargetVideoSignalInfo.activeSize.cx = 3840 TargetMode.TargetVideoSignalInfo.activeSize.cy = 2160
+TargetMode.TargetVideoSignalInfo.totalSize.cx = 4400 TargetMode.TargetVideoSignalInfo.totalSize.cy = 2250
+TargetMode.TargetVideoSignalInfo.videoStandard = 255
+TargetMode.TargetVideoSignalInfo.scanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+*********************************************************************************************************
+
+********************************************* MODE INDEX 3 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_SOURCE Id = 1
+AdapterId.HighPart = 0  AdapterId.LowPart = 726514
+
+DISPLAYCONFIG_SOURCE_MODE
+SourceMode.Width = 3840 SourceMode.Height = 2160 SourceMode.PixelFormat = DISPLAYCONFIG_PIXELFORMAT_32BPP
+SourceMode.Position.x = 2560 SourceMode.Position.y = 0
+*********************************************************************************************************
+`````````````````````````````````````````````````````````````````````````````````````````````````````````
+Display Config Info:
+Size = 1248 ConfigType = EXTENDED NumDisplay = 2
+DISPLAY_PATH_INFO { 0 }: PathIndex = 0 TargetID = 265988 SourceID = 0 IsActive = True MonitorFriendlyDeviceName = LQ125T1JX03
+DISPLAY_PATH_INFO { 1 }: PathIndex = 1 TargetID = 224795 SourceID = 1 IsActive = True MonitorFriendlyDeviceName = PN-K321
+`````````````````````````````````````````````````````````````````````````````````````````````````````````
+Display Config Error Code is DISPLAY_CONFIG_ERROR_SUCCESS
+
+================================================= END =================================================
+
+
+====================================== GET DISPLAY CONFIGURATION ======================================
+
+
+Number of Path Array is 2 and Number of Mode Array is 4
+********************************************* PATH INDEX 0 *********************************************
+DISPLAYCONFIG_PATH_SOURCE_INFO
+SourceInfo.AdapterId.HighPart = 0  SourceInfo.AdapterId.LowPart = 726514 Id = 0
+SourceInfo.ModeInfoIdx = 1 SourceInfo.StatusFlags = 1
+
+DISPLAYCONFIG_PATH_TARGET_INFO
+TargetInfo.AdapterId.HighPart = 0  TargetInfo.AdapterId.LowPart = 726514 TargetInfo.ModeInfoIdx = 0
+TargetInfo.Id = 265988 TargetInfo.OutputTechnology = DISPLAYCONFIG_OUTPUT_TECHNOLOGY_INTERNAL
+TargetInfo.Rotaion = DISPLAYCONFIG_ROTATION_IDENTITY TargetInfo.Scaling = DISPLAYCONFIG_SCALING_IDENTITY
+TargetInfo.RefreshRate.Numerator = 241500000 TargetInfo.RefreshRate.Denominator = 4025600
+TargetInfo.ScanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+TargetInfo.TargetAvailable = True TargetInfo.StatusFlags = 1
+
+Flags = 1
+*********************************************************************************************************
+
+********************************************* PATH INDEX 1 *********************************************
+DISPLAYCONFIG_PATH_SOURCE_INFO
+SourceInfo.AdapterId.HighPart = 0  SourceInfo.AdapterId.LowPart = 726514 Id = 1
+SourceInfo.ModeInfoIdx = 3 SourceInfo.StatusFlags = 1
+
+DISPLAYCONFIG_PATH_TARGET_INFO
+TargetInfo.AdapterId.HighPart = 0  TargetInfo.AdapterId.LowPart = 726514 TargetInfo.ModeInfoIdx = 2
+TargetInfo.Id = 224795 TargetInfo.OutputTechnology = DISPLAYCONFIG_OUTPUT_TECHNOLOGY_DISPLAYPORT_EXTERNAL
+TargetInfo.Rotaion = DISPLAYCONFIG_ROTATION_IDENTITY TargetInfo.Scaling = DISPLAYCONFIG_SCALING_IDENTITY
+TargetInfo.RefreshRate.Numerator = 594000000 TargetInfo.RefreshRate.Denominator = 9900000
+TargetInfo.ScanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+TargetInfo.TargetAvailable = True TargetInfo.StatusFlags = 1
+
+Flags = 1
+*********************************************************************************************************
+
+********************************************* MODE INDEX 0 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_TARGET Id = 265988
+AdapterId.HighPart = 0  AdapterId.LowPart = 726514
+
+DISPLAYCONFIG_TARGET_MODE
+TargetMode.TargetVideoSignalInfo.pixelRate = 241500000
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Numerator = 88786
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Denominator = 1
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Numerator = 241500000
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Denominator = 4025600
+TargetMode.TargetVideoSignalInfo.activeSize.cx = 2560 TargetMode.TargetVideoSignalInfo.activeSize.cy = 1440
+TargetMode.TargetVideoSignalInfo.totalSize.cx = 2720 TargetMode.TargetVideoSignalInfo.totalSize.cy = 1480
+TargetMode.TargetVideoSignalInfo.videoStandard = 255
+TargetMode.TargetVideoSignalInfo.scanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+*********************************************************************************************************
+
+********************************************* MODE INDEX 1 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_SOURCE Id = 0
+AdapterId.HighPart = 0  AdapterId.LowPart = 726514
+
+DISPLAYCONFIG_SOURCE_MODE
+SourceMode.Width = 2560 SourceMode.Height = 1440 SourceMode.PixelFormat = DISPLAYCONFIG_PIXELFORMAT_32BPP
+SourceMode.Position.x = 0 SourceMode.Position.y = 0
+*********************************************************************************************************
+
+********************************************* MODE INDEX 2 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_TARGET Id = 224795
+AdapterId.HighPart = 0  AdapterId.LowPart = 726514
+
+DISPLAYCONFIG_TARGET_MODE
+TargetMode.TargetVideoSignalInfo.pixelRate = 594000000
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Numerator = 135000
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Denominator = 1
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Numerator = 594000000
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Denominator = 9900000
+TargetMode.TargetVideoSignalInfo.activeSize.cx = 3840 TargetMode.TargetVideoSignalInfo.activeSize.cy = 2160
+TargetMode.TargetVideoSignalInfo.totalSize.cx = 4400 TargetMode.TargetVideoSignalInfo.totalSize.cy = 2250
+TargetMode.TargetVideoSignalInfo.videoStandard = 255
+TargetMode.TargetVideoSignalInfo.scanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+*********************************************************************************************************
+
+********************************************* MODE INDEX 3 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_SOURCE Id = 1
+AdapterId.HighPart = 0  AdapterId.LowPart = 726514
+
+DISPLAYCONFIG_SOURCE_MODE
+SourceMode.Width = 3840 SourceMode.Height = 2160 SourceMode.PixelFormat = DISPLAYCONFIG_PIXELFORMAT_32BPP
+SourceMode.Position.x = 2560 SourceMode.Position.y = 0
+*********************************************************************************************************
+`````````````````````````````````````````````````````````````````````````````````````````````````````````
+Display Config Info:
+Size = 1248 ConfigType = EXTENDED NumDisplay = 2
+DISPLAY_PATH_INFO { 0 }: PathIndex = 0 TargetID = 265988 SourceID = 0 IsActive = True MonitorFriendlyDeviceName = LQ125T1JX03
+DISPLAY_PATH_INFO { 1 }: PathIndex = 1 TargetID = 224795 SourceID = 1 IsActive = True MonitorFriendlyDeviceName = PN-K321
+`````````````````````````````````````````````````````````````````````````````````````````````````````````
+Display Config Error Code is DISPLAY_CONFIG_ERROR_SUCCESS
+
+================================================= END =================================================
+
+
+====================================== GET DISPLAY CONFIGURATION ======================================
+
+
+Number of Path Array is 2 and Number of Mode Array is 4
+********************************************* PATH INDEX 0 *********************************************
+DISPLAYCONFIG_PATH_SOURCE_INFO
+SourceInfo.AdapterId.HighPart = 0  SourceInfo.AdapterId.LowPart = 726514 Id = 0
+SourceInfo.ModeInfoIdx = 1 SourceInfo.StatusFlags = 1
+
+DISPLAYCONFIG_PATH_TARGET_INFO
+TargetInfo.AdapterId.HighPart = 0  TargetInfo.AdapterId.LowPart = 726514 TargetInfo.ModeInfoIdx = 0
+TargetInfo.Id = 265988 TargetInfo.OutputTechnology = DISPLAYCONFIG_OUTPUT_TECHNOLOGY_INTERNAL
+TargetInfo.Rotaion = DISPLAYCONFIG_ROTATION_IDENTITY TargetInfo.Scaling = DISPLAYCONFIG_SCALING_IDENTITY
+TargetInfo.RefreshRate.Numerator = 241500000 TargetInfo.RefreshRate.Denominator = 4025600
+TargetInfo.ScanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+TargetInfo.TargetAvailable = True TargetInfo.StatusFlags = 1
+
+Flags = 1
+*********************************************************************************************************
+
+********************************************* PATH INDEX 1 *********************************************
+DISPLAYCONFIG_PATH_SOURCE_INFO
+SourceInfo.AdapterId.HighPart = 0  SourceInfo.AdapterId.LowPart = 726514 Id = 1
+SourceInfo.ModeInfoIdx = 3 SourceInfo.StatusFlags = 1
+
+DISPLAYCONFIG_PATH_TARGET_INFO
+TargetInfo.AdapterId.HighPart = 0  TargetInfo.AdapterId.LowPart = 726514 TargetInfo.ModeInfoIdx = 2
+TargetInfo.Id = 224795 TargetInfo.OutputTechnology = DISPLAYCONFIG_OUTPUT_TECHNOLOGY_DISPLAYPORT_EXTERNAL
+TargetInfo.Rotaion = DISPLAYCONFIG_ROTATION_IDENTITY TargetInfo.Scaling = DISPLAYCONFIG_SCALING_IDENTITY
+TargetInfo.RefreshRate.Numerator = 594000000 TargetInfo.RefreshRate.Denominator = 9900000
+TargetInfo.ScanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+TargetInfo.TargetAvailable = True TargetInfo.StatusFlags = 1
+
+Flags = 1
+*********************************************************************************************************
+
+********************************************* MODE INDEX 0 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_TARGET Id = 265988
+AdapterId.HighPart = 0  AdapterId.LowPart = 726514
+
+DISPLAYCONFIG_TARGET_MODE
+TargetMode.TargetVideoSignalInfo.pixelRate = 241500000
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Numerator = 88786
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Denominator = 1
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Numerator = 241500000
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Denominator = 4025600
+TargetMode.TargetVideoSignalInfo.activeSize.cx = 2560 TargetMode.TargetVideoSignalInfo.activeSize.cy = 1440
+TargetMode.TargetVideoSignalInfo.totalSize.cx = 2720 TargetMode.TargetVideoSignalInfo.totalSize.cy = 1480
+TargetMode.TargetVideoSignalInfo.videoStandard = 255
+TargetMode.TargetVideoSignalInfo.scanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+*********************************************************************************************************
+
+********************************************* MODE INDEX 1 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_SOURCE Id = 0
+AdapterId.HighPart = 0  AdapterId.LowPart = 726514
+
+DISPLAYCONFIG_SOURCE_MODE
+SourceMode.Width = 2560 SourceMode.Height = 1440 SourceMode.PixelFormat = DISPLAYCONFIG_PIXELFORMAT_32BPP
+SourceMode.Position.x = 0 SourceMode.Position.y = 0
+*********************************************************************************************************
+
+********************************************* MODE INDEX 2 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_TARGET Id = 224795
+AdapterId.HighPart = 0  AdapterId.LowPart = 726514
+
+DISPLAYCONFIG_TARGET_MODE
+TargetMode.TargetVideoSignalInfo.pixelRate = 594000000
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Numerator = 135000
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Denominator = 1
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Numerator = 594000000
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Denominator = 9900000
+TargetMode.TargetVideoSignalInfo.activeSize.cx = 3840 TargetMode.TargetVideoSignalInfo.activeSize.cy = 2160
+TargetMode.TargetVideoSignalInfo.totalSize.cx = 4400 TargetMode.TargetVideoSignalInfo.totalSize.cy = 2250
+TargetMode.TargetVideoSignalInfo.videoStandard = 255
+TargetMode.TargetVideoSignalInfo.scanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+*********************************************************************************************************
+
+********************************************* MODE INDEX 3 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_SOURCE Id = 1
+AdapterId.HighPart = 0  AdapterId.LowPart = 726514
+
+DISPLAYCONFIG_SOURCE_MODE
+SourceMode.Width = 3840 SourceMode.Height = 2160 SourceMode.PixelFormat = DISPLAYCONFIG_PIXELFORMAT_32BPP
+SourceMode.Position.x = 2560 SourceMode.Position.y = 0
+*********************************************************************************************************
+`````````````````````````````````````````````````````````````````````````````````````````````````````````
+Display Config Info:
+Size = 1248 ConfigType = EXTENDED NumDisplay = 2
+DISPLAY_PATH_INFO { 0 }: PathIndex = 0 TargetID = 265988 SourceID = 0 IsActive = True MonitorFriendlyDeviceName = LQ125T1JX03
+DISPLAY_PATH_INFO { 1 }: PathIndex = 1 TargetID = 224795 SourceID = 1 IsActive = True MonitorFriendlyDeviceName = PN-K321
+`````````````````````````````````````````````````````````````````````````````````````````````````````````
+Display Config Error Code is DISPLAY_CONFIG_ERROR_SUCCESS
+
+================================================= END =================================================
+
+
+====================================== GET DISPLAY CONFIGURATION ======================================
+
+
+Number of Path Array is 2 and Number of Mode Array is 4
+********************************************* PATH INDEX 0 *********************************************
+DISPLAYCONFIG_PATH_SOURCE_INFO
+SourceInfo.AdapterId.HighPart = 0  SourceInfo.AdapterId.LowPart = 726514 Id = 0
+SourceInfo.ModeInfoIdx = 1 SourceInfo.StatusFlags = 1
+
+DISPLAYCONFIG_PATH_TARGET_INFO
+TargetInfo.AdapterId.HighPart = 0  TargetInfo.AdapterId.LowPart = 726514 TargetInfo.ModeInfoIdx = 0
+TargetInfo.Id = 265988 TargetInfo.OutputTechnology = DISPLAYCONFIG_OUTPUT_TECHNOLOGY_INTERNAL
+TargetInfo.Rotaion = DISPLAYCONFIG_ROTATION_IDENTITY TargetInfo.Scaling = DISPLAYCONFIG_SCALING_IDENTITY
+TargetInfo.RefreshRate.Numerator = 241500000 TargetInfo.RefreshRate.Denominator = 4025600
+TargetInfo.ScanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+TargetInfo.TargetAvailable = True TargetInfo.StatusFlags = 1
+
+Flags = 1
+*********************************************************************************************************
+
+********************************************* PATH INDEX 1 *********************************************
+DISPLAYCONFIG_PATH_SOURCE_INFO
+SourceInfo.AdapterId.HighPart = 0  SourceInfo.AdapterId.LowPart = 726514 Id = 1
+SourceInfo.ModeInfoIdx = 3 SourceInfo.StatusFlags = 1
+
+DISPLAYCONFIG_PATH_TARGET_INFO
+TargetInfo.AdapterId.HighPart = 0  TargetInfo.AdapterId.LowPart = 726514 TargetInfo.ModeInfoIdx = 2
+TargetInfo.Id = 224795 TargetInfo.OutputTechnology = DISPLAYCONFIG_OUTPUT_TECHNOLOGY_DISPLAYPORT_EXTERNAL
+TargetInfo.Rotaion = DISPLAYCONFIG_ROTATION_IDENTITY TargetInfo.Scaling = DISPLAYCONFIG_SCALING_IDENTITY
+TargetInfo.RefreshRate.Numerator = 594000000 TargetInfo.RefreshRate.Denominator = 9900000
+TargetInfo.ScanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+TargetInfo.TargetAvailable = True TargetInfo.StatusFlags = 1
+
+Flags = 1
+*********************************************************************************************************
+
+********************************************* MODE INDEX 0 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_TARGET Id = 265988
+AdapterId.HighPart = 0  AdapterId.LowPart = 726514
+
+DISPLAYCONFIG_TARGET_MODE
+TargetMode.TargetVideoSignalInfo.pixelRate = 241500000
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Numerator = 88786
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Denominator = 1
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Numerator = 241500000
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Denominator = 4025600
+TargetMode.TargetVideoSignalInfo.activeSize.cx = 2560 TargetMode.TargetVideoSignalInfo.activeSize.cy = 1440
+TargetMode.TargetVideoSignalInfo.totalSize.cx = 2720 TargetMode.TargetVideoSignalInfo.totalSize.cy = 1480
+TargetMode.TargetVideoSignalInfo.videoStandard = 255
+TargetMode.TargetVideoSignalInfo.scanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+*********************************************************************************************************
+
+********************************************* MODE INDEX 1 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_SOURCE Id = 0
+AdapterId.HighPart = 0  AdapterId.LowPart = 726514
+
+DISPLAYCONFIG_SOURCE_MODE
+SourceMode.Width = 2560 SourceMode.Height = 1440 SourceMode.PixelFormat = DISPLAYCONFIG_PIXELFORMAT_32BPP
+SourceMode.Position.x = 0 SourceMode.Position.y = 0
+*********************************************************************************************************
+
+********************************************* MODE INDEX 2 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_TARGET Id = 224795
+AdapterId.HighPart = 0  AdapterId.LowPart = 726514
+
+DISPLAYCONFIG_TARGET_MODE
+TargetMode.TargetVideoSignalInfo.pixelRate = 594000000
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Numerator = 135000
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Denominator = 1
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Numerator = 594000000
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Denominator = 9900000
+TargetMode.TargetVideoSignalInfo.activeSize.cx = 3840 TargetMode.TargetVideoSignalInfo.activeSize.cy = 2160
+TargetMode.TargetVideoSignalInfo.totalSize.cx = 4400 TargetMode.TargetVideoSignalInfo.totalSize.cy = 2250
+TargetMode.TargetVideoSignalInfo.videoStandard = 255
+TargetMode.TargetVideoSignalInfo.scanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+*********************************************************************************************************
+
+********************************************* MODE INDEX 3 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_SOURCE Id = 1
+AdapterId.HighPart = 0  AdapterId.LowPart = 726514
+
+DISPLAYCONFIG_SOURCE_MODE
+SourceMode.Width = 3840 SourceMode.Height = 2160 SourceMode.PixelFormat = DISPLAYCONFIG_PIXELFORMAT_32BPP
+SourceMode.Position.x = 2560 SourceMode.Position.y = 0
+*********************************************************************************************************
+`````````````````````````````````````````````````````````````````````````````````````````````````````````
+Display Config Info:
+Size = 1248 ConfigType = EXTENDED NumDisplay = 2
+DISPLAY_PATH_INFO { 0 }: PathIndex = 0 TargetID = 265988 SourceID = 0 IsActive = True MonitorFriendlyDeviceName = LQ125T1JX03
+DISPLAY_PATH_INFO { 1 }: PathIndex = 1 TargetID = 224795 SourceID = 1 IsActive = True MonitorFriendlyDeviceName = PN-K321
+`````````````````````````````````````````````````````````````````````````````````````````````````````````
+Display Config Error Code is DISPLAY_CONFIG_ERROR_SUCCESS
+
+================================================= END =================================================
+
+
+====================================== GET DISPLAY CONFIGURATION ======================================
+
+
+Number of Path Array is 2 and Number of Mode Array is 4
+********************************************* PATH INDEX 0 *********************************************
+DISPLAYCONFIG_PATH_SOURCE_INFO
+SourceInfo.AdapterId.HighPart = 0  SourceInfo.AdapterId.LowPart = 726514 Id = 0
+SourceInfo.ModeInfoIdx = 1 SourceInfo.StatusFlags = 1
+
+DISPLAYCONFIG_PATH_TARGET_INFO
+TargetInfo.AdapterId.HighPart = 0  TargetInfo.AdapterId.LowPart = 726514 TargetInfo.ModeInfoIdx = 0
+TargetInfo.Id = 265988 TargetInfo.OutputTechnology = DISPLAYCONFIG_OUTPUT_TECHNOLOGY_INTERNAL
+TargetInfo.Rotaion = DISPLAYCONFIG_ROTATION_IDENTITY TargetInfo.Scaling = DISPLAYCONFIG_SCALING_IDENTITY
+TargetInfo.RefreshRate.Numerator = 241500000 TargetInfo.RefreshRate.Denominator = 4025600
+TargetInfo.ScanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+TargetInfo.TargetAvailable = True TargetInfo.StatusFlags = 1
+
+Flags = 1
+*********************************************************************************************************
+
+********************************************* PATH INDEX 1 *********************************************
+DISPLAYCONFIG_PATH_SOURCE_INFO
+SourceInfo.AdapterId.HighPart = 0  SourceInfo.AdapterId.LowPart = 726514 Id = 1
+SourceInfo.ModeInfoIdx = 3 SourceInfo.StatusFlags = 1
+
+DISPLAYCONFIG_PATH_TARGET_INFO
+TargetInfo.AdapterId.HighPart = 0  TargetInfo.AdapterId.LowPart = 726514 TargetInfo.ModeInfoIdx = 2
+TargetInfo.Id = 224795 TargetInfo.OutputTechnology = DISPLAYCONFIG_OUTPUT_TECHNOLOGY_DISPLAYPORT_EXTERNAL
+TargetInfo.Rotaion = DISPLAYCONFIG_ROTATION_IDENTITY TargetInfo.Scaling = DISPLAYCONFIG_SCALING_IDENTITY
+TargetInfo.RefreshRate.Numerator = 594000000 TargetInfo.RefreshRate.Denominator = 9900000
+TargetInfo.ScanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+TargetInfo.TargetAvailable = True TargetInfo.StatusFlags = 1
+
+Flags = 1
+*********************************************************************************************************
+
+********************************************* MODE INDEX 0 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_TARGET Id = 265988
+AdapterId.HighPart = 0  AdapterId.LowPart = 726514
+
+DISPLAYCONFIG_TARGET_MODE
+TargetMode.TargetVideoSignalInfo.pixelRate = 241500000
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Numerator = 88786
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Denominator = 1
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Numerator = 241500000
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Denominator = 4025600
+TargetMode.TargetVideoSignalInfo.activeSize.cx = 2560 TargetMode.TargetVideoSignalInfo.activeSize.cy = 1440
+TargetMode.TargetVideoSignalInfo.totalSize.cx = 2720 TargetMode.TargetVideoSignalInfo.totalSize.cy = 1480
+TargetMode.TargetVideoSignalInfo.videoStandard = 255
+TargetMode.TargetVideoSignalInfo.scanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+*********************************************************************************************************
+
+********************************************* MODE INDEX 1 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_SOURCE Id = 0
+AdapterId.HighPart = 0  AdapterId.LowPart = 726514
+
+DISPLAYCONFIG_SOURCE_MODE
+SourceMode.Width = 2560 SourceMode.Height = 1440 SourceMode.PixelFormat = DISPLAYCONFIG_PIXELFORMAT_32BPP
+SourceMode.Position.x = 0 SourceMode.Position.y = 0
+*********************************************************************************************************
+
+********************************************* MODE INDEX 2 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_TARGET Id = 224795
+AdapterId.HighPart = 0  AdapterId.LowPart = 726514
+
+DISPLAYCONFIG_TARGET_MODE
+TargetMode.TargetVideoSignalInfo.pixelRate = 594000000
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Numerator = 135000
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Denominator = 1
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Numerator = 594000000
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Denominator = 9900000
+TargetMode.TargetVideoSignalInfo.activeSize.cx = 3840 TargetMode.TargetVideoSignalInfo.activeSize.cy = 2160
+TargetMode.TargetVideoSignalInfo.totalSize.cx = 4400 TargetMode.TargetVideoSignalInfo.totalSize.cy = 2250
+TargetMode.TargetVideoSignalInfo.videoStandard = 255
+TargetMode.TargetVideoSignalInfo.scanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+*********************************************************************************************************
+
+********************************************* MODE INDEX 3 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_SOURCE Id = 1
+AdapterId.HighPart = 0  AdapterId.LowPart = 726514
+
+DISPLAYCONFIG_SOURCE_MODE
+SourceMode.Width = 3840 SourceMode.Height = 2160 SourceMode.PixelFormat = DISPLAYCONFIG_PIXELFORMAT_32BPP
+SourceMode.Position.x = 2560 SourceMode.Position.y = 0
+*********************************************************************************************************
+`````````````````````````````````````````````````````````````````````````````````````````````````````````
+Display Config Info:
+Size = 1248 ConfigType = EXTENDED NumDisplay = 2
+DISPLAY_PATH_INFO { 0 }: PathIndex = 0 TargetID = 265988 SourceID = 0 IsActive = True MonitorFriendlyDeviceName = LQ125T1JX03
+DISPLAY_PATH_INFO { 1 }: PathIndex = 1 TargetID = 224795 SourceID = 1 IsActive = True MonitorFriendlyDeviceName = PN-K321
+`````````````````````````````````````````````````````````````````````````````````````````````````````````
+Display Config Error Code is DISPLAY_CONFIG_ERROR_SUCCESS
+
+================================================= END =================================================
+
+
+====================================== GET DISPLAY CONFIGURATION ======================================
+
+
+Number of Path Array is 1 and Number of Mode Array is 2
+********************************************* PATH INDEX 0 *********************************************
+DISPLAYCONFIG_PATH_SOURCE_INFO
+SourceInfo.AdapterId.HighPart = 0  SourceInfo.AdapterId.LowPart = 24621 Id = 0
+SourceInfo.ModeInfoIdx = 1 SourceInfo.StatusFlags = 1
+
+DISPLAYCONFIG_PATH_TARGET_INFO
+TargetInfo.AdapterId.HighPart = 0  TargetInfo.AdapterId.LowPart = 24621 TargetInfo.ModeInfoIdx = 0
+TargetInfo.Id = 265988 TargetInfo.OutputTechnology = DISPLAYCONFIG_OUTPUT_TECHNOLOGY_INTERNAL
+TargetInfo.Rotaion = DISPLAYCONFIG_ROTATION_IDENTITY TargetInfo.Scaling = DISPLAYCONFIG_SCALING_IDENTITY
+TargetInfo.RefreshRate.Numerator = 241500000 TargetInfo.RefreshRate.Denominator = 4025600
+TargetInfo.ScanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+TargetInfo.TargetAvailable = True TargetInfo.StatusFlags = 1
+
+Flags = 1
+*********************************************************************************************************
+
+********************************************* MODE INDEX 0 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_TARGET Id = 265988
+AdapterId.HighPart = 0  AdapterId.LowPart = 24621
+
+DISPLAYCONFIG_TARGET_MODE
+TargetMode.TargetVideoSignalInfo.pixelRate = 241500000
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Numerator = 88786
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Denominator = 1
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Numerator = 241500000
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Denominator = 4025600
+TargetMode.TargetVideoSignalInfo.activeSize.cx = 2560 TargetMode.TargetVideoSignalInfo.activeSize.cy = 1440
+TargetMode.TargetVideoSignalInfo.totalSize.cx = 2720 TargetMode.TargetVideoSignalInfo.totalSize.cy = 1480
+TargetMode.TargetVideoSignalInfo.videoStandard = 255
+TargetMode.TargetVideoSignalInfo.scanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+*********************************************************************************************************
+
+********************************************* MODE INDEX 1 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_SOURCE Id = 0
+AdapterId.HighPart = 0  AdapterId.LowPart = 24621
+
+DISPLAYCONFIG_SOURCE_MODE
+SourceMode.Width = 2560 SourceMode.Height = 1440 SourceMode.PixelFormat = DISPLAYCONFIG_PIXELFORMAT_32BPP
+SourceMode.Position.x = 0 SourceMode.Position.y = 0
+*********************************************************************************************************
+`````````````````````````````````````````````````````````````````````````````````````````````````````````
+Display Config Info:
+Size = 1248 ConfigType = SINGLE NumDisplay = 2
+DISPLAY_PATH_INFO { 0 }: PathIndex = 0 TargetID = 265988 SourceID = 0 IsActive = True MonitorFriendlyDeviceName = LQ125T1JX03
+DISPLAY_PATH_INFO { 1 }: PathIndex = 1 TargetID = 200195 SourceID = 0 IsActive = False MonitorFriendlyDeviceName = PN-K321
+`````````````````````````````````````````````````````````````````````````````````````````````````````````
+Display Config Error Code is DISPLAY_CONFIG_ERROR_SUCCESS
+
+================================================= END =================================================
+
+
+====================================== GET DISPLAY CONFIGURATION ======================================
+
+
+Number of Path Array is 1 and Number of Mode Array is 2
+********************************************* PATH INDEX 0 *********************************************
+DISPLAYCONFIG_PATH_SOURCE_INFO
+SourceInfo.AdapterId.HighPart = 0  SourceInfo.AdapterId.LowPart = 24621 Id = 0
+SourceInfo.ModeInfoIdx = 1 SourceInfo.StatusFlags = 1
+
+DISPLAYCONFIG_PATH_TARGET_INFO
+TargetInfo.AdapterId.HighPart = 0  TargetInfo.AdapterId.LowPart = 24621 TargetInfo.ModeInfoIdx = 0
+TargetInfo.Id = 265988 TargetInfo.OutputTechnology = DISPLAYCONFIG_OUTPUT_TECHNOLOGY_INTERNAL
+TargetInfo.Rotaion = DISPLAYCONFIG_ROTATION_IDENTITY TargetInfo.Scaling = DISPLAYCONFIG_SCALING_IDENTITY
+TargetInfo.RefreshRate.Numerator = 241500000 TargetInfo.RefreshRate.Denominator = 4025600
+TargetInfo.ScanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+TargetInfo.TargetAvailable = True TargetInfo.StatusFlags = 1
+
+Flags = 1
+*********************************************************************************************************
+
+********************************************* MODE INDEX 0 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_TARGET Id = 265988
+AdapterId.HighPart = 0  AdapterId.LowPart = 24621
+
+DISPLAYCONFIG_TARGET_MODE
+TargetMode.TargetVideoSignalInfo.pixelRate = 241500000
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Numerator = 88786
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Denominator = 1
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Numerator = 241500000
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Denominator = 4025600
+TargetMode.TargetVideoSignalInfo.activeSize.cx = 2560 TargetMode.TargetVideoSignalInfo.activeSize.cy = 1440
+TargetMode.TargetVideoSignalInfo.totalSize.cx = 2720 TargetMode.TargetVideoSignalInfo.totalSize.cy = 1480
+TargetMode.TargetVideoSignalInfo.videoStandard = 255
+TargetMode.TargetVideoSignalInfo.scanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+*********************************************************************************************************
+
+********************************************* MODE INDEX 1 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_SOURCE Id = 0
+AdapterId.HighPart = 0  AdapterId.LowPart = 24621
+
+DISPLAYCONFIG_SOURCE_MODE
+SourceMode.Width = 2560 SourceMode.Height = 1440 SourceMode.PixelFormat = DISPLAYCONFIG_PIXELFORMAT_32BPP
+SourceMode.Position.x = 0 SourceMode.Position.y = 0
+*********************************************************************************************************
+`````````````````````````````````````````````````````````````````````````````````````````````````````````
+Display Config Info:
+Size = 1248 ConfigType = SINGLE NumDisplay = 2
+DISPLAY_PATH_INFO { 0 }: PathIndex = 0 TargetID = 265988 SourceID = 0 IsActive = True MonitorFriendlyDeviceName = LQ125T1JX03
+DISPLAY_PATH_INFO { 1 }: PathIndex = 1 TargetID = 200195 SourceID = 0 IsActive = False MonitorFriendlyDeviceName = PN-K321
+`````````````````````````````````````````````````````````````````````````````````````````````````````````
+Display Config Error Code is DISPLAY_CONFIG_ERROR_SUCCESS
+
+================================================= END =================================================
+
+
+====================================== GET DISPLAY CONFIGURATION ======================================
+
+
+Number of Path Array is 1 and Number of Mode Array is 2
+********************************************* PATH INDEX 0 *********************************************
+DISPLAYCONFIG_PATH_SOURCE_INFO
+SourceInfo.AdapterId.HighPart = 0  SourceInfo.AdapterId.LowPart = 24621 Id = 0
+SourceInfo.ModeInfoIdx = 1 SourceInfo.StatusFlags = 1
+
+DISPLAYCONFIG_PATH_TARGET_INFO
+TargetInfo.AdapterId.HighPart = 0  TargetInfo.AdapterId.LowPart = 24621 TargetInfo.ModeInfoIdx = 0
+TargetInfo.Id = 265988 TargetInfo.OutputTechnology = DISPLAYCONFIG_OUTPUT_TECHNOLOGY_INTERNAL
+TargetInfo.Rotaion = DISPLAYCONFIG_ROTATION_IDENTITY TargetInfo.Scaling = DISPLAYCONFIG_SCALING_IDENTITY
+TargetInfo.RefreshRate.Numerator = 241500000 TargetInfo.RefreshRate.Denominator = 4025600
+TargetInfo.ScanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+TargetInfo.TargetAvailable = True TargetInfo.StatusFlags = 1
+
+Flags = 1
+*********************************************************************************************************
+
+********************************************* MODE INDEX 0 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_TARGET Id = 265988
+AdapterId.HighPart = 0  AdapterId.LowPart = 24621
+
+DISPLAYCONFIG_TARGET_MODE
+TargetMode.TargetVideoSignalInfo.pixelRate = 241500000
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Numerator = 88786
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Denominator = 1
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Numerator = 241500000
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Denominator = 4025600
+TargetMode.TargetVideoSignalInfo.activeSize.cx = 2560 TargetMode.TargetVideoSignalInfo.activeSize.cy = 1440
+TargetMode.TargetVideoSignalInfo.totalSize.cx = 2720 TargetMode.TargetVideoSignalInfo.totalSize.cy = 1480
+TargetMode.TargetVideoSignalInfo.videoStandard = 255
+TargetMode.TargetVideoSignalInfo.scanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+*********************************************************************************************************
+
+********************************************* MODE INDEX 1 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_SOURCE Id = 0
+AdapterId.HighPart = 0  AdapterId.LowPart = 24621
+
+DISPLAYCONFIG_SOURCE_MODE
+SourceMode.Width = 2560 SourceMode.Height = 1440 SourceMode.PixelFormat = DISPLAYCONFIG_PIXELFORMAT_32BPP
+SourceMode.Position.x = 0 SourceMode.Position.y = 0
+*********************************************************************************************************
+`````````````````````````````````````````````````````````````````````````````````````````````````````````
+Display Config Info:
+Size = 1248 ConfigType = SINGLE NumDisplay = 2
+DISPLAY_PATH_INFO { 0 }: PathIndex = 0 TargetID = 265988 SourceID = 0 IsActive = True MonitorFriendlyDeviceName = LQ125T1JX03
+DISPLAY_PATH_INFO { 1 }: PathIndex = 1 TargetID = 200195 SourceID = 0 IsActive = False MonitorFriendlyDeviceName = PN-K321
+`````````````````````````````````````````````````````````````````````````````````````````````````````````
+Display Config Error Code is DISPLAY_CONFIG_ERROR_SUCCESS
+
+================================================= END =================================================
+
+
+====================================== GET DISPLAY CONFIGURATION ======================================
+
+
+Number of Path Array is 1 and Number of Mode Array is 2
+********************************************* PATH INDEX 0 *********************************************
+DISPLAYCONFIG_PATH_SOURCE_INFO
+SourceInfo.AdapterId.HighPart = 0  SourceInfo.AdapterId.LowPart = 24621 Id = 0
+SourceInfo.ModeInfoIdx = 1 SourceInfo.StatusFlags = 1
+
+DISPLAYCONFIG_PATH_TARGET_INFO
+TargetInfo.AdapterId.HighPart = 0  TargetInfo.AdapterId.LowPart = 24621 TargetInfo.ModeInfoIdx = 0
+TargetInfo.Id = 265988 TargetInfo.OutputTechnology = DISPLAYCONFIG_OUTPUT_TECHNOLOGY_INTERNAL
+TargetInfo.Rotaion = DISPLAYCONFIG_ROTATION_IDENTITY TargetInfo.Scaling = DISPLAYCONFIG_SCALING_IDENTITY
+TargetInfo.RefreshRate.Numerator = 241500000 TargetInfo.RefreshRate.Denominator = 4025600
+TargetInfo.ScanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+TargetInfo.TargetAvailable = True TargetInfo.StatusFlags = 1
+
+Flags = 1
+*********************************************************************************************************
+
+********************************************* MODE INDEX 0 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_TARGET Id = 265988
+AdapterId.HighPart = 0  AdapterId.LowPart = 24621
+
+DISPLAYCONFIG_TARGET_MODE
+TargetMode.TargetVideoSignalInfo.pixelRate = 241500000
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Numerator = 88786
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Denominator = 1
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Numerator = 241500000
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Denominator = 4025600
+TargetMode.TargetVideoSignalInfo.activeSize.cx = 2560 TargetMode.TargetVideoSignalInfo.activeSize.cy = 1440
+TargetMode.TargetVideoSignalInfo.totalSize.cx = 2720 TargetMode.TargetVideoSignalInfo.totalSize.cy = 1480
+TargetMode.TargetVideoSignalInfo.videoStandard = 255
+TargetMode.TargetVideoSignalInfo.scanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+*********************************************************************************************************
+
+********************************************* MODE INDEX 1 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_SOURCE Id = 0
+AdapterId.HighPart = 0  AdapterId.LowPart = 24621
+
+DISPLAYCONFIG_SOURCE_MODE
+SourceMode.Width = 2560 SourceMode.Height = 1440 SourceMode.PixelFormat = DISPLAYCONFIG_PIXELFORMAT_32BPP
+SourceMode.Position.x = 0 SourceMode.Position.y = 0
+*********************************************************************************************************
+`````````````````````````````````````````````````````````````````````````````````````````````````````````
+Display Config Info:
+Size = 1248 ConfigType = SINGLE NumDisplay = 2
+DISPLAY_PATH_INFO { 0 }: PathIndex = 0 TargetID = 265988 SourceID = 0 IsActive = True MonitorFriendlyDeviceName = LQ125T1JX03
+DISPLAY_PATH_INFO { 1 }: PathIndex = 1 TargetID = 200195 SourceID = 0 IsActive = False MonitorFriendlyDeviceName = PN-K321
+`````````````````````````````````````````````````````````````````````````````````````````````````````````
+Display Config Error Code is DISPLAY_CONFIG_ERROR_SUCCESS
+
+================================================= END =================================================
+
+
+====================================== GET DISPLAY CONFIGURATION ======================================
+
+
+Number of Path Array is 1 and Number of Mode Array is 2
+********************************************* PATH INDEX 0 *********************************************
+DISPLAYCONFIG_PATH_SOURCE_INFO
+SourceInfo.AdapterId.HighPart = 0  SourceInfo.AdapterId.LowPart = 24621 Id = 0
+SourceInfo.ModeInfoIdx = 1 SourceInfo.StatusFlags = 1
+
+DISPLAYCONFIG_PATH_TARGET_INFO
+TargetInfo.AdapterId.HighPart = 0  TargetInfo.AdapterId.LowPart = 24621 TargetInfo.ModeInfoIdx = 0
+TargetInfo.Id = 265988 TargetInfo.OutputTechnology = DISPLAYCONFIG_OUTPUT_TECHNOLOGY_INTERNAL
+TargetInfo.Rotaion = DISPLAYCONFIG_ROTATION_IDENTITY TargetInfo.Scaling = DISPLAYCONFIG_SCALING_IDENTITY
+TargetInfo.RefreshRate.Numerator = 241500000 TargetInfo.RefreshRate.Denominator = 4025600
+TargetInfo.ScanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+TargetInfo.TargetAvailable = True TargetInfo.StatusFlags = 1
+
+Flags = 1
+*********************************************************************************************************
+
+********************************************* MODE INDEX 0 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_TARGET Id = 265988
+AdapterId.HighPart = 0  AdapterId.LowPart = 24621
+
+DISPLAYCONFIG_TARGET_MODE
+TargetMode.TargetVideoSignalInfo.pixelRate = 241500000
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Numerator = 88786
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Denominator = 1
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Numerator = 241500000
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Denominator = 4025600
+TargetMode.TargetVideoSignalInfo.activeSize.cx = 2560 TargetMode.TargetVideoSignalInfo.activeSize.cy = 1440
+TargetMode.TargetVideoSignalInfo.totalSize.cx = 2720 TargetMode.TargetVideoSignalInfo.totalSize.cy = 1480
+TargetMode.TargetVideoSignalInfo.videoStandard = 255
+TargetMode.TargetVideoSignalInfo.scanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+*********************************************************************************************************
+
+********************************************* MODE INDEX 1 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_SOURCE Id = 0
+AdapterId.HighPart = 0  AdapterId.LowPart = 24621
+
+DISPLAYCONFIG_SOURCE_MODE
+SourceMode.Width = 2560 SourceMode.Height = 1440 SourceMode.PixelFormat = DISPLAYCONFIG_PIXELFORMAT_32BPP
+SourceMode.Position.x = 0 SourceMode.Position.y = 0
+*********************************************************************************************************
+`````````````````````````````````````````````````````````````````````````````````````````````````````````
+Display Config Info:
+Size = 1248 ConfigType = SINGLE NumDisplay = 2
+DISPLAY_PATH_INFO { 0 }: PathIndex = 0 TargetID = 265988 SourceID = 0 IsActive = True MonitorFriendlyDeviceName = LQ125T1JX03
+DISPLAY_PATH_INFO { 1 }: PathIndex = 1 TargetID = 200195 SourceID = 0 IsActive = False MonitorFriendlyDeviceName = PN-K321
+`````````````````````````````````````````````````````````````````````````````````````````````````````````
+Display Config Error Code is DISPLAY_CONFIG_ERROR_SUCCESS
+
+================================================= END =================================================
+
+
+====================================== GET DISPLAY CONFIGURATION ======================================
+
+
+Number of Path Array is 1 and Number of Mode Array is 2
+********************************************* PATH INDEX 0 *********************************************
+DISPLAYCONFIG_PATH_SOURCE_INFO
+SourceInfo.AdapterId.HighPart = 0  SourceInfo.AdapterId.LowPart = 24621 Id = 0
+SourceInfo.ModeInfoIdx = 1 SourceInfo.StatusFlags = 1
+
+DISPLAYCONFIG_PATH_TARGET_INFO
+TargetInfo.AdapterId.HighPart = 0  TargetInfo.AdapterId.LowPart = 24621 TargetInfo.ModeInfoIdx = 0
+TargetInfo.Id = 265988 TargetInfo.OutputTechnology = DISPLAYCONFIG_OUTPUT_TECHNOLOGY_INTERNAL
+TargetInfo.Rotaion = DISPLAYCONFIG_ROTATION_IDENTITY TargetInfo.Scaling = DISPLAYCONFIG_SCALING_IDENTITY
+TargetInfo.RefreshRate.Numerator = 241500000 TargetInfo.RefreshRate.Denominator = 4025600
+TargetInfo.ScanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+TargetInfo.TargetAvailable = True TargetInfo.StatusFlags = 1
+
+Flags = 1
+*********************************************************************************************************
+
+********************************************* MODE INDEX 0 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_TARGET Id = 265988
+AdapterId.HighPart = 0  AdapterId.LowPart = 24621
+
+DISPLAYCONFIG_TARGET_MODE
+TargetMode.TargetVideoSignalInfo.pixelRate = 241500000
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Numerator = 88786
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Denominator = 1
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Numerator = 241500000
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Denominator = 4025600
+TargetMode.TargetVideoSignalInfo.activeSize.cx = 2560 TargetMode.TargetVideoSignalInfo.activeSize.cy = 1440
+TargetMode.TargetVideoSignalInfo.totalSize.cx = 2720 TargetMode.TargetVideoSignalInfo.totalSize.cy = 1480
+TargetMode.TargetVideoSignalInfo.videoStandard = 255
+TargetMode.TargetVideoSignalInfo.scanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+*********************************************************************************************************
+
+********************************************* MODE INDEX 1 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_SOURCE Id = 0
+AdapterId.HighPart = 0  AdapterId.LowPart = 24621
+
+DISPLAYCONFIG_SOURCE_MODE
+SourceMode.Width = 2560 SourceMode.Height = 1440 SourceMode.PixelFormat = DISPLAYCONFIG_PIXELFORMAT_32BPP
+SourceMode.Position.x = 0 SourceMode.Position.y = 0
+*********************************************************************************************************
+`````````````````````````````````````````````````````````````````````````````````````````````````````````
+Display Config Info:
+Size = 1248 ConfigType = SINGLE NumDisplay = 2
+DISPLAY_PATH_INFO { 0 }: PathIndex = 0 TargetID = 265988 SourceID = 0 IsActive = True MonitorFriendlyDeviceName = LQ125T1JX03
+DISPLAY_PATH_INFO { 1 }: PathIndex = 1 TargetID = 200195 SourceID = 0 IsActive = False MonitorFriendlyDeviceName = PN-K321
+`````````````````````````````````````````````````````````````````````````````````````````````````````````
+Display Config Error Code is DISPLAY_CONFIG_ERROR_SUCCESS
+
+================================================= END =================================================
+
+
+====================================== GET DISPLAY CONFIGURATION ======================================
+
+
+Number of Path Array is 1 and Number of Mode Array is 2
+********************************************* PATH INDEX 0 *********************************************
+DISPLAYCONFIG_PATH_SOURCE_INFO
+SourceInfo.AdapterId.HighPart = 0  SourceInfo.AdapterId.LowPart = 24621 Id = 0
+SourceInfo.ModeInfoIdx = 1 SourceInfo.StatusFlags = 1
+
+DISPLAYCONFIG_PATH_TARGET_INFO
+TargetInfo.AdapterId.HighPart = 0  TargetInfo.AdapterId.LowPart = 24621 TargetInfo.ModeInfoIdx = 0
+TargetInfo.Id = 265988 TargetInfo.OutputTechnology = DISPLAYCONFIG_OUTPUT_TECHNOLOGY_INTERNAL
+TargetInfo.Rotaion = DISPLAYCONFIG_ROTATION_IDENTITY TargetInfo.Scaling = DISPLAYCONFIG_SCALING_IDENTITY
+TargetInfo.RefreshRate.Numerator = 241500000 TargetInfo.RefreshRate.Denominator = 4025600
+TargetInfo.ScanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+TargetInfo.TargetAvailable = True TargetInfo.StatusFlags = 1
+
+Flags = 1
+*********************************************************************************************************
+
+********************************************* MODE INDEX 0 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_TARGET Id = 265988
+AdapterId.HighPart = 0  AdapterId.LowPart = 24621
+
+DISPLAYCONFIG_TARGET_MODE
+TargetMode.TargetVideoSignalInfo.pixelRate = 241500000
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Numerator = 88786
+TargetMode.TargetVideoSignalInfo.hSyncFreq.Denominator = 1
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Numerator = 241500000
+TargetMode.TargetVideoSignalInfo.vSyncFreq.Denominator = 4025600
+TargetMode.TargetVideoSignalInfo.activeSize.cx = 2560 TargetMode.TargetVideoSignalInfo.activeSize.cy = 1440
+TargetMode.TargetVideoSignalInfo.totalSize.cx = 2720 TargetMode.TargetVideoSignalInfo.totalSize.cy = 1480
+TargetMode.TargetVideoSignalInfo.videoStandard = 255
+TargetMode.TargetVideoSignalInfo.scanLineOrdering = DISPLAYCONFIG_SCANLINE_ORDERING_PROGRESSIVE
+*********************************************************************************************************
+
+********************************************* MODE INDEX 1 *********************************************
+DISPLAYCONFIG_MODE_INFO
+InfoType DISPLAYCONFIG_MODE_INFO_TYPE_SOURCE Id = 0
+AdapterId.HighPart = 0  AdapterId.LowPart = 24621
+
+DISPLAYCONFIG_SOURCE_MODE
+SourceMode.Width = 2560 SourceMode.Height = 1440 SourceMode.PixelFormat = DISPLAYCONFIG_PIXELFORMAT_32BPP
+SourceMode.Position.x = 0 SourceMode.Position.y = 0
+*********************************************************************************************************
+`````````````````````````````````````````````````````````````````````````````````````````````````````````
+Display Config Info:
+Size = 1248 ConfigType = SINGLE NumDisplay = 2
+DISPLAY_PATH_INFO { 0 }: PathIndex = 0 TargetID = 265988 SourceID = 0 IsActive = True MonitorFriendlyDeviceName = LQ125T1JX03
+DISPLAY_PATH_INFO { 1 }: PathIndex = 1 TargetID = 200195 SourceID = 0 IsActive = False MonitorFriendlyDeviceName = PN-K321
+`````````````````````````````````````````````````````````````````````````````````````````````````````````
+Display Config Error Code is DISPLAY_CONFIG_ERROR_SUCCESS
+
+================================================= END =================================================
+

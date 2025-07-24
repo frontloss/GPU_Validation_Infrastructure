@@ -1,0 +1,28 @@
+HKCR
+{
+	IgfxExtBridge.PowerUtil.1 = s 'Power Util Class'
+	{
+		CLSID = s '{6A344570-2BDF-49db-8B6C-3EA32F026991}'
+	}
+ 
+	IgfxExtBridge.PowerUtil = s 'Power Util Class'
+	{
+		CLSID = s '{6A344570-2BDF-49db-8B6C-3EA32F026991}'
+		CurVer = s 'IgfxExtBridge.PowerUtil.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {6A344570-2BDF-49db-8B6C-3EA32F026991} = s 'Power Util Class'
+		{
+			ProgID = s 'IgfxExtBridge.PowerUtil.1'
+			VersionIndependentProgID = s 'IgfxExtBridge.PowerUtil'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{9A650EBC-929B-4210-BA05-76D5D021B140}'
+		}
+	}
+}

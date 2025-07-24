@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Sequences>
+  <Seq1>
+    <Config SINGLE ="1"/>
+    <Config SINGLE ="2"/>
+    <Config SINGLE ="4"/>
+    <Config EXTENDED = "1,2"/>
+    <Config EXTENDED = "2,3"/>
+    <Config EXTENDED = "1,4"/>
+    <!--<Config CLONE="1,2"/>
+    <Config CLONE="2,3,1"/>-->
+    <Config EXTENDED="1,2,3"/>
+    <Config EXTENDED="3,1,4"/>
+    <Config EXTENDED="1,2,3,4"/>
+    <Config EXTENDED="3,4,1,2"/>
+    <Config SINGLE="3"/>
+  </Seq1>
+  <Seq2>
+    <Config SINGLE ="1"/>
+    <Config SINGLE ="2"/>
+    <Config EXTENDED = "1,2"/>
+    <Config CLONE="1,2"/>
+    <Config CLONE="2,3,1"/>
+    <Config EXTENDED="1,2,3"/>
+    <Config EXTENDED="3,1,2"/>
+    <Config SINGLE="3"/>
+  </Seq2>
+  <Single>
+    <Config SINGLE ="1"/>
+  </Single>
+  <Powereventsseq>
+    <Config SINGLE ="1"/>
+    <Config EXTENDED="1,2,3"/>
+  </Powereventsseq>
+</Sequences>

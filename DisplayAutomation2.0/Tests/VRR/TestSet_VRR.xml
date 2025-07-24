@@ -1,0 +1,674 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+  <Feature Name="VRR" Owner="rohitku1">
+
+    <Test LastModifiedWW="2019.WW25" Name="test_functional_basic.py" Owner="rohitku1" Priority="P1" Version="1">
+      <TestInstance Grids="CI;PreETM" Id="VRR001">
+        <CommandLine>python Tests\VRR\test_functional_basic.py -edp_a SINK_EDP038 -selective2 WINDOWED NO_LOW_HIGH_FPS</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL;TGL</Platform>
+        <TestEnvironment>ICL_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR002">
+        <CommandLine>python Tests\VRR\test_functional_basic.py -edp_a SINK_EDP038 -selective2 FULL_SCREEN LOW_FPS</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL;TGL</Platform>
+        <TestEnvironment>ICL_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR003">
+        <CommandLine>python Tests\VRR\test_functional_basic.py -edp_a SINK_EDP038 -selective2 WINDOWED HIGH_FPS</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL;TGL</Platform>
+        <TestEnvironment>ICL_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR004">
+        <CommandLine>python Tests\VRR\test_functional_basic.py -edp_a SINK_EDP038 -selective2 FULL_SCREEN LOW_HIGH_FPS</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL;TGL</Platform>
+        <TestEnvironment>ICL_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR005">
+        <CommandLine>python Tests\VRR\test_functional_basic.py -dp_b SINK_DPS043 -selective2 FULL_SCREEN NO_LOW_HIGH_FPS</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL;TGL</Platform>
+        <TestEnvironment>ICL_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR006">
+        <CommandLine>python Tests\VRR\test_functional_basic.py -dp_c SINK_DPS044 -selective2 WINDOWED LOW_FPS</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL;TGL</Platform>
+        <TestEnvironment>ICL_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR007">
+        <CommandLine>python Tests\VRR\test_functional_basic.py -dp_d SINK_DPS043 -selective2 FULL_SCREEN HIGH_FPS</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL;LKF1;TGL</Platform>
+        <TestEnvironment>ICL_SOC;LKF1_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR008">
+        <CommandLine>python Tests\VRR\test_functional_basic.py -dp_b SINK_DPS044 -selective2 WINDOWED LOW_HIGH_FPS</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL;TGL</Platform>
+        <TestEnvironment>ICL_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR009">
+        <CommandLine>python Tests\VRR\test_functional_basic.py -dp_e SINK_DPS044 -selective2 WINDOWED LOW_FPS</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>LKF1</Platform>
+        <TestEnvironment>LKF1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR010">
+        <CommandLine>python Tests\VRR\test_functional_basic.py -dp_d SINK_DPS043 -selective2 FULL_SCREEN HIGH_FPS</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>LKF1</Platform>
+        <TestEnvironment>LKF1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR011">
+        <CommandLine>python Tests\VRR\test_functional_basic.py -dp_e SINK_DPS044 -selective2 WINDOWED LOW_HIGH_FPS</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>LKF1</Platform>
+        <TestEnvironment>LKF1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="ETM;GFT" Id="VRR012">
+        <CommandLine>python Tests\VRR\test_functional_basic.py -edp_a SINK_EDP039 -selective2 WINDOWED NO_LOW_HIGH_FPS</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL;TGL</Platform>
+        <TestEnvironment>ICL_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="ETM;GFT" Id="VRR013">
+        <CommandLine>python Tests\VRR\test_functional_basic.py -edp_a SINK_EDP040 -selective2 FULL_SCREEN LOW_FPS</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL;TGL</Platform>
+        <TestEnvironment>ICL_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR050">
+        <CommandLine>python Tests\VRR\test_functional_basic.py -edp_a SINK_EDP038 -selective2 FULL_SCREEN LOW_HIGH_FPS -app angrybots</CommandLine>
+        <OS>Win19H1;</OS>
+        <Platform>ICL;TGL</Platform>
+        <TestEnvironment>ICL_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR051">
+        <CommandLine>python Tests\VRR\test_functional_basic.py -dp_d SINK_DPS043 -selective2 FULL_SCREEN LOW_HIGH_FPS -app angrybots</CommandLine>
+        <OS>Win19H1;</OS>
+        <Platform>ICL;LKF1;TGL</Platform>
+        <TestEnvironment>ICL_SOC;LKF1_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+    </Test>
+
+    <Test LastModifiedWW="2019.WW25" Name="test_functional_modes.py" Owner="rohitku1" Priority="P2" Version="1">
+      <TestInstance Grids="CI;PreETM" Id="VRR016">
+        <CommandLine>python Tests\VRR\test_functional_modes.py -edp_a SINK_EDP038 -selective2 WINDOWED NO_LOW_HIGH_FPS</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL</Platform>
+        <TestEnvironment>ICL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR017">
+        <CommandLine>python Tests\VRR\test_functional_modes.py -edp_a SINK_EDP038 -selective2 FULL_SCREEN LOW_FPS</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL</Platform>
+        <TestEnvironment>ICL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR018">
+        <CommandLine>python Tests\VRR\test_functional_modes.py -edp_a SINK_EDP038 -selective2 WINDOWED HIGH_FPS</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL</Platform>
+        <TestEnvironment>ICL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR019">
+        <CommandLine>python Tests\VRR\test_functional_modes.py -edp_a SINK_EDP038 -selective2 FULL_SCREEN LOW_HIGH_FPS</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL</Platform>
+        <TestEnvironment>ICL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR020">
+        <CommandLine>python Tests\VRR\test_functional_modes.py -dp_b SINK_DPS043 -selective2 FULL_SCREEN NO_LOW_HIGH_FPS</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL</Platform>
+        <TestEnvironment>ICL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR021">
+        <CommandLine>python Tests\VRR\test_functional_modes.py -dp_c SINK_DPS044 -selective2 WINDOWED LOW_FPS</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL</Platform>
+        <TestEnvironment>ICL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR022">
+        <CommandLine>python Tests\VRR\test_functional_modes.py -dp_d SINK_DPS043 -selective2 FULL_SCREEN HIGH_FPS</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL;LKF1</Platform>
+        <TestEnvironment>ICL_SOC;LKF1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR023">
+        <CommandLine>python Tests\VRR\test_functional_modes.py -dp_b SINK_DPS044 -selective2 WINDOWED LOW_HIGH_FPS</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL</Platform>
+        <TestEnvironment>ICL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR024">
+        <CommandLine>python Tests\VRR\test_functional_modes.py -dp_e SINK_DPS044 -selective2 WINDOWED LOW_FPS</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>LKF1</Platform>
+        <TestEnvironment>LKF1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR025">
+        <CommandLine>python Tests\VRR\test_functional_modes.py -dp_d SINK_DPS043 -selective2 FULL_SCREEN HIGH_FPS</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>LKF1</Platform>
+        <TestEnvironment>LKF1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR026">
+        <CommandLine>python Tests\VRR\test_functional_modes.py -dp_e SINK_DPS044 -selective2 WINDOWED LOW_HIGH_FPS</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>LKF1</Platform>
+        <TestEnvironment>LKF1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="ETM;GFT" Id="VRR027">
+        <CommandLine>python Tests\VRR\test_functional_modes.py -edp_a SINK_EDP039 -selective2 WINDOWED NO_LOW_HIGH_FPS</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL</Platform>
+        <TestEnvironment>ICL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="ETM;GFT" Id="VRR028">
+        <CommandLine>python Tests\VRR\test_functional_modes.py -edp_a SINK_EDP040 -selective2 FULL_SCREEN LOW_FPS</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL</Platform>
+        <TestEnvironment>ICL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+    </Test>
+
+    <Test LastModifiedWW="2019.WW25" Name="test_functional_power.py" Owner="rohitku1" Priority="P2" Version="1">
+      <TestInstance Grids="CI;PreETM" Id="VRR031">
+        <CommandLine>python Tests\VRR\test_functional_power.py -edp_a SINK_EDP038 -selective2 WINDOWED NO_LOW_HIGH_FPS AC_DC</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL;TGL</Platform>
+        <TestEnvironment>ICL_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR032">
+        <CommandLine>python Tests\VRR\test_functional_power.py -edp_a SINK_EDP038 -selective2 FULL_SCREEN LOW_FPS S3</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL;TGL</Platform>
+        <TestEnvironment>ICL_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR033">
+        <CommandLine>python Tests\VRR\test_functional_power.py -edp_a SINK_EDP038 -selective2 WINDOWED HIGH_FPS S4</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL;TGL</Platform>
+        <TestEnvironment>ICL_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR034">
+        <CommandLine>python Tests\VRR\test_functional_power.py -edp_a SINK_EDP038 -selective2 FULL_SCREEN LOW_HIGH_FPS AC_DC</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL;TGL</Platform>
+        <TestEnvironment>ICL_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR035">
+        <CommandLine>python Tests\VRR\test_functional_power.py -dp_b SINK_DPS043 -selective2 FULL_SCREEN NO_LOW_HIGH_FPS S4</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL;TGL</Platform>
+        <TestEnvironment>ICL_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR036">
+        <CommandLine>python Tests\VRR\test_functional_power.py -dp_c SINK_DPS044 -selective2 WINDOWED LOW_FPS CS</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL;TGL</Platform>
+        <TestEnvironment>ICL_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR037">
+        <CommandLine>python Tests\VRR\test_functional_power.py -dp_d SINK_DPS043 -selective2 FULL_SCREEN HIGH_FPS AC_DC</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL;LKF1;TGL</Platform>
+        <TestEnvironment>ICL_SOC;LKF1_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR038">
+        <CommandLine>python Tests\VRR\test_functional_power.py -dp_b SINK_DPS044 -selective2 WINDOWED LOW_HIGH_FPS S3</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL;TGL</Platform>
+        <TestEnvironment>ICL_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR039">
+        <CommandLine>python Tests\VRR\test_functional_power.py -dp_e SINK_DPS044 -selective2 WINDOWED LOW_FPS CS</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>LKF1</Platform>
+        <TestEnvironment>LKF1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR040">
+        <CommandLine>python Tests\VRR\test_functional_power.py -dp_d SINK_DPS043 -selective2 FULL_SCREEN HIGH_FPS S3</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>LKF1</Platform>
+        <TestEnvironment>LKF1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRR041">
+        <CommandLine>python Tests\VRR\test_functional_power.py -dp_e SINK_DPS044 -selective2 WINDOWED LOW_HIGH_FPS S4</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>LKF1</Platform>
+        <TestEnvironment>LKF1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="ETM;GFT" Id="VRR042">
+        <CommandLine>python Tests\VRR\test_functional_power.py -edp_a SINK_EDP039 -selective2 WINDOWED NO_LOW_HIGH_FPS S4</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL;TGL</Platform>
+        <TestEnvironment>ICL_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="ETM;GFT" Id="VRR043">
+        <CommandLine>python Tests\VRR\test_functional_power.py -edp_a SINK_EDP040 -selective2 FULL_SCREEN LOW_FPS CS</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL;TGL</Platform>
+        <TestEnvironment>ICL_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+    </Test>
+
+    <Test LastModifiedWW="2019.WW25" Name="test_negative.py" Owner="rohitku1" Priority="P2" Version="1">
+      <TestInstance Grids="ETM;GFT" Id="VRR046">
+        <CommandLine>python Tests\VRR\test_negative.py -edp_a SINK_EDP011 -selective LOW_HIGH_FPS NON_VRR</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL;TGL</Platform>
+        <TestEnvironment>ICL_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="ETM;GFT" Id="VRR052">
+        <CommandLine>python Tests\VRR\test_negative.py -edp_a SINK_EDP043 -selective LOW_HIGH_FPS NON_VRR</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL</Platform>
+        <TestEnvironment>ICL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="ETM;GFT" Id="VRR047">
+        <CommandLine>python Tests\VRR\test_negative.py -dp_d SINK_DPS043 -selective LOW_HIGH_FPS NON_VRR</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>LKF1</Platform>
+        <TestEnvironment>LKF1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="ETM;GFT" Id="VRR048">
+        <CommandLine>python Tests\VRR\test_negative.py -edp_a SINK_EDP038 -selective LOW_HIGH_FPS VRR</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL;TGL</Platform>
+        <TestEnvironment>ICL_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="ETM;GFT" Id="VRR049">
+        <CommandLine>python Tests\VRR\test_negative.py -dp_d SINK_DPS001 -selective LOW_HIGH_FPS VRR</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>LKF1</Platform>
+        <TestEnvironment>LKF1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+    </Test>
+
+    <Test LastModifiedWW="2019.WW28" Name="vrr_concurrency.py" Owner="rohitku1" Priority="P2" Version="1">
+      <TestInstance Grids="ETM;GFT" Id="VRR054">
+        <CommandLine>python Tests\VRR\vrr_concurrency.py -edp_a SINK_EDP038 -selective LOW_HIGH_FPS DPST</CommandLine>
+        <OS>Win19H1;</OS>
+        <Platform>ICL;TGL</Platform>
+        <TestEnvironment>ICL_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="ETM;GFT" Id="VRR055">
+        <CommandLine>python Tests\VRR\vrr_concurrency.py -edp_a SINK_EDP038 -selective LOW_HIGH_FPS PSR1</CommandLine>
+        <OS>Win19H1;</OS>
+        <Platform>ICL;TGL</Platform>
+        <TestEnvironment>ICL_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="ETM;GFT" Id="VRR056">
+        <CommandLine>python Tests\VRR\vrr_concurrency.py -edp_a SINK_EDP038 -selective LOW_HIGH_FPS PSR2</CommandLine>
+        <OS>Win19H1;</OS>
+        <Platform>ICL;TGL</Platform>
+        <TestEnvironment>ICL_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+    </Test>
+
+    <Test LastModifiedWW="2019.WW31" Name="vrr_workload.py" Owner="rohitku1" Priority="P2" Version="1">
+      <TestInstance Grids="ETM;GFT" Id="VRR057">
+        <CommandLine>python Tests\VRR\vrr_workload.py -dp_d SINK_DPS043 -selective LOW_HIGH_FPS TEXT_OVERLAY</CommandLine>
+        <OS>Win19H1;Win20H1</OS>
+        <Platform>ICL;LKF1;TGL</Platform>
+        <TestEnvironment>ICL_SOC;LKF1_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="ETM;GFT" Id="VRR058">
+        <CommandLine>python Tests\VRR\vrr_workload.py -dp_d SINK_DPS043 -selective LOW_HIGH_FPS FULL_SCREEN_SWITCH</CommandLine>
+        <OS>Win19H1;Win20H1</OS>
+        <Platform>ICL;LKF1;TGL</Platform>
+        <TestEnvironment>ICL_SOC;LKF1_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="ETM;GFT" Id="VRR059">
+        <CommandLine>python Tests\VRR\vrr_workload.py -dp_d SINK_DPS043 -selective LOW_HIGH_FPS MULTI_WINDOW</CommandLine>
+        <OS>Win19H1;Win20H1</OS>
+        <Platform>ICL;LKF1;TGL</Platform>
+        <TestEnvironment>ICL_SOC;LKF1_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="ETM;GFT" Id="VRR060">
+        <CommandLine>python Tests\VRR\vrr_workload.py -dp_d SINK_DPS043 -selective LOW_HIGH_FPS WINDOW_CLOSE</CommandLine>
+        <OS>Win19H1;Win20H1</OS>
+        <Platform>ICL;LKF1;TGL</Platform>
+        <TestEnvironment>ICL_SOC;LKF1_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+    </Test>
+
+  </Feature>
+
+  <Feature Name="VRR_MultiAdapter" Owner="rohitku1">
+
+    <Test LastModifiedWW="2019.WW34" Name="test_functional_basic.py" Owner="rohitku1" Priority="P1" Version="1">
+      <TestInstance Grids="CI;PreETM" Id="VRRMA001">
+        <CommandLine>python Tests\VRR\test_functional_basic.py -gfx_1 -dp_b SINK_DPS043 -selective2 FULL_SCREEN NO_LOW_HIGH_FPS</CommandLine>
+        <OS>Win19H1;</OS>
+        <Platform>CFL_DG1</Platform>
+        <TestEnvironment>CFL_DG1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRRMA002">
+        <CommandLine>python Tests\VRR\test_functional_basic.py -gfx_1 -dp_c SINK_DPS044 -selective2 WINDOWED LOW_FPS</CommandLine>
+        <OS>Win19H1;</OS>
+        <Platform>CFL_DG1</Platform>
+        <TestEnvironment>CFL_DG1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRRMA003">
+        <CommandLine>python Tests\VRR\test_functional_basic.py -gfx_1 -dp_d SINK_DPS043 -selective2 FULL_SCREEN HIGH_FPS</CommandLine>
+        <OS>Win19H1;</OS>
+        <Platform>CFL_DG1</Platform>
+        <TestEnvironment>CFL_DG1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRRMA004">
+        <CommandLine>python Tests\VRR\test_functional_basic.py -gfx_1 -dp_b SINK_DPS044 -selective2 WINDOWED LOW_HIGH_FPS</CommandLine>
+        <OS>Win19H1;</OS>
+        <Platform>CFL_DG1</Platform>
+        <TestEnvironment>CFL_DG1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRRMA005">
+        <CommandLine>python Tests\VRR\test_functional_basic.py -gfx_1 -dp_d SINK_DPS043 -selective2 FULL_SCREEN LOW_HIGH_FPS -app angrybots</CommandLine>
+        <OS>Win19H1;</OS>
+        <Platform>CFL_DG1</Platform>
+        <TestEnvironment>CFL_DG1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRRMA006">
+        <CommandLine>python Tests\VRR\test_functional_basic.py -gfx_1 -dp_d SINK_DPS043 -selective2 FULL_SCREEN LOW_HIGH_FPS -app rectangle</CommandLine>
+        <OS>Win19H1;</OS>
+        <Platform>CFL_DG1</Platform>
+        <TestEnvironment>CFL_DG1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+    </Test>
+
+    <Test LastModifiedWW="2019.WW34" Name="test_functional_modes.py" Owner="rohitku1" Priority="P2" Version="1">
+      <TestInstance Grids="CI;PreETM" Id="VRRMA008">
+        <CommandLine>python Tests\VRR\test_functional_modes.py -gfx_1 -dp_b SINK_DPS043 -selective2 WINDOWED LOW_HIGH_FPS</CommandLine>
+        <OS>Win19H1;</OS>
+        <Platform>CFL_DG1</Platform>
+        <TestEnvironment>CFL_DG1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRRMA009">
+        <CommandLine>python Tests\VRR\test_functional_modes.py -gfx_1 -dp_b SINK_DPS044 -selective2 FULL_SCREEN LOW_HIGH_FPS</CommandLine>
+        <OS>Win19H1;</OS>
+        <Platform>CFL_DG1</Platform>
+        <TestEnvironment>CFL_DG1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+    </Test>
+
+    <Test LastModifiedWW="2019.WW34" Name="test_functional_power.py" Owner="rohitku1" Priority="P2" Version="1">
+      <TestInstance Grids="CI;PreETM" Id="VRRMA010">
+        <CommandLine>python Tests\VRR\test_functional_power.py -gfx_1 -dp_b SINK_DPS043 -selective2 FULL_SCREEN LOW_FPS S3</CommandLine>
+        <OS>Win19H1;</OS>
+        <Platform>CFL_DG1</Platform>
+        <TestEnvironment>CFL_DG1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRRMA011">
+        <CommandLine>python Tests\VRR\test_functional_power.py -gfx_1 -dp_c SINK_DPS044 -selective2 FULL_SCREEN LOW_HIGH_FPS AC_DC</CommandLine>
+        <OS>Win19H1;</OS>
+        <Platform>CFL_DG1</Platform>
+        <TestEnvironment>CFL_DG1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRRMA012">
+        <CommandLine>python Tests\VRR\test_functional_power.py -gfx_1 -dp_b SINK_DPS043 -selective2 FULL_SCREEN NO_LOW_HIGH_FPS S4</CommandLine>
+        <OS>Win19H1;</OS>
+        <Platform>CFL_DG1</Platform>
+        <TestEnvironment>CFL_DG1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;PreETM" Id="VRRMA013">
+        <CommandLine>python Tests\VRR\test_functional_power.py -gfx_1 -dp_c SINK_DPS044 -selective2 WINDOWED LOW_FPS CS</CommandLine>
+        <OS>Win19H1;</OS>
+        <Platform>CFL_DG1</Platform>
+        <TestEnvironment>CFL_DG1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+    </Test>
+
+    <Test LastModifiedWW="2019.WW34" Name="test_negative.py" Owner="rohitku1" Priority="P2" Version="1">
+      <TestInstance Grids="ETM;GFT" Id="VRRMA014">
+        <CommandLine>python Tests\VRR\test_negative.py -gfx_1 -dp_b SINK_DPS044 -selective LOW_HIGH_FPS VRR</CommandLine>
+        <OS>Win19H1;</OS>
+        <Platform>CFL_DG1</Platform>
+        <TestEnvironment>CFL_DG1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+    </Test>
+
+    <Test LastModifiedWW="2019.WW34" Name="vrr_workload.py" Owner="rohitku1" Priority="P2" Version="1">
+      <TestInstance Grids="ETM;GFT" Id="VRRMA015">
+        <CommandLine>python Tests\VRR\vrr_workload.py -gfx_1 -dp_d SINK_DPS043 -selective LOW_HIGH_FPS TEXT_OVERLAY</CommandLine>
+        <OS>Win19H1;</OS>
+        <Platform>CFL_DG1</Platform>
+        <TestEnvironment>CFL_DG1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="ETM;GFT" Id="VRRMA016">
+        <CommandLine>python Tests\VRR\vrr_workload.py -gfx_1 -dp_d SINK_DPS043 -selective LOW_HIGH_FPS FULL_SCREEN_SWITCH</CommandLine>
+        <OS>Win19H1;</OS>
+        <Platform>CFL_DG1</Platform>
+        <TestEnvironment>CFL_DG1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="ETM;GFT" Id="VRRMA017">
+        <CommandLine>python Tests\VRR\vrr_workload.py -gfx_1 -dp_d SINK_DPS043 -selective LOW_HIGH_FPS MULTI_WINDOW</CommandLine>
+        <OS>Win19H1;</OS>
+        <Platform>CFL_DG1</Platform>
+        <TestEnvironment>CFL_DG1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="ETM;GFT" Id="VRRMA018">
+        <CommandLine>python Tests\VRR\vrr_workload.py -gfx_1 -dp_d SINK_DPS043 -selective LOW_HIGH_FPS WINDOW_CLOSE</CommandLine>
+        <OS>Win19H1;</OS>
+        <Platform>CFL_DG1</Platform>
+        <TestEnvironment>CFL_DG1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+    </Test>
+
+  </Feature>
+
+</Display_Automation_2.0>

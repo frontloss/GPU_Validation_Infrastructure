@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+   <Feature Name="DisplayDetection" Owner="rp3">
+   
+    <Test LastModifiedWW="2018.WW05" Name="plug_unplug_multiple.py" Owner="rp3" Priority="P1" Version="1">   
+	   <TestInstance Grids="" Id="DPHPD001">
+         <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -hdmi_b -iteration 5</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>GLK;ICL</Platform>
+		 <QualificationStatus>None</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="" Id="DPHPD002">
+         <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -hdmi_c -iteration 5</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>GLK;ICL</Platform>
+		 <QualificationStatus>None</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="" Id="DPHPD003">
+         <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -edp_a -hdmi_b -iteration 5</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>GLK;ICL</Platform>
+		 <QualificationStatus>None</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="" Id="DPHPD004">
+         <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -edp_a -hdmi_c -iteration 5</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>GLK;ICL</Platform>
+		 <QualificationStatus>None</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="" Id="DPHPD005">
+         <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -mipi_a -hdmi_b -iteration 5</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>GLK;ICL</Platform>
+		 <QualificationStatus>None</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="" Id="DPHPD006">
+         <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -mipi_a -hdmi_c -iteration 5</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>GLK;ICL</Platform>
+		 <QualificationStatus>None</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="" Id="DPHPD007">
+         <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -hdmi_b -hdmi_c -iteration 5</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>GLK;ICL</Platform>
+		 <QualificationStatus>None</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="" Id="DPHPD008">
+         <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -edp_a -hdmi_b -hdmi_c -iteration 5</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>GLK;ICL</Platform>
+		 <QualificationStatus>None</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="" Id="DPHPD009">
+         <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -mipi_a -hdmi_b -hdmi_c -iteration 5</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>GLK;ICL</Platform>
+		 <QualificationStatus>None</QualificationStatus>
+       </TestInstance>
+	</Test>
+
+
+    <Test LastModifiedWW="2018.WW05" Name="plug_all_ddi_in_low_power.py" Owner="rp3" Priority="P1" Version="1">   
+	   <TestInstance Grids="" Id="DPHPD010">
+         <CommandLine>python Tests\Display_Detection\plug_all_ddi_in_low_power.py -hdmi_b -sleepstate s3</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>GLK;ICL</Platform>
+		 <QualificationStatus>None</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="" Id="DPHPD011">
+         <CommandLine>python Tests\Display_Detection\plug_all_ddi_in_low_power.py -hdmi_c -sleepstate s3</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>GLK;ICL</Platform>
+		 <QualificationStatus>None</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="" Id="DPHPD012">
+         <CommandLine>python Tests\Display_Detection\plug_all_ddi_in_low_power.py -edp_a -hdmi_b -sleepstate s3</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>GLK;ICL</Platform>
+		 <QualificationStatus>None</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="" Id="DPHPD013">
+         <CommandLine>python Tests\Display_Detection\plug_all_ddi_in_low_power.py -edp_a -hdmi_c -sleepstate s3</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>GLK;ICL</Platform>
+		 <QualificationStatus>None</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="" Id="DPHPD014">
+         <CommandLine>python Tests\Display_Detection\plug_all_ddi_in_low_power.py -mipi_a -hdmi_b -sleepstate s3</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>GLK;ICL</Platform>
+		 <QualificationStatus>None</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="" Id="DPHPD015">
+         <CommandLine>python Tests\Display_Detection\plug_all_ddi_in_low_power.py -mipi_a -hdmi_c -sleepstate s3</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>GLK;ICL</Platform>
+		 <QualificationStatus>None</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="" Id="DPHPD016">
+         <CommandLine>python Tests\Display_Detection\plug_all_ddi_in_low_power.py -hdmi_b -hdmi_c -sleepstate s3</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>GLK;ICL</Platform>
+		 <QualificationStatus>None</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="" Id="DPHPD017">
+         <CommandLine>python Tests\Display_Detection\plug_all_ddi_in_low_power.py -edp_a -hdmi_b -hdmi_c -sleepstate s3</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>GLK;ICL</Platform>
+		 <QualificationStatus>None</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="" Id="DPHPD018">
+         <CommandLine>python Tests\Display_Detection\plug_all_ddi_in_low_power.py -mipi_a -hdmi_b -hdmi_c -sleepstate s3</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>GLK;ICL</Platform>
+		 <QualificationStatus>None</QualificationStatus>
+       </TestInstance>	 
+	</Test> 
+	 
+	<Test LastModifiedWW="2018.WW05" Name="unplug_all_ddi_in_low_power.py" Owner="rp3" Priority="P1" Version="1">   
+	   <TestInstance Grids="" Id="DPHPD019">
+         <CommandLine>python Tests\Display_Detection\unplug_all_ddi_in_low_power.py -hdmi_b -sleepstate s3</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>GLK;ICL</Platform>
+		 <QualificationStatus>None</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="" Id="DPHPD020">
+         <CommandLine>python Tests\Display_Detection\unplug_all_ddi_in_low_power.py -hdmi_c -sleepstate s3</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>GLK;ICL</Platform>
+		 <QualificationStatus>None</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="" Id="DPHPD021">
+         <CommandLine>python Tests\Display_Detection\unplug_all_ddi_in_low_power.py -edp_a -hdmi_b -sleepstate s3</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>GLK;ICL</Platform>
+		 <QualificationStatus>None</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="" Id="DPHPD022">
+         <CommandLine>python Tests\Display_Detection\unplug_all_ddi_in_low_power.py -edp_a -hdmi_c -sleepstate s3</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>GLK;ICL</Platform>
+		 <QualificationStatus>None</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="" Id="DPHPD023">
+         <CommandLine>python Tests\Display_Detection\unplug_all_ddi_in_low_power.py -mipi_a -hdmi_b -sleepstate s3</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>GLK;ICL</Platform>
+		 <QualificationStatus>None</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="" Id="DPHPD024">
+         <CommandLine>python Tests\Display_Detection\unplug_all_ddi_in_low_power.py -mipi_a -hdmi_c -sleepstate s3</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>GLK;ICL</Platform>
+		 <QualificationStatus>None</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="" Id="DPHPD025">
+         <CommandLine>python Tests\Display_Detection\unplug_all_ddi_in_low_power.py -hdmi_b -hdmi_c -sleepstate s3</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>GLK;ICL</Platform>
+		 <QualificationStatus>None</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="" Id="DPHPD026">
+         <CommandLine>python Tests\Display_Detection\unplug_all_ddi_in_low_power.py -edp_a -hdmi_b -hdmi_c -sleepstate s3</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>GLK;ICL</Platform>
+		 <QualificationStatus>None</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="" Id="DPHPD027">
+         <CommandLine>python Tests\Display_Detection\unplug_all_ddi_in_low_power.py -mipi_a -hdmi_b -hdmi_c -sleepstate s3</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>GLK;ICL</Platform>
+		 <QualificationStatus>None</QualificationStatus>
+       </TestInstance>
+	</Test>  
+
+   </Feature>
+</Display_Automation_2.0>

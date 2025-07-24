@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!-- Refer DisplayAutomation2.0/Libs/manual/modules/mode_xml_parser.py for parsing -->
+<Dock Name="Synaptics_DP21_MST_Hub">
+	<Displays Count="4">
+		<Display Index="1" Name="Asus XG27UQR"       Connector = "Type-C"    />
+		<Display Index="2" Name="Asus PG43UQ"        Connector = "DP"    />
+		<Display Index="3" Name="Acer XB283K"        Connector = "mDP"  />
+		<Display Index="4" Name="Dell G3223Q"        Connector = "HDMI2.1"   />
+	</Displays>
+
+	<Verification1>
+		<Display Index="1" HActive="3840" VActive="2160" RefreshRate="144" Scaling="MDS" AudioChannels="2"
+				 AudioSampleRates="[32, 44.1, 48]" />
+		<Display Index="2" HActive="3840" VActive="2160" RefreshRate="144" Scaling="MDS" AudioChannels="2"
+				 AudioSampleRates="[32, 44.1, 48]" />
+		<Display Index="3" HActive="3840" VActive="2160" RefreshRate="144" Scaling="MDS" AudioChannels="2"
+				 AudioSampleRates="[32, 44.1, 48]" />
+		<Display Index="4" HActive="3840" VActive="2160" RefreshRate="144" Scaling="MDS" AudioChannels="2"
+				 AudioSampleRates="[32, 44.1, 48]" />
+	</Verification1>
+</Dock>
+
+<!--  ModeControlFlag 8 Bit Definition:
+
+    Connector:
+    DP
+    HDMI
+    Type-C
+    TBT
+    DVI
+    mDP
+    VGA
+
+    Scaling:
+    Default
+    MDS
+    MAR
+    CI
+     -->

@@ -1,0 +1,606 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+    <Feature Name="DP_Tiled" Owner="pkrishna">
+        <Test LastModifiedWW="2019.WW46" Name="dp_tiled_hw_ports_sync.py" Owner="akhurana" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPTIL001">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_hw_ports_sync.py -config single -edp_a -dp_b DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_c DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>KBL_ULX;SKL_ULT;SKL_Halo;GLK;CNL_ULT;CFL;DG1;RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC;GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPTIL002">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_hw_ports_sync.py -config extended -edp_a -dp_b DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_c DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>SKL_ULX;KBL_ULT;KBL_Halo;CNL_ULX;ICL;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;TGL_SOC;TGL_DOD;JSL_SOC;JSL_DOD;DG1_SOC;DG1_DOD;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC;ICL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPTIL021">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_hw_ports_sync.py -config extended -mipi_a -dp_d DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_e DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;RYF</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;TGL_SOC;TGL_DOD;RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPTIL022">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_hw_ports_sync.py -config single -mipi_a -dp_h DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_i DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPTIL023">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_hw_ports_sync.py -config extended -dp_f -dp_a DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_g DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPTIL032">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_hw_ports_sync.py -config single -mipi_b -dp_a DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_d DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPTIL044">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_hw_ports_sync.py -config extended -edp_a -dp_d DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_e DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>LKF_R</Platform>
+                <TestEnvironment>LKF_R_SOC;LKF_R_DOD;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPTIL045">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_hw_ports_sync.py -config extended -mipi_a -dp_d DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_e DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>LKF_R</Platform>
+                <TestEnvironment>LKF_R_SOC;LKF_R_DOD;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPTIL058">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_hw_ports_sync.py -config single -dp_b_plus DELL_U3218_M.bin DELL_U3218_DPCD.bin -dp_c DELL_U3218_S.bin </CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4;WinRS5;19H1</OS>
+                <Platform>RKL;DG1;DG2</Platform>
+                <TestEnvironment>RKL_SIM;RKL_EMU;RKL_SOC;RKL_DOD;DG1_SIM;DG1_EMU;DG1_SOC;DG1_DOD;DG2_SIM;DG2_EMU;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPTIL059">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_hw_ports_sync.py -config single -dp_c DELL_U3218_M.bin DELL_U3218_DPCD.bin -dp_d DELL_U3218_S.bin </CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4;WinRS5;19H1</OS>
+                <Platform>RKL;DG1;DG2</Platform>
+                <TestEnvironment>RKL_SIM;RKL_EMU;RKL_SOC;RKL_DOD;DG1_SIM;DG1_EMU;DG1_SOC;DG1_DOD;DG2_SIM;DG2_EMU;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPTIL060">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_hw_ports_sync.py -config single -dp_d DELL_U3218_M.bin DELL_U3218_DPCD.bin -dp_e DELL_U3218_S.bin </CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4;WinRS5;19H1</OS>
+                <Platform>TGL;ADL-S</Platform>
+                <TestEnvironment>TGL_SOC;ADL-S_SIM;ADL-S_EMU;ADL-S_SOC;ADL-S_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2019.WW15" Name="dp_tiled_disable-enable_tiled-to-tiled.py" Owner="pkrishna" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;GFT;ETM" Id="DPTIL003">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_disable-enable_tiled-to-tiled.py -config extended -edp_a -dp_b DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_c DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>KBL_ULX;SKL_ULT;SKL_Halo;GLK;CNL_ULT;CFL;DG1;RKL;DG2</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC;GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;GFT;ETM" Id="DPTIL004">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_disable-enable_tiled-to-tiled.py -config single -edp_a -dp_b DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_c DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>SKL_ULX;KBL_ULT;KBL_Halo;CNL_ULX;ICL;TGL;JSL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;TGL_SOC;TGL_DOD;JSL_SOC;JSL_DOD;DG1_SOC;DG1_DOD;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC;ICL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;GFT;ETM" Id="DPTIL042">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_disable-enable_tiled-to-tiled.py -config single -edp_a -dp_b DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_e DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RYF;DG1</Platform>
+                <TestEnvironment>RYF_SOC;RYF_DOD;DG1_SOC;DG1_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;GFT;ETM" Id="DPTIL024">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_disable-enable_tiled-to-tiled.py -config extended -edp_a -dp_f DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_g DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;GFT;ETM" Id="DPTIL033">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_disable-enable_tiled-to-tiled.py -config extended -edp_b -dp_d DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_a DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RYF;RKL</Platform>
+                <TestEnvironment>RYF_SOC;RYF_DOD;RKL_SOC;RKL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPTIL046">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_disable-enable_tiled-to-tiled.py -config single -edp_a -dp_d DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_e DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>LKF_R</Platform>
+                <TestEnvironment>LKF_R_SOC;LKF_R_DOD;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;GFT;ETM" Id="DPTIL056">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_disable-enable_tiled-to-tiled.py -config single -edp_a -dp_c DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_d DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS5</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2016.WW52" Name="dp_tiled_TDR_simulation.py" Owner="akhurana" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;GFT;ETM" Id="DPTIL005">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_TDR_simulation.py -config extended -edp_a -dp_b DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_c DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>KBL_ULX;KBL_ULT;SKL_Halo;GLK;CNL_ULT;CFL;DG1;RKL;DG2</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC;GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;GFT;ETM" Id="DPTIL006">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_TDR_simulation.py -config single -edp_a -dp_b DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_c DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>SKL_ULX;SKL_ULT;KBL_Halo;CNL_ULX;DG1;RKL;DG2</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC;GLK_SOC</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2019.WW08" Name="dp_tiled_display_config_switching.py" Owner="akhurana" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;GFT;ETM" Id="DPTIL007">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_display_config_switching.py -edp_a -dp_b DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_c DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>KBL_ULX;SKL_ULX;KBL_ULT;SKL_ULT;KBL_Halo;SKL_Halo;GLK;CNL_ULT;CNL_ULX;CFL;ICL;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;TGL_SOC;TGL_DOD;JSL_SOC;JSL_DOD;DG1_SOC;DG1_DOD;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC;GLK_SOC;ICL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;GFT;ETM" Id="DPTIL025">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_display_config_switching.py -mipi_a -dp_d DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_e DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL;RYF</Platform>
+                <TestEnvironment>TGL_SOC;TGL_DOD;RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;GFT;ETM" Id="DPTIL026">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_display_config_switching.py -dp_i -dp_f DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_g DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;GFT;ETM" Id="DPTIL034">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_display_config_switching.py -mipi_a -dp_b DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_e DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;GFT;ETM" Id="DPTIL035">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_display_config_switching.py -dp_a -dp_b DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_d DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RYF;DG1;RKL;DG2</Platform>
+                <TestEnvironment>RYF_SOC;RYF_DOD;RKL_SOC;RKL_DOD;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPTIL047">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_display_config_switching.py -edp_a -dp_d DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_e DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>LKF_R</Platform>
+                <TestEnvironment>LKF_R_SOC;LKF_R_DOD;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2019.WW08" Name="dp_tiled_hotplug_unplug_during_powerevents_tiled_to_tiled.py" Owner="akhurana" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;GFT;ETM" Id="DPTIL008">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_hotplug_unplug_during_powerevents_tiled_to_tiled.py -dp_b DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_c DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>KBL_ULX;SKL_ULX;KBL_ULT;SKL_ULT;KBL_Halo;SKL_Halo;GLK;CNL_ULT;CNL_ULX;CFL;ICL;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;TGL_SOC;TGL_DOD;JSL_SOC;JSL_DOD;DG1_SOC;DG1_DOD;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC;GLK_SOC;ICL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPTIL048">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_hotplug_unplug_during_powerevents_tiled_to_tiled.py -dp_d DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_e DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>LKF_R</Platform>
+                <TestEnvironment>LKF_R_SOC;LKF_R_DOD;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2019.WW08" Name="dp_tiled_1-input_sst.py" Owner="akhurana" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;GFT;ETM" Id="DPTIL009">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_1-input_sst.py -config extended -edp_a -dp_b DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_c DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>KBL_ULX;SKL_ULX;KBL_ULT;SKL_ULT;KBL_Halo;SKL_Halo;GLK;CNL_ULT;CFL;DG1;RKL;DG2</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC;GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;GFT;ETM" Id="DPTIL010">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_1-input_sst.py -config single -edp_a -dp_b DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_c DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>KBL_ULX;SKL_ULX;KBL_ULT;SKL_ULT;KBL_Halo;SKL_Halo;GLK;CNL_ULT;CFL;ICL;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;TGL_SOC;TGL_DOD;JSL_SOC;JSL_DOD;DG1_SOC;DG1_DOD;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@SKL_SOC;KBL_SOC;GLK_SOC;ICL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;GFT;ETM" Id="DPTIL027">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_1-input_sst.py -config single -dp_a -dp_i DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_h DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;GFT;ETM" Id="DPTIL036">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_1-input_sst.py -config single -dp_b -dp_a DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_e DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RYF;DG1</Platform>
+                <TestEnvironment>RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPTIL049">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_1-input_sst.py -config single -edp_a -dp_d DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_e DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>LKF_R</Platform>
+                <TestEnvironment>LKF_R_SOC;LKF_R_DOD;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2019.WW08" Name="dp_tiled_modeset.py" Owner="akhurana" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;GFT;ETM" Id="DPTIL011">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_modeset.py -config extended -edp_a -dp_b DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_c DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>SKL_ULX;KBL_ULT;SKL_Halo;GLK;CNL_ULT;CFL;ICL;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;TGL_SOC;TGL_DOD;JSL_SOC;JSL_DOD;DG1_SOC;DG1_DOD;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@SKL_SOC;KBL_SOC;GLK_SOC;ICL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;GFT;ETM" Id="DPTIL043">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_modeset.py -config extended -edp_a -dp_b DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_e DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RYF;DG1</Platform>
+                <TestEnvironment>RYF_SOC;RYF_DOD;DG1_SOC;DG1_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;GFT;ETM" Id="DPTIL012">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_modeset.py -config single -edp_a -dp_b DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_c DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>KBL_ULX;SKL_ULT;KBL_Halo;CNL_ULX;DG1;RKL;DG2</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@SKL_SOC;KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;GFT;ETM" Id="DPTIL028">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_modeset.py -config extended -mipi_a -dp_g DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_h DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;GFT;ETM" Id="DPTIL037">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_modeset.py -config extended -mipi_b -dp_e DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_d DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPTIL050">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_modeset.py -config extended -edp_a -dp_d DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_e DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>LKF_R</Platform>
+                <TestEnvironment>LKF_R_SOC;LKF_R_DOD;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2019.WW08" Name="dp_tiled_modes_enumeration.py" Owner="akhurana" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;GFT;ETM" Id="DPTIL013">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_modes_enumeration.py -config single -edp_a -dp_b DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_c DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>KBL_ULX;SKL_ULX;KBL_ULT;SKL_ULT;KBL_Halo;SKL_Halo;GLK;CNL_ULT;CFL;DG1;RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC;GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;GFT;ETM" Id="DPTIL014">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_modes_enumeration.py -config extended -edp_a -dp_b DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_c DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>KBL_ULX;SKL_ULX;KBL_ULT;SKL_ULT;KBL_Halo;SKL_Halo;GLK;CNL_ULX;ICL;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;TGL_SOC;TGL_DOD;JSL_SOC;JSL_DOD;DG1_SOC;DG1_DOD;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC;GLK_SOC;ICL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;GFT;ETM" Id="DPTIL029">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_modes_enumeration.py -config extended -edp_a -dp_a DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_i DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;GFT;ETM" Id="DPTIL038">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_modes_enumeration.py -config extended -edp_b -dp_a DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_d DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RYF;RKL</Platform>
+                <TestEnvironment>RYF_SOC;RYF_DOD;RKL_SOC;RKL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPTIL051">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_modes_enumeration.py -config extended -edp_a -dp_d DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_e DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>LKF_R</Platform>
+                <TestEnvironment>LKF_R_SOC;LKF_R_DOD;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2019.WW08" Name="dp_tiled_cursor.py" Owner="akhurana" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPTIL015">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_cursor.py -config single -edp_a -dp_b DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_c DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>KBL_ULX;SKL_ULT;SKL_Halo;GLK;CNL_ULT;CFL;DG1;</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC;GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPTIL016">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_cursor.py -config extended -edp_a -dp_b DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_c DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>SKL_ULX;KBL_ULT;KBL_Halo;GLK;ICL;TGL;JSL;DG1;EHL</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;TGL_SOC;TGL_DOD;JSL_SOC;JSL_DOD;DG1_SOC;DG1_DOD;EHL_SOC;EHL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC;GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPTIL052">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_cursor.py -config extended -edp_a -dp_d DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_e DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>LKF_R</Platform>
+                <TestEnvironment>LKF_R_SOC;LKF_R_DOD;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2019.WW08" Name="dp_tiled_rotation.py" Owner="akhurana" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPTIL017">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_rotation.py -config extended -edp_a -dp_b DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_c DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>KBL_ULX;SKL_ULT;SKL_Halo;GLK;CNL_ULT;CFL;DG1;RKL;DG2</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC;GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPTIL018">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_rotation.py -config single -edp_a -dp_b DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_c DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>SKL_ULX;KBL_ULT;KBL_Halo;GLK;ICL;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;TGL_SOC;TGL_DOD;JSL_SOC;JSL_DOD;DG1_SOC;DG1_DOD;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@SKL_SOC;KBL_SOC;GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPTIL053">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_rotation.py -config single -edp_a -dp_d DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_e DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>LKF_R</Platform>
+                <TestEnvironment>LKF_R_SOC;LKF_R_DOD;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2019.WW08" Name="dp_tiled_hotplugunplug_tiled_to_nontiled.py" Owner="akhurana" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM" Id="DPTIL019">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_hotplugunplug_tiled_to_nontiled.py -edp_a -dp_b DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_c DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>SKL_ULX;KBL_ULT;KBL_Halo;GLK;CNL_ULT;CFL;ICL;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;TGL_SOC;TGL_DOD;JSL_SOC;JSL_DOD;DG1_SOC;DG1_DOD;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC;GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPTIL030">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_hotplugunplug_tiled_to_nontiled.py -dp_h -dp_c DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_a DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPTIL039">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_hotplugunplug_tiled_to_nontiled.py -dp_d -dp_a DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_b DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RYF;RKL</Platform>
+                <TestEnvironment>RYF_SOC;RYF_DOD;RKL_SOC;RKL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPTIL054">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_hotplugunplug_tiled_to_nontiled.py -edp_a -dp_d DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_e DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>LKF_R</Platform>
+                <TestEnvironment>LKF_R_SOC;LKF_R_DOD;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2019.WW08" Name="dp_tiled_hotplugunplug_during_powerevents_tiled_to_nontiled.py" Owner="akhurana" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM" Id="DPTIL020">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_hotplugunplug_during_powerevents_tiled_to_nontiled.py -edp_a -dp_b DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_c DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>SKL_ULX;KBL_ULT;KBL_Halo;GLK;CNL_ULT;CFL;ICL;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;TGL_SOC;TGL_DOD;JSL_SOC;JSL_DOD;DG1_SOC;DG1_DOD;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPTIL031">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_hotplugunplug_during_powerevents_tiled_to_nontiled.py -mipi_a -dp_d DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_g DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPTIL040">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_hotplugunplug_during_powerevents_tiled_to_nontiled.py -mipi_b -dp_d DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_e DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPTIL055">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_hotplugunplug_during_powerevents_tiled_to_nontiled.py -edp_a -dp_d DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_e DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>LKF_R</Platform>
+                <TestEnvironment>LKF_R_SOC;LKF_R_DOD;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2019.WW15" Name="dp_tiled_TDR_simulation.py -config single" Owner="pkrishna" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;GFT;ETM" Id="DPTIL057">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_TDR_simulation.py -config single -edp_a -dp_b DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_d DELL_U2715_S.EDID</CommandLine>
+                <OS>WinRS5</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SOC;DG2_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2020.WW46" Name="dp_tiled_hw_ports_sync_dual_tiled.py" Owner="agolwala" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPTIL061">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_hw_ports_sync_dual_tiled.py -config extended -dp_d DELL_U3218_M.bin DELL_U3218_DPCD.bin -dp_e DELL_U3218_S.bin -dp_f DELL_U3218_M1.bin DELL_U3218_DPCD.bin -dp_g DELL_U3218_S1.bin</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            </Test>
+            <Test LastModifiedWW="2020.WW46" Name="dp_tiled_hw_ports_sync_dual_tiled.py" Owner="agolwala" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPTIL061">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_hw_ports_sync_dual_tiled.py -config extended -dp_d DELL_U3218_M.bin DELL_U3218_DPCD.bin -dp_f DELL_U3218_S.bin -dp_g DELL_U3218_M1.bin DELL_U3218_DPCD.bin -dp_h DELL_U3218_S1.bin</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            </Test>
+            <Test LastModifiedWW="2020.WW46" Name="dp_tiled_hw_ports_sync_dual_tiled.py" Owner="agolwala" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPTIL061">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_hw_ports_sync_dual_tiled.py -config extended -dp_d DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_e DELL_U2715_S.EDID -dp_f DELL_U2715_M1.EDID DELL_U2715_DPCD.bin -dp_g DELL_U2715_S1.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            </Test>
+            <Test LastModifiedWW="2020.WW46" Name="dp_tiled_hw_ports_sync_dual_tiled.py" Owner="agolwala" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPTIL061">
+                <CommandLine>python Tests\Display_Port\DP_Tiled\dp_tiled_hw_ports_sync_dual_tiled.py -config extended -dp_f DELL_U2715_M.EDID DELL_U2715_DPCD.bin -dp_g DELL_U2715_S.EDID -dp_h DELL_U2715_M1.EDID DELL_U2715_DPCD.bin -dp_i DELL_U2715_S1.EDID</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            </Test>
+    </Feature>
+</Display_Automation_2.0>

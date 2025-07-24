@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+    <Feature Name="Display_Config_with_Presi_CRC" Owner="gyd">
+        <Test LastModifiedWW="2018.WW22" Name="display_config_edpA_dpD" Owner="gyd" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DCCRC001">
+                <CommandLine>python Tests\Display_Config\set_display_config.py -config extended -edp_a -dp_d 3840_2160_60Hz_533clk_8bpc.bin HBR3_DPCD_LC_2.txt</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;ADLP;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;ADLP_SOC;ADLP_DOD;ADLP_SIM;ADLP_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW22" Name="display_config_hdmiB_dpE" Owner="gyd" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DCCRC002">
+                <CommandLine>python Tests\Display_Config\set_display_config.py -config extended -hdmi_b HDMI_3840_2160_60Hz_594.bin -dp_e 3840_2160_60Hz_533clk_8bpc.bin HBR3_DPCD_LC_2.txt</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;ADLP;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;ADLP_SOC;ADLP_DOD;ADLP_SIM;ADLP_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW22" Name="display_config_dpC_hdmiF" Owner="gyd" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DCCRC003">
+                <CommandLine>python Tests\Display_Config\set_display_config.py -config extended -dp_c 3840_2160_60Hz_533clk_8bpc.bin HBR3_DPCD_LC_2.txt -hdmi_f HDMI_3840_2160_60Hz_594.bin</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;ADLP;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW22" Name="display_config_dpF_hdmiD" Owner="gyd" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DCCRC004">
+                <CommandLine>python Tests\Display_Config\set_display_config.py -config extended -dp_f 3840_2160_60Hz_533clk_8bpc.bin HBR3_DPCD_LC_2.txt -hdmi_d HDMI_3840_2160_60Hz_594.bin</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;ADLP;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;ADLP_SOC;ADLP_DOD;ADLP_SIM;ADLP_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW22" Name="display_config_hdmiE_dpB" Owner="gyd" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DCCRC005">
+                <CommandLine>python Tests\Display_Config\set_display_config.py -config extended -hdmi_e HDMI_3840_2160_60Hz_594.bin -dp_b 3840_2160_60Hz_533clk_8bpc.bin HBR3_DPCD_LC_2.txt</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;TGL;JSL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW22" Name="display_config_hdmiC_edpA" Owner="gyd" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DCCRC006">
+                <CommandLine>python Tests\Display_Config\set_display_config.py -config extended -hdmi_c HDMI_3840_2160_60Hz_594.bin -edp_a</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW22" Name="display_config_edpA_dpB_hdmiD" Owner="gyd" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DCCRC007">
+                <CommandLine>python Tests\Display_Config\set_display_config.py -config extended -edp_a -dp_b 3840_2160_60Hz_533clk_8bpc.bin HBR3_DPCD_LC_2.txt -hdmi_d HDMI_3840_2160_60Hz_594.bin</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;ADLP;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;ADLP_SOC;ADLP_DOD;ADLP_SIM;ADLP_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW22" Name="display_config_dpE_hdmiC_hdmiF" Owner="gyd" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DCCRC008">
+                <CommandLine>python Tests\Display_Config\set_display_config.py -config extended -dp_e 3840_2160_60Hz_533clk_8bpc.bin HBR3_DPCD_LC_2.txt -hdmi_c HDMI_3840_2160_60Hz_594.bin -hdmi_f HDMI_3840_2160_60Hz_594.bin</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW22" Name="display_config_hdmiE_dpC_dpF" Owner="gyd" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DCCRC009">
+                <CommandLine>python Tests\Display_Config\set_display_config.py -config extended -hdmi_e HDMI_3840_2160_60Hz_594.bin -dp_c 3840_2160_60Hz_533clk_8bpc.bin HBR3_DPCD_LC_2.txt -dp_f 3840_2160_60Hz_533clk_8bpc.bin HBR3_DPCD_LC_2.txt</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW22" Name="display_config_edpA_dpD_hdmiB" Owner="gyd" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DCCRC010">
+                <CommandLine>python Tests\Display_Config\set_display_config.py -config extended -edp_a -dp_d 3840_2160_60Hz_533clk_8bpc.bin HBR3_DPCD_LC_2.txt -hdmi_b HDMI_3840_2160_60Hz_594.bin</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;ADLP;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;ADLP_SOC;ADLP_DOD;ADLP_SIM;ADLP_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW22" Name="display_config_edpA_hdmiC_dpE_hdmiF" Owner="gyd" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DCCRC011">
+                <CommandLine>python Tests\Display_Config\set_display_config.py -config extended -edp_a -hdmi_c HDMI_3840_2160_60Hz_594.bin -dp_e 3840_2160_60Hz_533clk_8bpc.bin HBR3_DPCD_LC_2.txt -hdmi_f HDMI_3840_2160_60Hz_594.bin</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW22" Name="display_config_dpB_hdmiD_edpA_dpF" Owner="gyd" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DCCRC012">
+                <CommandLine>python Tests\Display_Config\set_display_config.py -config extended -dp_b 3840_2160_60Hz_533clk_8bpc.bin HBR3_DPCD_LC_2.txt -hdmi_d HDMI_3840_2160_60Hz_594.bin -edp_a -dp_f 3840_2160_60Hz_533clk_8bpc.bin HBR3_DPCD_LC_2.txt</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;ADLP;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;ADLP_SOC;ADLP_DOD;ADLP_SIM;ADLP_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW22" Name="display_config_dpC_hdmiB_dpD_hdmiE" Owner="gyd" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DCCRC013">
+                <CommandLine>python Tests\Display_Config\set_display_config.py -config extended -dp_c 3840_2160_60Hz_533clk_8bpc.bin HBR3_DPCD_LC_2.txt -hdmi_b HDMI_3840_2160_60Hz_594.bin -dp_d 3840_2160_60Hz_533clk_8bpc.bin HBR3_DPCD_LC_2.txt -hdmi_e HDMI_3840_2160_60Hz_594.bin</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+            </TestInstance>
+        </Test>
+    </Feature>
+</Display_Automation_2.0>

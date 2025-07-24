@@ -1,0 +1,1849 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+    <Feature Name="Multiplane Overlay" Owner="sooryar">
+        <Test LastModifiedWW="2019.WW30" Name="mpo_single_plane_scaling.py" Owner="anshetty" Priority="P1" Version="1">
+            <TestInstance Grids="CI;GFT" Id="PLANE001">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_B8G8R8A8 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE002">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_R10G10B10A2 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE003">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_R16G16B16A16F -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANE004">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_NV12YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE005">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE006">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422_10 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE007">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422_12 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE008">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422_16 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE009">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_8 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE010">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_10 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE011">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_12 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE012">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_16 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE013">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_P010YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE014">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_P012YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE015">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_P016YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANE016">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_B8G8R8A8 -INPUT_TILEFORMAT SURFACE_MEMORY_LINEAR</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2;ADLP</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC;ADLP_SIM;ADLP_EMU;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE017">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_R10G10B10A2 -INPUT_TILEFORMAT SURFACE_MEMORY_LINEAR</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2;ADLP</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC;ADLP_SIM;ADLP_EMU;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE018">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_R16G16B16A16F -INPUT_TILEFORMAT SURFACE_MEMORY_LINEAR</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2;ADLP</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC;ADLP_SIM;ADLP_EMU;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANE019">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_NV12YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_LINEAR</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2;ADLP</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC;ADLP_SIM;ADLP_EMU;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE020">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422 -INPUT_TILEFORMAT SURFACE_MEMORY_LINEAR</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2;ADLP</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE021">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422_10 -INPUT_TILEFORMAT SURFACE_MEMORY_LINEAR</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2;ADLP</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE022">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422_12 -INPUT_TILEFORMAT SURFACE_MEMORY_LINEAR</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2;ADLP</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE023">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422_16 -INPUT_TILEFORMAT SURFACE_MEMORY_LINEAR</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2;ADLP</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC;;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE024">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_8 -INPUT_TILEFORMAT SURFACE_MEMORY_LINEAR</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2;ADLP</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE025">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_10 -INPUT_TILEFORMAT SURFACE_MEMORY_LINEAR</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2;ADLP</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE026">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_12 -INPUT_TILEFORMAT SURFACE_MEMORY_LINEAR</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2;ADLP</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE027">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_16 -INPUT_TILEFORMAT SURFACE_MEMORY_LINEAR</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2;ADLP</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE028">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_P010YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_LINEAR</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2;ADLP</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE029">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_P012YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_LINEAR</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2;ADLP</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE030">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_P016YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_LINEAR</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2;ADLP</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANE031">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_B8G8R8A8 -INPUT_TILEFORMAT SURFACE_MEMORY_X_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2;ADLP</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC;ADLP_SIM;ADLP_EMU;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE032">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_R10G10B10A2 -INPUT_TILEFORMAT SURFACE_MEMORY_X_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2;ADLP</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC;ADLP_SIM;ADLP_EMU;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE033">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_R16G16B16A16F -INPUT_TILEFORMAT SURFACE_MEMORY_X_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2;ADLP</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC;ADLP_SIM;ADLP_EMU;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE034">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422 -INPUT_TILEFORMAT SURFACE_MEMORY_X_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2;ADLP</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE035">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422_10 -INPUT_TILEFORMAT SURFACE_MEMORY_X_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2;ADLP</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE036">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422_12 -INPUT_TILEFORMAT SURFACE_MEMORY_X_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2;ADLP</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE037">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422_16 -INPUT_TILEFORMAT SURFACE_MEMORY_X_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2;ADLP</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE038">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_8 -INPUT_TILEFORMAT SURFACE_MEMORY_X_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2;ADLP</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE039">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_10 -INPUT_TILEFORMAT SURFACE_MEMORY_X_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2;ADLP</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE040">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_12 -INPUT_TILEFORMAT SURFACE_MEMORY_X_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2;ADLP</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE041">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_16 -INPUT_TILEFORMAT SURFACE_MEMORY_X_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2;ADLP</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANE042">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -HDMI_B -CONFIG CLONE -INPUT_PIXELFORMAT SB_B8G8R8A8 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE043">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -HDMI_B -CONFIG CLONE -INPUT_PIXELFORMAT SB_R10G10B10A2 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE044">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -HDMI_B -CONFIG CLONE -INPUT_PIXELFORMAT SB_R16G16B16A16F -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANE045">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -HDMI_B -CONFIG CLONE -INPUT_PIXELFORMAT SB_NV12YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE046">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -HDMI_B -CONFIG CLONE -INPUT_PIXELFORMAT SB_YUV422 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE047">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -HDMI_B DELL_UP2414Q_HDMI.bin -CONFIG CLONE -INPUT_PIXELFORMAT SB_B8G8R8A8 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE048">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -HDMI_B DELL_UP2414Q_HDMI.bin -CONFIG CLONE -INPUT_PIXELFORMAT SB_NV12YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE049">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt -CONFIG CLONE -INPUT_PIXELFORMAT SB_B8G8R8A8 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE050">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt -CONFIG CLONE -INPUT_PIXELFORMAT SB_R10G10B10A2 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE051">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt -CONFIG CLONE -INPUT_PIXELFORMAT SB_NV12YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANE077">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_B8G8R8A8 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_EMU;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE078">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_R10G10B10A2 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_EMU;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE079">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_R16G16B16A16F -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_EMU;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANE080">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_NV12YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_EMU;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE081">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE082">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422_10 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE083">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422_12 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE084">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422_16 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE085">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_8 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE086">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_10 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE087">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_12 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE088">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_16 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE089">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_P010YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE090">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_P012YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE091">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_P016YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANE092">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -HDMI_B -CONFIG CLONE -INPUT_PIXELFORMAT SB_B8G8R8A8 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_EMU;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE093">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -HDMI_B -CONFIG CLONE -INPUT_PIXELFORMAT SB_R10G10B10A2 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE094">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -HDMI_B -CONFIG CLONE -INPUT_PIXELFORMAT SB_R16G16B16A16F -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANE095">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -HDMI_B -CONFIG CLONE -INPUT_PIXELFORMAT SB_NV12YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_EMU;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE096">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -HDMI_B -CONFIG CLONE -INPUT_PIXELFORMAT SB_YUV422 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE097">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -HDMI_B DELL_UP2414Q_HDMI.bin -CONFIG CLONE -INPUT_PIXELFORMAT SB_B8G8R8A8 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE098">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -HDMI_B DELL_UP2414Q_HDMI.bin -CONFIG CLONE -INPUT_PIXELFORMAT SB_NV12YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE099">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt -CONFIG CLONE -INPUT_PIXELFORMAT SB_B8G8R8A8 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE100">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt -CONFIG CLONE -INPUT_PIXELFORMAT SB_R10G10B10A2 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE101">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt -CONFIG CLONE -INPUT_PIXELFORMAT SB_NV12YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+
+        <Test LastModifiedWW="2019.WW30" Name="mpo_single_plane_scaling_tiling.py" Owner="anshetty" Priority="P1" Version="1">
+            <TestInstance Grids="CI;GFT" Id="PLANE052">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_B8G8R8A8 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE053">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_R10G10B10A2 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE054">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_R16G16B16A16F -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANE055">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_NV12YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE056">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE057">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422_10 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE058">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422_12 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE059">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422_16 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE060">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_8 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE061">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_10 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE062">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_12 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE063">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_16 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE064">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_P010YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE065">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_P012YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE066">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_P016YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANE067">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -HDMI_B -CONFIG CLONE -INPUT_PIXELFORMAT SB_B8G8R8A8 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE068">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -HDMI_B -CONFIG CLONE -INPUT_PIXELFORMAT SB_R10G10B10A2 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE069">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -HDMI_B -CONFIG CLONE -INPUT_PIXELFORMAT SB_R16G16B16A16F -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANE070">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -HDMI_B -CONFIG CLONE -INPUT_PIXELFORMAT SB_NV12YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE071">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -HDMI_B -CONFIG CLONE -INPUT_PIXELFORMAT SB_YUV422 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE072">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -HDMI_B DELL_UP2414Q_HDMI.bin -CONFIG CLONE -INPUT_PIXELFORMAT SB_B8G8R8A8 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE073">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -HDMI_B DELL_UP2414Q_HDMI.bin -CONFIG CLONE -INPUT_PIXELFORMAT SB_NV12YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE074">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt -CONFIG CLONE -INPUT_PIXELFORMAT SB_B8G8R8A8 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE075">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt -CONFIG CLONE -INPUT_PIXELFORMAT SB_R10G10B10A2 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE076">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt -CONFIG CLONE -INPUT_PIXELFORMAT SB_NV12YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANE102">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_B8G8R8A8 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_EMU;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE103">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_R10G10B10A2 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_EMU;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE104">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_R16G16B16A16F -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_EMU;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANE105">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_NV12YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_EMU;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE106">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE107">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422_10 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE108">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422_12 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE109">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422_16 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE110">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_8 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE111">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_10 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE112">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_12 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE113">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_16 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE114">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_P010YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE115">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_P012YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE116">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_P016YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANE117">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -HDMI_B -CONFIG CLONE -INPUT_PIXELFORMAT SB_B8G8R8A8 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_EMU;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE118">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -HDMI_B -CONFIG CLONE -INPUT_PIXELFORMAT SB_R10G10B10A2 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE119">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -HDMI_B -CONFIG CLONE -INPUT_PIXELFORMAT SB_R16G16B16A16F -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANE120">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -HDMI_B -CONFIG CLONE -INPUT_PIXELFORMAT SB_NV12YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_EMU;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE121">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -HDMI_B -CONFIG CLONE -INPUT_PIXELFORMAT SB_YUV422 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE122">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -HDMI_B DELL_UP2414Q_HDMI.bin -CONFIG CLONE -INPUT_PIXELFORMAT SB_B8G8R8A8 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE123">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -HDMI_B DELL_UP2414Q_HDMI.bin -CONFIG CLONE -INPUT_PIXELFORMAT SB_NV12YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE124">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt -CONFIG CLONE -INPUT_PIXELFORMAT SB_B8G8R8A8 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE125">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt -CONFIG CLONE -INPUT_PIXELFORMAT SB_R10G10B10A2 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE126">
+                <CommandLine>python Tests\Planes\MPO\mpo_single_plane_scaling_tiling.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt -CONFIG CLONE -INPUT_PIXELFORMAT SB_NV12YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2020.WW16" Name="mpo_min_planesize.py" Owner="sashok" Priority="P1" Version="1">
+            <TestInstance Grids="CI;GFT" Id="PLANE127">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_B8G8R8A8 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE128">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_R10G10B10A2 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE129">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_R16G16B16A16F -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANE130">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_NV12YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE131">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE132">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422_12 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE133">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422_16 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE134">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_8 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE135">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_16 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE136">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_P010YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE137">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_P012YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE138">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_P016YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANE139">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_B8G8R8A8 -INPUT_TILEFORMAT SURFACE_MEMORY_LINEAR</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE140">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_R10G10B10A2 -INPUT_TILEFORMAT SURFACE_MEMORY_LINEAR</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE141">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_R16G16B16A16F -INPUT_TILEFORMAT SURFACE_MEMORY_LINEAR</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANE142">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_NV12YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_LINEAR</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE143">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422 -INPUT_TILEFORMAT SURFACE_MEMORY_LINEAR</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE144">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422_12 -INPUT_TILEFORMAT SURFACE_MEMORY_LINEAR</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE145">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422_16 -INPUT_TILEFORMAT SURFACE_MEMORY_LINEAR</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE146">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_8 -INPUT_TILEFORMAT SURFACE_MEMORY_LINEAR</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE147">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_16 -INPUT_TILEFORMAT SURFACE_MEMORY_LINEAR</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE148">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_P010YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_LINEAR</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE149">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_P012YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_LINEAR</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE150">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_P016YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_LINEAR</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANE151">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_B8G8R8A8 -INPUT_TILEFORMAT SURFACE_MEMORY_X_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE152">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_R10G10B10A2 -INPUT_TILEFORMAT SURFACE_MEMORY_X_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE153">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_R16G16B16A16F -INPUT_TILEFORMAT SURFACE_MEMORY_X_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE154">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422 -INPUT_TILEFORMAT SURFACE_MEMORY_X_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE155">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422_12 -INPUT_TILEFORMAT SURFACE_MEMORY_X_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE156">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422_16 -INPUT_TILEFORMAT SURFACE_MEMORY_X_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE157">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_8 -INPUT_TILEFORMAT SURFACE_MEMORY_X_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE158">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_16 -INPUT_TILEFORMAT SURFACE_MEMORY_X_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANE159">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_B8G8R8A8 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;TGL_SIM;TGL_EMU;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANE160">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -MIPI_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_B8G8R8A8 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_EMU;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE161">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_R10G10B10A2 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;TGL_SIM;TGL_EMU;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+             <TestInstance Grids="GFT" Id="PLANE162">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -MIPI_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_R10G10B10A2 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_EMU;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE163">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_R16G16B16X16F -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;TGL_SIM;TGL_EMU;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE164">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -MIPI_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_R16G16B16X16F -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_EMU;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANE165">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_NV12YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;TGL_SIM;TGL_EMU;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANE166">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -MIPI_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_NV12YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_EMU;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE167">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;TGL_SIM;TGL_EMU;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE168">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -MIPI_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_EMU;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE169">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422_12 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;TGL_SIM;TGL_EMU;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE170">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -MIPI_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422_12 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_EMU;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE171">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422_16 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;TGL_SIM;TGL_EMU;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE172">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -MIPI_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV422_16 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_EMU;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE173">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_8 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;TGL_SIM;TGL_EMU;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE174">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -MIPI_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_8 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_EMU;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE175">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_16 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;TGL_SIM;TGL_EMU;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE176">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -MIPI_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_YUV444_16 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_EMU;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE177">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_P010YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;TGL_SIM;TGL_EMU;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE178">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -MIPI_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_P010YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_EMU;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE179">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_P012YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;TGL_SIM;TGL_EMU;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE180">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -MIPI_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_P012YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_EMU;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE181">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_P016YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;TGL_SIM;TGL_EMU;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+             <TestInstance Grids="SFT" Id="PLANE182">
+                <CommandLine>python Tests\Planes\MPO\mpo_min_planesize.py -MIPI_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_P016YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_EMU;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2020.WW20" Name="mpo_capabilities.py" Owner="sashok" Priority="P1" Version="1">
+            <TestInstance Grids="CI;GFT" Id="PLANE183">
+                <CommandLine>python Tests\Planes\MPO\mpo_capabilities.py -EDP_A </CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>ICL;TGL;DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC;ICL_SIM;ICL_EMU;ICL_SOC;TGL_SIM;TGL_EMU;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;GFT" Id="PLANE184">
+                <CommandLine>python Tests\Planes\MPO\mpo_capabilities.py -MIPI_A </CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_EMU;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+    </Feature>
+</Display_Automation_2.0>

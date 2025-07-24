@@ -1,0 +1,5618 @@
+<Factors>
+  <!-- Cursor_ctrl_enable -->
+  <Factor id = "1" name = "PLANE_A">
+    <Offset>70080</Offset>
+    <Bitmap>01000000</Bitmap>
+    <Value>1000000</Value>
+  </Factor>
+  <Factor id = "2" name = "PLANE_B">
+    <Offset>71080</Offset>
+    <Bitmap>01000000</Bitmap>
+    <Value>1000000</Value>
+  </Factor>
+  <Factor id = "3" name = "PLANE_C">
+    <Offset>72080</Offset>
+    <Bitmap>01000000</Bitmap>
+    <Value>1000000</Value>
+  </Factor>
+  <!-- Cursor_ctrl_disable -->
+  <Factor id = "4" name = "PLANE_A">
+    <Offset>70080</Offset>
+    <Bitmap>01000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "5" name = "PLANE_B">
+    <Offset>71080</Offset>
+    <Bitmap>01000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "6" name = "PLANE_C">
+    <Offset>72080</Offset>
+    <Bitmap>01000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!-- primary_ctrl_enable -->
+  <Factor id = "7" name = "PLANE_A">
+    <Offset>70180</Offset>
+    <Bitmap>01000000</Bitmap>
+    <Value>1000000</Value>
+  </Factor>
+  <Factor id = "8" name = "PLANE_B">
+    <Offset>71180</Offset>
+    <Bitmap>01000000</Bitmap>
+    <Value>1000000</Value>
+  </Factor>
+  <Factor id = "9" name = "PLANE_C">
+    <Offset>72180</Offset>
+    <Bitmap>01000000</Bitmap>
+    <Value>1000000</Value>
+  </Factor>
+  <!-- primary_ctrl_disable -->
+  <Factor id = "10" name = "PLANE_A">
+    <Offset>70180</Offset>
+    <Bitmap>01000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "11" name = "PLANE_B">
+    <Offset>71180</Offset>
+    <Bitmap>01000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "12" name = "PLANE_C">
+    <Offset>72180</Offset>
+    <Bitmap>01000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!-- pipe_conf_register_enable -->
+  <Factor id = "13" name = "PIPE_A">
+    <Offset>70008</Offset>
+    <Bitmap>00000800</Bitmap>
+    <Value>800</Value>
+  </Factor>
+  <Factor id = "14" name = "PIPE_B">
+    <Offset>71008</Offset>
+    <Bitmap>00000800</Bitmap>
+    <Value>800</Value>
+  </Factor>
+  <Factor id = "15" name = "PIPE_C">
+    <Offset>72008</Offset>
+    <Bitmap>00000800</Bitmap>
+    <Value>800</Value>
+  </Factor>
+  <Factor id = "16" name = "PIPE_DEFAULT">
+    <Offset>7F008</Offset>
+    <Bitmap>00000800</Bitmap>
+    <Value>800</Value>
+  </Factor>
+  <!-- pipe_conf_register_disable -->
+  <Factor id = "17" name = "PIPE_A">
+    <Offset>70008</Offset>
+    <Bitmap>00000800</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "18" name = "PIPE_B">
+    <Offset>71008</Offset>
+    <Bitmap>00000800</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "19" name = "PIPE_C">
+    <Offset>72008</Offset>
+    <Bitmap>00000800</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "20" name = "PIPE_DEFAULT">
+    <Offset>7F008</Offset>
+    <Bitmap>00000800</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!-- video_dip_ctrl_enable -->
+  <Factor id = "21" name = "PIPE_A">
+    <Offset>60200</Offset>
+    <Bitmap>00000010</Bitmap>
+    <Value>10</Value>
+  </Factor>
+  <Factor id = "22" name = "PIPE_B">
+    <Offset>61200</Offset>
+    <Bitmap>00000010</Bitmap>
+    <Value>10</Value>
+  </Factor>
+  <Factor id = "23" name = "PIPE_C">
+    <Offset>62200</Offset>
+    <Bitmap>00000010</Bitmap>
+    <Value>10</Value>
+  </Factor>
+  <Factor id = "24" name = "PIPE_DEFAULT">
+    <Offset>6F200</Offset>
+    <Bitmap>00000010</Bitmap>
+    <Value>10</Value>
+  </Factor>
+  <!-- video_dip_ctrl_disable -->
+  <Factor id = "25" name = "PIPE_A">
+    <Offset>60200</Offset>
+    <Bitmap>00000010</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "26" name = "PIPE_B">
+    <Offset>61200</Offset>
+    <Bitmap>00000010</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "27" name = "PIPE_C">
+    <Offset>62200</Offset>
+    <Bitmap>00000010</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "28" name = "PIPE_DEFAULT">
+    <Offset>6F200</Offset>
+    <Bitmap>00000010</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!-- video_dip_ctrl_enable_for_ivb -->
+  <Factor id = "29" name = "A">
+    <Offset>E0200</Offset>
+    <Bitmap>00800000</Bitmap>
+    <Value>800000</Value>
+  </Factor>
+  <Factor id = "30" name = "B">
+    <Offset>E1200</Offset>
+    <Bitmap>00800000</Bitmap>
+    <Value>800000</Value>
+  </Factor>
+  <Factor id = "31" name = "C">
+    <Offset>E2200</Offset>
+    <Bitmap>00800000</Bitmap>
+    <Value>800000</Value>
+  </Factor>
+  <!-- video_dip_ctrl_disable_for_ivb -->
+  <Factor id = "32" name = "A">
+    <Offset>E0200</Offset>
+    <Bitmap>00800000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "33" name = "B">
+    <Offset>E1200</Offset>
+    <Bitmap>00800000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "34" name = "C">
+    <Offset>E2200</Offset>
+    <Bitmap>00800000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- PIPE_DDI_CTL_REGISTERS_For_HSW -->
+  <Factor id = "35" name = "PIPE_A">
+    <Offset>60400</Offset>
+    <Bitmap>70000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "36" name = "PIPE_B">
+    <Offset>61400</Offset>
+    <Bitmap>70000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "37" name = "PIPE_C">
+    <Offset>62400</Offset>
+    <Bitmap>70000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "38" name = "PIPE_EDP">
+    <Offset>6F400</Offset>
+    <Bitmap>70000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <Factor id = "39" name = "PORTE">
+    <Offset>1E1100</Offset>
+    <Bitmap>C0000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "40" name = "PORTB">
+    <Offset>1E4100</Offset>
+    <Bitmap>C0000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <Factor id = "41" name = "PORTC">
+    <Offset>1E4200</Offset>
+    <Bitmap>C0000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--BXT MIPI_ENABLED-->
+  <Factor id = "42" name = "PORTA">
+    <Offset>6B0C0</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "43" name = "PORTC">
+    <Offset>6B8C0</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  
+  <Factor id = "44" name = "PORTB">
+    <Offset>1E1140</Offset>
+    <Bitmap>C0000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <Factor id = "45" name = "PORTC">
+    <Offset>1E1160</Offset>
+    <Bitmap>C0000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  
+  <!-- MIPI_PIPE_SELECT -->
+  <Factor id = "46" name = "PORTA">
+    <Offset>1E1190</Offset>
+    <Bitmap>80000003</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "47" name = "PORTC">
+    <Offset>1E1190</Offset>
+    <Bitmap>80000003</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- PLANE_SELECT_FOR_HSW -->
+  <Factor id = "48" name = "PLANE_A">
+    <Offset>6F400</Offset>
+    <Bitmap>00003000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "49" name = "PLANE_B">
+    <Offset>6F400</Offset>
+    <Bitmap>00007000</Bitmap>
+    <Value>5000</Value>
+  </Factor>
+  <Factor id = "50" name = "PLANE_C">
+    <Offset>6F400</Offset>
+    <Bitmap>00007000</Bitmap>
+    <Value>6000</Value>
+  </Factor>
+  <!-- HDMI_ENABLE_IVB -->
+  <Factor id = "51" name = "PORTB">
+    <Offset>E1140</Offset>
+    <Bitmap>60000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "52" name = "PORTC">
+    <Offset>E1150</Offset>
+    <Bitmap>60000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "53" name = "PORTD">
+    <Offset>E1160</Offset>
+    <Bitmap>60000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!-- DP_ENABLE_IVB-->
+  <Factor id = "54" name = "PIPE_A">
+    <Offset>E0300</Offset>
+    <Bitmap>60000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "55" name = "PIPE_B">
+    <Offset>E1300</Offset>
+    <Bitmap>60000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "56" name = "PIPE_C">
+    <Offset>E2300</Offset>
+    <Bitmap>60000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- EDP_ENABLE_IVB-->
+  <Factor id = "57" name = "PORTA">
+    <Offset>64000</Offset>
+    <Bitmap>60000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!-- CRT_ENABLE_IVB-->
+  <Factor id = "58" name = "PORTE">
+    <Offset>E1100</Offset>
+    <Bitmap>60000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!-- LFP_ENABLE_IVB-->
+  <Factor id = "59" name = "PORTA">
+    <Offset>E1180</Offset>
+    <Bitmap>60000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!-- CRC_CTRL -->
+  <Factor id = "60" name = "NONE">
+    <Offset>64050</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <!-- CRC_SCRAMBLE -->
+  <Factor id = "61" name = "NONE">
+    <Offset>640E0</Offset>
+    <Bitmap>1</Bitmap>
+    <Value>1</Value>
+  </Factor>
+  <!-- CRC_RES -->
+  <Factor id = "62" name = "NONE">
+    <Offset>64064</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- LPSP_ENABLE_HSW_BDW -->
+  <Factor id = "63" name = "PORTA">
+    <Offset>45404</Offset>
+    <Bitmap>40000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- Overlay enable-->
+  <Factor id = "64" name = "PLANE_A">
+    <Offset>70280</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "65" name = "PLANE_B">
+    <Offset>71280</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "66" name = "PLANE_C">
+    <Offset>72280</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+
+<!-- SPRITE_CSC_ENABLED-->
+  <Factor id = "67" name = "PLANE_A">
+    <Offset>70280</Offset>
+    <Bitmap>81000000</Bitmap>
+    <Value>81000000</Value>
+  </Factor>
+  <Factor id = "68" name = "PLANE_B">
+    <Offset>71280</Offset>
+    <Bitmap>81000000</Bitmap>
+    <Value>81000000</Value>
+  </Factor>
+  <Factor id = "69" name = "PLANE_C">
+    <Offset>72280</Offset>
+    <Bitmap>81000000</Bitmap>
+    <Value>81000000</Value>
+  </Factor>
+
+  <!-- XVYCC_DISABLED_SPRITE_ENABLED -->
+  <Factor id = "70" name = "PLANE_A">
+    <Offset>70280</Offset>
+    <Bitmap>81000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "71" name = "PLANE_B">
+    <Offset>71280</Offset>
+    <Bitmap>81000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "72" name = "PLANE_C">
+    <Offset>72280</Offset>
+    <Bitmap>81000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+
+  <!-- SPRITE_DISABLED-->
+  <Factor id = "73" name = "PLANE_A">
+    <Offset>70280</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "74" name = "PLANE_B">
+    <Offset>71280</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "75" name = "PLANE_C">
+    <Offset>72280</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- BDW_PIPE_CONF_ENABLE-->
+  <Factor id = "76" name = "PLANE_A">
+    <Offset>70030</Offset>
+    <Bitmap>00000800</Bitmap>
+    <Value>800</Value>
+  </Factor>
+  <Factor id = "77" name = "PLANE_B">
+    <Offset>71030</Offset>
+    <Bitmap>00000800</Bitmap>
+    <Value>800</Value>
+  </Factor>
+  <Factor id = "78" name = "PLANE_C">
+    <Offset>72030</Offset>
+    <Bitmap>00000800</Bitmap>
+    <Value>800</Value>
+  </Factor>
+
+  <!-- BDW_PIPE_CONF_DISABLE-->
+  <Factor id = "79" name = "PLANE_A">
+    <Offset>70030</Offset>
+    <Bitmap>00000800</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "80" name = "PLANE_B">
+    <Offset>71030</Offset>
+    <Bitmap>00000800</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "81" name = "PLANE_C">
+    <Offset>72030</Offset>
+    <Bitmap>00000800</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--  pll_cnl-->
+  <Factor id = "82" name = "PIPE_NONE">
+    <Offset>6C200</Offset>
+    <Bitmap>3</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "83" name = "PIPE_NONE">
+    <Offset>6C200</Offset>
+    <Bitmap>C</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "84" name = "PIPE_NONE">
+    <Offset>6C200</Offset>
+    <Bitmap>30</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "85" name = "PIPE_NONE">
+    <Offset>6C200</Offset>
+    <Bitmap>C0</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "86" name = "PIPE_NONE">
+    <Offset>6C200</Offset>
+    <Bitmap>300</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "87" name = "PIPE_NONE">
+    <Offset>46018</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+
+  <!-- Scaling : Panel fitter enable-->
+  <Factor id = "88" name = "PLANE_A">
+    <Offset>68080</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "89" name = "PLANE_B">
+    <Offset>68880</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "90" name = "PLANE_C">
+    <Offset>69080</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+
+  <!-- Scaling : PIPE_SOURCE_IMAGE -->
+  <Factor id = "91" name = "PLANE_A">
+    <Offset>6001c</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "92" name = "PLANE_B">
+    <Offset>6101c</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "93" name = "PLANE_C">
+    <Offset>6201c</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- Scaling : Panel target image -->
+  <Factor id = "94" name = "PLANE_A">
+    <Offset>68074</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "95" name = "PLANE_B">
+    <Offset>68874</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "96" name = "PLANE_C">
+    <Offset>69074</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- pll-->
+  <Factor id = "97" name = "PIPE_NONE">
+    <Offset>6C05C</Offset>
+    <Bitmap>6</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "98" name = "PIPE_NONE">
+    <Offset>6C05C</Offset>
+    <Bitmap>30</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "99" name = "PIPE_NONE">
+    <Offset>6C05C</Offset>
+    <Bitmap>180</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "100" name = "PIPE_NONE">
+    <Offset>6C05C</Offset>
+    <Bitmap>C00</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "101" name = "PIPE_NONE">
+    <Offset>6C05C</Offset>
+    <Bitmap>6000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--DPLL0SSC-->
+  <Factor id = "102" name = "PIPE_NONE">
+    <Offset>6C058</Offset>
+    <Bitmap>1</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "103" name = "PIPE_NONE">
+    <Offset>6C058</Offset>
+    <Bitmap>10</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "104" name = "PIPE_NONE">
+    <Offset>6C058</Offset>
+    <Bitmap>20</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "105" name = "PIPE_NONE">
+    <Offset>6C058</Offset>
+    <Bitmap>E</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--DPLL1SSC-->
+  <Factor id = "106" name = "PIPE_NONE">
+    <Offset>6C058</Offset>
+    <Bitmap>40</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "107" name = "PIPE_NONE">
+    <Offset>6C058</Offset>
+    <Bitmap>400</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "108" name = "PIPE_NONE">
+    <Offset>6C058</Offset>
+    <Bitmap>800</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "109" name = "PIPE_NONE">
+    <Offset>6C058</Offset>
+    <Bitmap>380</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--DPLL2SSC-->
+  <Factor id = "110" name = "PIPE_NONE">
+    <Offset>6C058</Offset>
+    <Bitmap>1000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "111" name = "PIPE_NONE">
+    <Offset>6C058</Offset>
+    <Bitmap>10000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "112" name = "PIPE_NONE">
+    <Offset>6C058</Offset>
+    <Bitmap>20000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "113" name = "PIPE_NONE">
+    <Offset>6C058</Offset>
+    <Bitmap>E000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--DPLL3SSC-->
+  <Factor id = "114" name = "PIPE_NONE">
+    <Offset>6C058</Offset>
+    <Bitmap>40000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "115" name = "PIPE_NONE">
+    <Offset>6C058</Offset>
+    <Bitmap>400000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "116" name = "PIPE_NONE">
+    <Offset>6C058</Offset>
+    <Bitmap>800000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "117" name = "PIPE_NONE">
+    <Offset>6C058</Offset>
+    <Bitmap>380000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- Watermark : HTOTAL -->
+  <Factor id = "118" name = "PIPE_A">
+    <Offset>60000</Offset>
+    <Bitmap>1FFF0000</Bitmap>
+    <Value>0</Value>
+    <Deviation>1</Deviation>
+  </Factor>
+  <Factor id = "119" name = "PIPE_B">
+    <Offset>61000</Offset>
+    <Bitmap>1FFF0000</Bitmap>
+    <Value>0</Value>
+    <Deviation>1</Deviation>
+  </Factor>
+  <Factor id = "120" name = "PIPE_C">
+    <Offset>62000</Offset>
+    <Bitmap>1FFF0000</Bitmap>
+    <Value>0</Value>
+    <Deviation>1</Deviation>
+  </Factor>
+  <Factor id = "121" name = "PIPE_EDP">
+    <Offset>6F000</Offset>
+    <Bitmap>1FFF0000</Bitmap>
+    <Value>0</Value>
+    <Deviation>1</Deviation>
+  </Factor>
+
+  <!-- Watermark : VTOTAL -->
+  <Factor id = "122" name = "PIPE_A">
+    <Offset>6000C</Offset>
+    <Bitmap>1FFF0000</Bitmap>
+    <Value>0</Value>
+    <Deviation>1</Deviation>
+  </Factor>
+  <Factor id = "123" name = "PIPE_B">
+    <Offset>6100C</Offset>
+    <Bitmap>1FFF0000</Bitmap>
+    <Value>0</Value>
+    <Deviation>1</Deviation>
+  </Factor>
+  <Factor id = "124" name = "PIPE_C">
+    <Offset>6200C</Offset>
+    <Bitmap>1FFF0000</Bitmap>
+    <Value>0</Value>
+    <Deviation>1</Deviation>
+  </Factor>
+  <Factor id = "125" name = "PIPE_EDP">
+    <Offset>6F00C</Offset>
+    <Bitmap>1FFF0000</Bitmap>
+    <Value>0</Value>
+    <Deviation>1</Deviation>
+  </Factor>
+
+  <!-- Watermark : PF_INTERLACE_ENABLE -->
+  <Factor id = "126" name = "PIPE_A">
+    <Offset>70008</Offset>
+    <Bitmap>00600000</Bitmap>
+    <Value>200000</Value>
+  </Factor>
+  <Factor id = "127" name = "PIPE_B">
+    <Offset>71008</Offset>
+    <Bitmap>00600000</Bitmap>
+    <Value>200000</Value>
+  </Factor>
+  <Factor id = "128" name = "PIPE_C">
+    <Offset>72008</Offset>
+    <Bitmap>00600000</Bitmap>
+    <Value>200000</Value>
+  </Factor>
+  <Factor id = "129" name = "PIPE_EDP">
+    <Offset>7F008</Offset>
+    <Bitmap>00600000</Bitmap>
+    <Value>200000</Value>
+  </Factor>
+
+  <!-- Watermark : PIPE_HOR_SOURCE_SIZE -->
+  <Factor id = "130" name = "PLANE_A">
+    <Offset>6001c</Offset>
+    <Bitmap>1FFF0000</Bitmap>
+    <Value>0</Value>
+    <Deviation>1</Deviation>
+  </Factor>
+  <Factor id = "131" name = "PLANE_B">
+    <Offset>6101c</Offset>
+    <Bitmap>1FFF0000</Bitmap>
+    <Value>0</Value>
+    <Deviation>1</Deviation>
+  </Factor>
+  <Factor id = "132" name = "PLANE_C">
+    <Offset>6201c</Offset>
+    <Bitmap>1FFF0000</Bitmap>
+    <Value>0</Value>
+    <Deviation>1</Deviation>
+  </Factor>
+
+  <!-- Watermark : PIPE_VER_SOURCE_SIZE -->
+  <Factor id = "133" name = "PLANE_A">
+    <Offset>6001c</Offset>
+    <Bitmap>00000FFF</Bitmap>
+    <Value>0</Value>
+    <Deviation>1</Deviation>
+  </Factor>
+  <Factor id = "134" name = "PLANE_B">
+    <Offset>6101c</Offset>
+    <Bitmap>00000FFF</Bitmap>
+    <Value>0</Value>
+    <Deviation>1</Deviation>
+  </Factor>
+  <Factor id = "135" name = "PLANE_C">
+    <Offset>6201c</Offset>
+    <Bitmap>00000FFF</Bitmap>
+    <Value>0</Value>
+    <Deviation>1</Deviation>
+  </Factor>
+  
+  <!-- Watermark : PF_HOR_WIN_SIZE -->
+  <Factor id = "136" name = "PLANE_A">
+    <Offset>68074</Offset>
+    <Bitmap>1FFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "137" name = "PLANE_B">
+    <Offset>68874</Offset>
+    <Bitmap>1FFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "138" name = "PLANE_C">
+    <Offset>69074</Offset>
+    <Bitmap>1FFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- Watermark : PF_VER_WIN_SIZE -->
+  <Factor id = "139" name = "PLANE_A">
+    <Offset>68074</Offset>
+    <Bitmap>00000FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "140" name = "PLANE_B">
+    <Offset>68874</Offset>
+    <Bitmap>00000FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "141" name = "PLANE_C">
+    <Offset>69074</Offset>
+    <Bitmap>00000FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- Watermark : FBC_REGISTER -->
+  <Factor id = "142" name = "PIPE_A">
+    <Offset>43208</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+
+  <!-- Watermark : LATENCY_REGISTER_LSB -->
+  <Factor id = "143" name = "PIPE_A">
+    <Offset>145D10</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- Watermark : LATENCY_REGISTER_MSB -->
+  <Factor id = "144" name = "PIPE_A">
+    <Offset>145D14</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- CURSOR_STATUS -->
+  <Factor id = "145" name = "PLANE_A">
+    <Offset>70080</Offset>
+    <Bitmap>00000003F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "146" name = "PLANE_B">
+    <Offset>71080</Offset>
+    <Bitmap>00000003F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "147" name = "PLANE_C">
+    <Offset>72080</Offset>
+    <Bitmap>00000003F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- DISPLAY_PLANE_STATUS -->
+  <Factor id = "148" name = "PLANE_A">
+    <Offset>70180</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "149" name = "PLANE_B">
+    <Offset>71180</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "150" name = "PLANE_C">
+    <Offset>72180</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+
+  <!-- SPRITE_SIZE -->
+  <Factor id = "151" name = "PLANE_A">
+    <Offset>70290</Offset>
+    <Bitmap>00001FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "152" name = "PLANE_B">
+    <Offset>71290</Offset>
+    <Bitmap>00001FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "153" name = "PLANE_C">
+    <Offset>72290</Offset>
+    <Bitmap>00001FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- DISPLAY_WATERMARK_REGISTER -->
+  <Factor id = "154" name = "PLANE_A">
+    <Offset>45100</Offset>
+    <Bitmap>007F0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "155" name = "PLANE_B">
+    <Offset>45104</Offset>
+    <Bitmap>007F0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "156" name = "PLANE_C">
+    <Offset>45200</Offset>
+    <Bitmap>007F0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!-- SPRITE_WATERMARK_REGISTER -->
+  <Factor id = "157" name = "PLANE_A">
+    <Offset>45100</Offset>
+    <Bitmap>00007F00</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "158" name = "PLANE_B">
+    <Offset>45104</Offset>
+    <Bitmap>00007F00</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "159" name = "PLANE_C">
+    <Offset>45200</Offset>
+    <Bitmap>00007F00</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!-- CURSOR_WATERMARK_REGISTER -->
+  <Factor id = "160" name = "PLANE_A">
+    <Offset>45100</Offset>
+    <Bitmap>0000003F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "161" name = "PLANE_B">
+    <Offset>45104</Offset>
+    <Bitmap>0000003F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "162" name = "PLANE_C">
+    <Offset>45200</Offset>
+    <Bitmap>0000003F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+
+  <!-- WM_LP1_ENABLE -->
+  <Factor id = "163" name = "PLANE_A">
+    <Offset>45108</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <!-- WM_LP2_ENABLE -->
+  <Factor id = "164" name = "PLANE_A">
+    <Offset>4510C</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <!-- WM_LP3_ENABLE -->
+  <Factor id = "165" name = "PLANE_A">
+    <Offset>45110</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+
+  <!-- WM_LP1_SPRITE -->
+  <Factor id = "166" name = "PLANE_A">
+    <Offset>45120</Offset>
+    <Bitmap>000003FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!-- WM_LP2_SPRITE -->
+  <Factor id = "167" name = "PLANE_A">
+    <Offset>45124</Offset>
+    <Bitmap>000003FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!-- WM_LP3_SPRITE -->
+  <Factor id = "168" name = "PLANE_A">
+    <Offset>45128</Offset>
+    <Bitmap>000003FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- WM_LP1_DISPLAY -->
+  <Factor id = "169" name = "PLANE_A">
+    <Offset>45108</Offset>
+    <Bitmap>0003FF00</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!-- WM_LP2_DISPLAY -->
+  <Factor id = "170" name = "PLANE_A">
+    <Offset>4510C</Offset>
+    <Bitmap>0003FF00</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!-- WM_LP3_DISPLAY -->
+  <Factor id = "171" name = "PLANE_A">
+    <Offset>45110</Offset>
+    <Bitmap>0003FF00</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- WM_LP1_CURSOR -->
+  <Factor id = "172" name = "PLANE_A">
+    <Offset>45108</Offset>
+    <Bitmap>000000FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!-- WM_LP2_CURSOR -->
+  <Factor id = "173" name = "PLANE_A">
+    <Offset>4510C</Offset>
+    <Bitmap>000000FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!-- WM_LP3_CURSOR -->
+  <Factor id = "174" name = "PLANE_A">
+    <Offset>45110</Offset>
+    <Bitmap>000000FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--plane1A-->
+  <Factor id = "175" name = "PIPE_NONE">
+    <Offset>70180</Offset>
+    <Bitmap>80000000</Bitmap> 
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "176" name = "PIPE_NONE">
+    <Offset>70180</Offset>  
+    <Bitmap>F000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "177" name = "PIPE_NONE">
+    <Offset>70180</Offset>
+    <Bitmap>1C00</Bitmap>   
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "178" name = "PIPE_NONE">
+    <Offset>70180</Offset>
+    <Bitmap>3</Bitmap> 
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "179" name = "PIPE_NONE">
+    <Offset>7027C</Offset>  
+    <Bitmap>3FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "180" name = "PIPE_NONE">
+    <Offset>7027C</Offset>  
+    <Bitmap>3FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "181" name = "PIPE_NONE">
+    <Offset>70278</Offset>  
+    <Bitmap>3FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "182" name = "PIPE_NONE">
+    <Offset>70278</Offset>  
+    <Bitmap>3FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "183" name = "PIPE_NONE">
+    <Offset>70080</Offset>  
+    <Bitmap>3F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "184" name = "PIPE_NONE">
+    <Offset>7017C</Offset> 
+    <Bitmap>3FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "185" name = "PIPE_NONE">
+    <Offset>7017C</Offset>  
+    <Bitmap>3FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--plane1B-->
+  <Factor id = "186" name = "PIPE_NONE">
+    <Offset>71180</Offset>
+    <Bitmap>80000000</Bitmap>  
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "187" name = "PIPE_NONE">
+    <Offset>71180</Offset>   
+    <Bitmap>F000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "188" name = "PIPE_NONE">
+    <Offset>71180</Offset>
+    <Bitmap>1C00</Bitmap>   
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "189" name = "PIPE_NONE">
+    <Offset>71180</Offset>
+    <Bitmap>3</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "190" name = "PIPE_NONE">
+    <Offset>7127C</Offset>  
+    <Bitmap>3FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "191" name = "PIPE_NONE">
+    <Offset>7127C</Offset>  
+    <Bitmap>3FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "192" name = "PIPE_NONE">
+    <Offset>71278</Offset>  
+    <Bitmap>3FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "193" name = "PIPE_NONE">
+    <Offset>71278</Offset>  
+    <Bitmap>3FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "194" name = "PIPE_NONE">
+    <Offset>71080</Offset>  
+    <Bitmap>3F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "195" name = "PIPE_NONE">
+    <Offset>7117C</Offset>  
+    <Bitmap>3FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "196" name = "PIPE_NONE">
+    <Offset>7117C</Offset>  
+    <Bitmap>3FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--plane1C-->
+  <Factor id = "197" name = "PIPE_NONE">
+    <Offset>72180</Offset>
+    <Bitmap>80000000</Bitmap>  
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "198" name = "PIPE_NONE">
+    <Offset>72180</Offset>   
+    <Bitmap>F000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "199" name = "PIPE_NONE">
+    <Offset>72180</Offset>
+    <Bitmap>1C00</Bitmap>   
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "200" name = "PIPE_NONE">
+    <Offset>72180</Offset>
+    <Bitmap>3</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "201" name = "PIPE_NONE">
+    <Offset>7227C</Offset>  
+    <Bitmap>3FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "202" name = "PIPE_NONE">
+    <Offset>7227C</Offset>  
+    <Bitmap>3FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "203" name = "PIPE_NONE">
+    <Offset>72278</Offset>  
+    <Bitmap>3FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "204" name = "PIPE_NONE">
+    <Offset>72278</Offset>  
+    <Bitmap>3FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "205" name = "PIPE_NONE">
+    <Offset>72080</Offset>  
+    <Bitmap>3F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "206" name = "PIPE_NONE">
+    <Offset>7217C</Offset>  
+    <Bitmap>3FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "207" name = "PIPE_NONE">
+    <Offset>7217C</Offset>  
+    <Bitmap>3FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--plane2A-->
+  <Factor id = "208" name = "PIPE_NONE">
+    <Offset>70280</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "209" name = "PIPE_NONE">
+    <Offset>70280</Offset>   
+    <Bitmap>F000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "210" name = "PIPE_NONE">
+    <Offset>70280</Offset>
+    <Bitmap>1C00</Bitmap>   
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "211" name = "PIPE_NONE">
+    <Offset>70280</Offset>
+    <Bitmap>3</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "212" name = "PIPE_NONE">
+    <Offset>7037C</Offset>  
+    <Bitmap>3FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "213" name = "PIPE_NONE">
+    <Offset>7037C</Offset>  
+    <Bitmap>3FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "214" name = "PIPE_NONE">
+    <Offset>70378</Offset>  
+    <Bitmap>3FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "215" name = "PIPE_NONE">
+    <Offset>70378</Offset>  
+    <Bitmap>3FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "216" name = "PIPE_NONE">
+    <Offset>70080</Offset>  
+    <Bitmap>3F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "217" name = "PIPE_NONE">
+    <Offset>7017C</Offset>  
+    <Bitmap>3FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "218" name = "PIPE_NONE">
+    <Offset>7017C</Offset>  
+    <Bitmap>3FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--plane2B-->
+  <Factor id = "219" name = "PIPE_NONE">
+    <Offset>71280</Offset>
+    <Bitmap>80000000</Bitmap>  
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "220" name = "PIPE_NONE">
+    <Offset>71280</Offset>   
+    <Bitmap>F000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "221" name = "PIPE_NONE">
+    <Offset>71280</Offset>
+    <Bitmap>1C00</Bitmap>   
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "222" name = "PIPE_NONE">
+    <Offset>71280</Offset>
+    <Bitmap>3</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "223" name = "PIPE_NONE">
+    <Offset>7137C</Offset>  
+    <Bitmap>3FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "224" name = "PIPE_NONE">
+    <Offset>7137C</Offset>  
+    <Bitmap>3FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "225" name = "PIPE_NONE">
+    <Offset>71378</Offset>  
+    <Bitmap>3FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "226" name = "PIPE_NONE">
+    <Offset>71378</Offset>  
+    <Bitmap>3FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "227" name = "PIPE_NONE">
+    <Offset>71080</Offset>  
+    <Bitmap>3F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "228" name = "PIPE_NONE">
+    <Offset>7117C</Offset>  
+    <Bitmap>3FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "229" name = "PIPE_NONE">
+    <Offset>7117C</Offset>  
+    <Bitmap>3FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--plane2C-->
+  <Factor id = "230" name = "PIPE_NONE">
+    <Offset>72280</Offset>
+    <Bitmap>80000000</Bitmap>  
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "231" name = "PIPE_NONE">
+    <Offset>72280</Offset>   
+    <Bitmap>F000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "232" name = "PIPE_NONE">
+    <Offset>72280</Offset>
+    <Bitmap>1C00</Bitmap>   
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "233" name = "PIPE_NONE">
+    <Offset>72280</Offset>
+    <Bitmap>3</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "234" name = "PIPE_NONE">
+    <Offset>7237C</Offset>  
+    <Bitmap>3FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "235" name = "PIPE_NONE">
+    <Offset>7237C</Offset>  
+    <Bitmap>3FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "236" name = "PIPE_NONE">
+    <Offset>72378</Offset>  
+    <Bitmap>3FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "237" name = "PIPE_NONE">
+    <Offset>72378</Offset>  
+    <Bitmap>3FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "238" name = "PIPE_NONE">
+    <Offset>72080</Offset>  
+    <Bitmap>3F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "239" name = "PIPE_NONE">
+    <Offset>7217C</Offset>  
+    <Bitmap>3FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "240" name = "PIPE_NONE">
+    <Offset>7217C</Offset>  
+    <Bitmap>3FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--plane3A-->
+  <Factor id = "241" name = "PIPE_NONE">
+    <Offset>70380</Offset>
+    <Bitmap>80000000</Bitmap>  
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "242" name = "PIPE_NONE">
+    <Offset>70380</Offset>   
+    <Bitmap>F000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "243" name = "PIPE_NONE">
+    <Offset>70380</Offset>
+    <Bitmap>1C00</Bitmap>   
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "244" name = "PIPE_NONE">
+    <Offset>70380</Offset>
+    <Bitmap>3</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "245" name = "PIPE_NONE">
+    <Offset>7047C</Offset>  
+    <Bitmap>3FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "246" name = "PIPE_NONE">
+    <Offset>7047C</Offset>  
+    <Bitmap>3FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "247" name = "PIPE_NONE">
+    <Offset>70478</Offset>  
+    <Bitmap>3FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "248" name = "PIPE_NONE">
+    <Offset>70478</Offset>  
+    <Bitmap>3FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "249" name = "PIPE_NONE">
+    <Offset>70080</Offset>  
+    <Bitmap>3F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "250" name = "PIPE_NONE">
+    <Offset>7017C</Offset>  
+    <Bitmap>3FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "251" name = "PIPE_NONE">
+    <Offset>7017C</Offset>  
+    <Bitmap>3FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--plane3B-->
+  <Factor id = "252" name = "PIPE_NONE">
+    <Offset>71380</Offset>
+    <Bitmap>80000000</Bitmap>  
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "253" name = "PIPE_NONE">
+    <Offset>71380</Offset>   
+    <Bitmap>F000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "254" name = "PIPE_NONE">
+    <Offset>71380</Offset>
+    <Bitmap>1C00</Bitmap>   
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "255" name = "PIPE_NONE">
+    <Offset>71380</Offset>
+    <Bitmap>3</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "256" name = "PIPE_NONE">
+    <Offset>7147C</Offset>  
+    <Bitmap>3FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "257" name = "PIPE_NONE">
+    <Offset>7147C</Offset>  
+    <Bitmap>3FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "258" name = "PIPE_NONE">
+    <Offset>71478</Offset>  
+    <Bitmap>3FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "259" name = "PIPE_NONE">
+    <Offset>71478</Offset>  
+    <Bitmap>3FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "260" name = "PIPE_NONE">
+    <Offset>71080</Offset>  
+    <Bitmap>3F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "261" name = "PIPE_NONE">
+    <Offset>7117C</Offset>  
+    <Bitmap>3FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "262" name = "PIPE_NONE">
+    <Offset>7117C</Offset>  
+    <Bitmap>3FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--plane3C-->
+  <Factor id = "263" name = "PIPE_NONE">
+    <Offset>72380</Offset>
+    <Bitmap>80000000</Bitmap>  
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "264" name = "PIPE_NONE">
+    <Offset>72380</Offset>   
+    <Bitmap>F000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "265" name = "PIPE_NONE">
+    <Offset>72380</Offset>
+    <Bitmap>1C00</Bitmap>   
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "266" name = "PIPE_NONE">
+    <Offset>72380</Offset>
+    <Bitmap>3</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "267" name = "PIPE_NONE">
+    <Offset>7247C</Offset>  
+    <Bitmap>3FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "268" name = "PIPE_NONE">
+    <Offset>7247C</Offset>  
+    <Bitmap>3FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "269" name = "PIPE_NONE">
+    <Offset>72478</Offset>  
+    <Bitmap>3FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "270" name = "PIPE_NONE">
+    <Offset>72478</Offset>  
+    <Bitmap>3FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "271" name = "PIPE_NONE">
+    <Offset>72080</Offset>  
+    <Bitmap>3F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "272" name = "PIPE_NONE">
+    <Offset>7217C</Offset>  
+    <Bitmap>3FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "273" name = "PIPE_NONE">
+    <Offset>7217C</Offset>  
+    <Bitmap>3FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--CFGCR1-->
+  <Factor id = "274" name = "PIPE_NONE">
+    <Offset>6C040</Offset>  
+    <Bitmap>FFFE00</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "275" name = "PIPE_NONE">
+    <Offset>6C040</Offset>  
+    <Bitmap>1FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "276" name = "PIPE_NONE">
+    <Offset>6C044</Offset>  
+    <Bitmap>3</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "277" name = "PIPE_NONE">
+    <Offset>6C044</Offset>  
+    <Bitmap>1C</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "278" name = "PIPE_NONE">
+    <Offset>6C044</Offset>  
+    <Bitmap>60</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "279" name = "PIPE_NONE">
+    <Offset>6C044</Offset>  
+    <Bitmap>80</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "280" name = "PIPE_NONE">
+    <Offset>6C044</Offset>  
+    <Bitmap>FF0</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--CFGCR2-->
+  <Factor id = "281" name = "PIPE_NONE">
+    <Offset>6C048</Offset>  
+    <Bitmap>FFFE00</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "282" name = "PIPE_NONE">
+    <Offset>6C048</Offset>  
+    <Bitmap>1FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "283" name = "PIPE_NONE">
+    <Offset>6C04C</Offset>  
+    <Bitmap>3</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "284" name = "PIPE_NONE">
+    <Offset>6C04C</Offset>  
+    <Bitmap>1C</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "285" name = "PIPE_NONE">
+    <Offset>6C04C</Offset>  
+    <Bitmap>60</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "286" name = "PIPE_NONE">
+    <Offset>6C04C</Offset>  
+    <Bitmap>80</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "287" name = "PIPE_NONE">
+    <Offset>6C04C</Offset>  
+    <Bitmap>FF0</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--CFGCR3-->
+  <Factor id = "288" name = "PIPE_NONE">
+    <Offset>6C050</Offset>  
+    <Bitmap>FFFE00</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "289" name = "PIPE_NONE">
+    <Offset>6C050</Offset>  
+    <Bitmap>1FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "290" name = "PIPE_NONE">
+    <Offset>6C054</Offset>  
+    <Bitmap>3</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "291" name = "PIPE_NONE">
+    <Offset>6C054</Offset>  
+    <Bitmap>1C</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "292" name = "PIPE_NONE">
+    <Offset>6C054</Offset>  
+    <Bitmap>60</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "293" name = "PIPE_NONE">
+    <Offset>6C054</Offset>  
+    <Bitmap>80</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "294" name = "PIPE_NONE">
+    <Offset>6C054</Offset>  
+    <Bitmap>FF0</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--CDCLK_CTL-->
+  <Factor id = "295" name = "PIPE_NONE">
+    <Offset>46000</Offset>  
+    <Bitmap>C000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "296" name = "PIPE_NONE">
+    <Offset>46000</Offset>  
+    <Bitmap>C00000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "297" name = "PIPE_NONE">
+    <Offset>46000</Offset>  
+    <Bitmap>300000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "298" name = "PIPE_NONE">
+    <Offset>46000</Offset>  
+    <Bitmap>80000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "299" name = "PIPE_NONE">
+    <Offset>46000</Offset>  
+    <Bitmap>40000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "300" name = "PIPE_NONE">
+    <Offset>46000</Offset>  
+    <Bitmap>20000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "301" name = "PIPE_NONE">
+    <Offset>46000</Offset>  
+    <Bitmap>7FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  
+  <!-- WM_LP1_SPRITE_BDW -->
+  <Factor id = "302" name = "PLANE_A">
+    <Offset>45120</Offset>
+    <Bitmap>000007FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!-- WM_LP2_SPRITE_BDW -->
+  <Factor id = "303" name = "PLANE_A">
+    <Offset>45124</Offset>
+    <Bitmap>000007FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!-- WM_LP3_SPRITE_BDW -->
+  <Factor id = "304" name = "PLANE_A">
+    <Offset>45128</Offset>
+    <Bitmap>000007FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  
+ <!-- WM_LP1_DISPLAY_BDW -->
+  <Factor id = "305" name = "PLANE_A">
+    <Offset>45108</Offset>
+    <Bitmap>0007FF00</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!-- WM_LP2_DISPLAY_BDW -->
+  <Factor id = "306" name = "PLANE_A">
+    <Offset>4510C</Offset>
+    <Bitmap>0007FF00</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!-- WM_LP3_DISPLAY_BDW -->
+  <Factor id = "307" name = "PLANE_A">
+    <Offset>45110</Offset>
+    <Bitmap>0007FF00</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- DISPLAY_WATERMARK_REGISTER_BDW -->
+  <Factor id = "308" name = "PLANE_A">
+    <Offset>45100</Offset>
+    <Bitmap>00FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "309" name = "PLANE_B">
+    <Offset>45104</Offset>
+    <Bitmap>00FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "310" name = "PLANE_C">
+    <Offset>45200</Offset>
+    <Bitmap>00FF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!-- SPRITE_WATERMARK_REGISTER_BDW -->
+  <Factor id = "311" name = "PLANE_A">
+    <Offset>45100</Offset>
+    <Bitmap>0000FF00</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "312" name = "PLANE_B">
+    <Offset>45104</Offset>
+    <Bitmap>0000FF00</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "313" name = "PLANE_C">
+    <Offset>45200</Offset>
+    <Bitmap>0000FF00</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!-- Deep_Color_Enable_HSW -->
+  <Factor id = "314" name = "PIPE_A">
+    <Offset>60400</Offset>
+    <Bitmap>80700000</Bitmap>
+    <Value>80300000</Value>
+  </Factor>
+  <Factor id = "315" name = "PIPE_B">
+    <Offset>61400</Offset>
+    <Bitmap>80700000</Bitmap>
+    <Value>80300000</Value>
+  </Factor>
+  <Factor id = "316" name = "PIPE_C">
+    <Offset>62400</Offset>
+    <Bitmap>80700000</Bitmap>
+    <Value>80300000</Value>
+  </Factor>
+  <Factor id = "317" name = "PIPE_EDP">
+    <Offset>6F400</Offset>
+    <Bitmap>80700000</Bitmap>
+    <Value>80300000</Value>
+  </Factor>
+  <Factor id = "318" name = "PIPE_A">
+    <Offset>60400</Offset>
+    <Bitmap>80700000</Bitmap>
+    <Value>80100000</Value>
+  </Factor>
+  <Factor id = "319" name = "PIPE_B">
+    <Offset>61400</Offset>
+    <Bitmap>80700000</Bitmap>
+    <Value>80100000</Value>
+  </Factor>
+  <Factor id = "320" name = "PIPE_C">
+    <Offset>62400</Offset>
+    <Bitmap>80700000</Bitmap>
+    <Value>80100000</Value>
+  </Factor>
+  <Factor id = "321" name = "PIPE_EDP">
+    <Offset>6F400</Offset>
+    <Bitmap>80700000</Bitmap>
+    <Value>80100000</Value>
+  </Factor>
+  <Factor id = "322" name = "PIPE_A">
+    <Offset>60400</Offset>
+    <Bitmap>80700000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "323" name = "PIPE_B">
+    <Offset>61400</Offset>
+    <Bitmap>80700000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "324" name = "PIPE_C">
+    <Offset>62400</Offset>
+    <Bitmap>80700000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "325" name = "PIPE_EDP">
+    <Offset>6F400</Offset>
+    <Bitmap>80700000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "326" name = "PIPE_A">
+    <Offset>60400</Offset>
+    <Bitmap>80700000</Bitmap>
+    <Value>80200000</Value>
+  </Factor>
+  <Factor id = "327" name = "PIPE_B">
+    <Offset>61400</Offset>
+    <Bitmap>80700000</Bitmap>
+    <Value>80200000</Value>
+  </Factor>
+  <Factor id = "328" name = "PIPE_C">
+    <Offset>62400</Offset>
+    <Bitmap>80700000</Bitmap>
+    <Value>80200000</Value>
+  </Factor>
+  <Factor id = "329" name = "PIPE_EDP">
+    <Offset>6F400</Offset>
+    <Bitmap>80700000</Bitmap>
+    <Value>80200000</Value>
+  </Factor>
+  <Factor id = "330" name = "PIPE_A">
+    <Offset>60400</Offset>
+    <Bitmap>700000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "331" name = "PIPE_B">
+    <Offset>61400</Offset>
+    <Bitmap>700000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "332" name = "PIPE_C">
+    <Offset>62400</Offset>
+    <Bitmap>700000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "333" name = "PIPE_EDP">
+    <Offset>6F400</Offset>
+    <Bitmap>700000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "334" name = "PLANE_A">
+    <Offset>60210</Offset>
+    <Bitmap>4</Bitmap>
+    <Value>4</Value>
+  </Factor>
+  <Factor id = "335" name = "PLANE_B">
+    <Offset>61210</Offset>
+    <Bitmap>4</Bitmap>
+    <Value>4</Value>
+  </Factor>
+  <Factor id = "336" name = "PLANE_C">
+    <Offset>62210</Offset>
+    <Bitmap>4</Bitmap>
+    <Value>4</Value>
+  </Factor>
+  <!-- DITHERING_BP_ENABLE-->
+  <Factor id = "337" name = "PLANE_A">
+    <Offset>70030</Offset>
+    <Bitmap>10</Bitmap>
+    <Value>10</Value>
+  </Factor>
+  <Factor id = "338" name = "PLANE_B">
+    <Offset>71030</Offset>
+    <Bitmap>10</Bitmap>
+    <Value>10</Value>
+  </Factor>
+  <Factor id = "339" name = "PLANE_C">
+    <Offset>72030</Offset>
+    <Bitmap>10</Bitmap>
+    <Value>10</Value>
+  </Factor>
+  <!-- DITHERING_BPC/ DITHERING_BPC_8-->
+  <Factor id = "340" name = "PLANE_A">
+    <Offset>70030</Offset>
+    <Bitmap>E0</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "341" name = "PLANE_B">
+    <Offset>71030</Offset>
+    <Bitmap>E0</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "342" name = "PLANE_C">
+    <Offset>72030</Offset>
+    <Bitmap>E0</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--WIDEGAMUT_SLIDER4-->
+  <Factor id = "343" name = "PLANE_A">
+    <Offset>49090</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>A0A0A0A</Value>
+  </Factor>
+  <Factor id = "344" name = "PLANE_A">
+    <Offset>49094</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>130E0A0A</Value>
+  </Factor>
+  <Factor id = "345" name = "PLANE_A">
+    <Offset>49098</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>20201D18</Value>
+  </Factor>
+  <Factor id = "346" name = "PLANE_A">
+    <Offset>4909C</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>20202020</Value>
+  </Factor>
+  <Factor id = "347" name = "PLANE_A">
+    <Offset>490A0</Offset>
+    <Bitmap>3F</Bitmap>
+    <Value>20</Value>
+  </Factor>
+  <Factor id = "348" name = "PLANE_B">
+    <Offset>49190</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>A0A0A0A</Value>
+  </Factor>
+  <Factor id = "349" name = "PLANE_B">
+    <Offset>49194</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>130E0A0A</Value>
+  </Factor>
+  <Factor id = "350" name = "PLANE_B">
+    <Offset>49198</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>20201D18</Value>
+  </Factor>
+  <Factor id = "351" name = "PLANE_B">
+    <Offset>4919C</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>20202020</Value>
+  </Factor>
+  <Factor id = "352" name = "PLANE_B">
+    <Offset>491A0</Offset>
+    <Bitmap>3F</Bitmap>
+    <Value>20</Value>
+  </Factor>
+  <Factor id = "353" name = "PLANE_C">
+    <Offset>49290</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>A0A0A0A</Value>
+  </Factor>
+  <Factor id = "354" name = "PLANE_C">
+    <Offset>49294</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>130E0A0A</Value>
+  </Factor>
+  <Factor id = "355" name = "PLANE_C">
+    <Offset>49298</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>20201D18</Value>
+  </Factor>
+  <Factor id = "356" name = "PLANE_C">
+    <Offset>4929C</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>20202020</Value>
+  </Factor>
+  <Factor id = "357" name = "PLANE_C">
+    <Offset>492A0</Offset>
+    <Bitmap>3F</Bitmap>
+    <Value>20</Value>
+  </Factor>
+  <!--WIDEGAMUT_SLIDER3-->
+  <Factor id = "358" name = "PLANE_A">
+    <Offset>49090</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "359" name = "PLANE_A">
+    <Offset>49094</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>D060000</Value>
+  </Factor>
+  <Factor id = "360" name = "PLANE_A">
+    <Offset>49098</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>20201A13</Value>
+  </Factor>
+  <!--DPLL0_SSC_CNL-->
+  <Factor id = "361" name = "PIPE_NONE">
+    <Offset>6C000</Offset>
+    <Bitmap>10000000</Bitmap>
+    <Value>10000000</Value>
+  </Factor>
+  <Factor id = "362" name = "PIPE_NONE">
+    <Offset>6C000</Offset>
+    <Bitmap>20000000</Bitmap>
+    <Value>20000000</Value>
+  </Factor>
+  <!--WIDEGAMUT_SLIDER3_CONTD-->
+  <Factor id = "363" name = "PLANE_B">
+    <Offset>49190</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "364" name = "PLANE_B">
+    <Offset>49194</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>D060000</Value>
+  </Factor>
+  <Factor id = "365" name = "PLANE_B">
+    <Offset>49198</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>20201A13</Value>
+  </Factor>
+  <!--DPLL0_SSC_DPLL_1_SSC-->
+  <Factor id = "366" name = "PIPE_NONE">
+    <Offset>6C000</Offset>
+    <Bitmap>F000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "367" name = "PIPE_NONE">
+    <Offset>6C080</Offset>
+    <Bitmap>10000000</Bitmap>
+    <Value>10000000</Value>
+  </Factor>
+
+  <Factor id = "368" name = "PLANE_C">
+    <Offset>49290</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "369" name = "PLANE_C">
+    <Offset>49294</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>D060000</Value>
+  </Factor>
+  <Factor id = "370" name = "PLANE_C">
+    <Offset>49298</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>20201A13</Value>
+  </Factor>
+  <!--DPLL1_SCC_DPLL2_SSC-->
+  <Factor id = "371" name = "PIPE_NONE">
+    <Offset>6C080</Offset>
+    <Bitmap>20000000</Bitmap>
+    <Value>20000000</Value>
+  </Factor>
+  <Factor id = "372" name = "PIPE_NONE">
+    <Offset>6C080</Offset>
+    <Bitmap>F000000</Bitmap>
+    <Value>F000000</Value>
+  </Factor>
+  <Factor id = "373" name = "PIPE_NONE">
+    <Offset>6C100</Offset>
+    <Bitmap>10000000</Bitmap>
+    <Value>10000000</Value>
+  </Factor>
+  <!--WIDEGAMUT_SLIDER2-->
+  <Factor id = "374" name = "PLANE_A">
+    <Offset>49094</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>6030000</Value>
+  </Factor>
+  <Factor id = "375" name = "PLANE_A">
+    <Offset>49098</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>13100D0A</Value>
+  </Factor>
+  <Factor id = "376" name = "PLANE_A">
+    <Offset>4909C</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>201D1A16</Value>
+  </Factor>
+  <Factor id = "377" name = "PLANE_A">
+    <Offset>490A0</Offset>
+    <Bitmap>3F</Bitmap>
+    <Value>20</Value>
+  </Factor>
+<!--DPLL2_SSC-->
+  <Factor id = "378" name = "PIPE_NONE">
+    <Offset>6C100</Offset>
+    <Bitmap>20000000</Bitmap>
+    <Value>20000000</Value>
+  </Factor>
+  <Factor id = "379" name = "PLANE_B">
+    <Offset>49194</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>6030000</Value>
+  </Factor>
+  <Factor id = "380" name = "PLANE_B">
+    <Offset>49198</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>13100D0A</Value>
+  </Factor>
+  <Factor id = "381" name = "PLANE_B">
+    <Offset>4919C</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>201D1A16</Value>
+  </Factor>
+  <!--DPLL2_SSC-->
+  <Factor id = "382" name = "PIPE_NONE">
+    <Offset>6C100</Offset>
+    <Bitmap>F000000</Bitmap>
+    <Value>F000000</Value>
+  </Factor>
+  <!-- LPSP FOR SKL-->
+  <Factor id = "383" name = "PORTA">
+    <Offset>45404</Offset>
+    <Bitmap>50000000</Bitmap>
+    <Value>10000000</Value>
+  </Factor>
+
+  <Factor id = "384" name = "PLANE_C">
+    <Offset>49294</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>6030000</Value>
+  </Factor>
+  <Factor id = "385" name = "PLANE_C">
+    <Offset>49298</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>13100D0A</Value>
+  </Factor>
+  <Factor id = "386" name = "PLANE_C">
+    <Offset>4929C</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>201D1A16</Value>
+  </Factor>
+  <Factor id = "387" name = "PLANE_C">
+    <Offset>492A0</Offset>
+    <Bitmap>3F</Bitmap>
+    <Value>20</Value>
+  </Factor>
+  
+  <!--IS_AUDIO_96_BCLK-->
+  <Factor id = "388" name = "PLANE_A">
+    <Offset>65900</Offset>
+    <Bitmap>10</Bitmap>
+    <Value>10</Value>
+  </Factor>
+  
+  <!--WIDEGAMUT_SLIDER1-->
+  <Factor id = "389" name = "PLANE_A">
+    <Offset>49094</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "390" name = "PLANE_A">
+    <Offset>49098</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "391" name = "PLANE_A">
+    <Offset>4909C</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "392" name = "PLANE_A">
+    <Offset>490A0</Offset>
+    <Bitmap>3F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+<!--FreeFactor_393-->
+  <Factor id = "394" name = "PLANE_B">
+    <Offset>49194</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "395" name = "PLANE_B">
+    <Offset>49198</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "396" name = "PLANE_B">
+    <Offset>4919C</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "397" name = "PLANE_B">
+    <Offset>491A0</Offset>
+    <Bitmap>3F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--SmartFrame_Media-->
+  <Factor id = "398" name = "PLANE_A">
+    <Offset>68280</Offset>
+    <Bitmap>22000000</Bitmap>
+    <Value>22000000</Value>
+  </Factor>
+  <Factor id = "399" name = "PLANE_C">
+    <Offset>49294</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "400" name = "PLANE_C">
+    <Offset>49298</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "401" name = "PLANE_C">
+    <Offset>4929C</Offset>
+    <Bitmap>3F3F3F3F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "402" name = "PLANE_C">
+    <Offset>492A0</Offset>
+    <Bitmap>3F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "403" name = "PIPE_A">
+    <Offset>60400</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "404" name = "PIPE_B">
+    <Offset>61400</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "405" name = "PIPE_C">
+    <Offset>62400</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "406" name = "PIPE_EDP">
+    <Offset>6F400</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+    <!--WideGamutLP-->
+  <Factor id = "407" name = "PIPE_A">
+    <Offset>1E00B0</Offset>
+    <Bitmap>FFF</Bitmap>
+    <Value>200</Value>
+  </Factor>
+  <Factor id = "408" name = "PIPE_A">
+    <Offset>1E00B0</Offset>
+    <Bitmap>FFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "409" name = "PIPE_A">
+    <Offset>1E00B4</Offset>
+    <Bitmap>FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "410" name = "PIPE_A"> 
+    <Offset>1E00B8</Offset>
+    <Bitmap>FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "411" name = "PIPE_A">
+    <Offset>1E00B8</Offset>
+    <Bitmap>FFF0000</Bitmap>
+    <Value>1990000</Value>
+  </Factor>
+  <Factor id = "412" name = "PIPE_A">
+    <Offset>1E00BC</Offset>
+    <Bitmap>FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "413" name = "PIPE_A">
+    <Offset>1E00C0</Offset>
+    <Bitmap>FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "414" name = "PIPE_A">
+    <Offset>1E00C0</Offset>
+    <Bitmap>FFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "415" name = "PIPE_A">
+    <Offset>1E00C4</Offset>
+    <Bitmap>FFF</Bitmap>
+    <Value>2CC</Value>
+  </Factor>
+  <Factor id = "416" name = "PIPE_B">
+    <Offset>1E10B0</Offset>
+    <Bitmap>FFF</Bitmap>
+    <Value>200</Value>
+  </Factor>
+  <Factor id = "417" name = "PIPE_B">
+    <Offset>1E10B0</Offset>
+    <Bitmap>FFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "418" name = "PIPE_B">
+    <Offset>1E10B4</Offset>
+    <Bitmap>FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "419" name = "PIPE_B">
+    <Offset>1E10B8</Offset>
+    <Bitmap>FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "420" name = "PIPE_B">
+    <Offset>1E10B8</Offset>
+    <Bitmap>FFF0000</Bitmap>
+    <Value>1990000</Value>
+  </Factor>
+  <Factor id = "421" name = "PIPE_B">
+    <Offset>1E10BC</Offset>
+    <Bitmap>FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "422" name = "PIPE_B">
+    <Offset>1E10C0</Offset>
+    <Bitmap>FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "423" name = "PIPE_B">
+    <Offset>1E10C0</Offset>
+    <Bitmap>FFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "424" name = "PIPE_B">
+    <Offset>1E10C4</Offset>
+    <Bitmap>FFF</Bitmap>
+    <Value>2CC</Value>
+  </Factor>
+  <!-- CNL Plane4 CTL Registers. -->>
+  <Factor id ="425" name ="PLANE_A">
+    <Offset>70480</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id ="426" name ="PLANE_B">
+    <Offset>71480</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id ="427" name ="PLANE_C">
+    <Offset>72480</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+
+  <!--Pipe_ENABLE_CSC_PLANEA-->
+  <Factor id = "428" name = "PLANE_A">
+    <Offset>70180</Offset>
+    <Bitmap>800000</Bitmap>
+    <Value>800000</Value>
+  </Factor>
+  <Factor id = "429" name = "PLANE_B">
+    <Offset>71180</Offset>
+    <Bitmap>800000</Bitmap>
+    <Value>800000</Value>
+  </Factor>
+  <Factor id = "430" name = "PLANE_C">
+    <Offset>72180</Offset>
+    <Bitmap>800000</Bitmap>
+    <Value>800000</Value>
+  </Factor>
+  
+<!--CNL CDClock registers-->
+   <Factor id = "431" name = "PLANE_NONE">
+    <Offset>46000</Offset>
+    <Bitmap>7FF</Bitmap>
+    <Value>14E</Value>
+  </Factor>
+  <Factor id = "432" name = "PLANE_NONE">
+    <Offset>46000</Offset>
+    <Bitmap>7FF</Bitmap>
+    <Value>29E</Value>
+  </Factor>
+  <Factor id = "433" name = "PLANE_NONE">
+    <Offset>46000</Offset>
+    <Bitmap>7FF</Bitmap>
+    <Value>41E</Value>
+  </Factor>
+  
+  <!--Pipe_DISABLE_CSC_PLANEA-->
+  <Factor id = "434" name = "PLANE_A">
+    <Offset>70180</Offset>
+    <Bitmap>800000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "435" name = "PLANE_B">
+    <Offset>71180</Offset>
+    <Bitmap>800000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "436" name = "PLANE_C">
+    <Offset>72180</Offset>
+    <Bitmap>800000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--VLV Ports Enable-->
+  <Factor id = "437" name = "PORTE">
+    <Offset>1E1100</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "438" name = "PORTB">
+    <Offset>1E4100</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "439" name = "PORTC">
+    <Offset>1E4200</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "440" name = "PORTA">
+    <Offset>1E1190</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "441" name = "PORTC">
+    <Offset>1E1700</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "442" name = "PORTB">
+    <Offset>1E1140</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "443" name = "PORTC">
+    <Offset>1E1160</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+<!--FreeFactor_444_445-->
+  <Factor id = "446" name = "PLANE_NONE">
+    <Offset>700</Offset>
+    <Bitmap>FF</Bitmap>
+    <Value>3</Value>      // 3 is for edp 1.4
+  </Factor>
+  <Factor id = "447" name = "PLANE_NONE">
+    <Offset>46000</Offset>
+    <Bitmap>7FF</Bitmap>
+    <Value>267</Value>
+  </Factor>
+  <Factor id = "448" name = "PLANE_NONE">
+    <Offset>46000</Offset>
+    <Bitmap>C000000</Bitmap>
+    <Value>8000000</Value>
+  </Factor>
+  <Factor id = "449" name = "PLANE_NONE">
+    <Offset>46000</Offset>
+    <Bitmap>7FF</Bitmap>
+    <Value>2A1</Value>
+  </Factor>
+  <Factor id = "450" name = "PLANE_NONE">
+    <Offset>46000</Offset>
+    <Bitmap>7FF</Bitmap>
+    <Value>35E</Value>
+  </Factor>
+  <Factor id = "451" name = "PLANE_NONE">
+    <Offset>46000</Offset>
+    <Bitmap>C000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "452" name = "PLANE_NONE">
+    <Offset>46000</Offset>
+    <Bitmap>7FF</Bitmap>
+    <Value>382</Value>
+  </Factor>
+  <Factor id = "453" name = "PLANE_NONE">
+    <Offset>46000</Offset>
+    <Bitmap>7FF</Bitmap>
+    <Value>436</Value>
+  </Factor>
+  <Factor id = "454" name = "PLANE_NONE">
+    <Offset>46000</Offset>
+    <Bitmap>C000000</Bitmap>
+    <Value>4000000</Value>
+  </Factor>
+  <Factor id = "455" name = "PLANE_NONE">
+    <Offset>46000</Offset>
+    <Bitmap>7FF</Bitmap>
+    <Value>4D0</Value>
+  </Factor>
+  <Factor id = "456" name = "PLANE_NONE">
+    <Offset>46000</Offset>
+    <Bitmap>C000000</Bitmap>
+    <Value>C000000</Value>
+  </Factor>
+  <Factor id = "457" name = "PLANE_NONE">
+    <Offset>46000</Offset>
+    <Bitmap>7FF</Bitmap>
+    <Value>544</Value>
+  </Factor>
+  <!--PLL_ENABLE_STATUS-->
+  <Factor id = "458" name = "PLANE_NONE">
+    <Offset>46010</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "459" name = "PLANE_NONE">
+    <Offset>46014</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "460" name = "PLANE_NONE">
+    <Offset>46040</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "461" name = "PLANE_NONE">
+    <Offset>46060</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  
+  
+  <!--MIPI DPI_HACTIVE & DPI_VACTIVE-->
+  <Factor id = "462" name = "PORTA">
+    <Offset>6B020</Offset>
+    <Bitmap>0000FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "463" name = "PORTC">
+    <Offset>6B820</Offset>
+    <Bitmap>0000FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "464" name = "PORTA">
+    <Offset>6B020</Offset>
+    <Bitmap>FFFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "465" name = "PORTC">
+    <Offset>6B820</Offset>
+    <Bitmap>FFFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--MIPI_DUAL_LINK_MODE -->
+  <Factor id = "466" name = "PORTA">
+    <Offset>6B0C0</Offset>
+    <Bitmap>1</Bitmap>
+    <Value>1</Value>
+  </Factor>
+  <Factor id = "467" name = "PORTC">
+    <Offset>6B0C0</Offset>
+    <Bitmap>1</Bitmap>
+    <Value>1</Value>
+  </Factor>
+
+
+  <!--MIPI NonBurst_Sync_Pulse -->
+  <Factor id = "468" name = "PORTA">
+    <Offset>6B058</Offset>
+    <Bitmap>00000003</Bitmap>
+    <Value>1</Value>
+  </Factor>
+  <Factor id = "469" name = "PORTC">
+    <Offset>6B858</Offset>
+    <Bitmap>00000003</Bitmap>
+    <Value>1</Value>
+  </Factor>
+
+  <!--MIPI NonBurst_Sync_Events -->
+  <Factor id = "470" name = "PORTA">
+    <Offset>6B058</Offset>
+    <Bitmap>00000003</Bitmap>
+    <Value>2</Value>
+  </Factor>
+  <Factor id = "471" name = "PORTC">
+    <Offset>6B858</Offset>
+    <Bitmap>00000003</Bitmap>
+    <Value>2</Value>
+  </Factor>
+
+  <!--MIPI BurstMode-->
+  <Factor id = "472" name = "PORTA">
+    <Offset>6B058</Offset>
+    <Bitmap>00000003</Bitmap>
+    <Value>3</Value>
+  </Factor>
+  <Factor id = "473" name = "PORTC">
+    <Offset>6B858</Offset>
+    <Bitmap>00000003</Bitmap>
+    <Value>3</Value>
+  </Factor>
+
+
+  <!--MIPI_ColorFormat_RGB565 -->
+  <Factor id = "474" name = "PORTA">
+    <Offset>6B00C</Offset>
+    <Bitmap>00000780</Bitmap>
+    <Value>80</Value>
+  </Factor>
+  <Factor id = "475" name = "PORTC">
+    <Offset>6B80C</Offset>
+    <Bitmap>00000780</Bitmap>
+    <Value>80</Value>
+  </Factor>
+
+  <!--MIPI_ColorFormat_RGB666 -->
+  <Factor id = "476" name = "PORTA">
+    <Offset>6B00C</Offset>
+    <Bitmap>00000780</Bitmap>
+    <Value>100</Value>
+  </Factor>
+  <Factor id = "477" name = "PORTC">
+    <Offset>6B80C</Offset>
+    <Bitmap>00000780</Bitmap>
+    <Value>100</Value>
+  </Factor>
+
+  <!--MIPI_ColorFormat_RGB666_Loosely_Packed-->
+  <Factor id = "478" name = "PORTA">
+    <Offset>6B00C</Offset>
+    <Bitmap>00000780</Bitmap>
+    <Value>180</Value>
+  </Factor>
+  <Factor id = "479" name = "PORTC">
+    <Offset>6B80C</Offset>
+    <Bitmap>00000780</Bitmap>
+    <Value>180</Value>
+  </Factor>
+
+  <!--MIPI_ColorFormat_RGB888-->
+  <Factor id = "480" name = "PORTA">
+    <Offset>6B00C</Offset>
+    <Bitmap>00000780</Bitmap>
+    <Value>200</Value>
+  </Factor>
+  <Factor id = "481" name = "PORTC">
+    <Offset>6B80C</Offset>
+    <Bitmap>00000780</Bitmap>
+    <Value>200</Value>
+  </Factor>
+  
+  <!--MIPI_DATA_LANES-->
+  <Factor id = "482" name = "PORTA">
+    <Offset>6B00C</Offset>
+    <Bitmap>00000007</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "483" name = "PORTC">
+    <Offset>6B80C</Offset>
+    <Bitmap>00000007</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--YTilingVerification-->
+  <Factor id = "484" name = "PIPE_NONE">
+    <Offset>70190</Offset>
+    <Bitmap>1FFF</Bitmap> //FFF0000
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "485" name = "PIPE_NONE">
+    <Offset>70290</Offset>
+    <Bitmap>1FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "486" name = "PIPE_NONE">
+    <Offset>70390</Offset>
+    <Bitmap>1FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "487" name = "PIPE_NONE">
+    <Offset>71190</Offset>
+    <Bitmap>1FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "488" name = "PIPE_NONE">
+    <Offset>71290</Offset>
+    <Bitmap>1FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "489" name = "PIPE_NONE">
+    <Offset>71390</Offset>
+    <Bitmap>1FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "490" name = "PIPE_NONE">
+    <Offset>72190</Offset>
+    <Bitmap>1FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "491" name = "PIPE_NONE">
+    <Offset>72290</Offset>
+    <Bitmap>1FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "492" name = "PIPE_NONE">
+    <Offset>72390</Offset>
+    <Bitmap>1FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--CHV_HDMI-->
+  <Factor id = "493" name = "PORTB">
+    <Offset>1E1140</Offset>
+    <Bitmap>83000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "494" name = "PORTC">
+    <Offset>1E1160</Offset>
+    <Bitmap>83000000</Bitmap>
+    <Value>81000000</Value>
+  </Factor>
+  <Factor id = "495" name = "PORTD">
+    <Offset>1E116C</Offset>
+    <Bitmap>83000000</Bitmap>
+    <Value>82000000</Value>
+  </Factor>
+  <!--WideGamutLP_CHV-->
+  <Factor id = "496" name = "PIPE_A">
+    <Offset>1E7900</Offset>
+    <Bitmap>FFFF</Bitmap>
+    <Value>800</Value>
+  </Factor>
+  <Factor id = "497" name = "PIPE_A">
+    <Offset>1E7900</Offset>
+    <Bitmap>FFFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "498" name = "PIPE_A">
+    <Offset>1E7904</Offset>
+    <Bitmap>FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "499" name = "PIPE_A">
+    <Offset>1E7904</Offset>
+    <Bitmap>FFFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "500" name = "PIPE_A">
+    <Offset>1E7908</Offset>
+    <Bitmap>FFFF</Bitmap>
+    <Value>666</Value>
+  </Factor>
+  <Factor id = "501" name = "PIPE_A">
+    <Offset>1E7908</Offset>
+    <Bitmap>FFFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "502" name = "PIPE_A">
+    <Offset>1E790C</Offset>
+    <Bitmap>FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "503" name = "PIPE_A">
+    <Offset>1E790C</Offset>
+    <Bitmap>FFFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "504" name = "PIPE_A">
+    <Offset>1E7910</Offset>
+    <Bitmap>FFFF</Bitmap>
+    <Value>B33</Value>
+  </Factor>
+  <Factor id = "505" name = "PIPE_B">
+    <Offset>1E9900</Offset>
+    <Bitmap>FFFF</Bitmap>
+    <Value>800</Value>
+  </Factor>
+  <Factor id = "506" name = "PIPE_B">
+    <Offset>1E9900</Offset>
+    <Bitmap>FFFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "507" name = "PIPE_B">
+    <Offset>1E9904</Offset>
+    <Bitmap>FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "508" name = "PIPE_B">
+    <Offset>1E9904</Offset>
+    <Bitmap>FFFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "509" name = "PIPE_B">
+    <Offset>1E9908</Offset>
+    <Bitmap>FFFF</Bitmap>
+    <Value>666</Value>
+  </Factor>
+  <Factor id = "510" name = "PIPE_B">
+    <Offset>1E9908</Offset>
+    <Bitmap>FFFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "511" name = "PIPE_B">
+    <Offset>1E990C</Offset>
+    <Bitmap>FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "512" name = "PIPE_B">
+    <Offset>1E990C</Offset>
+    <Bitmap>FFFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "513" name = "PIPE_B">
+    <Offset>1E9910</Offset>
+    <Bitmap>FFFF</Bitmap>
+    <Value>B33</Value>
+  </Factor>
+  <Factor id = "514" name = "PIPE_C">
+    <Offset>1EB900</Offset>
+    <Bitmap>FFFF</Bitmap>
+    <Value>800</Value>
+  </Factor>
+  <Factor id = "515" name = "PIPE_C">
+    <Offset>1EB900</Offset>
+    <Bitmap>FFFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "516" name = "PIPE_C">
+    <Offset>1EB904</Offset>
+    <Bitmap>FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "517" name = "PIPE_C">
+    <Offset>1EB904</Offset>
+    <Bitmap>FFFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "518" name = "PIPE_C">
+    <Offset>1EB908</Offset>
+    <Bitmap>FFFF</Bitmap>
+    <Value>666</Value>
+  </Factor>
+  <Factor id = "519" name = "PIPE_C">
+    <Offset>1EB908</Offset>
+    <Bitmap>FFFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "520" name = "PIPE_C">
+    <Offset>1EB90C</Offset>
+    <Bitmap>FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "521" name = "PIPE_C">
+    <Offset>1EB90C</Offset>
+    <Bitmap>FFFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "522" name = "PIPE_C">
+    <Offset>1EB910</Offset>
+    <Bitmap>FFFF</Bitmap>
+    <Value>B33</Value>
+  </Factor>
+  <Factor id = "523" name = "PIPE_A">
+    <Offset>1E7A00</Offset>
+    <Bitmap>7</Bitmap>
+    <Value>7</Value>
+  </Factor>
+  <Factor id = "524" name = "PIPE_B">
+    <Offset>1E9A00</Offset>
+    <Bitmap>7</Bitmap>
+    <Value>7</Value>
+  </Factor>
+  <Factor id = "525" name = "PIPE_C">
+    <Offset>1EBA00</Offset>
+    <Bitmap>7</Bitmap>
+    <Value>7</Value>
+  </Factor>
+  <Factor id = "526" name = "PORTD">
+    <Offset>1E116C</Offset>
+    <Bitmap>C0000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--CHV_DP-->
+  <Factor id = "527" name = "PORTB">
+    <Offset>1E4100</Offset>
+    <Bitmap>80030000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "528" name = "PORTD">
+    <Offset>1E4300</Offset>
+    <Bitmap>80030000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "529" name = "PORTC">
+    <Offset>1E4200</Offset>
+    <Bitmap>80030000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--AUDIO START-->
+  <Factor id = "530" name = "PLANE_A">
+    <Offset>650C0</Offset>
+    <Bitmap>7</Bitmap>
+    <Value>7</Value>
+  </Factor>
+  <Factor id = "531" name = "PLANE_B">
+    <Offset>650C0</Offset>
+    <Bitmap>70</Bitmap>
+    <Value>70</Value>
+  </Factor>
+  <Factor id = "532" name = "PLANE_C">
+    <Offset>650C0</Offset>
+    <Bitmap>700</Bitmap>
+    <Value>700</Value>
+  </Factor>
+  <Factor id = "533" name = "PLANE_A">
+    <Offset>650C0</Offset>
+    <Bitmap>007</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "534" name = "PLANE_B">
+    <Offset>650C0</Offset>
+    <Bitmap>70</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "535" name = "PLANE_C">
+    <Offset>650C0</Offset>
+    <Bitmap>700</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--AUDIO END-->
+
+  <!--MIPI_DSI_Resolution-->
+  <Factor id = "536" name = "PORTA">
+    <Offset>6B024</Offset>
+    <Bitmap>00000003</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "537" name = "PORTC">
+    <Offset>6B824</Offset>
+    <Bitmap>00000003</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--MIPI_HORIZ_SYNC_PADDING_COUNT-->
+  <Factor id = "538" name = "PORTA">
+    <Offset>6B028</Offset>
+    <Bitmap>0000FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "539" name = "PORTC">
+    <Offset>6B828</Offset>
+    <Bitmap>0000FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--MIPI_HORIZ_BACK_PORCH_COUNT-->
+  <Factor id = "540" name = "PORTA">
+    <Offset>6B02C</Offset>
+    <Bitmap>0000FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "541" name = "PORTC">
+    <Offset>6B82C</Offset>
+    <Bitmap>0000FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--MIPI_HORIZ_FRONT_PORCH_COUNT-->
+  <Factor id = "542" name = "PORTA">
+    <Offset>6B030</Offset>
+    <Bitmap>0000FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "543" name = "PORTC">
+    <Offset>6B830</Offset>
+    <Bitmap>0000FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--MIPI_HORIZ_ACTIVE_AREA_COUNT-->
+  <Factor id = "544" name = "PORTA">
+    <Offset>6B034</Offset>
+    <Bitmap>0000FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "545" name = "PORTC">
+    <Offset>6B834</Offset>
+    <Bitmap>0000FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  
+  <!--MIPI_VERT_SYNC_PADDING_COUNT-->
+  <Factor id = "546" name = "PORTA">
+    <Offset>6B038</Offset>
+    <Bitmap>0000FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "547" name = "PORTC">
+    <Offset>6B838</Offset>
+    <Bitmap>0000FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--MIPI_VERT_BACK_PORCH_COUNT-->
+  <Factor id = "548" name = "PORTA">
+    <Offset>6B03C</Offset>
+    <Bitmap>0000FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "549" name = "PORTC">
+    <Offset>6B83C</Offset>
+    <Bitmap>0000FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--MIPI_VERT_FRONT_PORCH_COUNT-->
+  <Factor id = "550" name = "PORTA">
+    <Offset>6B040</Offset>
+    <Bitmap>0000FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "551" name = "PORTC">
+    <Offset>6B840</Offset>
+    <Bitmap>0000FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--MIPI_HIGH_LOW_SWITCH_COUNT -->
+  <Factor id = "552" name = "PORTA">
+    <Offset>6B044</Offset>
+    <Bitmap>0000FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "553" name = "PORTC">
+    <Offset>6B844</Offset>
+    <Bitmap>0000FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--MIPI_Data_Width_CMD_Mode -->
+  <Factor id = "554" name = "PORTA">
+    <Offset>6B00C</Offset>
+    <Bitmap>0000E000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "555" name = "PORTC">
+    <Offset>6B80C</Offset>
+    <Bitmap>0000E000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--MIPI_INTR_STAT_REG -->
+  <Factor id = "556" name = "PORTA">
+    <Offset>6B004</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "557" name = "PORTC">
+    <Offset>6B804</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--MIPI_GEN_FIFO_STAT_REGISTER -->
+  <Factor id = "558" name = "PORTA">
+    <Offset>6B074</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "559" name = "PORTC">
+    <Offset>6B874</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--MIPI_DPHY_PARAM_REG -->
+  <Factor id = "560" name = "PORTA">
+    <Offset>6B080</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "561" name = "PORTC">
+    <Offset>6B880</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--MIPI_DEVICE_RESET_TIMER -->
+  <Factor id = "562" name = "PORTA">
+    <Offset>6B01C</Offset>
+    <Bitmap>0000FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "563" name = "PORTC">
+    <Offset>6B81C</Offset>
+    <Bitmap>0000FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--MIPI_TURN_AROUND_TIMEOUT_REG -->
+  <Factor id = "564" name = "PORTA">
+    <Offset>6B018</Offset>
+    <Bitmap>0000FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "565" name = "PORTC">
+    <Offset>6B818</Offset>
+    <Bitmap>0000FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--MIPI_Disable_Video_BTA-->
+  <Factor id = "566" name = "PORTA">
+    <Offset>6B058</Offset>
+    <Bitmap>00000008</Bitmap>
+    <Value>8</Value>
+  </Factor>
+  <Factor id = "567" name = "PORTC">
+    <Offset>6B858</Offset>
+    <Bitmap>00000008</Bitmap>
+    <Value>8</Value>
+  </Factor>
+
+  <!--MIPI_HS_TX_TIMEOUT_REG-->
+  <Factor id = "568" name = "PORTA">
+    <Offset>6B010</Offset>
+    <Bitmap>00FFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "569" name = "PORTC">
+    <Offset>6B810</Offset>
+    <Bitmap>00FFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--MIPI_LP_RX_TIMEOUT_REG-->
+  <Factor id = "570" name = "PORTA">
+    <Offset>6B014</Offset>
+    <Bitmap>00FFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "571" name = "PORTC">
+    <Offset>6B814</Offset>
+    <Bitmap>00FFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--MIPI_EOT_DISABLE_REGISTER-->
+  <Factor id = "572" name = "PORTA">
+    <Offset>6B05C</Offset>
+    <Bitmap>00000003</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "573" name = "PORTC">
+    <Offset>6B85C</Offset>
+    <Bitmap>00000003</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!-- LPSP FOR SKL-->
+  <Factor id = "574" name = "PORTA">
+    <Offset>42400</Offset>
+    <Bitmap>10000000</Bitmap>
+    <Value>10000000</Value>
+  </Factor>
+
+  <!-- PND_Enable/ FW_BLC_SELF-->
+  <Factor id = "575" name = "PORTA">
+    <Offset>186500</Offset>
+    <Bitmap>00008000</Bitmap>
+    <Value>8000</Value>
+  </Factor>
+
+  <!-- CNL Registers-->
+  <Factor id = "576" name = "PORTA">
+    <Offset>64000</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "577" name = "PORTB">
+    <Offset>64100</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "578" name = "PORTC">
+    <Offset>64200</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "579" name = "PORTD">
+    <Offset>64300</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "580" name = "PORTE">
+    <Offset>64400</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "581" name = "PORTF">
+    <Offset>64500</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  
+  <!-- PLANE_FIFO_DRAIN_LATENCY-->
+  <Factor id = "582" name = "PIPE_A">
+    <Offset>1F0050</Offset>
+    <Bitmap>7F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "583" name = "PIPE_B">
+    <Offset>1F0054</Offset>
+    <Bitmap>7F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "584" name = "PIPE_C">
+    <Offset>1F0058</Offset>
+    <Bitmap>7F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!-- PLANE_FIFO_DRAIN_PRECISION-->
+  <Factor id = "585" name = "PIPE_A">
+    <Offset>1F0050</Offset>
+    <Bitmap>00000080</Bitmap>
+    <Value>80</Value>
+  </Factor>
+  <Factor id = "586" name = "PIPE_B">
+    <Offset>1F0054</Offset>
+    <Bitmap>00000080</Bitmap>
+    <Value>80</Value>
+  </Factor>
+  <Factor id = "587" name = "PIPE_C">
+    <Offset>1F0058</Offset>
+    <Bitmap>00000080</Bitmap>
+    <Value>80</Value>
+  </Factor>
+  <!-- SPRITE_FIFO_DRAIN_LATENCY-->
+  <Factor id = "588" name = "PIPE_A">
+    <Offset>1F0050</Offset>
+    <Bitmap>7F00</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "589" name = "PIPE_B">
+    <Offset>1F0054</Offset>
+    <Bitmap>7F00</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "590" name = "PIPE_C">
+    <Offset>1F0058</Offset>
+    <Bitmap>7F00</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!-- SPRITE_FIFO_DRAIN_PRECISION-->
+  <Factor id = "591" name = "PIPE_A">
+    <Offset>1F0050</Offset>
+    <Bitmap>00008000</Bitmap>
+    <Value>8000</Value>
+  </Factor>
+  <Factor id = "592" name = "PIPE_B">
+    <Offset>1F0054</Offset>
+    <Bitmap>00008000</Bitmap>
+    <Value>8000</Value>
+  </Factor>
+  <Factor id = "593" name = "PIPE_C">
+    <Offset>1F0058</Offset>
+    <Bitmap>00008000</Bitmap>
+    <Value>8000</Value>
+  </Factor>
+  <!-- VLV PANEL_FITTER_ENABLE-->
+  <Factor id = "594" name = "PIPE_A">
+    <Offset>1E1230</Offset>
+    <Bitmap>FC000000</Bitmap>
+    <Value>84000000</Value>
+  </Factor>
+  <Factor id = "595" name = "PIPE_B">
+    <Offset>1E1230</Offset>
+    <Bitmap>FC000000</Bitmap>
+    <Value>A4000000</Value>
+  </Factor>
+  <Factor id = "596" name = "PIPE_C">
+    <Offset>1E1230</Offset>
+    <Bitmap>FC000000</Bitmap>
+    <Value>C4000000</Value>
+  </Factor>
+  <!-- VLV PF_HRATIO-->
+  <Factor id = "597" name = "PIPE_A">
+    <Offset>1E1230</Offset>
+    <Bitmap>00001FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!-- VLV PF_VRATIO-->
+  <Factor id = "598" name = "PIPE_A">
+    <Offset>1E1230</Offset>
+    <Bitmap>1FFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!-- VLV OVERLAY_ENABLE-->
+  <Factor id = "599" name = "PIPE_A">
+    <Offset>1F2180</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "600" name = "PIPE_B">
+    <Offset>1F2380</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "601" name = "PIPE_C">
+    <Offset>1F2580</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <!--LP_DITHERING_ENABLE-->
+  <Factor id = "602" name = "PIPE_A">
+    <Offset>1F0008</Offset>
+    <Bitmap>80000010</Bitmap>
+    <Value>80000010</Value>
+  </Factor>
+  <Factor id = "603" name = "PIPE_B">
+    <Offset>1F1008</Offset>
+    <Bitmap>80000010</Bitmap>
+    <Value>80000010</Value>
+  </Factor>
+  <Factor id = "604" name = "PIPE_C">
+    <Offset>1F4008</Offset>
+    <Bitmap>80000010</Bitmap>
+    <Value>80000010</Value>
+  </Factor>
+  <!--LP_DITHERING_DISABLE-->
+  <Factor id = "605" name = "PIPE_A">
+    <Offset>1F0008</Offset>
+    <Bitmap>80000010</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "606" name = "PIPE_B">
+    <Offset>1F1008</Offset>
+    <Bitmap>80000010</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "607" name = "PIPE_C">
+    <Offset>1F4008</Offset>
+    <Bitmap>80000010</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <!--LP_DITHERING_8BPC-->
+  <Factor id = "608" name = "PIPE_A">
+    <Offset>1F0008</Offset>
+    <Bitmap>E0</Bitmap>
+    <Value>000</Value>
+  </Factor>
+  <Factor id = "609" name = "PIPE_B">
+    <Offset>1F1008</Offset>
+    <Bitmap>E0</Bitmap>
+    <Value>000</Value>
+  </Factor>
+  <Factor id = "610" name = "PIPE_C">
+    <Offset>1F4008</Offset>
+    <Bitmap>E0</Bitmap>
+    <Value>000</Value>
+  </Factor>
+  <!--LP_DITHERING_10BPC-->
+  <Factor id = "611" name = "PIPE_A">
+    <Offset>1F0008</Offset>
+    <Bitmap>E0</Bitmap>
+    <Value>20</Value>
+  </Factor>
+  <Factor id = "612" name = "PIPE_B">
+    <Offset>1F1008</Offset>
+    <Bitmap>E0</Bitmap>
+    <Value>20</Value>
+  </Factor>
+  <Factor id = "613" name = "PIPE_C">
+    <Offset>1F4008</Offset>
+    <Bitmap>E0</Bitmap>
+    <Value>20</Value>
+  </Factor>
+  <!--LP_DITHERING_6BPC-->
+  <Factor id = "614" name = "PIPE_A">
+    <Offset>1F0008</Offset>
+    <Bitmap>E0</Bitmap>
+    <Value>40</Value>
+  </Factor>
+  <Factor id = "615" name = "PIPE_B">
+    <Offset>1F1008</Offset>
+    <Bitmap>E0</Bitmap>
+    <Value>40</Value>
+  </Factor>
+  <Factor id = "616" name = "PIPE_C">
+    <Offset>1F4008</Offset>
+    <Bitmap>E0</Bitmap>
+    <Value>40</Value>
+  </Factor>
+  <!--LP_DITHERING_TYPE-->
+  <Factor id = "617" name = "PIPE_A">
+    <Offset>1F0008</Offset>
+    <Bitmap>6</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "618" name = "PIPE_B">
+    <Offset>1F1008</Offset>
+    <Bitmap>6</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "619" name = "PIPE_C">
+    <Offset>1F4008</Offset>
+    <Bitmap>6</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--CNL-->
+  <Factor id = "620" name = "PIPE_A">
+    <Offset>64000</Offset>
+    <Bitmap>7FF</Bitmap>
+    <Value>14E</Value>
+  </Factor>
+  <Factor id = "621" name = "PIPE_A">
+    <Offset>64000</Offset>
+    <Bitmap>7FF</Bitmap>
+    <Value>29E</Value>
+  </Factor>
+  <Factor id = "622" name = "PIPE_A">
+    <Offset>64000</Offset>
+    <Bitmap>7FF</Bitmap>
+    <Value>41E</Value>
+  </Factor>
+  <!--CNL-->
+  <!--primary_ctrl_enable_lp-->
+  <Factor id = "623" name = "PIPE_A">
+    <Offset>1F0008</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "624" name = "PIPE_B">
+    <Offset>1F1008</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "625" name = "PIPE_C">
+    <Offset>1F4008</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <!--SPRITE1-->
+  <Factor id = "626" name = "PIPE_A">
+    <Offset>1F2180</Offset>
+    <Bitmap>3C000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "627" name = "PIPE_B">
+    <Offset>1F2380</Offset>
+    <Bitmap>3C000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "628" name = "PIPE_C">
+    <Offset>1F2580</Offset>
+    <Bitmap>3C000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "629" name = "PIPE_A">
+    <Offset>1F2180</Offset>
+    <Bitmap>80000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "630" name = "PIPE_B">
+    <Offset>1F2380</Offset>
+    <Bitmap>80000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "631" name = "PIPE_C">
+    <Offset>1F2580</Offset>
+    <Bitmap>80000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--SPRITE2-->
+  <Factor id = "632" name = "PIPE_A">
+    <Offset>1F2280</Offset>
+    <Bitmap>3C000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "633" name = "PIPE_B">
+    <Offset>1F2480</Offset>
+    <Bitmap>3C000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "634" name = "PIPE_C">
+    <Offset>1F2680</Offset>
+    <Bitmap>3C000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "635" name = "PIPE_A">
+    <Offset>1F2280</Offset>
+    <Bitmap>80000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "636" name = "PIPE_B">
+    <Offset>1F2480</Offset>
+    <Bitmap>80000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "637" name = "PIPE_C">
+    <Offset>1F2680</Offset>
+    <Bitmap>80000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--CHV_HDMI_ENABLED-->
+  <Factor id = "638" name = "PORTB">
+    <Offset>1E1140</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "639" name = "PORTC">
+    <Offset>1E1160</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "640" name = "PORTD">
+    <Offset>1E116C</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <!--CHV_PLL_DP-->
+  <Factor id = "641" name = "PORTB">
+    <Offset>1E4100</Offset>
+    <Bitmap>30000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "642" name = "PORTC">
+    <Offset>1E4200</Offset>
+    <Bitmap>30000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "643" name = "PORTD">
+    <Offset>1E4300</Offset>
+    <Bitmap>30000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--CHV_PLL-->
+  <Factor id = "644" name = "PIPE_NONE">
+    <Offset>186014</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "645" name = "PIPE_NONE">
+    <Offset>186018</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "646" name = "PIPE_NONE">
+    <Offset>186030</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <!--CHV_PLL_EDP_SSC-->
+  <Factor id = "647" name = "PIPE_NONE">
+    <Offset>186014</Offset>
+    <Bitmap>2000</Bitmap>
+    <Value>2000</Value>
+  </Factor>
+  <Factor id = "648" name = "PIPE_NONE">
+    <Offset>186018</Offset>
+    <Bitmap>2000</Bitmap>
+    <Value>2000</Value>
+  </Factor>
+  <Factor id = "649" name = "PIPE_NONE">
+    <Offset>186030</Offset>
+    <Bitmap>2000</Bitmap>
+    <Value>2000</Value>
+  </Factor>
+  <!--CHV_DP_ENABLED-->
+  <Factor id = "650" name = "PORTB">
+    <Offset>1E4100</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "651" name = "PORTC">
+    <Offset>1E4200</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "652" name = "PORTD">
+    <Offset>1E4300</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <!--CHV_PLL_HDMI-->
+  <Factor id = "653" name = "PORTB">
+    <Offset>1E1140</Offset>
+    <Bitmap>3000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "654" name = "PORTC">
+    <Offset>1E1160</Offset>
+    <Bitmap>3000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "655" name = "PORTD">
+    <Offset>1E116C</Offset>
+    <Bitmap>3000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--Multi Plane Overlay-->
+    <Factor id ="656" name ="PLANE_A">
+    <Offset>70380</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id ="657" name ="PLANE_B">
+    <Offset>71380</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id ="658" name ="PLANE_C">
+    <Offset>72380</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <!--Multi Plane Overlay-->
+
+  <!--CNL Plane/Pipe Scaler Binding-->
+  <Factor id = "659" name = "PLANE_A">
+    <Offset>68180</Offset>
+    <Bitmap>E000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "660" name = "PLANE_A">
+    <Offset>68280</Offset>
+    <Bitmap>E000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "661" name = "PLANE_B">
+    <Offset>68980</Offset>
+    <Bitmap>E000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "662" name = "PLANE_B">
+    <Offset>68A80</Offset>
+    <Bitmap>E000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "663" name = "PLANE_C">
+    <Offset>69180</Offset>
+    <Bitmap>E000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "664" name = "PLANE_C">
+    <Offset>69280</Offset>
+    <Bitmap>E000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  
+  <!--NV12-->
+  <Factor id ="665" name ="PLANE_A">
+    <Offset>70180</Offset>
+    <Bitmap>8F000000</Bitmap>
+    <Value>81000000</Value>
+  </Factor>
+  <Factor id ="666" name ="PLANE_A">
+    <Offset>70280</Offset>
+    <Bitmap>8F000000</Bitmap>
+    <Value>81000000</Value>
+  </Factor>
+  <Factor id ="667" name ="PLANE_A">
+    <Offset>70380</Offset>
+    <Bitmap>8F000000</Bitmap>
+    <Value>81000000</Value>
+  </Factor>
+  <Factor id ="668" name ="PLANE_B">
+    <Offset>71180</Offset>
+    <Bitmap>8F000000</Bitmap>
+    <Value>81000000</Value>
+  </Factor>
+  <Factor id ="669" name ="PLANE_B">
+    <Offset>71280</Offset>
+    <Bitmap>8F000000</Bitmap>
+    <Value>81000000</Value>
+  </Factor>
+  <Factor id ="670" name ="PLANE_B">
+    <Offset>71380</Offset>
+    <Bitmap>8F000000</Bitmap>
+    <Value>81000000</Value>
+  </Factor>
+  <Factor id ="671" name ="PLANE_C">
+    <Offset>72180</Offset>
+    <Bitmap>8F000000</Bitmap>
+    <Value>81000000</Value>
+  </Factor>
+  <Factor id ="672" name ="PLANE_C">
+    <Offset>72280</Offset>
+    <Bitmap>8F000000</Bitmap>
+    <Value>81000000</Value>
+  </Factor>
+  <Factor id ="673" name ="PLANE_C">
+    <Offset>72380</Offset>
+    <Bitmap>8F000000</Bitmap>
+    <Value>81000000</Value>
+  </Factor>
+  <!--NV12-->
+  
+   <!--CNL Plane size -->
+  <Factor id = "674" name = "PLANE_A">
+    <Offset>70190</Offset>
+    <Bitmap>0FFF1FFF</Bitmap> //FFF0000
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "675" name = "PLANE_A">
+    <Offset>70290</Offset>
+    <Bitmap>0FFF1FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "676" name = "PLANE_A">
+    <Offset>70390</Offset>
+    <Bitmap>0FFF1FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "677" name = "PLANE_A">
+    <Offset>70490</Offset>
+    <Bitmap>0FFF1FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "678" name = "PLANE_B">
+    <Offset>71190</Offset>
+    <Bitmap>0FFF1FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "679" name = "PLANE_B">
+    <Offset>71290</Offset>
+    <Bitmap>0FFF1FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "680" name = "PLANE_B">
+    <Offset>71390</Offset>
+    <Bitmap>0FFF1FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "681" name = "PLANE_B">
+    <Offset>71490</Offset>
+    <Bitmap>0FFF1FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "682" name = "PLANE_C">
+    <Offset>72190</Offset>
+    <Bitmap>0FFF1FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "683" name = "PLANE_C">
+    <Offset>72290</Offset>
+    <Bitmap>0FFF1FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "684" name = "PLANE_C">
+    <Offset>72390</Offset>
+    <Bitmap>0FFF1FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "685" name = "PLANE_C">
+    <Offset>72490</Offset>
+    <Bitmap>0FFF1FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>  
+  
+  <!--CNL PS Window Size-->
+  <Factor id = "686" name = "PLANE_A">
+    <Offset>68174</Offset>
+    <Bitmap>3FFF1FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "687" name = "PLANE_A">
+    <Offset>68274</Offset>
+    <Bitmap>3FFF1FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "688" name = "PLANE_B">
+    <Offset>68974</Offset>
+    <Bitmap>3FFF1FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "689" name = "PLANE_B">
+    <Offset>68A74</Offset>
+    <Bitmap>3FFF1FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "690" name = "PLANE_C">
+    <Offset>69174</Offset>
+    <Bitmap>3FFF1FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "691" name = "PLANE_C">
+    <Offset>69274</Offset>
+    <Bitmap>3FFF1FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--CNL Plane_Scalar_1_Enable-->
+  <Factor id = "692" name = "PLANE_A">
+    <Offset>68180</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "693" name = "PLANE_A">
+    <Offset>68280</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "694" name = "PLANE_B">
+    <Offset>68980</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "695" name = "PLANE_B">
+    <Offset>68A80</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "696" name = "PLANE_C">
+    <Offset>69180</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "697" name = "PLANE_C">
+    <Offset>69280</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+
+  <!--SmartFrame Enable-->
+  <Factor id = "698" name = "PLANE_A">
+    <Offset>68180</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "699" name = "PLANE_B">
+    <Offset>68980</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "700" name = "PLANE_C">
+    <Offset>69180</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <!--SmartFrame Enable-->
+
+  <!--SmartFrame Disable-->
+  <Factor id = "701" name = "PLANE_A">
+    <Offset>68180</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "702" name = "PLANE_B">
+    <Offset>68980</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "703" name = "PLANE_C">
+    <Offset>69180</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--SmartFrame Disable-->
+  <!--CHV_NARROW_GAMUT-->
+  <Factor id = "704" name = "PLANE_A">
+    <Offset>1E7A00</Offset>
+    <Bitmap>2</Bitmap>
+    <Value>2</Value>
+  </Factor>
+  <Factor id = "705" name = "PLANE_B">
+    <Offset>1E9A00</Offset>
+    <Bitmap>2</Bitmap>
+    <Value>2</Value>
+  </Factor>
+  <Factor id = "706" name = "PLANE_C">
+    <Offset>1EBA00</Offset>
+    <Bitmap>2</Bitmap>
+    <Value>2</Value>
+  </Factor>
+   <Factor id = "707" name = "PLANE_A">
+    <Offset>1E7A00</Offset>
+    <Bitmap>2</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "708" name = "PLANE_B">
+    <Offset>1E9A00</Offset>
+    <Bitmap>2</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "709" name = "PLANE_C">
+    <Offset>1EBA00</Offset>
+    <Bitmap>2</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--CHV_CURSOR_STATUS -->
+  <Factor id = "710" name = "PLANE_A">
+    <Offset>1F0080</Offset>
+    <Bitmap>00000003F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "711" name = "PLANE_B">
+    <Offset>1F1080</Offset>
+    <Bitmap>00000003F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "712" name = "PLANE_C">
+    <Offset>1F2080</Offset>
+    <Bitmap>00000003F</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  
+  <!-- CNL Plane4 NV12 Format Registers. -->
+  <Factor id ="713" name ="PLANE_A">
+    <Offset>70480</Offset>
+    <Bitmap>8F000000</Bitmap>
+    <Value>81000000</Value>
+  </Factor>
+  <Factor id ="714" name ="PLANE_B">
+    <Offset>71480</Offset>
+    <Bitmap>8F000000</Bitmap>
+    <Value>81000000</Value>
+  </Factor>
+  <Factor id ="715" name ="PLANE_C">
+    <Offset>72480</Offset>
+    <Bitmap>8F000000</Bitmap>
+    <Value>81000000</Value>
+  </Factor>
+
+  <!-- SPRITE_CSC_ENABLED-->
+  <Factor id = "716" name = "PLANE_A">
+    <Offset>70280</Offset>
+    <Bitmap>80800000</Bitmap>
+    <Value>80800000</Value>
+  </Factor>
+  <Factor id = "717" name = "PLANE_B">
+    <Offset>71280</Offset>
+    <Bitmap>80800000</Bitmap>
+    <Value>80800000</Value>
+  </Factor>
+  <Factor id = "718" name = "PLANE_C">
+    <Offset>72280</Offset>
+    <Bitmap>80800000</Bitmap>
+    <Value>80800000</Value>
+  </Factor>
+
+  <!-- XVYCC_DISABLED_SPRITE_ENABLED-->
+  <Factor id = "719" name = "PLANE_A">
+    <Offset>70280</Offset>
+    <Bitmap>80800000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "720" name = "PLANE_B">
+    <Offset>71280</Offset>
+    <Bitmap>80800000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "721" name = "PLANE_C">
+    <Offset>72280</Offset>
+    <Bitmap>80800000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <!--HACTIVE-->
+  <Factor id = "722" name = "PIPE_A">
+    <Offset>60000</Offset>
+    <Bitmap>1FFF</Bitmap>
+    <Value>0</Value>
+    <Deviation>1</Deviation>
+  </Factor>
+  <Factor id = "723" name = "PIPE_B">
+    <Offset>61000</Offset>
+    <Bitmap>1FFF</Bitmap>
+    <Value>0</Value>
+    <Deviation>1</Deviation>
+  </Factor>
+  <Factor id = "724" name = "PIPE_C">
+    <Offset>62000</Offset>
+    <Bitmap>1FFF</Bitmap>
+    <Value>0</Value>
+    <Deviation>1</Deviation>
+  </Factor>
+  <Factor id = "725" name = "PIPE_EDP">
+    <Offset>6F000</Offset>
+    <Bitmap>1FFF</Bitmap>
+    <Value>0</Value>
+    <Deviation>1</Deviation>
+  </Factor>
+  
+  <Factor id = "726" name = "PLANE_A">
+    <Offset>650C0</Offset>
+    <Bitmap>1</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "727" name = "PLANE_B">
+    <Offset>650C0</Offset>
+    <Bitmap>10</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "728" name = "PLANE_C">
+    <Offset>650C0</Offset>
+    <Bitmap>100</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+<!-- Sprite vertical height-->
+  
+<Factor id = "729" name = "PLANE_A">
+    <Offset>70290</Offset>
+    <Bitmap>0FFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "730" name = "PLANE_B">
+    <Offset>71290</Offset>
+    <Bitmap>0FFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "731" name = "PLANE_C">
+    <Offset>72290</Offset>
+    <Bitmap>0FFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- Plane Config and NV12 Config Registers-->
+  <!-- PLANE_1_BUF_CFG-->
+  <Factor id = "732" name = "PLANE_A">
+    <Offset>7027C</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+    <Factor id = "733" name = "PLANE_B">
+    <Offset>7127C</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "734" name = "PLANE_C">
+    <Offset>7227C</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  
+  <!-- PLANE_2_BUF_CFG-->
+  <Factor id = "735" name = "PLANE_A">
+    <Offset>7037C</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "736" name = "PLANE_B">
+    <Offset>7137C</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "737" name = "PLANE_C">
+    <Offset>7237C</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  
+  <!-- PLANE_3_BUF_CFG-->
+  <Factor id = "738" name = "PLANE_A">
+    <Offset>7047C</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "739" name = "PLANE_B">
+    <Offset>7147C</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "740" name = "PLANE_C">
+    <Offset>7247C</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  
+  <!-- PLANE_4_BUF_CFG-->
+  <Factor id = "741" name = "PLANE_A">
+    <Offset>7057C</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "742" name = "PLANE_B">
+    <Offset>7157C</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "743" name = "PLANE_C">
+  <Offset>7257C</Offset>
+  <Bitmap>FFFFFFFF</Bitmap>
+  <Value>0</Value>
+</Factor>
+
+  <!-- PLANE_1_NV12_BUF_CFG-->
+  <Factor id = "744" name = "PLANE_A">
+    <Offset>70278</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "745" name = "PLANE_B">
+    <Offset>71278</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "746" name = "PLANE_C">
+    <Offset>72278</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- PLANE_2_NV12_BUF_CFG-->
+  <Factor id = "747" name = "PLANE_A">
+    <Offset>70378</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "748" name = "PLANE_B">
+    <Offset>71378</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "749" name = "PLANE_C">
+    <Offset>72378</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- PLANE_3_NV12_BUF_CFG-->
+  <Factor id = "750" name = "PLANE_A">
+    <Offset>70478</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "751" name = "PLANE_B">
+    <Offset>71478</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "752" name = "PLANE_C">
+    <Offset>72478</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- PLANE_4_NV12_BUF_CFG-->
+  <Factor id = "753" name = "PLANE_A">
+    <Offset>70578</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "754" name = "PLANE_B">
+    <Offset>71578</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "755" name = "PLANE_C">
+    <Offset>72578</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- WM_LINETIME-->
+  <Factor id = "756" name = "PLANE_A">
+    <Offset>45270</Offset>
+    <Bitmap>000001FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "757" name = "PLANE_B">
+    <Offset>45274</Offset>
+    <Bitmap>000001FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "758" name = "PLANE_C">
+    <Offset>45278</Offset>
+    <Bitmap>000001FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- PLANE_1_WM_BASE-->
+  <Factor id = "759" name = "PLANE_A">
+    <Offset>70240</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "760" name = "PLANE_B">
+    <Offset>71240</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "761" name = "PLANE_C">
+    <Offset>72240</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- PLANE_2_WM_BASE-->
+  <Factor id = "762" name = "PLANE_A">
+    <Offset>70340</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "763" name = "PLANE_B">
+    <Offset>71340</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "764" name = "PLANE_C">
+    <Offset>72340</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- PLANE_3_WM_BASE-->
+  <Factor id = "765" name = "PLANE_A">
+    <Offset>70440</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "766" name = "PLANE_B">
+    <Offset>71440</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "767" name = "PLANE_C">
+    <Offset>72440</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- PLANE_4_WM_BASE-->
+  <Factor id = "768" name = "PLANE_A">
+    <Offset>70540</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "769" name = "PLANE_B">
+    <Offset>71540</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "770" name = "PLANE_C">
+    <Offset>72540</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- PLANE_1_WM_TRANS-->
+  <Factor id = "771" name = "PLANE_A">
+    <Offset>70268</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "772" name = "PLANE_B">
+    <Offset>71268</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "773" name = "PLANE_C">
+    <Offset>72268</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- PLANE_2_WM_TRANS-->
+  <Factor id = "774" name = "PLANE_A">
+    <Offset>70368</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "775" name = "PLANE_B">
+    <Offset>71368</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "776" name = "PLANE_C">
+    <Offset>72368</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- PLANE_3_WM_TRANS-->
+  <Factor id = "777" name = "PLANE_A">
+    <Offset>70468</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "778" name = "PLANE_B">
+    <Offset>71468</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "779" name = "PLANE_C">
+    <Offset>72468</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- PLANE_4_WM_TRANS-->
+  <Factor id = "780" name = "PLANE_A">
+    <Offset>70568</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "781" name = "PLANE_B">
+    <Offset>71568</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "782" name = "PLANE_C">
+    <Offset>72568</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--PLANR_SCALAR-->
+  <Factor id = "783" name = "PLANE_A">
+    <Offset>68180</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "784" name = "PLANE_A">
+    <Offset>68180</Offset>
+    <Bitmap>E000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "785" name = "PLANE_A">
+    <Offset>68280</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "786" name = "PLANE_A">
+    <Offset>68280</Offset>
+    <Bitmap>E000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "787" name = "PLANE_B">
+    <Offset>68980</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "788" name = "PLANE_B">
+    <Offset>68980</Offset>
+    <Bitmap>E000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "789" name = "PLANE_B">
+    <Offset>68A80</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "790" name = "PLANE_B">
+    <Offset>68A80</Offset>
+    <Bitmap>E000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "791" name = "PLANE_C">
+    <Offset>69180</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "792" name = "PLANE_C">
+    <Offset>69180</Offset>
+    <Bitmap>E000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--skl_panelFitter-->
+  <Factor id = "793" name = "PLANE_A">
+    <Offset>68180</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "794" name = "PLANE_A">
+    <Offset>68280</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "795" name = "PLANE_B">
+    <Offset>68980</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "796" name = "PLANE_B">
+    <Offset>68A80</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "797" name = "PLANE_C">
+    <Offset>69180</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <!--panel_fitter_hsw_bdw-->
+  <!-- Scaling : Panel fitter enable-->
+  <Factor id = "798" name = "PLANE_A">
+    <Offset>68080</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "799" name = "PLANE_B">
+    <Offset>68880</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "800" name = "PLANE_C ">
+    <Offset>69080</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+
+  <!--PSR Registers for VLV & CHV-->
+  <Factor id = "801" name = "PIPE_A">
+    <Offset>1E0090</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "802" name = "PIPE_B">
+    <Offset>1E1090</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "803" name = "PIPE_A">
+    <Offset>1E0094</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "804" name = "PIPE_B">
+    <Offset>1E1094</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "805" name = "PORTC">
+    <Offset>1E4200</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--PSR Registers for HSW-->
+  <Factor id = "806" name = "PIPE_EDP">
+    <Offset>64800</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "807" name = "PIPE_EDP">
+    <Offset>64840</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "808" name = "PIPE_EDP">
+    <Offset>64844</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--PSR Registers for BDW+ platforms-->
+  <Factor id = "809" name = "PIPE_EDP">
+    <Offset>6F800</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "810" name = "PIPE_EDP">
+    <Offset>6F840</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "811" name = "PIPE_EDP">
+    <Offset>6F844</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  
+  <!-- MBO Enable-->
+  <Factor id = "812" name = "PIPE_EDP">
+    <Offset>6F800</Offset>
+    <Bitmap>C0000000</Bitmap>
+    <Value>C0000000</Value>
+  </Factor>
+  <Factor id = "813" name = "PIPE_EDP">
+    <Offset>6F800</Offset>
+    <Bitmap>40000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "814" name = "PIPE_EDP">
+    <Offset>45504</Offset>
+    <Bitmap>00000003</Bitmap>
+    <Value>2</Value>
+  </Factor>
+  <Factor id = "815" name = "PIPE_EDP">
+    <Offset>45504</Offset>
+    <Bitmap>00000003</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "816" name = "PIPE_EDP">
+    <Offset>6F840</Offset>
+    <Bitmap>E0000000</Bitmap>
+    <Value>40000000</Value>
+  </Factor>
+  <!--MIPI_HACTIVE-->
+  <Factor id = "817" name = "PORTA">
+    <Offset>6B034</Offset>
+    <Bitmap>FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "818" name = "PORTC">
+    <Offset>6B834</Offset>
+    <Bitmap>FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--MIPI_LANECOUNT-->
+  <Factor id = "819" name = "PORTA">
+    <Offset>6B00C</Offset>
+    <Bitmap>7</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "820" name = "PORTC">
+    <Offset>6B80C</Offset>
+    <Bitmap>7</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--MIPI_BPP-->
+  <Factor id = "821" name = "PORTA">
+    <Offset>6B00C</Offset>
+    <Bitmap>780</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "822" name = "PORTC">
+    <Offset>6B80C</Offset>
+    <Bitmap>780</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--Display C States-->
+  <Factor id = "823" name = "NONE">
+    <Offset>80030</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>FFFFFFFF</Value>
+  </Factor>
+  <Factor id = "824" name = "NONE">
+    <Offset>80038</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>00000000</Value>
+  </Factor>
+  <Factor id = "825" name = "NONE">
+    <Offset>8002C</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>00000000</Value>
+  </Factor>
+
+  <Factor id = "826" name = "NONE">
+    <Offset>45520</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "827" name = "NONE">
+    <Offset>45504</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>1</Value>
+  </Factor>
+  <Factor id = "828" name = "NONE">
+    <Offset>45500</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "829" name = "NONE">
+    <Offset>45404</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "830" name = "NONE">
+    <Offset>6B00C</Offset>
+    <Bitmap>000A000</Bitmap>
+    <Value>40960</Value>
+  </Factor>
+  <Factor id = "831" name = "NONE">
+    <Offset>C8250</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "832" name = "NONE">
+    <Offset>C8350</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "833" name = "NONE">
+    <Offset>46070</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "834" name = "NONE">
+    <Offset>46080</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--Dual_Link_Pixel_Alternative_Mode-->
+  <Factor id = "835" name = "PORTA">
+    <Offset>6B0C0</Offset>
+    <Bitmap>4000000</Bitmap>
+    <Value>4000000</Value>
+  </Factor>
+  <Factor id = "836" name = "PORTC">
+    <Offset>6B8C0</Offset>
+    <Bitmap>4000000</Bitmap>
+    <Value>4000000</Value>
+  </Factor>
+
+  <!--Dual_Link_Front_Back_Mode-->
+  <Factor id = "837" name = "PORTA">
+    <Offset>6B0C0</Offset>
+    <Bitmap>4000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "838" name = "PORTC">
+    <Offset>6B8C0</Offset>
+    <Bitmap>4000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--MIPI_PIXEL_OVERLAP_COUNT-->
+  <Factor id = "839" name = "PORTA">
+    <Offset>6B104</Offset>
+    <Bitmap>3C00</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "840" name = "PORTC">
+    <Offset>6B904</Offset>
+    <Bitmap>3C00</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--DMC_VERSION-->
+  <Factor id = "841" name = "PORTA">
+    <Offset>80004</Offset>
+    <Bitmap>000000FF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- PIPE_CRC_CTRL -->
+  <Factor id = "842" name = "PLANE_A">
+    <Offset>60050</Offset>
+    <Bitmap>C0000000</Bitmap>
+    <Value>C0000000</Value>
+  </Factor>
+  <Factor id = "843" name = "PLANE_B">
+    <Offset>61050</Offset>
+    <Bitmap>C0000000</Bitmap>
+    <Value>C0000000</Value>
+  </Factor>
+  <Factor id = "844" name = "PLANE_C">
+    <Offset>62050</Offset>
+    <Bitmap>C0000000</Bitmap>
+    <Value>C0000000</Value>
+  </Factor>
+  <!-- PIPE_CRC_RES -->
+  <Factor id = "845" name = "PLANE_A">
+    <Offset>60064</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "846" name = "PLANE_B">
+    <Offset>61064</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "847" name = "PLANE_C">
+    <Offset>62064</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  
+  <!--MIPI DSR Registers-->
+  <Factor id = "848" name = "PORTA">
+    <Offset>6B000</Offset>
+    <Bitmap>00000001</Bitmap>
+    <Value>1</Value>
+  </Factor>
+  <Factor id = "849" name = "PORTA">
+    <Offset>6B00C</Offset>
+    <Bitmap>0000E780</Bitmap>
+    <Value>0000A000</Value>
+  </Factor>
+
+  <Factor id = "850" name = "PIPE_NONE">
+    <Offset>46080</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "851" name = "PIPE_NONE">
+    <Offset>46070</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "852" name = "PIPE_NONE">
+    <Offset>45404</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "853" name = "PIPE_NONE">
+    <Offset>45504</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "854" name = "PIPE_NONE">
+    <Offset>42400</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--VRR-->
+  <Factor id = "855" name = "PIPE_A">
+    <Offset>60420</Offset>
+    <Bitmap>C0000000</Bitmap>
+    <Value>C0000000</Value>
+  </Factor>
+  <Factor id = "856" name = "PIPE_B">
+    <Offset>61420</Offset>
+    <Bitmap>C0000000</Bitmap>
+    <Value>C0000000</Value>
+  </Factor>
+  <Factor id = "857" name = "PIPE_C">
+    <Offset>62420</Offset>
+    <Bitmap>C0000000</Bitmap>
+    <Value>C0000000</Value>
+  </Factor>
+  <Factor id = "858" name = "PIPE_EDP">
+    <Offset>6F420</Offset>
+    <Bitmap>C0000000</Bitmap>
+    <Value>C0000000</Value>
+  </Factor>
+  <!--VRR_MAX-->
+  <Factor id = "859" name = "PIPE_A">
+    <Offset>60424</Offset>
+    <Bitmap>FFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "860" name = "PIPE_B">
+    <Offset>61424</Offset>
+    <Bitmap>FFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "861" name = "PIPE_C">
+    <Offset>62424</Offset>
+    <Bitmap>FFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "862" name = "PIPE_EDP">
+    <Offset>6F424</Offset>
+    <Bitmap>FFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <!--VRR_Min-->
+  <Factor id = "863" name = "PIPE_A">
+    <Offset>60434</Offset>
+    <Bitmap>FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "864" name = "PIPE_B">
+    <Offset>61434</Offset>
+    <Bitmap>FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "865" name = "PIPE_C">
+    <Offset>62434</Offset>
+    <Bitmap>FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "866" name = "PIPE_EDP">
+    <Offset>6F434</Offset>
+    <Bitmap>FFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+ <!--vrr_flipdone-->
+  <Factor id = "867" name = "PLANE_A">
+    <Offset>7019C</Offset>
+    <Bitmap>800</Bitmap>
+    <Value>800</Value>
+  </Factor>
+   <Factor id = "868" name = "PLANE_B">
+    <Offset>7119C</Offset>
+    <Bitmap>800</Bitmap>
+    <Value>800</Value>
+  </Factor>
+  <Factor id = "869" name = "PLANE_C">
+    <Offset>7219C</Offset>
+    <Bitmap>800</Bitmap>
+    <Value>800</Value>
+  </Factor>
+  
+  <!--GLK CDClock registers-->
+  <Factor id = "870" name = "PLANE_NONE">
+    <Offset>46000</Offset>
+    <Bitmap>7FF</Bitmap>
+    <Value>9C</Value>
+  </Factor>
+  <Factor id = "871" name = "PLANE_NONE">
+    <Offset>46000</Offset>
+    <Bitmap>7FF</Bitmap>
+    <Value>13B</Value>
+  </Factor>
+  <Factor id = "872" name = "PLANE_NONE">
+    <Offset>46000</Offset>
+    <Bitmap>7FF</Bitmap>
+    <Value>278</Value>
+  </Factor>
+
+  <!-- DP_TP_CTL -->
+  <Factor id = "873" name = "PORTA">
+    <Offset>64040</Offset>
+    <Bitmap>88000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "874" name = "PORTD">
+    <Offset>64340</Offset>
+    <Bitmap>88000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  
+  <!-- VACTIVE -->
+  <Factor id = "875" name = "PIPE_A">
+    <Offset>6000C</Offset>
+    <Bitmap>00000FFF</Bitmap>
+    <Value>0</Value>
+    <Deviation>1</Deviation>
+  </Factor>
+  <Factor id = "876" name = "PIPE_B">
+    <Offset>6100C</Offset>
+    <Bitmap>00000FFF</Bitmap>
+    <Value>0</Value>
+    <Deviation>1</Deviation>
+  </Factor>
+  <Factor id = "877" name = "PIPE_C">
+    <Offset>6200C</Offset>
+    <Bitmap>00000FFF</Bitmap>
+    <Value>0</Value>
+    <Deviation>1</Deviation>
+  </Factor>
+  <Factor id = "878" name = "PIPE_EDP">
+    <Offset>6F00C</Offset>
+    <Bitmap>00000FFF</Bitmap>
+    <Value>0</Value>
+    <Deviation>1</Deviation>
+  </Factor>
+  
+  <Factor id = "879" name = "PORTA">
+    <Offset>65f10</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+
+  <!-- TRANS_CONF_ENABLE -->
+  <Factor id = "880" name = "PIPE_A">
+    <Offset>70008</Offset>
+    <Bitmap>C0000000</Bitmap>
+    <Value>C0000000</Value>
+  </Factor>
+  <Factor id = "881" name = "PIPE_B">
+    <Offset>71008</Offset>
+    <Bitmap>C0000000</Bitmap>
+    <Value>C0000000</Value>
+  </Factor>
+  <Factor id = "882" name = "PIPE_C">
+    <Offset>72008</Offset>
+    <Bitmap>C0000000</Bitmap>
+    <Value>C0000000</Value>
+  </Factor>
+  <Factor id = "883" name = "PIPE_EDP">
+    <Offset>7F008</Offset>
+    <Bitmap>C0000000</Bitmap>
+    <Value>C0000000</Value>
+  </Factor>
+
+  <!-- PF_PD_ENABLE -->
+  <Factor id = "884" name = "PIPE_A">
+    <Offset>70008</Offset>
+    <Bitmap>00600000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "885" name = "PIPE_B">
+    <Offset>71008</Offset>
+    <Bitmap>00600000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "886" name = "PIPE_C">
+    <Offset>72008</Offset>
+    <Bitmap>00600000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "887" name = "PIPE_EDP">
+    <Offset>7F008</Offset>
+    <Bitmap>00600000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- TRANS_DDI_PORT_WIDTH -->
+  <Factor id = "888" name = "PIPE_A">
+    <Offset>60400</Offset>
+    <Bitmap>E</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "889" name = "PIPE_B">
+    <Offset>61400</Offset>
+    <Bitmap>E</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "890" name = "PIPE_C">
+    <Offset>62400</Offset>
+    <Bitmap>E</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "891" name = "PIPE_EDP">
+    <Offset>6F400</Offset>
+    <Bitmap>E</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- TRANS_DDI_MODE_SEL_DP_SST -->
+  <Factor id = "892" name = "PIPE_A">
+    <Offset>60400</Offset>
+    <Bitmap>7000000</Bitmap>
+    <Value>2000000</Value>
+  </Factor>
+  <Factor id = "893" name = "PIPE_B">
+    <Offset>61400</Offset>
+    <Bitmap>7000000</Bitmap>
+    <Value>2000000</Value>
+  </Factor>
+  <Factor id = "894" name = "PIPE_C">
+    <Offset>62400</Offset>
+    <Bitmap>7000000</Bitmap>
+    <Value>2000000</Value>
+  </Factor>
+  <Factor id = "895" name = "PIPE_EDP">
+    <Offset>6F400</Offset>
+    <Bitmap>7000000</Bitmap>
+    <Value>2000000</Value>
+  </Factor>
+
+  <Factor id = "896" name = "PORTA">
+    <Offset>64000</Offset>
+    <Bitmap>F000000</Bitmap>
+    <Value>90000000</Value>
+  </Factor>
+  
+  <Factor id = "897" name = "PORTA">
+    <Offset>64000</Offset>
+    <Bitmap>10010</Bitmap>
+    <Value>10</Value>
+  </Factor>
+
+  <!-- DDI_BUF_DP_PORT_WIDTH-->
+  <Factor id = "898" name = "PORTA">
+    <Offset>64000</Offset>
+    <Bitmap>E</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "899" name = "PORTB">
+    <Offset>64100</Offset>
+    <Bitmap>E</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "900" name = "PORTC">
+    <Offset>64200</Offset>
+    <Bitmap>E</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "901" name = "PORTD">
+    <Offset>64300</Offset>
+    <Bitmap>E</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "902" name = "PORTE">
+    <Offset>64400</Offset>
+    <Bitmap>E</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+
+  <!--PSR2 Registers for SKL+ platforms-->
+  <Factor id = "903" name = "PIPE_EDP">
+    <Offset>6F900</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "904" name = "PIPE_EDP">
+    <Offset>6F940</Offset>
+    <Bitmap>F0000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "905" name = "PIPE_EDP">
+    <Offset>6F940</Offset>
+    <Bitmap>0C000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!-- DITHERING_BPC_6-->
+  <Factor id = "906" name = "PLANE_A">
+    <Offset>70030</Offset>
+    <Bitmap>E0</Bitmap>
+    <Value>40</Value>
+  </Factor>
+  <Factor id = "907" name = "PLANE_B">
+    <Offset>71030</Offset>
+    <Bitmap>E0</Bitmap>
+    <Value>40</Value>
+  </Factor>
+  <Factor id = "908" name = "PLANE_C">
+    <Offset>72030</Offset>
+    <Bitmap>E0</Bitmap>
+    <Value>40</Value>
+  </Factor>
+
+  <!-- DITHERING_BPC_10-->
+  <Factor id = "909" name = "PLANE_A">
+    <Offset>70030</Offset>
+    <Bitmap>E0</Bitmap>
+    <Value>20</Value>
+  </Factor>
+  <Factor id = "910" name = "PLANE_B">
+    <Offset>71030</Offset>
+    <Bitmap>E0</Bitmap>
+    <Value>20</Value>
+  </Factor>
+  <Factor id = "911" name = "PLANE_C">
+    <Offset>72030</Offset>
+    <Bitmap>E0</Bitmap>
+    <Value>20</Value>
+  </Factor>
+
+  <!-- ASSR -->
+  <Factor id = "912" name = "PLANE_NONE">
+    <Offset>0000D</Offset>
+    <Bitmap>01</Bitmap>
+    <Value>01</Value>
+  </Factor>
+  <Factor id = "913" name = "PLANE_NONE">
+    <Offset>0010A</Offset>
+    <Bitmap>01</Bitmap>
+    <Value>01</Value>
+  </Factor>
+  <Factor id = "914" name = "PORTA">
+    <Offset>64040</Offset>
+    <Bitmap>00000040</Bitmap>
+    <Value>00000040</Value>
+  </Factor>
+  <Factor id = "915" name = "PORTD">
+    <Offset>64340</Offset>
+    <Bitmap>00000040</Bitmap>
+    <Value>00000040</Value>
+  </Factor>
+
+  <!--HDR registers KBL-->
+
+  <!-- HDR_BPC_10-->
+  <Factor id = "916" name = "PIPE_A">
+    <Offset>60400</Offset>
+    <Bitmap>700000</Bitmap>
+    <Value>100000</Value>
+  </Factor>
+  <Factor id = "917" name = "PIPE_B">
+    <Offset>61400</Offset>
+    <Bitmap>700000</Bitmap>
+    <Value>100000</Value>
+  </Factor>
+  <Factor id = "918" name = "PIPE_C">
+    <Offset>62400</Offset>
+    <Bitmap>700000</Bitmap>
+    <Value>100000</Value>
+  </Factor>
+  <Factor id = "919" name = "PIPE_EDP">
+    <Offset>6F400</Offset>
+    <Bitmap>700000</Bitmap>
+    <Value>300000</Value>
+  </Factor>
+  <!-- HDR_BPC_12-->
+  <Factor id = "920" name = "PIPE_A">
+    <Offset>60400</Offset>
+    <Bitmap>700000</Bitmap>
+    <Value>300000</Value>
+  </Factor>
+  <Factor id = "921" name = "PIPE_B">
+    <Offset>61400</Offset>
+    <Bitmap>700000</Bitmap>
+    <Value>300000</Value>
+  </Factor>
+  <Factor id = "922" name = "PIPE_C">
+    <Offset>62400</Offset>
+    <Bitmap>700000</Bitmap>
+    <Value>300000</Value>
+  </Factor>
+  <Factor id = "923" name = "PIPE_EDP">
+    <Offset>6F400</Offset>
+    <Bitmap>700000</Bitmap>
+    <Value>100000</Value>
+  </Factor>
+  <!--HDR_PIPECSC-->
+  <Factor id = "924" name = "PLANE_A">
+    <Offset>70180</Offset>
+    <Bitmap>800000</Bitmap>
+    <Value>800000</Value>
+  </Factor>
+  <Factor id = "925" name = "PLANE_B">
+    <Offset>71180</Offset>
+    <Bitmap>800000</Bitmap>
+    <Value>800000</Value>
+  </Factor>
+  <Factor id = "926" name = "PLANE_C">
+    <Offset>72180</Offset>
+    <Bitmap>800000</Bitmap>
+    <Value>800000</Value>
+  </Factor>
+  <!--HDR_PIPEGAMMA-->
+  <Factor id = "927" name = "PLANE_A">
+    <Offset>70180</Offset>
+    <Bitmap>40000000</Bitmap>
+    <Value>40000000</Value>
+  </Factor>
+  <Factor id = "928" name = "PLANE_B">
+    <Offset>71180</Offset>
+    <Bitmap>40000000</Bitmap>
+    <Value>40000000</Value>
+  </Factor>
+  <Factor id = "929" name = "PLANE_C">
+    <Offset>72180</Offset>
+    <Bitmap>40000000</Bitmap>
+    <Value>40000000</Value>
+  </Factor>
+  <!--HDR_PIPEGAMMA_MODE-->
+  <Factor id = "930" name = "PLANE_A">
+    <Offset>4A480</Offset>
+    <Bitmap>00000003</Bitmap>
+    <Value>1</Value>
+  </Factor>
+  <Factor id = "931" name = "PLANE_B">
+    <Offset>4AC80</Offset>
+    <Bitmap>00000003</Bitmap>
+    <Value>1</Value>
+  </Factor>
+  <Factor id = "932" name = "PLANE_C">
+    <Offset>4B480</Offset>
+    <Bitmap>00000003</Bitmap>
+    <Value>1</Value>
+  </Factor>
+  <!--VIDEO_DIP_VSC_DATA_0-->
+  <Factor id = "933" name = "PIPE_A">
+    <Offset>60320</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "934" name = "PIPE_B">
+    <Offset>61320</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "935" name = "PIPE_C">
+    <Offset>62320</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "936" name = "PIPE_EDP">
+    <Offset>6F320</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--HDR_CSCCOEFF-->
+  <Factor id = "937" name = "PLANE_A">
+    <Offset>49010</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "938" name = "PLANE_B">
+    <Offset>49110</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "939" name = "PLANE_C">
+    <Offset>49210</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--HDR_CSCPOSTOFF-->
+  <Factor id = "940" name = "PLANE_A">
+    <Offset>49040</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "941" name = "PLANE_B">
+    <Offset>49140</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "942" name = "PLANE_C">
+    <Offset>49240</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <!--WiGig Specific-->
+  <Factor id = "943" name = "PIPE_NONE">
+    <Offset>6E400</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id= "944" name="PIPE_NONE">
+    <Offset>6EC00</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id="945" name="PIPE_NONE">
+    <Offset>6E000</Offset>
+    <Bitmap>00000FFF</Bitmap>
+    <Value>0</Value>
+    <Deviation>1</Deviation>
+  </Factor>
+  <Factor id="946" name="PIPE_NONE">
+    <Offset>6E00C</Offset>
+    <Bitmap>00000FFF</Bitmap>
+    <Value>0</Value>
+    <Deviation>1</Deviation>
+  </Factor>
+  <Factor id="947" name="PIPE_NONE">
+    <Offset>0x7E050</Offset>
+    <Bitmap>FFFFFFFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id="948" name="PIPE_A">
+    <Offset>0x6E400</Offset>
+    <Bitmap>00007000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id="949" name="PIPE_B">
+    <Offset>0x6E400</Offset>
+    <Bitmap>00007000</Bitmap>
+    <Value>5000</Value>
+  </Factor>
+  <Factor id="950" name="PIPE_C">
+    <Offset>0x6E400</Offset>
+    <Bitmap>00007000</Bitmap>
+    <Value>6000</Value>
+  </Factor>
+  <Factor id="951" name="PIPE_A">
+    <Offset>0x6EC00</Offset>
+    <Bitmap>00007000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id="952" name="PIPE_B">
+    <Offset>0x6EC00</Offset>
+    <Bitmap>00007000</Bitmap>
+    <Value>5000</Value>
+  </Factor>
+  <Factor id="953" name="PIPE_C">
+    <Offset>0x6EC00</Offset>
+    <Bitmap>00007000</Bitmap>
+    <Value>6000</Value>
+  </Factor>
+  
+  <!--VDSC_ENABLED-->
+  <Factor id="954" name="PIPE_NONE">
+    <Offset>67404</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+
+  <!-- POWERWELL_PG1_ENABLED -->
+  <Factor id = "955" name = "PIPE_NONE">
+    <Offset>45404</Offset>
+    <Bitmap>3</Bitmap>
+    <Value>3</Value>
+  </Factor>
+  <!-- POWERWELL_PG2_ENABLED -->
+  <Factor id = "956" name = "PIPE_NONE">
+    <Offset>45404</Offset>
+    <Bitmap>C</Bitmap>
+    <Value>C</Value>
+  </Factor>
+  <!-- POWERWELL_PG3_ENABLED -->
+  <Factor id = "957" name = "PIPE_NONE">
+    <Offset>45404</Offset>
+    <Bitmap>30</Bitmap>
+    <Value>30</Value>
+  </Factor>
+  <!-- POWERWELL_PG4_ENABLED -->
+  <Factor id = "958" name = "PIPE_NONE">
+    <Offset>45404</Offset>
+    <Bitmap>C0</Bitmap>
+    <Value>C0</Value>
+  </Factor>
+  
+    <!-- PWR_WELL_CTL_DDI2 -->
+  <Factor id = "959" name = "PORTA">
+    <Offset>45454</Offset>
+    <Bitmap>2</Bitmap>
+    <Value>2</Value>
+  </Factor>
+  <Factor id = "960" name = "PORTB">
+    <Offset>45454</Offset>
+    <Bitmap>8</Bitmap>
+    <Value>8</Value>
+  </Factor>
+  <Factor id = "961" name = "PORTC">
+    <Offset>45454</Offset>
+    <Bitmap>20</Bitmap>
+    <Value>20</Value>
+  </Factor>
+  <Factor id = "962" name = "PORTD">
+    <Offset>45454</Offset>
+    <Bitmap>80</Bitmap>
+    <Value>80</Value>
+  </Factor>
+  <Factor id = "963" name = "PORTE">
+    <Offset>45454</Offset>
+    <Bitmap>200</Bitmap>
+    <Value>200</Value>
+  </Factor>
+  <Factor id = "964" name = "PORTF">
+    <Offset>45454</Offset>
+    <Bitmap>800</Bitmap>
+    <Value>800</Value>
+  </Factor>
+
+  <!-- PWR_WELL_CTL_AUX2 -->
+  <Factor id = "965" name = "PORTA">
+    <Offset>45444</Offset>
+    <Bitmap>2</Bitmap>
+    <Value>2</Value>
+  </Factor>
+  <Factor id = "966" name = "PORTB">
+    <Offset>45444</Offset>
+    <Bitmap>8</Bitmap>
+    <Value>8</Value>
+  </Factor>
+  <Factor id = "967" name = "PORTC">
+    <Offset>45444</Offset>
+    <Bitmap>20</Bitmap>
+    <Value>20</Value>
+  </Factor>
+  <Factor id = "968" name = "PORTD">
+    <Offset>45444</Offset>
+    <Bitmap>80</Bitmap>
+    <Value>80</Value>
+  </Factor>
+  <Factor id = "969" name = "PORTE">
+    <Offset>45444</Offset>
+    <Bitmap>200</Bitmap>
+    <Value>200</Value>
+  </Factor>
+  <Factor id = "970" name = "PORTF">
+    <Offset>45444</Offset>
+    <Bitmap>800</Bitmap>
+    <Value>800</Value>
+  </Factor>
+  <!-- MBO_NV12_EN -->
+  <Factor id = "971" name = "PLANE_A">
+    <Offset>70180</Offset>
+    <Bitmap>0F000000</Bitmap>
+    <Value>1000000</Value>
+  </Factor>
+  <!--Audio CHV(BSW) -->
+  <Factor id = "980" name = "PLANE_A">
+    <Offset>1E50C0</Offset>
+    <Bitmap>7</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "981" name = "PLANE_B">
+    <Offset>1E50C0</Offset>
+    <Bitmap>70</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "982" name = "PLANE_C">
+    <Offset>1E50C0</Offset>
+    <Bitmap>700</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "983" name = "PLANE_A">
+    <Offset>1E50C0</Offset>
+    <Bitmap>1</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "984" name = "PLANE_B">
+    <Offset>1E50C0</Offset>
+    <Bitmap>10</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "985" name = "PLANE_C">
+    <Offset>1E50C0</Offset>
+    <Bitmap>100</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "990" name = "PIPE_A">
+    <Offset>1E0400</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "991" name = "PIPE_B">
+    <Offset>1E1400</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "992" name = "PIPE_C">
+    <Offset>1E2400</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "993" name = "PIPE_EDP">
+    <Offset>1EF400</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <!--Audio CHV(BSW) -->
+
+  <!--Python MPO Registers-->
+  <Factor id = "994" name = "PLANE_A">
+    <Offset>70180</Offset>
+    <Bitmap>0F000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "995" name = "PLANE_A">
+    <Offset>70280</Offset>
+    <Bitmap>0F000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "996" name = "PLANE_A">
+    <Offset>70380</Offset>
+    <Bitmap>0F000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <Factor id = "997" name = "PLANE_A">
+    <Offset>70180</Offset>
+    <Bitmap>00001C00</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "998" name = "PLANE_A">
+    <Offset>70280</Offset>
+    <Bitmap>00001C00</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "999" name = "PLANE_A">
+    <Offset>70380</Offset>
+    <Bitmap>00001C00</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <Factor id = "1000" name = "PLANE_A">
+    <Offset>68180</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "1001" name = "PLANE_A">
+    <Offset>68280</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <Factor id = "1002" name = "PLANE_A">
+    <Offset>68170</Offset>
+    <Bitmap>1FFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "1003" name = "PLANE_A">
+    <Offset>68270</Offset>
+    <Bitmap>1FFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <Factor id = "1004" name = "PLANE_A">
+    <Offset>68170</Offset>
+    <Bitmap>00000FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "1005" name = "PLANE_A">
+    <Offset>68270</Offset>
+    <Bitmap>00000FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <Factor id = "1006" name = "PLANE_A">
+    <Offset>68174</Offset>
+    <Bitmap>1FFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "1007" name = "PLANE_A">
+    <Offset>68274</Offset>
+    <Bitmap>1FFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <Factor id = "1008" name = "PLANE_A">
+    <Offset>68174</Offset>
+    <Bitmap>00000FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "1009" name = "PLANE_A">
+    <Offset>68274</Offset>
+    <Bitmap>00000FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <Factor id = "1010" name = "PLANE_A">
+    <Offset>7018C</Offset>
+    <Bitmap>00001FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "1011" name = "PLANE_A">
+    <Offset>7028C</Offset>
+    <Bitmap>00001FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "1012" name = "PLANE_A">
+    <Offset>7038C</Offset>
+    <Bitmap>00001FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <Factor id = "1013" name = "PLANE_A">
+    <Offset>7018C</Offset>
+    <Bitmap>0FFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "1014" name = "PLANE_A">
+    <Offset>7028C</Offset>
+    <Bitmap>0FFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "1015" name = "PLANE_A">
+    <Offset>7038C</Offset>
+    <Bitmap>0FFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <Factor id = "1016" name = "PLANE_A">
+    <Offset>70190</Offset>
+    <Bitmap>00001FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "1017" name = "PLANE_A">
+    <Offset>70290</Offset>
+    <Bitmap>00001FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "1018" name = "PLANE_A">
+    <Offset>70390</Offset>
+    <Bitmap>00001FFF</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+  <Factor id = "1019" name = "PLANE_A">
+    <Offset>70190</Offset>
+    <Bitmap>0FFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "1020" name = "PLANE_A">
+    <Offset>70290</Offset>
+    <Bitmap>0FFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+  <Factor id = "1021" name = "PLANE_A">
+    <Offset>70390</Offset>
+    <Bitmap>0FFF0000</Bitmap>
+    <Value>0</Value>
+  </Factor>
+
+<!--VRR_Status-->
+  <Factor id = "1022" name = "PIPE_A">
+    <Offset>6042C</Offset>
+    <Bitmap>8000000</Bitmap>
+    <Value>8000000</Value>
+  </Factor>
+  <Factor id = "1023" name = "PIPE_B">
+    <Offset>6142C</Offset>
+    <Bitmap>8000000</Bitmap>
+    <Value>8000000</Value>
+  </Factor>
+  <Factor id = "1024" name = "PIPE_C">
+    <Offset>6242C</Offset>
+    <Bitmap>8000000</Bitmap>
+    <Value>8000000</Value>
+  </Factor>
+  <Factor id = "1025" name = "PIPE_EDP">
+    <Offset>6F42C</Offset>
+    <Bitmap>8000000</Bitmap>
+    <Value>8000000</Value>
+  </Factor>  
+
+  <!--HDMI_VIDEO_DIP_CTL-->
+  <Factor id = "1026" name = "PIPE_A">
+    <Offset>60200</Offset>
+    <Bitmap>1001</Bitmap>
+    <Value>1001</Value>
+  </Factor>
+  <Factor id = "1027" name = "PIPE_B">
+    <Offset>61200</Offset>
+    <Bitmap>1001</Bitmap>
+    <Value>1001</Value>
+  </Factor>
+  <Factor id = "1028" name = "PIPE_C">
+    <Offset>62200</Offset>
+    <Bitmap>1001</Bitmap>
+    <Value>1001</Value>
+  </Factor>
+  <Factor id = "1029" name = "PIPE_EDP">
+    <Offset>63200</Offset>
+    <Bitmap>1001</Bitmap>
+    <Value>1001</Value>
+  </Factor>
+<!--TRANS_CONF_ENABLE_BIT-->
+  <Factor id = "1030" name = "PIPE_A">
+    <Offset>70008</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "1031" name = "PIPE_B">
+    <Offset>71008</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "1032" name = "PIPE_C">
+    <Offset>72008</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "1033" name = "PIPE_EDP">
+    <Offset>7F008</Offset>
+    <Bitmap>80000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+
+  <!--TRANS_DDI_MODE_SEL_HDMI-->
+  <Factor id = "1034" name = "PIPE_A">
+    <Offset>60400</Offset>
+    <Bitmap>87000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "1035" name = "PIPE_B">
+    <Offset>61400</Offset>
+    <Bitmap>87000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "1036" name = "PIPE_C">
+    <Offset>62400</Offset>
+    <Bitmap>87000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "1037" name = "PIPE_EDP">
+    <Offset>6F400</Offset>
+    <Bitmap>87000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+
+  <!-- DP_TP_CTL -->
+  <Factor id = "1038" name = "PORTB">
+    <Offset>64140</Offset>
+    <Bitmap>88000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "1039" name = "PORTC">
+    <Offset>64240</Offset>
+    <Bitmap>88000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "1040" name = "PORTE">
+    <Offset>64440</Offset>
+    <Bitmap>88000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+  <Factor id = "1041" name = "PORTF">
+    <Offset>64540</Offset>
+    <Bitmap>88000000</Bitmap>
+    <Value>80000000</Value>
+  </Factor>
+
+  <!-- PWR_WELL_CTL2_Register_ALL_ON -->
+  <Factor id = "1042" name = "NONE">
+    <Offset>45404</Offset>
+    <Bitmap>FF</Bitmap>
+    <Value>FF</Value>
+  </Factor>
+  <!-- PWR_WELL_CTL_DDI2_ALL_ON -->
+  <Factor id = "1043" name = "NONE">
+    <Offset>45454</Offset>
+    <Bitmap>BFF</Bitmap>
+    <Value>BFF</Value>
+  </Factor>
+</Factors>
+
+
+

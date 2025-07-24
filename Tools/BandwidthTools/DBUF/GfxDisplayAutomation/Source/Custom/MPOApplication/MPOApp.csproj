@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{35B95A01-400D-4975-B735-3D5E6E2F25FC}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MPOApp</RootNamespace>
+    <AssemblyName>MPOApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MPOApp.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ULT_Framework.cs" />
+    <Compile Include="ULT_FW_EscapeParams.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Assemblies\DumpFiles\1024_768_X_RGB.8.8.8.8\Desktop.bin" />
+    <None Include="Assemblies\DumpFiles\1024_768_Y_RGB.8.8.8.8\circle_1024_768.bin" />
+    <None Include="Assemblies\DumpFiles\1024_768_Y_RGB.8.8.8.8\Desktop.bin" />
+    <None Include="Assemblies\DumpFiles\1024_768_Y_RGB.8.8.8.8\DeskTop5_1024_768.bin" />
+    <None Include="Assemblies\DumpFiles\1360_768_X_RGB.8.8.8.8\Desktop.bin" />
+    <None Include="Assemblies\DumpFiles\1360_768_Y_RGB.8.8.8.8\circle_1360_768.bin" />
+    <None Include="Assemblies\DumpFiles\1360_768_Y_RGB.8.8.8.8\Desktop.bin" />
+    <None Include="Assemblies\DumpFiles\1360_768_Y_RGB.8.8.8.8\deskTop4a_1360_768.bin" />
+    <None Include="Assemblies\DumpFiles\1360_768_Y_RGB.8.8.8.8\DeskTop4b_1360_768.bin" />
+    <None Include="Assemblies\DumpFiles\1680_1050_X_RGB.8.8.8.8\Desktop.bin" />
+    <None Include="Assemblies\DumpFiles\1680_1050_Y_RGB.8.8.8.8\Desktop.bin" />
+    <None Include="Assemblies\DumpFiles\1920_1080_X_RGB.8.8.8.8\Blue - Copy.bin" />
+    <None Include="Assemblies\DumpFiles\1920_1080_X_RGB.8.8.8.8\Blue.bin" />
+    <None Include="Assemblies\DumpFiles\1920_1080_X_RGB.8.8.8.8\charmWindow.bin" />
+    <None Include="Assemblies\DumpFiles\1920_1080_X_RGB.8.8.8.8\Desktop.bin" />
+    <None Include="Assemblies\DumpFiles\1920_1080_X_RGB.8.8.8.8\Green - Copy.bin" />
+    <None Include="Assemblies\DumpFiles\1920_1080_X_RGB.8.8.8.8\Green.bin" />
+    <None Include="Assemblies\DumpFiles\1920_1080_X_RGB.8.8.8.8\Red - Copy.bin" />
+    <None Include="Assemblies\DumpFiles\1920_1080_X_RGB.8.8.8.8\Red.bin" />
+    <None Include="Assemblies\DumpFiles\1920_1080_X_RGB.8.8.8.9\Desktop.bin" />
+    <None Include="Assemblies\DumpFiles\1920_1080_Y_NV12\NV12_Plan1_1920x1080.bin" />
+    <None Include="Assemblies\DumpFiles\1920_1080_Y_NV12\NV12_PLANE2_1920_1080.bin" />
+    <None Include="Assemblies\DumpFiles\1920_1080_Y_NV12\XBoxClip.bin" />
+    <None Include="Assemblies\DumpFiles\1920_1080_Y_RGB.8.8.8.8\Blue.bin" />
+    <None Include="Assemblies\DumpFiles\1920_1080_Y_RGB.8.8.8.8\Charms_1920_1080.bin" />
+    <None Include="Assemblies\DumpFiles\1920_1080_Y_RGB.8.8.8.8\circle_1920_1080.bin" />
+    <None Include="Assemblies\DumpFiles\1920_1080_Y_RGB.8.8.8.8\Desktop.bin" />
+    <None Include="Assemblies\DumpFiles\1920_1080_Y_RGB.8.8.8.8\DeskTop1_1920_1080.bin" />
+    <None Include="Assemblies\DumpFiles\1920_1080_Y_RGB.8.8.8.8\DeskTop2_1920_1080.bin" />
+    <None Include="Assemblies\DumpFiles\1920_1080_Y_RGB.8.8.8.8\DeskTop3_1920_1080.bin" />
+    <None Include="Assemblies\DumpFiles\1920_1080_Y_RGB.8.8.8.8\Green.bin" />
+    <None Include="Assemblies\DumpFiles\1920_1080_Y_RGB.8.8.8.8\RC_Desktop_CS.bin" />
+    <None Include="Assemblies\DumpFiles\1920_1080_Y_RGB.8.8.8.8\rc_NEW - Copy.bin" />
+    <None Include="Assemblies\DumpFiles\1920_1080_Y_RGB.8.8.8.8\rc_NEW.bin" />
+    <None Include="Assemblies\DumpFiles\1920_1080_Y_RGB.8.8.8.8\Red.bin" />
+    <None Include="Assemblies\DumpFiles\1920_1080_Y_RGB.8.8.8.8\yTileDesktop.bin" />
+    <None Include="Assemblies\DumpFiles\1920_800_Y_NV12_YUV_4_2_0\newNV12_1920_1080.bin" />
+    <None Include="Assemblies\DumpFiles\1920_800_Y_NV12_YUV_4_2_0\NV12_1920_800.bin" />
+    <None Include="Assemblies\DumpFiles\1920_800_Y_NV12_YUV_4_2_0\NV12_Plan1_1920x1080.bin" />
+    <None Include="Assemblies\DumpFiles\1920_800_Y_NV12_YUV_4_2_0\NV12_PLANE2_1920_1080.bin" />
+    <None Include="Assemblies\DumpFiles\1920_800_Y_NV12_YUV_4_2_0\XBoxClip.bin" />
+    <None Include="Assemblies\DumpFiles\CharmWindow\charmWindow.bin" />
+    <None Include="Assemblies\DumpFiles\YTileDesktop\yTileDesktop.bin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assemblies\Config\ULTParams1.xml" />
+    <Content Include="Assemblies\Config\ULTParams10.xml" />
+    <Content Include="Assemblies\Config\ULTParams11.xml" />
+    <Content Include="Assemblies\Config\ULTParams12.xml" />
+    <Content Include="Assemblies\Config\ULTParams2.xml" />
+    <Content Include="Assemblies\Config\ULTParams3.xml" />
+    <Content Include="Assemblies\Config\ULTParams4.xml" />
+    <Content Include="Assemblies\Config\ULTParams5 - Original.xml" />
+    <Content Include="Assemblies\Config\ULTParams5.xml" />
+    <Content Include="Assemblies\Config\ULTParams6 - Copy.xml" />
+    <Content Include="Assemblies\Config\ULTParams6 - Original.xml" />
+    <Content Include="Assemblies\Config\ULTParams6.xml" />
+    <Content Include="Assemblies\Config\ULTParams7.xml" />
+    <Content Include="Assemblies\Config\ULTParams7new.xml" />
+    <Content Include="Assemblies\Config\ULTParams8.xml" />
+    <Content Include="Assemblies\Config\ULTParams9 - original.xml" />
+    <Content Include="Assemblies\Config\ULTParams9.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>XCopy "$(ProjectDir)Assemblies" "$(TargetDir)" /Y /S /E</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

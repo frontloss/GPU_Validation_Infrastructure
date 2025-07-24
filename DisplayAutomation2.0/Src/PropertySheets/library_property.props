@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+
+  <PropertyGroup>
+    <!-- This properties file uses variables defined in 'common_property.props' -->
+    <WdkUmInc>$(WDKContentRoot)\Include\$(WDKVersion)\um</WdkUmInc>
+    <WdkSharedInc>$(WDKContentRoot)\Include\$(WDKVersion)\shared</WdkSharedInc>
+    <WdkUcrtInc>$(WDKContentRoot)\Include\$(WDKVersion)\ucrt</WdkUcrtInc>
+  </PropertyGroup>
+ 
+  <ItemDefinitionGroup>
+    <ClCompile>
+        <AdditionalIncludeDirectories>$(WdkUmInc);$(WdkSharedInc);$(WdkUcrtInc)</AdditionalIncludeDirectories>
+    </ClCompile>
+    
+    <Link>
+        <AdditionalLibraryDirectories>$(WDKContentRoot)\Lib\$(WDKVersion)\ucrt\$(PlatformTarget)</AdditionalLibraryDirectories>
+    </Link>
+
+  </ItemDefinitionGroup>
+  
+</Project>

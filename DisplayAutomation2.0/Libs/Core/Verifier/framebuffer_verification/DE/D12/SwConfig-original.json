@@ -1,0 +1,465 @@
+{
+  "pipe": {
+    "name": "pipeA",
+    "output": "pipeAoutput.png",
+    "modeSetBpc": 12,
+    "widthBeforeScaling": 1920,
+    "heightBeforeScaling": 1080,
+    "widthAfterScaling": 1920,
+    "heightAfterScaling": 1080,
+    "computePrecision": "HW",
+    "videoEncodingBitRateInKbps": 8000,
+    "fullRangeVideoEncoding": true,
+    "components": [
+      {
+        "plane": {
+          "name": "plane1",
+          "enable": true,
+          "positionX": 0,
+          "positionY": 0,
+          "input": "1.png",
+          "videoStartTime": "00:00:00:000",
+          "videoEndTime": "99:59:59:999",
+          "controlPresentationRate": true,
+          "components": [
+            {
+              "1dLut": {
+                "name": "plane1precscLut",
+                "enable": false,
+                "data": "srgbdegamma"
+              }
+            },
+            {
+              "csc": {
+                "name": "plane1csc",
+                "enable": false,
+                "preoffsets": [
+                  0,
+                  0,
+                  0
+                ],
+                "coefficients": [
+                  1.5,
+                  0,
+                  0,
+                  0,
+                  1.0,
+                  0,
+                  0,
+                  0,
+                  1.0
+                ],
+                "postoffsets": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            {
+              "1dLut": {
+                "name": "plane1postcscLut",
+                "enable": false,
+                "data": [
+                  0,
+                  524288,
+                  1048576,
+                  1572864,
+                  2097152,
+                  2621440,
+                  3145728,
+                  3670016,
+                  4194304,
+                  4718592,
+                  5242880,
+                  5767168,
+                  6291456,
+                  6815744,
+                  7340032,
+                  7864320,
+                  8388608,
+                  8912895,
+                  9437183,
+                  9961471,
+                  10485759,
+                  11010047,
+                  11534335,
+                  12058623,
+                  12582911,
+                  13107199,
+                  13631487,
+                  14155775,
+                  14680063,
+                  15204351,
+                  15728639,
+                  16252927,
+                  16777215
+                ]
+              }
+            },
+            {
+              "D12ToneMappingLut": {
+                "name": "plane1ToneMappingtwosegementedLut",
+                "enable": false,
+                "data": [
+                  16777215,
+                  14180723,
+                  13278579,
+                  12977864,
+                  11978488,
+                  10325375,
+                  9223299,
+                  8377309,
+                  7529051,
+                  6869296,
+                  6341492,
+                  5841524,
+                  5424636,
+                  5071884,
+                  4769525,
+                  4507481,
+                  4278192,
+                  4075881,
+                  3849443,
+                  3646841,
+                  3464498,
+                  3299522,
+                  3149544,
+                  3012607,
+                  2887082,
+                  2771599,
+                  2664999,
+                  2566295,
+                  2474642,
+                  2389309,
+                  2309665,
+                  2235160,
+                  2165311,
+                  2099696,
+                  2037940,
+                  1979713,
+                  1924721,
+                  1872702,
+                  1823420,
+                  1776666,
+                  1732249,
+                  1689999
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "plane": {
+          "name": "plane2",
+          "enable": false,
+          "positionX": 0,
+          "positionY": 0,
+          "input": "2.png",
+          "videoStartTime": "00:00:00:000",
+          "videoEndTime": "99:59:59:999",
+          "controlPresentationRate": true,
+          "components": [
+            {
+              "1dLut": {
+                "name": "plane2precscLut",
+                "enable": false,
+                "data": "srgbdegamma"
+              }
+            },
+            {
+              "csc": {
+                "name": "plane2csc",
+                "enable": false,
+                "preoffsets": [
+                  0,
+                  0,
+                  0
+                ],
+                "coefficients": [
+                  1.0,
+                  0,
+                  0,
+                  0,
+                  1.0,
+                  0,
+                  0,
+                  0,
+                  1.0
+                ],
+                "postoffsets": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            {
+              "1dLut": {
+                "name": "plane2postcscLut",
+                "enable": false,
+                "data": "srgbdegamma"
+              }
+            },
+            {
+              "D12ToneMappingLut": {
+                "name": "plane2ToneMappingLut",
+                "enable": false,
+                "data": [
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "plane": {
+          "name": "plane3",
+          "enable": false,
+          "positionX": 0,
+          "positionY": 0,
+          "input": "3.png",
+          "videoStartTime": "00:00:00:000",
+          "videoEndTime": "99:59:59:999",
+          "controlPresentationRate": true,
+          "components": [
+            {
+              "1dLut": {
+                "name": "plane3precscLut",
+                "enable": false,
+                "data": "srgbdegamma"
+              }
+            },
+            {
+              "csc": {
+                "name": "plane3csc",
+                "enable": false,
+                "preoffsets": [
+                  0,
+                  0,
+                  0
+                ],
+                "coefficients": [
+                  1.5,
+                  0,
+                  0,
+                  0,
+                  1.0,
+                  0,
+                  0,
+                  0,
+                  1.0
+                ],
+                "postoffsets": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            {
+              "1dLut": {
+                "name": "plane3postcscLut",
+                "enable": false,
+                "data": "srgbdegamma"
+              }
+            },
+            {
+              "D12ToneMappingLut": {
+                "name": "plan3ToneMappingLut",
+                "enable": false,
+                "data": [
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216,
+                  16777216
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "blender": {
+          "name": "blender"
+        }
+      },
+      {
+        "1dLut": {
+          "name": "pipeprecscLut",
+          "enable": false,
+          "data": "eoTF2084"
+        }
+      },
+      {
+        "csc": {
+          "name": "pipecsc",
+          "enable": false,
+          "preoffsets": [
+            0,
+            0,
+            0
+          ],
+          "coefficients": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "postoffsets": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "D11PipeMSLut": {
+          "name": "pipePostCscEOTFLut",
+          "enable": false,
+          "data": "oetf2084"
+        }
+      },
+      {
+        "1dLut": {
+          "name": "pipepostcscLut",
+          "enable": false,
+          "data": "srgbgamma"
+        }
+      },
+      {
+        "3dLut": {
+          "name": "pipe3dLut",
+          "enable": false,
+          "input": "c:\\intel\\colormodel\\internal\\Noblue.bin"
+        }
+      },
+      {
+        "Lace": {
+          "name": "pipelace",
+          "enable": false,
+          "LaceLuxValue": 1500,
+          "LaceAggressivenessLevel": 1
+        }
+      },
+      {
+        "Dpst": {
+          "name": "pipedpst",
+          "enable": false,
+          "DpstAggressivenessLevel": 3
+        }
+      },
+      {
+        "Scaler": {
+          "name": "scaler",
+          "enable": false,
+          "filterMode": "MEDIUM",
+          "horizontalFilterCoeff": [
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0
+          ],
+          "verticalFilterCoeff": [
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    ]
+  }
+}

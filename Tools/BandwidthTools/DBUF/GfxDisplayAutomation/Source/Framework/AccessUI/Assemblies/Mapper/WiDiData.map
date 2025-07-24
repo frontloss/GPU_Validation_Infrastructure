@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Data>
+  <HostName id ="NGET-BW1-624">
+    <ReceverId>SBWD DD7F1F-SBWD100A</ReceverId>
+  </HostName>
+  <HostName id ="NGET-HW1-639">
+    <ReceverId>SBWD DCA69A-SBWD100A</ReceverId>
+  </HostName>
+  <HostName id ="NGET-HW1-639">
+    <ReceverId>SBWD DCA7A2-SBWD100A</ReceverId>
+  </HostName>
+</Data>

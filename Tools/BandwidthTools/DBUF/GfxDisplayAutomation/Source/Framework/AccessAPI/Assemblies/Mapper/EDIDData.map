@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<EDIDData>
+  <!--By default test script will randomly select edid based on display type--> 
+  <!--If selection mode is true test script will try to plug below mention edid-->
+  <Default_EDID selection_mode ="true">
+    <Display type ="EDP" edid ="EDP_1920_1080.EDID"></Display>
+    <Display type ="DP" edid ="DP_3011.EDID"></Display>
+    <Display type ="DP_1" edid ="DP_HP_ZR2240W.EDID"></Display>
+    <Display type ="DP_2" edid ="DP_3011.EDID"></Display>
+    <Display type ="HDMI" edid ="HDMI_Dell_3011.EDID"></Display>
+    <Display type ="HDMI_1" edid ="HDMI_DELL_U2711_XVYCC.EDID"></Display>
+    <Display type ="HDMI_2" edid ="HDMI_Dell_3011.EDID"></Display>
+    <Display type ="WIGIG_DP1" edid="WIGIG_DP_3011.EDID"></Display>
+    <Display type ="WIGIG_DP2" edid="WIGIG_DELL_XvYcc_U2410.EDID"></Display>
+  </Default_EDID>
+</EDIDData>

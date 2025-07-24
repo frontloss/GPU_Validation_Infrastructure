@@ -1,0 +1,107 @@
+;
+; File Name: GfxValSimDriver.inf
+; Install information file for GfxValSimDriver Driver
+;
+; File created on 03/02/2017
+; File updated on 
+;
+;--------- Version Section ---------------------------------------------------
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGUID={4d36e97d-e325-11ce-bfc1-08002be10318}
+Provider=%Provider%
+DriverVer=03/02/2017,0.0.0.1
+CatalogFile=GfxValSimDriver.cat
+
+;--------- DestinationDirs Section -------------------------------------------
+
+[DestinationDirs]
+DefaultDestDir = 10
+GfxValSimDriver_Files = 12
+
+;--------- SourceDiskNames and SourceDiskFiles Section -----------------------
+
+[SourceDisksNames]
+1 = %DiskId1%,,,""
+
+[SourceDisksFiles]
+GfxValSimDriver.sys  = 1,,
+
+;--------- Manufacturer and Models Sections ----------------------------------
+
+[Manufacturer]
+%MfgName% = GfxValSimDriver_Mfg,NTamd64
+
+[GfxValSimDriver_Mfg.NTamd64]
+%GfxValSimDriver_DeviceDesc%=GfxValSimDriver_DDI,  root\umbus
+
+;---------- DDInstall Sections -----------------------------------------------
+
+[GfxValSimDriver_DDI]
+CopyFiles=GfxValSimDriver_Files
+
+; --------- Windows NT -------------------------------------------------------
+
+[GfxValSimDriver_DDI.NT]
+CopyFiles=GfxValSimDriver_Files
+
+[GfxValSimDriver_DDI.NT.Services]
+Addservice = GfxValSimDriver, %FLG_ADDREG_NOCLOBBER%, GfxValSimDriver_Service
+
+; --------- Service ----------------------------------------------------------
+
+[GfxValSimDriver_Service]
+DisplayName    = %GfxValSimDriver_SvcDesc%
+ServiceType    = %SERVICE_KERNEL_DRIVER%
+StartType      = %SERVICE_BOOT_START%
+ErrorControl   = %SERVICE_ERROR_NORMAL%
+ServiceBinary  = %12%\GfxValSimDriver.sys
+LoadOrderGroup = Extended Base
+
+; --------- Files ------------------------------------------------------------
+
+[GfxValSimDriver_Files]
+GfxValSimDriver.sys,,,2
+
+;--------- Strings Section ---------------------------------------------------
+
+[Strings]
+Provider = "Intel"
+MfgName = "Intel Graphics Validation"
+GfxValSimDriver_DeviceDesc = "Intel(R) Gfx Val Simulation Driver"
+GfxValSimDriver_SvcDesc = "GfxValSimDriver Service"
+DiskId1 = "GfxValSimDriver Device Installation Disk #1"
+
+REG_SZ                      = 0x00000000
+REG_MULTI_SZ                = 0x00010000
+REG_EXPAND_SZ               = 0x00020000
+REG_BINARY                  = 0x00000001
+REG_DWORD                   = 0x00010001
+REG_NONE                    = 0x00020001
+
+SERVICE_KERNEL_DRIVER       = 0x00000001
+SERVICE_FILE_SYSTEM_DRIVER  = 0x00000002
+SERVICE_ADAPTER             = 0x00000004
+SERVICE_RECOGNIZER_DRIVER   = 0x00000008
+
+SERVICE_BOOT_START          = 0x0
+SERVICE_SYSTEM_START        = 0x1
+SERVICE_AUTO_START          = 0x2
+SERVICE_DEMAND_START        = 0x3
+SERVICE_DISABLED            = 0x4
+
+SERVICE_ERROR_IGNORE        = 0x00000000
+SERVICE_ERROR_NORMAL        = 0x00000001
+SERVICE_ERROR_SEVERE        = 0x00000002
+SERVICE_ERROR_CRITICAL      = 0x00000003
+
+FLG_ADDREG_NOCLOBBER        = 0x00000002
+FLG_ADDREG_DELVAL           = 0x00000004
+FLG_ADDREG_APPEND           = 0x00000008
+FLG_ADDREG_KEYONLY          = 0x00000010
+FLG_ADDREG_OVERWRITEONLY    = 0x00000020
+FLG_ADDREG_64BITKEY         = 0x00001000
+FLG_ADDREG_KEYONLY_COMMON   = 0x00002000
+FLG_ADDREG_32BITKEY         = 0x00004000

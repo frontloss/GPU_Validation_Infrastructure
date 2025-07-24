@@ -1,0 +1,7 @@
+Run("pywin32-220.win-amd64-py2.7.exe")
+WinWaitActive("Setup")
+Send("Enter")
+Send("!N")
+Send("!N")
+Sleep(20000)
+Send("!{F4}")

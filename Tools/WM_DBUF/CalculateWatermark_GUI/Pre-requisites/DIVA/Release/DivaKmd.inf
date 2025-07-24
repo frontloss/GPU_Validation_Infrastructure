@@ -1,0 +1,150 @@
+;=====================================================================
+;
+; Copyright (c) Intel Corporation (2015).
+;
+; INTEL MAKES NO WARRANTY OF ANY KIND REGARDING THE CODE.  THIS CODE IS
+; LICENSED ON AN "AS IS" BASIS AND INTEL WILL NOT PROVIDE ANY SUPPORT,
+; ASSISTANCE, INSTALLATION, TRAINING OR OTHER SERVICES.  INTEL DOES NOT
+; PROVIDE ANY UPDATES, ENHANCEMENTS OR EXTENSIONS.  INTEL SPECIFICALLY
+; DISCLAIMS ANY WARRANTY OF MERCHANTABILITY, NONINFRINGEMENT, FITNESS FOR ANY
+; PARTICULAR PURPOSE, OR ANY OTHER WARRANTY.  Intel disclaims all liability,
+; including liability for infringement of any proprietary rights, relating to
+; use of the code. No license, express or implied, by estoppel or otherwise,
+; to any intellectual property rights is granted herein.
+;
+;=====================================================================
+
+;
+; File Name: DivaKmd.inf
+; Install information file for DIVA (Driver for Intel Validation Apps) KMD
+; Only mandatory sections are provided for.
+;
+
+;--------- 'Version' Section --------------------------------------------------
+
+[Version]
+Signature   = "$WINDOWS NT$"
+Class       = DIVA
+ClassGUID   = {3629E2AD-4561-4CF5-A8CE-24412E853CC7}; GUID generated for 'DIVA' class devices
+Provider    = %OrganizationName%
+CatalogFile = DivaKmd.cat
+DriverVer=02/10/2017,17.2.17.404
+
+;--------- 'SourceDisksNames' and 'SourceDiskFiles' Section -------------------
+
+[SourceDisksNames]
+; FORMAT: diskid = disk-description[, [tag-or-cab-file], [unused], [path], [flags]]
+1 = %DivaDiskDesc%, , , ""
+
+[SourceDisksFiles]
+; FORMAT: fileName = diskid[, [subdir], [size]]
+DivaKmd.sys = 1, ,
+
+;--------- 'DestinationDirs' Section ------------------------------------------
+
+[DestinationDirs]
+DefaultDestDir = 10; Windows directory, equivalent to %SystemRoot%
+DIVA_Device_CopyFiles  = 12; Drivers directory, equivalent to %SystemRoot%\system32\drivers
+
+; A ClassInstall32 section installs a new device setup class for devices in the new class
+[ClassInstall32]
+Addreg=DivaClassReg
+
+; Add-reg-section references one or more named sections that contain 
+; class-specific value entries to be written into the registry
+[DivaClassReg]
+HKR,,,0,%ClassName%
+
+
+;--------- 'Manufacturer' and 'Models' Sections -------------------------------
+
+[Manufacturer]
+; FORMAT: %strkey% = models-section-name[, TargetOSVersion]
+%DivaMfgName% = DIVA_Device_Model, NTamd64
+
+[DIVA_Device_Model.NTamd64]
+; 'EvtDeviceAdd' is called each time a device mentioned in the list below is found
+;FORMAT: device-description = install-section-name[, hw-id]
+
+; Virtual Hardware ID for DIVA driver
+%DivaDeviceDesc% = DIVA_Device_DDI, DivaSwKmd
+
+;---------- 'DDInstall' and 'DDInstall.Services' Sections ----------------------
+
+[DIVA_Device_DDI.NT]
+CopyFiles = DIVA_Device_CopyFiles; FORMAT: CopyFiles = @filename | file-list-section
+
+[DIVA_Device_DDI.NT.Services]
+; FORMAT: AddService = ServiceName, [flags], service-install-section
+Addservice = DivaKmd, %SERVICE_FLAG_ASSOCSERVICE%, DIVA_Service_Inst
+
+[DIVA_Service_Inst]
+DisplayName    = %DivaServiceDesc%
+ServiceType    = %SERVICE_TYPE_KERNEL_DRIVER%
+StartType      = %SERVICE_STARTTYPE_DEMAND_START%
+ErrorControl   = %SERVICE_ERRORCTRL_NORMAL%
+ServiceBinary  = %12%\DivaKmd.sys
+LoadOrderGroup = Extended Base
+
+[DIVA_Device_CopyFiles]
+;FORMAT: destination-file-name[, [source-file-name][, [unused], [flag]]]
+DivaKmd.sys, , , %COPY_FLAG_NOSKIP%
+
+;--------- 'Strings' Section --------------------------------------------------
+
+[Strings]
+OrganizationName = "Intel Corporation"
+DivaMfgName      = "Intel(R) Integrated Graphics Device Validation"
+DivaDeviceDesc   = "Driver for Intel Validation Apps (Prod-DIVA_3.0.8)"
+DivaServiceDesc  = "Driver-Service for Intel Validation Apps (DIVA)"
+DivaDiskDesc     = "DIVA Device Installation Disk"
+ClassName        = "DIVA"
+
+
+REG_SZ        = 0x00000000
+REG_BINARY    = 0x00000001
+REG_MULTI_SZ  = 0x00010000
+REG_EXPAND_SZ = 0x00020000
+REG_DWORD     = 0x00010001
+REG_NONE      = 0x00020001
+
+SERVICE_TYPE_KERNEL_DRIVER      = 0x00000001
+SERVICE_TYPE_FILE_SYSTEM_DRIVER = 0x00000002
+SERVICE_TYPE_ADAPTER            = 0x00000004
+SERVICE_TYPE_RECOGNIZER_DRIVER  = 0x00000008
+
+SERVICE_STARTTYPE_BOOT_START   = 0x0
+SERVICE_STARTTYPE_SYSTEM_START = 0x1
+SERVICE_STARTTYPE_AUTO_START   = 0x2
+SERVICE_STARTTYPE_DEMAND_START = 0x3
+SERVICE_STARTTYPE_DISABLED     = 0x4
+
+SERVICE_ERRORCTRL_IGNORE   = 0x00000000
+SERVICE_ERRORCTRL_NORMAL   = 0x00000001
+SERVICE_ERRORCTRL_SEVERE   = 0x00000002
+SERVICE_ERRORCTRL_CRITICAL = 0x00000003
+
+SERVICE_FLAG_TAGTOFRONT                   = 0x00000001
+SERVICE_FLAG_ASSOCSERVICE                 = 0x00000002
+SERVICE_FLAG_NOCLOBBER_DISPLAYNAME        = 0x00000008
+SERVICE_FLAG_NOCLOBBER_STARTTYPE          = 0x00000010
+SERVICE_FLAG_NOCLOBBER_ERRORCONTROL       = 0x00000020
+SERVICE_FLAG_NOCLOBBER_LOADORDERGROUP     = 0x00000040
+SERVICE_FLAG_NOCLOBBER_DEPENDENCIES       = 0x00000080
+SERVICE_FLAG_NOCLOBBER_DESCRIPTION        = 0x00000100
+SERVICE_FLAG_CLOBBER_SECURITY             = 0x00000400
+SERVICE_FLAG_STARTSERVICE                 = 0x00000800
+SERVICE_FLAG_NOCLOBBER_REQUIREDPRIVILEGES = 0x00001000
+
+COPY_FLAG_WARN_IF_SKIP         = 0x00000001
+COPY_FLAG_NOSKIP               = 0x00000002
+COPY_FLAG_NOVERSIONCHECK       = 0x00000004
+COPY_FLAG_FORCE_FILE_IN_USE    = 0x00000008
+COPY_FLAG_NO_OVERWRITE         = 0x00000010
+COPY_FLAG_NO_VERSION_DIALOG    = 0x00000020
+COPY_FLAG_OVERWRITE_OLDER_ONLY = 0x00000040
+COPY_FLAG_REPLACEONLY          = 0x00000400
+COPY_FLAG_NODECOMP             = 0x00000800
+COPY_FLAG_REPLACE_BOOT_FILE    = 0x00001000
+COPY_FLAG_NOPRUNE              = 0x00002000
+COPY_FLAG_IN_USE_RENAME        = 0x00004000

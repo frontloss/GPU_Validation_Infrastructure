@@ -1,0 +1,20 @@
+reviewers:
+- ganesh.r.s.t@intel.com
+- murali.r.iyengar@intel.com
+- amit.sau@intel.com
+- valamburi.vijayan.rb@intel.com
+- sandesh.ts@intel.com
+- gunaseelan.mathavadoss@intel.com
+- chandrakanth.pabolu@intel.com
+- mahesh.kumar.reddy@intel.com
+- praveen.kumar.bn@intel.com
+- sanjeev.tiwari@intel.com
+- kishore.nedunuri@intel.com
+- mansi.bansal@intel.com
+- soorya.r@intel.com
+- arun.kumar.v@intel.com
+- vinod.d.s@intel.com
+- sri.sumanth.geesala@intel.com
+- praneeth.kumar.bhadriraju@intel.com
+exclude:
+- jane.doe@intel.com

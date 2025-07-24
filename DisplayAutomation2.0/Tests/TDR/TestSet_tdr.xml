@@ -1,0 +1,128 @@
+<Display_Automation_2.0>
+   <Feature Name="TDR" Owner="npdoriwa">
+	 
+     <Test LastModifiedWW="2018.WW03" Name="tdr_config_change.py" Owner="npdoriwa" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;ETM" Id="TDRTS030">
+         <CommandLine>python Tests\TDR\tdr_config_change.py -edp_a </CommandLine>
+         <OS>WINRS3;WINRS2;WinTH2</OS>
+         <Platform>KBL_ULX;CFL_HALO;GLK;CNL_ULX;ICL;TGL;DG1;EHL;RKL;LKF_R;DG2</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;TGL_EMU;TGL_SOC;DG1_EMU;DG1_SOC;EHL_EMU;;EHL_SOC;RKL_EMU;RKL_SOC;LKF_R_SOC;LKF_R_EMU;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Deployed@ICL_SOC</QualificationStatus>
+       </TestInstance>
+       
+       <TestInstance Grids="CI;PreETM;ETM" Id="TDRTS031">
+         <CommandLine>python Tests\TDR\tdr_config_change.py -edp_a -dp_b -config extended</CommandLine>
+         <OS>WINRS3;WINRS2;WinTH2</OS>
+         <Platform>KBL_ULX;CFL_HALO;GLK;CNL_ULX;ICL;TGL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;TGL_SOC;DG1_EMU;DG1_SOC;EHL_EMU;EHL_SOC;RKL_EMU;RKL_SOC;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Deployed@KBL_SOC,GLK_SOC,CFL_SOC,ICL_SOC</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="CI;PreETM;ETM" Id="TDRTS032">
+         <CommandLine>python Tests\TDR\tdr_config_change.py -edp_a -dp_b -hdmi_c -config extended</CommandLine>
+         <OS>WINRS3;WINRS2;WinTH2</OS>
+         <Platform>KBL_ULX;CFL_HALO;GLK;CNL_ULX;ICL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;DG1_EMU;DG1_SOC;EHL_EMU;EHL_SOC;RKL_EMU;RKL_SOC;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Deployed@GLK_SOC,CFL_SOC</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="CI;PreETM;ETM" Id="TDRTS033">
+         <CommandLine>python Tests\TDR\tdr_config_change.py -edp_a -dp_b -hdmi_c -hdmi_d -config extended</CommandLine>
+         <OS>WINRS3;WINRS2;WinTH2</OS>
+         <Platform>DG1;RKL;DG2</Platform>
+                <TestEnvironment>DG1_EMU;DG1_SOC;RKL_EMU;RKL_SOC;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Deployed@ICL_SOC</QualificationStatus>
+       </TestInstance> 
+
+	   	<TestInstance Grids="CI;PreETM;ETM" Id="TDRTS034">
+         <CommandLine>python Tests\TDR\tdr_config_change.py -mipi_a</CommandLine>
+         <OS>WINRS3</OS>
+         <Platform>LKF1;EHL;LKF_R</Platform>
+                <TestEnvironment>LKF1_EMU;LKF1_SOC;EHL_EMU;EHL_SOC;LKF_R_SOC;LKF_R_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="CI;PreETM;ETM" Id="TDRTS035">
+         <CommandLine>python Tests\TDR\tdr_config_change.py -mipi_a -mipi_c -config extended</CommandLine>
+         <OS>WINRS3</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_EMU;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+	   	<TestInstance Grids="CI;PreETM;ETM" Id="TDRTS036">
+         <CommandLine>python Tests\TDR\tdr_config_change.py -mipi_a -mipi_c -dp_d -config extended</CommandLine>
+         <OS>WINRS3</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_EMU;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+	   
+	   <TestInstance Grids="CI;PreETM;ETM" Id="TDRTS037">
+         <CommandLine>python Tests\TDR\tdr_config_change.py -mipi_a -mipi_c -dp_d -hdmi_e -config extended</CommandLine>
+         <OS>WINRS3</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_EMU;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="CI;PreETM;ETM" Id="TDRTS038">
+         <CommandLine>python Tests\TDR\tdr_config_change.py -mipi_a -mipi_c -dp_d -dp_e -config extended</CommandLine>
+         <OS>WINRS3</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_EMU;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="CI;PreETM;ETM" Id="TDRTS039">
+         <CommandLine>python Tests\TDR\tdr_config_change.py -mipi_a -mipi_b -hdmi_c -config extended</CommandLine>
+         <OS>WINRS3</OS>
+         <Platform>EHL</Platform>
+                <TestEnvironment>EHL_EMU;EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="CI;PreETM;ETM" Id="TDRTS040">
+         <CommandLine>python Tests\TDR\tdr_config_change.py -mipi_a -mipi_b -dp_d -dp_e -config extended</CommandLine>
+         <OS>WINRS5</OS>
+         <Platform>LKF_R</Platform>
+                <TestEnvironment>LKF_R_SOC;LKF_R_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="CI;PreETM;ETM" Id="TDRTS041">
+         <CommandLine>python Tests\TDR\tdr_config_change.py -edp_a -edp_b -dp_d -dp_e -config extended</CommandLine>
+         <OS>WINRS5</OS>
+         <Platform>LKF_R</Platform>
+                <TestEnvironment>LKF_R_SOC;LKF_R_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+    </Test>
+
+   </Feature>
+</Display_Automation_2.0>

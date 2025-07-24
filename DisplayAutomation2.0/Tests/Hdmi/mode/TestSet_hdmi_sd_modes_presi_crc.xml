@@ -1,0 +1,1127 @@
+<Display_Automation_2.0>
+   <Feature Name="Hdmi_Modes_Presi_CRC" Owner="gyd">
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC1_RGB_8BPC_640_480_60P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC001">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml -MODE RGB_8BPC_640_480_60P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC001">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml -MODE RGB_8BPC_640_480_60P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC48_RGB_8BPC_720_480_120P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC002">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_720_480_120P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC002">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_720_480_120P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC57_RGB_8BPC_720_480_240P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC003">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml -MODE RGB_8BPC_720_480_240P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC003">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml -MODE RGB_8BPC_720_480_240P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC17_RGB_8BPC_720_576_50P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC004">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_720_576_50P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC004">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_720_576_50P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC42_RGB_8BPC_720_576_100P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC005">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml -MODE RGB_8BPC_720_576_100P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC005">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml -MODE RGB_8BPC_720_576_100P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC53_RGB_8BPC_720_576_200P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC006">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_720_576_200P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC006">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_720_576_200P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC4_RGB_8BPC_1280_720_60P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC007">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_1280_720_60P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC007">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_1280_720_60P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC19_RGB_8BPC_1280_720_50P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC008">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml -MODE RGB_8BPC_1280_720_50P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC008">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml -MODE RGB_8BPC_1280_720_50P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC41_RGB_8BPC_1280_720_100P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC009">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_1280_720_100P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC009">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_1280_720_100P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC47_RGB_8BPC_1280_720_120P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC010">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml -MODE RGB_8BPC_1280_720_120P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC010">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml -MODE RGB_8BPC_1280_720_120P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC60_RGB_8BPC_1280_720_24P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC011">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_1280_720_24P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC011">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_1280_720_24P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC61_RGB_8BPC_1280_720_25P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC012">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml -MODE RGB_8BPC_1280_720_25P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC012">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml -MODE RGB_8BPC_1280_720_25P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC62_RGB_8BPC_1280_720_30P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC013">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_1280_720_30P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC013">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_1280_720_30P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC66_RGB_8BPC_1280_720_25P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC014">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml -MODE RGB_8BPC_1280_720_25P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC014">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml -MODE RGB_8BPC_1280_720_25P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC67_RGB_8BPC_1280_720_30P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC015">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml -MODE RGB_8BPC_1280_720_30P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC015">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml -MODE RGB_8BPC_1280_720_30P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC68_RGB_8BPC_1280_720_50P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC016">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET4.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET4.xml -MODE RGB_8BPC_1280_720_50P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC016">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET4.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET4.xml -MODE RGB_8BPC_1280_720_50P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC69_RGB_8BPC_1280_720_60P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC017">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml -MODE RGB_8BPC_1280_720_60P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC017">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml -MODE RGB_8BPC_1280_720_60P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="DTD_RGB_8BPC_1366_768_60P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC018">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_1366_768_60P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC018">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_1366_768_60P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="DTD_RGB_8BPC_1920_1080_60P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC019">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_1920_1080_60P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC019">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_1920_1080_60P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC31_RGB_8BPC_1920_1080_50P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC020">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml -MODE RGB_8BPC_1920_1080_50P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC020">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml -MODE RGB_8BPC_1920_1080_50P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC32_RGB_8BPC_1920_1080_24P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC021">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml -MODE RGB_8BPC_1920_1080_24P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC021">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml -MODE RGB_8BPC_1920_1080_24P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC33_RGB_8BPC_1920_1080_25P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC022">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET4.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET4.xml -MODE RGB_8BPC_1920_1080_25P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC022">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET4.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET4.xml -MODE RGB_8BPC_1920_1080_25P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC34_RGB_8BPC_1920_1080_30P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC023">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml -MODE RGB_8BPC_1920_1080_30P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC023">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml -MODE RGB_8BPC_1920_1080_30P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC63_RGB_8BPC_1920_1080_120P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC024">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml -MODE RGB_8BPC_1920_1080_120P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC024">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml -MODE RGB_8BPC_1920_1080_120P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC64_RGB_8BPC_1920_1080_100P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC025">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_1920_1080_100P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC025">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_1920_1080_100P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC72_RGB_8BPC_1920_1080_24P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC026">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml -MODE RGB_8BPC_1920_1080_24P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC026">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml -MODE RGB_8BPC_1920_1080_24P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC74_RGB_8BPC_1920_1080_30P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC027">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml -MODE RGB_8BPC_1920_1080_30P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC027">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml -MODE RGB_8BPC_1920_1080_30P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC75_RGB_8BPC_1920_1080_50P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC028">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml -MODE RGB_8BPC_1920_1080_50P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC028">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml -MODE RGB_8BPC_1920_1080_50P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC76_RGB_8BPC_1920_1080_60P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC029">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET4.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET4.xml -MODE RGB_8BPC_1920_1080_60P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC029">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET4.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET4.xml -MODE RGB_8BPC_1920_1080_60P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC79_RGB_8BPC_1680_720_24P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC030">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET4.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET4.xml -MODE RGB_8BPC_1680_720_24P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC030">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET4.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET4.xml -MODE RGB_8BPC_1680_720_24P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC81_RGB_8BPC_1680_720_30P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC031">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml -MODE RGB_8BPC_1680_720_30P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC031">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml -MODE RGB_8BPC_1680_720_30P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC82_RGB_8BPC_1680_720_50P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC032">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET4.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET4.xml -MODE RGB_8BPC_1680_720_50P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC032">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET4.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET4.xml -MODE RGB_8BPC_1680_720_50P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC84_RGB_8BPC_1680_720_100P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC033">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml -MODE RGB_8BPC_1680_720_100P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC033">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml -MODE RGB_8BPC_1680_720_100P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC85_RGB_8BPC_1680_720_120P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC034">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml -MODE RGB_8BPC_1680_720_120P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC034">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml -MODE RGB_8BPC_1680_720_120P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC86_RGB_8BPC_2560_1080_24P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC035">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_2560_1080_24P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC035">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_2560_1080_24P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC87_RGB_8BPC_2560_1080_25P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC036">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml -MODE RGB_8BPC_2560_1080_25P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC036">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml -MODE RGB_8BPC_2560_1080_25P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC88_RGB_8BPC_2560_1080_30P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC037">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET4.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET4.xml -MODE RGB_8BPC_2560_1080_30P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC037">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET4.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET4.xml -MODE RGB_8BPC_2560_1080_30P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC90_RGB_8BPC_2560_1080_60P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC038">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml -MODE RGB_8BPC_2560_1080_60P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC038">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml -MODE RGB_8BPC_2560_1080_60P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC92_RGB_8BPC_2560_1080_120P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC039">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_2560_1080_120P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC039">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_2560_1080_120P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="DTD_RGB_8BPC_3840_2160_60P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC040">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_3840_2160_60P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC040">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_3840_2160_60P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC94_RGB_8BPC_3840_2160_25P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC041">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET4.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET4.xml -MODE RGB_8BPC_3840_2160_25P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC041">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET4.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET4.xml -MODE RGB_8BPC_3840_2160_25P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC95_RGB_8BPC_3840_2160_30P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC042">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_3840_2160_30P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC042">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_3840_2160_30P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC96_RGB_8BPC_3840_2160_50P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC043">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml -MODE RGB_8BPC_3840_2160_50P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC043">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml -MODE RGB_8BPC_3840_2160_50P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC103_RGB_8BPC_3840_2160_24P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC044">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET4.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET4.xml -MODE RGB_8BPC_3840_2160_24P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC044">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET4.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET4.xml -MODE RGB_8BPC_3840_2160_24P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC104_RGB_8BPC_3840_2160_25P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC045">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml -MODE RGB_8BPC_3840_2160_25P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC045">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml -MODE RGB_8BPC_3840_2160_25P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC106_RGB_8BPC_3840_2160_50P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC046">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_3840_2160_50P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC046">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_3840_2160_50P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC107_RGB_8BPC_3840_2160_60P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC047">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET4.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET4.xml -MODE RGB_8BPC_3840_2160_60P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC047">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET4.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET4.xml -MODE RGB_8BPC_3840_2160_60P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC98_RGB_8BPC_4096_2160_24P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC048">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_4096_2160_24P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC048">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_4096_2160_24P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC99_RGB_8BPC_4096_2160_25P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC049">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml -MODE RGB_8BPC_4096_2160_25P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC049">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml -MODE RGB_8BPC_4096_2160_25P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC101_RGB_8BPC_4096_2160_50P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC050">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET4.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET4.xml -MODE RGB_8BPC_4096_2160_50P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC050">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET4.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET4.xml -MODE RGB_8BPC_4096_2160_50P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2018.WW17" Name="CEA_VIC102_RGB_8BPC_4096_2160_60P_MDS_0Deg" Owner="gyd" Priority="P1" Version="1">
+
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC051">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml -MODE RGB_8BPC_4096_2160_60P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>LKF1</Platform>
+         <TestEnvironment>LKF1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+         <TestInstance Grids="CI;PreETM;ETM" Id="HDCRC051">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml -MODE RGB_8BPC_4096_2160_60P</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL;DG1</Platform>
+         <TestEnvironment>TGL_SIM;DG1_SIM</TestEnvironment>
+         <ExecutionTime_mm>00</ExecutionTime_mm>
+         <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+   </Feature>
+</Display_Automation_2.0>

@@ -1,0 +1,9 @@
+reviewers:
+- ankurkumar.g.patel@intel.com
+- prateek.joshi@intel.com
+- smitha.balasubramanyam@intel.com
+- vimalesh.d@intel.com
+- kishore.nedunuri@intel.com
+
+exclude:
+- jane.doe@intel.com

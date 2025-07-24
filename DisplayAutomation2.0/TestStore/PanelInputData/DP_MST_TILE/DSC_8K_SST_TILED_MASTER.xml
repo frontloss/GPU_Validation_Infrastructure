@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EDID>
+	<SSTTiled_Master>DELL_U3218_M.bin</SSTTiled_Master>
+</EDID>
+
+<DPCD>
+	<SSTTiled_DPCD>SST_TILED_VDSC_DPCD.bin</SSTTiled_DPCD>
+</DPCD>

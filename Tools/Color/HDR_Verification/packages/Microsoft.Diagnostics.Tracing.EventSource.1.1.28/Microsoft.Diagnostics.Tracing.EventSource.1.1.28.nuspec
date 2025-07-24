@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+  <metadata minClientVersion="2.5">
+    <id>Microsoft.Diagnostics.Tracing.EventSource</id>
+    <version>1.1.28</version>
+    <title>Microsoft EventSource Library</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <licenseUrl>http://go.microsoft.com/fwlink/?LinkId=329770</licenseUrl>
+    <projectUrl>http://go.microsoft.com/fwlink/?LinkID=317375</projectUrl>
+    <iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package exposes an enhanced developer experience for coding against the Microsoft.Diagnostics.Tracing.EventSource (including build time validation). Microsoft.Diagnostics.Tracing.EventSource allows for firing ETW events from managed code. It enables defining a strongly typed specification of an ETW provider that can be called by managed code. The EventSource class is also included in the .NET Framework. This package provides a newer version that has more features. It is meant to be used as a stop gap until those features it contains are ported to System.Diagnostics.Tracing.EventSource.
+
+      For more details, have a look at http://msdn.microsoft.com/en-us/library/system.diagnostics.tracing.eventsource.aspx.
+
+      New features:
+      - ETW channel support
+      - Support for static registration
+
+      Supported Platforms:
+      - .NET Framework 3.5
+      - .NET Framework 4.0
+      - .NET Framework 4.5
+      - Windows Store apps
+      - Windows Phone App 8.1</description>
+    <summary>EventSource is a managed library for generating ETW events.</summary>
+    <releaseNotes>Version 1.1.28 - Added Activity support (When build against V4.6 runtimes).  Fixes Activity Tracking bugs.
+      Version 1.1.27 - Added EventCounter Support</releaseNotes>
+    <copyright>Copyright (c) Microsoft Corporation</copyright>
+    <tags>EventSource Microsoft ETW EventLog Channel</tags>
+    <dependencies>
+      <dependency id="Microsoft.Diagnostics.Tracing.EventSource.Redist" version="1.1.28" />
+      <dependency id="Microsoft.Diagnostics.Tracing.EventRegister" version="1.1.28" />
+    </dependencies>
+  </metadata>
+</package>

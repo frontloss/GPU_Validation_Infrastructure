@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InputParams>
+	<!--SourcePixelFormatEnum-->
+        <!--SB_B8G8R8X8-->
+	<!--SB_B8G8R8A8-->
+	<!--SB_R8G8B8X8-->
+	<!--SB_R8G8B8A8-->
+	<!--SB_R10G10B10X2-->
+	<!--SB_R10G10B10A2-->
+	<!--SB_B10G10R10X2-->
+	<!--SB_B10G10R10A2-->
+        <!--SB_R16G16B16X16F-->
+        <!--SB_R16G16B16A16F-->
+        <!--SB_NV12YUV420-->               
+        <!--SB_YUV422-->
+        <!--SB_P010YUV420-->
+        <!--SB_P012YUV420-->
+        <!--SB_P016YUV420-->            
+        <!--SB_YUV444_10-->
+        <!--SB_YUV422_10-->
+        <!--SB_YUV422_12-->
+        <!--SB_YUV422_16-->
+        <!--SB_YUV444_8-->
+        <!--SB_YUV444_12-->
+        <!--SB_YUV444_16-->
+
+        <!--ColorSpaceTypeEnum-->
+        <!--MPO_COLOR_SPACE_RGB_FULL_G22_NONE_P709-->             
+        <!--MPO_COLOR_SPACE_RGB_FULL_G10_NONE_P709-->     
+        <!--MPO_COLOR_SPACE_RGB_STUDIO_G22_NONE_P709-->  
+        <!--MPO_COLOR_SPACE_RGB_STUDIO_G22_NONE_P2020-->  
+        <!--MPO_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P709-->  
+        <!--MPO_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P709-->  
+        <!--MPO_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P2020-->  
+        <!--MPO_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P2020-->  
+        <!--MPO_COLOR_SPACE_RGB_FULL_G2084_NONE_P2020-->  
+        <!--MPO_COLOR_SPACE_YCBCR_STUDIO_G2084_LEFT_P2020-->  
+        <!--MPO_COLOR_SPACE_RGB_STUDIO_G2084_NONE_P2020-->  
+        <!--MPO_COLOR_SPACE_YCBCR_STUDIO_G22_TOPLEFT_P2020-->  
+        <!--MPO_COLOR_SPACE_YCBCR_STUDIO_G2084_TOPLEFT_P2020-->
+   
+   <!--Plane_input_per_plane-Pixelformat,ColorSpace,Imagefile-->
+   <Plane>
+	       <SourcePixelFormat>SB_B8G8R8A8</SourcePixelFormat>
+    	   <ColorSpace>MPO_COLOR_SPACE_RGB_FULL_G22_NONE_P709</ColorSpace>
+         <ImageFilePath>Color\HDR\Images\color_patterns_8bpc_38x21.png</ImageFilePath>
+   </Plane>
+      
+
+   <!--Pipe_input_per_pipe-Blendingmode,output range,panelCaps-->
+   <Pipe>
+        
+	<!--SRGB_NON_LINEAR-->
+	<!--BT2020_NON_LINEAR-->
+	<!--BT2020_LINEAR-->
+	      <BlendingMode>SRGB_NON_LINEAR</BlendingMode>
+	
+	<!--FULL-->
+	<!--STUDIO-->
+	      <OutputRange>FULL</OutputRange>
+
+	<!--SDR_709_RGB-->
+	<!--SDR_709_YUV420-->
+	<!--SDR_BT2020_RGB-->
+	<!--SDR_BT2020_YUV420-->
+	<!--HDR_BT2020_RGB-->
+	<!--HDR_BT2020_YUV420-->
+	<!--HDR_DCIP3_RGB-->
+	<!--HDR_DCIP3_YUV420--> 
+	      <PanelCaps>SDR_709_RGB</PanelCaps>
+   </Pipe>
+   
+   <HDRMetadata>
+         <EOTF>2</EOTF>
+         <DisplayPrimariesX>1,2,3</DisplayPrimariesX>
+         <DisplayPrimariesY>4,5,6</DisplayPrimariesY>
+         <WhitePointX>7</WhitePointX>
+         <WhitePointY>8</WhitePointY>
+         <MaxLuminance>1000</MaxLuminance>
+         <MinLuminance>100</MinLuminance>
+         <MaxCLL>40</MaxCLL>
+         <MaxFALL>400</MaxFALL>
+
+   </HDRMetadata>
+
+</InputParams>

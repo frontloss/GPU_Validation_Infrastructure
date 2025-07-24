@@ -1,0 +1,1760 @@
+<Display_Automation_2.0>
+   <Feature Name="Hdmi_SingleDisplay_ModeEnumeration_and_Apply" Owner="gyd">
+     <Test LastModifiedWW="2017.WW23" Name="HDMI_RGB_8BPC_1920_1080_60P" Owner="gyd" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM001">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@ICL_SIM</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM025">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_C HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM026">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM027">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_E HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM028">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_F HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;TGL</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+     <Test LastModifiedWW="2017.WW23" Name="HDMI_RGB_10BPC_1920_1080_60P" Owner="gyd" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM002">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_10BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@ICL_SIM</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM029">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_C HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_10BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM030">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_10BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM031">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_E HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_10BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM032">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_F HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_10BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;TGL</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+     <Test LastModifiedWW="2017.WW23" Name="HDMI_RGB_12BPC_1920_1080_60P" Owner="gyd" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM003">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_12BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@ICL_SIM</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM033">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_C HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_12BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM034">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_12BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM035">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_E HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_12BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM036">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_F HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_12BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;TGL</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+     <Test LastModifiedWW="2017.WW23" Name="HDMI_RGB_8BPC_3840_2160_60P" Owner="gyd" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM118">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_A HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL;RYF</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;RYF_SIM;RYF_EMU;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM004">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;JSL;EHL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;JSL_SIM;JSL_EMU;EHL_EMU;RYF_SIM;RYF_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@ICL_SIM</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM037">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_C HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;JSL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;JSL_SIM;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM038">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL;JSL;EHL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU;JSL_SIM;JSL_EMU;EHL_EMU;RYF_SIM;RYF_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM039">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_E HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL;RYF</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU;RYF_SIM;RYF_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM040">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_F HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;TGL</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM119">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_G HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM120">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_H HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM121">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_I HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_8BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+     <Test LastModifiedWW="2017.WW23" Name="HDMI_RGB_10BPC_3840_2160_30P" Owner="gyd" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM122">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_A HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_10BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL;RYF</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;RYF_SIM;RYF_EMU;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM005">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_10BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;JSL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;JSL_SIM;RYF_SIM;RYF_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@ICL_SIM</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM041">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_C HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_10BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;JSL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;JSL_SIM;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM042">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_10BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL;JSL;EHL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU;JSL_SIM;JSL_EMU;EHL_EMU;RYF_SIM;RYF_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM043">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_E HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_10BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL;RYF</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU;RYF_SIM;RYF_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM044">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_F HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_10BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;TGL</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM123">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_G HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_10BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM124">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_H HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_10BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM125">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_I HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_10BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+     <Test LastModifiedWW="2017.WW23" Name="HDMI_RGB_12BPC_3840_2160_30P" Owner="gyd" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM126">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_A HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_12BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>TGL;RYF</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;RYF_SIM;RYF_EMU;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM006">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_12BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;JSL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;JSL_SIM;RYF_SIM;RYF_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@ICL_SIM</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM045">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_C HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_12BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;JSL;EHL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;JSL_SIM;JSL_EMU;EHL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM046">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_12BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL;JSL;EHL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU;JSL_SIM;JSL_EMU;EHL_EMU;RYF_SIM;RYF_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM047">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_E HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_12BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL;RYF</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU;RYF_SIM;RYF_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM048">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_F HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_12BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;TGL</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM127">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_G HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_12BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM128">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_H HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_12BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM129">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_I HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_12BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+     <Test LastModifiedWW="2017.WW23" Name="HDMI_YUV444_8BPC_1920_1080_60P" Owner="gyd" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM007">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_8BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@ICL_SIM</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM049">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_C HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_8BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM050">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_8BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM051">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_E HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_8BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM052">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_F HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_8BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;TGL</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+     <Test LastModifiedWW="2017.WW23" Name="HDMI_YUV444_10BPC_1920_1080_60P" Owner="gyd" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM008">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_10BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@ICL_SIM</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM053">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_C HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_10BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM054">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_10BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM055">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_E HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_10BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM056">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_F HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_10BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;TGL</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+     <Test LastModifiedWW="2017.WW23" Name="HDMI_YUV444_12BPC_1920_1080_60P" Owner="gyd" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM009">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_12BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@ICL_SIM</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM057">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_C HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_12BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM058">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_12BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM059">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_E HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_12BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM060">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_F HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_12BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;TGL</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+     <Test LastModifiedWW="2017.WW23" Name="HDMI_YUV444_8BPC_3840_2160_60P" Owner="gyd" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM130">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_A HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_8BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL;RYF</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;RYF_SIM;RYF_EMU;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM010">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_8BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;JSL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;JSL_SIM;RYF_SIM;RYF_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@ICL_SIM</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM061">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_C HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_8BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;JSL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;JSL_SIM;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM062">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_8BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL;JSL;EHL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU;JSL_SIM;JSL_EMU;EHL_EMU;RYF_SIM;RYF_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM063">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_E HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_8BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL;RYF</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU;RYF_SIM;RYF_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM064">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_F HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_8BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;TGL</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM131">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_G HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_8BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM132">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_H HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_8BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM133">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_I HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_8BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+     <Test LastModifiedWW="2017.WW23" Name="HDMI_YUV444_10BPC_3840_2160_30P" Owner="gyd" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM134">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_A HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_10BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL;RYF</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;RYF_SIM;RYF_EMU;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM011">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_10BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;JSL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;JSL_SIM;RYF_SIM;RYF_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@ICL_SIM</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM065">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_C HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_10BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;JSL;EHL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;JSL_SIM;JSL_EMU;EHL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM066">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_10BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL;JSL;EHL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU;JSL_SIM;JSL_EMU;EHL_EMU;RYF_SIM;RYF_EM;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM067">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_E HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_10BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL;RYF</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU;RYF_SIM;RYF_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM068">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_F HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_10BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;TGL</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM135">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_G HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_10BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM136">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_H HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_10BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM137">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_I HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_10BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+     </Test>
+     <Test LastModifiedWW="2017.WW23" Name="HDMI_YUV444_12BPC_3840_2160_30P" Owner="gyd" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM138">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_A HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_12BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL;RYF</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;RYF_SIM;RYF_EMU;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM012">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_12BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;JSL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;JSL_SIM;RYF_SIM;RYF_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@ICL_SIM</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM069">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_C HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_12BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;JSL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;JSL_SIM;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM070">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_12BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL;JSL;EHL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU;JSL_SIM;JSL_EMU;EHL_EMU;RYF_SIM;RYF_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM071">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_E HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_12BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL;RYF</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU;RYF_SIM;RYF_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM072">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_F HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_12BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;TGL</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM139">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_G HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_12BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM140">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_H HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_12BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM141">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_I HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE YUV444_12BPC_3840_2160_30P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+     <Test LastModifiedWW="2017.WW23" Name="HDMI_YUV420_8BPC_1920_1080_60P" Owner="gyd" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM013">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_YUV420_1920_1080_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_1920_1080_60HzMode.xml -MODE YUV420_8BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM073">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_C HDMI_EDID_YUV420_1920_1080_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_1920_1080_60HzMode.xml -MODE YUV420_8BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM074">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_YUV420_1920_1080_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_1920_1080_60HzMode.xml -MODE YUV420_8BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM075">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_E HDMI_EDID_YUV420_1920_1080_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_1920_1080_60HzMode.xml -MODE YUV420_8BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM076">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_F HDMI_EDID_YUV420_1920_1080_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_1920_1080_60HzMode.xml -MODE YUV420_8BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;TGL</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+     <Test LastModifiedWW="2017.WW23" Name="HDMI_YUV420_10BPC_1920_1080_60P" Owner="gyd" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM014">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_YUV420_1920_1080_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_1920_1080_60HzMode.xml -MODE YUV420_10BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM077">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_C HDMI_EDID_YUV420_1920_1080_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_1920_1080_60HzMode.xml -MODE YUV420_10BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM078">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_YUV420_1920_1080_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_1920_1080_60HzMode.xml -MODE YUV420_10BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM079">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_E HDMI_EDID_YUV420_1920_1080_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_1920_1080_60HzMode.xml -MODE YUV420_10BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM080">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_F HDMI_EDID_YUV420_1920_1080_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_1920_1080_60HzMode.xml -MODE YUV420_10BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;TGL</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+     <Test LastModifiedWW="2017.WW23" Name="HDMI_YUV420_12BPC_1920_1080_60P" Owner="gyd" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM015">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_YUV420_1920_1080_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_1920_1080_60HzMode.xml -MODE YUV420_12BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM081">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_C HDMI_EDID_YUV420_1920_1080_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_1920_1080_60HzMode.xml -MODE YUV420_12BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM082">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_YUV420_1920_1080_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_1920_1080_60HzMode.xml -MODE YUV420_12BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM083">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_E HDMI_EDID_YUV420_1920_1080_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_1920_1080_60HzMode.xml -MODE YUV420_12BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM084">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_F HDMI_EDID_YUV420_1920_1080_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_1920_1080_60HzMode.xml -MODE YUV420_12BPC_1920_1080_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;TGL</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+     <Test LastModifiedWW="2017.WW23" Name="HDMI_YUV420_8BPC_3840_2160_60P" Owner="gyd" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM142">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_A HDMI_EDID_YUV420_3840_2160_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_3840_2160_60HzMode.xml -MODE YUV420_8BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL;RYF</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;RYF_SIM;RYF_EMU;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM016">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_YUV420_3840_2160_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_3840_2160_60HzMode.xml -MODE YUV420_8BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;JSL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;JSL_SIM;RYF_SIM;RYF_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM085">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_C HDMI_EDID_YUV420_3840_2160_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_3840_2160_60HzMode.xml -MODE YUV420_8BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;JSL;EHL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_HP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;JSL_SIM;JSL_EMU;EHL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM086">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_YUV420_3840_2160_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_3840_2160_60HzMode.xml -MODE YUV420_8BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL;JSL;EHL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU;JSL_SIM;JSL_EMU;EHL_EMU;RYF_SIM;RYF_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM087">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_E HDMI_EDID_YUV420_3840_2160_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_3840_2160_60HzMode.xml -MODE YUV420_8BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL;RYF</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU;RYF_SIM;RYF_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM088">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_F HDMI_EDID_YUV420_3840_2160_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_3840_2160_60HzMode.xml -MODE YUV420_8BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;TGL</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM143">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_G HDMI_EDID_YUV420_3840_2160_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_3840_2160_60HzMode.xml -MODE YUV420_8BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM144">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_H HDMI_EDID_YUV420_3840_2160_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_3840_2160_60HzMode.xml -MODE YUV420_8BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM145">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_I HDMI_EDID_YUV420_3840_2160_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_3840_2160_60HzMode.xml -MODE YUV420_8BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+     <Test LastModifiedWW="2017.WW23" Name="HDMI_YUV420_10BPC_3840_2160_60P" Owner="gyd" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM146">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_A HDMI_EDID_YUV420_3840_2160_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_3840_2160_60HzMode.xml -MODE YUV420_10BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL;RYF</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;RYF_SIM;RYF_EMU;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM017">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_YUV420_3840_2160_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_3840_2160_60HzMode.xml -MODE YUV420_10BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;JSL;EHL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;JSL_SIM;JSL_EMU;EHL_EMU;RYF_SIM;RYF_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM089">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_C HDMI_EDID_YUV420_3840_2160_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_3840_2160_60HzMode.xml -MODE YUV420_10BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;JSL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;JSL_SIM;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM090">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_YUV420_3840_2160_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_3840_2160_60HzMode.xml -MODE YUV420_10BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL;JSL;EHL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU;;JSL_SIM;JSL_EMU;EHL_EMU;RYF_SIM;RYF_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM091">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_E HDMI_EDID_YUV420_3840_2160_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_3840_2160_60HzMode.xml -MODE YUV420_10BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL;RYF</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU;RYF_SIM;RYF_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM092">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_f HDMI_EDID_YUV420_3840_2160_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_3840_2160_60HzMode.xml -MODE YUV420_10BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;TGL</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM147">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_G HDMI_EDID_YUV420_3840_2160_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_3840_2160_60HzMode.xml -MODE YUV420_10BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM148">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_H HDMI_EDID_YUV420_3840_2160_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_3840_2160_60HzMode.xml -MODE YUV420_10BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM149">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_I HDMI_EDID_YUV420_3840_2160_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_3840_2160_60HzMode.xml -MODE YUV420_10BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+     <Test LastModifiedWW="2017.WW23" Name="HDMI_YUV420_12BPC_3840_2160_60P" Owner="gyd" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM150">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_A HDMI_EDID_YUV420_3840_2160_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_3840_2160_60HzMode.xml -MODE YUV420_12BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL;RYF</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;RYF_SIM;RYF_EMU;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM018">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_YUV420_3840_2160_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_3840_2160_60HzMode.xml -MODE YUV420_12BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;JSL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;JSL_SIM;RYF_SIM;RYF_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM093">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_C HDMI_EDID_YUV420_3840_2160_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_3840_2160_60HzMode.xml -MODE YUV420_12BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_LP;ICL_HP;TGL;JSL;EHL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_LP_SIM;ICL_LP_EMU;ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU;JSL_SIM;JSL_EMU;EHL_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM094">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_YUV420_3840_2160_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_3840_2160_60HzMode.xml -MODE YUV420_12BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL;JSL;EHL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU;JSL_SIM;JSL_EMU;EHL_EMU;RYF_SIM;RYF_EMU;DG1_SIM;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM095">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_E HDMI_EDID_YUV420_3840_2160_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_3840_2160_60HzMode.xml -MODE YUV420_12BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;LKF1;TGL;RYF</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;LKF1_SIM;LKF1_EMU;TGL_SIM;TGL_EMU;RYF_SIM;RYF_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM096">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_F HDMI_EDID_YUV420_3840_2160_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_3840_2160_60HzMode.xml -MODE YUV420_12BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL_HP;TGL</Platform>
+                <TestEnvironment>ICL_HP_SIM;ICL_HP_EMU;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM151">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_G HDMI_EDID_YUV420_3840_2160_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_3840_2160_60HzMode.xml -MODE YUV420_12BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM153">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_H HDMI_EDID_YUV420_3840_2160_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_3840_2160_60HzMode.xml -MODE YUV420_12BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="HDMIM154">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_I HDMI_EDID_YUV420_3840_2160_60HzMode.bin -EDID_MODES_XML HDMI_EDID_YUV420_3840_2160_60HzMode.xml -MODE YUV420_12BPC_3840_2160_60P -USE_BPC_REGISTRY</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+     <Test LastModifiedWW="2017.WW27" Name="HDMI_EDID_NON_PRMODES_SET1" Owner="gyd" Priority="P1" Version="1">
+       <TestInstance Grids="ETM" Id="HDMIM155">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_A HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL;RYF</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC;RYF_SIM;RYF_SOC;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM;GFT" Id="HDMIM097">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL;TGL;JSL;EHL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SIM;TGL_SOC;JSL_SIM;JSL_SOC;EHL_SIM;EHL_SOC;RYF_SIM;RYF_SOC;DG1_SIM;DG1_SOC;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM;GFT" Id="HDMIM019">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_C HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>CNL_ULT;GLK;ICL;JSL;EHL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_SOC;JSL_SOC;EHL_SIM;EHL_SOC;DG1_SIM;DG1_SOC;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Deployed@GLK_SOC</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM;GFT" Id="HDMIM098">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>LKF1;TGL;JSL;EHL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;TGL_SIM;TGL_SOC;JSL_SIM;JSL_SOC;EHL_SIM;EHL_SOC;RYF_SIM;RYF_SOC;DG1_SIM;DG1_SOC;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM;GFT" Id="HDMIM099">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_E HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>LKF1;RYF</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;RYF_SIM;RYF_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="ETM" Id="HDMIM156">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_G HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="ETM" Id="HDMIM157">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_H HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="ETM" Id="HDMIM158">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_I HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+     <Test LastModifiedWW="2017.WW27" Name="HDMI_EDID_NON_PRMODES_SET2" Owner="gyd" Priority="P2" Version="1">
+       <TestInstance Grids="ETM" Id="HDMIM159">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_A HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL;RYF</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC;RYF_SIM;RYF_SOC;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;ETM;GFT" Id="HDMIM100">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL;TGL;JSL;EHL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SIM;TGL_SOC;JSL_SOC;EHL_SIM;EHL_SOC;RYF_SIM;RYF_SOC;DG1_SIM;DG1_SOC;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;ETM;GFT" Id="HDMIM020">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_C HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>CNL_ULT;GLK;ICL;JSL;EHL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_SOC;JSL_SIM;JSL_SOC;EHL_SIM;EHL_SOC;DG1_SIM;DG1_SOC;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Deployed@GLK_SOC</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;ETM;GFT" Id="HDMIM101">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>LKF1;TGL;JSL;EHL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;TGL_SIM;TGL_SOC;JSL_SIM;JSL_SOC;EHL_SIM;EHL_SOC;RYF_SIM;RYF_SOC;DG1_SIM;DG1_SOC;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;ETM;GFT" Id="HDMIM102">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_E HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>LKF1;RYF</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;RYF_SIM;RYF_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="ETM" Id="HDMIM160">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_G HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="ETM" Id="HDMIM161">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_H HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="ETM" Id="HDMIM162">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_I HDMI_EDID_NON_PRMODES_SET2.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET2.xml</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+     <Test LastModifiedWW="2017.WW27" Name="HDMI_EDID_NON_PRMODES_SET3" Owner="gyd" Priority="P1" Version="1">
+       <TestInstance Grids="ETM" Id="HDMIM163">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_A HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL;RYF</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC;RYF_SIM;RYF_SOC;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;ETM;GFT" Id="HDMIM103">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL;TGL;JSL;EHL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SIM;TGL_SOC;JSL_SIM;JSL_SOC;EHL_SIM;EHL_SOC;RYF_SIM;RYF_SOC;DG1_SIM;DG1_SOC;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;ETM;GFT" Id="HDMIM021">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_C HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>CNL_ULT;GLK;ICL;JSL;EHL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_SOC;JSL_SOC;EHL_SIM;EHL_SOC;DG1_SIM;DG1_SOC;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Deployed@GLK_SOC</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;ETM;GFT" Id="HDMIM104">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>LKF1;TGL;JSL;EHL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;TGL_SIM;TGL_SOC;JSL_SIM;JSL_SOC;EHL_SIM;EHL_SOC;RYF_SIM;RYF_SOC;DG1_SIM;DG1_SOC;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;ETM;GFT" Id="HDMIM105">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_E HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>LKF1;RYF</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;RYF_SIM;RYF_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="ETM" Id="HDMIM164">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_G HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="ETM" Id="HDMIM165">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_H HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="ETM" Id="HDMIM166">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_I HDMI_EDID_NON_PRMODES_SET3.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET3.xml</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+     <Test LastModifiedWW="2017.WW27" Name="HDMI_EDID_NON_PRMODES_SET4" Owner="gyd" Priority="P2" Version="1">
+       <TestInstance Grids="ETM" Id="HDMIM167">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_A HDMI_EDID_NON_PRMODES_SET4.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET4.xml</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL;RYF</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC;RYF_SIM;RYF_SO;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;ETM;GFT" Id="HDMIM106">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET4.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET4.xml</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL;TGL;JSL;EHL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SIM;TGL_SOC;JSL_SOC;EHL_SIM;EHL_SOC;RYF_SIM;RYF_SOC;DG1_SIM;DG1_SOC;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;ETM;GFT" Id="HDMIM022">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_C HDMI_EDID_NON_PRMODES_SET4.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET4.xml</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>CNL_ULT;GLK;ICL;JSL;EHL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_SOC;JSL_SIM;JSL_SOC;EHL_SIM;EHL_SOC;DG1_SIM;DG1_SOC;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Deployed@GLK_SOC</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;ETM;GFT" Id="HDMIM107">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET4.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET4.xml</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>LKF1;TGL;JSL;EHL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;TGL_SOC;JSL_SIM;JSL_SOC;EHL_SIM;EHL_SOC;RYF_SIM;RYF_SOC;DG1_SIM;DG1_SOC;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;ETM;GFT" Id="HDMIM108">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_E HDMI_EDID_NON_PRMODES_SET4.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET4.xml</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>LKF1;RYF</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;RYF_SIM;RYF_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="ETM" Id="HDMIM168">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_G HDMI_EDID_NON_PRMODES_SET4.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET4.xml</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="ETM" Id="HDMIM169">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_H HDMI_EDID_NON_PRMODES_SET4.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET4.xml</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="ETM" Id="HDMIM170">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_I HDMI_EDID_NON_PRMODES_SET4.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET4.xml</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+     <Test LastModifiedWW="2017.WW27" Name="HDMI_EDID_YUV420_MODES" Owner="gyd" Priority="P1" Version="1">
+       <TestInstance Grids="ETM" Id="HDMIM171">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_A HDMI_EDID_YUV420_MODES.bin -EDID_MODES_XML HDMI_EDID_YUV420_MODES.xml</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL;RYF</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC;RYF_SIM;RYF_SOC;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM;GFT" Id="HDMIM109">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_YUV420_MODES.bin -EDID_MODES_XML HDMI_EDID_YUV420_MODES.xml</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL;TGL;JSL;EHL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SIM;TGL_SOC;JSL_SIM;JSL_SOC;EHL_SIM;EHL_SOC;RYF_SIM;RYF_SOC;DG1_SIM;DG1_SOC;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;ETM;GFT" Id="HDMIM023">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_C HDMI_EDID_YUV420_MODES.bin -EDID_MODES_XML HDMI_EDID_YUV420_MODES.xml</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>CNL_ULT;GLK;ICL;JSL;EHL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_SOC;JSL_SIM;JSL_SOC;EHL_SIM;EHL_SOC;DG1_SIM;DG1_SOC;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Deployed@GLK_SOC</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM;GFT" Id="HDMIM110">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_YUV420_MODES.bin -EDID_MODES_XML HDMI_EDID_YUV420_MODES.xml</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>LKF1;TGL;JSL;EHL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;TGL_SIM;TGL_SOC;JSL_SIM;JSL_SOC;EHL_SIM;EHL_SOC;RYF_SIM;RYF_SOC;DG1_SIM;DG1_SOC;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;ETM;GFT" Id="HDMIM111">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_E HDMI_EDID_YUV420_MODES.bin -EDID_MODES_XML HDMI_EDID_YUV420_MODES.xml</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>LKF1;RYF</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;RYF_SIM;RYF_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="ETM" Id="HDMIM172">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_G HDMI_EDID_YUV420_MODES.bin -EDID_MODES_XML HDMI_EDID_YUV420_MODES.xml</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="ETM" Id="HDMIM173">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_H HDMI_EDID_YUV420_MODES.bin -EDID_MODES_XML HDMI_EDID_YUV420_MODES.xml</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="ETM" Id="HDMIM174">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_I HDMI_EDID_YUV420_MODES.bin -EDID_MODES_XML HDMI_EDID_YUV420_MODES.xml</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+     <Test LastModifiedWW="2017.WW27" Name="HDMI_EDID_1_4_MODES" Owner="gyd" Priority="P2" Version="1">
+       <TestInstance Grids="CI;ETM;GFT" Id="HDMIM112">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_1_4_MODES.bin -EDID_MODES_XML HDMI_EDID_1_4_MODES.xml</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL;TGL;DG1;DG2</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SIM;TGL_SOC;DG1_SIM;DG1_SOC;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;ETM;GFT" Id="HDMIM024">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_C HDMI_EDID_1_4_MODES.bin -EDID_MODES_XML HDMI_EDID_1_4_MODES.xml</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>CNL_ULT;GLK;ICL</Platform>
+                <TestEnvironment>ICL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Deployed@GLK_SOC</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;ETM;GFT" Id="HDMIM113">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_1_4_MODES.bin -EDID_MODES_XML HDMI_EDID_1_4_MODES.xml</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>LKF1;TGL;JSL;EHL;DG1;DG2</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;TGL_SIM;TGL_SOC;JSL_SIM;JSL_SOC;EHL_SIM;EHL_SOC;DG1_SIM;DG1_SOC;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;ETM;GFT" Id="HDMIM114">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_E HDMI_EDID_1_4_MODES.bin -EDID_MODES_XML HDMI_EDID_1_4_MODES.xml</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+     <Test LastModifiedWW="2017.WW27" Name="HDMI_MULTIDISPLAY_CONFIG" Owner="gyd" Priority="P2" Version="1">
+       <TestInstance Grids="CI;ETM;GFT" Id="HDMIM115">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_multiconfig_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -HDMI_C HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_10BPC_3840_2160_30P</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL;JSL;EHL</Platform>
+                <TestEnvironment>ICL_SOC;JSL_SIM;JSL_SOC;EHL_SIM;EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;ETM;GFT" Id="HDMIM116">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_multiconfig_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_10BPC_3840_2160_30P</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>TGL;JSL;EHL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC;JSL_SIM;JSL_SOC;EHL_SIM;EHL_SOC;RYF_SIM;RYF_SOC;DG1_SIM;DG1_SOC;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;ETM;GFT" Id="HDMIM117">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_multiconfig_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -HDMI_E HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE RGB_10BPC_3840_2160_30P</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+     <Test LastModifiedWW="2017.WW27" Name="HDMI_EDID_NON_PRMODES_SET1_DEEP_COLOR" Owner="gyd" Priority="P1" Version="1">
+       <TestInstance Grids="ETM" Id="HDMIM1775">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_A HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE ALL_DEEP_COLOR_MODES</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL;RYF</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC;RYF_SIM;RYF_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM;GFT" Id="HDMIM176">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE ALL_DEEP_COLOR_MODES</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL;TGL;JSL;EHL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SIM;TGL_SOC;JSL_SIM;JSL_SOC;EHL_SIM;EHL_SOC;RYF_SIM;RYF_SOC;DG1_SIM;DG1_SOC;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM;GFT" Id="HDMIM177">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_C HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE ALL_DEEP_COLOR_MODES</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>CNL_ULT;GLK;ICL;JSL;EHL</Platform>
+                <TestEnvironment>ICL_SOC;JSL_SOC;EHL_SIM;EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM;GFT" Id="HDMIM178">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE ALL_DEEP_COLOR_MODES</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>LKF1;TGL;JSL;EHL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;TGL_SIM;TGL_SOC;JSL_SIM;JSL_SOC;EHL_SIM;EHL_SOC;RYF_SIM;RYF_SOC;DG1_SIM;DG1_SOC;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM;GFT" Id="HDMIM179">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_E HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE ALL_DEEP_COLOR_MODES</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>LKF1;RYF</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;RYF_SIM;RYF_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="ETM" Id="HDMIM180">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_G HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE ALL_DEEP_COLOR_MODES</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="ETM" Id="HDMIM181">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_H HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE ALL_DEEP_COLOR_MODES</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="ETM" Id="HDMIM182">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_I HDMI_EDID_NON_PRMODES_SET1.bin -EDID_MODES_XML HDMI_EDID_NON_PRMODES_SET1.xml -MODE ALL_DEEP_COLOR_MODES</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+     <Test LastModifiedWW="2017.WW27" Name="HDMI_EDID_YUV420_MODES_DEEP_COLOR" Owner="gyd" Priority="P1" Version="1">
+       <TestInstance Grids="ETM" Id="HDMIM183">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_A HDMI_EDID_YUV420_MODES.bin -EDID_MODES_XML HDMI_EDID_YUV420_MODES.xml -MODE ALL_DEEP_COLOR_MODES</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL;RYF</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC;RYF_SIM;RYF_SOC;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM;GFT" Id="HDMIM184">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_B HDMI_EDID_YUV420_MODES.bin -EDID_MODES_XML HDMI_EDID_YUV420_MODES.xml -MODE ALL_DEEP_COLOR_MODES</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>ICL;TGL;JSL;EHL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SIM;TGL_SOC;JSL_SIM;JSL_SOC;EHL_SIM;EHL_SOC;RYF_SIM;RYF_SOC;DG1_SIM;DG1_SOC;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>Qualified@TGL_SIM</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;ETM;GFT" Id="HDMIM185">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_C HDMI_EDID_YUV420_MODES.bin -EDID_MODES_XML HDMI_EDID_YUV420_MODES.xml -MODE ALL_DEEP_COLOR_MODES</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>CNL_ULT;GLK;ICL;JSL;EHL</Platform>
+                <TestEnvironment>ICL_SOC;JSL_SIM;JSL_SOC;EHL_SIM;EHL_SOC;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM;GFT" Id="HDMIM186">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_D HDMI_EDID_YUV420_MODES.bin -EDID_MODES_XML HDMI_EDID_YUV420_MODES.xml -MODE ALL_DEEP_COLOR_MODES</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>LKF1;TGL;JSL;EHL;RYF;DG1;DG2</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;TGL_SIM;TGL_SOC;JSL_SIM;JSL_SOC;EHL_SIM;EHL_SOC;RYF_SIM;RYF_SOC;DG1_SIM;DG1_SOC;RKL_SIM;RKL_EMU;DG2_SIM</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;ETM;GFT" Id="HDMIM187">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_E HDMI_EDID_YUV420_MODES.bin -EDID_MODES_XML HDMI_EDID_YUV420_MODES.xml -MODE ALL_DEEP_COLOR_MODES</CommandLine>
+         <OS>WinRS1;WinRS2;WinRS3</OS>
+         <Platform>LKF1;RYF</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_SOC;RYF_SIM;RYF_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="ETM" Id="HDMIM188">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_G HDMI_EDID_YUV420_MODES.bin -EDID_MODES_XML HDMI_EDID_YUV420_MODES.xml -MODE ALL_DEEP_COLOR_MODES</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="ETM" Id="HDMIM189">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_H HDMI_EDID_YUV420_MODES.bin -EDID_MODES_XML HDMI_EDID_YUV420_MODES.xml -MODE ALL_DEEP_COLOR_MODES</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="ETM" Id="HDMIM190">
+         <CommandLine>python Tests\Hdmi\mode\hdmi_sd_mode_enumeration_and_apply.py -HDMI_I HDMI_EDID_YUV420_MODES.bin -EDID_MODES_XML HDMI_EDID_YUV420_MODES.xml -MODE ALL_DEEP_COLOR_MODES</CommandLine>
+         <OS>WinRS3;WinRS4</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+   </Feature>
+</Display_Automation_2.0>

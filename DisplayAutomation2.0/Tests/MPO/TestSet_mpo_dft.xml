@@ -1,0 +1,742 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+    <Feature Name="Multiplane Overlay" Owner="imahendr">
+        <Test LastModifiedWW="2016.WW50" Name="mpo_plane_format_media_resize.py" Owner="anshetty" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPODF001">
+                <CommandLine>python Tests\MPO\Flip\mpo_plane_format_media_resize.py -EDP_A -HDMI_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF002">
+                <CommandLine>python Tests\MPO\Flip\mpo_plane_format_media_resize.py -EDP_A -HDMI_B -DP_C</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;GFT" Id="MPODF003" Status="Valid">
+                <CommandLine>python Tests\MPO\Flip\mpo_plane_format_media_resize.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF037">
+                <CommandLine>python Tests\MPO\Flip\NV12\mpo_plane_format_media_resize.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF047">
+                <CommandLine>python Tests\MPO\Flip\NV12\mpo_plane_format_media_resize.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF059">
+                <CommandLine>python Tests\MPO\Flip\SecondaryMPO\NV12\mpo_plane_format_media_resize.py -EDP_A -DP_C DELL_U2312HM_DP.bin DELL_U2312HM_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF060">
+                <CommandLine>python Tests\MPO\Flip\SecondaryMPO\NV12\mpo_plane_format_media_resize.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF061">
+                <CommandLine>python Tests\MPO\Flip\SecondaryMPO\NV12\mpo_plane_format_media_resize.py -EDP_A -DP_C DELL_UP2414Q_DP.bin DELL_UP2414Q_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF062">
+                <CommandLine>python Tests\MPO\Flip\SecondaryMPO\NV12\mpo_plane_format_media_resize.py -EDP_A -HDMI_B DELL_UP2414Q_HDMI.bin</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2016.WW50" Name="mpo_plane_format_media_youtube_resize.py" Owner="anshetty" Priority="P2" Version="1">
+            <TestInstance Grids="GFT" Id="MPODF004">
+                <CommandLine>python Tests\MPO\Flip\mpo_plane_format_media_youtube_resize.py -EDP_A -HDMI_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF005">
+                <CommandLine>python Tests\MPO\Flip\mpo_plane_format_media_youtube_resize.py -EDP_A -HDMI_B -DP_C</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF006" Status="Valid">
+                <CommandLine>python Tests\MPO\Flip\mpo_plane_format_media_youtube_resize.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF038">
+                <CommandLine>python Tests\MPO\Flip\NV12\mpo_plane_format_media_youtube_resize.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@SKL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF048">
+                <CommandLine>python Tests\MPO\Flip\NV12\mpo_plane_format_media_youtube_resize.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF063">
+                <CommandLine>python Tests\MPO\Flip\SecondaryMPO\NV12\mpo_plane_format_media_youtube_resize.py -EDP_A -DP_C DELL_U2312HM_DP.bin DELL_U2312HM_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@CFL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF064">
+                <CommandLine>python Tests\MPO\Flip\SecondaryMPO\NV12\mpo_plane_format_media_youtube_resize.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF065">
+                <CommandLine>python Tests\MPO\Flip\SecondaryMPO\NV12\mpo_plane_format_media_youtube_resize.py -EDP_A -DP_C DELL_UP2414Q_DP.bin DELL_UP2414Q_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF066">
+                <CommandLine>python Tests\MPO\Flip\SecondaryMPO\NV12\mpo_plane_format_media_youtube_resize.py -EDP_A -HDMI_B DELL_UP2414Q_HDMI.bin</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2016.WW50" Name="mpo_3d_apps_resize.py" Owner="anshetty" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPODF007">
+                <CommandLine>python Tests\MPO\Flip\mpo_3d_apps_resize.py -EDP_A -HDMI_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL;KBL;GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;GFT" Id="MPODF008" Status="Valid">
+                <CommandLine>python Tests\MPO\Flip\mpo_3d_apps_resize.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL;KBL;GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF049">
+                <CommandLine>python Tests\MPO\Flip\mpo_3d_apps_resize.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF009">
+                <CommandLine>python Tests\MPO\Flip\mpo_3d_apps_resize.py -EDP_A -HDMI_B -DP_C</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL;KBL;GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2016.WW50" Name="mpo_3d_apps_media_resize.py" Owner="anshetty" Priority="P2" Version="1">
+            <TestInstance Grids="GFT" Id="MPODF010">
+                <CommandLine>python Tests\MPO\Flip\mpo_3d_apps_media_resize.py -EDP_A -HDMI_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF011" Status="Valid">
+                <CommandLine>python Tests\MPO\Flip\mpo_3d_apps_media_resize.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF012">
+                <CommandLine>python Tests\MPO\Flip\mpo_3d_apps_media_resize.py -EDP_A -HDMI_B -DP_C</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF039">
+                <CommandLine>python Tests\MPO\Flip\NV12\mpo_3d_apps_media_resize.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF050">
+                <CommandLine>python Tests\MPO\Flip\NV12\mpo_3d_apps_media_resize.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2016.WW50" Name="mpo_3d_apps_media_youtube_resize.py" Owner="anshetty" Priority="P2" Version="1">
+            <TestInstance Grids="GFT" Id="MPODF013">
+                <CommandLine>python Tests\MPO\Flip\mpo_3d_apps_media_youtube_resize.py -EDP_A -HDMI_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF014" Status="Valid">
+                <CommandLine>python Tests\MPO\Flip\mpo_3d_apps_media_youtube_resize.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF015">
+                <CommandLine>python Tests\MPO\Flip\mpo_3d_apps_media_youtube_resize.py -EDP_A -HDMI_B -DP_C</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF040">
+                <CommandLine>python Tests\MPO\Flip\NV12\mpo_3d_apps_media_youtube_resize.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF051">
+                <CommandLine>python Tests\MPO\Flip\NV12\mpo_3d_apps_media_youtube_resize.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2016.WW50" Name="mpo_3d_apps_snapmode.py" Owner="anshetty" Priority="P2" Version="1">
+            <TestInstance Grids="GFT" Id="MPODF016">
+                <CommandLine>python Tests\MPO\Flip\mpo_3d_apps_snapmode.py -EDP_A -HDMI_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL;KBL;GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF017" Status="Valid">
+                <CommandLine>python Tests\MPO\Flip\mpo_3d_apps_snapmode.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL;KBL;GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF052">
+                <CommandLine>python Tests\MPO\Flip\mpo_3d_apps_snapmode.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF018">
+                <CommandLine>python Tests\MPO\Flip\mpo_3d_apps_snapmode.py -EDP_A -HDMI_B -DP_C</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL;KBL;GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2016.WW50" Name="mpo_plane_format_media_snapmode.py" Owner="anshetty" Priority="P2" Version="1">
+            <TestInstance Grids="GFT" Id="MPODF019">
+                <CommandLine>python Tests\MPO\Flip\mpo_plane_format_media_snapmode.py -EDP_A -HDMI_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF020" Status="Valid">
+                <CommandLine>python Tests\MPO\Flip\mpo_plane_format_media_snapmode.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF021">
+                <CommandLine>python Tests\MPO\Flip\mpo_plane_format_media_snapmode.py -EDP_A -HDMI_B -DP_C</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@SKL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF041">
+                <CommandLine>python Tests\MPO\Flip\NV12\mpo_plane_format_media_snapmode.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF053">
+                <CommandLine>python Tests\MPO\Flip\NV12\mpo_plane_format_media_snapmode.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2016.WW50" Name="mpo_3d_apps_media_snapmode.py" Owner="anshetty" Priority="P2" Version="1">
+            <TestInstance Grids="GFT" Id="MPODF022">
+                <CommandLine>python Tests\MPO\Flip\mpo_3d_apps_media_snapmode.py -EDP_A -HDMI_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF023" Status="Valid">
+                <CommandLine>python Tests\MPO\Flip\mpo_3d_apps_media_snapmode.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF024">
+                <CommandLine>python Tests\MPO\Flip\mpo_3d_apps_media_snapmode.py -EDP_A -HDMI_B -DP_C</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF042">
+                <CommandLine>python Tests\MPO\Flip\NV12\mpo_3d_apps_media_snapmode.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF054">
+                <CommandLine>python Tests\MPO\Flip\NV12\mpo_3d_apps_media_snapmode.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2016.WW50" Name="mpo_media_youtube_snapmode.py" Owner="anshetty" Priority="P2" Version="1">
+            <TestInstance Grids="GFT" Id="MPODF025">
+                <CommandLine>python Tests\MPO\Flip\mpo_media_youtube_snapmode.py -EDP_A -HDMI_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF026" Status="Valid">
+                <CommandLine>python Tests\MPO\Flip\mpo_media_youtube_snapmode.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF027">
+                <CommandLine>python Tests\MPO\Flip\mpo_media_youtube_snapmode.py -EDP_A -HDMI_B -DP_C</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF043">
+                <CommandLine>python Tests\MPO\Flip\NV12\mpo_media_youtube_snapmode.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF079">
+                <CommandLine>python Tests\MPO\Flip\NV12\mpo_media_youtube_snapmode.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2016.WW50" Name="mpo_plane_format_scaling.py" Owner="anshetty" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="MPODF028">
+                <CommandLine>python Tests\MPO\Flip\mpo_plane_format_scaling.py -EDP_A -HDMI_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;GFT" Id="MPODF029" Status="Valid">
+                <CommandLine>python Tests\MPO\Flip\mpo_plane_format_scaling.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF030">
+                <CommandLine>python Tests\MPO\Flip\mpo_plane_format_scaling.py -EDP_A -HDMI_B -DP_C</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF044">
+                <CommandLine>python Tests\MPO\Flip\NV12\mpo_plane_format_scaling.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF055">
+                <CommandLine>python Tests\MPO\Flip\NV12\mpo_plane_format_scaling.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF067">
+                <CommandLine>python Tests\MPO\Flip\SecondaryMPO\NV12\mpo_plane_format_scaling.py -EDP_A -DP_C DELL_U2312HM_DP.bin DELL_U2312HM_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF068">
+                <CommandLine>python Tests\MPO\Flip\SecondaryMPO\NV12\mpo_plane_format_scaling.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF069">
+                <CommandLine>python Tests\MPO\Flip\SecondaryMPO\NV12\mpo_plane_format_scaling.py -EDP_A -DP_C DELL_UP2414Q_DP.bin DELL_UP2414Q_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF070">
+                <CommandLine>python Tests\MPO\Flip\SecondaryMPO\NV12\mpo_plane_format_scaling.py -EDP_A -HDMI_B DELL_UP2414Q_HDMI.bin</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2016.WW50" Name="mpo_plane_format_up_down_scaling.py" Owner="anshetty" Priority="P2" Version="1">
+            <TestInstance Grids="GFT" Id="MPODF031">
+                <CommandLine>python Tests\MPO\Flip\mpo_plane_format_up_down_scaling.py -EDP_A -HDMI_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;GFT" Id="MPODF032" Status="Valid">
+                <CommandLine>python Tests\MPO\Flip\mpo_plane_format_up_down_scaling.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF033">
+                <CommandLine>python Tests\MPO\Flip\mpo_plane_format_up_down_scaling.py -EDP_A -HDMI_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF045">
+                <CommandLine>python Tests\MPO\Flip\NV12\mpo_plane_format_up_down_scaling.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>KBL;CFL;GLK;CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF056">
+                <CommandLine>python Tests\MPO\Flip\NV12\mpo_plane_format_up_down_scaling.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF071">
+                <CommandLine>python Tests\MPO\Flip\SecondaryMPO\NV12\mpo_plane_format_up_down_scaling.py -EDP_A -DP_C DELL_U2312HM_DP.bin DELL_U2312HM_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF072">
+                <CommandLine>python Tests\MPO\Flip\SecondaryMPO\NV12\mpo_plane_format_up_down_scaling.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF073">
+                <CommandLine>python Tests\MPO\Flip\SecondaryMPO\NV12\mpo_plane_format_up_down_scaling.py -EDP_A -DP_C DELL_UP2414Q_DP.bin DELL_UP2414Q_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF074">
+                <CommandLine>python Tests\MPO\Flip\SecondaryMPO\NV12\mpo_plane_format_up_down_scaling.py -EDP_A -HDMI_B DELL_UP2414Q_HDMI.bin</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2016.WW50" Name="plane_scalar_basic.py" Owner="smithab" Priority="P2" Version="1">
+            <TestInstance Grids="GFT" Id="MPODF034">
+                <CommandLine>python Tests\MPO\plane_scalar_basic.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL;KBL;GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF035">
+                <CommandLine>python Tests\MPO\plane_scalar_basic.py -EDP_A -HDMI_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL;KBL;GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF036">
+                <CommandLine>python Tests\MPO\plane_scalar_basic.py -EDP_A -HDMI_B -DP_C</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL;KBL;GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@SKL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF046">
+                <CommandLine>python Tests\MPO\plane_scalar_basic.py -EDP_A -DP_B</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>SKL;KBL;GLK;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF057">
+                <CommandLine>python Tests\MPO\plane_scalar_basic.py -MIPI_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF075">
+                <CommandLine>python Tests\MPO\Flip\SecondaryMPO\plane_scalar_basic.py -EDP_A -DP_C DELL_U2312HM_DP.bin DELL_U2312HM_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF076">
+                <CommandLine>python Tests\MPO\Flip\SecondaryMPO\plane_scalar_basic.py -EDP_A -DP_C HP_Z27q_DP.bin HP_Z27q_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF077">
+                <CommandLine>python Tests\MPO\Flip\SecondaryMPO\plane_scalar_basic.py -EDP_A -DP_C DELL_UP2414Q_DP.bin DELL_UP2414Q_DPCD.txt</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="MPODF078">
+                <CommandLine>python Tests\MPO\Flip\SecondaryMPO\plane_scalar_basic.py -EDP_A -HDMI_B DELL_UP2414Q_HDMI.bin</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRS3</OS>
+                <Platform>KBL;CFL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW06" Name="hflip_basic.py" Owner="imahendr" Priority="P1" Version="1">
+            <TestInstance Grids="CI;GFT" Id="MPODF058">
+                <CommandLine>python Tests\MPO\Flip\NV12\hflip_basic.py -EDP_A</CommandLine>
+                <OS>WinRS2</OS>
+                <Platform>CNL;ICL;TGL;EHL;RYF;DG1;DG2;RKL</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;EHL_SOC;RYF_SOC;DG1_SOC;DG2_SOC;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+    </Feature>
+</Display_Automation_2.0>

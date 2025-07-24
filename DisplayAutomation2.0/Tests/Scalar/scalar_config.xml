@@ -1,0 +1,982 @@
+<?xml version="1.0"?>
+<Test Feature="Scalar" Modes="CI,FS,MAR">
+<Platform Name="ICLLP" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_B" edid="Acer_H277HK_DP.bin" dpcd="Acer_H277HK_nonVRR_DPCD.txt" />
+		<DisplayConfig Port="DP_C" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_D" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_E" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_F" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="HDMI_B" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_C" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_D" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_E" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_F" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+	<DSCDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_B" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_C" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_D" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_E" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_F" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	</DSCDisplayConfig>
+				
+	<DPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPScalarModes>
+
+	<EDPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</EDPScalarModes>
+	
+	<HDMIScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="30" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="30" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="30" Scaling="FS" />
+	</HDMIScalarModes>
+
+    <DPDSCScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPDSCScalarModes>
+
+</Platform>
+<Platform Name="JSL" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_B" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_C" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_D" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="HDMI_B" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_C" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_D" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+	<DSCDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_B" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_C" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_D" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	</DSCDisplayConfig>
+				
+	<DPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPScalarModes>
+
+	<EDPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</EDPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="30" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="30" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="30" Scaling="FS" />
+	</HDMIScalarModes>
+	
+	<DPDSCScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPDSCScalarModes>
+	
+</Platform>
+<Platform Name="ICLHP" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_A" edid="Acer_H277HK_DP.bin" dpcd="Acer_H277HK_nonVRR_DPCD.txt" />
+		<DisplayConfig Port="DP_B" edid="Acer_H277HK_DP.bin" dpcd="Acer_H277HK_nonVRR_DPCD.txt" />
+		<DisplayConfig Port="DP_C" edid="Acer_H277HK_DP.bin" dpcd="Acer_H277HK_nonVRR_DPCD.txt" />
+		<DisplayConfig Port="DP_D" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_E" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_F" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_G" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_H" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_I" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="HDMI_B" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_C" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_D" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_E" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_F" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_G" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_H" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_I" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+	<DSCDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_A" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_B" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_D" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_E" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_F" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+        <DisplayConfig Port="DP_G" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_H" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_I" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	</DSCDisplayConfig>
+
+	<DPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPScalarModes>
+
+	<EDPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</EDPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="30" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="30" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="30" Scaling="FS" />
+	</HDMIScalarModes>
+
+	<DPDSCScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPDSCScalarModes>
+</Platform>
+<Platform Name="TGL" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="EDP_B" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+        <DisplayConfig Port="DP_A" edid="Acer_H277HK_DP.bin" dpcd="Acer_H277HK_nonVRR_DPCD.txt" />
+		<DisplayConfig Port="DP_B" edid="Acer_H277HK_DP.bin" dpcd="Acer_H277HK_nonVRR_DPCD.txt" />
+		<DisplayConfig Port="DP_C" edid="Acer_H277HK_DP.bin" dpcd="Acer_H277HK_nonVRR_DPCD.txt" />
+		<DisplayConfig Port="DP_D" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_E" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_F" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+        <DisplayConfig Port="DP_G" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_H" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_I" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="HDMI_A" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_B" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_C" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_D" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_E" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_F" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_G" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_H" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_I" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+	<DSCDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="EDP_B" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_A" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_B" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_D" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_E" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_F" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+        <DisplayConfig Port="DP_G" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_H" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_I" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	</DSCDisplayConfig>
+
+
+	<DPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPScalarModes>
+
+	<EDPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</EDPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="MAR" />
+		<EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="CI" />
+		<EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="FS" />
+	</HDMIScalarModes>
+
+	<DPDSCScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPDSCScalarModes>
+</Platform>
+<Platform Name="DG1" SKU="">
+	<GoldenDisplayConfig>
+        <DisplayConfig Port="DP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_B" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_C" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_D" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="HDMI_A" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_B" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_C" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_D" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+
+	<DSCDisplayConfig>
+		<DisplayConfig Port="DP_A" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_B" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_C" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_D" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	</DSCDisplayConfig>
+
+	<DPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="MAR" />
+		<EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="CI" />
+		<EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="FS" />
+	</HDMIScalarModes>
+
+	<DPDSCScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPDSCScalarModes>
+</Platform>
+<Platform Name="RKL" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="EDP_B" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+        <DisplayConfig Port="DP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_B" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_C" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_D" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="HDMI_A" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_B" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_C" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_D" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+
+	<DSCDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="EDP_B" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_A" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_B" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_C" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_D" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	</DSCDisplayConfig>
+
+	<DPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPScalarModes>
+
+	<EDPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</EDPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="MAR" />
+        <EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="CI" />
+		<EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="FS" />
+	</HDMIScalarModes>
+
+	<DPDSCScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPDSCScalarModes>
+</Platform>
+<Platform Name="LKF1" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="DP_D" edid="LGUltraHD_DP.bin" dpcd="LGUltraHD_DPCD.txt" />
+		<DisplayConfig Port="DP_E" edid="LGUltraHD_DP.bin" dpcd="LGUltraHD_DPCD.txt" />
+		<DisplayConfig Port="HDMI_D" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_E" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+
+	<DSCDisplayConfig>
+		<DisplayConfig Port="DP_D" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_E" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	</DSCDisplayConfig>
+
+	<DPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="30" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="30" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="30" Scaling="FS" />
+	</HDMIScalarModes>
+
+	<DPDSCScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPDSCScalarModes>
+</Platform>
+<Platform Name="GLK" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="DP_B" edid="LGUltraHD_DP.bin" dpcd="LGUltraHD_DPCD.txt" />
+		<DisplayConfig Port="DP_C" edid="LGUltraHD_DP.bin" dpcd="LGUltraHD_DPCD.txt" />
+		<DisplayConfig Port="HDMI_B" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_C" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+				
+	<DPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="30" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="30" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="30" Scaling="MAR" />
+	</HDMIScalarModes>
+</Platform>
+<Platform Name="LKFR" SKU="">
+    <GoldenDisplayConfig>
+		<DisplayConfig Port="DP_D" edid="LGUltraHD_DP.bin" dpcd="LGUltraHD_DPCD.txt" />
+		<DisplayConfig Port="DP_E" edid="LGUltraHD_DP.bin" dpcd="LGUltraHD_DPCD.txt" />
+		<DisplayConfig Port="HDMI_D" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_E" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+
+    <DSCDisplayConfig>
+		<DisplayConfig Port="DP_D" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_E" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	</DSCDisplayConfig>
+
+	<DPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="30" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="30" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="30" Scaling="FS" />
+	</HDMIScalarModes>
+
+    <DPDSCScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPDSCScalarModes>
+</Platform>
+<Platform Name="DG2" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="Acer_H277HK_DP.bin" dpcd="Acer_H277HK_nonVRR_DPCD.txt" />
+		<DisplayConfig Port="DP_A" edid="Acer_H277HK_DP.bin" dpcd="Acer_H277HK_nonVRR_DPCD.txt" />
+		<DisplayConfig Port="DP_B" edid="Acer_H277HK_DP.bin" dpcd="Acer_H277HK_nonVRR_DPCD.txt" />
+		<DisplayConfig Port="DP_C" edid="Acer_H277HK_DP.bin" dpcd="Acer_H277HK_nonVRR_DPCD.txt" />
+		<DisplayConfig Port="DP_D" edid="Acer_H277HK_DP.bin" dpcd="Acer_H277HK_nonVRR_DPCD.txt" />
+		<DisplayConfig Port="HDMI_A" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_B" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_C" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_D" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+
+	<DSCDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_A" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_B" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_C" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_D" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	</DSCDisplayConfig>
+
+	<!--Uncompressed Pipe Joiner Display Config-->
+	<UCDisplayConfig>
+		<DisplayConfig Port="DP_A,DP_B,DP_C,DP_D" edid="8k_30hz_16bpc.bin" dpcd="HBR3_DPCD.txt" />
+	</UCDisplayConfig>
+
+	<!--Compressed Pipe Joiner Display Config-->
+	<CPipeJoinerDisplayConfig>
+		<DisplayConfig Port="DP_A,DP_B,DP_C,DP_D" edid="DP_7680_4320_60rr.EDID" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	</CPipeJoinerDisplayConfig>
+
+	<DPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPScalarModes>
+
+	<EDPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</EDPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="MAR" />
+		<EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="FS" />
+	</HDMIScalarModes>
+
+	<DPDSCScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPDSCScalarModes>
+
+	<!-- Removing MAR scaling from compressed and uncompressed pipe joined scenario. 
+	For mode when there is a need of more than 1 pipe or custom targets like collage then
+	MAR/Centered scaling for pipe joined targets is not supported.
+	HSD : https://hsdes.intel.com/appstore/article/#/16018390975 -->
+
+	<!--Uncompressed Pipe Joiner Scalar Modes-->
+	<UCScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="30" Scaling="FS" />
+	</UCScalarModes>
+
+	<!--Compressed Pipe Joiner Scalar Modes-->
+	<CPipeJoinerScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</CPipeJoinerScalarModes>
+
+</Platform>
+<Platform Name="DG2" SKU="B0">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_B" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_C" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_D" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="HDMI_A" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_B" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_C" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_D" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+
+	<!--Uncompressed Pipe Joiner Display Config-->
+	<UCDisplayConfig>
+		<DisplayConfig Port="DP_A,DP_B,DP_C,DP_D" edid="8k_30hz_16bpc.bin" dpcd="HBR3_DPCD.txt" />
+	</UCDisplayConfig>
+
+	<!--Compressed Pipe Joiner Display Config-->
+	<CPipeJoinerDisplayConfig>
+		<DisplayConfig Port="DP_A,DP_B,DP_C,DP_D" edid="DP_7680_4320_60rr.EDID" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	</CPipeJoinerDisplayConfig>
+
+	<DSCDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_A" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_B" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_C" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_D" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	</DSCDisplayConfig>
+
+	<DPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPScalarModes>
+
+	<EDPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</EDPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="MAR" />
+		<EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="FS" />
+	</HDMIScalarModes>
+
+	<DPDSCScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPDSCScalarModes>
+
+	<!-- Removing MAR scaling from compressed and uncompressed pipe joined scenario. 
+	For mode when there is a need of more than 1 pipe or custom targets like collage then
+	MAR/Centered scaling for pipe joined targets is not supported.
+	HSD : https://hsdes.intel.com/appstore/article/#/16018390975 -->
+
+	<!--Uncompressed Pipe Joiner Scalar Modes-->
+	<UCScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="30" Scaling="FS" />
+	</UCScalarModes>
+
+	<!--Compressed Pipe Joiner Scalar Modes-->
+	<CPipeJoinerScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</CPipeJoinerScalarModes>
+
+</Platform>
+<Platform Name="ADLS" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="EDP_B" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+        <DisplayConfig Port="DP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_B" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_C" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_D" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+        <DisplayConfig Port="DP_E" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="HDMI_A" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_B" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_C" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_D" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+        <DisplayConfig Port="HDMI_E" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+
+	<DSCDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="EDP_B" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_A" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_B" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_C" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_D" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	    <DisplayConfig Port="DP_E" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	</DSCDisplayConfig>
+
+	<DPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPScalarModes>
+
+	<EDPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</EDPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="MAR" />
+		<EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="CI" />
+		<EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="FS" />
+	</HDMIScalarModes>
+
+	<DPDSCScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="CI" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPDSCScalarModes>
+</Platform>
+<Platform Name="ADLP" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="EDP_B" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_A" edid="Acer_H277HK_DP.bin" dpcd="Acer_H277HK_nonVRR_DPCD.txt" />
+		<DisplayConfig Port="DP_B" edid="Acer_H277HK_DP.bin" dpcd="Acer_H277HK_nonVRR_DPCD.txt" />
+        <DisplayConfig Port="DP_F" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_G" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_H" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_I" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="HDMI_A" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_B" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+        <DisplayConfig Port="HDMI_F" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_G" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	    <DisplayConfig Port="HDMI_H" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	    <DisplayConfig Port="HDMI_I" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+
+	<DSCDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="EDP_B" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_A" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_B" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_F" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_G" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	    <DisplayConfig Port="DP_H" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_I" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	</DSCDisplayConfig>
+
+	<!--Uncompressed Pipe Joiner Display Config-->
+	<UCDisplayConfig>
+		<DisplayConfig Port="DP_A,DP_B,DP_F,DP_G,DP_H,DP_I" edid="8k_30hz_16bpc.bin" dpcd="HBR3_DPCD.txt" />
+	</UCDisplayConfig>
+
+	<!--Compressed Pipe Joiner Display Config-->
+	<CPipeJoinerDisplayConfig>
+		<DisplayConfig Port="DP_A,DP_B,DP_F,DP_G,DP_H,DP_I" edid="DP_7680_4320_60rr.EDID" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	</CPipeJoinerDisplayConfig>
+
+	<DPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPScalarModes>
+
+	<EDPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</EDPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="MAR" />
+		<EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="FS" />
+	</HDMIScalarModes>
+
+	<DPDSCScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPDSCScalarModes>
+
+	<!-- Removing MAR scaling from compressed and uncompressed pipe joined scenario. 
+	For mode when there is a need of more than 1 pipe or custom targets like collage then
+	MAR/Centered scaling for pipe joined targets is not supported.
+	HSD : https://hsdes.intel.com/appstore/article/#/16018390975 -->
+	
+	<!--Uncompressed Pipe Joiner Scalar Modes-->
+	<UCScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="30" Scaling="FS" />
+	</UCScalarModes>
+
+	<!--Compressed Pipe Joiner Scalar Modes-->
+	<CPipeJoinerScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</CPipeJoinerScalarModes>
+
+</Platform>
+<Platform Name="MTL" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="EDP_B" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+        <DisplayConfig Port="DP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_B" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+        <DisplayConfig Port="DP_F" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_G" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_H" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_I" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="HDMI_A" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_B" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+        <DisplayConfig Port="HDMI_F" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_G" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	    <DisplayConfig Port="HDMI_H" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_I" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+
+	<DSCDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="EDP_B" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_A" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_B" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_F" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_G" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	    <DisplayConfig Port="DP_H" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_I" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	</DSCDisplayConfig>
+
+	<!--Compressed Pipe Joiner Display Config-->
+	<CPipeJoinerDisplayConfig>
+		<DisplayConfig Port="DP_A,DP_B,DP_F,DP_G" edid="DP_7680_4320_60rr.EDID" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	</CPipeJoinerDisplayConfig>
+
+	<DPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPScalarModes>
+
+	<EDPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</EDPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="MAR" />
+		<EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="FS" />
+	</HDMIScalarModes>
+
+	<DPDSCScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPDSCScalarModes>
+
+	<!--Compressed Pipe Joiner Scalar Modes-->
+	<CPipeJoinerScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</CPipeJoinerScalarModes>
+
+</Platform>
+<Platform Name="ELG" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_A" edid="Acer_H277HK_DP.bin" dpcd="Acer_H277HK_nonVRR_DPCD.txt" />
+        <DisplayConfig Port="DP_F,DP_G,DP_H,DP_I" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="HDMI_A,HDMI_F,HDMI_G,HDMI_H,HDMI_I" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+
+	<DSCDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_A" edid="Acer_H277HK_DP.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+        <DisplayConfig Port="DP_F,DP_G,DP_H,DP_I" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	</DSCDisplayConfig>
+
+	<!--Compressed Pipe Joiner Display Config-->
+	<CPipeJoinerDisplayConfig>
+		<DisplayConfig Port="DP_A,DP_F,DP_G,DP_H,DP_I" edid="DP_7680_4320_60rr.EDID" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	</CPipeJoinerDisplayConfig>
+
+	<UltraJoinerDisplayConfig>
+        <DisplayConfig Port="DP_A,DP_F,DP_G,DP_H,DP_I" edid="None" dpcd="None" display_tech="MST" topology_path="DP_MST_TILE\8k_75hz_hbr3_topology.xml"/>
+	</UltraJoinerDisplayConfig>
+
+	<DPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPScalarModes>
+
+	<EDPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</EDPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="MAR" />
+		<EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="FS" />
+	</HDMIScalarModes>
+
+	<DPDSCScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPDSCScalarModes>
+
+	<!--Compressed Big Pipe Joiner Scalar Modes-->
+	<CPipeJoinerScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</CPipeJoinerScalarModes>
+
+	<!--Compressed Ultra Pipe Joiner Scalar Modes-->
+	<UltraJoinerScalarModes>
+		<EDIDInstance HActive="1920" VActive="1080" RefreshRate="75" Scaling="FS" />
+	</UltraJoinerScalarModes>
+</Platform>
+<Platform Name="LNL" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="EDP_B" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+        <DisplayConfig Port="DP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_B" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+        <DisplayConfig Port="DP_F" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_G" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_H" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_I" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="HDMI_A" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_B" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+        <DisplayConfig Port="HDMI_F" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_G" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	    <DisplayConfig Port="HDMI_H" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_I" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+
+	<DSCDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="EDP_B" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_A" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_B" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_F" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_G" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	    <DisplayConfig Port="DP_H" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_I" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	</DSCDisplayConfig>
+
+	<!--Compressed Pipe Joiner Display Config-->
+	<CPipeJoinerDisplayConfig>
+		<DisplayConfig Port="DP_A,DP_B,DP_F,DP_G" edid="DP_7680_4320_60rr.EDID" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	</CPipeJoinerDisplayConfig>
+
+	<DPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPScalarModes>
+
+	<EDPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</EDPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="MAR" />
+		<EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="FS" />
+	</HDMIScalarModes>
+
+	<DPDSCScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPDSCScalarModes>
+
+	<!--Compressed Pipe Joiner Scalar Modes-->
+	<CPipeJoinerScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</CPipeJoinerScalarModes>
+
+</Platform>
+<Platform Name="PTL" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="EDP_B" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_B" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_F" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_G" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_H" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_I" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+	</GoldenDisplayConfig>
+
+	<DSCDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="EDP_B" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_A" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_B" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_F" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_G" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_H" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_I" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	</DSCDisplayConfig>
+
+	<!--Compressed Pipe Joiner Display Config-->
+	<CPipeJoinerDisplayConfig>
+		<DisplayConfig Port="DP_A,DP_B,DP_F,DP_G,DP_H,DP_I" edid="DP_7680_4320_60rr.EDID" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	</CPipeJoinerDisplayConfig>
+
+	<DPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPScalarModes>
+
+	<EDPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</EDPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="MAR" />
+		<EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="FS" />
+	</HDMIScalarModes>
+
+	<DPDSCScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPDSCScalarModes>
+
+	<!--Compressed Pipe Joiner Scalar Modes-->
+	<CPipeJoinerScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</CPipeJoinerScalarModes>
+
+</Platform>
+<Platform Name="NVL" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="EDP_B" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_B" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_F" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_G" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_H" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_I" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="HDMI_A" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_B" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+        <DisplayConfig Port="HDMI_F" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_G" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	    <DisplayConfig Port="HDMI_H" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_I" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+
+	<DSCDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="EDP_B" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_A" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_B" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_F" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_G" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_H" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_I" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	</DSCDisplayConfig>
+
+	<!--Compressed Pipe Joiner Display Config-->
+	<CPipeJoinerDisplayConfig>
+		<DisplayConfig Port="DP_A,DP_B,DP_F,DP_G,DP_H,DP_I" edid="DP_7680_4320_60rr.EDID" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	</CPipeJoinerDisplayConfig>
+
+	<DPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPScalarModes>
+
+	<EDPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</EDPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="MAR" />
+		<EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="FS" />
+	</HDMIScalarModes>
+
+	<DPDSCScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPDSCScalarModes>
+
+	<!--Compressed Pipe Joiner Scalar Modes-->
+	<CPipeJoinerScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</CPipeJoinerScalarModes>
+
+</Platform>
+<Platform Name="CLS" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_A" edid="Acer_H277HK_DP.bin" dpcd="Acer_H277HK_nonVRR_DPCD.txt" />
+        <DisplayConfig Port="DP_F,DP_G,DP_H,DP_I" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="HDMI_A,HDMI_F,HDMI_G,HDMI_H,HDMI_I" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+
+	<DSCDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+		<DisplayConfig Port="DP_A" edid="Acer_H277HK_DP.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+        <DisplayConfig Port="DP_F,DP_G,DP_H,DP_I" edid="DP_5120_3200_60rr.bin" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	</DSCDisplayConfig>
+
+	<!--Compressed Pipe Joiner Display Config-->
+	<CPipeJoinerDisplayConfig>
+		<DisplayConfig Port="DP_A,DP_F,DP_G,DP_H,DP_I" edid="DP_7680_4320_60rr.EDID" dpcd="vdsc_1_2_hbr3_LC4.txt" />
+	</CPipeJoinerDisplayConfig>
+
+	<UltraJoinerDisplayConfig>
+        <DisplayConfig Port="DP_A,DP_F,DP_G,DP_H,DP_I" edid="None" dpcd="None" display_tech="MST" topology_path="DP_MST_TILE\8k_120hz_rb2_uhbr20_topology.xml"/>
+	</UltraJoinerDisplayConfig>
+
+	<DPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPScalarModes>
+
+	<EDPScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</EDPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="MAR" />
+		<EDIDInstance HActive="1280" VActive="600" RefreshRate="24" Scaling="FS" />
+	</HDMIScalarModes>
+
+	<DPDSCScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="MAR" />
+	</DPDSCScalarModes>
+
+	<!--Compressed Big Pipe Joiner Scalar Modes-->
+	<CPipeJoinerScalarModes>
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</CPipeJoinerScalarModes>
+
+	<!--Compressed Ultra Pipe Joiner Scalar Modes-->
+	<UltraJoinerScalarModes>
+		<EDIDInstance HActive="1280" VActive="768" RefreshRate="120" Scaling="FS" />
+	</UltraJoinerScalarModes>
+</Platform>
+</Test>
+
+
+
+
+
+

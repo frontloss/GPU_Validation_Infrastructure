@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="PropertySheets\valsim_common.props" />
+  <Import Project="PropertySheets\valsim_kmd.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{88612899-C87B-4D68-9D93-8AC7147C7818}</ProjectGuid>
+    <TemplateGuid>{dd38f7fc-d7bd-488b-9242-7d8754cde80d}</TemplateGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <Configuration>Debug</Configuration>
+    <Platform Condition="'$(Platform)' == ''">Win32</Platform>
+    <RootNamespace>GfxValSimDriver</RootNamespace>
+    <WindowsTargetPlatformVersion>$(WDKVersion)</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <TargetVersion>
+    </TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>KMDF</DriverType>
+    <DriverTargetPlatform>Universal</DriverTargetPlatform>
+    <KMDF_VERSION_MAJOR>1</KMDF_VERSION_MAJOR>
+    <KMDF_VERSION_MINOR>19</KMDF_VERSION_MINOR>
+    <_NT_TARGET_VERSION>0xA000006</_NT_TARGET_VERSION>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <TargetVersion>
+    </TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>KMDF</DriverType>
+    <DriverTargetPlatform>Universal</DriverTargetPlatform>
+    <KMDF_VERSION_MAJOR>1</KMDF_VERSION_MAJOR>
+    <KMDF_VERSION_MINOR>19</KMDF_VERSION_MINOR>
+    <_NT_TARGET_VERSION>0xA000006</_NT_TARGET_VERSION>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <TargetVersion>
+    </TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>KMDF</DriverType>
+    <DriverTargetPlatform>Universal</DriverTargetPlatform>
+    <KMDF_VERSION_MAJOR>1</KMDF_VERSION_MAJOR>
+    <KMDF_VERSION_MINOR>19</KMDF_VERSION_MINOR>
+    <_NT_TARGET_VERSION>0xA000006</_NT_TARGET_VERSION>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <TargetVersion>
+    </TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>KMDF</DriverType>
+    <DriverTargetPlatform>Universal</DriverTargetPlatform>
+    <KMDF_VERSION_MAJOR>1</KMDF_VERSION_MAJOR>
+    <KMDF_VERSION_MINOR>19</KMDF_VERSION_MINOR>
+    <_NT_TARGET_VERSION>0xA000006</_NT_TARGET_VERSION>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+    <EnableInf2cat>false</EnableInf2cat>
+    <ApiValidator_Enable>false</ApiValidator_Enable>
+    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)..\..\..\bin\GfxValSimdriver\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+    <EnableInf2cat>false</EnableInf2cat>
+    <ApiValidator_Enable>false</ApiValidator_Enable>
+    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)..\..\..\bin\GfxValSimdriver\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+    <EnableInf2cat>false</EnableInf2cat>
+    <ApiValidator_Enable>false</ApiValidator_Enable>
+    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)..\..\..\bin\GfxValSimdriver\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+    <EnableInf2cat>false</EnableInf2cat>
+    <ApiValidator_Enable>false</ApiValidator_Enable>
+    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)..\..\..\bin\GfxValSimdriver\</OutDir>
+    <ExtensionsToDeleteOnClean>*.cdf;*.cache;*.obj;*.obj.enc;*.ilk;*.ipdb;*.iobj;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*_manifest.rc;*.bsc;*.sbr;*.xml;*.metagen;*.bi;</ExtensionsToDeleteOnClean>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>_WIN64;_AMD64_;AMD64;__KERNELMODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>RD /S /Q $(ProjectDir)..\..\..\bin\GfxValSimdriver\GfxValSimdriver</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>_WIN64;_AMD64_;AMD64;__KERNELMODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Inf Include="GfxValSimDriver.inf" />
+  </ItemGroup>
+  <ItemGroup>
+    <FilesToPackage Include="$(TargetPath)" />
+    <FilesToPackage Include="@(Inf->'%(CopyOutput)')" Condition="'@(Inf)'!=''" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CommonCore\CommonCore.h" />
+    <ClInclude Include="CommonCore\ExternalCallBacks.h" />
+    <ClInclude Include="CommonCore\PortingLayer.h" />
+    <ClInclude Include="CommonInclude\BitDefs.h" />
+    <ClInclude Include="CommonInclude\DisplayDefs.h" />
+    <ClInclude Include="CommonInclude\ETWLogging.h" />
+    <ClInclude Include="CommonInclude\IntelGfxValSimCrimson.h" />
+    <ClInclude Include="CommonInclude\ValSimCommonInclude.h" />
+    <ClInclude Include="DPCore\AuxDefs.h" />
+    <ClInclude Include="DPCore\AuxDPCDClient.h" />
+    <ClInclude Include="DPCore\AuxInterface.h" />
+    <ClInclude Include="DPCore\DPCDModel.h" />
+    <ClInclude Include="DPCore\DPCDs.h" />
+    <ClInclude Include="DPCore\I2CSlaves.h" />
+    <ClInclude Include="DPCore\MSTTopology.h" />
+    <ClInclude Include="DPCore\SidebandMessageHandlers.h" />
+    <ClInclude Include="DPCore\SidebandUtil.h" />
+    <ClInclude Include="DPCore\SSTDisplay.h" />
+    <ClInclude Include="DPCore\SST_MST_Common.h" />
+    <ClInclude Include="DriverInterfaces\CommonIOCTL.h" />
+    <ClInclude Include="DriverInterfaces\CommonRxHandlers.h" />
+    <ClInclude Include="DriverInterfaces\DPCoreIOCTLCommonDefs.h" />
+    <ClInclude Include="DriverInterfaces\DPHandlers.h" />
+    <ClInclude Include="DriverInterfaces\DPIOCTL.h" />
+    <ClInclude Include="DriverInterfaces\EDPIOCTL.h" />
+    <ClInclude Include="DriverInterfaces\HDMICoreIOCTLCommonDefs.h" />
+    <ClInclude Include="DriverInterfaces\HDMIHandlers.h" />
+    <ClInclude Include="DriverInterfaces\HDMIIOCTL.h" />
+    <ClInclude Include="DriverInterfaces\SimDriver.h" />
+    <ClInclude Include="DriverInterfaces\SimDrvToGfx.h" />
+    <ClInclude Include="DriverInterfaces\SIMDRV_GFX_COMMON.h" />
+    <ClInclude Include="GenMMIOHandlers\CommonMMIO.h" />
+    <ClInclude Include="GenMMIOHandlers\Gen10InterruptRegisters.h" />
+    <ClInclude Include="GenMMIOHandlers\Gen10LPInterruptRegisters.h" />
+    <ClInclude Include="GenMMIOHandlers\Gen10MMIO.h" />
+    <ClInclude Include="GenMMIOHandlers\Gen11InterruptRegisters.h" />
+    <ClInclude Include="GenMMIOHandlers\Gen11MMIO.h" />
+    <ClInclude Include="GenMMIOHandlers\Gen11p5InterruptRegisters.h" />
+    <ClInclude Include="GenMMIOHandlers\Gen11p5MMIO.h" />
+    <ClInclude Include="GenMMIOHandlers\Gen12\ADLSMMIO.h" />
+    <ClInclude Include="GenMMIOHandlers\Gen12\DG1InterruptRegisters.h" />
+    <ClInclude Include="GenMMIOHandlers\Gen12\DG1MMIO.h" />
+    <ClInclude Include="GenMMIOHandlers\Gen12\Gen12CommonInterruptRegisters.h" />
+    <ClInclude Include="GenMMIOHandlers\Gen12\Gen12CommonMMIO.h" />
+    <ClInclude Include="GenMMIOHandlers\Gen12\LKFRMMIO.h" />
+    <ClInclude Include="GenMMIOHandlers\Gen12\RKLMMIO.h" />
+    <ClInclude Include="GenMMIOHandlers\Gen12\TGLLPMMIO.h" />
+    <ClInclude Include="GenMMIOHandlers\Gen13\ADLPMMIO.h" />
+    <ClInclude Include="GenMMIOHandlers\Gen13\DG2MMIO.h" />
+    <ClInclude Include="GenMMIOHandlers\Gen13\Gen13CommonInterruptRegisters.h" />
+    <ClInclude Include="GenMMIOHandlers\Gen13\Gen13CommonMMIO.h" />
+    <ClInclude Include="GenMMIOHandlers\Gen14\Gen14CommonInterruptRegisters.h" />
+    <ClInclude Include="GenMMIOHandlers\Gen14\Gen14CommonMMIO.h" />
+    <ClInclude Include="GenMMIOHandlers\Gen14\MTLMMIO.h" />
+    <ClInclude Include="GenMMIOHandlers\Gen15\Gen15CommonMMIO.h" />
+    <ClInclude Include="GenMMIOHandlers\Gen15\LNLMMIO.h" />
+    <ClInclude Include="GenMMIOHandlers\Gen9InterruptRegisters.h" />
+    <ClInclude Include="GenMMIOHandlers\Gen9MMIO.h" />
+    <ClInclude Include="HDMICore\GMBusInterface.h" />
+    <ClInclude Include="HDMICore\HDMIInterface.h" />
+    <ClInclude Include="PeristenceServices\PersistenceHandler.h" />
+    <ClInclude Include="VBTSimulation\VBTSimulation.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CommonCore\CommonCore.c" />
+    <ClCompile Include="CommonCore\ETWLogging.c" />
+    <ClCompile Include="CommonCore\ExternalCallBacks.c" />
+    <ClCompile Include="CommonCore\PortingLayer.c" />
+    <ClCompile Include="DPCore\AuxDPCDClient.c" />
+    <ClCompile Include="DPCore\AuxInterface.c" />
+    <ClCompile Include="DPCore\DPCDModel.c" />
+    <ClCompile Include="DPCore\I2CSlaves.c" />
+    <ClCompile Include="DPCore\MSTTopology.c" />
+    <ClCompile Include="DPCore\SidebandMessageHandlers.c" />
+    <ClCompile Include="DPCore\SideBandUtil.c" />
+    <ClCompile Include="DPCore\SSTDisplay.c" />
+    <ClCompile Include="DriverInterfaces\CommonRxHandlers.c" />
+    <ClCompile Include="DriverInterfaces\DPHandlers.c" />
+    <ClCompile Include="DriverInterfaces\EDPHandlers.c" />
+    <ClCompile Include="DriverInterfaces\HDMIHandlers.c" />
+    <ClCompile Include="DriverInterfaces\SimDriver.c" />
+    <ClCompile Include="DriverInterfaces\SimDrvToGfx.c" />
+    <ClCompile Include="GenMMIOHandlers\CommonMMIOHandlers.c" />
+    <ClCompile Include="GenMMIOHandlers\Gen10MMIOHandlers.c" />
+    <ClCompile Include="GenMMIOHandlers\Gen11MMIOHandlers.c" />
+    <ClCompile Include="GenMMIOHandlers\Gen11p5MMIOHandlers.c" />
+    <ClCompile Include="GenMMIOHandlers\Gen12\ADLSMMIOHandlers.c" />
+    <ClCompile Include="GenMMIOHandlers\Gen12\DG1MMIOHandlers.c" />
+    <ClCompile Include="GenMMIOHandlers\Gen12\Gen12CommonMMIOHandlers.c" />
+    <ClCompile Include="GenMMIOHandlers\Gen12\LKFRMMIOHandlers.c" />
+    <ClCompile Include="GenMMIOHandlers\Gen12\RKLMMIOHandlers.c" />
+    <ClCompile Include="GenMMIOHandlers\Gen12\TGLLPMMIOHandlers.c" />
+    <ClCompile Include="GenMMIOHandlers\Gen13\ADLPMMIOHandlers.c" />
+    <ClCompile Include="GenMMIOHandlers\Gen13\DG2MMIOHandlers.c" />
+    <ClCompile Include="GenMMIOHandlers\Gen13\Gen13CommonMMIOHandlers.c" />
+    <ClCompile Include="GenMMIOHandlers\Gen14\Gen14CommonMMIOHandlers.c" />
+    <ClCompile Include="GenMMIOHandlers\Gen14\MTLMMIOHandlers.c" />
+    <ClCompile Include="GenMMIOHandlers\Gen15\Gen15CommonMMIOHandlers.c" />
+    <ClCompile Include="GenMMIOHandlers\Gen15\LNLMMIOHandlers.c" />
+    <ClCompile Include="GenMMIOHandlers\Gen9MMIOHandlers.c" />
+    <ClCompile Include="HDMICore\GMBusInterface.c" />
+    <ClCompile Include="PeristenceServices\PersistenceHandler.c" />
+    <ClCompile Include="VBTSimulation\VBTSimulation.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <MessageCompile Include="Resources\IntelGfxValSimCrimson.man">
+      <GenerateKernelModeLoggingMacros Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateKernelModeLoggingMacros>
+      <UseBaseNameOfInput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</UseBaseNameOfInput>
+      <GenerateKernelModeLoggingMacros Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateKernelModeLoggingMacros>
+      <UseBaseNameOfInput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</UseBaseNameOfInput>
+      <GenerateKernelModeLoggingMacros Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateKernelModeLoggingMacros>
+      <UseBaseNameOfInput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</UseBaseNameOfInput>
+      <GenerateKernelModeLoggingMacros Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateKernelModeLoggingMacros>
+      <UseBaseNameOfInput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</UseBaseNameOfInput>
+      <HeaderFilePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)CommonInclude</HeaderFilePath>
+      <HeaderFilePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)CommonInclude</HeaderFilePath>
+      <HeaderFilePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)CommonInclude</HeaderFilePath>
+      <HeaderFilePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)CommonInclude</HeaderFilePath>
+      <RCFilePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)Resources</RCFilePath>
+      <RCFilePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)Resources</RCFilePath>
+      <RCFilePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)Resources</RCFilePath>
+      <RCFilePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)Resources</RCFilePath>
+    </MessageCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources\IntelGfxValSimCrimson.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

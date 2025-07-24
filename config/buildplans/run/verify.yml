@@ -1,0 +1,4 @@
+---
+systems:
+- name: Windows
+  buildplan: windows-verify.yml

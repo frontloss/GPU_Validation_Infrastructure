@@ -1,0 +1,18 @@
+import "oaidl.idl";
+import "ocidl.idl";
+
+import "igfxBridgeUDT.idl";
+[
+	object,
+	uuid(dec5b974-c1c0-4f46-8b74-ff8fa387bd23),
+	dual,
+	helpstring("ID3DSetting Interface"),
+	pointer_default(unique)
+]
+interface ID3DSetting : IDispatch
+{
+	[id(1),  helpstring("method GetD3DInfo")] HRESULT GetD3DInfo([in,out] IGFX_D3D_INFO *pD3D,[out]IGFX_ERROR_CODES *pExtraErrorCode,[out]BSTR *pErrorDescription);
+	[id(2),  helpstring("method SetD3DInfo")] HRESULT SetD3DInfo([in,out] IGFX_D3D_INFO *pD3D,[out]IGFX_ERROR_CODES *pExtraErrorCode,[out]BSTR *pErrorDescription);
+	[id(3),  helpstring("method GetD3DInfoEx")] HRESULT GetD3DInfoEx([in,out] IGFX_D3D_INFO_EX *pD3D,[out]IGFX_ERROR_CODES *pExtraErrorCode,[out]BSTR *pErrorDescription);
+	[id(4),  helpstring("method SetD3DInfoEx")] HRESULT SetD3DInfoEx([in,out] IGFX_D3D_INFO_EX *pD3D,[out]IGFX_ERROR_CODES *pExtraErrorCode,[out]BSTR *pErrorDescription);
+}

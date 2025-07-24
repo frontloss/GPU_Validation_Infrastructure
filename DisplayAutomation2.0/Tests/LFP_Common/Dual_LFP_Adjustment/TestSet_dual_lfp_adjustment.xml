@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+   <Feature Name="DUAL_LFP_ADJUSTMENT" Owner="Sri Sumanth Geesla ,Kumari Neha3">
+
+     <Test LastModifiedWW="2019.WW31" Name="dual_lfp_adjustment_basic.py" Owner="nkumari1" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;ETM" Id="DUAL_LFP_ADJUSTMENT0001">
+         <CommandLine>python Tests\LFP_Common\Dual_LFP_Adjustment\dual_lfp_adjustment_basic.py -mipi_a -mipi_c -border 100 -panel1 top -panel2 bottom</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="DUAL_LFP_ADJUSTMENT0002">
+         <CommandLine>python Tests\LFP_Common\Dual_LFP_Adjustment\dual_lfp_adjustment_basic.py -mipi_a -mipi_c -border 100 -panel1 bottom -panel2 top</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="DUAL_LFP_ADJUSTMENT0013">
+         <CommandLine>python Tests\LFP_Common\Dual_LFP_Adjustment\dual_lfp_adjustment_basic.py -mipi_a SINK_MIP009 -mipi_c SINK_MIP009 -border 100 -panel1 top -panel2 bottom</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="DUAL_LFP_ADJUSTMENT0014">
+         <CommandLine>python Tests\LFP_Common\Dual_LFP_Adjustment\dual_lfp_adjustment_basic.py -mipi_a SINK_MIP009 -mipi_c SINK_MIP009 -border 100 -panel1 bottom -panel2 top</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+
+     <Test LastModifiedWW="2019.WW31" Name="dual_lfp_adjustment_driver_disable_enable.py" Owner="Sri Sumanth Geesla ,Kumari Neha3" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;ETM" Id="DUAL_LFP_ADJUSTMENT0003">
+         <CommandLine>python Tests\LFP_Common\Dual_LFP_Adjustment\dual_lfp_adjustment_driver_disable_enable.py -mipi_a -mipi_c -border 100 -panel1 top -panel2 bottom</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="DUAL_LFP_ADJUSTMENT0004">
+         <CommandLine>python Tests\LFP_Common\Dual_LFP_Adjustment\dual_lfp_adjustment_driver_disable_enable.py -mipi_a -mipi_c -border 100 -panel1 bottom -panel2 top</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="DUAL_LFP_ADJUSTMENT0015">
+         <CommandLine>python Tests\LFP_Common\Dual_LFP_Adjustment\dual_lfp_adjustment_driver_disable_enable.py -mipi_a SINK_MIP009 -mipi_c SINK_MIP009 -border 100 -panel1 top -panel2 bottom</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="DUAL_LFP_ADJUSTMENT0016">
+         <CommandLine>python Tests\LFP_Common\Dual_LFP_Adjustment\dual_lfp_adjustment_driver_disable_enable.py -mipi_a SINK_MIP009 -mipi_c SINK_MIP009 -border 100 -panel1 bottom -panel2 top</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+
+     <Test LastModifiedWW="2019.WW31" Name="dual_lfp_adjustment_efp_primary.py" Owner="Sri Sumanth Geesla ,Kumari Neha3" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;ETM" Id="DUAL_LFP_ADJUSTMENT0005">
+         <CommandLine>python Tests\LFP_Common\Dual_LFP_Adjustment\dual_lfp_adjustment_efp_primary.py -mipi_a -mipi_c -dp_d -border 100 -panel1 top -panel2 bottom</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="DUAL_LFP_ADJUSTMENT0006">
+         <CommandLine>python Tests\LFP_Common\Dual_LFP_Adjustment\dual_lfp_adjustment_efp_primary.py -mipi_a -mipi_c -dp_d -border 100 -panel1 bottom -panel2 top</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="DUAL_LFP_ADJUSTMENT0017">
+         <CommandLine>python Tests\LFP_Common\Dual_LFP_Adjustment\dual_lfp_adjustment_efp_primary.py -mipi_a SINK_MIP009 -mipi_c SINK_MIP009 -dp_d -border 100 -panel1 top -panel2 bottom</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="DUAL_LFP_ADJUSTMENT0018">
+         <CommandLine>python Tests\LFP_Common\Dual_LFP_Adjustment\dual_lfp_adjustment_efp_primary.py -mipi_a SINK_MIP009 -mipi_c SINK_MIP009 -dp_d -border 100 -panel1 bottom -panel2 top</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+
+     <Test LastModifiedWW="2019.WW31" Name="dual_lfp_adjustment_fms.py" Owner="Sri Sumanth Geesla ,Kumari Neha3" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;ETM" Id="DUAL_LFP_ADJUSTMENT0007">
+         <CommandLine>python Tests\LFP_Common\Dual_LFP_Adjustment\dual_lfp_adjustment_fms.py -mipi_a -mipi_c -border 100 -panel1 top -panel2 bottom</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="DUAL_LFP_ADJUSTMENT0008">
+         <CommandLine>python Tests\LFP_Common\Dual_LFP_Adjustment\dual_lfp_adjustment_fms.py -mipi_a -mipi_c -border 100 -panel1 bottom -panel2 top</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="DUAL_LFP_ADJUSTMENT0019">
+         <CommandLine>python Tests\LFP_Common\Dual_LFP_Adjustment\dual_lfp_adjustment_fms.py -mipi_a SINK_MIP009 -mipi_c SINK_MIP009 -border 100 -panel1 top -panel2 bottom</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="DUAL_LFP_ADJUSTMENT0020">
+         <CommandLine>python Tests\LFP_Common\Dual_LFP_Adjustment\dual_lfp_adjustment_fms.py -mipi_a SINK_MIP009 -mipi_c SINK_MIP009 -border 100 -panel1 bottom -panel2 top</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+
+     <Test LastModifiedWW="2019.WW31" Name="dual_lfp_adjustment_non_native_resolution.py" Owner="Sri Sumanth Geesla ,Kumari Neha3" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;ETM" Id="DUAL_LFP_ADJUSTMENT0009">
+         <CommandLine>python Tests\LFP_Common\Dual_LFP_Adjustment\dual_lfp_adjustment_non_native_resolution.py -mipi_a -mipi_c -border 100 -panel1 top -panel2 bottom</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="DUAL_LFP_ADJUSTMENT0010">
+         <CommandLine>python Tests\LFP_Common\Dual_LFP_Adjustment\dual_lfp_adjustment_non_native_resolution.py -mipi_a -mipi_c -border 100 -panel1 bottom -panel2 top</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="DUAL_LFP_ADJUSTMENT0019">
+         <CommandLine>python Tests\LFP_Common\Dual_LFP_Adjustment\dual_lfp_adjustment_non_native_resolution.py -mipi_a SINK_MIP009 -mipi_c SINK_MIP009 -border 100 -panel1 top -panel2 bottom</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="DUAL_LFP_ADJUSTMENT0020">
+         <CommandLine>python Tests\LFP_Common\Dual_LFP_Adjustment\dual_lfp_adjustment_non_native_resolution.py -mipi_a SINK_MIP009 -mipi_c SINK_MIP009 -border 100 -panel1 bottom -panel2 top</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+
+     <Test LastModifiedWW="2019.WW31" Name="dual_lfp_adjustment_power_events.py" Owner="Sri Sumanth Geesla ,Kumari Neha3" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;ETM" Id="DUAL_LFP_ADJUSTMENT0011">
+         <CommandLine>python Tests\LFP_Common\Dual_LFP_Adjustment\dual_lfp_adjustment_power_events.py -mipi_a -mipi_c -border 100 -panel1 top -panel2 bottom</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="DUAL_LFP_ADJUSTMENT0012">
+         <CommandLine>python Tests\LFP_Common\Dual_LFP_Adjustment\dual_lfp_adjustment_power_events.py -mipi_a -mipi_c -border 100 -panel1 bottom -panel2 top</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="DUAL_LFP_ADJUSTMENT0021">
+         <CommandLine>python Tests\LFP_Common\Dual_LFP_Adjustment\dual_lfp_adjustment_power_events.py -mipi_a SINK_MIP009 -mipi_c SINK_MIP009 -border 100 -panel1 top -panel2 bottom</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="DUAL_LFP_ADJUSTMENT0022">
+         <CommandLine>python Tests\LFP_Common\Dual_LFP_Adjustment\dual_lfp_adjustment_power_events.py -mipi_a SINK_MIP009 -mipi_c SINK_MIP009 -border 100 -panel1 bottom -panel2 top</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+
+
+
+
+   </Feature>
+</Display_Automation_2.0>

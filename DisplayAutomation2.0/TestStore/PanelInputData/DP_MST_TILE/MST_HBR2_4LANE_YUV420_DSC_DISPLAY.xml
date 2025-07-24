@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<EDID>
+	<HBR2_MST_YUV420>dsc_yuv420_modes_cta_8bpc.bin</HBR2_MST_YUV420>
+</EDID>
+
+<DPCD>
+	<HBR2_LC4_MST_DSC>HBR2_MST_DSC_BRANCH_DPCD.bin</HBR2_LC4_MST_DSC>
+</DPCD>
+
+<Topology>
+	<Branch>
+		<UpStrmBranchOutPort>0xffffffff</UpStrmBranchOutPort>
+		<ThisBranchInputPort>0</ThisBranchInputPort>
+		<TotalInputPorts>1</TotalInputPorts>
+		<TotalPhysicalPorts>1</TotalPhysicalPorts>
+		<TotalVirtualPorts>1</TotalVirtualPorts>
+		<TotalAvailablePBN>3780</TotalAvailablePBN>
+		<MaxLinkRate>810</MaxLinkRate>
+		<MaxLaneCount>4</MaxLaneCount>
+		<BranchReplyDelay>0</BranchReplyDelay>
+		<LinkAddressDelay>0</LinkAddressDelay>
+		<RemoteI2ReadDelay>0</RemoteI2ReadDelay>
+		<RemoteI2WriteDelay>0</RemoteI2WriteDelay>
+		<RemoteDPCDReadDelay>0</RemoteDPCDReadDelay>
+		<RemoteDPCDWriteDelay>0</RemoteDPCDWriteDelay>
+		<EPRDelay>0</EPRDelay>
+		<AllocatePayloadDelay>0</AllocatePayloadDelay>
+		<ClearPayLoadDelay>0</ClearPayLoadDelay>
+		<BranchDPCD>HBR2_LC4_MST_DSC</BranchDPCD>
+		<Display>
+			<UpStrmBranchOutPort>8</UpStrmBranchOutPort>
+			<ThisDisplayInputPort>0</ThisDisplayInputPort>
+			<TotalInputPorts>1</TotalInputPorts>
+			<TotalAvailablePBN>3780</TotalAvailablePBN>
+			<MaxLinkRate>810</MaxLinkRate>
+			<MaxLaneCount>4</MaxLaneCount>
+			<RemoteI2ReadDelay>0</RemoteI2ReadDelay>
+			<RemoteI2WriteDelay>0</RemoteI2WriteDelay>
+			<RemoteDPCDReadDelay>0</RemoteDPCDReadDelay>
+			<RemoteDPCDWriteDelay>0</RemoteDPCDWriteDelay>
+			<DisplayDPCD>HBR2_LC4_MST_DSC</DisplayDPCD>
+			<DisplayEDID>HBR2_MST_YUV420</DisplayEDID>
+		</Display>
+	</Branch>
+</Topology>

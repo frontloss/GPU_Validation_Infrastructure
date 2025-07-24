@@ -1,0 +1,1 @@
+C:\HDMI Automation\DP_Compliance_Client_Console_WW_15\DP_Compliance_Client_Console\bin\Release\DP_Compliance_Client_Console.exe.config

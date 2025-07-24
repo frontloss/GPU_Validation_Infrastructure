@@ -1,0 +1,286 @@
+<?xml version="1.0"?>
+<instrumentationManifest xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd" xmlns="http://schemas.microsoft.com/win/2004/08/events" xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:trace="http://schemas.microsoft.com/win/2004/08/events/trace">
+	<instrumentation>
+		<events>
+			<provider name="Intel-Gfx-Display-ValSim-Driver" guid="{9B2C7A57-929C-4E06-8E92-40056D608525}" symbol="GfxValSimDisplayDriverProvider" resourceFileName="%SystemRoot%\system32\drivers\GfxValSimDriver.sys" messageFileName="%SystemRoot%\system32\drivers\GfxValSimDriver.sys" parameterFileName="%SystemRoot%\system32\drivers\GfxValSimDriver.sys">
+				<events>
+					<event symbol="DebugPrint_Info" value="1" version="0" channel="GfxDisplayDebug" level="DbgMsgCritical" task="DebugPrint" opcode="win:Info" template="DebugPrint_t" keywords="Audio ModeSet MIPI DP HDMI HDCP Modes Protocol HAL OSL "></event>
+					<event symbol="FunctionTrack_Info" value="2" version="0" channel="GfxDisplayDebug" level="DbgMsgCritical" task="FunctionTrack" opcode="win:Info" template="FunctionTrack_t" keywords="Audio ModeSet MIPI DP HDMI HDCP Modes Protocol HAL OSL "></event>
+					<event symbol="StructureDump_Info" value="3" version="0" channel="GfxDisplayDebug" level="DbgMsgCritical" task="StructureDump" opcode="win:Info" template="StructureDump_t" keywords="Audio ModeSet MIPI DP HDMI HDCP Modes Protocol HAL OSL "></event>
+					<event symbol="Aux_Read" value="5" version="0" channel="GfxDisplayDebug" level="DbgMsgCritical" task="AuxDPCD" opcode="Read" template="ValSim_MMIO_Read_t" keywords="DP HAL " message="$(string.Intel-Gfx-Driver-Display.event.4.message)"></event>
+					<event symbol="Aux_Write" value="4" version="0" channel="GfxDisplayDebug" level="DbgMsgCritical" task="AuxDPCD" opcode="Write" template="ValSim_MMIO_Read_t" keywords="DP HAL " message="$(string.Intel-Gfx-Driver-Display.event.0.message)"></event>
+					<event symbol="I2CAux_Read" value="6" version="0" channel="GfxDisplayDebug" level="DbgMsgCritical" task="I2CAux" opcode="Read" template="ValSim_MMIO_Read_t" keywords="DP HAL "></event>
+					<event symbol="I2CAux_Write" value="7" version="0" channel="GfxDisplayDebug" level="DbgMsgCritical" task="I2CAux" opcode="Write" template="ValSim_MMIO_Read_t" keywords="DP HAL " message="$(string.Intel-Gfx-Driver-Display.event.7.message)"></event>
+					<event symbol="HPD_SPI" value="8" version="0" channel="GfxDisplayDebug" level="DbgMsgCritical" task="HotPlugDetect" opcode="SPI" template="SPI_t" keywords="DP Protocol HAL " message="$(string.Intel-Gfx-Driver-Display.event.8.message)"></event>
+					<event symbol="HPD_info" value="9" version="0" channel="GfxDisplayDebug" level="DbgMsgCritical" task="HotPlugDetect" opcode="win:Info" template="HPD_t" keywords="HAL " message="$(string.Intel-Gfx-Driver-Display.event.9.message)"></event>
+					<event symbol="SidebandMsg_Send" value="10" version="0" channel="GfxDisplayDebug" level="DbgMsgCritical" task="DPSidebandMsg" opcode="win:Send" template="SidebandMsg_t" keywords="DP Protocol "></event>
+					<event symbol="SidebandMsg_Recv" value="11" version="0" channel="GfxDisplayDebug" level="DbgMsgCritical" task="DPSidebandMsg" opcode="win:Receive" template="SidebandMsg_t" keywords="DP Protocol "></event>
+					<event symbol="HPD_LiveState" value="12" version="0" channel="GfxDisplayDebug" level="DbgMsgCritical" task="HotPlugDetect" opcode="LiveState" template="HPDLiveState_t" keywords="HAL "></event>
+					<event symbol="ValSim_MMIO_Read" value="13" version="0" channel="GfxDisplayDebug" level="DbgMsgCritical" task="MMIO" opcode="Read" template="ValSim_MMIO_Read_t"></event>
+					<event symbol="ValSim_MMIO_Write" value="14" version="0" channel="GfxDisplayDebug" level="DbgMsgCritical" task="MMIO" opcode="Write" template="ValSim_MMIO_Read_t"></event>
+				</events>
+				<levels>
+					<level name="PlaceHolder" symbol="PlaceHolder_Level" value="16"></level>
+					<level name="DbgMsgCritical" symbol="DebugMsgCritical_Level" value="17"></level>
+					<level name="DbgMsgError" symbol="DebugMsgError_Level" value="18"></level>
+					<level name="DbgMsgWarning" symbol="DebugMsgWarning_Level" value="19"></level>
+					<level name="DbgMsgInfo" symbol="DebugMsgInfo_Level" value="20"></level>
+					<level name="DbgMsgVerbose" symbol="DebugMsgVerbose_Level" value="21"></level>
+				</levels>
+				<tasks>
+					<task name="DebugPrint" symbol="DebugPrint_Task" value="1" eventGUID="{A75D271F-376C-4AE4-B0C6-F11E68120E8C}"></task>
+					<task name="FunctionTrack" symbol="FunctionTrack_Task" value="2" eventGUID="{BD10DE43-677D-4A57-B8B3-CFF00AC197AC}"></task>
+					<task name="StructureDump" symbol="StructureDump_Task" value="3" eventGUID="{294C595A-5914-4030-A401-754CD2BDFF24}"></task>
+					<task name="EventViewerPrint" symbol="EventViewerPrint_Task" value="4" eventGUID="{D0CD6245-C4E9-4691-8342-7C49E897F4F6}"></task>
+					<task name="DisplayTest" symbol="DisplayTest_Task" value="5" eventGUID="{39442EBA-20A6-4D6A-A633-33DF432DBA6F}"></task>
+					<task name="Plane" symbol="Plane_Task" value="10" eventGUID="{0A99E527-88E8-4DD4-8569-907AFEE3D04A}"></task>
+					<task name="Pipe" symbol="Pipe_Task" value="11" eventGUID="{094F1219-C4F4-4A5F-B86D-7B1364DC925E}"></task>
+					<task name="Port" symbol="Port_Task" value="12" eventGUID="{E4C54E7A-70F4-48C2-BAB4-E24DA0301171}"></task>
+					<task name="Transcoder" symbol="Transcoder_Task" value="13" eventGUID="{769F70F7-0220-4970-BA5B-E119B1171A52}"></task>
+					<task name="I2C" symbol="I2C_Task" value="14" eventGUID="{3DC87315-40BA-4C06-8245-09883B30596E}"></task>
+					<task name="AuxDPCD" symbol="AUX_Task" value="15" eventGUID="{ACEFE7BC-F70C-4DDF-A9B1-3FCA0048A3FE}" message="$(string.Intel-Gfx-Driver-Display.task.AUX_Task.message)"></task>
+					<task name="HotPlugDetect" symbol="HPD_task" value="16" eventGUID="{7A45066F-C674-4AC3-87B6-809B93F4A510}" message="$(string.Intel-Gfx-Driver-Display.task.HPD_task.message)"></task>
+					<task name="PowerWell" symbol="PowerWell_Task" value="17" eventGUID="{9A693D8B-01C3-4B68-B75C-92EC08512592}"></task>
+					<task name="WaterMark" symbol="WaterMark_Task" value="18" eventGUID="{3E411069-9FAE-45A4-9F1B-FE7705CC8B41}"></task>
+					<task name="DBuf" symbol="DBuf_Task" value="19" eventGUID="{C745D9E0-29DD-4C97-99A3-A35A2A36D840}"></task>
+					<task name="DCState" symbol="DCState_Task" value="20" eventGUID="{D72FF44E-F0F7-448A-80D0-4E2F00195EA0}"></task>
+					<task name="LinkTraining" symbol="LinkTraining_Task" value="21" eventGUID="{5EF0B945-B44E-4069-A3E6-FBA9E150D525}"></task>
+					<task name="PLL_Clock" symbol="PLL_Clock_Task" value="22" eventGUID="{0CBE6C37-F061-4D08-9ECB-A790A9C4A03A}"></task>
+					<task name="StackTrackDisp" symbol="StackTrackDisp_Task" value="6" eventGUID="{A1F12938-A2AA-45C4-AB29-B5F4AEF20563}"></task>
+					<task name="I2CAux" symbol="I2CAux_task" value="23" eventGUID="{54586A2D-47AD-42AF-A361-B77D9037DA17}" message="$(string.Intel-Gfx-Driver-Display.task.I2CAux_task.message)"></task>
+					<task name="DPSidebandMsg" symbol="DPSidebandMsg_task" value="24" eventGUID="{19842D07-1B7E-4D85-8895-DDB1D6428432}"></task>
+					<task name="DisplayDiagnostics" symbol="DisplayDiagnostics_Task" value="25" eventGUID="{BFF387F1-8AE3-444B-AEB1-C574FE029158}"></task>
+					<task name="PipeUnderRun" symbol="PipeUnderRun_Task" value="26" eventGUID="{65F3BAA1-41C6-43C7-AD8B-E71531210EB4}"></task>
+					<task name="MMIO" symbol="MMIO_Task" value="27" eventGUID="{F961BB0D-2E88-4DAB-BDC0-CF123EC2C080}"></task>
+				</tasks>
+				<opcodes>
+					<opcode name="Read" symbol="Read_Opcode" value="10"></opcode>
+					<opcode name="Write" symbol="Write_Opcode" value="11"></opcode>
+					<opcode name="Fail" symbol="Fail_Opcode" value="12"></opcode>
+					<opcode name="Disable" symbol="Disable_Opcode" value="13"></opcode>
+					<opcode name="Enable" symbol="Enable_Opcode" value="14"></opcode>
+					<opcode name="Initialize" symbol="Initialize_Opcode" value="15"></opcode>
+					<opcode name="Calculate" symbol="Calculate_Opcode" value="16"></opcode>
+					<opcode name="Program" symbol="Program_Opcode" value="17"></opcode>
+					<opcode name="SPI" symbol="SPI_Opcode" value="18"></opcode>
+					<opcode name="LiveState" symbol="LiveState" value="19"></opcode>
+					<opcode name="Capability" symbol="Capability_Opcode" value="20"></opcode>
+					<opcode name="Send" symbol="Send" value="21"></opcode>
+					<opcode name="Receive" symbol="Receive" value="22"></opcode>
+					<opcode name="Error" symbol="Error_Op" value="23"></opcode>
+					<opcode name="Warning" symbol="Warning_Op" value="24"></opcode>
+					<opcode name="Information" symbol="Information_Op" value="25"></opcode>
+				</opcodes>
+				<channels>
+					<channel name="GfxDisplayOperational" chid="GfxDisplayOperational" symbol="GfxDisplayOperational_Channel" type="Operational" enabled="true"></channel>
+					<channel name="GfxDisplayAnalytic" chid="GfxDisplayAnalytic" symbol="GfxDisplayAnalytic_Channel" type="Analytic" enabled="false" isolation="System"></channel>
+					<channel name="GfxDisplayDebug" chid="GfxDisplayDebug" symbol="GfxDisplayDebug_Channel" type="Debug" enabled="false" isolation="System"></channel>
+				</channels>
+				<keywords>
+					<keyword name="OSL" symbol="OSL_Keyword" mask="0x1"></keyword>
+					<keyword name="HAL" symbol="HAL_Keyword" mask="0x2"></keyword>
+					<keyword name="Protocol" symbol="Protocol_Keyword" mask="0x4"></keyword>
+					<keyword name="Modes" symbol="Modes_Keyword" mask="0x8"></keyword>
+					<keyword name="HDCP" symbol="HDCP_Keyword" mask="0x10"></keyword>
+					<keyword name="HDMI" symbol="HDMI_Keyword" mask="0x20"></keyword>
+					<keyword name="DP" symbol="DP_Keyword" mask="0x40"></keyword>
+					<keyword name="MIPI" symbol="MIPI_Keyword" mask="0x80"></keyword>
+					<keyword name="ModeSet" symbol="ModeSet_Keyword" mask="0x100"></keyword>
+					<keyword name="Audio" symbol="Audio_Keyword" mask="0x200"></keyword>
+				</keywords>
+				<maps>
+					<bitMap name="HPD_EVENT">
+						<map value="0x0" message="$(string.Intel-Gfx-Driver-Display.map.HPD_EVENT.0.message)"></map>
+						<map value="0x1" message="$(string.Intel-Gfx-Driver-Display.map.HPD_EVENT.1.message)"></map>
+						<map value="0x2" message="$(string.Intel-Gfx-Driver-Display.map.HPD_EVENT.2.message)"></map>
+					</bitMap>
+					<bitMap name="DP_SPI_REASON">
+						<map value="0x0" message="$(string.Intel-Gfx-Driver-Display.map.DP_SPI_REASON.0.message)"></map>
+						<map value="0x1" message="$(string.Intel-Gfx-Driver-Display.map.DP_SPI_REASON.1.message)"></map>
+						<map value="0x2" message="$(string.Intel-Gfx-Driver-Display.map.DP_SPI_REASON.2.message)"></map>
+						<map value="0x4" message="$(string.Intel-Gfx-Driver-Display.map.DP_SPI_REASON.4.message)"></map>
+						<map value="0x8" message="$(string.Intel-Gfx-Driver-Display.map.DP_SPI_REASON.8.message)"></map>
+						<map value="0x10" message="$(string.Intel-Gfx-Driver-Display.map.DP_SPI_REASON.16.message)"></map>
+						<map value="0x20" message="$(string.Intel-Gfx-Driver-Display.map.DP_SPI_REASON.32.message)"></map>
+						<map value="0x40" message="$(string.Intel-Gfx-Driver-Display.map.DP_SPI_REASON.64.message)"></map>
+					</bitMap>
+					<valueMap name="SIDEBAND_MSG_ID">
+						<map value="0" message="$(string.Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_ID.0.message)"></map>
+						<map value="1" message="$(string.Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_ID.1.message)"></map>
+						<map value="2" message="$(string.Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_ID.2.message)"></map>
+						<map value="16" message="$(string.Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_ID.16.message)"></map>
+						<map value="17" message="$(string.Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_ID.17.message)"></map>
+						<map value="18" message="$(string.Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_ID.18.message)"></map>
+						<map value="19" message="$(string.Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_ID.19.message)"></map>
+						<map value="20" message="$(string.Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_ID.20.message)"></map>
+						<map value="32" message="$(string.Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_ID.32.message)"></map>
+						<map value="33" message="$(string.Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_ID.33.message)"></map>
+						<map value="34" message="$(string.Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_ID.34.message)"></map>
+						<map value="35" message="$(string.Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_ID.35.message)"></map>
+						<map value="36" message="$(string.Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_ID.36.message)"></map>
+						<map value="37" message="$(string.Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_ID.37.message)"></map>
+					</valueMap>
+					<valueMap name="PORT_TYPES">
+						<map value="0" message="$(string.Intel-Gfx-Driver-Display.map.PORT_TYPES.0.message)"></map>
+						<map value="1" message="$(string.Intel-Gfx-Driver-Display.map.PORT_TYPES.1.message)"></map>
+						<map value="2" message="$(string.Intel-Gfx-Driver-Display.map.PORT_TYPES.2.message)"></map>
+						<map value="3" message="$(string.Intel-Gfx-Driver-Display.map.PORT_TYPES.3.message)"></map>
+						<map value="4" message="$(string.Intel-Gfx-Driver-Display.map.PORT_TYPES.4.message)"></map>
+						<map value="5" message="$(string.Intel-Gfx-Driver-Display.map.PORT_TYPES.5.message)"></map>
+						<map value="6" message="$(string.Intel-Gfx-Driver-Display.map.PORT_TYPES.6.message)"></map>
+						<map value="7" message="$(string.Intel-Gfx-Driver-Display.map.PORT_TYPES.7.message)"></map>
+						<map value="8" message="$(string.Intel-Gfx-Driver-Display.map.PORT_TYPES.8.message)"></map>
+						<map value="9" message="$(string.Intel-Gfx-Driver-Display.map.PORT_TYPES.9.message)"></map>
+						<map value="10" message="$(string.Intel-Gfx-Driver-Display.map.PORT_TYPES.10.message)"></map>
+					</valueMap>
+					<valueMap name="AUX_CHANNEL_TYPE">
+						<map value="0" message="$(string.Intel-Gfx-Driver-Display.map.AUX_CHANNEL_TYPE.0.message)"></map>
+						<map value="1" message="$(string.Intel-Gfx-Driver-Display.map.AUX_CHANNEL_TYPE.1.message)"></map>
+						<map value="2" message="$(string.Intel-Gfx-Driver-Display.map.AUX_CHANNEL_TYPE.2.message)"></map>
+						<map value="3" message="$(string.Intel-Gfx-Driver-Display.map.AUX_CHANNEL_TYPE.3.message)"></map>
+						<map value="4" message="$(string.Intel-Gfx-Driver-Display.map.AUX_CHANNEL_TYPE.4.message)"></map>
+					</valueMap>
+					<valueMap name="SIDEBAND_MSG_TYPE">
+						<map value="0" message="$(string.Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_TYPE.0.message)"></map>
+						<map value="1" message="$(string.Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_TYPE.1.message)"></map>
+						<map value="2" message="$(string.Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_TYPE.2.message)"></map>
+						<map value="3" message="$(string.Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_TYPE.3.message)"></map>
+					</valueMap>
+					<valueMap name="DDSTATUS">
+						<map value="0" message="$(string.Intel-Gfx-Driver-Display.map.DD_STATUS.0.message)"></map>
+					</valueMap>
+					<valueMap name="DIAGNOSTIC_ERROR">
+						<map value="1" message="$(string.Intel-Gfx-Driver-Display.map.DIAGNOSTIC_ERROR.1.message)"></map>
+						<map value="2" message="$(string.Intel-Gfx-Driver-Display.map.DIAGNOSTIC_ERROR.2.message)"></map>
+					</valueMap>
+					<valueMap name="DIAGNOSTIC_WARNING">
+						<map value="1" message="$(string.Intel-Gfx-Driver-Display.map.DIAGNOSTIC_WARNING.1.message)"></map>
+						<map value="0" message="$(string.Intel-Gfx-Driver-Display.map.DIAGNOSTIC_WARNING.0.message)"></map>
+					</valueMap>
+					<valueMap name="DIAGNOSTIC_INFORMATION">
+						<map value="1" message="$(string.Intel-Gfx-Driver-Display.map.DIAGNOSTIC_INFORMATION.1.message)"></map>
+					</valueMap>
+				</maps>
+				<templates>
+					<template tid="DebugPrint_t">
+						<data name="Message" inType="win:AnsiString" outType="xs:string"></data>
+						<data name="Function" inType="win:AnsiString" outType="xs:string"></data>
+						<data name="Line" inType="win:UInt32" outType="xs:unsignedInt"></data>
+					</template>
+					<template tid="FunctionTrack_t">
+						<data name="Function" inType="win:AnsiString" outType="xs:string"></data>
+						<data name="Stage" inType="win:UInt32" outType="xs:unsignedInt"></data>
+						<data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"></data>
+					</template>
+					<template tid="StructureDump_t">
+						<data name="StructureName" inType="win:AnsiString" outType="xs:string"></data>
+						<data name="Size" inType="win:UInt32" outType="win:HexInt32"></data>
+						<data name="Data" inType="win:Binary" outType="xs:hexBinary" length="Size"></data>
+						<data name="Message" inType="win:AnsiString" outType="xs:string"></data>
+						<data name="Function" inType="win:AnsiString" outType="xs:string"></data>
+						<data name="Line" inType="win:UInt32" outType="xs:unsignedInt"></data>
+					</template>
+					<template tid="SidebandMsg_t">
+						<data name="Port" inType="win:UInt32" map="PORT_TYPES"></data>
+						<data name="Status" inType="win:UInt32" map="DDSTATUS"></data>
+						<data name="MsgId" inType="win:UInt32" map="SIDEBAND_MSG_ID"></data>
+						<data name="MsgType" inType="win:UInt32" map="SIDEBAND_MSG_TYPE"></data>
+						<data name="Size" inType="win:UInt32" outType="xs:unsignedInt"></data>
+						<data name="Data" inType="win:Binary" outType="xs:hexBinary" length="Size"></data>
+					</template>
+					<template tid="SPI_t">
+						<data name="Port" inType="win:UInt32" map="PORT_TYPES"></data>
+						<data name="Reasons" inType="win:UInt32" map="DP_SPI_REASON"></data>
+					</template>
+					<template tid="HPD_t">
+						<data name="Port" inType="win:UInt32" map="PORT_TYPES"></data>
+						<data name="Event" inType="win:UInt32" map="HPD_EVENT"></data>
+					</template>
+					<template tid="HPDLiveState_t">
+						<data name="Port" inType="win:UInt32" map="PORT_TYPES"></data>
+						<data name="Attached" inType="win:Boolean" outType="xs:boolean"></data>
+					</template>
+					<template tid="ValSim_MMIO_Read_t">
+						<data name="offset" inType="win:UInt32" outType="win:HexInt32"></data>
+						<data name="value" inType="win:UInt32" outType="win:HexInt32"></data>
+					</template>
+				</templates>
+			</provider>
+		</events>
+	</instrumentation>
+	<localization>
+		<resources culture="en-US">
+			<stringTable>
+				<string id="opcode.Send" value="Send"></string>
+				<string id="opcode.Receive" value="Receive"></string>
+				<string id="opcode.Info" value="Info"></string>
+				<string id="level.Verbose" value="Verbose"></string>
+				<string id="level.Informational" value="Information"></string>
+				<string id="Intel-Gfx-Driver-Display.task.I2CAux_task.message" value="I2C access over aux"></string>
+				<string id="Intel-Gfx-Driver-Display.task.HPD_task.message" value="detect HPD and IRQ HPD"></string>
+				<string id="Intel-Gfx-Driver-Display.task.AuxRead_task.message" value="Read write DPCD data"></string>
+				<string id="Intel-Gfx-Driver-Display.task.AUX_Task.message" value="read write dpcd"></string>
+				<string id="Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_TYPE.3.message" value="DOWN_REPLY"></string>
+				<string id="Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_TYPE.2.message" value="DOWN_REQ"></string>
+				<string id="Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_TYPE.1.message" value="UP_REPLY"></string>
+				<string id="Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_TYPE.0.message" value="UP_REQ"></string>
+				<string id="Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_ID.37.message" value="POWER_DOWN_PHY"></string>
+				<string id="Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_ID.36.message" value="POWER_UP_PHY"></string>
+				<string id="Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_ID.35.message" value="REMOTE_I2C_WRITE"></string>
+				<string id="Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_ID.34.message" value="REMOTE_I2C_READ"></string>
+				<string id="Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_ID.33.message" value="REMOTE_DPCD_WRITE"></string>
+				<string id="Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_ID.32.message" value="REMOTE_DPCD_READ"></string>
+				<string id="Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_ID.20.message" value="CLEAR_PAYLOAD_ID_TABLE"></string>
+				<string id="Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_ID.2.message" value="CONN_STATUS_NOTIFY"></string>
+				<string id="Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_ID.19.message" value="RES_STATUS_NOTIFY"></string>
+				<string id="Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_ID.18.message" value="QUERY_PAYLOAD"></string>
+				<string id="Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_ID.17.message" value="ALLOCATE_PAYLOAD"></string>
+				<string id="Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_ID.16.message" value="ENUM_PATH_RES"></string>
+				<string id="Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_ID.1.message" value="LINK_ADDRESS"></string>
+				<string id="Intel-Gfx-Driver-Display.map.SIDEBAND_MSG_ID.0.message" value="MSG_VERSION"></string>
+				<string id="Intel-Gfx-Driver-Display.map.PORT_TYPES.9.message" value="WG"></string>
+				<string id="Intel-Gfx-Driver-Display.map.PORT_TYPES.8.message" value="MIPI_C"></string>
+				<string id="Intel-Gfx-Driver-Display.map.PORT_TYPES.7.message" value="MIPI_A"></string>
+				<string id="Intel-Gfx-Driver-Display.map.PORT_TYPES.6.message" value="PORT_F"></string>
+				<string id="Intel-Gfx-Driver-Display.map.PORT_TYPES.5.message" value="PORT_E"></string>
+				<string id="Intel-Gfx-Driver-Display.map.PORT_TYPES.4.message" value="PORT_D"></string>
+				<string id="Intel-Gfx-Driver-Display.map.PORT_TYPES.3.message" value="PORT_C"></string>
+				<string id="Intel-Gfx-Driver-Display.map.PORT_TYPES.2.message" value="PORT_B"></string>
+				<string id="Intel-Gfx-Driver-Display.map.PORT_TYPES.10.message" value="VIRTUAL"></string>
+				<string id="Intel-Gfx-Driver-Display.map.PORT_TYPES.1.message" value="PORT_A"></string>
+				<string id="Intel-Gfx-Driver-Display.map.PORT_TYPES.0.message" value="PORT_UNKNOWN"></string>
+				<string id="Intel-Gfx-Driver-Display.map.HPD_EVENT.2.message" value="LONG_PULSE"></string>
+				<string id="Intel-Gfx-Driver-Display.map.HPD_EVENT.1.message" value="SHORT_PULSE"></string>
+				<string id="Intel-Gfx-Driver-Display.map.HPD_EVENT.0.message" value="NONE"></string>
+				<string id="Intel-Gfx-Driver-Display.map.DP_SPI_REASON.8.message" value="UP_REQ"></string>
+				<string id="Intel-Gfx-Driver-Display.map.DP_SPI_REASON.64.message" value="MCCS"></string>
+				<string id="Intel-Gfx-Driver-Display.map.DP_SPI_REASON.4.message" value="DWN_REPLY"></string>
+				<string id="Intel-Gfx-Driver-Display.map.DP_SPI_REASON.32.message" value="DETECT"></string>
+				<string id="Intel-Gfx-Driver-Display.map.DP_SPI_REASON.2.message" value="HDCP"></string>
+				<string id="Intel-Gfx-Driver-Display.map.DP_SPI_REASON.16.message" value="LINK_LOSS"></string>
+				<string id="Intel-Gfx-Driver-Display.map.DP_SPI_REASON.1.message" value="ATR"></string>
+				<string id="Intel-Gfx-Driver-Display.map.DP_SPI_REASON.0.message" value="NONE"></string>
+				<string id="Intel-Gfx-Driver-Display.map.DIAGNOSTIC_WARNING.1.message" value="INSUFFICIENT_DBUF"></string>
+				<string id="Intel-Gfx-Driver-Display.map.DIAGNOSTIC_WARNING.0.message" value="LINK_TRAINING_FAILED"></string>
+				<string id="Intel-Gfx-Driver-Display.map.DIAGNOSTIC_INFORMATION.1.message" value="INSUFFICIENT_BAND_WIDTH"></string>
+				<string id="Intel-Gfx-Driver-Display.map.DIAGNOSTIC_ERROR.2.message" value="MODESET_FAILED"></string>
+				<string id="Intel-Gfx-Driver-Display.map.DIAGNOSTIC_ERROR.1.message" value="PIPE_UNDER_RUN"></string>
+				<string id="Intel-Gfx-Driver-Display.map.DD_STATUS.0.message" value="SUCCESS"></string>
+				<string id="Intel-Gfx-Driver-Display.map.DDSTATUS.2147483648.message" value="UNSUCCESSFUL"></string>
+				<string id="Intel-Gfx-Driver-Display.map.AUX_OPERATION_TYPE.2.message" value="WRITE"></string>
+				<string id="Intel-Gfx-Driver-Display.map.AUX_OPERATION_TYPE.1.message" value="READ"></string>
+				<string id="Intel-Gfx-Driver-Display.map.AUX_OPERATION_TYPE.0.message" value="UNKNOWN"></string>
+				<string id="Intel-Gfx-Driver-Display.map.AUX_CHANNEL_TYPE.4.message" value="AUX_A"></string>
+				<string id="Intel-Gfx-Driver-Display.map.AUX_CHANNEL_TYPE.3.message" value="AUX_D"></string>
+				<string id="Intel-Gfx-Driver-Display.map.AUX_CHANNEL_TYPE.2.message" value="AUX_C"></string>
+				<string id="Intel-Gfx-Driver-Display.map.AUX_CHANNEL_TYPE.1.message" value="AUX_B"></string>
+				<string id="Intel-Gfx-Driver-Display.map.AUX_CHANNEL_TYPE.0.message" value="AUX_CHAN_UNKNOWN"></string>
+				<string id="Intel-Gfx-Driver-Display.event.9.message" value="detect HPD event"></string>
+				<string id="Intel-Gfx-Driver-Display.event.8.message" value="IRQ HPD / short pulse HPD"></string>
+				<string id="Intel-Gfx-Driver-Display.event.7.message" value="i2c over aux write"></string>
+				<string id="Intel-Gfx-Driver-Display.event.4.message" value="Read DPCD"></string>
+				<string id="Intel-Gfx-Driver-Display.event.0.message" value="DPCD write"></string>
+			</stringTable>
+		</resources>
+	</localization>
+</instrumentationManifest>

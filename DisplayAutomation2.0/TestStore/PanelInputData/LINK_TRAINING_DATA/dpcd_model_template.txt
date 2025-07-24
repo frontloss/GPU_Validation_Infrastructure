@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DPCDModel>
+    <DPCDModelData>
+        <!-- All tags are mandatory -->
+        <!-- Values can be provided in decimal or hex format -->
+        <!-- Values in hex has to be prefixed by 0x, otherwise its assumed to in Decimal-->
+        <!-- ulTriggerOffsetForTrans will have one value only-->
+        <ulTriggerOffsetForTrans>0x103</ulTriggerOffsetForTrans>
+        <!--- transactionCount more than 15 not supported -->
+        <transactionCount>2</transactionCount>
+
+        <!-- TC 1 -->
+        <!-- Each Transaction will have below 4 tags and all tags are mandatory-->
+
+        <!-- Tag 1 -->
+        <!--inputStartingOffsets list length will be 0 to 2. e.g. [] or [0x102] or [0x102, 0x110] -->
+        <inputStartingOffsets>[]</inputStartingOffsets>
+
+        <!-- Tag 2 -->
+        <!--inputValues Outer list length can be 0 to 2, e.g. [[0x01,0x14], [0x04,0x00,0x08]] -->
+        <!--inputValues Inner list length can be 0 to 8, e.g. [[0x00,0x04,0x04,0x01,0x00,0x04,0x04,0x01]]-->
+        <!-- Additional e.g. [] or  [[a,b,c]] or [[a,b,c],[x,y,z]] -->
+        <!-- inputStartingOffsets length and inputValues outer list length should be same -->
+        <inputValues>[]</inputValues>
+
+        <!-- Tag 3 -->
+        <!-- its template is same as inputStartingOffsets -->
+        <responseStartingOffsets>[0x202]</responseStartingOffsets>
+
+        <!-- Tag 4 -->
+        <!-- its template is same as inputValues -->
+        <responseValues>[[0x00, 0x00, 0x80, 0x00, 0x55, 0x55]]</responseValues>
+
+        <!-- TC 2 -->
+        <inputStartingOffsets>[]</inputStartingOffsets>
+        <inputValues>[]</inputValues>
+        <responseStartingOffsets>[0x202, 0x210]</responseStartingOffsets>
+        <responseValues>[[0x11, 0x11, 0x80, 0x00, 0x0, 0x0], [0x00,0x11]]</responseValues>
+    </DPCDModelData>
+    <LTExpectedData>
+        <!-- Number of Iterations Clock recovery took for Link Training -->
+        <crLTIter>2</crLTIter>
+
+        <!-- Voltage swing level at which CR was successful -->
+        <crLTVoltage>1</crLTVoltage>
+
+        <!-- Pre-emphesis level at which CR was successful -->
+        <crLTPreemp>1</crLTPreemp>
+
+        <!-- Number of Iterations EQ took for Link Training -->
+        <eqLTIter>1</eqLTIter>
+
+        <!-- Voltage swing level at which EQ was successful -->
+        <eqLTVoltage>1</eqLTVoltage>
+
+        <!-- Pre-emphesis level at which EQ was successful -->
+        <eqLTPreemp>1</eqLTPreemp>
+
+        <!-- Test will do Link Rate check if linkRateCheck is positive -->
+        <linkRateCheck>0</linkRateCheck>
+
+        <!-- Link Rate at which link training was successful -->
+        <linkRate>0xA8C</linkRate>
+    </LTExpectedData>
+</DPCDModel>
+
+

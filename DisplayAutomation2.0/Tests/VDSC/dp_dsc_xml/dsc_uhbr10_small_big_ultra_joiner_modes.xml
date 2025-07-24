@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<Display DPCD="" EDID="" DISPLAY_TECH="MST" TOPOLOGY_PATH="DP_MST_TILE\uhbr10_joiner_switch_topology.xml">
+    <Revision CreatedBy="Krishnan, Praburaj" CreatedOn="WW23" CurrentRevision="1">
+        <RevisionHistory RevisionID="1" Name="Krishnan, Praburaj" WW="WW23" Comments="Created to test out small joiner to big joiner to ultra joiner and vice versa"/>
+        <RevisionHistory RevisionID="2" Name="Krishnan, Praburaj" WW="WW24" Comments="Changed the MST topology XML file name"/>
+    </Revision>
+    <GoldenModeTable>
+        <EDIDInstance ModeIndex="1" HActive="3840" VActive="2160" RefreshRate="120" Scanline="Progressive" Scaling="Default" PixelCLK="1188000000"/>
+        <EDIDInstance ModeIndex="2" HActive="7680" VActive="4320" RefreshRate="60" Scanline="Progressive" Scaling="Default" PixelCLK="2376000000"/>
+        <EDIDInstance ModeIndex="3" HActive="6144" VActive="3160" RefreshRate="144" Scanline="Progressive" Scaling="Default" PixelCLK="3033827000"/>
+    </GoldenModeTable>
+
+    <Platform Name="ELG" SKU="">
+        <IgnoreModeIndex>None</IgnoreModeIndex>
+        <ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+        <ModeControlFlag CommonValue="0x08">1=0x18</ModeControlFlag>
+        <ModeSequenceIndex>1,2,3,2,1</ModeSequenceIndex> <!-- Specifies the order in which the modes has to be applied -->
+    </Platform>
+    <Platform Name="CLS" SKU="">
+        <IgnoreModeIndex>None</IgnoreModeIndex>
+        <ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+        <ModeControlFlag CommonValue="0x08">1=0x18</ModeControlFlag>
+        <ModeSequenceIndex>1,2,3,2,1</ModeSequenceIndex> <!-- Specifies the order in which the modes has to be applied -->
+    </Platform>
+    <Platform Name="ELG" SKU="DT1a">
+        <IgnoreModeIndex>None</IgnoreModeIndex>
+        <ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+        <ModeControlFlag CommonValue="0x08">1=0x18</ModeControlFlag>
+        <ModeSequenceIndex>1,2,3,2,1</ModeSequenceIndex> <!-- Specifies the order in which the modes has to be applied -->
+    </Platform>
+    <Platform Name="ELG" SKU="DT1b">
+        <IgnoreModeIndex>None</IgnoreModeIndex>
+        <ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+        <ModeControlFlag CommonValue="0x08">1=0x18</ModeControlFlag>
+        <ModeSequenceIndex>1,2,3,2,1</ModeSequenceIndex> <!-- Specifies the order in which the modes has to be applied -->
+    </Platform>
+    <Platform Name="ELG" SKU="DW31">
+        <IgnoreModeIndex>None</IgnoreModeIndex>
+        <ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+        <ModeControlFlag CommonValue="0x08">1=0x18</ModeControlFlag>
+        <ModeSequenceIndex>1,2,3,2,1</ModeSequenceIndex> <!-- Specifies the order in which the modes has to be applied -->
+    </Platform>
+</Display>
+        <!--  ModeControlFlag 8 Bit Definition:
+            {
+            ('colorFormat'	, c_ubyte, 2), # Bit 0,1
+            ('reserved_2' 	, c_ubyte, 1), # Bit 2
+            ('bpc'		  	, c_ubyte, 2), # Bit 3,4
+            ('reserved_5' 	, c_ubyte, 1), # Bit 5
+            ('pixelRepMode' , c_ubyte, 1), # Bit 6
+            ('reserved_7' 	, c_ubyte, 1)  # Bit 7
+            }
+
+            | colorFormat_RGB 		= 00 |
+            | colorFormat_YUV420 	= 01 |
+            | colorFormat_YUV444 	= 10 |
+            | colorFormat_YUV422 	= 11 |
+
+            |  bpc_6bpc	 = 00  |
+            |  bpc_8bpc  = 01  |
+            |  bpc_10bpc = 10  |
+            |  bpc_12bpc = 11  |
+
+            pixelRepMode (0 = Not a Pixel Replicated Mode, 1 = Pixel Replicated Mode) -->

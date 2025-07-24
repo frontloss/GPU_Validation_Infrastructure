@@ -1,0 +1,2 @@
+C:\Users\AKUMARV\Documents\Tools\Watermark_New\Watermark_MIPI_BXT\CalculateWatermark\bin\CalculateWatermark.exe.config
+C:\Users\AKUMARV\Documents\Tools\Watermark_New\Watermark_MIPI_BXT\CalculateWatermark\obj\Debug\CalculateWatermark.pdb

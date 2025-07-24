@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+  <metadata minClientVersion="2.5">
+    <id>Microsoft.Diagnostics.Tracing.TraceEvent</id>
+    <version>1.0.41</version>
+    <title>Microsoft TraceEvent Library</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <licenseUrl>http://go.microsoft.com/fwlink/?LinkId=329770</licenseUrl>
+    <iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Event Tracing for Windows (ETW) is a powerful logging mechanism built into the Windows OS and is used extensively in Windows. You can also log ETW events yourself code using the System.Diagnostics.Tracing.EventSource class. 
+
+The TraceEvent library conains the classes needed to control ETW providers (including EventSources) and parse the events they emit.   
+
+The library includes 
+-- TraceEventSession which can enable ETW providers, 
+-- EtwTraceEventSource which lets you read the stream of ETW events, and 
+-- TraceLog which is is digested form of ETW events which include decoded stack traces associated with the events.
+-- A Programmers Guide for using the classes above.
+
+Also see the TraceEvent Samples NuGet package for example uses of this library.</description>
+    <summary>TraceEvent is a .NET Framework library for capturing and analyzing ETW events.</summary>
+    <releaseNotes>Version 1.0.40 - More fixes for self-describing events, many improvments on starts-stop and activity computer.  
+      Version 1.0.39 - Fixes for self-describing events, more win10 fixes 
+      Version 1.0.38 - Fixes for self-describing event decoding. (Zack Newman)
+      Version 1.0.37 - Fixed problem with merging on Win10
+      Version 1.0.36 - Fixed issue decoding IPV6 fields in payloads.
+      Version 1.0.35 - DynamicTraceEventParser decodes SelfDescribing Events
+                     - Added CaptureStateOnSetFileName functionality for multi-file traces, 
+                     - Added GetActiveSession() to test if a session exists (mostly for discoverability)
+                     - Added UTCOffsetMinutes so you know the time zone where the data was collected
+                     - Added support for two-level PDB symbol server layout.  
+      Version 1.0.32 - Fix release notes
+      Version 1.0.31 - Fix bug in Merge operation introduced in 1.0.30
+      Version 1.0.30 - Added Support for bitfields/enums for OS registered providers (previously only for EventSources).  Fixed timestamp issues with real time providers that run when daylight savings time occurs (TimeStampRelMSec works).
+      Version 1.0.29 - fixed bugs associated with parsing payloads with arrays using the EventSource self-describing format.</releaseNotes>
+    <copyright>Copyright © Microsoft Corporation</copyright>
+    <tags>TraceEvent EvenSource Microsoft ETW Event Tracing for Windows</tags>
+  </metadata>
+</package>

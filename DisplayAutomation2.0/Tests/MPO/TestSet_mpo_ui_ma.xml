@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+    <Feature Name="Multiplane Overlay" Owner="sashok">
+        <Test LastModifiedWW="2021.WW7" Name="mpo_ma_3d_apps.py" Owner="sashok" Priority="P1" Version="1">
+            <TestInstance Grids="CI;GFT" Id="MPOMA001">
+                <CommandLine>python Tests\MPO\UI\MultiAdapter\mpo_ma_3d_apps.py -GFX_0 -EDP_A -GFX_1 -DP_C -EXPECTED_PIXELFORMAT RGB8888 -CONFIG CLONE</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG1</Platform>
+                <TestEnvironment>DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="MPOMA002">
+                <CommandLine>python Tests\MPO\UI\MultiAdapter\mpo_ma_3d_apps.py -GFX_0 -EDP_A -GFX_1 -HDMI_B -EXPECTED_PIXELFORMAT RGB8888 -CONFIG EXTENDED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG1</Platform>
+                <TestEnvironment>DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2021.WW7" Name="mpo_ma_planeformat_media.py" Owner="sashok" Priority="P1" Version="1">
+            <TestInstance Grids="CI;GFT" Id="MPOMA003">
+                <CommandLine>python Tests\MPO\UI\MultiAdapter\mpo_ma_planeformat_media.py -GFX_0 -EDP_A -GFX_1 -DP_C -EXPECTED_PIXELFORMAT YUV420_8BPC -CONFIG EXTENDED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG1</Platform>
+                <TestEnvironment>DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="MPOMA004">
+                <CommandLine>python Tests\MPO\UI\MultiAdapter\mpo_ma_planeformat_media.py -GFX_0 -EDP_A -GFX_1 -HDMI_B -EXPECTED_PIXELFORMAT YUV420_8BPC -CONFIG EXTENDED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG1</Platform>
+                <TestEnvironment>DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="MPOMA005">
+                <CommandLine>python Tests\MPO\UI\MultiAdapter\mpo_ma_planeformat_media.py -GFX_0 -EDP_A -GFX_1 -DP_C -EXPECTED_PIXELFORMAT YUV420_8BPC -CONFIG CLONE</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG1</Platform>
+                <TestEnvironment>DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="MPOMA006">
+                <CommandLine>python Tests\MPO\UI\MultiAdapter\mpo_ma_planeformat_media.py -GFX_0 -EDP_A -GFX_1 -HDMI_B -EXPECTED_PIXELFORMAT YUV420_8BPC -CONFIG CLONE</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG1</Platform>
+                <TestEnvironment>DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+    </Feature>
+</Display_Automation_2.0>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Features>
+  <feature name="LaunchCUI" actionClass="GetterSetterAction" source="WindowsAutomationUI"/>
+  <feature name="CUIWindowOptions" actionClass="GetterSetterAction" source="WindowsAutomationUI"/>
+  <feature name="LaunchApp" actionClass="GetterSetterAction" source="WindowsAutomationUI"/>
+  <feature name="KeyPress" actionClass="GetterSetterAction" source="WindowsAutomationUI"/>
+  <feature name="Config" actionClass="GetterSetterAction" source="WindowsAutomationUI" automationId="opModeList" options="DisplayMode">
+    <feature name="ComboBoxConfig" actionClass="GetterSetterAction" source="WindowsAutomationUI" automationId="comboBoxSelectOpMode"/>
+    <feature name="ChoosePrimaryDisplay" actionClass="GetterSetterAction" source="WindowsAutomationUI" automationId="comboBoxPrimary" />
+    <feature name="ChooseSecondaryDisplay" actionClass="GetterSetterAction" source="WindowsAutomationUI" automationId="comboBoxSecondary"/>
+    <feature name="ChooseTertiaryDisplay" actionClass="GetterSetterAction" source="WindowsAutomationUI" automationId="comboBoxThird"/>
+    <feature name="DisplayConfig" actionClass="GetterSetterAction" source="WindowsAutomationUI" automationId="opModeList" options="DisplayMode"/>
+    <feature name="EnableDisableCollage" actionClass="GetterSetterAction" source="WindowsAutomationUI" automationId="enableCollageControl"/>
+    <feature name="ComboBoxEnableDisableCollage" actionClass="GetterSetterAction" source="WindowsAutomationUI" automationId="comboBoxSelectCollageStatus"/>
+    <feature name="HorizontalVerticalCollage" actionClass="GetterSetterAction" source="WindowsAutomationUI" automationId="collageSelectDisplayOrientation"/>
+  </feature>
+  <feature name="EnableCollage" actionClass="GetterSetterAction" source="WindowsAutomationUI" automationId="enableCollageControl">
+    <feature name="ComboBoxEnableDisableCollage" actionClass="GetterSetterAction" source="WindowsAutomationUI" automationId="comboBoxSelectCollageStatus"/>
+    <feature name="DisplayConfig" actionClass="GetterSetterAction" source="WindowsAutomationUI" automationId="opModeList" options="DisplayMode"/>
+    <feature name="ComboBoxConfig" actionClass="GetterSetterAction" source="WindowsAutomationUI" automationId="comboBoxSelectOpMode"/>
+  </feature>
+  <feature name="LaunchCharmWindow" actionClass="GetterSetterAction" source="WindowsAutomationUI"/>
+  <feature name="AppBar" actionClass="GetterSetterAction" source="WindowsAutomationUI" automationId="appBar"/>
+  <feature name="Colour" actionClass="GetterSetterAction" source="WindowsAutomationUI"/>
+  <feature name="Gamma" actionClass="GetterSetterAction" source="WindowsAutomationUI" automationId="sliderGamma"/>
+  <feature name="ConfirmationPopup" actionClass="GetterSetterAction" source="WindowsAutomationUI"/>
+  <feature name="SetDisplayFullName" actionClass="GetterSetterAction" source="AccessUI"/>
+  <feature name="SelectDisplay" actionClass="GetterSetterAction" source="WindowsAutomationUI" automationId="comboBoxChooseDisplay"/>
+  <feature name="SelectDisplayInfo" actionClass="GetterSetterAction" source="WindowsAutomationUI" automationId ="comboInfo">
+    <feature name="ConnectorType" actionClass="GetterSetterAction" source="WindowsAutomationUI" automationId ="lbDevConnectorTypeVal"/>
+    <feature name="DeviceType" actionClass="GetterSetterAction" source="WindowsAutomationUI" automationId ="lbDevDeviceTypeVal"/>
+  </feature>
+  <feature name="ThreeDBasicSettingFeatures" actionClass="GetterSetterAction" source="WindowsAutomationUI"/>
+  <feature name="VideoBasicSettingFeatures" actionClass="GetterSetterAction" source="WindowsAutomationUI"/>
+  <feature name="Modes" actionClass="GetterSetterAction" source="WindowsAutomationUI" automationId="comboResolution"/>
+  <feature name="RefreshRate" actionClass="GetterSetterAction" source="WindowsAutomationUI" automationId="comboResolution"/>
+  <feature name="Rotation" actionClass="GetterSetterAction" source="WindowsAutomationUI" automationId="rotationControl" options="RotationOptions"/>
+  <feature name="Scaling" actionClass="GetterSetterAction" source="WindowsAutomationUI" automationId="scalingControl" options="ScalingOptions"/>
+  <feature name="ColorDepth" actionClass="GetterSetterAction" source="WindowsAutomationUI" automationId="colorDepthControl"/>
+  <feature name="DTCMFeature" actionClass="GetterSetterAction" source="WindowsAutomationUI"/>
+  <feature name="DTCMShowDesktop" actionClass="GetterSetterAction" source="WindowsAutomationUI"/>
+  <feature name="DTCMTrayIcon" actionClass="GetterSetterAction" source="WindowsAutomationUI"/>
+  <feature name="CUIHeaderOptions" actionClass="GetterSetterAction" source="WindowsAutomationUI"/>
+  <feature name="NotificationAreaIcons" actionClass="GetterSetterAction" source="WindowsAutomationUI"/>
+  <feature name="SystemInfo" actionClass="GetterSetterAction" source="WindowsAutomationUI" automationId ="lbDriverVersionVal"/>
+  <feature name="Overlay" actionClass="GetterSetterAction" source="WindowsAutomationUI"/>
+  <feature name="UninstallDriver" actionClass="GetterSetterAction" source="WindowsAutomationUI"/>  
+  <feature name="InstallDriver" actionClass="GetterSetterAction" source="WindowsAutomationUI"/>
+  <feature name="DeepColor" actionClass="GetterSetterAction" source="WindowsAutomationUI"/>
+  <feature name="HDCP" actionClass="GetterSetterAction" source="WindowsAutomationUI"/>
+  <feature name="PlayMPOClip" actionClass="GetterSetterAction" source="WindowsAutomationUI"/>
+  <feature name="WiDiDisplayConnection" actionClass="GetterSetterAction" source="WindowsAutomationUI"/> 
+  <feature name="XvyccYcbcr" actionClass="GetterSetterAction" source="WindowsAutomationUI" automationId="colorimetryControl" options="XvYccOptions"/>
+</Features>

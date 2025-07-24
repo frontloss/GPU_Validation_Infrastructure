@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3624FEDA-10F2-46F8-A67F-877C6308B67A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Intel.VPG.Display.Automation</RootNamespace>
+    <AssemblyName>Intel.VPG.Display.Automation.AccessAPI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug64|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug64\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DivaUtilityCLR, Version=1.0.5632.29318, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Assemblies\x64\DivaUtilityCLR.dll</HintPath>
+    </Reference>
+    <Reference Include="IgfxExtBridge_DotNet, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>Assemblies\IgfxExtBridge_DotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="igfxSDKLib">
+      <HintPath>Assemblies\igfxSDKLib.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="SHEDLL">
+      <HintPath>Assemblies\SHEDLL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationTypes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Extensions\APIExtensions.cs" />
+    <Compile Include="Extensions\DongleExtensions.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\PowerWell.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\VerifySystemState.cs" />
+    <Compile Include="Implementation\Escape\DriverEscape.cs" />
+    <Compile Include="Implementation\Escape\ULT_Framework.cs" />
+    <Compile Include="Implementation\EventInfo\EventRegisterInfo.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\AddToRegistry.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\Chronometer\Chronometer.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\Chronometer\DDI_Info.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\ConnectedStandby.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\CPUState\BLATool.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\CPUState\CPUState.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\CPUState\SocWatch.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\CRC.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\CrcGoldenData.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\CUIDisplayUIDMapping.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\CursorEvent.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\DBuf.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\DeviceStatus.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\DisplayEnumeration.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\DSR.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\DVMU\DvmuHotPlugStatus.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\DVMU\InfoFrameParsing.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\EDIDData.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\ForceTDR.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\ImageProcessing.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\InstallDDriver.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\LidSwitch.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\MDRRS_48Hz.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\MonitorTurnOff.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\MoveCursor.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\PanelBrightness\PanelBLCInfo.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\PanelBrightness\PanelBrightnessControl.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\PipePlane.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\PLL.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\PowerEvent.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\ACPIFunctions.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\PSR1.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\PSR2.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\RegistryInf.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\SetUpDesktop.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\SimulatedDisplays\PlugUnPlugEnumeration.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\SimulatedDisplays\SimulatedHotPlugDisplay.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\StaticForm\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation\ExternalAssemblies\StaticForm\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation\ExternalAssemblies\StaticForm\StaticForm.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\VerifyCRC.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\VerifyUnderrun.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\YTiling.cs" />
+    <Compile Include="Implementation\SDK\DpcdRegister.cs" />
+    <Compile Include="Implementation\SDK\Interface\ISDK.cs" />
+    <Compile Include="Implementation\SDK\Collage.cs" />
+    <Compile Include="Implementation\SDK\Legacy\Audio_v1.cs" />
+    <Compile Include="Implementation\SDK\Legacy\DpcdRegister_v1.cs" />
+    <Compile Include="Implementation\SDK\Legacy\Collage_v1.cs" />
+    <Compile Include="Implementation\SDK\Legacy\QuantizationRange_v1.cs" />
+    <Compile Include="Implementation\SDK\Legacy\SdkDisplayType_v1.cs" />
+    <Compile Include="Implementation\SDK\Legacy\EDID_v1.cs" />
+    <Compile Include="Implementation\SDK\Legacy\SdkConfig_v1.cs" />
+    <Compile Include="Implementation\SDK\Legacy\SdkIndependentRotation_v1.cs" />
+    <Compile Include="Implementation\SDK\Legacy\WideGamut_v1.cs" />
+    <Compile Include="Implementation\SDK\NarrowGamut.cs" />
+    <Compile Include="Implementation\SDK\Legacy\NarrowGamut_v1.cs" />
+    <Compile Include="Implementation\SDK\QuantizationRange.cs" />
+    <Compile Include="Implementation\SDK\New\QuantizationRange_v2.cs" />
+    <Compile Include="Implementation\SDK\New\SdkConfig_v2.cs" />
+    <Compile Include="Implementation\SDK\New\SdkIndependentRotation_v2.cs" />
+    <Compile Include="Implementation\SDK\New\SdkScaling_v2.cs" />
+    <Compile Include="Implementation\SDK\New\SdkModes_v2.cs" />
+    <Compile Include="Implementation\SDK\New\WideGamut_v2.cs" />
+    <Compile Include="Implementation\SDK\SdkConfig.cs" />
+    <Compile Include="Implementation\SDK\SdkIndependentRotation.cs" />
+    <Compile Include="Implementation\SDK\Legacy\SdkModes_v1.cs" />
+    <Compile Include="Implementation\SDK\Legacy\SdkScaling_v1.cs" />
+    <Compile Include="Implementation\SDK\WideGamut.cs" />
+    <Compile Include="Implementation\SDK\Legacy\XvYcc_v1.cs" />
+    <Compile Include="Implementation\SDK\Legacy\YCbCr_v1.cs" />
+    <Compile Include="Implementation\SDK\New\Audio_v2.cs" />
+    <Compile Include="Implementation\SDK\New\Collage_v2.cs" />
+    <Compile Include="Implementation\SDK\New\SdkDisplayType_v2.cs" />
+    <Compile Include="Implementation\SDK\New\DpcdRegister_v2.cs" />
+    <Compile Include="Implementation\SDK\New\EDID_v2.cs" />
+    <Compile Include="Implementation\SDK\New\NarrowGamut_v2.cs" />
+    <Compile Include="Implementation\SDK\New\XvYcc_v2.cs" />
+    <Compile Include="Implementation\SDK\New\YCbCr_v2.cs" />
+    <Compile Include="Implementation\SDK\SdkExtensions.cs" />
+    <Compile Include="Implementation\SDK\XvYcc.cs" />
+    <Compile Include="Implementation\SDK\YCbCr.cs" />
+    <Compile Include="Implementation\Watermark\Watermark.cs" />
+    <Compile Include="Implementation\Windows\Audio\AudioEnumeration.cs" />
+    <Compile Include="Implementation\Windows\Audio\Interfaces\IMMDevice.cs" />
+    <Compile Include="Implementation\Windows\Audio\Interfaces\IMMDeviceCollection.cs" />
+    <Compile Include="Implementation\Windows\Audio\Interfaces\IMMDeviceEnumerator.cs" />
+    <Compile Include="Implementation\Windows\Audio\Interfaces\IMMEndpoint.cs" />
+    <Compile Include="Implementation\Windows\Audio\Interfaces\IPolicyConfigVista.cs" />
+    <Compile Include="Implementation\Windows\Audio\Interfaces\IPropertyStore.cs" />
+    <Compile Include="Implementation\Windows\Audio\MMDevice.cs" />
+    <Compile Include="Implementation\Windows\Audio\MMDeviceCollection.cs" />
+    <Compile Include="Implementation\Windows\Audio\MMDeviceEnumerator.cs" />
+    <Compile Include="Implementation\Windows\Audio\PKEY.cs" />
+    <Compile Include="Implementation\Windows\Audio\PolicyConfigVista.cs" />
+    <Compile Include="Implementation\Windows\Audio\PropertyStore.cs" />
+    <Compile Include="Implementation\Windows\Audio\PropertyStoreProperty.cs" />
+    <Compile Include="Implementation\Windows\Common\PromptMessage.cs" />
+    <Compile Include="Implementation\Windows\Common\WinSystemInformation.cs" />
+    <Compile Include="Implementation\Windows\Common\CaptureScreenImage.cs" />
+    <Compile Include="Implementation\Windows\Display\Bpp.cs" />
+    <Compile Include="Implementation\Windows\Display\Config.cs" />
+    <Compile Include="Implementation\ExternalAssemblies\WindowsMonitorID.cs" />
+    <Compile Include="Implementation\Windows\Display\Modes.cs" />
+    <Compile Include="Implementation\Windows\Display\RefreshRate.cs" />
+    <Compile Include="Implementation\Windows\Display\Resolution.cs" />
+    <Compile Include="Implementation\Windows\Display\Rotation.cs" />
+    <Compile Include="Implementation\Windows\Display\Scaling.cs" />
+    <Compile Include="Implementation\Windows\Display\WIGIG.cs" />
+    <Compile Include="Implementation\Windows\Driver\DisableDriver.cs" />
+    <Compile Include="Implementation\Windows\Driver\DriverVerifier.cs" />
+    <Compile Include="Implementation\Windows\Driver\DriverFunction.cs" />
+    <Compile Include="Implementation\Windows\Driver\InstallDriver.cs" />
+    <Compile Include="Implementation\Windows\Driver\EnableDriver.cs" />
+    <Compile Include="Implementation\Windows\Driver\NonPnPDriverRoutine.cs" />
+    <Compile Include="Implementation\Windows\Driver\UpgradeDriver.cs" />
+    <Compile Include="Implementation\Windows\Driver\UnInstallDriver.cs" />
+    <Compile Include="Implementation\Windows\Net\NetworkConnection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structures\Audio.cs" />
+    <Compile Include="Structures\COM_DETECT_DEVICE_ARGS.cs" />
+    <Compile Include="Structures\D3DKMT_CLOSEADAPTER.cs" />
+    <Compile Include="Structures\D3DKMT_ESCAPE.cs" />
+    <Compile Include="Structures\D3DKMT_OPENADAPTERFROMHDC.cs" />
+    <Compile Include="Structures\DEVMODE.cs" />
+    <Compile Include="Structures\DISPLAYCONFIG_2DREGION.cs" />
+    <Compile Include="Structures\DISPLAYCONFIG_MODE_INFO.cs" />
+    <Compile Include="Structures\DISPLAYCONFIG_PATH_INFO.cs" />
+    <Compile Include="Structures\DISPLAYCONFIG_PATH_SOURCE_INFO.cs" />
+    <Compile Include="Structures\DISPLAYCONFIG_PATH_TARGET_INFO.cs" />
+    <Compile Include="Structures\DISPLAYCONFIG_RATIONAL.cs" />
+    <Compile Include="Structures\DISPLAYCONFIG_SOURCE_MODE.cs" />
+    <Compile Include="Structures\DISPLAYCONFIG_TARGET_MODE.cs" />
+    <Compile Include="Structures\DISPLAYCONFIG_VIDEO_SIGNAL_INFO.cs" />
+    <Compile Include="Structures\DisplayInfoData.cs" />
+    <Compile Include="Structures\DisplayInfoFromDevMngr.cs" />
+    <Compile Include="Structures\DISPLAY_DEVICE.cs" />
+    <Compile Include="Structures\DISPLAY_LIST.cs" />
+    <Compile Include="Structures\DTD.cs" />
+    <Compile Include="Structures\DTDMODE.cs" />
+    <Compile Include="Structures\DVMU4_Structures.cs" />
+    <Compile Include="Structures\EscapeData_ComDetectDeviceArgs.cs" />
+    <Compile Include="Structures\GFX_ESCAPE_HEADER.cs" />
+    <Compile Include="Structures\GFX_ESCAPE_HEADER_T.cs" />
+    <Compile Include="Structures\LUID.cs" />
+    <Compile Include="Structures\ModeUnion.cs" />
+    <Compile Include="Structures\NativeDTD.cs" />
+    <Compile Include="Structures\POINTL.cs" />
+    <Compile Include="Structures\RR_Scaling.cs" />
+    <Compile Include="Structures\WiGigEdidDetails.cs" />
+    <Compile Include="Stubs\APIConstants.cs" />
+    <Compile Include="Stubs\Interop.cs" />
+    <Compile Include="Stubs\StubDriverInterop.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assemblies\ACPISwitching.exe" />
+    <Content Include="Assemblies\ClosedXML.dll" />
+    <Content Include="Assemblies\DocumentFormat.OpenXml.dll" />
+    <Content Include="Assemblies\ForceTDR.exe" />
+    <Content Include="Assemblies\HotKey_ACDC.exe" />
+    <Content Include="Assemblies\IgfxExtBridge_DotNet.dll" />
+    <Content Include="Assemblies\igfxSDKLib.dll" />
+    <Content Include="Assemblies\monitoroff.exe" />
+    <Content Include="Assemblies\Naakuthanthi.exe" />
+    <Content Include="Assemblies\ReadMe.txt" />
+    <Content Include="Assemblies\SimulatedBattery_Control.vbs" />
+    <Content Include="Assemblies\StartStopProfiling.exe" />
+    <Content Include="Assemblies\x64\Desktop.jpg" />
+    <Content Include="Assemblies\x64\devcon.exe" />
+    <Content Include="Assemblies\x64\dpinst.exe" />
+    <Content Include="Assemblies\x64\Dvmu4ApiDll.dll" />
+    <Content Include="Assemblies\x64\DvmuAppLib.dll" />
+    <Content Include="Assemblies\x64\IgfxExtBridge.dll" />
+    <Content Include="Assemblies\x64\inpout32.dll" />
+    <Content Include="Assemblies\x64\MemRwL64.dll" />
+    <Content Include="Assemblies\x64\MMIORW.exe" />
+    <Content Include="Assemblies\x64\PanelBLC\PanelBLC.inf" />
+    <Content Include="Assemblies\x64\PanelBLC\PanelBLCUtility.dll" />
+    <Content Include="Assemblies\x64\PerfParser.exe" />
+    <Content Include="Assemblies\x64\PerfProfile.dll" />
+    <Content Include="Assemblies\x64\pwrtest.exe" />
+    <Content Include="Assemblies\x64\stimer64.exe" />
+    <Content Include="Assemblies\x86\Desktop.jpg" />
+    <Content Include="Assemblies\x86\devcon.exe" />
+    <Content Include="Assemblies\x86\dpinst.exe" />
+    <Content Include="Assemblies\x86\Dvmu4ApiDll.dll" />
+    <Content Include="Assemblies\x86\DvmuAppLib.dll" />
+    <Content Include="Assemblies\x86\IgfxExtBridge.dll" />
+    <Content Include="Assemblies\x86\inpout32.dll" />
+    <Content Include="Assemblies\x86\MemRwL.dll" />
+    <Content Include="Assemblies\x86\PerfParser.exe" />
+    <Content Include="Assemblies\x86\PerfProfile.dll" />
+    <Content Include="Assemblies\x86\pwrtest.exe" />
+    <Content Include="Assemblies\x86\stimer.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConstantsLibrary\ConstantsLibrary.csproj">
+      <Project>{b8edd54e-47a8-4e78-a31d-d29c6d521fc2}</Project>
+      <Name>ConstantsLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DivaDeviceSimulation\DivaDeviceSimulation.csproj">
+      <Project>{cd49a5aa-fef6-44fb-a8a9-f7090718106a}</Project>
+      <Name>DivaDeviceSimulation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logger\Logger.csproj">
+      <Project>{ec0587c7-cf34-4309-b4b5-d1eb051032b4}</Project>
+      <Name>Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WindowsAutomationUI\WindowsAutomationUI.csproj">
+      <Project>{4997c302-60f1-4901-93e1-5d4a052e08bb}</Project>
+      <Name>WindowsAutomationUI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assemblies\EDIDFiles\DP_3011.EDID" />
+    <None Include="Assemblies\EDIDFiles\DP_3011_DPCD.bin" />
+    <None Include="Assemblies\EDIDFiles\DP_HP_ZR2240W.EDID" />
+    <None Include="Assemblies\EDIDFiles\DP_HP_ZR2240W_DPCD.bin" />
+    <None Include="Assemblies\EDIDFiles\HDMI_3011_xvycc_Remove_RGB.EDID" />
+    <None Include="Assemblies\EDIDFiles\HDMI_DELL.EDID" />
+    <None Include="Assemblies\EDIDFiles\HDMI_Dell_3011.EDID" />
+    <None Include="Assemblies\EDIDFiles\HDMI_DELL_U2711_XVYCC.EDID" />
+    <None Include="Assemblies\EDIDFiles\HDMI_HP.EDID" />
+    <None Include="Assemblies\EDIDFiles\rgb_quantization_samsung.EDID" />
+    <None Include="Assemblies\Mapper\AudioEndpointData.map">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Assemblies\Mapper\EDP_Params.map">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Assemblies\Mapper\EDIDData.map" />
+    <None Include="Assemblies\Mapper\Events.map">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Assemblies\Mapper\Factors.map">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Assemblies\Mapper\PlatformDeviceIDs.map">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Assemblies\Mapper\Subevents.map">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Assemblies\x64\MemRwD64.sys" />
+    <None Include="Assemblies\x64\PanelBLC\PanelBLC.cat" />
+    <None Include="Assemblies\x64\PanelBLC\PanelBLC.sys" />
+    <None Include="Assemblies\x64\PanelBLC\PanelBLC_OLED.reg" />
+    <None Include="Assemblies\x64\PanelBLC\PanelBLC_Xiaomi.reg" />
+    <None Include="Assemblies\x86\MemRwD.sys" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assemblies\x86\PanelBLC\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>XCopy "$(ProjectDir)Assemblies" "$(TargetDir)" /Y /S /E</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{65F48AC1-D21E-4E42-8D12-682EFDD49E33}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PackageInstaller</RootNamespace>
+    <AssemblyName>PackageInstaller</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationTypes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants\Entities\DeviceDriverParam.cs" />
+    <Compile Include="Constants\Entities\OSInfo.cs" />
+    <Compile Include="Constants\Enums\Constants.cs" />
+    <Compile Include="Constants\Enums\StubDriver.cs" />
+    <Compile Include="Constants\Enums\Services.cs" />
+    <Compile Include="Source\Environment\SystemInfo.cs" />
+    <Compile Include="Source\Environment\Init\InitRoutine.cs" />
+    <Compile Include="Source\Environment\System\OSInformation.cs" />
+    <Compile Include="Source\Services\Install_ME_Driver.cs" />
+    <Compile Include="Source\Services\Install_WiFi_Driver.cs" />
+    <Compile Include="Source\Services\Install_WNIC_Driver.cs" />
+    <Compile Include="Source\Helper\CommonRoutine.cs" />
+    <Compile Include="Source\Environment\EnvPreparedness.cs" />
+    <Compile Include="Source\Environment\InitEnvironment.cs" />
+    <Compile Include="Source\Helper\UIABaseHandler.cs" />
+    <Compile Include="Source\Environment\Init\Log.cs" />
+    <Compile Include="Source\Routine\Driver\NonPnPDriverRoutine.cs" />
+    <Compile Include="Source\Environment\Init\Parser.cs" />
+    <Compile Include="Source\ServiceRequest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assemblies\x64\WiGig\" />
+    <Folder Include="Assemblies\x86\WiGig\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assemblies\x64\devcon.exe" />
+    <Content Include="Assemblies\x64\dpinst.exe" />
+    <Content Include="Assemblies\x86\devcon.exe" />
+    <Content Include="Assemblies\x86\dpinst.exe" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>XCopy "$(ProjectDir)Assemblies" "$(TargetDir)" /Y /S /E</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

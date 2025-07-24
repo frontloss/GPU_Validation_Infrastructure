@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Start>
+  <Platform id="SKL">
+    <Feature id="YTileSource">
+		  <Value regValue="0x0">yuv-16Bit_4:2:2n_packed</Value>
+      <Value regValue="0x1">NV12_YUV_4:2:0_Planar</Value>
+      <Value regValue="0x2">RGB_32Bit_2:10:10:10</Value>
+      <Value regValue="0x4">RGB_32_Bit_8:8:8:8</Value>
+      <Value regValue="0x6">RGB_64Bit_16:16:16:16_Floating_Point</Value>
+      <Value regValue="0x8">YUV_32Bit_4:4:4_packed_(8:8:8:8_MSB_-X:Y:U:V)</Value>
+      <Value regValue="0xA">RGB_32bit_Extended_Range_Bias_RGBX(2:10:10:10_MSB_X:B:G:R)</Value>
+      <Value regValue="0XC">Indexed_8-Bit</Value>
+      <Value regValue="0XE">RGB_16Bit(5:6:5_MSB-R:G:B)</Value>
+    </Feature>
+    <Feature id="Rotation">
+      <Value regValue="0x0">No_Rotation</Value>
+      <Value regValue="0x1">90_Degree_Rotation</Value>
+      <Value regValue="0x2">180_Degree_Rotation</Value>
+      <Value regValue="0x3">270_Degree_Rotation</Value>
+    </Feature>
+    <Feature id="Cursor">
+      <Value regValue="0x0">Disable</Value>
+      <Value regValue="0x2">128x128_32bpp_AND/INVERT</Value>
+      <Value regValue="0x3">256x256_32_bpp_AND/INVERT</Value>
+      <Value regValue="0x4">64x64_2bpp_Indexed_3-color_and_transperancy</Value>
+      <Value regValue="0x5">64X64_2bpp_Indexed_AND/XOR_2-color</Value>
+      <Value regValue="0x6">64x64_2bpp_Indexed_4_color</Value>
+      <Value regValue="0x7">64x64_32bpp_Indexed_AND/INVERT</Value>
+      <Value regValue="0x22">128x128_32_bpp_ARGB(8:8:8:8_MSB-A:R:G:B)</Value>
+      <Value regValue="0x23">256x256_32bpp_ARGB(8:8:8:8_MSB-A:R:G:B)</Value>
+      <Value regValue="0x24">64x64_32_BPP_and/xor</Value>
+      <Value regValue="0x25">128x128_32bpp_AND/XOR</Value>
+      <Value regValue="0x26">256x256_32bpp_AND/XOR</Value>
+      <Value regValue="0x27">64x64_32bpp_ARGB(8:8:8:8_MSB-A:R:G:B)</Value>
+    </Feature>
+  </Platform>
+  <Platform id="BXT">
+    <Feature id="YTileSource">
+      <Value regValue="0x0">yuv-16Bit_4:2:2n_packed</Value>
+      <Value regValue="0x1">NV12_YUV_4:2:0_Planar</Value>
+      <Value regValue="0x2">RGB_32Bit_2:10:10:10</Value>
+      <Value regValue="0x4">RGB_32_Bit_8:8:8:8</Value>
+      <Value regValue="0x6">RGB_64Bit_16:16:16:16_Floating_Point</Value>
+      <Value regValue="0x8">YUV_32Bit_4:4:4_packed_(8:8:8:8_MSB_-X:Y:U:V)</Value>
+      <Value regValue="0xA">RGB_32bit_Extended_Range_Bias_RGBX(2:10:10:10_MSB_X:B:G:R)</Value>
+      <Value regValue="0XC">Indexed_8-Bit</Value>
+      <Value regValue="0XE">RGB_16Bit(5:6:5_MSB-R:G:B)</Value>
+    </Feature>
+    <Feature id="Rotation">
+      <Value regValue="0x0">No_Rotation</Value>
+      <Value regValue="0x1">90_Degree_Rotation</Value>
+      <Value regValue="0x2">180_Degree_Rotation</Value>
+      <Value regValue="0x3">270_Degree_Rotation</Value>
+    </Feature>
+    <Feature id="Cursor">
+      <Value regValue="0x0">Disable</Value>
+      <Value regValue="0x2">128x128_32bpp_AND/INVERT</Value>
+      <Value regValue="0x3">256x256_32_bpp_AND/INVERT</Value>
+      <Value regValue="0x4">64x64_2bpp_Indexed_3-color_and_transperancy</Value>
+      <Value regValue="0x5">64X64_2bpp_Indexed_AND/XOR_2-color</Value>
+      <Value regValue="0x6">64x64_2bpp_Indexed_4_color</Value>
+      <Value regValue="0x7">64x64_32bpp_Indexed_AND/INVERT</Value>
+      <Value regValue="0x22">128x128_32_bpp_ARGB(8:8:8:8_MSB-A:R:G:B)</Value>
+      <Value regValue="0x23">256x256_32bpp_ARGB(8:8:8:8_MSB-A:R:G:B)</Value>
+      <Value regValue="0x24">64x64_32_BPP_and/xor</Value>
+      <Value regValue="0x25">128x128_32bpp_AND/XOR</Value>
+      <Value regValue="0x26">256x256_32bpp_AND/XOR</Value>
+      <Value regValue="0x27">64x64_32bpp_ARGB(8:8:8:8_MSB-A:R:G:B)</Value>
+    </Feature>
+    <Feature id="MipiBpp">
+      <Value regValue="0x0">0</Value>
+      <Value regValue="0x1">16</Value>
+      <Value regValue="0x2">18</Value>
+      <Value regValue="0x3">18</Value>
+      <Value regValue="0x4">24</Value>
+    </Feature>
+  </Platform>
+  <Platform id="GLK">
+    <Feature id="YTileSource">
+      <Value regValue="0x0">yuv-16Bit_4:2:2n_packed</Value>
+      <Value regValue="0x1">NV12_YUV_4:2:0_Planar</Value>
+      <Value regValue="0x2">RGB_32Bit_2:10:10:10</Value>
+      <Value regValue="0x4">RGB_32_Bit_8:8:8:8</Value>
+      <Value regValue="0x6">RGB_64Bit_16:16:16:16_Floating_Point</Value>
+      <Value regValue="0x8">YUV_32Bit_4:4:4_packed_(8:8:8:8_MSB_-X:Y:U:V)</Value>
+      <Value regValue="0xA">RGB_32bit_Extended_Range_Bias_RGBX(2:10:10:10_MSB_X:B:G:R)</Value>
+      <Value regValue="0XC">Indexed_8-Bit</Value>
+      <Value regValue="0XE">RGB_16Bit(5:6:5_MSB-R:G:B)</Value>
+    </Feature>
+    <Feature id="Rotation">
+      <Value regValue="0x0">No_Rotation</Value>
+      <Value regValue="0x1">90_Degree_Rotation</Value>
+      <Value regValue="0x2">180_Degree_Rotation</Value>
+      <Value regValue="0x3">270_Degree_Rotation</Value>
+    </Feature>
+    <Feature id="Cursor">
+      <Value regValue="0x0">Disable</Value>
+      <Value regValue="0x2">128x128_32bpp_AND/INVERT</Value>
+      <Value regValue="0x3">256x256_32_bpp_AND/INVERT</Value>
+      <Value regValue="0x4">64x64_2bpp_Indexed_3-color_and_transperancy</Value>
+      <Value regValue="0x5">64X64_2bpp_Indexed_AND/XOR_2-color</Value>
+      <Value regValue="0x6">64x64_2bpp_Indexed_4_color</Value>
+      <Value regValue="0x7">64x64_32bpp_Indexed_AND/INVERT</Value>
+      <Value regValue="0x22">128x128_32_bpp_ARGB(8:8:8:8_MSB-A:R:G:B)</Value>
+      <Value regValue="0x23">256x256_32bpp_ARGB(8:8:8:8_MSB-A:R:G:B)</Value>
+      <Value regValue="0x24">64x64_32_BPP_and/xor</Value>
+      <Value regValue="0x25">128x128_32bpp_AND/XOR</Value>
+      <Value regValue="0x26">256x256_32bpp_AND/XOR</Value>
+      <Value regValue="0x27">64x64_32bpp_ARGB(8:8:8:8_MSB-A:R:G:B)</Value>
+    </Feature>
+    <Feature id="MipiBpp">
+      <Value regValue="0x0">0</Value>
+      <Value regValue="0x1">16</Value>
+      <Value regValue="0x2">18</Value>
+      <Value regValue="0x3">18</Value>
+      <Value regValue="0x4">24</Value>
+    </Feature>
+  </Platform>
+  <Platform id="KBL">
+    <Feature id="YTileSource">
+      <Value regValue="0x0">yuv-16Bit_4:2:2n_packed</Value>
+      <Value regValue="0x1">NV12_YUV_4:2:0_Planar</Value>
+      <Value regValue="0x2">RGB_32Bit_2:10:10:10</Value>
+      <Value regValue="0x4">RGB_32_Bit_8:8:8:8</Value>
+      <Value regValue="0x6">RGB_64Bit_16:16:16:16_Floating_Point</Value>
+      <Value regValue="0x8">YUV_32Bit_4:4:4_packed_(8:8:8:8_MSB_-X:Y:U:V)</Value>
+      <Value regValue="0xA">RGB_32bit_Extended_Range_Bias_RGBX(2:10:10:10_MSB_X:B:G:R)</Value>
+      <Value regValue="0XC">Indexed_8-Bit</Value>
+      <Value regValue="0XE">RGB_16Bit(5:6:5_MSB-R:G:B)</Value>
+    </Feature>
+    <Feature id="Rotation">
+      <Value regValue="0x0">No_Rotation</Value>
+      <Value regValue="0x1">90_Degree_Rotation</Value>
+      <Value regValue="0x2">180_Degree_Rotation</Value>
+      <Value regValue="0x3">270_Degree_Rotation</Value>
+    </Feature>
+    <Feature id="Cursor">
+      <Value regValue="0x0">Disable</Value>
+      <Value regValue="0x2">128x128_32bpp_AND/INVERT</Value>
+      <Value regValue="0x3">256x256_32_bpp_AND/INVERT</Value>
+      <Value regValue="0x4">64x64_2bpp_Indexed_3-color_and_transperancy</Value>
+      <Value regValue="0x5">64X64_2bpp_Indexed_AND/XOR_2-color</Value>
+      <Value regValue="0x6">64x64_2bpp_Indexed_4_color</Value>
+      <Value regValue="0x7">64x64_32bpp_Indexed_AND/INVERT</Value>
+      <Value regValue="0x22">128x128_32_bpp_ARGB(8:8:8:8_MSB-A:R:G:B)</Value>
+      <Value regValue="0x23">256x256_32bpp_ARGB(8:8:8:8_MSB-A:R:G:B)</Value>
+      <Value regValue="0x24">64x64_32_BPP_and/xor</Value>
+      <Value regValue="0x25">128x128_32bpp_AND/XOR</Value>
+      <Value regValue="0x26">256x256_32bpp_AND/XOR</Value>
+      <Value regValue="0x27">64x64_32bpp_ARGB(8:8:8:8_MSB-A:R:G:B)</Value>
+    </Feature>
+    <Feature id="MipiBpp">
+      <Value regValue="0x0">0</Value>
+      <Value regValue="0x1">16</Value>
+      <Value regValue="0x2">18</Value>
+      <Value regValue="0x3">18</Value>
+      <Value regValue="0x4">24</Value>
+    </Feature>
+  </Platform>
+	</Start>
+

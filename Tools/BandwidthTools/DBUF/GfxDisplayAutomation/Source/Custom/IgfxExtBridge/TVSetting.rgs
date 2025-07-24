@@ -1,0 +1,28 @@
+HKCR
+{
+	IgfxExtBridge.TVSetting.1 = s 'TV Setting Class'
+	{
+		CLSID = s '{635A3AE2-8A58-4b2d-B701-7AD0050EC81C}'
+	}
+ 
+	IgfxExtBridge.TVSetting = s 'TV Setting Class'
+	{
+		CLSID = s '{635A3AE2-8A58-4b2d-B701-7AD0050EC81C}'
+		CurVer = s 'IgfxExtBridge.TVSetting.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {635A3AE2-8A58-4b2d-B701-7AD0050EC81C} = s 'TV Setting Class'
+		{
+			ProgID = s 'IgfxExtBridge.TVSetting.1'
+			VersionIndependentProgID = s 'IgfxExtBridge.TVSetting'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{9A650EBC-929B-4210-BA05-76D5D021B140}'
+		}
+	}
+}

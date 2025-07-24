@@ -1,0 +1,439 @@
+{
+  "pipe": {
+    "name": "pipeA",
+    "output": "pipeBoutput.png",
+    "modeSetBpc": {
+       			"reg_name": "TRANS_WD_FUNC_CTL",
+       			"bit_field": "wd_color_mode",
+       			"data_type": ""
+       		},
+    "widthBeforeScaling": {
+       			"reg_name": "get_current_mode",
+       			"bit_field": "HzRes",
+       			"data_type": ""
+       		},
+    "heightBeforeScaling": {
+       			"reg_name": "get_current_mode",
+       			"bit_field": "VtRes",
+       			"data_type": ""
+       		},
+    "widthAfterScaling": {
+       			"reg_name": "get_current_mode",
+       			"bit_field": "HzRes",
+       			"data_type": ""
+       		},
+    "heightAfterScaling":{
+       			"reg_name": "get_current_mode",
+       			"bit_field": "VtRes",
+       			"data_type": ""
+       		},
+    "computePrecision": "HW",
+    "videoEncodingBitRateInKbps": 8000,
+    "fullRangeVideoEncoding": true,
+    "components": [
+      {
+        "plane": {
+          "name": "plane1",
+          "enable": {
+       					"reg_name": "PLANE_CTL_1",
+       					"bit_field": "plane_enable",
+       					"data_type": "bool"
+       				},
+          "positionX":{
+						"reg_name": "PLANE_POS_1",
+						"bit_field": "x_position",
+						"data_type": "int"
+					},
+          "positionY": {
+       					"reg_name": "PLANE_POS_1",
+       					"bit_field": "y_position",
+       					"data_type": "int"
+       				},
+          "input": "Src_Frame_0.png",
+          "videoStartTime": "00:00:00:000",
+          "videoEndTime": "99:59:59:999",
+          "controlPresentationRate": true,
+          "components": [
+            {
+              "1dLut": {
+                "name": "plane1precscLut",
+                "enable": {
+       						"reg_name": "PLANE_COLOR_CTL_1",
+       						"bit_field": "plane_pre_csc_gamma_enable",
+       						"data_type": "bool"
+       							},
+                "data":{
+       						"reg_name": "PLANE_PRE_CSC_GAMC_DATA_1",
+       						"bit_field": "plane_pre_csc_gamma_enable",
+       						"data_type": "planeprecscLut_data"
+       					}
+              }
+            },
+            {
+              "csc": {
+                "name": "plane1csc",
+                "enable":{
+       					 "reg_name": "PLANE_COLOR_CTL_1",
+       					"bit_field": "plane_csc_enable",
+       					"data_type": "bool"
+       					 },
+                "preoffsets": {
+       					 "reg_name": "PLANE_CSC_PREOFF_1",
+       					"bit_field": "precsc_offset",
+       					"data_type": ""
+       					 },
+                "coefficients": {
+       							"reg_name": "PLANE_CSC_COEFF_1",
+       							"bit_field": "plane_csc_coefficients",
+       							"data_type": "NULL"
+       							},
+                "postoffsets": {
+       					 "reg_name": "PLANE_CSC_POSTOFF_1",
+       					"bit_field": "postcsc_offset",
+       					"data_type": ""
+       					 }
+              }
+            },
+            {
+              "1dLut": {
+                "name": "plane1postcscLut",
+                "enable": {
+       						"reg_name": "PLANE_COLOR_CTL_1",
+       						"bit_field": "plane_gamma_disable",
+       						"data_type": "bool"
+       							},
+                "data": {
+       					 "reg_name": "PLANE_POST_CSC_GAMC_DATA_1",
+       					"bit_field": "plane_gamma_disable",
+       					"data_type": "planepostcscLut_data"
+       							}
+              }
+            }
+          ]
+        }
+      },
+      {
+        "plane": {
+          "name": "plane2",
+          "enable": {
+       					"reg_name": "PLANE_CTL_2",
+       					"bit_field": "plane_enable",
+       					"data_type": "bool"
+       				},
+          "positionX": {
+						"reg_name": "PLANE_POS_2",
+						"bit_field": "x_position",
+						"data_type": "int"
+					},
+          "positionY":{
+       					"reg_name": "PLANE_POS_2",
+       					"bit_field": "y_position",
+       					"data_type": "int"
+       				},
+          "input": "Src_Frame_0.png",
+          "videoStartTime": "00:00:00:000",
+          "videoEndTime": "99:59:59:999",
+          "controlPresentationRate": true,
+          "components": [
+            {
+              "1dLut": {
+                "name": "plane2precscLut",
+                "enable": {
+       						"reg_name": "PLANE_COLOR_CTL_2",
+       						"bit_field": "plane_pre_csc_gamma_enable",
+       						"data_type": "bool"
+       					 },
+                "data":{
+       						"reg_name": "PLANE_PRE_CSC_GAMC_DATA_2",
+       						"bit_field": "plane_pre_csc_gamma_enable",
+       						"data_type": "planeprecscLut_data"
+       					}
+              }
+            },
+            {
+              "csc": {
+                "name": "plane2csc",
+                "enable": {
+       					 "reg_name": "PLANE_COLOR_CTL_2",
+       					"bit_field": "plane_csc_enable",
+       					"data_type": "bool"
+       					 },
+                "preoffsets": {
+       					 "reg_name": "PLANE_CSC_PREOFF_2",
+       					"bit_field": "precsc_offset",
+       					"data_type": ""
+       					 },
+                "coefficients":  {
+       							"reg_name": "PLANE_CSC_COEFF_2",
+       							"bit_field": "plane_csc_coefficients",
+       							"data_type": "NULL"
+       							},
+                "postoffsets": {
+       					 "reg_name": "PLANE_CSC_POSTOFF_2",
+       					"bit_field": "postcsc_offset",
+       					"data_type": ""
+       					 }
+              }
+            },
+            {
+              "1dLut": {
+                "name": "plane2postcscLut",
+                "enable":{
+       						"reg_name": "PLANE_COLOR_CTL_2",
+       						"bit_field": "plane_gamma_disable",
+       						"data_type": "bool"
+       							},
+                "data": {
+       					 "reg_name": "PLANE_POST_CSC_GAMC_DATA_2",
+       					"bit_field": "plane_gamma_disable",
+       					"data_type": "planepostcscLut_data"
+       							}
+              }
+            }
+          ]
+        }
+      },
+      {
+        "plane": {
+          "name": "plane3",
+          "enable": {
+       				"reg_name": "PLANE_CTL_3",
+       				"bit_field": "plane_enable",
+       				"data_type": "bool"
+       				},
+          "positionX": {
+						"reg_name": "PLANE_POS_3",
+						"bit_field": "x_position",
+						"data_type": "int"
+					},
+          "positionY": {
+       					"reg_name": "PLANE_POS_3",
+       					"bit_field": "y_position",
+       					"data_type": "int"
+       				},
+          "input": "Src_Frame_0.png",
+          "videoStartTime": "00:00:00:000",
+          "videoEndTime": "99:59:59:999",
+          "controlPresentationRate": true,
+          "components": [
+            {
+              "1dLut": {
+                "name": "plane3precscLut",
+                "enable": {
+       						"reg_name": "PLANE_COLOR_CTL_3",
+       						"bit_field": "plane_pre_csc_gamma_enable",
+       						"data_type": "bool"
+       					 },
+                "data":{
+       						"reg_name": "PLANE_PRE_CSC_GAMC_DATA_3",
+       						"bit_field": "plane_pre_csc_gamma_enable",
+       						"data_type": "planeprecscLut_data"
+       					}
+              }
+            },
+            {
+              "csc": {
+                "name": "plane3csc",
+                "enable": {
+       					 "reg_name": "PLANE_COLOR_CTL_3",
+       					"bit_field": "plane_csc_enable",
+       					"data_type": "bool"
+       					 },
+                "preoffsets": {
+       					 "reg_name": "PLANE_CSC_PREOFF_3",
+       					"bit_field": "precsc_offset",
+       					"data_type": ""
+       					 },
+                "coefficients":  {
+       							"reg_name": "PLANE_CSC_COEFF_3",
+       							"bit_field": "plane_csc_coefficients",
+       							"data_type": "NULL"
+       							},
+                "postoffsets":{
+       					 "reg_name": "PLANE_CSC_POSTOFF_3",
+       					"bit_field": "postcsc_offset",
+       					"data_type": ""
+       					 }
+              }
+            },
+            {
+              "1dLut": {
+                "name": "plane3postcscLut",
+                "enable":{
+       						"reg_name": "PLANE_COLOR_CTL_3",
+       						"bit_field": "plane_gamma_disable",
+       						"data_type": "bool"
+       							},
+                "data": {
+       					 "reg_name": "PLANE_POST_CSC_GAMC_DATA_3",
+       					"bit_field": "plane_gamma_disable",
+       					"data_type": "planepostcscLut_data"
+       							}
+              }
+            }
+          ]
+        }
+      },
+      {
+        "blender": {
+          "name": "blender"
+        }
+      },
+      {
+        "1dLut": {
+          "name": "pipeprecscLut",
+          "enable": {
+       				"reg_name": "GAMMA_MODE",
+       				"bit_field": "pre_csc_gamma_enable",
+       				"data_type": "bool"
+       				},
+          "data": {
+       				"reg_name": "PRE_CSC_GAMC",
+       				"bit_field": "NULL",
+       				"data_type": "pipeprecscLut_data"
+       							}
+        }
+      },
+      {
+        "csc": {
+          "name": "pipecsc",
+          "enable": {
+       				 "reg_name": "CSC_MODE",
+       				 "bit_field": "pipe_csc_enable",
+       				 "data_type": "bool"
+       							},
+          "preoffsets": {
+       								"reg_name": "CSC_PREOFF",
+       								"bit_field": "precsc_medium_offset",
+       								"data_type": "NULL"
+                        },
+          "coefficients": {
+       								"reg_name": "CSC_COEFF",
+       								"bit_field": "pipe_csc_coefficients",
+       								"data_type": "NULL"
+       							},
+          "postoffsets": {
+       								"reg_name": "CSC_POSTOFF",
+       								"bit_field": "postcsc_medium_offset",
+       								"data_type": "NULL"
+                           }
+        }
+      },
+      {
+        "D11PipeMSLut": {
+          "name": "pipePostCscEOTFLut",
+		  "enable":  {
+       				"reg_name": "PIPE_MISC",
+       				"bit_field": "hdr_mode",
+       				"data_type": "bool"
+       				},
+		  "data" : {
+       				"reg_name": "PIPE_MISC",
+       				"bit_field": "hdr_mode",
+       				"data_type": "pipePostCscEOTFLut_data"
+       				}
+        }
+      },
+      {
+        "1dLut": {
+          "name": "pipepostcscLut",
+          "enable": {
+       				"reg_name": "GAMMA_MODE",
+       				"bit_field": "post_csc_gamma_enable",
+       				"data_type": "bool"
+       				},
+          "data": {
+       				"reg_name": "GAMMA_MODE",
+       				"bit_field": "gamma_mode",
+       				"data_type": "pipepostcscLut_data"
+       							}
+        }
+      },
+      {
+        "3dLut": {
+          "name": "pipe3dLut",
+          "enable": {
+       				"reg_name": "LUT_3D_CTL_REGISTER",
+       				"bit_field": "lut_3d_enable",
+       				"data_type": "bool"
+                    },
+          "input": "c:\\intel\\colormodel\\internal\\Noblue.bin"
+        }
+      },
+	    {
+        "csc": {
+          "name": "pipeocsc",
+          "enable": {
+       				 "reg_name": "CSC_MODE",
+       				 "bit_field": "pipe_output_csc_enable",
+       				 "data_type": "bool"
+       							},
+          "preoffsets":  {
+       								"reg_name": "OUTPUT_CSC_PREOFF",
+       								"bit_field": "precsc_offset",
+       								"data_type": "NULL"
+                        },
+          "coefficients": {
+       								"reg_name": "OUTPUT_CSC_COEFF",
+       								"bit_field": "pipe_csc_coefficients",
+       								"data_type": "NULL"
+       							},
+          "postoffsets": {
+       								"reg_name": "OUTPUT_CSC_POSTOFF",
+       								"bit_field": "postcsc_offset",
+       								"data_type": "NULL"
+       							}
+        }
+      },
+
+      {
+        "Lace": {
+          "name": "pipelace",
+          "enable":{
+       				"reg_name": "DPLC_CTL",
+       				"bit_field": "function_enable",
+       				"data_type": "bool"
+       							},
+          "LaceLuxValue": 1500,
+          "LaceAggressivenessLevel": 1
+        }
+      },
+      {
+        "Dpst": {
+          "name": "pipedpst",
+          "enable": {
+				"reg_name": "DPST_CTL",
+				"bit_field": "ie_histogram_enable",
+				"data_type": "bool"
+		  },
+          "DpstAggressivenessLevel": 3
+        }
+      },
+      {
+        "Scaler": {
+          "name": "scaler",
+          "enable": false,
+          "filterMode": "MEDIUM",
+          "horizontalFilterCoeff": [
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0
+          ],
+          "verticalFilterCoeff": [
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    ]
+  }
+}

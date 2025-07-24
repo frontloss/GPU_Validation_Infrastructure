@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+   <Feature Name="Vbt" Owner="akumarv">
+
+     <Test LastModifiedWW="2020.WW14" Name="test_vbt_swing_override.py" Owner="akumarv" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;ETM" Id="VBT0001">
+         <CommandLine>python Tests\VBT_Overrides\test_vbt_swing_override.py -dp_b_plus</CommandLine>
+         <OS>Win20H1</OS>
+         <Platform>ICL_LP</Platform>
+                <TestEnvironment>ICL_LP_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="VBT0002">
+         <CommandLine>python Tests\VBT_Overrides\test_vbt_swing_override.py -dp_d</CommandLine>
+         <OS>Win20H1</OS>
+         <Platform>ICL_LP</Platform>
+                <TestEnvironment>ICL_LP_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="VBT0003">
+         <CommandLine>python Tests\VBT_Overrides\test_vbt_swing_override.py -dp_f</CommandLine>
+         <OS>Win20H1</OS>
+         <Platform>ICL_LP</Platform>
+                <TestEnvironment>ICL_LP_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+   </Feature>
+</Display_Automation_2.0>

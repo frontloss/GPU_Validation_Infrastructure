@@ -1,0 +1,24 @@
+#include <Windows.h>
+
+#pragma pack(push, SIMDRV_BRIGHTNESS3)
+#pragma pack(1)
+
+/* BRIGHTNESS3 COMMANDS trigger selection type */
+typedef enum _SIMDRV_BRIGHTNESS3_EVENT
+{
+    SIMDRV_BRIGHTNESS3_NONE = 0,
+    SIMDRV_BRIGHTNESS3_CAPS = 1,
+    SIMDRV_BRIGHTNESS3_OPTIMIZATION = 2,
+    SIMDRV_BRIGHTNESS3_SET = 3,
+    SIMDRV_BRIGHTNESS3_GET = 4,
+} SIMDRV_BRIGHTNESS3_EVENT;
+
+//For BRIGHTNESS3 Feature
+typedef struct _SIMDRV_BRIGHTNESS3_ARGS
+{
+    SIMDRV_BRIGHTNESS3_EVENT ulBrightness3EventType;
+    unsigned long  ulTargetId;
+    PVOID         pArgs;
+} SIMDRV_BRIGHTNESS3_ARGS, * PSIMDRV_BRIGHTNESS3_ARGS;
+
+#pragma pack(pop, SIMDRV_BRIGHTNESS3)

@@ -1,0 +1,222 @@
+<Display_Automation_2.0>
+    <Feature Name="Writeback" Owner="agpatel">
+        <Test LastModifiedWW="2018.WW50" Name="writeback_basic.py" Owner="agpatel" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="WBACK001">
+                <CommandLine>python Tests\Writeback\writeback_basic.py -edp_a -WB_0</CommandLine>
+                <OS>WINRS4;WINRS5</OS>
+                <Platform>ICL;TGL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;ICL_SOC;TGL_SOC;DG1_SIM;DG1_EMU;DG1_SOC;EHL_SIM;EHL_EMU;EHL_SOC;RKL_SIM;RKL_EMU;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+			<TestInstance Grids="CI;PreETM;ETM" Id="WBACK002">
+                <CommandLine>python Tests\Writeback\writeback_basic.py -edp_a -dp_b -WB_0</CommandLine>
+                <OS>WINRS4;WINRS5</OS>
+                <Platform>ICL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;EHL_SIM;EHL_EMU;EHL_SOC;RKL_SIM;RKL_EMU;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@ICL_SOC</QualificationStatus>
+            </TestInstance>
+			<TestInstance Grids="CI;PreETM;ETM" Id="WBACK003">
+                <CommandLine>python Tests\Writeback\writeback_basic.py –edp_a –dp_b –hdmi_c –WB_0</CommandLine>
+                <OS>WINRS4;WINRS5</OS>
+                <Platform>TGL;DG1</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;DG1_SIM;DG1_EMU;DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@TGL_SIM</QualificationStatus>
+            </TestInstance>
+			<TestInstance Grids="CI;PreETM;ETM" Id="WBACK004">
+                <CommandLine>python Tests\Writeback\writeback_basic.py –edp_a –WB_0 -WB_1</CommandLine>
+                <OS>WINRS4;WINRS5</OS>
+                <Platform>ICL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;EHL_SIM;EHL_EMU;EHL_SOC;RKL_SIM;RKL_EMU;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@ICL_SOC</QualificationStatus>
+            </TestInstance>			
+			<TestInstance Grids="CI;PreETM;ETM" Id="WBACK005">
+                <CommandLine>python Tests\Writeback\writeback_basic.py -edp_a –dp_b -WB_0 -WB_1</CommandLine>
+                <OS>WINRS4;WINRS5</OS>
+                <Platform>TGL;DG1</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;DG1_SIM;DG1_EMU;DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@TGL_SIM</QualificationStatus>
+            </TestInstance>
+			<TestInstance Grids="CI;PreETM;ETM" Id="WBACK006">
+                <CommandLine>python Tests\Writeback\writeback_basic.py -mipi_a -WB_0</CommandLine>
+                <OS>WINRS4;WINRS5</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+			<TestInstance Grids="CI;PreETM;ETM" Id="WBACK007">
+                <CommandLine>python Tests\Writeback\writeback_basic.py -mipi_a -mipi_c –dp_d –WB_0</CommandLine>
+                <OS>WINRS4;WINRS5</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+			<TestInstance Grids="CI;PreETM;ETM" Id="WBACK008">
+                <CommandLine>python Tests\Writeback\writeback_basic.py -mipi_a –mipi_c -WB_0 -WB_1</CommandLine>
+                <OS>WINRS4;WINRS5</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>	
+		</Test>
+		
+        <Test LastModifiedWW="2018.WW50" Name="writeback_high_resolution.py" Owner="agpatel" Priority="P1" Version="1">			
+			<TestInstance Grids="CI;PreETM;ETM" Id="WBACK009">
+                <CommandLine>python Tests\Writeback\writeback_high_resolution.py –edp_a  –WB_0 -WB_1</CommandLine>
+                <OS>WINRS4;WINRS5</OS>
+                <Platform>ICL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;EHL_SIM;EHL_EMU;EHL_SOC;RKL_SIM;RKL_EMU;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@ICL_SOC</QualificationStatus>
+            </TestInstance>
+			<TestInstance Grids="CI;PreETM;ETM" Id="WBACK010">
+                <CommandLine>python Tests\Writeback\writeback_high_resolution.py –edp_a -dp_b –WB_0 -WB_1</CommandLine>
+                <OS>WINRS4;WINRS5</OS>
+                <Platform>TGL;DG1</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;DG1_SIM;DG1_EMU;DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>			
+			<TestInstance Grids="CI;PreETM;ETM" Id="WBACK011">
+                <CommandLine>python Tests\Writeback\writeback_high_resolution.py -mipi_a –mipi_c –WB_0 -WB_1</CommandLine>
+                <OS>WINRS4;WINRS5</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>	
+		</Test>
+		
+        <Test LastModifiedWW="2018.WW50" Name="writeback_mode_config_scenarios.py" Owner="agpatel" Priority="P1" Version="1">	
+            <TestInstance Grids="CI;PreETM;ETM" Id="WBACK012">
+                <CommandLine>python Tests\Writeback\writeback_mode_config_scenarios.py –edp_a –WB_0</CommandLine>
+                <OS>WINRS4;WINRS5</OS>
+                <Platform>ICL;TGL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;ICL_SOC;TGL_SOC;DG1_SIM;DG1_EMU;DG1_SOC;EHL_SIM;EHL_EMU;EHL_SOC;RKL_SIM;RKL_EMU;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>				
+			<TestInstance Grids="CI;PreETM;ETM" Id="WBACK013">
+                <CommandLine>python Tests\Writeback\writeback_mode_config_scenarios.py –edp_a –WB_0 -WB_1</CommandLine>
+                <OS>WINRS4;WINRS5</OS>
+                <Platform>ICL;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;EHL_SIM;EHL_EMU;EHL_SOC;RKL_SIM;RKL_EMU;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+			<TestInstance Grids="CI;PreETM;ETM" Id="WBACK014">
+                <CommandLine>python Tests\Writeback\writeback_mode_config_scenarios.py –edp_a -dp_b –WB_0 -WB_1</CommandLine>
+                <OS>WINRS4;WINRS5</OS>
+                <Platform>TGL;DG1</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;DG1_SIM;DG1_EMU;DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+			<TestInstance Grids="CI;PreETM;ETM" Id="WBACK015">
+                <CommandLine>python Tests\Writeback\writeback_mode_config_scenarios.py –mipi_a –WB_0</CommandLine>
+                <OS>WINRS4;WINRS5</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>			
+			<TestInstance Grids="CI;PreETM;ETM" Id="WBACK016">
+                <CommandLine>python Tests\Writeback\writeback_mode_config_scenarios.py -mipi_a –mipi_c –WB_0 -WB_1</CommandLine>
+                <OS>WINRS4;WINRS5</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>	
+		</Test>
+		
+        <Test LastModifiedWW="2018.WW50" Name="writeback_power_events_persistance.py" Owner="agpatel" Priority="P2" Version="1">				
+			<TestInstance Grids="CI;PreETM;ETM" Id="WBACK017">
+                <CommandLine>python Tests\Writeback\writeback_power_events_persistance.py –edp_a –WB_0 –WB_1</CommandLine>
+                <OS>WINRS4;WINRS5</OS>
+                <Platform>ICL;TGL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;ICL_SOC;TGL_SOC;DG1_SIM;DG1_EMU;DG1_SOC;EHL_SIM;EHL_EMU;EHL_SOC;RKL_SIM;RKL_EMU;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+			<TestInstance Grids="CI;PreETM;ETM" Id="WBACK018">
+                <CommandLine>python Tests\Writeback\writeback_power_events_persistance.py –mipi_a –WB_0 –WB_1</CommandLine>
+                <OS>WINRS4;WINRS5</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+		</Test>
+	
+        <Test LastModifiedWW="2018.WW50" Name="writeback_tdr.py" Owner="agpatel" Priority="P2" Version="1">			
+			<TestInstance Grids="CI;PreETM;ETM" Id="WBACK019">
+                <CommandLine>python Tests\Writeback\writeback_tdr.py –edp_a –WB_0 –WB_1</CommandLine>
+                <OS>WINRS4;WINRS5</OS>
+                <Platform>ICL;TGL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;ICL_SOC;TGL_SOC;DG1_SIM;DG1_EMU;DG1_SOC;EHL_SIM;EHL_EMU;EHL_SOC;RKL_SIM;RKL_EMU;RKL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@ICL_SOC</QualificationStatus>
+            </TestInstance>
+			<TestInstance Grids="CI;PreETM;ETM" Id="WBACK020">
+                <CommandLine>python Tests\Writeback\writeback_tdr.py –mipi_a –WB_0 –WB_1</CommandLine>
+                <OS>WINRS4;WINRS5</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>			
+		</Test>
+	</Feature>	
+	
+	
+	<Feature Name="Vdenc" Owner="agpatel">		
+        <Test LastModifiedWW="2018.WW50" Name="writeback_vdenc.py" Owner="agpatel" Priority="P1" Version="1">	
+			<TestInstance Grids="CI;PreETM;ETM" Id="VDENC001">
+                <CommandLine>python Tests\Writeback\writeback_vdenc.py –edp_a –WB_0</CommandLine>
+                <OS>WINRS4;WINRS5</OS>
+                <Platform>TGL;DG1</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;DG1_SIM;DG1_EMU;DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+			<TestInstance Grids="CI;PreETM;ETM" Id="VDENC002">
+                <CommandLine>python Tests\Writeback\writeback_vdenc.py –edp_a –WB_0 -WB_1</CommandLine>
+                <OS>WINRS4;WINRS5</OS>
+                <Platform>TGL;DG1</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;DG1_SIM;DG1_EMU;DG1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+    </Feature>
+</Display_Automation_2.0>

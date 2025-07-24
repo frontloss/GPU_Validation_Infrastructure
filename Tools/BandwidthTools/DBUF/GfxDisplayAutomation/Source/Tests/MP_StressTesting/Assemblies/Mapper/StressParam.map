@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Data>
+  <TestParam name ="MP_Stress_HotplugUnplug" cycle ="500"> </TestParam>
+  <TestParam name ="MP_Stress_AC_DC" cycle ="500"> </TestParam>
+  <TestParam name ="MP_Stress_MPO_AC_DC" cycle ="500"> </TestParam>
+  <TestParam name ="MP_Stress_MPO_PM" cycle ="500"> </TestParam>
+  
+</Data>

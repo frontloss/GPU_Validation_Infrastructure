@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+    <Feature Name="Watermark_DBUF" Owner="sgaikwad">
+        <Test LastModifiedWW="2020.WW19" Name="dbuf_allocation.py" Owner="sashok" Priority="P1" Version="1">
+            <TestInstance Grids="CI;GFT" Id="WMDBF001">
+                <CommandLine>python Tests\Watermark_DBuf\dbuf_allocation.py -hdmi_a -hdmi_b -hdmi_e -dp_d_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_DOD;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="WMDBF002">
+                <CommandLine>python Tests\Watermark_DBuf\dbuf_allocation.py -hdmi_a -hdmi_b -dp_d_tc -dp_e_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_DOD;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="WMDBF003">
+                <CommandLine>python Tests\Watermark_DBuf\dbuf_allocation.py -hdmi_a -dp_d_tc -dp_h_tc -dp_g_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_DOD;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="WMDBF004">
+                <CommandLine>python Tests\Watermark_DBuf\dbuf_allocation.py -dp_e_tc -dp_f_tc -dp_g_tc -dp_i_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_DOD;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="WMDBF005">
+                <CommandLine>python Tests\Watermark_DBuf\dbuf_allocation.py -dp_b -dp_g -dp_h -dp_i</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ADLP;TGL</Platform>
+                <TestEnvironment>ADLP_SOC;ADLP_DOD;ADLP_SIM;ADLP_EMU;TGL_DOD;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="WMDBF006">
+                <CommandLine>python Tests\Watermark_DBuf\dbuf_allocation.py -dp_b -hdmi_g -hdmi_h -hdmi_i</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ADLP;TGL</Platform>
+                <TestEnvironment>ADLP_SOC;ADLP_DOD;ADLP_SIM;ADLP_EMU;TGL_DOD;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="WMDBF007">
+                <CommandLine>python Tests\Watermark_DBuf\dbuf_allocation.py -dp_a -dp_b -dp_e -dp_d_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_DOD;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="WMDBF008">
+                <CommandLine>python Tests\Watermark_DBuf\dbuf_allocation.py -dp_a -dp_b -hdmi_d -dp_e_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_DOD;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="WMDBF009">
+                <CommandLine>python Tests\Watermark_DBuf\dbuf_allocation.py -dp_a -dp_b -dp_d_tc -dp_e_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_DOD;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="WMDBF010">
+                <CommandLine>python Tests\Watermark_DBuf\dbuf_allocation.py -dp_b -hdmi_a -hdmi_d -dp_e_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_DOD;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="WMDBF011">
+                <CommandLine>python Tests\Watermark_DBuf\dbuf_allocation.py -dp_a -hdmi_b -dp_d_tc -dp_e_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_DOD;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="DSWQD012">
+                <CommandLine>python Tests\Watermark_DBuf\dbuf_allocation.py -dp_a -dp_b_plus -hdmi_b -dp_e_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_DOD;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+             <TestInstance Grids="CI;GFT" Id="DSWQD013">
+                <CommandLine>python Tests\Watermark_DBuf\dbuf_allocation.py -dp_a -dp_b_plus -dp_d_tc -dp_e_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_DOD;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="DSWQD014">
+                <CommandLine>python Tests\Watermark_DBuf\dbuf_allocation.py -dp_a -dp_b_plus -dp_e -dp_d_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_DOD;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="DSWQD015">
+                <CommandLine>python Tests\Watermark_DBuf\dbuf_allocation.py -hdmi_b -hdmi_d -hdmi_e -hdmi_f</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_DOD;TGL_SIM;TGL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="WMDBF016">
+                <CommandLine>python Tests\Watermark_DBuf\dbuf_allocation.py -dp_a -dp_c -dp_d -hdmi_b</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="WMDBF017">
+                <CommandLine>python Tests\Watermark_DBuf\dbuf_allocation.py -hdmi_a -dp_b -dp_d -hdmi_c</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="WMDBF018">
+                <CommandLine>python Tests\Watermark_DBuf\dbuf_allocation.py -dp_a -dp_b -dp_c -dp_d</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+             <TestInstance Grids="CI;GFT" Id="WMDBF019">
+                <CommandLine>python Tests\Watermark_DBuf\dbuf_allocation.py -hdmi_a -dp_b -dp_d -hdmi_c</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="WMDBF020">
+                <CommandLine>python Tests\Watermark_DBuf\dbuf_allocation.py -dp_a -hdmi_b -hdmi_c -hdmi_d</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+             <TestInstance Grids="CI;GFT" Id="WMDBF021">
+                <CommandLine>python Tests\Watermark_DBuf\dbuf_allocation.py -hdmi_a -hdmi_b -hdmi_c -hdmi_d</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+             <TestInstance Grids="CI;GFT" Id="WMDBF022">
+                <CommandLine>python Tests\Watermark_DBuf\dbuf_allocation.py -dp_b -dp_c -dp_d -dp_f</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="WMDBF023">
+                <CommandLine>python Tests\Watermark_DBuf\dbuf_allocation.py -dp_a -dp_b_plus -dp_c -dp_d</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="WMDBF024">
+                <CommandLine>python Tests\Watermark_DBuf\dbuf_allocation.py -hdmi_a -dp_b_plus -dp_d -hdmi_c</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+    </Feature>
+</Display_Automation_2.0>

@@ -1,0 +1,444 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Platform_Map_info>
+	<Product_Family FamilyName="HSW" >
+		<Device_ID_list>
+			<Device_ID Dev2_ID ="0402" SKU_Name ="TBD" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="0412" SKU_Name ="TBD" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="041E" SKU_Name ="TBD" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="0D12" SKU_Name ="TBD" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="0D22" SKU_Name ="TBD" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="0C00" SKU_Name ="TBD" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="0C01" SKU_Name ="TBD" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="0C12" SKU_Name ="TBD" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="0C22" SKU_Name ="TBD" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="0D02" SKU_Name ="TBD" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="0A06" SKU_Name ="TBD" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="0A16" SKU_Name ="TBD" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="0A26" SKU_Name ="TBD" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="0A0E" SKU_Name ="TBD" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="0A1E" SKU_Name ="TBD" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="0A2E" SKU_Name ="TBD" Config = "NA" Comments ="None"> </Device_ID>
+		</Device_ID_list>
+	</Product_Family>
+	<Product_Family FamilyName="SKL" >
+		<Device_ID_list>
+			<Device_ID Dev2_ID ="1917" SKU_Name ="GT1 DT" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="1912" SKU_Name ="GT2 DT" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="1932" SKU_Name ="GT4 DT" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="1906" SKU_Name ="GT1 ULT" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="1913" SKU_Name ="GT1 ULT " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="1916" SKU_Name ="GT1 ULT " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="1921" SKU_Name ="GT2 ULT " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="1923" SKU_Name ="GT3 ULT " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="1926" SKU_Name ="GT3 ULT " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="1927" SKU_Name ="GT3 ULT " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="190E" SKU_Name ="GT1 ULX " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="1915" SKU_Name ="GT1 ULX " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="191E" SKU_Name ="GT2 ULX " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="0900" SKU_Name ="GT0 DT " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="0901" SKU_Name ="GT1 DT " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="0902" SKU_Name ="GT2 DT " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="0903" SKU_Name ="GT3 DT " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="0904" SKU_Name ="GT4 DT " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="190B" SKU_Name ="GT1 HALO " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="191B" SKU_Name ="GT2 HALO " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="192B" SKU_Name ="GT3 HALO " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="193B" SKU_Name ="GT4 HALO " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="190A" SKU_Name ="GT1 SERVER " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="191A" SKU_Name ="GT2 SERVER " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="192A" SKU_Name ="GT3 SERVER " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="192D" SKU_Name ="GT3 SERVER " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="193A" SKU_Name ="GT4 SERVER " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="191D" SKU_Name ="GT2 WORKSTATION " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="193D" SKU_Name ="GT4 WORKSTATION " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="9905" SKU_Name ="LP DEVICE " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="191E" SKU_Name ="GT1 ULT " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="1904" SKU_Name ="GT1 ULT " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="190C" SKU_Name ="GT1 ULT " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="1900" SKU_Name ="GT1 ULT " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="190F" SKU_Name ="GT1 ULT " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="1910" SKU_Name ="GT1 ULT " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="193B" SKU_Name ="GT1 ULT " Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="1902" SKU_Name ="GT1 ULT " Config = "NA" Comments ="None"> </Device_ID>
+		</Device_ID_list>
+	</Product_Family>
+	<Product_Family FamilyName="GLK" >
+		<Device_ID_list>
+			<Device_ID Dev2_ID ="3184" SKU_Name ="TBD" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="3185" SKU_Name ="TBD" Config = "NA" Comments ="None"> </Device_ID>
+		</Device_ID_list>
+	</Product_Family>
+	<Product_Family FamilyName="CFL" >
+		<Device_ID_list>
+			<Device_ID Dev2_ID ="3EA5" SKU_Name ="TBD" Config = "NA" Comments ="CFL"> </Device_ID>
+            <Device_ID Dev2_ID ="3EA6" SKU_Name ="TBD" Config = "NA" Comments ="CFL"> </Device_ID>
+            <Device_ID Dev2_ID ="3EA7" SKU_Name ="TBD" Config = "NA" Comments ="CFL"> </Device_ID>
+            <Device_ID Dev2_ID ="3EA8" SKU_Name ="TBD" Config = "NA" Comments ="CFL"> </Device_ID>
+            <Device_ID Dev2_ID ="3EA9" SKU_Name ="TBD" Config = "NA" Comments ="CFL"> </Device_ID>
+
+            <Device_ID Dev2_ID ="3E90" SKU_Name ="TBD" Config = "NA" Comments ="CFL"> </Device_ID>
+			<Device_ID Dev2_ID ="3E91" SKU_Name ="TBD" Config = "NA" Comments ="CFL"> </Device_ID>
+			<Device_ID Dev2_ID ="3E92" SKU_Name ="TBD" Config = "NA" Comments ="CFL"> </Device_ID>
+            <Device_ID Dev2_ID ="3E93" SKU_Name ="TBD" Config = "NA" Comments ="CFL"> </Device_ID>
+            <Device_ID Dev2_ID ="3E94" SKU_Name ="TBD" Config = "NA" Comments ="CFL"> </Device_ID>
+			<Device_ID Dev2_ID ="3E96" SKU_Name ="TBD" Config = "NA" Comments ="CFL"> </Device_ID>
+            <Device_ID Dev2_ID ="3E98" SKU_Name ="TBD" Config = "NA" Comments ="CFL"> </Device_ID>
+            <Device_ID Dev2_ID ="3E99" SKU_Name ="TBD" Config = "NA" Comments ="CFL"> </Device_ID>
+            <Device_ID Dev2_ID ="3E9A" SKU_Name ="TBD" Config = "NA" Comments ="CFL"> </Device_ID>
+            <Device_ID Dev2_ID ="3E9B" SKU_Name ="TBD" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="3E9C" SKU_Name ="TBD" Config = "NA" Comments ="None"> </Device_ID>
+
+
+			<Device_ID Dev2_ID ="9B41" SKU_Name ="GT2 ULT" Config = "NA" Comments ="CML, Reuse WHL 42, with LP3/DDR4"> </Device_ID>
+			<Device_ID Dev2_ID ="9B21" SKU_Name ="GT1 ULT" Config = "NA" Comments ="CML U42 fuse down"> </Device_ID>
+			<Device_ID Dev2_ID ="9BCA" SKU_Name ="GT2 ULT" Config = "NA" Comments ="CML With LP3/DDR4"> </Device_ID>
+			<Device_ID Dev2_ID ="9BAA" SKU_Name ="GT1 ULT" Config = "NA" Comments ="CML U62 fuse down"> </Device_ID>
+			<Device_ID Dev2_ID ="9BCB" SKU_Name ="GT2 ULT" Config = "NA" Comments ="CML With LP4/DDR4"> </Device_ID>
+			<Device_ID Dev2_ID ="9BAB" SKU_Name ="GT1 ULT" Config = "NA" Comments ="CML U42 fuse down"> </Device_ID>
+			<Device_ID Dev2_ID ="9BCC" SKU_Name ="GT2 ULT" Config = "NA" Comments ="CML With LP4/DDR4"> </Device_ID>
+			<Device_ID Dev2_ID ="9BAC" SKU_Name ="GT1 ULT" Config = "NA" Comments ="CML U62 fuse down"> </Device_ID>
+			<Device_ID Dev2_ID ="9BC0" SKU_Name ="GT2 ULX" Config = "NA" Comments ="CML Y42 fuse down"> </Device_ID>
+			<Device_ID Dev2_ID ="9BA0" SKU_Name ="GT1 ULX" Config = "NA" Comments ="CML Y42 fuse down"> </Device_ID>
+			<Device_ID Dev2_ID ="9BC5" SKU_Name ="GT2 DT" Config = "NA" Comments ="CML S10+2 Native"> </Device_ID>
+			<Device_ID Dev2_ID ="9BA5" SKU_Name ="GT1 DT" Config = "NA" Comments ="CML S10 +2 fuse down"> </Device_ID>
+			<Device_ID Dev2_ID ="9BC8" SKU_Name ="GT2 DT" Config = "NA" Comments ="CML S62 fuse down"> </Device_ID>
+			<Device_ID Dev2_ID ="9BA8" SKU_Name ="GT1 DT" Config = "NA" Comments ="CML S62 fuse down"> </Device_ID>
+			<Device_ID Dev2_ID ="9BC4" SKU_Name ="GT2 HALO" Config = "NA" Comments ="CML: Reuse CFL 82 with security fix"> </Device_ID>
+			<Device_ID Dev2_ID ="9BA4" SKU_Name ="GT1 HALO" Config = "NA" Comments ="CML H82 fuse down"> </Device_ID>
+			<Device_ID Dev2_ID ="9BC2" SKU_Name ="GT2 HALO" Config = "NA" Comments ="CML H62 Native (S62 in BGA)"> </Device_ID>
+			<Device_ID Dev2_ID ="9BA2" SKU_Name ="GT1 HALO" Config = "NA" Comments ="CML H62 fuse down"> </Device_ID>
+
+            <Device_ID Dev2_ID ="3EA0" SKU_Name ="TBD" Config = "NA" Comments ="WHL"> </Device_ID>
+			<Device_ID Dev2_ID ="3EA1" SKU_Name ="TBD" Config = "NA" Comments ="WHL"> </Device_ID>
+			<Device_ID Dev2_ID ="3EA2" SKU_Name ="TBD" Config = "NA" Comments ="WHL:Not POR"> </Device_ID>
+            <Device_ID Dev2_ID ="3EA3" SKU_Name ="TBD" Config = "NA" Comments ="WHL:Not POR"> </Device_ID>
+			<Device_ID Dev2_ID ="3EA4" SKU_Name ="TBD" Config = "NA" Comments ="WHL:Not POR"> </Device_ID>
+
+		</Device_ID_list>
+	</Product_Family>
+	<Product_Family FamilyName="KBL" >
+		<Device_ID_list>
+			<Device_ID Dev2_ID ="5926" SKU_Name ="GT1 ULT"        Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="5902" SKU_Name ="GT1 Desktop"    Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="5906" SKU_Name ="GT1 ULT"        Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="5908" SKU_Name ="GT1 HALO"       Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="590A" SKU_Name ="GT1 SERVER"     Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="590B" SKU_Name ="GT1 HALO"       Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="590E" SKU_Name ="GT1 ULX"        Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="5912" SKU_Name ="GT2 DESKTOP"    Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="5913" SKU_Name ="GT1.5 ULT"      Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="5915" SKU_Name ="GT1.5 ULX"      Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="5916" SKU_Name ="GT2 ULT"        Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="5917" SKU_Name ="GT1.5 DESKTOP"  Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="591A" SKU_Name ="GT2 SERVER"     Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="591B" SKU_Name ="GT2 HALO"       Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="591D" SKU_Name ="GT2 WORKSTATION" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="591E" SKU_Name ="GT2 ULX"        Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="5921" SKU_Name ="GT2 ULT"        Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="5923" SKU_Name ="GT3 ULT"        Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="5927" SKU_Name ="GT3 ULT"        Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="592A" SKU_Name ="GT3 SERVER"     Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="592B" SKU_Name ="GT3 HALO"       Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="5932" SKU_Name ="GT4 DESKTOP"    Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="593A" SKU_Name ="GT4 SERVER"     Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="593B" SKU_Name ="GT4 HALO"       Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="593D" SKU_Name ="GT4 WORKSTATION" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="591C" SKU_Name ="TBD" Config = "NA" Comments ="AML, CPU Stepping: KBL, GT/Display: KBL."> </Device_ID>
+			<Device_ID Dev2_ID ="87C0" SKU_Name ="TBD" Config = "NA" Comments ="AML, CPU Stepping: KBL, GT/Display: KBL."> </Device_ID>
+			<Device_ID Dev2_ID ="87CA" SKU_Name ="TBD" Config = "NA" Comments ="AML, CPU Stepping: WHL, GT/Display: KBL or CFL."> </Device_ID>
+		</Device_ID_list>
+	</Product_Family>
+	<Product_Family FamilyName="ICLLP">
+		<Device_ID_list>
+			<Device_ID Dev2_ID ="FF05" SKU_Name ="None"                Config = "None"  Comments ="Optional-TBD"> </Device_ID>
+			<Device_ID Dev2_ID ="8A50" SKU_Name ="ICLLP Super SKU GT2" Config = "1x8x8" Comments ="Pre-Production Super sample, GT2, 2 VDBox"> </Device_ID>
+			<Device_ID Dev2_ID ="8A51" SKU_Name ="ICLLP Y GT2"         Config = "1x8x8" Comments ="Pre-Production Super sample, GT2, 2 VDBox"> </Device_ID>
+			<Device_ID Dev2_ID ="8A52" SKU_Name ="ICLLP U GT2"         Config = "1x8x8" Comments ="Pre-Production Super sample, GT2, 2 VDBox"> </Device_ID>
+			<Device_ID Dev2_ID ="8A53" SKU_Name ="ICLLP U GT2"        Config = "1x8x8" Comments ="Pre-Production Super sample, GT2, 2 VDBox"> </Device_ID>
+			<Device_ID Dev2_ID ="8A54" SKU_Name ="ICLLP U GT1.5F"      Config = "1x6x8" Comments ="Base Die ICLLP U GT2, 2 VDBox)"> </Device_ID>
+			<Device_ID Dev2_ID ="8A56" SKU_Name ="ICLLP U GT1F"        Config = "1x4x8" Comments ="Base DIe ICLLP U GT2, 1 VDBx (Low Media)"> </Device_ID>
+			<Device_ID Dev2_ID ="8A57" SKU_Name ="ICLLP U GT1.5F"      Config = "1x6x8" Comments ="Base Die ICLLP U GT2, 1 VDBox (Low Media)"> </Device_ID>
+			<Device_ID Dev2_ID ="8A58" SKU_Name ="ICLLP Y GT1F"        Config = "1x4x8" Comments ="Base Die ICLLP Y GT2, 1 VDBox (Low Media)"> </Device_ID>
+			<Device_ID Dev2_ID ="8A59" SKU_Name ="ICLLP Y GT1.5F"      Config = "1x6x8" Comments ="Base Die ICLLP Y GT2, 1 VDBox (Low Media)"> </Device_ID>
+			<Device_ID Dev2_ID ="8A5A" SKU_Name ="ICLLP U GT1.5F"      Config = "1x6x8" Comments ="Base Die ICLLP U GT2, 2 VDBox"> </Device_ID>
+			<Device_ID Dev2_ID ="8A5B" SKU_Name ="ICLLP U GT1F"        Config = "1x4x8" Comments ="Base Die ICLLP U GT2, 2 VDBox"> </Device_ID>
+			<Device_ID Dev2_ID ="8A5C" SKU_Name ="ICLLP Y GT1.5F"      Config = "1x6x8" Comments ="Base Die ICLLP Y GT2, 2 VDBox"> </Device_ID>
+			<Device_ID Dev2_ID ="8A5D" SKU_Name ="ICLLP Y GT1F"        Config = "1x4x8" Comments ="Base Die ICLLP Y GT2, 2 VDBox"> </Device_ID>
+			<Device_ID Dev2_ID ="8A70" SKU_Name ="ICLLP GT0"           Config = "NA"    Comments ="GT0 with Display"> </Device_ID>
+			<Device_ID Dev2_ID ="8A71" SKU_Name ="ICLLP GT0.5F"        Config = "1x1x8" Comments ="GT0.5 Val SKU, 1 VDBox"> </Device_ID>
+		</Device_ID_list>
+	</Product_Family>
+	<Product_Family FamilyName="ICLHP" >
+	<Device_ID_list>
+			<Device_ID Dev2_ID ="FF02" SKU_Name ="TBD" Config = "NA" Comments ="None"> </Device_ID>
+	</Device_ID_list>
+	</Product_Family>
+	<Product_Family FamilyName="ICL" >
+	<Device_ID_list>
+			<Device_ID Dev2_ID ="FF01" SKU_Name ="TBD" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="FF03" SKU_Name ="TBD" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="FF15" SKU_Name ="TBD" Config = "NA" Comments ="None"> </Device_ID>
+	</Device_ID_list>
+	</Product_Family>
+	<Product_Family FamilyName="TGL" >
+		<Device_ID_list>
+			<Device_ID Dev2_ID ="FF20" SKU_Name ="TBD" Config = "NA" Comments ="Pre-Silicon"> </Device_ID>
+			<Device_ID Dev2_ID ="9A40" SKU_Name ="Y42" Config = "1x6x16" Comments ="Mobile"> </Device_ID>
+			<Device_ID Dev2_ID ="9A49" SKU_Name ="U42" Config = "1x6x16" Comments ="Mobile"> </Device_ID>
+			<Device_ID Dev2_ID ="9A59" SKU_Name ="U42" Config = "1x6x16" Comments ="IOTG"> </Device_ID>
+			<Device_ID Dev2_ID ="9A60" SKU_Name ="H81" Config = "1x2x16" Comments ="Perf Mobile"> </Device_ID>
+			<Device_ID Dev2_ID ="9A68" SKU_Name ="S81" Config = "1x2x16" Comments ="Desktop"> </Device_ID>
+			<Device_ID Dev2_ID ="9A70" SKU_Name ="H81" Config = "1x2x16" Comments ="Mobile WS"> </Device_ID>
+			<Device_ID Dev2_ID ="9A78" SKU_Name ="S81" Config = "1x2x16" Comments ="Desktop WS"> </Device_ID>
+			<Device_ID Dev2_ID ="9A7F" SKU_Name ="TBD" Config = "NA" Comments ="Display Only"> </Device_ID>
+			<Device_ID Dev2_ID ="9AC9" SKU_Name ="UP3" Config = "1x6x16" Comments ="Mobile"> </Device_ID>
+			<Device_ID Dev2_ID ="9AF8" SKU_Name ="UP4" Config = "1x3x16" Comments ="Mobile"> </Device_ID>
+			<Device_ID Dev2_ID ="9AC0" SKU_Name ="UP4" Config = "1x6x16" Comments ="Mobile"> </Device_ID>
+			<Device_ID Dev2_ID ="9AD9" SKU_Name ="UP3" Config = "1x6x16" Comments ="IOTG"> </Device_ID>
+		</Device_ID_list>
+	</Product_Family>
+	<Product_Family FamilyName="LKF1" >
+		<Device_ID_list>
+			<Device_ID Dev2_ID ="9840" SKU_Name ="LKF1" Config = "1x8x8" Comments ="Pre-Production sample"> </Device_ID>
+            <Device_ID Dev2_ID ="9841" SKU_Name ="LKF1 val" Config = "1x6x8" Comments ="GT Validation Part"> </Device_ID>
+            <Device_ID Dev2_ID ="9842" SKU_Name ="LKF1 val" Config = "1x4x8" Comments ="GT Validation Part"> </Device_ID>
+            <Device_ID Dev2_ID ="9850" SKU_Name ="LKF1 val" Config = "0x0x0" Comments ="Display-only, validation part."> </Device_ID>
+		</Device_ID_list>
+	</Product_Family>
+	<Product_Family FamilyName="RYF" >
+		<Device_ID_list>
+			<Device_ID Dev2_ID ="9940" SKU_Name ="TBD" Config = "NA" Comments ="None"> </Device_ID>
+		</Device_ID_list>
+	</Product_Family>
+	<Product_Family FamilyName="JSL" >
+		<Device_ID_list>
+			<Device_ID Dev2_ID ="4E55" SKU_Name ="JSL" Config = "1x4x4" Comments ="A0"> </Device_ID>
+			<Device_ID Dev2_ID ="4E61" SKU_Name ="JSL" Config = "1x4x6" Comments ="A0"> </Device_ID>
+			<Device_ID Dev2_ID ="4E71" SKU_Name ="JSL" Config = "1x4x8" Comments ="A0"> </Device_ID>
+			<Device_ID Dev2_ID ="4571" SKU_Name ="EHL" Config = "1x4x8" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="4555" SKU_Name ="EHL" Config = "1x2x8" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="4569" SKU_Name ="EHL" Config = "0x0x0" Comments ="EHL Val(DOD)"> </Device_ID>
+			<Device_ID Dev2_ID ="4E69" SKU_Name ="JSL" Config = "0x0x0" Comments ="JSL Val(DOD)"> </Device_ID>
+		</Device_ID_list>
+	</Product_Family>
+	<Product_Family FamilyName="DG1" >
+		<Device_ID_list>
+			<Device_ID Dev2_ID ="4905" SKU_Name ="GT2 DT" Config = "1X6X16" Comments ="DG1 motherboard down"> </Device_ID>
+			<Device_ID Dev2_ID ="4907" SKU_Name ="GT2 DT" Config = "1X6X16" Comments ="SG1 Server SKU"> </Device_ID>
+			<Device_ID Dev2_ID ="4908" SKU_Name ="GT2 DT" Config = "1X5X16" Comments ="DG1 Desktop AIC"> </Device_ID>
+			<Device_ID Dev2_ID ="4909" SKU_Name ="GT2 DT" Config = "1X5X16" Comments ="DG1 Desktop AIC Half Height"> </Device_ID>
+			<Device_ID Dev2_ID ="0201" SKU_Name ="GT1 DT" Config = "NA" Comments ="None"> </Device_ID>
+		</Device_ID_list>
+	</Product_Family>
+	<Product_Family FamilyName="RKL" >
+		<Device_ID_list>
+			<Device_ID Dev2_ID ="4C8A" SKU_Name ="GT1 Desktop S81" Config = "1x2x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="4C8B" SKU_Name ="GT1 Desktop S81" Config = "1x2x12" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="4C90" SKU_Name ="GT1 Workstation S81" Config = "1x2x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="4C9A" SKU_Name ="GT1 Server S81" Config = "1x2x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="4C9F" SKU_Name ="GT0" Config = "NA" Comments ="RKL with display only"> </Device_ID>
+        </Device_ID_list>
+	</Product_Family>
+	<Product_Family FamilyName="LKFR" >
+		<Device_ID_list>
+			<Device_ID Dev2_ID ="CAFE" SKU_Name ="LKFR" Config = "NA" Comments ="Placeholder"> </Device_ID>
+		</Device_ID_list>
+	</Product_Family>
+	<Product_Family FamilyName="DG2" >
+		<Device_ID_list>
+			<Device_ID Dev2_ID ="4F80" SKU_Name ="DG2 512" Config = "8x4x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="4F81" SKU_Name ="DG2 448" Config = "7x4x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="4F82" SKU_Name ="DG2 384" Config = "6x4x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="4F83" SKU_Name ="DG2 256" Config = "4x4x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="4F84" SKU_Name ="DG2 128" Config = "2x4x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="4F85" SKU_Name ="DG2 256" Config = "4x4x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="4F86" SKU_Name ="DG2 192" Config = "3x4x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="4F87" SKU_Name ="DG2 128" Config = "2x4x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="4F88" SKU_Name ="DG2 96" Config = "2x3x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="4F89" SKU_Name ="ACMP" Config = "8x4x16" Comments ="ACMP-512"> </Device_ID>
+			<Device_ID Dev2_ID ="4F8C" SKU_Name ="ACMP" Config = "2x4x16" Comments ="ACMP-128"> </Device_ID>
+			<Device_ID Dev2_ID ="5690" SKU_Name ="DG2 512" Config = "8x4x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="5691" SKU_Name ="DG2 384" Config = "6x4x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="5692" SKU_Name ="DG2 256" Config = "4x4x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="5693" SKU_Name ="DG2 128" Config = "2x4x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="5694" SKU_Name ="DG2 96"  Config = "2x3x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="5695" SKU_Name ="DG2 128" Config = "2x4x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="5696" SKU_Name ="DG2 256" Config = "4x4x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="5697" SKU_Name ="DG2 192" Config = "3x4x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="5698" SKU_Name ="DG2 128" Config = "2x4x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="5699" SKU_Name ="ACMP" Config = "2x4x16" Comments ="ACMP-128"> </Device_ID>
+			<Device_ID Dev2_ID ="569A" SKU_Name ="ACMP" Config = "2x3x16" Comments ="ACMP-96"> </Device_ID>
+			<Device_ID Dev2_ID ="56A0" SKU_Name ="DG2 512" Config = "8x4x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="56A1" SKU_Name ="DG2 448" Config = "7x4x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="56A2" SKU_Name ="DG2 384" Config = "6x4x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="56A3" SKU_Name ="DG2 256" Config = "4x4x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="56A4" SKU_Name ="DG2 192"  Config = "3x4x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="56A5" SKU_Name ="DG2 128" Config = "2x4x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="56A6" SKU_Name ="DG2 96" Config = "2x3x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="56A7" SKU_Name ="ACMP" Config = "2x4x16" Comments ="ACMP-128"> </Device_ID>
+			<Device_ID Dev2_ID ="56A8" SKU_Name ="ACMP" Config = "2x3x16" Comments ="ACMP-96"> </Device_ID>
+			<Device_ID Dev2_ID ="56A9" SKU_Name ="ACMP" Config = "8x4x16" Comments ="ACMP-512"> </Device_ID>
+			<Device_ID Dev2_ID ="56AA" SKU_Name ="ACMP" Config = "6x4x16" Comments ="ACMP-384"> </Device_ID>
+			<Device_ID Dev2_ID ="56B0" SKU_Name ="DG2 128" Config = "2x3x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="56B1" SKU_Name ="DG2 128" Config = "2x3x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="56B2" SKU_Name ="DG2 256" Config = "4x4x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="56B3" SKU_Name ="DG2 256" Config = "4x4x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="56C0" SKU_Name ="DG2 512" Config = "8x4x16" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="56C1" SKU_Name ="DG2 128" Config = "2x4x16" Comments ="None"> </Device_ID>
+		</Device_ID_list>
+	</Product_Family>
+    <Product_Family FamilyName="ADLS" >
+		<Device_ID_list>
+			<Device_ID Dev2_ID ="4680" SKU_Name ="GT1" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="4682" SKU_Name ="GT1" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="4690" SKU_Name ="GT1" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="4692" SKU_Name ="GT1" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="4693" SKU_Name ="GT1" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="4688" SKU_Name ="GT1" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="468A" SKU_Name ="GT1" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="468B" SKU_Name ="GT0.5" Config = "NA" Comments ="None"> </Device_ID>
+			<Device_ID Dev2_ID ="A780" SKU_Name ="RPLS" Config = "" Comments =""> </Device_ID>
+			<Device_ID Dev2_ID ="A782" SKU_Name ="RPLS" Config = "" Comments =""> </Device_ID>
+			<Device_ID Dev2_ID ="A783" SKU_Name ="RPLS" Config = "" Comments =""> </Device_ID>
+			<Device_ID Dev2_ID ="A788" SKU_Name ="RPLS" Config = "" Comments =""> </Device_ID>
+			<Device_ID Dev2_ID ="A78A" SKU_Name ="RPLS" Config = "" Comments =""> </Device_ID>
+			<Device_ID Dev2_ID ="A78B" SKU_Name ="RPLS" Config = "" Comments =""> </Device_ID>
+			<Device_ID Dev2_ID ="A79F" SKU_Name ="RPLS" Config = "" Comments =""> </Device_ID>
+		</Device_ID_list>
+	</Product_Family>
+	<Product_Family FamilyName="ADLP" >
+		<Device_ID_list>
+			<Device_ID Dev2_ID ="46A0" SKU_Name ="P6+8+2" Config = "1x6x16" Comments ="Not for QS"> </Device_ID>
+			<Device_ID Dev2_ID ="46A1" SKU_Name ="P6+8+2" Config = "1x5x16" Comments ="Not for QS"> </Device_ID>
+			<Device_ID Dev2_ID ="46A2" SKU_Name ="P6+8+2" Config = "1x4x16" Comments ="Not for QS"> </Device_ID>
+			<Device_ID Dev2_ID ="46A3" SKU_Name ="P6+8+2" Config = "1x3x16" Comments =""> </Device_ID>
+			<Device_ID Dev2_ID ="46A6" SKU_Name ="P6+8+2" Config = "1x5x16" Comments ="Dynamic Branding Fused"> </Device_ID>
+			<Device_ID Dev2_ID ="4626" SKU_Name ="P6+8+2" Config = "1x5x16" Comments ="Dynamic Branding by BIOS"> </Device_ID>
+			<Device_ID Dev2_ID ="46B0" SKU_Name ="P2+8+2" Config = "1x6x16" Comments ="Not for QS"> </Device_ID>
+			<Device_ID Dev2_ID ="46B1" SKU_Name ="P2+8+2" Config = "1x5x16" Comments ="Not for QS"> </Device_ID>
+			<Device_ID Dev2_ID ="46B2" SKU_Name ="P2+8+2" Config = "1x4x16" Comments ="Not for QS"> </Device_ID>
+			<Device_ID Dev2_ID ="46B3" SKU_Name ="P2+8+2" Config = "1x3x16" Comments =""> </Device_ID>
+			<Device_ID Dev2_ID ="46A8" SKU_Name ="P2+8+2" Config = "1x5x16" Comments ="Dynamic Branding Fused"> </Device_ID>
+			<Device_ID Dev2_ID ="4628" SKU_Name ="P2+8+2" Config = "1x6x16" Comments ="Dynamic Branding by BIOS"> </Device_ID>
+			<Device_ID Dev2_ID ="46C0" SKU_Name ="M2+8+2" Config = "1x6x16" Comments ="Not for QS"> </Device_ID>
+			<Device_ID Dev2_ID ="46C1" SKU_Name ="M2+8+2" Config = "1x5x16" Comments ="Not for QS"> </Device_ID>
+			<Device_ID Dev2_ID ="46C2" SKU_Name ="M2+8+2" Config = "1x4x16" Comments ="Not for QS"> </Device_ID>
+			<Device_ID Dev2_ID ="46C3" SKU_Name ="M2+8+2" Config = "1x3x16" Comments =""> </Device_ID>
+			<Device_ID Dev2_ID ="46AA" SKU_Name ="M2+8+2" Config = "1x3x16" Comments ="Dynamic Branding Fused"> </Device_ID>
+			<Device_ID Dev2_ID ="462A" SKU_Name ="M2+8+2" Config = "1x5x16" Comments ="Dynamic Branding by BIOS"> </Device_ID>
+			<Device_ID Dev2_ID ="46B6" SKU_Name ="Spare" Config = "1x6x16" Comments ="Dynamic Branding Fused"> </Device_ID>
+			<Device_ID Dev2_ID ="4636" SKU_Name ="Spare" Config = "1x5x16" Comments ="Dynamic Branding by BIOS"> </Device_ID>
+			<Device_ID Dev2_ID ="46B8" SKU_Name ="Spare" Config = "1x5x16" Comments ="Dynamic Branding Fused"> </Device_ID>
+			<Device_ID Dev2_ID ="4638" SKU_Name ="Spare" Config = "1x5x16" Comments ="Dynamic Branding by BIOS"> </Device_ID>
+			<Device_ID Dev2_ID ="46BA" SKU_Name ="Spare" Config = "1x5x16" Comments ="Dynamic Branding Fused"> </Device_ID>
+			<Device_ID Dev2_ID ="463A" SKU_Name ="Spare" Config = "1x5x16" Comments ="Dynamic Branding by BIOS"> </Device_ID>
+			<Device_ID Dev2_ID ="46FF" SKU_Name ="NA" Config = "NA" Comments ="Not for production"> </Device_ID>
+			<Device_ID Dev2_ID ="46D0" SKU_Name="ADLN" Config="1x2x16" Comments="ADLN"> </Device_ID>
+			<Device_ID Dev2_ID ="46D1" SKU_Name="ADLN" Config="1x2x12" Comments="ADLN"> </Device_ID>
+			<Device_ID Dev2_ID ="46D2" SKU_Name="ADLN" Config="1x1x16" Comments="ADLN"> </Device_ID>
+			<Device_ID Dev2_ID ="A7A0" SKU_Name="RPLP" Config="1x6x16" Comments="Dynamic Branding fused"> </Device_ID>
+			<Device_ID Dev2_ID ="A720" SKU_Name="RPLP" Config="1x6x16" Comments="Dynamic Branding by BIOS"> </Device_ID>
+			<Device_ID Dev2_ID ="A7A8" SKU_Name="RPLP" Config="1x4x16" Comments="RPLP"> </Device_ID>
+			<Device_ID Dev2_ID ="A7A1" SKU_Name="RPLP" Config="1x6x16" Comments="Dynamic Branding fused"> </Device_ID>
+			<Device_ID Dev2_ID ="A721" SKU_Name="RPLP" Config="1x6x16" Comments="RPLP"> </Device_ID>
+			<Device_ID Dev2_ID ="A7A9" SKU_Name="RPLP" Config="1x4x16" Comments="Dynamic Branding by BIOS"> </Device_ID>
+			<Device_ID Dev2_ID ="A7AA" SKU_Name="RPLP" Config="1x6x16" Comments="RPL H refresh"> </Device_ID>
+			<Device_ID Dev2_ID ="A7AB" SKU_Name="RPLP" Config="1x4x16" Comments="RPL H refresh"> </Device_ID>
+			<Device_ID Dev2_ID ="A7AC" SKU_Name="RPLU" Config="1x6x16" Comments="RPL U refresh"> </Device_ID>
+			<Device_ID Dev2_ID ="A7AD" SKU_Name="RPLU" Config="1x4x16" Comments="RPL U refresh"> </Device_ID>
+			<Device_ID Dev2_ID ="46D3" SKU_Name="TwinLake" Config="1x2x16" Comments="Twin Lake"> </Device_ID>
+			<Device_ID Dev2_ID ="46D4" SKU_Name="TwinLake" Config="1x2x12" Comments="Twin Lake"> </Device_ID>
+		</Device_ID_list>
+	</Product_Family>
+	<Product_Family FamilyName="MTL" >
+		<Device_ID_list>
+			<Device_ID Dev2_ID ="7D40" SKU_Name ="M282" Config = "1x4x16" Comments =""> </Device_ID>
+			<Device_ID Dev2_ID ="7D45" SKU_Name ="U281" Config = "1x4x16" Comments =""> </Device_ID>
+			<Device_ID Dev2_ID ="7D55" SKU_Name ="P682/H" Config = "2x4x16" Comments =""> </Device_ID>
+			<Device_ID Dev2_ID ="7DD5" SKU_Name ="P682/H" Config = "2x4x16" Comments =""> </Device_ID>
+			<Device_ID Dev2_ID ="7D60" SKU_Name ="S681LGA/SBGA" Config = "1x4x16" Comments =""> </Device_ID>
+			<Device_ID Dev2_ID ="5FC0" SKU_Name ="G10" Config = "3x4x16" Comments ="PiXe Discrete"> </Device_ID>
+			<Device_ID Dev2_ID ="7D41" SKU_Name ="ARL" Config = "1x4x16" Comments ="P 2+8+1"> </Device_ID>
+			<Device_ID Dev2_ID ="7D51" SKU_Name ="ARL" Config = "2x4x16" Comments ="P 6+8+2"> </Device_ID>
+			<Device_ID Dev2_ID ="7D67" SKU_Name ="ARL" Config = "1x4x16" Comments ="S 8+32+1"> </Device_ID>
+			<Device_ID Dev2_ID ="7DD1" SKU_Name ="ARL" Config = "2x4x16" Comments ="P 6+8+2"> </Device_ID>
+		</Device_ID_list>
+	</Product_Family>
+    <Product_Family FamilyName="ELG">
+		<Device_ID_list>
+			<Device_ID Dev2_ID="E201" SKU_Name="X3" Config="" Comments="None"> </Device_ID>
+			<Device_ID Dev2_ID="E202" SKU_Name="X2" Config="" Comments="None"> </Device_ID>
+			<Device_ID Dev2_ID="E203" SKU_Name="X4" Config="" Comments="None"> </Device_ID>
+			<Device_ID Dev2_ID="E204" SKU_Name="DT4" Config="" Comments="448EU"> </Device_ID>
+			<Device_ID Dev2_ID="E205" SKU_Name="DT5" Config="" Comments="384EU"> </Device_ID>
+			<Device_ID Dev2_ID="E206" SKU_Name="MB2a" Config="" Comments="443EU"> </Device_ID>
+			<Device_ID Dev2_ID="E207" SKU_Name="MB2b" Config="" Comments="384EU"> </Device_ID>
+			<Device_ID Dev2_ID="E208" SKU_Name="MB2c" Config="" Comments="320EU"> </Device_ID>
+			<Device_ID Dev2_ID="E209" SKU_Name="DW10-4000" Config="" Comments="448EU"> </Device_ID>
+			<Device_ID Dev2_ID="E20A" SKU_Name="MWX3-4000" Config="" Comments="448EU"> </Device_ID>
+			<Device_ID Dev2_ID="E20B" SKU_Name="DT6" Config="" Comments="320EU"> </Device_ID>
+			<Device_ID Dev2_ID="E20C" SKU_Name="DT7" Config="" Comments="256EU"> </Device_ID>
+			<Device_ID Dev2_ID="E20D" SKU_Name="DT8a" Config="" Comments="256EU"> </Device_ID>
+			<Device_ID Dev2_ID="E20E" SKU_Name="DT8b" Config="" Comments="256EU"> </Device_ID>
+			<Device_ID Dev2_ID="E20F" SKU_Name="MB3a" Config="" Comments="320EU"> </Device_ID>
+			<Device_ID Dev2_ID="E210" SKU_Name="MB3b" Config="" Comments="256EU"> </Device_ID>
+			<Device_ID Dev2_ID="E211" SKU_Name="MB3c" Config="" Comments="256EU"> </Device_ID>
+			<Device_ID Dev2_ID="E212" SKU_Name="DW21-3000" Config="" Comments="320EU"> </Device_ID>
+			<Device_ID Dev2_ID="E213" SKU_Name="MWX2-3000" Config="" Comments="320EU"> </Device_ID>
+			<Device_ID Dev2_ID="FF80" SKU_Name="ELG-10" Config="X3" Comments="None"> </Device_ID>
+			<Device_ID Dev2_ID="E220" SKU_Name="DT1a" Config="" Comments="512EU"> </Device_ID>
+			<Device_ID Dev2_ID="E221" SKU_Name="DT1b" Config="" Comments="448EU"> </Device_ID>
+			<Device_ID Dev2_ID="E222" SKU_Name="DW31" Config="" Comments="512EU"> </Device_ID>
+		</Device_ID_list>
+	</Product_Family>
+	<Product_Family FamilyName="LNL">
+		<Device_ID_list>
+			<Device_ID Dev2_ID="6480" SKU_Name="" Config="2x4" Comments="Pre-Production Super Sample"> </Device_ID>
+			<Device_ID Dev2_ID="6420" SKU_Name="" Config="2x4x8" Comments="Pre-Production Super Sample"> </Device_ID>
+			<Device_ID Dev2_ID="64A0" SKU_Name="" Config="2x4x8" Comments="Pre-Production Super Sample"> </Device_ID>
+			<Device_ID Dev2_ID="64B0" SKU_Name="" Config="1x4x8" Comments="Pre-Production Super Sample"> </Device_ID>
+		</Device_ID_list>
+	</Product_Family>
+	<Product_Family FamilyName="PTL">
+		<Device_ID_list>
+			<Device_ID Dev2_ID="B080" SKU_Name="" Config="2x4" Comments="Pre-Production Stepping"> </Device_ID>
+			<Device_ID Dev2_ID="B081" SKU_Name="" Config="2x4" Comments="Pre-Production Stepping"> </Device_ID>
+			<Device_ID Dev2_ID="B082" SKU_Name="" Config="2x4" Comments="Pre-Production Stepping"> </Device_ID>
+			<Device_ID Dev2_ID="B083" SKU_Name="" Config="2x4" Comments="Pre-Production Stepping"> </Device_ID>
+			<Device_ID Dev2_ID="B08F" SKU_Name="" Config="2x4" Comments="Pre-Production Stepping"> </Device_ID>
+			<Device_ID Dev2_ID="B090" SKU_Name="" Config="2x4" Comments="Pre-Production Stepping"> </Device_ID>
+			<Device_ID Dev2_ID="B0A0" SKU_Name="" Config="2x4" Comments="Pre-Production Stepping"> </Device_ID>
+			<Device_ID Dev2_ID="B0B0" SKU_Name="" Config="2x4" Comments="Pre-Production Stepping"> </Device_ID>
+			<Device_ID Dev2_ID="B0FF" SKU_Name="" Config="2x4" Comments="Pre-Production Stepping"> </Device_ID>
+			<Device_ID Dev2_ID="FD80" SKU_Name="WCL" Config="1x2x8" Comments="Pre-Production Stepping"> </Device_ID>
+			<Device_ID Dev2_ID="FD81" SKU_Name="WCL" Config="1x1x8" Comments="Pre-Production Stepping"> </Device_ID>
+		</Device_ID_list>
+	</Product_Family>
+	<Product_Family FamilyName="CLS">
+		<Device_ID_list>
+			<Device_ID Dev2_ID="57CA" SKU_Name="" Config="2x4" Comments="Pre-Production Stepping"> </Device_ID>
+		</Device_ID_list>
+	</Product_Family>
+	<Product_Family FamilyName="NVL">
+		<Device_ID_list>
+			<Device_ID Dev2_ID="D740" SKU_Name="" Config="1x2x8" Comments="Desktop"> </Device_ID>
+			<Device_ID Dev2_ID="D741" SKU_Name="" Config="1x4x8" Comments="Low power  Mobile"> </Device_ID>
+			<Device_ID Dev2_ID="D742" SKU_Name="" Config="1x4x8" Comments="Mainstream Mobile"> </Device_ID>
+			<Device_ID Dev2_ID="D743" SKU_Name="" Config="1x2x8" Comments="Desktop replacement mobile"> </Device_ID>
+			<Device_ID Dev2_ID="D744" SKU_Name="" Config="1x2x8" Comments="Ultra Low Mobile"> </Device_ID>
+			<Device_ID Dev2_ID="D745" SKU_Name="" Config="1x4x8" Comments="Interim HX sku"> </Device_ID>
+			<Device_ID Dev2_ID="D750" SKU_Name="" Config="2x6x8" Comments="Performance"> </Device_ID>
+			<Device_ID Dev2_ID="D751" SKU_Name="" Config="2x6x8" Comments="Performance"> </Device_ID>
+			<Device_ID Dev2_ID="D752" SKU_Name="" Config="2x6x8" Comments="Performance"> </Device_ID>
+			<Device_ID Dev2_ID="D753" SKU_Name="" Config="2x6x8" Comments="Performance"> </Device_ID>
+			<Device_ID Dev2_ID="D75F" SKU_Name="" Config="2x6x8" Comments="Performance"> </Device_ID>
+			<Device_ID Dev2_ID="D760" SKU_Name="" Config="8x4x8" Comments="AX halo segment"> </Device_ID>
+			<Device_ID Dev2_ID="D770" SKU_Name="" Config="4x4x8" Comments="AX mid segment"> </Device_ID>
+		</Device_ID_list>
+	</Product_Family>
+	<Product_Family FamilyName="CLS">
+		<Device_ID_list>
+			<Device_ID Dev2_ID="6501" SKU_Name="" Config="4x8" Comments="Pre-Production Stepping"> </Device_ID>
+		</Device_ID_list>
+	</Product_Family>
+</Platform_Map_info>

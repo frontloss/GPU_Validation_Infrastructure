@@ -1,0 +1,410 @@
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff
+}
+
+.bg-primary {
+    background-color: #007bff !important;
+    cursor: pointer;
+}
+
+.bg-secondary {
+    background-color: #6c757d !important
+}
+
+.bg-success {
+    background-color: #28a745 !important;
+    cursor: pointer;
+}
+
+.bg-info {
+    background-color: #17a2b8 !important
+}
+
+.bg-warning {
+    background-color: #ffc107 !important;
+    cursor: pointer;
+}
+
+.bg-danger {
+    background-color: #dc3545 !important;
+    cursor: pointer;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important
+}
+
+.bg-dark {
+    background-color: #343a40 !important
+}
+
+.bg-white {
+    background-color: #fff !important
+}
+
+.bg-transparent {
+    background-color: transparent !important
+}
+
+.text-justify {
+    text-align: justify !important
+}
+
+.text-nowrap {
+    white-space: nowrap !important
+}
+
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.text-left {
+    text-align: left !important
+}
+
+.text-right {
+    text-align: right !important
+}
+
+.text-center {
+    text-align: center !important
+}
+
+.text-white {
+    color: #fff !important
+}
+
+.text-primary {
+    color: #007bff !important
+}
+
+.text-secondary {
+    color: #6c757d !important
+}
+
+.text-success {
+    color: #28a745 !important
+}
+
+.text-info {
+    color: #17a2b8 !important
+}
+
+.text-warning {
+    color: #ffc107 !important
+}
+
+.text-danger {
+    color: #dc3545 !important
+}
+
+.text-light {
+    color: #f8f9fa !important
+}
+
+.text-dark {
+    color: #343a40 !important
+}
+
+.text-muted {
+    color: #6c757d !important
+}
+
+.text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent
+}
+
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6
+}
+
+.table tbody + tbody {
+    border-top: 2px solid #dee2e6
+}
+
+.table .table {
+    background-color: #fff
+}
+
+.table-sm td, .table-sm th {
+    padding: .3rem
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6
+}
+
+.table-bordered td, .table-bordered th {
+    border: 1px solid #dee2e6
+}
+
+.table-bordered thead td, .table-bordered thead th {
+    border-bottom-width: 2px
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, .05)
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, .075)
+}
+
+.table-primary, .table-primary > td, .table-primary > th {
+    background-color: #b8daff
+}
+
+.table-hover .table-primary:hover {
+    background-color: #9fcdff
+}
+
+.table-hover .table-primary:hover > td, .table-hover .table-primary:hover > th {
+    background-color: #9fcdff
+}
+
+.table-secondary, .table-secondary > td, .table-secondary > th {
+    background-color: #d6d8db
+}
+
+.table-hover .table-secondary:hover {
+    background-color: #c8cbcf
+}
+
+.table-hover .table-secondary:hover > td, .table-hover .table-secondary:hover > th {
+    background-color: #c8cbcf
+}
+
+.table-success, .table-success > td, .table-success > th {
+    background-color: #c3e6cb
+}
+
+.table-hover .table-success:hover {
+    background-color: #b1dfbb
+}
+
+.table-hover .table-success:hover > td, .table-hover .table-success:hover > th {
+    background-color: #b1dfbb
+}
+
+.table-info, .table-info > td, .table-info > th {
+    background-color: #bee5eb
+}
+
+.table-hover .table-info:hover {
+    background-color: #abdde5
+}
+
+.table-hover .table-info:hover > td, .table-hover .table-info:hover > th {
+    background-color: #abdde5
+}
+
+.table-warning, .table-warning > td, .table-warning > th {
+    background-color: #ffeeba
+}
+
+.table-hover .table-warning:hover {
+    background-color: #ffe8a1
+}
+
+.table-hover .table-warning:hover > td, .table-hover .table-warning:hover > th {
+    background-color: #ffe8a1
+}
+
+.table-danger, .table-danger > td, .table-danger > th {
+    background-color: #f5c6cb
+}
+
+.table-hover .table-danger:hover {
+    background-color: #f1b0b7
+}
+
+.table-hover .table-danger:hover > td, .table-hover .table-danger:hover > th {
+    background-color: #f1b0b7
+}
+
+.table-light, .table-light > td, .table-light > th {
+    background-color: #fdfdfe
+}
+
+.table-hover .table-light:hover {
+    background-color: #ececf6
+}
+
+.table-hover .table-light:hover > td, .table-hover .table-light:hover > th {
+    background-color: #ececf6
+}
+
+.table-dark, .table-dark > td, .table-dark > th {
+    background-color: #c6c8ca
+}
+
+.table-hover .table-dark:hover {
+    background-color: #b9bbbe
+}
+
+.table-hover .table-dark:hover > td, .table-hover .table-dark:hover > th {
+    background-color: #b9bbbe
+}
+
+.table-active, .table-active > td, .table-active > th {
+    background-color: rgba(0, 0, 0, .075)
+}
+
+.table-hover .table-active:hover {
+    background-color: rgba(0, 0, 0, .075)
+}
+
+.table-hover .table-active:hover > td, .table-hover .table-active:hover > th {
+    background-color: rgba(0, 0, 0, .075)
+}
+
+.table .thead-dark th {
+    color: #fff;
+    background-color: #212529;
+    border-color: #32383e
+}
+
+.table .thead-light th {
+    color: #495057;
+    background-color: #e9ecef;
+    border-color: #dee2e6
+}
+
+.table-dark {
+    color: #fff;
+    background-color: #212529
+}
+
+.table-dark td, .table-dark th, .table-dark thead th {
+    border-color: #32383e
+}
+
+.table-dark.table-bordered {
+    border: 0
+}
+
+.table-dark.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, .05)
+}
+
+.table-dark.table-hover tbody tr:hover {
+    background-color: rgba(255, 255, 255, .075)
+}
+
+.dr, .dc {
+    display: none;
+}
+
+#sd, #tt{
+    width: 100%;
+}
+
+.navbar {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem
+}
+
+.navbar-expand-lg {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start
+}
+
+.navbar-light .navbar-brand {
+    color: rgba(0, 0, 0, .9)
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline
+}
+
+.btn {
+    margin-left: 15px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.2;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+.btn:focus, .btn:hover {
+    text-decoration: none
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
+}
+
+.drow {
+    display: none
+}

@@ -1,0 +1,28 @@
+HKCR
+{
+	IgfxExtBridge.D3DSetting.1 = s 'D3DSetting Class'
+	{
+		CLSID = s '{2e9bbf19-0701-4675-ab17-b0d13e7cb124}'
+	}
+	IgfxExtBridge.D3DSetting = s 'D3DSetting Class'
+	{
+		CLSID = s '{2e9bbf19-0701-4675-ab17-b0d13e7cb124}'
+		CurVer = s 'IgfxExtBridge.D3DSetting.1'
+	}
+	
+	NoRemove CLSID
+	{
+		ForceRemove {2e9bbf19-0701-4675-ab17-b0d13e7cb124} = s 'D3DSetting Class'
+		{
+			ProgID = s 'IgfxExtBridge.D3DSetting.1'
+			VersionIndependentProgID = s 'IgfxExtBridge.D3DSetting'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{9A650EBC-929B-4210-BA05-76D5D021B140}'
+		}
+	}
+}

@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+    <Feature Name="HWAccuracy" Owner="sooryar">
+.        <Test LastModifiedWW="2019.WW44" Name="hw_accuracy_basic.py" Owner="sooryar" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="PLANECOLOR001">
+                <CommandLine>python Tests\Planes\Color_HWAccuracy\hw_accuracy_basic.py -edp_a -hdmi_b SamsungJS9500_HDR.bin -INPUTFILE HW_Accuracy_SinglePlane_RGB8_8bpc.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>TGL;DG2</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PLANECOLOR002">
+                <CommandLine>python Tests\Planes\Color_HWAccuracy\hw_accuracy_basic.py -edp_a -INPUTFILE HW_Accuracy_SinglePlane_RGB8_8bpc.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>TGL;DG2</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PLANECOLOR003">
+                <CommandLine>python Tests\Planes\Color_HWAccuracy\hw_accuracy_basic.py -edp_a -hdmi_b SamsungJS9500_HDR.bin -INPUTFILE HW_Accuracy_SinglePlane_RGB8_10bpc.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>TGL;DG2</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+        </Test>
+        <Test LastModifiedWW="2019.WW44" Name="hw_accuracy_tm_lut_identity.py" Owner="sooryar" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="PLANECOLOR004">
+                <CommandLine>python Tests\Planes\Color_HWAccuracy\TM_LUT\hw_accuracy_tm_lut_identity.py -edp_a -hdmi_b SamsungJS9500_HDR.bin -INPUTFILE HW_Accuracy_SinglePlane_RGB8_8bpc.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PLANECOLOR005">
+                <CommandLine>python Tests\Planes\Color_HWAccuracy\TM_LUT\hw_accuracy_tm_lut_identity.py -edp_a -INPUTFILE HW_Accuracy_SinglePlane_RGB8_8bpc.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PLANECOLOR006">
+                <CommandLine>python Tests\Planes\Color_HWAccuracy\TM_LUT\hw_accuracy_tm_lut_identity.py -edp_a -hdmi_b SamsungJS9500_HDR.bin -INPUTFILE HW_Accuracy_SinglePlane_RGB8_10bpc.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+        </Test>
+        <Test LastModifiedWW="2019.WW44" Name="hw_accuracy_tm_lut_4000_to_400_tonemap.py" Owner="sooryar" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="PLANECOLOR007">
+                <CommandLine>python Tests\Planes\Color_HWAccuracy\TM_LUT\hw_accuracy_tm_lut_4000_to_400_tonemap.py  -edp_a -hdmi_b SamsungJS9500_HDR.bin -INPUTFILE HW_Accuracy_SinglePlane_RGB8_8bpc.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        <TestInstance Grids="GFT" Id="PLANECOLOR008">
+                <CommandLine>python Tests\Planes\Color_HWAccuracy\TM_LUT\hw_accuracy_tm_lut_4000_to_400_tonemap.py -edp_a -INPUTFILE HW_Accuracy_SinglePlane_RGB8_8bpc.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PLANECOLOR009">
+                <CommandLine>python Tests\Planes\Color_HWAccuracy\TM_LUT\hw_accuracy_tm_lut_4000_to_400_tonemap.py  -edp_a -hdmi_b SamsungJS9500_HDR.bin -INPUTFILE HW_Accuracy_SinglePlane_RGB8_10bpc.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+        </Test>
+        <Test LastModifiedWW="2019.WW44" Name="hw_accuracy_tm_lut_4000_to_1400_tonemap.py" Owner="sooryar" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="PLANECOLOR010">
+                <CommandLine>python Tests\Planes\Color_HWAccuracy\TM_LUT\hw_accuracy_tm_lut_4000_to_1400_tonemap.py  -edp_a -hdmi_b SamsungJS9500_HDR.bin -INPUTFILE HW_Accuracy_SinglePlane_RGB8_8bpc.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        <TestInstance Grids="GFT" Id="PLANECOLOR011">
+                <CommandLine>python Tests\Planes\Color_HWAccuracy\TM_LUT\hw_accuracy_tm_lut_4000_to_1400_tonemap.py -edp_a -INPUTFILE HW_Accuracy_SinglePlane_RGB8_8bpc.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PLANECOLOR012">
+                <CommandLine>python Tests\Planes\Color_HWAccuracy\TM_LUT\hw_accuracy_tm_lut_4000_to_1400_tonemap.py  -edp_a -hdmi_b SamsungJS9500_HDR.bin -INPUTFILE HW_Accuracy_SinglePlane_RGB8_10bpc.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+        </Test>
+        <Test LastModifiedWW="2019.WW44" Name="hw_accuracy_tm_lut_4000_to_1400_tonemap_with_coeffchange.py" Owner="sooryar" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="PLANECOLOR013">
+                <CommandLine>python Tests\Planes\Color_HWAccuracy\TM_LUT\hw_accuracy_tm_lut_4000_to_1400_tonemap_with_coeffchange.py  -edp_a -hdmi_b SamsungJS9500_HDR.bin -INPUTFILE HW_Accuracy_SinglePlane_RGB8_8bpc.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        <TestInstance Grids="GFT" Id="PLANECOLOR014">
+                <CommandLine>python Tests\Planes\Color_HWAccuracy\TM_LUT\hw_accuracy_tm_lut_4000_to_1400_tonemap_with_coeffchange.py -edp_a -INPUTFILE HW_Accuracy_SinglePlane_RGB8_8bpc.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="GFT" Id="PLANECOLOR015">
+                <CommandLine>python Tests\Planes\Color_HWAccuracy\TM_LUT\hw_accuracy_tm_lut_4000_to_1400_tonemap_with_coeffchange.py  -edp_a -hdmi_b SamsungJS9500_HDR.bin -INPUTFILE HW_Accuracy_SinglePlane_RGB8_10bpc.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+        </Test>
+        <Test LastModifiedWW="2019.WW44" Name="hw_accuracy_tm_lut_two_planes_assignment_swap.py" Owner="sooryar" Priority="P1" Version="1">
+            <TestInstance Grids="GFT" Id="PLANECOLOR016">
+                <CommandLine>python Tests\Planes\Color_HWAccuracy\TM_LUT\hw_accuracy_tm_lut_two_planes_assignment_swap.py -edp_a -hdmi_b SamsungJS9500_HDR.bin -INPUTFILE HW_Accuracy_TwoPlanes_RGB8_8bpc.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        <TestInstance Grids="GFT" Id="PLANECOLOR017">
+                <CommandLine>python Tests\Planes\Color_HWAccuracy\TM_LUT\hw_accuracy_tm_lut_two_planes_assignment_swap.py -edp_a -INPUTFILE HW_Accuracy_TwoPlanes_RGB8_8bpc.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+        </Test>
+
+
+    </Feature>
+</Display_Automation_2.0>

@@ -1,0 +1,615 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+    <Feature Name="VDSC" Owner="pkrishna">
+        <Test LastModifiedWW="2019.WW46" Name="test_mode_set.py" Owner="pkrishna" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="VDSCT001">
+                <CommandLine>python Tests\VDSC\test_mode_set.py -edp_a SINK_EDP010</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ICLLP</Platform>
+                <TestEnvironment>ICLLP_SIM;ICLLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="VDSCT011">
+                <CommandLine>python Tests\VDSC\test_mode_set.py -dp_c 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_1.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_EMU;DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="VDSCT012">
+                <CommandLine>python Tests\VDSC\test_mode_set.py -dp_c 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_EMU;DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="VDSCT013">
+                <CommandLine>python Tests\VDSC\test_mode_set.py -dp_c DP_3011.EDID vdsc_1_2_hbr3_lc_1.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_EMU;DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="VDSCT014">
+                <CommandLine>python Tests\VDSC\test_mode_set.py -dp_c DP_3011.EDID vdsc_1_2_lbr_lc_2.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_EMU;DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="VDSCT015">
+                <CommandLine>python Tests\VDSC\test_mode_set.py -mipi_a SINK_MIP005</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW06" Name="test_ac_dc.py" Owner="vds" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="VDSCT002">
+                <CommandLine>python Tests\VDSC\test_ac_dc.py -edp_a SINK_EDP010 -dp_b -config extended</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ICLLP</Platform>
+                <TestEnvironment>ICLLP_SIM;ICLLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="VDSCT006">
+                <CommandLine>python Tests\VDSC\test_ac_dc.py -edp_a SINK_EDP010 -selective PRE-SI</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>None</Platform>
+                <TestEnvironment>None</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="VDSCT016">
+                <CommandLine>python Tests\VDSC\test_ac_dc.py -mipi_a SINK_MIP005 -selective POST_SI</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW06" Name="test_power_event.py" Owner="vds" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="VDSCT003">
+                <CommandLine>python Tests\VDSC\test_power_event.py -edp_a SINK_EDP010 -selective CS</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ICLLP</Platform>
+                <TestEnvironment>ICLLP_SIM;ICLLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="VDSCT004">
+                <CommandLine>python Tests\VDSC\test_power_event.py -edp_a SINK_EDP010 -selective S3 S4</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ICLLP</Platform>
+                <TestEnvironment>ICLLP_SIM;ICLLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="VDSCT017">
+                <CommandLine>python Tests\VDSC\test_power_event.py -MIPI_A SINK_MIP005 -selective CS S4</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2020.WW16" Name="test_display_switch.py" Owner="pkrishna" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="VDSCT005">
+                <CommandLine>python Tests\VDSC\test_display_switch.py -edp_a SINK_EDP010</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ICLLP</Platform>
+                <TestEnvironment>ICLLP_SIM;ICLLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="VDSCT007">
+                <CommandLine>python Tests\VDSC\test_display_switch.py -edp_a -dp_b DP_5120_3200_120rr.bin vdsc_1_2_hbr3_LC4.txt -config extended</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="VDSCT008">
+                <CommandLine>python Tests\VDSC\test_display_switch.py -edp_a -dp_b DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt -config extended</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="VDSCT009">
+                <CommandLine>python Tests\VDSC\test_display_switch.py -edp_a -dp_b DP_7680_4320_60rr.EDID vdsc_1_2_hbr3_LC4.txt -config extended</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="VDSCT010">
+                <CommandLine>python Tests\VDSC\test_display_switch.py -edp_a -dp_b DP_5120_3200_144rr.bin vdsc_1_2_hbr3_LC4.txt -config extended</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SIM;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT034" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_display_switch.py -edp_a -dp_d DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ICLLP;TGL;ADLP</Platform>
+                <TestEnvironment>ICLLP_EMU;ICLLP_SIM;ICLLP_SOC;TGL_EMU;TGL_SIM;TGL_SOC;ADLP_EMU;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT035" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_display_switch.py -edp_a -dp_d DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt -dp_e DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ICLLP;TGL;ADLP</Platform>
+                <TestEnvironment>ICLLP_EMU;ICLLP_SIM;ICLLP_SOC;TGL_EMU;TGL_SIM;TGL_SOC;ADLP_EMU;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT036" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_display_switch.py -dp_d DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt -dp_e DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ICLLP;TGL;ADLP</Platform>
+                <TestEnvironment>ICLLP_EMU;ICLLP_SIM;ICLLP_SOC;TGL_EMU;TGL_SIM;TGL_SOC;ADLP_EMU;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT037" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_display_switch.py -dp_d 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt -dp_e 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt -dp_f 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ICLLP</Platform>
+                <TestEnvironment>ICLLP_EMU;ICLLP_SIM;ICLLP_SOC;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT038" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_display_switch.py -dp_b -dp_d DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ICLLP;TGL;ADLP</Platform>
+                <TestEnvironment>ICLLP_EMU;ICLLP_SIM;ICLLP_SOC;TGL_EMU;TGL_SIM;TGL_SOC;ADLP_EMU;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT039" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_display_switch.py -dp_b -dp_d DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt -dp_e DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ICLLP;TGL;ADLP</Platform>
+                <TestEnvironment>ICLLP_EMU;ICLLP_SIM;ICLLP_SOC;TGL_EMU;TGL_SIM;TGL_SOC;ADLP_EMU;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT040" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_display_switch.py -edp_a -dp_d DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt -dp_e DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt -dp_f DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL;ADLP</Platform>
+                <TestEnvironment>TGL_EMU;TGL_SIM;TGL_SOC;ADLP_EMU;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT041" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_display_switch.py -dp_d DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt -dp_e DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt -dp_f DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL;ADLP</Platform>
+                <TestEnvironment>TGL_EMU;TGL_SIM;TGL_SOC;ADLP_EMU;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT042" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_display_switch.py -dp_d 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt -dp_e 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt -dp_f 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt -dp_g 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL;ADLP</Platform>
+                <TestEnvironment>TGL_EMU;TGL_SIM;TGL_SOC;ADLP_EMU;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT043" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_display_switch.py -dp_b -dp_d DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt -dp_e DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt -dp_f DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL;ADLP</Platform>
+                <TestEnvironment>TGL_EMU;TGL_SIM;TGL_SOC;ADLP_EMU;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT044" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_display_switch.py -edp_a -dp_c DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>DG1;DG2</Platform>
+                <TestEnvironment>DG1_EMU;DG1_SIM;DG1_SOC;DG2_EMU;DG2_SIM;DG2_SOC;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT045" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_display_switch.py -edp_a -dp_c DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt -dp_d DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>DG1;DG2</Platform>
+                <TestEnvironment>DG1_EMU;DG1_SIM;DG1_SOC;DG2_EMU;DG2_SIM;DG2_SOC;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT046" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_display_switch.py -edp_a -dp_b DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt -dp_c DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt -dp_d DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>DG1;DG2</Platform>
+                <TestEnvironment>DG1_EMU;DG1_SIM;DG1_SOC;DG2_EMU;DG2_SIM;DG2_SOC;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT047" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_display_switch.py -dp_c DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt -dp_d DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>DG1;DG2</Platform>
+                <TestEnvironment>DG1_EMU;DG1_SIM;DG1_SOC;DG2_EMU;DG2_SIM;DG2_SOC;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT048" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_display_switch.py -dp_b DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt -dp_c DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt -dp_d DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>DG1;DG2</Platform>
+                <TestEnvironment>DG1_EMU;DG1_SIM;DG1_SOC;DG2_EMU;DG2_SIM;DG2_SOC;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT049" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_display_switch.py -dp_a 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt -dp_b 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt -dp_c 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt -dp_d 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>DG1;DG2</Platform>
+                <TestEnvironment>DG1_EMU;DG1_SIM;DG1_SOC;DG2_EMU;DG2_SIM;DG2_SOC;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT050" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_display_switch.py -dp_b -dp_c DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>DG1;DG2</Platform>
+                <TestEnvironment>DG1_EMU;DG1_SIM;DG1_SOC;DG2_EMU;DG2_SIM;DG2_SOC;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT051" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_display_switch.py -dp_b -dp_c DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt -dp_d DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>DG1;DG2</Platform>
+                <TestEnvironment>DG1_EMU;DG1_SIM;DG1_SOC;DG2_EMU;DG2_SIM;DG2_SOC;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT052" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_display_switch.py -dp_a -dp_b DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt -dp_c DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt -dp_d DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>DG1;DG2</Platform>
+                <TestEnvironment>DG1_EMU;DG1_SIM;DG1_SOC;DG2_EMU;DG2_SIM;DG2_SOC;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT053" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_display_switch.py -mipi_a -dp_d 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_EMU;LKF1_SIM;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT054" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_display_switch.py -mipi_a -dp_d 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt -dp_e 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_EMU;LKF1_SIM;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT055" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_display_switch.py -dp_d 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt -dp_e 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_EMU;LKF1_SIM;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2020.WW01" Name="test_driver_disable_enable.py" Owner="sgeesala" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="VDSCT018">
+                <CommandLine>python Tests\VDSC\test_driver_disable_enable.py -mipi_a SINK_MIP005</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test Name="test_dsc_mode_enumeration.py" Owner="pkrishna" Priority="P1" Version="1" LastModifiedWW="2020.WW12">
+            <TestInstance Id="VDSCT019" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_dsc_mode_enumeration.py -dp_d -XML dsc_lbr_modes.xml -loglevel debug</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ICLLP;TGL;DG1;DG2;ADLP</Platform>
+                <TestEnvironment>ICLLP_EMU;ICLLP_SIM;ICLLP_SOC;TGL_EMU;TGL_SIM;TGL_SOC;ADLP_EMU;ADLP_SIM;ADLP_SOC;DG1_EMU;DG1_SIM;DG1_SOC;DG2_EMU;DG2_SIM;DG2_SOC;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT020" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_dsc_mode_enumeration.py -dp_d -XML dsc_hbr_modes.xml -loglevel debug</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ICLLP;TGL;DG1;DG2;ADLP</Platform>
+                <TestEnvironment>ICLLP_EMU;ICLLP_SIM;ICLLP_SOC;TGL_EMU;TGL_SIM;TGL_SOC;ADLP_EMU;ADLP_SIM;ADLP_SOC;DG1_EMU;DG1_SIM;DG1_SOC;DG2_EMU;DG2_SIM;DG2_SOC;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT021" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_dsc_mode_enumeration.py -dp_d -XML dsc_hbr2_modes.xml -loglevel debug</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ICLLP;TGL;DG1;DG2;ADLP</Platform>
+                <TestEnvironment>ICLLP_EMU;ICLLP_SIM;ICLLP_SOC;TGL_EMU;TGL_SIM;TGL_SOC;ADLP_EMU;ADLP_SIM;ADLP_SOC;DG1_EMU;DG1_SIM;DG1_SOC;DG2_EMU;DG2_SIM;DG2_SOC;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT022" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_dsc_mode_enumeration.py -dp_d -XML dsc_hbr3_modes.xml -loglevel debug</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ICLLP;TGL;DG1;DG2;ADLP</Platform>
+                <TestEnvironment>ICLLP_EMU;ICLLP_SIM;ICLLP_SOC;TGL_EMU;TGL_SIM;TGL_SOC;ADLP_EMU;ADLP_SIM;ADLP_SOC;DG1_EMU;DG1_SIM;DG1_SOC;DG2_EMU;DG2_SIM;DG2_SOC;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test Name="test_dsc_basic.py" Owner="pkrishna" Priority="P1" Version="1" LastModifiedWW="2020.WW16">
+            <TestInstance Id="VDSCT023" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_dsc_basic.py -dp_d 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt -dp_e 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt -dp_f 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ICLLP</Platform>
+                <TestEnvironment>ICLLP_EMU;ICLLP_SIM;ICLLP_SOC;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT024" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_dsc_basic.py -dp_d 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_EMU;LKF1_SIM;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT025" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_dsc_basic.py -dp_d 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt -dp_e 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ICLLP;LKF1</Platform>
+                <TestEnvironment>ICLLP_EMU;ICLLP_SIM;ICLLP_SOC;LKF1_EMU;LKF1_SIM;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT026" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_dsc_basic.py -dp_d DP_5120_3200_120rr.bin vdsc_1_2_hbr3_LC4.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ICLLP;TGL;ADLP;DG1;DG2</Platform>
+                <TestEnvironment>ICLLP_SOC;TGL_SOC;DG1_SOC;DG2_EMU;DG2_SIM;DG2_SOC;ADLP_EMU;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT027" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_dsc_basic.py -dp_d DP_7680_4320_60rr.EDID vdsc_1_2_hbr3_LC4.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL;ADLP;DG1;DG2</Platform>
+                <TestEnvironment>TGL_SOC;DG1_SOC;DG2_EMU;DG2_SIM;DG2_SOC;ADLP_EMU;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT028" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_dsc_basic.py -dp_d DP_7680_4320_60rr.EDID vdsc_1_2_hbr3_LC4.txt -dp_e DP_7680_4320_60rr.EDID vdsc_1_2_hbr3_LC4.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL;ADLP</Platform>
+                <TestEnvironment>TGL_EMU;TGL_SIM;TGL_SOC;ADLP_EMU;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT029" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_dsc_basic.py -dp_d DP_5120_3200_120rr.bin vdsc_1_2_hbr3_LC4.txt -dp_e DP_5120_3200_120rr.bin vdsc_1_2_hbr3_LC4.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL;ADLP</Platform>
+                <TestEnvironment>TGL_EMU;TGL_SIM;TGL_SOC;ADLP_EMU;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT030" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_dsc_basic.py -dp_d 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt -dp_e 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt -dp_f 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt -dp_g 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL;ADLP</Platform>
+                <TestEnvironment>TGL_EMU;TGL_SIM;TGL_SOC;ADLP_EMU;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT031" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_dsc_basic.py -dp_c DP_7680_4320_60rr.EDID vdsc_1_2_hbr3_LC4.txt -dp_d DP_7680_4320_60rr.EDID vdsc_1_2_hbr3_LC4.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>DG1;DG2</Platform>
+                <TestEnvironment>DG1_EMU;DG1_SIM;DG1_SOC;DG2_EMU;DG2_SIM;DG2_SOC;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT032" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_dsc_basic.py -dp_c DP_5120_3200_120rr.bin vdsc_1_2_hbr3_LC4.txt -dp_d DP_5120_3200_120rr vdsc_1_2_hbr3_LC4.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>DG1;DG2</Platform>
+                <TestEnvironment>DG1_EMU;DG1_SIM;DG1_SOC;DG2_EMU;DG2_SIM;DG2_SOC;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT033" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_dsc_basic.py -dp_a 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt -dp_b 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt -dp_c 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt -dp_d 3840_2160_60Hz_533clk_8bpc.bin vdsc_1_2_hbr3_lc_2.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>DG1;DG2</Platform>
+                <TestEnvironment>DG1_EMU;DG1_SIM;DG1_SOC;DG2_EMU;DG2_SIM;DG2_SOC;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test Name="test_dsc_bpc.py" Owner="pkrishna" Priority="P1" Version="1" LastModifiedWW="2020.WW17">
+            <TestInstance Id="VDSCT034" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_dsc_bpc.py -dp_d DP_5120_3200_60rr.bin vdsc_1_2_hbr3_LC4.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ICLLP;TGL;ADLP;DG1;DG2</Platform>
+                <TestEnvironment>ICLLP_SOC;TGL_SOC;DG1_SOC;DG2_EMU;DG2_SIM;DG2_SOC;ADLP_EMU;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT035" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_dsc_bpc.py -dp_d DP_5120_3200_120rr.bin vdsc_1_2_hbr3_LC4.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>ICLLP;TGL;ADLP;DG1;DG2</Platform>
+                <TestEnvironment>ICLLP_SOC;TGL_SOC;DG1_SOC;DG2_EMU;DG2_SIM;DG2_SOC;ADLP_EMU;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT036" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_dsc_bpc.py -dp_d DP_7680_4320_60rr.EDID vdsc_1_2_hbr3_LC4.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL;ADLP;DG1;DG2</Platform>
+                <TestEnvironment>TGL_SOC;DG1_SOC;DG2_EMU;DG2_SIM;DG2_SOC;ADLP_EMU;ADLP_SIM;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT037" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_dsc_bpc.py -dp_d 3840_2160_60Hz_533clk_12bpc.bin vdsc_1_2_hbr3_lc_2.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_EMU;LKF1_SIM;LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT038" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_mode_set.py -dp_d 8k_HDMI.bin HDMI_2_1_DSC_DPCD_48GBPS.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT039" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_mode_set.py -dp_d 8k_HDMI.bin HDMI_2_1_DSC_DPCD_40GBPS.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT040" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_mode_set.py -dp_d 8k_HDMI.bin HDMI_2_1_DSC_DPCD_24GBPS.txt</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT041" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_dsc_mode_enumeration.py -dp_d -XML dsc_hdmi_2_1_mode_6GBPS.xml -loglevel debug</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL;MTL</Platform>
+                <TestEnvironment>TGL_EMU;TGL_SIM;TGL_SOC;MTL_EMU;MTL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT042" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_dsc_mode_enumeration.py -dp_d -XML dsc_hdmi_2_1_mode_8GBPS.xml -loglevel debug</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL;MTL</Platform>
+                <TestEnvironment>TGL_EMU;TGL_SIM;TGL_SOC;MTL_EMU;MTL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT043" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_dsc_mode_enumeration.py -dp_d -XML dsc_hdmi_2_1_mode_10GBPS.xml -loglevel debug</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL;MTL</Platform>
+                <TestEnvironment>TGL_EMU;TGL_SIM;TGL_SOC;MTL_EMU;MTL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Id="VDSCT044" Grids="CI;PreETM;ETM">
+                <CommandLine>python Tests\VDSC\test_dsc_mode_enumeration.py -dp_d -XML dsc_hdmi_2_1_mode_12GBPS.xml -loglevel debug</CommandLine>
+                <OS>Win20H1</OS>
+                <Platform>TGL;MTL</Platform>
+                <TestEnvironment>TGL_EMU;TGL_SIM;TGL_SOC;MTL_EMU;MTL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+    </Feature>
+</Display_Automation_2.0>

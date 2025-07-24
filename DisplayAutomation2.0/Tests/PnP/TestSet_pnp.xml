@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+    <Feature Name="PnP" Owner="sunilkam">
+        <Test LastModifiedWW="2018.WW03" Name="mpo_bandwidth_analysis.py" Owner="anshetty" Priority="P1" Version="1">
+            <TestInstance Grids="CI" Id="PNPBW001">
+                <CommandLine>python Tests\PnP\mpo_bandwidth_analysis.py -EDP_A</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRs3</OS>
+                <Platform>KBL;CFL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW32" Name="package_residency_48hz.py" Owner="anshetty" Priority="P1" Version="1">
+            <TestInstance Grids="CI;GFT" Id="PNPBW002">
+                <CommandLine>python Tests\PnP\package_residency_48hz.py -EDP_A -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinTH2;WinRS1;WinRS2;WinRs3</OS>
+                <Platform>KBL;CFL</Platform>
+                <TestEnvironment>NONE</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PNPBW003">
+                <CommandLine>python Tests\PnP\package_residency_48hz.py -EDP_A SINK_EDP011 -EXPECTED_PIXELFORMAT NV12_YUV_420</CommandLine>
+                <OS>WinTH2;WinRS5;19H1</OS>
+                <Platform>ICL</Platform>
+                <TestEnvironment>ICL_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+    </Feature>
+</Display_Automation_2.0>

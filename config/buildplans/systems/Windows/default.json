@@ -1,0 +1,22 @@
+{
+	"resource": "windows_v1",
+    "manifest": "windows.yml",
+    "env": {
+		"RELEASE_VERSION": "1.0"
+	},
+	"qb_variable_map": {
+		"build_version": "BUILD_VERSION",
+		"build_version_suffix": "BUILD_VERSION_SUFFIX"
+	},
+	"steps": [],
+	"types": {
+		"all": {
+			"env": {
+				"BUILD_TYPE": "all"
+			},
+			"qb_filter": {
+				"build_type": "all"
+			}
+		}
+	}
+}

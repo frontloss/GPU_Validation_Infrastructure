@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{48E510BF-8C21-42D9-A4EF-CED69F732E48}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Intel.VPG.Display.Automation</RootNamespace>
+    <AssemblyName>MP_S0ix</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML">
+      <HintPath>..\..\Framework\AccessAPI\Assemblies\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MP_AfterS0ix_Display_HotplugUnplug.cs" />
+    <Compile Include="DisplayConfigWrapper.cs" />
+    <Compile Include="MP_DuringS0ix_DisplayHotplugUnplug.cs" />
+    <Compile Include="MP_DuringS0ix_Display_Hotplug.cs" />
+    <Compile Include="MP_NonCS_Display_HotUnplug.cs" />
+    <Compile Include="MP_NonCS_SocWatch_SysInfo.cs" />
+    <Compile Include="MP_NonCS_SocWatch_SysInfo_Sleep.cs" />
+    <Compile Include="MP_NonCS_TDR.cs" />
+    <Compile Include="MP_S0ixBase.cs" />
+    <Compile Include="MP_S0ix_DisplayConfigSwitching.cs" />
+    <Compile Include="MP_DuringS0ix_Display_HotUnplug.cs" />
+    <Compile Include="MP_S0ix_ModeSet.cs" />
+    <Compile Include="MP_S0ix_Gfx_Resumetime.cs" />
+    <Compile Include="MP_S0ix_MPO.cs" />
+    <Compile Include="MP_NonCS_DisplayConfigSwitching.cs" />
+    <Compile Include="MP_S0ix_Rotation.cs" />
+    <Compile Include="MP_S0ix_StartStop_Device.cs" />
+    <Compile Include="MP_S0ix_TDR.cs" />
+    <Compile Include="MP_S0ix_AC_DC.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Framework\AccessInterface\AccessInterface.csproj">
+      <Project>{0f59313c-058e-451e-bdad-2999e4241455}</Project>
+      <Name>AccessInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\ConstantsLibrary\ConstantsLibrary.csproj">
+      <Project>{b8edd54e-47a8-4e78-a31d-d29c6d521fc2}</Project>
+      <Name>ConstantsLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\CoreLibrary\CoreLibrary.csproj">
+      <Project>{3942ed5d-d917-4f23-9ee0-fc90da902dff}</Project>
+      <Name>CoreLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\Logger\Logger.csproj">
+      <Project>{ec0587c7-cf34-4309-b4b5-d1eb051032b4}</Project>
+      <Name>Logger</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assemblies\Readme.txt" />
+    <Content Include="Assemblies\vcredist2012\2010\x32\vcredist_x86.exe" />
+    <Content Include="Assemblies\vcredist2012\2010\x64\vcredist_x64.exe" />
+    <Content Include="Assemblies\vcredist2012\dotNetFx45_Full_setup.exe" />
+    <Content Include="Assemblies\vcredist2012\vcredist_x64.exe" />
+    <Content Include="Assemblies\vcredist2012\vcredist_x86.exe" />
+    <Content Include="Assemblies\WDTF_8.1\27c11849eb77f4624304607082112d90.cab" />
+    <Content Include="Assemblies\WDTF_8.1\38c87f68953407fcd97b02145058effe.cab" />
+    <Content Include="Assemblies\WDTF_8.1\4189492b8ae6868ee71aab72452c67db.cab" />
+    <Content Include="Assemblies\WDTF_8.1\52909056ae20065680e3c9283d5a4a21.cab" />
+    <Content Include="Assemblies\WDTF_8.1\590d28783ff280b8b0016c3492433241.cab" />
+    <Content Include="Assemblies\WDTF_8.1\703316c9de0a32acf316d03b1cffc559.cab" />
+    <Content Include="Assemblies\WDTF_8.1\9a7145bc3b132e5da6d44c0ab4a1af70.cab" />
+    <Content Include="Assemblies\WDTF_8.1\a76e4219ecb0f1c0006a6fe080c54ad9.cab" />
+    <Content Include="Assemblies\WDTF_8.1\c5bcf010acfc98ac434053ee50af27df.cab" />
+    <Content Include="Assemblies\WDTF_8.1\CreateRestore.js" />
+    <Content Include="Assemblies\WDTF_8.1\DriverTestConfiguration.xml" />
+    <Content Include="Assemblies\WDTF_8.1\DTUninstall.js" />
+    <Content Include="Assemblies\WDTF_8.1\f842e126ae8d67f090f740052e7a10a4.cab" />
+    <Content Include="Assemblies\WDTF_8.1\f9976a73f62f4a8e2a372960dbcbd52b.cab" />
+    <Content Include="Assemblies\WDTF_8.1\fb58ed648d51337ee1941d2053a7bdb5.cab" />
+    <Content Include="References\BLATool.exe" />
+    <Content Include="References\GEN8_PerfProfile_DLL\x64\PerfProfile.dll" />
+    <Content Include="References\GEN8_PerfProfile_DLL\x86\PerfProfile.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assemblies\WDTF_8.1\Test Authoring and Execution Framework ARM-arm_en-us.msi" />
+    <None Include="Assemblies\WDTF_8.1\Test Authoring and Execution Framework x64-x64_en-us.msi" />
+    <None Include="Assemblies\WDTF_8.1\Test Authoring and Execution Framework x86-x86_en-us.msi" />
+    <None Include="Assemblies\WDTF_8.1\Windows Driver Testing Framework %28WDTF%29 Runtime Libraries-arm_en-us.msi" />
+    <None Include="Assemblies\WDTF_8.1\Windows Driver Testing Framework %28WDTF%29 Runtime Libraries-x64_en-us.msi" />
+    <None Include="Assemblies\WDTF_8.1\Windows Driver Testing Framework %28WDTF%29 Runtime Libraries-x86_en-us.msi" />
+    <None Include="References\Mapper\S0ixdata.map">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>XCopy "$(ProjectDir)References" "$(TargetDir)" /Y /S /E
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

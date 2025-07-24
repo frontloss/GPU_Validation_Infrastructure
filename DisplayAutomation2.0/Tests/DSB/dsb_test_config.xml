@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<!-- DSB Test Config file - Specify input argument for every test -->
+<!-- generic_info - Common property for all tests are defined in this section -->
+<!-- test_config - Test specify property are defined in this section -->
+
+<!-- **************** SUPPORTED DSB ARGS ************************************ -->
+
+<!-- dsb_selector <LACE, PIPE, HDR> -->
+
+<!-- dsb_sync_type <WAIT_FOR_NONE, WAIT_FOR_VBLANK, WAIT_FOR_U_SEC,
+                    WAIT_FOR_SCANLINES, WAIT_FOR_POLL_REG> -->
+
+<!-- dsb_trigger_mode <SYNC, ASYNC> -->
+
+<!-- auto_increment <true, false >-->
+
+<!-- **************** SUPPORTED DSB ARGS ************************************ -->
+
+<TestSet Feature="DSB">
+	<generic_info>
+		<!-- Generic Info - DSB test common property -->
+		<dsb_selector>
+			<PIPE_A>LACE</PIPE_A>
+			<PIPE_B>PIPE</PIPE_B>
+			<PIPE_C>HDR</PIPE_C>
+			<PIPE_D>PIPE</PIPE_D>
+		</dsb_selector>
+		<!-- Max tolerance value of verification -->
+		<!-- i.e after after how many frame DSB write should happen -->
+		<delta_frame_count>1</delta_frame_count>
+		<!-- Delay time (in mSec) between DSB Trigger & verification -->
+		<delay_in_verification>0</delay_in_verification>
+		<interrupt_on_completion>true</interrupt_on_completion>
+	</generic_info>
+
+	<test_config name="trigger_dsb_on_single_pipe">
+		<dsb_sync_type>WAIT_FOR_NONE</dsb_sync_type>
+		<dsb_trigger_mode>SYNC</dsb_trigger_mode>
+		<auto_increment>true</auto_increment>
+	</test_config>
+
+	<test_config name="trigger_dsb_on_two_pipe">
+		<dsb_sync_type>WAIT_FOR_NONE</dsb_sync_type>
+		<dsb_trigger_mode>SYNC</dsb_trigger_mode>
+		<auto_increment>true</auto_increment>
+	</test_config>
+
+	<test_config name="trigger_dsb_on_three_pipe">
+		<dsb_sync_type>WAIT_FOR_NONE</dsb_sync_type>
+		<dsb_trigger_mode>SYNC</dsb_trigger_mode>
+		<auto_increment>true</auto_increment>
+	</test_config>
+
+	<test_config name="trigger_dsb_on_four_pipe">
+		<dsb_sync_type>WAIT_FOR_NONE</dsb_sync_type>
+		<dsb_trigger_mode>SYNC</dsb_trigger_mode>
+		<auto_increment>true</auto_increment>
+	</test_config>
+
+	<test_config name="trigger_dsb_on_single_pipe_discrete_mmio">
+		<dsb_sync_type>WAIT_FOR_NONE</dsb_sync_type>
+		<dsb_trigger_mode>SYNC</dsb_trigger_mode>
+		<auto_increment>false</auto_increment>
+	</test_config>
+
+	<test_config name="trigger_dsb_on_two_pipe_discrete_mmio">
+		<dsb_sync_type>WAIT_FOR_NONE</dsb_sync_type>
+		<dsb_trigger_mode>SYNC</dsb_trigger_mode>
+		<auto_increment>false</auto_increment>
+	</test_config>
+
+	<test_config name="trigger_dsb_on_three_pipe_discrete_mmio">
+		<dsb_sync_type>WAIT_FOR_NONE</dsb_sync_type>
+		<dsb_trigger_mode>SYNC</dsb_trigger_mode>
+		<auto_increment>false</auto_increment>
+	</test_config>
+
+	<test_config name="trigger_dsb_on_four_pipe_discrete_mmio">
+		<dsb_sync_type>WAIT_FOR_NONE</dsb_sync_type>
+		<dsb_trigger_mode>SYNC</dsb_trigger_mode>
+		<auto_increment>false</auto_increment>
+	</test_config>
+
+	<test_config name="contiguous_trigger_dsb_on_single_pipe">
+		<dsb_sync_type>WAIT_FOR_VBLANK</dsb_sync_type>
+		<dsb_trigger_mode>ASYNC</dsb_trigger_mode>
+		<auto_increment>false</auto_increment>
+		<contiguous_dsb_trigger>true</contiguous_dsb_trigger>
+		<no_of_trigger>3</no_of_trigger>
+	</test_config>
+
+	<test_config name="trigger_dsb_on_single_pipe_during_vblank">
+		<dsb_sync_type>WAIT_FOR_VBLANK</dsb_sync_type>
+		<dsb_trigger_mode>ASYNC</dsb_trigger_mode>
+		<auto_increment>false</auto_increment>
+	</test_config>
+
+	<test_config name="trigger_dsb_on_two_pipe_during_vblank">
+		<dsb_sync_type>WAIT_FOR_VBLANK</dsb_sync_type>
+		<dsb_trigger_mode>ASYNC</dsb_trigger_mode>
+		<auto_increment>false</auto_increment>
+	</test_config>
+
+	<test_config name="trigger_dsb_on_three_pipe_during_vblank">
+		<dsb_sync_type>WAIT_FOR_VBLANK</dsb_sync_type>
+		<dsb_trigger_mode>ASYNC</dsb_trigger_mode>
+		<auto_increment>false</auto_increment>
+	</test_config>
+
+	<test_config name="trigger_dsb_on_four_pipe_during_vblank">
+		<dsb_sync_type>WAIT_FOR_VBLANK</dsb_sync_type>
+		<dsb_trigger_mode>ASYNC</dsb_trigger_mode>
+		<auto_increment>false</auto_increment>
+	</test_config>
+
+	<test_config name="trigger_dsb_on_single_pipe_during_scanline">
+		<dsb_sync_type>WAIT_FOR_SCANLINES</dsb_sync_type>
+		<dsb_trigger_mode>ASYNC</dsb_trigger_mode>
+		<auto_increment>false</auto_increment>
+	</test_config>
+
+	<test_config name="trigger_dsb_on_two_pipe_during_scanline">
+		<dsb_sync_type>WAIT_FOR_SCANLINES</dsb_sync_type>
+		<dsb_trigger_mode>ASYNC</dsb_trigger_mode>
+		<auto_increment>false</auto_increment>
+	</test_config>
+
+	<test_config name="trigger_dsb_on_three_pipe_during_scanline">
+		<dsb_sync_type>WAIT_FOR_SCANLINES</dsb_sync_type>
+		<dsb_trigger_mode>ASYNC</dsb_trigger_mode>
+		<auto_increment>false</auto_increment>
+	</test_config>
+
+	<test_config name="trigger_dsb_on_four_pipe_during_scanline">
+		<dsb_sync_type>WAIT_FOR_SCANLINES</dsb_sync_type>
+		<dsb_trigger_mode>ASYNC</dsb_trigger_mode>
+		<auto_increment>false</auto_increment>
+	</test_config>
+
+	<test_config name="trigger_dsb_on_single_pipe_wait_for_usec">
+		<dsb_sync_type>WAIT_FOR_U_SEC</dsb_sync_type>
+		<dsb_trigger_mode>ASYNC</dsb_trigger_mode>
+		<auto_increment>false</auto_increment>
+		<wait_time>1000</wait_time>
+	</test_config>
+
+	<test_config name="trigger_dsb_on_two_pipe_wait_for_usec">
+		<dsb_sync_type>WAIT_FOR_U_SEC</dsb_sync_type>
+		<dsb_trigger_mode>ASYNC</dsb_trigger_mode>
+		<auto_increment>false</auto_increment>
+		<wait_time>1000</wait_time>
+	</test_config>
+
+	<test_config name="trigger_dsb_on_three_pipe_wait_for_usec">
+		<dsb_sync_type>WAIT_FOR_U_SEC</dsb_sync_type>
+		<dsb_trigger_mode>ASYNC</dsb_trigger_mode>
+		<auto_increment>false</auto_increment>
+		<wait_time>1000</wait_time>
+	</test_config>
+
+	<test_config name="trigger_dsb_on_four_pipe_wait_for_usec">
+		<dsb_sync_type>WAIT_FOR_U_SEC</dsb_sync_type>
+		<dsb_trigger_mode>ASYNC</dsb_trigger_mode>
+		<auto_increment>false</auto_increment>
+		<wait_time>1000</wait_time>
+	</test_config>
+
+	<test_config name="trigger_dsb_on_single_pipe_contiguous_polling">
+		<dsb_sync_type>WAIT_FOR_POLL_REG</dsb_sync_type>
+		<dsb_trigger_mode>ASYNC</dsb_trigger_mode>
+		<auto_increment>false</auto_increment>
+	</test_config>
+
+	<test_config name="trigger_dsb_on_two_pipe_contiguous_polling">
+		<dsb_sync_type>WAIT_FOR_POLL_REG</dsb_sync_type>
+		<dsb_trigger_mode>ASYNC</dsb_trigger_mode>
+		<auto_increment>false</auto_increment>
+	</test_config>
+
+	<test_config name="trigger_dsb_on_three_pipe_contiguous_polling">
+		<dsb_sync_type>WAIT_FOR_POLL_REG</dsb_sync_type>
+		<dsb_trigger_mode>ASYNC</dsb_trigger_mode>
+		<auto_increment>false</auto_increment>
+	</test_config>
+
+	<test_config name="trigger_dsb_on_four_pipe_contiguous_polling">
+		<dsb_sync_type>WAIT_FOR_POLL_REG</dsb_sync_type>
+		<dsb_trigger_mode>ASYNC</dsb_trigger_mode>
+		<auto_increment>false</auto_increment>
+	</test_config>
+
+</TestSet>

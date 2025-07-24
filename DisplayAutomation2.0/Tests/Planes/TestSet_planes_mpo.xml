@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+    <Feature Name="Multiplane Overlay" Owner="sooryar">
+        <Test LastModifiedWW="2019.WW30" Name="mpo_format_switch.py" Owner="anshetty" Priority="P1" Version="1">
+            <TestInstance Grids="CI;GFT" Id="PLANE901">
+                <CommandLine>python Tests\Planes\MPO\mpo_format_switch.py -EDP_A -CONFIG SINGLE -INPUT_XML RGB8_NV12.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE902">
+                <CommandLine>python Tests\Planes\MPO\mpo_format_switch.py -EDP_A -CONFIG SINGLE -INPUT_XML RGB8_NV12_LINEAR.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANE903">
+                <CommandLine>python Tests\Planes\MPO\mpo_format_switch.py -EDP_A -CONFIG SINGLE -INPUT_XML RGB8_RGB10.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE904">
+                <CommandLine>python Tests\Planes\MPO\mpo_format_switch.py -EDP_A -CONFIG SINGLE -INPUT_XML RGB8_RGB10_LINEAR.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE905">
+                <CommandLine>python Tests\Planes\MPO\mpo_format_switch.py -EDP_A -CONFIG SINGLE -INPUT_XML RGB8_RGB10_TILEX.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE906">
+                <CommandLine>python Tests\Planes\MPO\mpo_format_switch.py -EDP_A -CONFIG SINGLE -INPUT_XML pixel_format_primary.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE907">
+                <CommandLine>python Tests\Planes\MPO\mpo_format_switch.py -EDP_A -CONFIG SINGLE -INPUT_XML pixel_tile_format_switch.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANE911">
+                <CommandLine>python Tests\Planes\MPO\mpo_format_switch.py -EDP_A -CONFIG SINGLE -INPUT_XML RGB8_NV12_legacy_tile.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE912">
+                <CommandLine>python Tests\Planes\MPO\mpo_format_switch.py -EDP_A -CONFIG SINGLE -INPUT_XML RGB8_NV12_LINEAR_legacy_tile.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANE913">
+                <CommandLine>python Tests\Planes\MPO\mpo_format_switch.py -EDP_A -CONFIG SINGLE -INPUT_XML RGB8_RGB10_legacy_tile.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE914">
+                <CommandLine>python Tests\Planes\MPO\mpo_format_switch.py -EDP_A -CONFIG SINGLE -INPUT_XML RGB8_RGB10_LINEAR_legacy_tile.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE915">
+                <CommandLine>python Tests\Planes\MPO\mpo_format_switch.py -EDP_A -CONFIG SINGLE -INPUT_XML RGB8_RGB10_TILEX_legacy_tile.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE916">
+                <CommandLine>python Tests\Planes\MPO\mpo_format_switch.py -EDP_A -CONFIG SINGLE -INPUT_XML pixel_format_primary_legacy_tile.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="GFT" Id="PLANE917">
+                <CommandLine>python Tests\Planes\MPO\mpo_format_switch.py -EDP_A -CONFIG SINGLE -INPUT_XML pixel_tile_format_switch_legacy_tile.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+
+        <Test LastModifiedWW="2019.WW30" Name="mpo_stress.py" Owner="anshetty" Priority="P1" Version="1">
+            <TestInstance Grids="SFT" Id="PLANE908">
+                <CommandLine>python Tests\Planes\MPO\mpo_stress.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_B8G8R8A8 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE909">
+                <CommandLine>python Tests\Planes\MPO\mpo_stress.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_NV12YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE910">
+                <CommandLine>python Tests\Planes\MPO\mpo_stress.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_R10G10B10A2 -INPUT_TILEFORMAT SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE918">
+                <CommandLine>python Tests\Planes\MPO\mpo_stress.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_B8G8R8A8 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE919">
+                <CommandLine>python Tests\Planes\MPO\mpo_stress.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_NV12YUV420 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="SFT" Id="PLANE920">
+                <CommandLine>python Tests\Planes\MPO\mpo_stress.py -EDP_A -CONFIG SINGLE -INPUT_PIXELFORMAT SB_R10G10B10A2 -INPUT_TILEFORMAT SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+    </Feature>
+</Display_Automation_2.0>

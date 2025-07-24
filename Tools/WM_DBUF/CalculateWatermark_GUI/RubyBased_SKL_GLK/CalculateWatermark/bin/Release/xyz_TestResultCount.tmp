@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestResults xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LogFileName>xyz</LogFileName>
+  <TotalPassed>0</TotalPassed>
+  <TotalSkipped>0</TotalSkipped>
+  <TotalFailed>0</TotalFailed>
+  <TotalErred>0</TotalErred>
+  <TotalWarned>0</TotalWarned>
+  <TotalBlocked>0</TotalBlocked>
+  <RebootCount>0</RebootCount>
+</TestResults>

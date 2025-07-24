@@ -1,0 +1,808 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+    <Feature Name="Display_Config" Owner="akaleem">
+        <Test LastModifiedWW="2017.WW28" Name="apply_configuration_ddc.py" Owner="akaleem" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD001">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -dp_b -dp_c</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@ICL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD002">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -dp_b -dp_d</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;ADLP;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;ADLP_SOC;ADLP_DOD;ADLP_SIM;ADLP_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@ICL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD003">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -dp_b -dp_e</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;TGL;JSL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@ICL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD004">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -dp_b -dp_f</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;ADLP;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;ADLP_SOC;ADLP_DOD;ADLP_SIM;ADLP_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD005">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -dp_b -hdmi_c</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD006">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -dp_b -hdmi_d</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;ADLP;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;ADLP_SOC;ADLP_DOD;ADLP_SIM;ADLP_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD007">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -dp_g -hdmi_h</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;ADLP;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;ADLP_SOC;ADLP_DOD;ADLP_SIM;ADLP_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD008">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -dp_g -hdmi_i</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;ADLP;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;ADLP_SOC;ADLP_DOD;ADLP_SIM;ADLP_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD009">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -dp_h -hdmi_g</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;ADLP;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;ADLP_SOC;ADLP_DOD;ADLP_SIM;ADLP_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD010">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -dp_h -hdmi_i</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;ADLP;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;ADLP_SOC;ADLP_DOD;ADLP_SIM;ADLP_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD011">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -dp_i -hdmi_g</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;ADLP;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;ADLP_SOC;ADLP_DOD;ADLP_SIM;ADLP_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD012">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -dp_i -hdmi_h</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;ADLP;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;ADLP_SOC;ADLP_DOD;ADLP_SIM;ADLP_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD013">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -dp_b -hdmi_c -hdmi_d</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD014">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -mipi_a -hdmi_e -dp_f</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD;LKF1_SIM;LKF1_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD015">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -mipi_a -dp_e -hdmi_f</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD;LKF1_SIM;LKF1_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD016">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -mipi_a -hdmi_e -hdmi_f</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD;LKF1_SIM;LKF1_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD017">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -dp_c -dp_d</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD018">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -dp_c -hdmi_d</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD019">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -dp_c -hdmi_e</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD020">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -hdmi_c -dp_d</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD021">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -hdmi_c -hdmi_f</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD022">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -hdmi_b -hdmi_c</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD023">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -hdmi_b -hdmi_f</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;ADLP;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;ADLP_SOC;ADLP_DOD;ADLP_SIM;ADLP_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD024">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -hdmi_b -hdmi_d</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;ADLP;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;ADLP_SOC;ADLP_DOD;ADLP_SIM;ADLP_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD025">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -hdmi_b -dp_d</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;ADLP;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;ADLP_SOC;ADLP_DOD;ADLP_SIM;ADLP_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD026">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -mipi_a -dp_d -hdmi_e</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD;LKF1_SIM;LKF1_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD027">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -mipi_a -hdmi_d -hdmi_e</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD;LKF1_SIM;LKF1_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD028">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -mipi_a -hdmi_b -hdmi_c</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD;LKF1_SIM;LKF1_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD029">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -mipi_a -dp_c -hdmi_d</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD;LKF1_SIM;LKF1_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD030">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -mipi_a -dp_b -dp_c</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD;LKF1_SIM;LKF1_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD031">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -mipi_a -dp_b -hdmi_c</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD;LKF1_SIM;LKF1_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD032">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -mipi_a -hdmi_d -dp_e</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD;LKF1_SIM;LKF1_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD033">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -mipi_c -dp_d -dp_e</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD;LKF1_SIM;LKF1_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD034">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -mipi_c -hdmi_d -hdmi_e</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD;LKF1_SIM;LKF1_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD035">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -mipi_a -dp_d -dp_e</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD;LKF1_SIM;LKF1_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD037">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -mipi_a -mipi_c -dp_d</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD;LKF1_SIM;LKF1_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD038">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -mipi_a -mipi_c -dp_e</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD;LKF1_SIM;LKF1_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD039">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -edp_b -dp_c</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD040">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -edp_b -dp_d</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;ADLP;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;ADLP_SOC;ADLP_DOD;ADLP_SIM;ADLP_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD041">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -edp_b -dp_e</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;TGL;JSL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD043">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -edp_b -hdmi_d</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;ADLP;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;ADLP_SOC;ADLP_DOD;ADLP_SIM;ADLP_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD044">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -edp_b -hdmi_e</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;TGL;JSL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD072">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -dp_b_plus -dp_c -hdmi_d</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD076">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -dp_b_plus -dp_c</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD045">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -edp_b -dp_e_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;TGL;JSL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD073">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -dp_b_plus -dp_d -dp_e_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;TGL;JSL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD046">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -mipi_a -mipi_c -dp_c</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD;LKF1_SIM;LKF1_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD078">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -dp_b_plus -dp_e</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;TGL;JSL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD047">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -mipi_a -mipi_c -dp_e_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD;LKF1_SIM;LKF1_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD074">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -dp_b_plus -dp_d_tc -dp_e_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;TGL;JSL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD049">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -dp_d_tc -dp_e_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;TGL;JSL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD050">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -dp_f_tc -dp_e_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;TGL;JSL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD052">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -mipi_c -hdmi_e -dp_d_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD;LKF1_SIM;LKF1_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD053">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -mipi_a -dp_d_tc -dp_e_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD;LKF1_SIM;LKF1_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD077">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -dp_b_plus -dp_d</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;ADLP;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;ADLP_SOC;ADLP_DOD;ADLP_SIM;ADLP_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD054">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -dp_a -dp_b -dp_d</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;ADLP;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;ADLP_SOC;ADLP_DOD;ADLP_SIM;ADLP_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD056">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -dp_b -dp_d -dp_e_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;TGL;JSL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD057">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -dp_a -hdmi_d -hdmi_e</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;TGL;JSL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD075">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -dp_d -hdmi_e -dp_f</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;TGL;JSL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD059">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -dp_b -dp_d_tc -dp_e_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;TGL;JSL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD061">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -hdmi_a -hdmi_b -dp_e_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;TGL;JSL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD062">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -hdmi_a -hdmi_d -dp_e_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;TGL;JSL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD080">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -hdmi_c -hdmi_d</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD063">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -hdmi_b -dp_d_tc -dp_e_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;TGL;JSL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD081">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a hdmi_b -dp_c</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD064">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -dp_c -hdmi_b</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD065">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -mipi_a -hdmi_b -dp_c</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD;LKF1_SIM;LKF1_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD082">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -hdmi_b -dp_c -hdmi_d</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD066">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -dp_b -dp_c -dp_d</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD067">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -dp_b -dp_c -hdmi_d</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD068">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -dp_d -hdmi_b -hdmi_c</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD069">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -hdmi_b -hdmi_c -hdmi_d</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD083">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -hdmi_c -dp_d -hdmi_b</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD070">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -dp_a -dp_b_plus -dp_d</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;ADLP;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;ADLP_SOC;ADLP_DOD;ADLP_SIM;ADLP_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD071">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -dp_b_plus -dp_c -dp_d</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD088">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -dp_b -dp_c -hdmi_d</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD036">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -mipi_a -dp_d -dp_e</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD;LKF1_SIM;LKF1_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD042">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -edp_b -hdmi_c</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD048">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -hdmi_c -dp_f_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD051">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -mipi_c -dp_d -dp_e_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD;LKF1_SIM;LKF1_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD055">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -dp_a -hdmi_b -dp_d_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;ADLP;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;ADLP_SOC;ADLP_DOD;ADLP_SIM;ADLP_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD058">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -dp_a -hdmi_e -dp_d_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;TGL;JSL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD060">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -dp_g_tc -dp_h_tc -dp_i_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;ADLP;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;ADLP_SOC;ADLP_DOD;ADLP_SIM;ADLP_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD079">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -dp_b_plus -dp_d</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;ADLP;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;ADLP_SOC;ADLP_DOD;ADLP_SIM;ADLP_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD084">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -hdmi_c -dp_d_tc -dp_e_tc</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD085">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -mipi_a -hdmi_c -hdmi_d</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD;LKF1_SIM;LKF1_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD086">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -mipi_a -mipi_c -hdmi_c</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD;LKF1_SIM;LKF1_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD087">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -dp_b_plus -dp_f</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;ADLP;TGL;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;ADLP_SOC;ADLP_DOD;ADLP_SIM;ADLP_EMU;TGL_SOC;TGL_DOD;TGL_SIM;TGL_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DSWTD089">
+                <CommandLine>python Tests\Display_Config\display_config_switching.py -edp_a -hdmi_b -dp_c</CommandLine>
+                <OS>WinRS5;19H1;19H2;20H1</OS>
+                <Platform>ICL;ADLS;JSL;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;ICL_SIM;ICL_EMU;ADLS_SOC;ADLS_DOD;ADLS_SIM;ADLS_EMU;JSL_SOC;JSL_DOD;JSL_SIM;JSL_EMU;DG1_SOC;DG1_DOD;DG1_SIM;DG1_EMU;EHL_SOC;EHL_DOD;EHL_SIM;EHL_EMU;RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU;DG2_SOC;DG2_DOD;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+    </Feature>
+</Display_Automation_2.0>

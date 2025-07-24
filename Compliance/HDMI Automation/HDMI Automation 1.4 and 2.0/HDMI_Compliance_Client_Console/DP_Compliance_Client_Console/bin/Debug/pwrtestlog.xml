@@ -1,0 +1,41 @@
+<PwrTestLog date="09/23/2016" time="01:28:37" filename="C:\Users\RS 1 14393 G\Desktop\DP Automation WW37_2016\DP_Compliance_Client_Console_WW_15\DP_Compliance_Client_Console\bin\Debug\pwrtestlog.xml">
+  <SystemInformation>
+    <ComputerName>DESKTOP-73GNVSH</ComputerName>
+    <OSBuildNumber>9600</OSBuildNumber>
+    <SystemManufacturer>Intel Corporation</SystemManufacturer>
+    <SystemProductName>Kabylake Client platform</SystemProductName>
+    <BIOSVersion>KBLSE2R1.R00.X042.B00.1606030031</BIOSVersion>
+    <BIOSReleaseDate>06/03/2016</BIOSReleaseDate>
+    <ProcessorCount>4</ProcessorCount>
+    <ProcessorPackageCount>1</ProcessorPackageCount>
+  </SystemInformation>
+  <SYSTEM_POWER_CAPABILITIES>
+    <SystemS1StateSupported>0</SystemS1StateSupported>
+    <SystemS2StateSupported>0</SystemS2StateSupported>
+    <SystemS3StateSupported>1</SystemS3StateSupported>
+    <SystemS4StateSupported>1</SystemS4StateSupported>
+    <SystemS5StateSupported>1</SystemS5StateSupported>
+    <RtcWakeSupported>4</RtcWakeSupported>
+    <FastSystemS4>1</FastSystemS4>
+    <VideoDimPresent>1</VideoDimPresent>
+    <HiberFilePresent>1</HiberFilePresent>
+    <AoAc>0</AoAc>
+  </SYSTEM_POWER_CAPABILITIES>
+  <SleepScenario>
+    <SleepTransitions hybrid="0" delay="90" sleeptime="30" IgnoreUsbHub="0" EndTransitionEventTimeout="120">
+      <SleepTransition number="0" status="0">
+        <StartT>09/23/2016 01:28:38</StartT>
+        <EndT>09/23/2016 01:29:57</EndT>
+        <Duration>00:01:19</Duration>
+        <TargetState>4</TargetState>
+        <EffectiveState>4</EffectiveState>
+        <Suspend>1240</Suspend>
+        <BIOSInit>0</BIOSInit>
+        <DriverInit>543</DriverInit>
+        <HiberPagesWritten>133083</HiberPagesWritten>
+        <HiberRead>2325</HiberRead>
+        <HiberWrite>6490</HiberWrite>
+      </SleepTransition>
+    </SleepTransitions>
+  </SleepScenario>
+</PwrTestLog>

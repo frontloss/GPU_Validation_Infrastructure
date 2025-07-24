@@ -1,0 +1,23 @@
+﻿namespace Intel.VPG.Display.Automation
+{
+    public enum EVENT_NAME_PROFILING
+    {
+        EVENT_ENTER_SLEEP = 1,
+        EVENT_RESUME_FROM_SLEEP,
+        EVENT_ENTER_HIBERNATION,
+        EVENT_RESUME_FROM_HIBERNATION,
+        EVENT_MONITOR_TURN_OFF,
+        EVENT_MONITOR_TURN_ON,
+        EVENT_MODE_CHANGE,
+        EVENT_BOOT,
+        CUSTOM_EVENT,
+        EVENT_ENTER_CONNECTED_STANDBY,
+        EVENT_RESUME_FROM_CONNECTED_STANDBY
+    }
+
+    public enum PROFILING_TYPE
+    {
+        START_PROFILING,
+        STOP_PROFILING
+    }
+}

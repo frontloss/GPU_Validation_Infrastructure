@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+  <Feature Name="Render_Decomp" Owner="joshipra">
+
+    <Test LastModifiedWW="2020.WW25" Name="render_decomp_basic.py" Owner="joshipra" Priority="P1" Version="1">
+      <TestInstance Grids="CI;ETM;GFT" Id="RD001">
+        <CommandLine>python Tests\Display_Decompression\Playback\Render\render_decomp_basic.py -edp_a -pixel_format RGB_8888</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL;TGL;DG2</Platform>
+        <TestEnvironment>ICL_SOC;TGL_SOC;DG2_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;ETM;GFT" Id="RD002">
+        <CommandLine>python Tests\Display_Decompression\Playback\Render\render_decomp_basic.py –edp_a –hdmi_b –hdmi_d -dp_e -pixel_format RGB_8888</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>DG2;TGL</Platform>
+        <TestEnvironment>DG2_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;ETM;GFT" Id="RD003">
+        <CommandLine>python Tests\Display_Decompression\Playback\Render\render_decomp_basic.py -mipi_a -pixel_format RGB_8888</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>LKF1</Platform>
+        <TestEnvironment>LKF1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;ETM;GFT" Id="RD004">
+        <CommandLine>python Tests\Display_Decompression\Playback\Render\render_decomp_basic.py -mipi_a -mipi_c -hdmi_d -dp_e -pixel_format RGB_8888</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>LKF1</Platform>
+        <TestEnvironment>LKF1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+    </Test>
+
+    <Test LastModifiedWW="2020.WW25" Name="render_decomp_max_resolution.py" Owner="joshipra" Priority="P2" Version="1">
+      <TestInstance Grids="CI;ETM;GFT" Id="RD005">
+        <CommandLine>python Tests\Display_Decompression\Playback\Render\render_decomp_max_resolution.py -edp_a -hdmi_b SINK_HDM011 -dp_d SINK_DPS007 -dp_e SINK_DPS009 -pixel_format RGB_8888</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>ICL;TGL</Platform>
+        <TestEnvironment>ICL_SOC;TGL_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+      <TestInstance Grids="CI;ETM;GFT" Id="RD006">
+        <CommandLine>python Tests\Display_Decompression\Playback\Render\render_decomp_max_resolution.py -mipi_a -mipi_c -dp_d SINK_DPS009 -dp_e SINK_DPS_007 -pixel_format RGB_8888</CommandLine>
+        <OS>WinRS5;Win19H1;</OS>
+        <Platform>LKF1</Platform>
+        <TestEnvironment>LKF1_SOC</TestEnvironment>
+        <ExecutionTime_mm>00</ExecutionTime_mm>
+        <AdditionalTag>NONE</AdditionalTag>
+        <QualificationStatus>NONE</QualificationStatus>
+      </TestInstance>
+    </Test>
+  </Feature>
+
+</Display_Automation_2.0>

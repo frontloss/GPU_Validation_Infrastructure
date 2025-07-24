@@ -1,0 +1,587 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+    <Feature Name="DP_SST_Detection" Owner="akumarv">
+        <Test LastModifiedWW="2018.WW41" Name="plug_unplug_multiple.py" Owner="akumarv" Priority="P2" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPSST001">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -edp_a -dp_b -iteration 1</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>KBL_ULX;SKL_ULT;SKL_Halo;GLK;CNL_ULT;CFL;DG1;RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC;GLK_SOC;CFL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPSST002">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -edp_a -dp_b SINK_DPS023 -iteration 1</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>SKL_ULX;KBL_ULT;KBL_Halo;GLK;DG1;RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC;GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPSST003">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -edp_a -dp_b -hdmi_c -iteration 1</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>SKL_ULX;KBL_ULT;KBL_Halo;CNL_ULX;RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPSST004">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -edp_a -dp_b SINK_DPS023 -hdmi_c SINK_HDM046 -iteration 1</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>SKL_ULX;KBL_ULT;KBL_Halo;CNL_ULT;ICL;TGL;JSL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;DG1_SIM;DG1_EMU;DG1_SOC;DG1_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC;ICL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPSST005">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -edp_a -dp_d SINK_DPS023 -hdmi_e SINK_HDM046 -iteration 1</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPSST006">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -dp_a -dp_g SINK_DPS023 -dp_i -iteration 1</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPSST007">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -dp_e -dp_a SINK_DPS023 -dp_b -iteration 1</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPSST008">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -mipi_a -dp_d -iteration 1</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>LKF1;TGL;RYF</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPSST009">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -mipi_a -dp_e -iteration 1</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST010">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -edp_a -dp_c -iteration 1</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST011">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -edp_a -dp_c -hdmi_d -iteration 1</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST012">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -edp_a -dp_d -iteration 1</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST013">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -edp_a -dp_d -hdmi_c -iteration 1</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPSST014">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -edp_a -dp_b -iteration 5</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>KBL_ULX;SKL_ULT;SKL_Halo;GLK;CNL_ULT;CFL;DG1;RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC;GLK_SOC;CFL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST015">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -edp_a -dp_b SINK_DPS023 -iteration 5</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>SKL_ULX;KBL_ULT;KBL_Halo;GLK;DG1;RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC;GLK_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST016">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -edp_a -dp_b -hdmi_c -iteration 5</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>SKL_ULX;KBL_ULT;KBL_Halo;CNL_ULX;RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPSST017">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -edp_a -dp_b SINK_DPS023 -hdmi_c SINK_HDM046 -iteration 5</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>SKL_ULX;KBL_ULT;KBL_Halo;CNL_ULT;ICL;TGL;JSL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;DG1_SIM;DG1_EMU;DG1_SOC;DG1_DOD;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC;ICL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPSST018">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -edp_a -dp_d -dp_e -iteration 5</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPSST019">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -mipi_a -dp_b SINK_DPS023 -dp_f -iteration 5</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPSST020">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -mipi_a -dp_e SINK_DPS023 -hdmi_d SINK_HDM046 -iteration 5</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPSST021">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -mipi_a -dp_e SINK_DPS023 -iteration 5</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPSST022">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -mipi_c -dp_d SINK_DPS023 -iteration 5</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPSST023">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -mipi_a -dp_b SINK_DPS023 -dp_e -iteration 5</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPSST024">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -edp_a -dp_d -dp_e -iteration 5</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST025">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -edp_a -dp_c SINK_DPS023 -iteration 5</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST026">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -edp_a -dp_c SINK_DPS023 -hdmi_d SINK_HDM046 -iteration 5</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST027">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -edp_a -dp_d SINK_DPS023 -iteration 5</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST028">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -edp_a -dp_d SINK_DPS023 -hdmi_c SINK_HDM046 -iteration 5</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPSST029">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -edp_a -dp_b SINK_DPS023 -dp_c SINK_DPS023 -dp_d SINK_DPS023 -iteration 5</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>KBL_ULX;SKL_ULT;SKL_Halo;GLK;CNL_ULT;CFL;DG1;RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC;GLK_SOC;CFL_SOC</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPSST030">
+                <CommandLine>python Tests\Display_Detection\plug_unplug_multiple.py -edp_a -dp_b SINK_DPS022 -dp_c SINK_DPS022 -dp_d SINK_DPS022 -iteration 5</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>SKL_ULX;KBL_ULT;KBL_Halo;CNL_ULX;ICL;LKF1;TGL;JSL;RYF;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;ICL_DOD;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;TGL_SIM;TGL_EMU;TGL_SOC;TGL_DOD;JSL_SIM;JSL_EMU;JSL_SOC;JSL_DOD;RYF_SIM;RYF_EMU;RYF_SOC;RYF_DOD;DG1_SIM;DG1_EMU;DG1_SOC;DG1_DOD;RKL_SOC;RKL_DOD;RKL_SIM;</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>Deployed@KBL_SOC;ICL_SOC</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW47" Name="plug_all_ddi_in_low_power.py" Owner="akumarv" Priority="P3" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPSST031">
+                <CommandLine>python Tests\Display_Detection\plug_all_ddi_in_low_power.py -edp_a -dp_b -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>DG1;RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOd;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST032">
+                <CommandLine>python Tests\Display_Detection\plug_all_ddi_in_low_power.py -edp_a -dp_b SINK_DPS023 -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST033">
+                <CommandLine>python Tests\Display_Detection\plug_all_ddi_in_low_power.py -edp_a -dp_b -hdmi_c -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST034">
+                <CommandLine>python Tests\Display_Detection\plug_all_ddi_in_low_power.py -edp_a -dp_b SINK_DPS023 -hdmi_c SINK_HDM046 -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;JSL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;TGL_SOC;TGL_DOD;JSL_SOC;JSL_DOD;DG1_SOC;DG1_DOD;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST035">
+                <CommandLine>python Tests\Display_Detection\plug_all_ddi_in_low_power.py -mipi_a -dp_e SINK_DPS023 -hdmi_d SINK_HDM046 -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST036">
+                <CommandLine>python Tests\Display_Detection\plug_all_ddi_in_low_power.py -mipi_a -dp_e SINK_DPS023 -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST037">
+                <CommandLine>python Tests\Display_Detection\plug_all_ddi_in_low_power.py -mipi_a -dp_b SINK_DPS023 -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST038">
+                <CommandLine>python Tests\Display_Detection\plug_all_ddi_in_low_power.py -edp_a -dp_b SINK_DPS023 -dp_e -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST039">
+                <CommandLine>python Tests\Display_Detection\plug_all_ddi_in_low_power.py -mipi_a -dp_b SINK_DPS023 -hdmi_e SINK_HDM046 -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST040">
+                <CommandLine>python Tests\Display_Detection\plug_all_ddi_in_low_power.py -edp_a -dp_c -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST041">
+                <CommandLine>python Tests\Display_Detection\plug_all_ddi_in_low_power.py -edp_a -dp_c SINK_DPS023 -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST042">
+                <CommandLine>python Tests\Display_Detection\plug_all_ddi_in_low_power.py -edp_a -dp_c -hdmi_d -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST043">
+                <CommandLine>python Tests\Display_Detection\plug_all_ddi_in_low_power.py -edp_a -dp_c SINK_DPS023 -hdmi_d SINK_HDM046 -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST044">
+                <CommandLine>python Tests\Display_Detection\plug_all_ddi_in_low_power.py -edp_a -dp_d -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST045">
+                <CommandLine>python Tests\Display_Detection\plug_all_ddi_in_low_power.py -edp_a -dp_d SINK_DPS023 -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST046">
+                <CommandLine>python Tests\Display_Detection\plug_all_ddi_in_low_power.py -edp_a -dp_d -hdmi_c -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST047">
+                <CommandLine>python Tests\Display_Detection\plug_all_ddi_in_low_power.py -edp_a -dp_d SINK_DPS023 -hdmi_c SINK_HDM046 -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW47" Name="unplug_all_ddi_in_low_power.py" Owner="akumarv" Priority="P3" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM" Id="DPSST048">
+                <CommandLine>python Tests\Display_Detection\unplug_all_ddi_in_low_power.py -edp_a -dp_b -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>DG1;RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST049">
+                <CommandLine>python Tests\Display_Detection\unplug_all_ddi_in_low_power.py -edp_a -dp_b SINK_DPS023 -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>DG1;RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST050">
+                <CommandLine>python Tests\Display_Detection\unplug_all_ddi_in_low_power.py -edp_a -dp_b -hdmi_c -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST051">
+                <CommandLine>python Tests\Display_Detection\unplug_all_ddi_in_low_power.py -edp_a -dp_b SINK_DPS023 -hdmi_c SINK_HDM046 -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;JSL;DG1;EHL;RKL</Platform>
+                <TestEnvironment>ICL_SOC;ICL_DOD;TGL_SOC;TGL_DOD;JSL_SOC;JSL_DOD;DG1_SOC;DG1_DOD;EHL_SOC;EHL_DOD;RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST052">
+                <CommandLine>python Tests\Display_Detection\unplug_all_ddi_in_low_power.py -edp_a -dp_b SINK_DPS023 -hdmi_e SINK_HDM046 -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinTH2;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RYF;DG1</Platform>
+                <TestEnvironment>RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST053">
+                <CommandLine>python Tests\Display_Detection\unplug_all_ddi_in_low_power.py -mipi_c -dp_d SINK_DPS023 -hdmi_e SINK_HDM046 -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST054">
+                <CommandLine>python Tests\Display_Detection\unplug_all_ddi_in_low_power.py -mipi_c -dp_d SINK_DPS023 -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST055">
+                <CommandLine>python Tests\Display_Detection\unplug_all_ddi_in_low_power.py -edp_a -dp_d SINK_DPS023 -dp_i -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SOC;TGL_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST056">
+                <CommandLine>python Tests\Display_Detection\unplug_all_ddi_in_low_power.py -mipi_a -dp_d SINK_DPS023 -dp_e -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RYF</Platform>
+                <TestEnvironment>RYF_SOC;RYF_DOD</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST057">
+                <CommandLine>python Tests\Display_Detection\unplug_all_ddi_in_low_power.py -edp_a -dp_c -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST058">
+                <CommandLine>python Tests\Display_Detection\unplug_all_ddi_in_low_power.py -edp_a -dp_c SINK_DPS023 -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST059">
+                <CommandLine>python Tests\Display_Detection\unplug_all_ddi_in_low_power.py -edp_a -dp_c -hdmi_d -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST060">
+                <CommandLine>python Tests\Display_Detection\unplug_all_ddi_in_low_power.py -edp_a -dp_c SINK_DPS023 -hdmi_d SINK_HDM046 -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST061">
+                <CommandLine>python Tests\Display_Detection\unplug_all_ddi_in_low_power.py -edp_a -dp_d -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST062">
+                <CommandLine>python Tests\Display_Detection\unplug_all_ddi_in_low_power.py -edp_a -dp_d SINK_DPS023 -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST063">
+                <CommandLine>python Tests\Display_Detection\unplug_all_ddi_in_low_power.py -edp_a -dp_d -hdmi_c -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM;RKL_EMU</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM" Id="DPSST064">
+                <CommandLine>python Tests\Display_Detection\unplug_all_ddi_in_low_power.py -edp_a -dp_d SINK_DPS023 -hdmi_c SINK_HDM046 -sleepstate s3</CommandLine>
+                <OS>WinRS1;WinRS2;WinRS3;WinRS4</OS>
+                <Platform>RKL</Platform>
+                <TestEnvironment>RKL_SOC;RKL_DOD;RKL_SIM</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+    </Feature>
+</Display_Automation_2.0>

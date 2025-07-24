@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DPCDModel>
+    <DPCDModelData>
+        <ulTriggerOffsetForTrans>0x103</ulTriggerOffsetForTrans>
+        <transactionCount>5</transactionCount>
+
+        <!-- TC 1 -->
+        <inputStartingOffsets>[0x102]</inputStartingOffsets>
+        <inputValues>[]</inputValues>
+        <responseStartingOffsets>[0x202]</responseStartingOffsets>
+        <responseValues>[0x00, 0x00, 0x80, 0x00, 0x11, 0x11]</responseValues>
+
+        <!-- TC 2 -->
+        <inputStartingOffsets>[0x102]</inputStartingOffsets>
+        <inputValues>[]</inputValues>
+        <responseStartingOffsets>[0x202]</responseStartingOffsets>
+        <responseValues>[0x00, 0x00, 0x80, 0x00, 0x22, 0x22]</responseValues>
+
+        <!-- TC 3 -->
+        <inputStartingOffsets>[0x102]</inputStartingOffsets>
+        <inputValues>[]</inputValues>
+        <responseStartingOffsets>[0x202]</responseStartingOffsets>
+        <responseValues>[0x00, 0x00, 0x80, 0x00, 0x33, 0x33]</responseValues>
+
+        <!-- TC 4 -->
+        <inputStartingOffsets>[0x102]</inputStartingOffsets>
+        <inputValues>[]</inputValues>
+        <responseStartingOffsets>[0x202]</responseStartingOffsets>
+        <responseValues>[0x11, 0x11, 0x80, 0x00, 0x00, 0x00]</responseValues>
+
+        <!-- TC 5 -->
+        <inputStartingOffsets>[0x102]</inputStartingOffsets>
+        <inputValues>[]</inputValues>
+        <responseStartingOffsets>[0x202]</responseStartingOffsets>
+        <responseValues>[0x77, 0x77, 0x81, 0x00, 0x00, 0x00]</responseValues>
+    </DPCDModelData>
+</DPCDModel>

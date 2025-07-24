@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<EnvironmentPrep>
+  <Init class="InitVerifyDriverStatus" source="CoreLibrary" runOnReboot="true" runSeperate="false" />
+  <Init class="InitClearDumpsNEvents" source="CoreLibrary" runOnReboot="true" runSeperate="false" />
+  <Init class="InitRebootAnalysis" source="CoreLibrary" runOnReboot="true" runSeperate="true" />
+  <Init class="InitCloneDriver" source="CoreLibrary" runOnReboot="true" runSeperate="false" />
+  <Init class="InitMetroSkip" source="CoreLibrary" runOnReboot="true" runSeperate="false" />
+  <Init class="InitAssemblies" source="CoreLibrary" runOnReboot="true" runSeperate="true" />
+  <Init class="InitVerifyDotNetFW" source="CoreLibrary" runOnReboot="false" runSeperate="false" />
+  <Init class="InitVerifyDivaStatus" source="CoreLibrary" runOnReboot="false" runSeperate="false" />
+  <Init class="InitCleanupSimulatedDisplays" source="CoreLibrary" runOnReboot="false" runSeperate="false" />
+  <Init class="InitHotplugFramework" source="CoreLibrary" runOnReboot="true" runSeperate="false" />
+  <Init class="InitPlugDVMUDisplays" source="CoreLibrary" runOnReboot="false" runSeperate="true" />
+  <Init class="InitPlugSimulatedDisplays" source="CoreLibrary" runOnReboot="true" runSeperate="true" />
+  <Init class="InitEnumerateDisplays" source="CoreLibrary" runOnReboot="true" runSeperate="false" />
+  <Init class="InitCheckDriverVerify" source="CoreLibrary" runOnReboot="false" runSeperate="true" />
+  <Init class="InitDisableLAN" source="CoreLibrary" runOnReboot="true" runSeperate="false" />
+  <Init class="InitTestCleanUp" source="CoreLibrary" runOnReboot="false" runSeperate="true" />
+  <Init class="InitEnableCommonRoutine" source="CoreLibrary" runOnReboot="true" runSeperate="false" />
+</EnvironmentPrep>

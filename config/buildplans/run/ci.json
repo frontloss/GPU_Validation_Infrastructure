@@ -1,0 +1,11 @@
+{
+  "version": "2",
+  "systems": [
+    {
+      "name": "Windows",
+      "version": "V1"
+    }
+  ],
+  "branch": "Main",
+  "model": "CI"
+}

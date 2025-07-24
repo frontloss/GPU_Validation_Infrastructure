@@ -1,0 +1,657 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+    <Feature Name="HDR" Owner="sooryar">
+        <Test LastModifiedWW="2019.WW38" Name="hdr_singleplane_fullscreen.py" Owner="sooryar" Priority="P1" Version="1">
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR001">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -INPUTFILE NON_LINEAR_SRGB_709_SinglePlane_001.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR002">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -INPUTFILE NON_LINEAR_SRGB_709_SinglePlane_002.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR003">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -INPUTFILE NON_LINEAR_SRGB_709_SinglePlane_003.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR004">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -INPUTFILE NON_LINEAR_SRGB_709_SinglePlane_004.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR005">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -INPUTFILE NON_LINEAR_SRGB_709_SinglePlane_005.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR006">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -INPUTFILE NON_LINEAR_SRGB_709_SinglePlane_006.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR007">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -INPUTFILE NON_LINEAR_SRGB_709_SinglePlane_007.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR008">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -INPUTFILE NON_LINEAR_SRGB_709_SinglePlane_008.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR009">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -INPUTFILE NON_LINEAR_SRGB_709_SinglePlane_009.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR010">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -INPUTFILE NON_LINEAR_SRGB_709_SinglePlane_010.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR011">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -INPUTFILE NON_LINEAR_SRGB_709_SinglePlane_011.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR012">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -INPUTFILE NON_LINEAR_SRGB_709_SinglePlane_012.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR013">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -INPUTFILE NON_LINEAR_SRGB_709_SinglePlane_013.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR014">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -INPUTFILE NON_LINEAR_SRGB_709_SinglePlane_014.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR015">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -INPUTFILE NON_LINEAR_SRGB_709_SinglePlane_015.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR016">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -INPUTFILE NON_LINEAR_SRGB_709_SinglePlane_016.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR017">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -INPUTFILE NON_LINEAR_SRGB_709_SinglePlane_017.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR018">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -INPUTFILE NON_LINEAR_SRGB_709_SinglePlane_018.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR019">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_SinglePlane_101.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR020">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_SinglePlane_102.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR021">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_SinglePlane_103.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR022">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_SinglePlane_104.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR023">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_SinglePlane_105.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR024">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_SinglePlane_106.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR025">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_SinglePlane_107.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+             <TestInstance Grids="CI;GFT" Id="PLANEHDR026">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_SinglePlane_108.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+             <TestInstance Grids="CI;GFT" Id="PLANEHDR027">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_SinglePlane_109.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+             <TestInstance Grids="CI;GFT" Id="PLANEHDR028">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_SinglePlane_110.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+             <TestInstance Grids="CI;GFT" Id="PLANEHDR029">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_SinglePlane_111.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+             <TestInstance Grids="CI;GFT" Id="PLANEHDR030">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_SinglePlane_112.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+             <TestInstance Grids="CI;GFT" Id="PLANEHDR031">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_SinglePlane_113.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+
+        <Test LastModifiedWW="2019.WW38" Name="hdr_two_planes.py" Owner="sooryar" Priority="P1" Version="1">
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR032">
+                <CommandLine>python Tests\Planes\HDR\hdr_twoplanes.py -EDP_A -INPUTFILE NON_LINEAR_SRGB_709_TwoPlanes_019.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR033">
+                <CommandLine>python Tests\Planes\HDR\hdr_twoplanes.py -EDP_A -INPUTFILE NON_LINEAR_SRGB_709_TwoPlanes_020.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR034">
+                <CommandLine>python Tests\Planes\HDR\hdr_twoplanes.py -EDP_A -INPUTFILE NON_LINEAR_SRGB_709_TwoPlanes_021.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR035">
+                <CommandLine>python Tests\Planes\HDR\hdr_twoplanes.py -EDP_A -INPUTFILE NON_LINEAR_SRGB_709_TwoPlanes_022.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR036">
+                <CommandLine>python Tests\Planes\HDR\hdr_twoplanes.py -EDP_A -INPUTFILE NON_LINEAR_SRGB_709_TwoPlanes_023.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR037">
+                <CommandLine>python Tests\Planes\HDR\hdr_twoplanes.py -EDP_A -INPUTFILE NON_LINEAR_SRGB_709_TwoPlanes_024.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+             <TestInstance Grids="CI;GFT" Id="PLANEHDR038">
+                <CommandLine>python Tests\Planes\HDR\hdr_twoplanes.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_TwoPlanes_114.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+             <TestInstance Grids="CI;GFT" Id="PLANEHDR039">
+                <CommandLine>python Tests\Planes\HDR\hdr_twoplanes.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_TwoPlanes_115.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+             <TestInstance Grids="CI;GFT" Id="PLANEHDR040">
+                <CommandLine>python Tests\Planes\HDR\hdr_twoplanes.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_TwoPlanes_116.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+             <TestInstance Grids="CI;GFT" Id="PLANEHDR041">
+                <CommandLine>python Tests\Planes\HDR\hdr_twoplanes.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_TwoPlanes_117.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+             <TestInstance Grids="CI;GFT" Id="PLANEHDR042">
+                <CommandLine>python Tests\Planes\HDR\hdr_twoplanes.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_TwoPlanes_118.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+             <TestInstance Grids="CI;GFT" Id="PLANEHDR043">
+                <CommandLine>python Tests\Planes\HDR\hdr_twoplanes.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_TwoPlanes_119.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+             <TestInstance Grids="CI;GFT" Id="PLANEHDR044">
+                <CommandLine>python Tests\Planes\HDR\hdr_twoplanes.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_TwoPlanes_120.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+             <TestInstance Grids="CI;GFT" Id="PLANEHDR045">
+                <CommandLine>python Tests\Planes\HDR\hdr_twoplanes.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_TwoPlanes_121.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+             <TestInstance Grids="CI;GFT" Id="PLANEHDR046">
+                <CommandLine>python Tests\Planes\HDR\hdr_twoplanes.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_TwoPlanes_122.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+             <TestInstance Grids="CI;GFT" Id="PLANEHDR047">
+                <CommandLine>python Tests\Planes\HDR\hdr_twoplanes.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_TwoPlanes_123.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+        </Test>
+
+         <Test LastModifiedWW="2019.WW38" Name="hdr_two_planes_with_scaling.py" Owner="sooryar" Priority="P1" Version="1">
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR048">
+                <CommandLine>python Tests\Planes\HDR\hdr_twoplanes_with_scaling.py -EDP_A -INPUTFILE NON_LINEAR_SRGB_709_TwoPlanes_025.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+             <TestInstance Grids="CI;GFT" Id="PLANEHDR049">
+                <CommandLine>python Tests\Planes\HDR\hdr_twoplanes_with_scaling.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_TwoPlanes_124.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+        </Test>
+
+         <Test LastModifiedWW="2019.WW38" Name="hdr_three_planes.py" Owner="sooryar" Priority="P1" Version="1">
+            <TestInstance Grids="CI;GFT" Id="PLANEHDR050">
+                <CommandLine>python Tests\Planes\HDR\hdr_threeplanes.py -EDP_A -INPUTFILE NON_LINEAR_SRGB_709_ThreePlanes_026.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+             <TestInstance Grids="CI;GFT" Id="PLANEHDR051">
+                <CommandLine>python Tests\Planes\HDR\hdr_threeplanes.py -EDP_A -INPUTFILE NON_LINEAR_SRGB_709_ThreePlanes_027.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+             <TestInstance Grids="CI;GFT" Id="PLANEHDR052">
+                <CommandLine>python Tests\Planes\HDR\hdr_threeplanes.py -EDP_A -INPUTFILE NON_LINEAR_SRGB_709_ThreePlanes_028.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+             <TestInstance Grids="CI;GFT" Id="PLANEHDR053">
+                <CommandLine>python Tests\Planes\HDR\hdr_threeplanes.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_ThreePlanes_125.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+              <TestInstance Grids="CI;GFT" Id="PLANEHDR054">
+                <CommandLine>python Tests\Planes\HDR\hdr_threeplanes.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_ThreePlanes_126.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+              <TestInstance Grids="CI;GFT" Id="PLANEHDR055">
+                <CommandLine>python Tests\Planes\HDR\hdr_threeplanes.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_ThreePlanes_127.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+              <TestInstance Grids="CI;GFT" Id="PLANEHDR056">
+                <CommandLine>python Tests\Planes\HDR\hdr_threeplanes.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_ThreePlanes_128.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+              <TestInstance Grids="CI;GFT" Id="PLANEHDR057">
+                <CommandLine>python Tests\Planes\HDR\hdr_threeplanes.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_ThreePlanes_129.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+              <TestInstance Grids="CI;GFT" Id="PLANEHDR058">
+                <CommandLine>python Tests\Planes\HDR\hdr_threeplanes.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_ThreePlanes_130.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+              <TestInstance Grids="CI;GFT" Id="PLANEHDR059">
+                <CommandLine>python Tests\Planes\HDR\hdr_threeplanes.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_ThreePlanes_131.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+              <TestInstance Grids="CI;GFT" Id="PLANEHDR060">
+                <CommandLine>python Tests\Planes\HDR\hdr_threeplanes.py -EDP_A -DP_B Benq_SW320_DP.bin Benq_SW320_DPCD.txt -INPUTFILE LINEAR_HDR_BT2020_ThreePlanes_132.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+			
+			<TestInstance Grids="CI;GFT" Id="PLANEHDR061">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -hdmi_b SamsungJS9500_HDR.bin -INPUTFILE LINEAR_HDR_BT2020_SinglePlane_106.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+			
+			<TestInstance Grids="CI;GFT" Id="PLANEHDR062">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -hdmi_b SamsungJS9500_HDR.bin -INPUTFILE LINEAR_HDR_BT2020_SinglePlane_102.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+			
+			<TestInstance Grids="CI;GFT" Id="PLANEHDR063">
+                <CommandLine>python Tests\Planes\HDR\hdr_singleplane_fullscreen.py -EDP_A -hdmi_b SamsungJS9500_HDR.bin -INPUTFILE LINEAR_HDR_BT2020_SinglePlane_101.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+			
+			<TestInstance Grids="CI;GFT" Id="PLANEHDR064">
+                <CommandLine>python Tests\Planes\HDR\hdr_twoplanes.py -EDP_A -hdmi_b SamsungJS9500_HDR.bin -INPUTFILE LINEAR_HDR_BT2020_TwoPlanes_122.xml</CommandLine>
+                <OS>WinRS5,Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_SIM;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+
+        </Test>
+
+    </Feature>
+</Display_Automation_2.0>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EDID>
+	<DP_8K_30HZ_EDID>8k_30hz_16bpc.bin</DP_8K_30HZ_EDID>
+</EDID>
+
+<DPCD>
+	<UHBR10_DSC_DISABLED>UHBR10_DSC_DISABLED_DPCD.bin</UHBR10_DSC_DISABLED>
+</DPCD>
+
+<Topology>
+	<Branch>
+		<UpStrmBranchOutPort>0xffffffff</UpStrmBranchOutPort>
+		<ThisBranchInputPort>0</ThisBranchInputPort>
+		<TotalInputPorts>1</TotalInputPorts>
+		<TotalPhysicalPorts>2</TotalPhysicalPorts>
+		<TotalVirtualPorts>0</TotalVirtualPorts>
+		<TotalAvailablePBN>5730</TotalAvailablePBN>
+		<MaxLinkRate>1000</MaxLinkRate>
+		<MaxLaneCount>4</MaxLaneCount>
+		<BranchReplyDelay>0</BranchReplyDelay>
+		<LinkAddressDelay>0</LinkAddressDelay>
+		<RemoteI2ReadDelay>0</RemoteI2ReadDelay>
+		<RemoteI2WriteDelay>0</RemoteI2WriteDelay>
+		<RemoteDPCDReadDelay>0</RemoteDPCDReadDelay>
+		<RemoteDPCDWriteDelay>0</RemoteDPCDWriteDelay>
+		<EPRDelay>0</EPRDelay>
+		<AllocatePayloadDelay>0</AllocatePayloadDelay>
+		<ClearPayLoadDelay>0</ClearPayLoadDelay>
+		<BranchDPCD>UHBR10_DSC_DISABLED</BranchDPCD>
+		<Display>
+			<UpStrmBranchOutPort>1</UpStrmBranchOutPort>
+			<ThisDisplayInputPort>0</ThisDisplayInputPort>
+			<TotalInputPorts>1</TotalInputPorts>
+			<TotalAvailablePBN>5730</TotalAvailablePBN>
+			<MaxLinkRate>1000</MaxLinkRate>
+			<MaxLaneCount>4</MaxLaneCount>
+			<RemoteI2ReadDelay>0</RemoteI2ReadDelay>
+			<RemoteI2WriteDelay>0</RemoteI2WriteDelay>
+			<RemoteDPCDReadDelay>0</RemoteDPCDReadDelay>
+			<RemoteDPCDWriteDelay>0</RemoteDPCDWriteDelay>
+			<DisplayDPCD>UHBR10_DSC_DISABLED</DisplayDPCD>
+            <DisplayEDID>DP_8K_30HZ_EDID</DisplayEDID>
+		</Display>
+	</Branch>
+</Topology>

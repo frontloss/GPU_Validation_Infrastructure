@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<Test Feature="Scalar" Modes="CI,FS,MAR">
+<Platform Name="CLS" Downscale_Max_Size="4096" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A, EDP_B" edid="3440_1440_59Hz_419_8bpc.bin" dpcd="HBR2_DPCD_LC_2.txt" />
+        <DisplayConfig Port="DP_A,DP_B,DP_F,DP_G,DP_H,DP_I" edid="3840_2160_60Hz_533clk_8bpc.bin" dpcd="HBR3_DPCD_LC_2.txt" />
+		<DisplayConfig Port="HDMI_A,HDMI_F,HDMI_G,HDMI_H,HDMI_I" edid="HDMI_EDID_NON_PRMODES_SET1_SCDC.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+	<RestrictDisplayConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_A,DP_B,DP_F,DP_G,DP_H,DP_I" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+	</RestrictDisplayConfig>
+</Platform>
+<Platform Name="NVL" Downscale_Max_Size="4096" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A, EDP_B" edid="3440_1440_59Hz_419_8bpc.bin" dpcd="6_48_DPCD_LC_2.txt" />
+        <DisplayConfig Port="DP_A,DP_B,DP_F,DP_G,DP_H,DP_I" edid="3840_2160_60Hz_533clk_8bpc.bin" dpcd="HBR3_DPCD_LC_2.txt" />
+		<DisplayConfig Port="HDMI_A,HDMI_F,HDMI_G,HDMI_H,HDMI_I" edid="HDMI_EDID_NON_PRMODES_SET1_SCDC.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+	<RestrictDisplayConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_A,DP_B,DP_F,DP_G,DP_H,DP_I" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+	</RestrictDisplayConfig>
+</Platform>
+<Platform Name="PTL" Downscale_Max_Size="4096" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A, EDP_B" edid="3440_1440_59Hz_419_8bpc.bin" dpcd="6_48_DPCD_LC_2.txt" />
+        <DisplayConfig Port="DP_A,DP_B,DP_F,DP_G,DP_H,DP_I" edid="3840_2160_60Hz_533clk_8bpc.bin" dpcd="HBR3_DPCD_LC_2.txt" />
+		<DisplayConfig Port="HDMI_A,HDMI_F,HDMI_G,HDMI_H,HDMI_I" edid="HDMI_EDID_NON_PRMODES_SET1_SCDC.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+	<RestrictDisplayConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_A,DP_B,DP_F,DP_G,DP_H,DP_I" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+	</RestrictDisplayConfig>
+</Platform>
+<Platform Name="ELG" Downscale_Max_Size="4096" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A" edid="3440_1440_59Hz_419_8bpc.bin" dpcd="6_48_DPCD_LC_2.txt" />
+        <DisplayConfig Port="DP_A,DP_F,DP_G,DP_H,DP_I" edid="3840_2160_60Hz_533clk_8bpc.bin" dpcd="HBR3_DPCD_LC_2.txt" />
+		<DisplayConfig Port="HDMI_A,HDMI_F,HDMI_G,HDMI_H,HDMI_I" edid="HDMI_EDID_NON_PRMODES_SET1_SCDC.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+	<RestrictDisplayConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_F,DP_G,DP_H,DP_I" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+	</RestrictDisplayConfig>
+</Platform>
+<Platform Name="MTL,LNL" Downscale_Max_Size="4096" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A,EDP_B" edid="3440_1440_59Hz_419_8bpc.bin" dpcd="6_48_DPCD_LC_2.txt" />
+        <DisplayConfig Port="DP_A,DP_B,DP_F,DP_G,DP_H,DP_I" edid="3840_2160_60Hz_533clk_8bpc.bin" dpcd="HBR3_DPCD_LC_2.txt" />
+		<DisplayConfig Port="HDMI_A,HDMI_B,HDMI_F,HDMI_G,HDMI_H,HDMI_I" edid="HDMI_EDID_NON_PRMODES_SET1_SCDC.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+	<RestrictDisplayConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_A,DP_B,DP_F,DP_G,DP_H,DP_I" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+	</RestrictDisplayConfig>
+</Platform>
+<Platform Name="TGL" Downscale_Max_Size="4096" SKU="">
+	<GoldenDisplayConfig>
+        <DisplayConfig Port="EDP_A,EDP_B,DP_A,DP_B,DP_D,DP_E,DP_F,DP_G" edid="Acer_H277HK_DP.bin" dpcd="Acer_H277HK_nonVRR_DPCD.txt" />
+		<DisplayConfig Port="HDMI_A,HDMI_B,HDMI_D,HDMI_E,HDMI_F,HDMI_G" edid="HDMI_EDID_NON_PRMODES_SET1_SCDC.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+	<RestrictDisplayConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_D,DP_E,DP_F,DP_G" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+	</RestrictDisplayConfig>
+</Platform>
+<Platform Name="RKL,DG1,DG2" Downscale_Max_Size="4096" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_A,DP_B,DP_C,DP_D" edid="Acer_H277HK_DP.bin" dpcd="Acer_H277HK_nonVRR_DPCD.txt" />
+		<DisplayConfig Port="HDMI_A,HDMI_B,HDMI_C,HDMI_D" edid="HDMI_EDID_NON_PRMODES_SET1_SCDC.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+	<RestrictDisplayConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_A,DP_B,DP_C,DP_D" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+	</RestrictDisplayConfig>
+</Platform>
+<Platform Name="ADLS" Downscale_Max_Size="4096" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_A,DP_B,DP_C,DP_D,DP_E" edid="Acer_H277HK_DP.bin" dpcd="Acer_H277HK_nonVRR_DPCD.txt" />
+		<DisplayConfig Port="HDMI_A,HDMI_B,HDMI_C,HDMI_D" edid="HDMI_EDID_NON_PRMODES_SET1_SCDC.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+	<RestrictDisplayConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_A,DP_B,DP_C,DP_D,DP_E" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+	</RestrictDisplayConfig>
+</Platform>
+<Platform Name="ADLP" Downscale_Max_Size="4096" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_F,DP_G,DP_H,DP_I" edid="Acer_H277HK_DP.bin" dpcd="Acer_H277HK_nonVRR_DPCD.txt" />
+        <DisplayConfig Port="DP_A,DP_B" edid="Acer_H277HK_DP.bin" dpcd="Acer_H277HK_nonVRR_DPCD.txt" />
+		<DisplayConfig Port="HDMI_A,HDMI_B,HDMI_F,HDMI_G,HDMI_H,HDMI_I" edid="HDMI_EDID_NON_PRMODES_SET1_SCDC.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+	<RestrictDisplayConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_F,DP_G,DP_H,DP_I" edid="EDP_5K_5120_3200_60Hz_1047_5clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+	</RestrictDisplayConfig>
+</Platform>
+</Test>

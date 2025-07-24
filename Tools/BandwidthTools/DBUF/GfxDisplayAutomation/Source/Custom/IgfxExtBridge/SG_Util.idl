@@ -1,0 +1,16 @@
+import "oaidl.idl";
+import "ocidl.idl";
+
+import "igfxBridgeUDT.idl";
+
+	[
+		object,
+		uuid(4C4073D3-692B-41a8-A106-90DB6ADAD0D1),
+		dual,
+		helpstring("ISGUtil Interface"),
+		pointer_default(unique)
+	]
+	interface ISGUtil : IDispatch
+	{
+		[id(1),  helpstring("method GetSGSolutionType")] HRESULT GetSGSolutionType([in,out] IGFX_SYSTEM_IGPU_STATUS_STRUCT *pIGPUStatus,[out]IGFX_ERROR_CODES *pExtraErrorCode,[out]BSTR *pErrorDescription);
+	}

@@ -1,0 +1,67 @@
+[Version]
+Signature   = "$WINDOWS NT$"
+Provider    = %ITP%
+CatalogFile = valdi64.cat
+Class       = DebugModule
+ClassGuid   ={78A1C341-4539-11d3-B88D-00C04FAD5171}
+DriverVer = 03/13/2018,14.21.56.574
+
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+[SourceDisksNames]
+1 = %Disk1%
+
+[SourceDisksFiles]
+ValDi64.sys = 1
+
+[DefaultInstall]
+OptionDesc = %ServiceDesc%
+CopyFiles = ValDi.DriverFiles
+AddReg = AddValDiKeys 
+
+[ValDi.DriverFiles]
+ValDi64.sys
+
+[DefaultInstall.Services]
+AddService = %ServiceName%,,ValDi.Service
+
+[ValDi.Service]
+DisplayName    = %ServiceName%
+Description    = %ServiceDesc%
+ServiceBinary  = %12%\ValDi64.sys
+ServiceType    = 2 ;
+StartType      = 3 ;
+ErrorControl   = 1 ;
+LoadOrderGroup = "File System"
+
+[DefaultUninstall]
+DelFiles   = ValDi.DriverFiles
+DelReg     = DelValDiKeys
+
+
+[DefaultUninstall.Services]
+DelService = %ServiceName%,0x200
+
+[Strings]
+ITP        = "Intel Technology Poland"
+ServiceDesc = "ValDi System Driver"
+ServiceName = "ValDi"
+ParameterPath = "SYSTEM\CurrentControlSet\Services\ValDi\Parameters"
+Disk1       = "ValDi Disk"
+
+[AddValDiKeys]
+;HKLM,%ParameterPath%,TraceFilePath,0,"\??\c:\trace.valdi"
+HKLM,%ParameterPath%,TraceFilePath,0,""
+HKLM,%ParameterPath%,TraceByCRCDoneInt,0x00010001,0
+HKLM,%ParameterPath%,TraceMMIOAccess,0x00010001,0
+HKLM,%ParameterPath%,TracePipeUnderruns,0x00010001,1
+HKLM,%ParameterPath%,TraceFlipEvents,0x00010001,0
+HKLM,%ParameterPath%,MaskDebugInts,0x00010001,1
+HKLM,%ParameterPath%,ScrumblerReset,0x00010001,1
+HKLM,%ParameterPath%,LockyLookEnabled,0x00010001,0
+HKLM,%ParameterPath%,TraceMMIOTimings,0x00010001,0
+
+[DelValDiKeys]
+HKLM,%ParameterPath%

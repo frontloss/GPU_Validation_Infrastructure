@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4997C302-60F1-4901-93E1-5D4A052E08BB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Intel.VPG.Display.Automation</RootNamespace>
+    <AssemblyName>Intel.VPG.Display.Automation.WindowsAutomationUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.0.5022.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Assemblies\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="XMLToExcel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Assemblies\XMLToExcel.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Extensions\AccessUIExtensions.cs" />
+    <Compile Include="Features\AppBar\AppBar.cs" />
+    <Compile Include="Features\Audio\ChangeAudioSource.cs" />
+    <Compile Include="Features\CharmWindow\LaunchCharmWindow.cs" />
+    <Compile Include="Features\ColorEnhancement\Colour.cs" />
+    <Compile Include="Features\ColorEnhancement\Gamma.cs" />
+    <Compile Include="Features\Cursor\LaunchApp.cs" />
+    <Compile Include="Features\DeepColor\DeepColor.cs" />
+    <Compile Include="Features\DeepColor\DeepColorBase.cs" />
+    <Compile Include="Features\DeepColor\DisplayPortApplet.cs" />
+    <Compile Include="Features\DeepColor\Instance_HLSL_1.cs" />
+    <Compile Include="Features\DeepColor\N10BitScanout.cs" />
+    <Compile Include="Features\Display\ColorDepth.cs" />
+    <Compile Include="Features\Display\Config.cs" />
+    <Compile Include="Features\Display\EnableCollage.cs" />
+    <Compile Include="Features\Display\Modes.cs" />
+    <Compile Include="Features\Display\RefreshRate.cs" />
+    <Compile Include="Features\Display\Rotation.cs" />
+    <Compile Include="Features\Display\Scaling.cs" />
+    <Compile Include="Features\CUI\CUIHeaderOptions.cs" />
+    <Compile Include="Features\CUI\LaunchCUI.cs" />
+    <Compile Include="Features\Display\SelectDisplay.cs" />
+    <Compile Include="Features\Driver\InstallDriver.cs" />
+    <Compile Include="Features\Driver\UninstallDriver.cs" />
+    <Compile Include="Features\DTCM\DTCMFeature.cs" />
+    <Compile Include="Features\DTCM\DTCMShowDesktop.cs" />
+    <Compile Include="Features\Entities\ControlParams.cs" />
+    <Compile Include="Features\HDCP\HDCP.cs" />
+    <Compile Include="Features\HDCP\HDCPBase.cs" />
+    <Compile Include="Features\HDCP\OPMTester.cs" />
+    <Compile Include="Features\KeyPress\KeyPress.cs" />
+    <Compile Include="Features\MPOClip\PlayMPOClip.cs" />
+    <Compile Include="Features\Options\SelectDisplayInfo.cs" />
+    <Compile Include="Features\Options\SystemInfo.cs" />
+    <Compile Include="Features\OS\NotificationAreaIcons.cs" />
+    <Compile Include="Features\Overlay\ArcSoft.cs" />
+    <Compile Include="Features\Overlay\ArcSoftInstallation.cs" />
+    <Compile Include="Features\Overlay\MovingWorld.cs" />
+    <Compile Include="Features\Overlay\MPlayerC.cs" />
+    <Compile Include="Features\Overlay\Overlay.cs" />
+    <Compile Include="Features\Overlay\PlayerBase.cs" />
+    <Compile Include="Features\Popup\ConfirmationPopup.cs" />
+    <Compile Include="Features\WIDI\AddWirelessDisplay.cs" />
+    <Compile Include="Features\WIDI\GetMonitorList.cs" />
+    <Compile Include="Features\WIDI\LaunchProjector.cs" />
+    <Compile Include="Features\WIDI\WiDiAPPInstaller.cs" />
+    <Compile Include="Features\WIDI\WiDiDisplayConnection.cs" />
+    <Compile Include="Navigation\NavigationHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Features\XvyccYcbcr\XvyccYcbcr.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assemblies\AutoIt3.exe" />
+    <Content Include="Assemblies\Interop.IntelWiDiLib.dll" />
+    <Content Include="Assemblies\x64\Ranorex.Core.WinApi.dll" />
+    <Content Include="Assemblies\x64\Ranorex.Libs.WinForms.dll" />
+    <Content Include="Assemblies\x86\Ranorex.Core.WinApi.dll" />
+    <Content Include="Assemblies\x86\Ranorex.Libs.WinForms.dll" />
+    <Content Include="Assemblies\XMLToExcel.dll" />
+    <None Include="Assemblies\Mapper\WiDiData.map" />
+    <None Include="Assemblies\SkipMetro.scf" />
+    <None Include="Assemblies\Mapper\ADK_Benchmark_Data.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConstantsLibrary\ConstantsLibrary.csproj">
+      <Project>{b8edd54e-47a8-4e78-a31d-d29c6d521fc2}</Project>
+      <Name>ConstantsLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logger\Logger.csproj">
+      <Project>{ec0587c7-cf34-4309-b4b5-d1eb051032b4}</Project>
+      <Name>Logger</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assemblies\GoToDesktop.au3" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>XCopy "$(ProjectDir)Assemblies" "$(TargetDir)" /Y /S /E</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

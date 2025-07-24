@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Data>
+  <ConnectedStandby>
+    <Platform id ="HSW" VerificationType="BLATool"></Platform>
+    <Platform id ="BDW" VerificationType="BLATool"></Platform>
+    <Platform id ="SKL" VerificationType="BLATool"></Platform>
+    <Platform id ="KBL" VerificationType="SocWatch"></Platform>
+    <Platform id ="BXT" VerificationType="SocWatch"></Platform>
+    <Platform id ="APL" VerificationType="SocWatch"></Platform>
+    <Platform id ="CHV" VerificationType="SocWatch"></Platform>
+    <Platform id ="GLK" VerificationType="SocWatch"></Platform>
+  </ConnectedStandby>
+
+  <Chronometer_Benchmark_Value>
+    <Event name ="EVENT_RESUME_FROM_CONNECTED_STANDBY">
+      <Platform id ="HSW" BenchMark="150"></Platform>
+      <Platform id ="VLV" BenchMark="150"></Platform>
+      <Platform id ="BDW" BenchMark="175"></Platform>
+      <Platform id ="CHV" BenchMark="185"></Platform>
+      <Platform id ="SKL" BenchMark="185"></Platform>
+      <Platform id ="KBL" BenchMark="185"></Platform>
+      <Platform id ="BXT" BenchMark="185"></Platform>
+      <Platform id ="GLK" BenchMark="185"></Platform>
+    </Event >
+    <Event name ="EVENT_RESUME_FROM_SLEEP">
+      <Platform id ="HSW" BenchMark="1500"></Platform>
+      <Platform id ="VLV" BenchMark="1500"></Platform>
+      <Platform id ="BDW" BenchMark="1500"></Platform>
+      <Platform id ="CHV" BenchMark="1500"></Platform>
+      <Platform id ="SKL" BenchMark="1500"></Platform>
+      <Platform id ="KBL" BenchMark="1500"></Platform>
+    </Event >
+    <Event name ="EVENT_RESUME_FROM_HIBERNATION">
+      <Platform id ="HSW" BenchMark="2500"></Platform>
+      <Platform id ="VLV" BenchMark="2500"></Platform>
+      <Platform id ="BDW" BenchMark="2500"></Platform>
+      <Platform id ="CHV" BenchMark="2500"></Platform>
+      <Platform id ="SKL" BenchMark="2500"></Platform>
+      <Platform id ="KBL" BenchMark="2500"></Platform>
+    </Event >
+    <Event name ="EVENT_ENTER_SLEEP">
+      <Platform id ="HSW" BenchMark="2500"></Platform>
+      <Platform id ="VLV" BenchMark="2500"></Platform>
+      <Platform id ="BDW" BenchMark="2500"></Platform>
+      <Platform id ="CHV" BenchMark="2500"></Platform>
+      <Platform id ="SKL" BenchMark="2500"></Platform>
+    </Event >
+    <Event name ="EVENT_ENTER_HIBERNATION">
+      <Platform id ="HSW" BenchMark="2500"></Platform>
+      <Platform id ="VLV" BenchMark="2500"></Platform>
+      <Platform id ="BDW" BenchMark="2500"></Platform>
+      <Platform id ="CHV" BenchMark="2500"></Platform>
+      <Platform id ="SKL" BenchMark="2500"></Platform>
+    </Event >
+    <Event name ="EVENT_MONITOR_TURN_OFF">
+      <Platform id ="HSW" BenchMark="1500"></Platform>
+      <Platform id ="VLV" BenchMark="1500"></Platform>
+      <Platform id ="BDW" BenchMark="1500"></Platform>
+      <Platform id ="CHV" BenchMark="1500"></Platform>
+      <Platform id ="SKL" BenchMark="1500"></Platform>
+    </Event >
+    <Event name ="EVENT_MONITOR_TURN_ON">
+      <Platform id ="HSW" BenchMark="1500"></Platform>
+      <Platform id ="VLV" BenchMark="1500"></Platform>
+      <Platform id ="BDW" BenchMark="1500"></Platform>
+      <Platform id ="CHV" BenchMark="1500"></Platform>
+      <Platform id ="SKL" BenchMark="1500"></Platform>
+    </Event >
+    <Event name ="EVENT_BOOT">
+      <Platform id ="HSW" BenchMark="3500"></Platform>
+      <Platform id ="VLV" BenchMark="3500"></Platform>
+      <Platform id ="BDW" BenchMark="3500"></Platform>
+      <Platform id ="CHV" BenchMark="3500"></Platform>
+      <Platform id ="SKL" BenchMark="3500"></Platform>
+    </Event >
+  </Chronometer_Benchmark_Value>
+
+  <SocWatch>
+    <CS>
+      <Platform id ="CHV" cmd ="-t 60 -f cpu-cstate -o CPUStateLogger"></Platform>
+      <Platform id ="BXT" cmd ="-t 60 -f cpu-cstate -o CPUStateLogger -m -r detail"></Platform>
+      <Platform id ="APL" cmd ="-s 30 -t 60 -f cpu-cstate  -o CPUStateLogger"></Platform>
+      <Platform id ="KBL" cmd ="-s 30 -t 60 -f cpu-cstate  -o CPUStateLogger"></Platform>
+      <Platform id ="SKL" cmd ="-s 30 -t 60 -f cpu-cstate  -o CPUStateLogger"></Platform>
+      <Platform id ="GLK" cmd ="-s 30 -t 60 -f cpu-cstate  -o CPUStateLogger"></Platform>
+    </CS>
+    <System cmd ="-t 60 -f sys -o SocWatchFullLog"></System>
+  </SocWatch>
+  </Data>

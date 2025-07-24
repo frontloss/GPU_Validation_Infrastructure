@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Test Feature="Display Config" CreatedBy="akaleem" Revision="1">
+	<!--Group1 has max resolution edid-dpcd. Group2 has lesser than max resolution edid-dpcd, which will be used in case we have limitation (like 3 DPs with 5k not possible on ICL) -->
+	<!--For any platform not present in this xml, DEFAULT will be used -->
+	<Platform Name="DEFAULT" SKU="">
+		<Group1>
+			<DisplayConfig	display="EDP"	edid="DP_3011.EDID"			dpcd="DP_3011_dpcd.txt"/>
+			<DisplayConfig	display="DP"	edid="DP_3011.EDID"			dpcd="DP_3011_dpcd.txt"/>
+			<DisplayConfig	display="HDMI"	edid="HDMI_Dell_3011.EDID"	dpcd="None"/>
+		</Group1>
+		<Group2>
+			<DisplayConfig	display="EDP"	edid="1400_1050_100Hz_214clk_8bpc.bin"	dpcd="LBR_DPCD.txt"/>
+			<DisplayConfig	display="DP"	edid="1400_1050_100Hz_214clk_8bpc.bin"	dpcd="LBR_DPCD.txt"/>
+			<DisplayConfig	display="HDMI"	edid="HDMI_Dell_3011.EDID"	            dpcd="None"/>
+		</Group2>
+		<Group3>
+			<DisplayConfig	display="EDP"	edid="eDP_CMN_1920x1080_60Hz_NonPSR_8BPC_138_77.bin"	dpcd="eDP_CMN_1920x1080_60Hz_NonPSR_8BPC_138_77_DPCD.txt"/>
+			<DisplayConfig	display="DP"	edid="DP_19x10_60rr.bin"			                    dpcd="HBR2_DPCD.txt"/>
+			<DisplayConfig	display="HDMI"	edid="HDMI_19x10_60rr.bin"								dpcd="None"/>
+		</Group3>
+	</Platform>
+	
+	<Platform Name="GLK" SKU="">
+		<Group1>
+			<DisplayConfig	display="EDP"	edid="eDP_SHP_3840x2160_60Hz_PSR2_8BPC_533_25.bin"	dpcd="eDP_SHP_3840x2160_60Hz_PSR_8BPC_533_25_DPCD.txt"/>
+			<DisplayConfig	display="DP"	edid="Acer_H277HK_DP.bin"							dpcd="Acer_H277HK_nonVRR_DPCD.txt"/>
+			<DisplayConfig	display="HDMI"	edid="DELL_UP2414Q_HDMI.bin"						dpcd="None"/>
+		</Group1>
+		<Group2>
+			<DisplayConfig	display="EDP"	edid="eDP_SHP_3840x2160_60Hz_PSR2_8BPC_533_25.bin"	dpcd="eDP_SHP_3840x2160_60Hz_PSR_8BPC_533_25_DPCD.txt"/>
+			<DisplayConfig	display="DP"	edid="Lenovo_3053PWA_DP.bin"						dpcd="Lenovo_3053PWA_DPCD.txt"/>
+			<DisplayConfig	display="HDMI"	edid="DELL_UP2414Q_HDMI.bin"						dpcd="None"/>
+		</Group2>
+		<Group3>
+			<DisplayConfig	display="EDP"	edid="eDP_CMN_1920x1080_60Hz_NonPSR_8BPC_138_77.bin"	dpcd="eDP_CMN_1920x1080_60Hz_NonPSR_8BPC_138_77_DPCD.txt"/>
+			<DisplayConfig	display="DP"	edid="DP_19x10_60rr.bin"			                    dpcd="HBR2_DPCD.txt"/>
+			<DisplayConfig	display="HDMI"	edid="HDMI_19x10_60rr.bin"								dpcd="None"/>
+		</Group3>
+	</Platform>
+	
+
+	<Platform Name="ICLLP,TGL,JSL,DG1,ADLS,ADLP,MTL,ELG,LNL,PTL" SKU="">
+		<Group1>
+			<DisplayConfig	display="EDP"	edid="EDP_5K_5120_3200_60Hz_1042clk_8bpc.bin"	dpcd="HBR3_WSSC_DPCD.txt"/>
+			<DisplayConfig	display="DP"	edid="EDP_5K_5120_3200_60Hz_1042clk_8bpc.bin"	dpcd="HBR3_DPCD.txt"/>
+			<DisplayConfig	display="HDMI"	edid="HDMI_EDID_NON_PRMODES_SET1_SCDC.bin"		dpcd="None"/>
+		</Group1>
+		<Group2>
+			<DisplayConfig	display="EDP"	edid="EDP_5K_5120_3200_60Hz_1042clk_8bpc.bin"	dpcd="HBR3_WSSC_DPCD.txt"/>
+			<DisplayConfig	display="DP"	edid="Acer_H277HK_DP.bin"						dpcd="Acer_H277HK_nonVRR_DPCD.txt"/>
+			<DisplayConfig	display="HDMI"	edid="HDMI_EDID_NON_PRMODES_SET1_SCDC.bin"		dpcd="None"/>
+		</Group2>
+		<Group3>
+			<DisplayConfig	display="EDP"	edid="eDP_CMN_1920x1080_60Hz_NonPSR_8BPC_138_77.bin"	dpcd="eDP_CMN_1920x1080_60Hz_NonPSR_8BPC_138_77_DPCD.txt"/>
+			<DisplayConfig	display="DP"	edid="DP_19x10_60rr.bin"			                    dpcd="HBR2_DPCD.txt"/>
+			<DisplayConfig	display="HDMI"	edid="HDMI_19x10_60rr.bin"								dpcd="None"/>
+		</Group3>
+	</Platform>
+	<Platform Name="DG2" SKU="">
+		<Group1>
+			<DisplayConfig	display="EDP"	edid="eDP_SHP_3840x2160_60Hz_PSR2_8BPC_533_25.bin"	dpcd="eDP_SHP_3840x2160_60Hz_PSR_8BPC_533_25_DPCD.txt"/>
+			<DisplayConfig	display="DP"	edid="Acer_H277HK_DP.bin"							dpcd="Acer_H277HK_nonVRR_DPCD.txt"/>
+			<DisplayConfig	display="HDMI"	edid="HDMI_EDID_NON_PRMODES_SET1_SCDC.bin"			dpcd="None"/>
+		</Group1>
+		<Group2>
+			<DisplayConfig	display="EDP"	edid="eDP_SHP_3840x2160_60Hz_PSR2_8BPC_533_25.bin"	dpcd="eDP_SHP_3840x2160_60Hz_PSR_8BPC_533_25_DPCD.txt"/>
+			<DisplayConfig	display="DP"	edid="Acer_H277HK_DP.bin"							dpcd="Acer_H277HK_nonVRR_DPCD.txt"/>
+			<DisplayConfig	display="HDMI"	edid="HDMI_EDID_NON_PRMODES_SET1_SCDC.bin"			dpcd="None"/>
+		</Group2>
+		<Group3>
+			<DisplayConfig	display="EDP"	edid="eDP_CMN_1920x1080_60Hz_NonPSR_8BPC_138_77.bin"	dpcd="eDP_CMN_1920x1080_60Hz_NonPSR_8BPC_138_77_DPCD.txt"/>
+			<DisplayConfig	display="DP"	edid="DP_19x10_60rr.bin"			                    dpcd="HBR2_DPCD.txt"/>
+			<DisplayConfig	display="HDMI"	edid="HDMI_19x10_60rr.bin"								dpcd="None"/>
+		</Group3>
+	</Platform>
+	<Platform Name="DG2" SKU="B0">
+		<Group1>
+			<DisplayConfig	display="EDP"	edid="EDP_5K_5120_3200_60Hz_1042clk_8bpc.bin"	dpcd="HBR3_WSSC_DPCD.txt"/>
+			<DisplayConfig	display="DP"	edid="EDP_5K_5120_3200_60Hz_1042clk_8bpc.bin"	dpcd="HBR3_DPCD.txt"/>
+			<DisplayConfig	display="HDMI"	edid="HDMI_EDID_NON_PRMODES_SET1_SCDC.bin"		dpcd="None"/>
+		</Group1>
+		<Group2>
+			<DisplayConfig	display="EDP"	edid="EDP_5K_5120_3200_60Hz_1042clk_8bpc.bin"	dpcd="HBR3_WSSC_DPCD.txt"/>
+			<DisplayConfig	display="DP"	edid="Acer_H277HK_DP.bin"						dpcd="Acer_H277HK_nonVRR_DPCD.txt"/>
+			<DisplayConfig	display="HDMI"	edid="HDMI_EDID_NON_PRMODES_SET1_SCDC.bin"		dpcd="None"/>
+		</Group2>
+		<Group3>
+			<DisplayConfig	display="EDP"	edid="eDP_CMN_1920x1080_60Hz_NonPSR_8BPC_138_77.bin"	dpcd="eDP_CMN_1920x1080_60Hz_NonPSR_8BPC_138_77_DPCD.txt"/>
+			<DisplayConfig	display="DP"	edid="DP_19x10_60rr.bin"			                    dpcd="HBR2_DPCD.txt"/>
+			<DisplayConfig	display="HDMI"	edid="HDMI_19x10_60rr.bin"								dpcd="None"/>
+		</Group3>
+	</Platform>
+	<Platform Name="LKF1" SKU="">
+		<Group1>
+			<DisplayConfig	display="DP"	edid="Acer_H277HK_DP.bin"					dpcd="Acer_H277HK_nonVRR_DPCD.txt"/>
+			<DisplayConfig	display="HDMI"	edid="HDMI_EDID_NON_PRMODES_SET1_SCDC.bin"	dpcd="None"/>
+		</Group1>
+		<Group2>
+			<DisplayConfig	display="DP"	edid="Acer_H277HK_DP.bin"					dpcd="Acer_H277HK_nonVRR_DPCD.txt"/>
+			<DisplayConfig	display="HDMI"	edid="HDMI_EDID_NON_PRMODES_SET1_SCDC.bin"	dpcd="None"/>
+		</Group2>
+		<Group3>
+			<DisplayConfig	display="EDP"	edid="eDP_CMN_1920x1080_60Hz_NonPSR_8BPC_138_77.bin"	dpcd="eDP_CMN_1920x1080_60Hz_NonPSR_8BPC_138_77_DPCD.txt"/>
+			<DisplayConfig	display="DP"	edid="DP_19x10_60rr.bin"			                    dpcd="HBR2_DPCD.txt"/>
+			<DisplayConfig	display="HDMI"	edid="HDMI_19x10_60rr.bin"								dpcd="None"/>
+		</Group3>
+	</Platform>
+</Test>

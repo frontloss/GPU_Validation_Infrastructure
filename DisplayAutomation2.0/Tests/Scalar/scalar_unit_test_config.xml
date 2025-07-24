@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+<Test Feature="Scalar" Modes="CI,FS,MAR">
+<Platform Name="TGL" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_D,DP_E,DP_F,DP_G" edid="EDP_5K_5120_3200_60Hz_1042clk_8bpc_oddModes.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_A,DP_B" edid="Acer_H277HK_DP_oddModes.bin" dpcd="Acer_H277HK_nonVRR_DPCD.txt" />
+		<DisplayConfig Port="HDMI_A,HDMI_B,HDMI_D,HDMI_E,HDMI_F,HDMI_G" edid="SHARP_PN_K321_HDMI_oddModes.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+	<PipeSizeConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_D,DP_E,DP_F,DP_G" edid="EDP_4K_3900_4320_60Hz_1069clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_A,DP_B" edid="EDP_4K_3900_4320_60Hz_1069clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+	</PipeSizeConfig>
+
+	<PipeSrcSize>
+		<EDIDInstance HActive="1365" VActive="768" RefreshRate="60" Scaling="MDS" Supported= "False"/>
+		<EDIDInstance HActive="1368" VActive="767" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+		<EDIDInstance HActive="1366" VActive="768" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+	</PipeSrcSize>
+
+	<PipeSize>
+		<EDIDInstance HActive="3900" VActive="4321" RefreshRate="60" Scaling="MDS" Supported= "False"/>
+		<EDIDInstance HActive="3900" VActive="4320" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+	</PipeSize>
+</Platform>
+<Platform Name="DG1" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_A,DP_B,DP_C,DP_D" edid="EDP_5K_5120_3200_60Hz_1042clk_8bpc_oddModes.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="HDMI_A,HDMI_B,HDMI_C,HDMI_D" edid="SHARP_PN_K321_HDMI_oddModes.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+	<PipeSizeConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_A,DP_B,DP_C,DP_D" edid="EDP_4K_3900_4320_60Hz_1069clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+	</PipeSizeConfig>
+
+	<PipeSrcSize>
+		<EDIDInstance HActive="1365" VActive="768" RefreshRate="60" Scaling="MDS" Supported= "False"/>
+		<EDIDInstance HActive="1368" VActive="767" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+		<EDIDInstance HActive="1366" VActive="768" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+	</PipeSrcSize>
+
+	<PipeSize>
+		<EDIDInstance HActive="3900" VActive="4321" RefreshRate="60" Scaling="MDS" Supported= "False"/>
+		<EDIDInstance HActive="3900" VActive="4320" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+	</PipeSize>
+</Platform>
+<Platform Name="RKL" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_A,DP_B,DP_C,DP_D" edid="EDP_5K_5120_3200_60Hz_1042clk_8bpc_oddModes.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="HDMI_A,HDMI_B,HDMI_C,HDMI_D" edid="SHARP_PN_K321_HDMI_oddModes.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+	<PipeSizeConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_A,DP_B,DP_C,DP_D" edid="EDP_4K_3900_4320_60Hz_1069clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+	</PipeSizeConfig>
+
+	<PipeSrcSize>
+		<EDIDInstance HActive="1365" VActive="768" RefreshRate="60" Scaling="MDS" Supported= "False"/>
+		<EDIDInstance HActive="1368" VActive="767" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+		<EDIDInstance HActive="1366" VActive="768" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+	</PipeSrcSize>
+
+	<PipeSize>
+		<EDIDInstance HActive="3900" VActive="4321" RefreshRate="60" Scaling="MDS" Supported= "False"/>
+		<EDIDInstance HActive="3900" VActive="4320" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+	</PipeSize>
+</Platform>
+<Platform Name="DG2" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_A,DP_B,DP_C,DP_D" edid="Acer_H277HK_DP_oddModes.bin" dpcd="Acer_H277HK_nonVRR_DPCD.txt" />
+		<DisplayConfig Port="HDMI_A,HDMI_B,HDMI_C,HDMI_D" edid="SHARP_PN_K321_HDMI_oddModes.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+
+	<PipeSrcSize>
+		<EDIDInstance HActive="1365" VActive="768" RefreshRate="60" Scaling="MDS" Supported= "False"/>
+		<EDIDInstance HActive="1368" VActive="767" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+		<EDIDInstance HActive="1366" VActive="768" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+	</PipeSrcSize>
+</Platform>
+<Platform Name="DG2" SKU="B0">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_A,DP_B,DP_C,DP_D" edid="EDP_5K_5120_3200_60Hz_1042clk_8bpc_oddModes.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="HDMI_A,HDMI_B,HDMI_C,HDMI_D" edid="SHARP_PN_K321_HDMI_oddModes.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+	<PipeSizeConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_A,DP_B,DP_C,DP_D" edid="EDP_4K_3900_4320_60Hz_1069clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+	</PipeSizeConfig>
+
+	<PipeSrcSize>
+		<EDIDInstance HActive="1365" VActive="768" RefreshRate="60" Scaling="MDS" Supported= "False"/>
+		<EDIDInstance HActive="1368" VActive="767" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+		<EDIDInstance HActive="1366" VActive="768" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+	</PipeSrcSize>
+
+	<PipeSize>
+		<EDIDInstance HActive="3900" VActive="4321" RefreshRate="60" Scaling="MDS" Supported= "False"/>
+		<EDIDInstance HActive="3900" VActive="4320" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+	</PipeSize>
+</Platform>
+<Platform Name="ADLS" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_A,DP_B,DP_C,DP_D,DP_E" edid="EDP_5K_5120_3200_60Hz_1042clk_8bpc_oddModes.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="HDMI_A,HDMI_B,HDMI_C,HDMI_D,HDMI_E" edid="SHARP_PN_K321_HDMI_oddModes.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+	<PipeSizeConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_A,DP_B,DP_C,DP_D,DP_E" edid="EDP_4K_3900_4320_60Hz_1069clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+	</PipeSizeConfig>
+
+	<PipeSrcSize>
+		<EDIDInstance HActive="1365" VActive="768" RefreshRate="60" Scaling="MDS" Supported= "False"/>
+		<EDIDInstance HActive="1368" VActive="767" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+		<EDIDInstance HActive="1366" VActive="768" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+	</PipeSrcSize>
+
+	<PipeSize>
+		<EDIDInstance HActive="3900" VActive="4321" RefreshRate="60" Scaling="MDS" Supported= "False"/>
+		<EDIDInstance HActive="3900" VActive="4320" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+	</PipeSize>
+</Platform>
+<Platform Name="ADLP" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_F,DP_G,DP_H,DP_I" edid="EDP_5K_5120_3200_60Hz_1042clk_8bpc_oddModes.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_A,DP_B" edid="Acer_H277HK_DP_oddModes.bin" dpcd="Acer_H277HK_nonVRR_DPCD.txt" />
+		<DisplayConfig Port="HDMI_A,HDMI_B,HDMI_F,HDMI_G,HDMI_H,HDMI_I" edid="SHARP_PN_K321_HDMI_oddModes.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+	<PipeSizeConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_F,DP_G,DP_H,DP_I" edid="EDP_4K_3900_4320_60Hz_1069clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_A,DP_B" edid="EDP_4K_3900_4320_60Hz_1069clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+	</PipeSizeConfig>
+
+	<PipeSrcSize>
+		<EDIDInstance HActive="1365" VActive="768" RefreshRate="60" Scaling="MDS" Supported= "False"/>
+		<EDIDInstance HActive="1368" VActive="767" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+		<EDIDInstance HActive="1366" VActive="768" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+	</PipeSrcSize>
+
+	<PipeSize>
+		<EDIDInstance HActive="3900" VActive="4321" RefreshRate="60" Scaling="MDS" Supported= "False"/>
+        <EDIDInstance HActive="3900" VActive="4320" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+	</PipeSize>
+</Platform>
+<Platform Name="MTL" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_A,DP_B,DP_F,DP_G,DP_H,DP_I" edid="EDP_5K_5120_3200_60Hz_1042clk_8bpc_oddModes.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="HDMI_A,HDMI_B,HDMI_F,HDMI_G,HDMI_H,HDMI_I" edid="SHARP_PN_K321_HDMI_oddModes.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+	<PipeSizeConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_F,DP_G,DP_H,DP_I" edid="EDP_4K_3900_4320_60Hz_1069clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_A,DP_B" edid="EDP_4K_3900_4320_60Hz_1069clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+	</PipeSizeConfig>
+
+	<PipeSrcSize>
+		<EDIDInstance HActive="1365" VActive="768" RefreshRate="60" Scaling="MDS" Supported= "False"/>
+		<EDIDInstance HActive="1368" VActive="767" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+		<EDIDInstance HActive="1366" VActive="768" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+	</PipeSrcSize>
+
+	<PipeSize>
+		<EDIDInstance HActive="3900" VActive="4321" RefreshRate="60" Scaling="MDS" Supported= "False"/>
+        <EDIDInstance HActive="3900" VActive="4320" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+	</PipeSize>
+</Platform>
+<Platform Name="LNL" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_A,DP_B,DP_F,DP_G,DP_H,DP_I" edid="EDP_5K_5120_3200_60Hz_1042clk_8bpc_oddModes.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="HDMI_A,HDMI_B,HDMI_F,HDMI_G,HDMI_H,HDMI_I" edid="SHARP_PN_K321_HDMI_oddModes.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+	<PipeSizeConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_F,DP_G,DP_H,DP_I" edid="EDP_4K_3900_4320_60Hz_1069clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="DP_A,DP_B" edid="EDP_4K_3900_4320_60Hz_1069clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+	</PipeSizeConfig>
+
+	<PipeSrcSize>
+		<EDIDInstance HActive="1365" VActive="768" RefreshRate="60" Scaling="MDS" Supported= "False"/>
+		<EDIDInstance HActive="1368" VActive="767" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+		<EDIDInstance HActive="1366" VActive="768" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+	</PipeSrcSize>
+
+	<PipeSize>
+		<EDIDInstance HActive="3900" VActive="4321" RefreshRate="60" Scaling="MDS" Supported= "False"/>
+        <EDIDInstance HActive="3900" VActive="4320" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+	</PipeSize>
+</Platform>
+<Platform Name="PTL" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_A,DP_B,DP_F,DP_G,DP_H,DP_I" edid="EDP_5K_5120_3200_60Hz_1042clk_8bpc_oddModes.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="HDMI_A,HDMI_B,HDMI_F,HDMI_G,HDMI_H,HDMI_I" edid="SHARP_PN_K321_HDMI_oddModes.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+	<PipeSizeConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_A, DP_B,DP_F,DP_G,DP_H,DP_I" edid="EDP_4K_3900_4320_60Hz_1069clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+	</PipeSizeConfig>
+
+	<PipeSrcSize>
+		<EDIDInstance HActive="1365" VActive="768" RefreshRate="60" Scaling="MDS" Supported= "False"/>
+		<EDIDInstance HActive="1368" VActive="767" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+		<EDIDInstance HActive="1366" VActive="768" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+	</PipeSrcSize>
+
+	<PipeSize>
+		<EDIDInstance HActive="3900" VActive="4321" RefreshRate="60" Scaling="MDS" Supported= "False"/>
+        <EDIDInstance HActive="3900" VActive="4320" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+	</PipeSize>
+</Platform>
+<Platform Name="NVL" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_A,DP_B,DP_F,DP_G,DP_H,DP_I" edid="EDP_5K_5120_3200_60Hz_1042clk_8bpc_oddModes.bin" dpcd="HBR3_DPCD.txt" />
+		<DisplayConfig Port="HDMI_A,HDMI_B,HDMI_F,HDMI_G,HDMI_H,HDMI_I" edid="SHARP_PN_K321_HDMI_oddModes.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+	<PipeSizeConfig>
+		<DisplayConfig Port="EDP_A,EDP_B,DP_A, DP_B,DP_F,DP_G,DP_H,DP_I" edid="EDP_4K_3900_4320_60Hz_1069clk_8bpc.bin" dpcd="HBR3_DPCD.txt" />
+	</PipeSizeConfig>
+
+	<PipeSrcSize>
+		<EDIDInstance HActive="1365" VActive="768" RefreshRate="60" Scaling="MDS" Supported= "False"/>
+		<EDIDInstance HActive="1368" VActive="767" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+		<EDIDInstance HActive="1366" VActive="768" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+	</PipeSrcSize>
+
+	<PipeSize>
+		<EDIDInstance HActive="3900" VActive="4321" RefreshRate="60" Scaling="MDS" Supported= "False"/>
+        <EDIDInstance HActive="3900" VActive="4320" RefreshRate="60" Scaling="MDS" Supported= "True"/>
+	</PipeSize>
+</Platform>
+</Test>

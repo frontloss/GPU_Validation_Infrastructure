@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+    <Feature Name="FBC" Owner="asau1">
+        <Test LastModifiedWW="2018.WW46" Name="fbc_3d_workload.py" Owner="asau1" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM;GFT" Id="FBCOM001">
+                <CommandLine>python Tests\Power\FBC\fbc_3d_workload.py -edp_a -dp_b -hdmi_c -power_event s3</CommandLine>
+                <OS>WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;RYF;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;RYF_SOC;DG1_SOC;EHL_SOC;RKL_SOC;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM;GFT" Id="FBCOM002">
+                <CommandLine>python Tests\Power\FBC\fbc_3d_workload.py -edp_a -dp_b -hdmi_c -power_event cs</CommandLine>
+                <OS>WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;RYF;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SOC;TGL_SOC;RYF_SOC;DG1_SOC;EHL_SOC;RKL_SOC;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM;GFT" Id="FBCOM003">
+                <CommandLine>python Tests\Power\FBC\fbc_3d_workload.py -mipi_a -dp_d -hdmi_e -power_event s3</CommandLine>
+                <OS>WinRS3;WinRS4</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM;GFT" Id="FBCOM004">
+                <CommandLine>python Tests\Power\FBC\fbc_3d_workload.py -mipi_a -dp_d -hdmi_e -power_event cs</CommandLine>
+                <OS>WinRS3;WinRS4</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM;GFT" Id="FBCOM012">
+                <CommandLine>python Tests\Power\FBC\fbc_3d_workload.py -mipi_a -dp_d -dp_e -power_event s3</CommandLine>
+                <OS>WinRS3;WinRS4</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW46" Name="fbc_plane_resize.py" Owner="asau1" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM;GFT" Id="FBCOM005">
+                <CommandLine>python Tests\Power\FBC\fbc_plane_resize.py -edp_a -config single</CommandLine>
+                <OS>WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;RYF;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;TGL_SIM;TGL_EMU;TGL_SOC;RYF_SIM;RYF_EMU;RYF_SOC;DG1_SIM;DG1_EMU;DG1_SOC;EHL_SIM;EHL_EMU;EHL_SOC;RKL_SIM;RKL_EMU;RKL_SIM;RKL_EMU;RKL_SOC;DG2_SOC;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM;GFT" Id="FBCOM006">
+                <CommandLine>python Tests\Power\FBC\fbc_plane_resize.py -mipi_a -config single</CommandLine>
+                <OS>WinRS3;WinRS4</OS>
+                <Platform>ICL;LKF1;TGL;EHL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;EHL_SIM;EHL_EMU;EHL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM;GFT" Id="FBCOM007">
+                <CommandLine>python Tests\Power\FBC\fbc_plane_resize.py -dp_d -config single</CommandLine>
+                <OS>WinRS3;WinRS4</OS>
+                <Platform>ICL;LKF1;TGL;RYF;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_SIM;ICL_EMU;ICL_SOC;LKF1_SIM;LKF1_EMU;LKF1_SOC;LKF1_DOD;TGL_SIM;TGL_EMU;TGL_SOC;RYF_SIM;RYF_EMU;RYF_SOC;DG1_SIM;DG1_EMU;DG1_SOC;EHL_SIM;EHL_EMU;EHL_SOC;EHL_DOD;RKL_SIM;RKL_EMU;RKL_SIM;RKL_EMU;RKL_SOC;DG2_SOC;DG2_SIM;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+        <Test LastModifiedWW="2018.WW46" Name="fbc_power_event.py" Owner="asau1" Priority="P1" Version="1">
+            <TestInstance Grids="CI;PreETM;ETM;GFT" Id="FBCOM008">
+                <CommandLine>python Tests\Power\FBC\fbc_power_event.py -edp_a -dp_b -hdmi_c -power_event s3 -config extended</CommandLine>
+                <OS>WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;RYF;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_EMU;ICL_SOC;TGL_EMU;TGL_SOC;RYF_EMU;RYF_SOC;DG1_EMU;DG1_SOC;EHL_EMU;EHL_SOC;RKL_EMU;RKL_SOC;DG2_SOC;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM;GFT" Id="FBCOM009">
+                <CommandLine>python Tests\Power\FBC\fbc_power_event.py -edp_a -dp_b -hdmi_c -power_event cs -config extended</CommandLine>
+                <OS>WinRS3;WinRS4</OS>
+                <Platform>ICL;TGL;RYF;DG1;EHL;RKL;DG2</Platform>
+                <TestEnvironment>ICL_EMU;ICL_SOC;TGL_EMU;TGL_SOC;RYF_EMU;RYF_SOC;DG1_EMU;DG1_SOC;EHL_EMU;EHL_SOC;RKL_EMU;RKL_SOC;DG2_SOC;DG2_EMU</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM;GFT" Id="FBCOM010">
+                <CommandLine>python Tests\Power\FBC\fbc_power_event.py -mipi_a -dp_d -hdmi_e -power_event s3 -config extended</CommandLine>
+                <OS>WinRS3;WinRS4</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_EMU;LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM;GFT" Id="FBCOM011">
+                <CommandLine>python Tests\Power\FBC\fbc_power_event.py -mipi_a -dp_b -hdmi_c -power_event cs -config extended</CommandLine>
+                <OS>WinRS3;WinRS4</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_EMU;LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;PreETM;ETM;GFT" Id="FBCOM013">
+                <CommandLine>python Tests\Power\FBC\fbc_power_event.py -mipi_a -dp_d -dp_e -power_event cs -config extended</CommandLine>
+                <OS>WinRS3;WinRS4</OS>
+                <Platform>LKF1</Platform>
+                <TestEnvironment>LKF1_EMU;LKF1_SOC;LKF1_DOD</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+    </Feature>
+</Display_Automation_2.0>

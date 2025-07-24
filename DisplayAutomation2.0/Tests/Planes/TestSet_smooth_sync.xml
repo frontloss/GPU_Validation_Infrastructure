@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+    <Feature Name="SmoothSync" Owner="sgaikwad">
+        <Test LastModifiedWW="2020.WW23" Name="ss_basic.py" Owner="sgaikwad" Priority="P1" Version="1">
+            <TestInstance Grids="CI;GFT" Id="SSYNC001">
+                <CommandLine>python Tests/Planes/SmoothSync/ss_basic.py -edp_a -config single -pixelformat SB_R10G10B10A2 -tiling SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;GFT" Id="SSYNC002">
+                <CommandLine>python Tests/Planes/SmoothSync/ss_basic.py -edp_a -config single -pixelformat SB_R10G10B10A2 -tiling SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_EMU;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;GFT" Id="SSYNC003">
+                <CommandLine>python Tests/Planes/SmoothSync/ss_basic.py -edp_a -config single -pixelformat SB_R10G10B10A2 -tiling SURFACE_MEMORY_X_TILED</CommandLine>
+                <OS>Win19H1</OS>
+                <Platform>ADLP;DG2</Platform>
+                <TestEnvironment>ADLP_EMU;ADLP_SOC;DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+
+        <Test LastModifiedWW="2020.WW23" Name="ss_multipipe_singleplane_async_flips.py" Owner="sgaikwad" Priority="P1" Version="1">
+            <TestInstance Grids="CI;GFT" Id="SSYNC005">
+                <CommandLine>python Tests/Planes/SmoothSync/ss_multipipe_singleplane_async_flips.py -edp_a -config single -pixelformat SB_R10G10B10A2 -tiling SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;GFT" Id="SSYNC006">
+                <CommandLine>python Tests/Planes/SmoothSync/ss_multipipe_singleplane_async_flips.py -edp_a -hdmi_b -config clone -pixelformat SB_R10G10B10A2 -tiling SURFACE_MEMORY_X_TILED</CommandLine>
+                <OS>Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;GFT" Id="SSYNC007">
+                <CommandLine>python Tests/Planes/SmoothSync/ss_multipipe_singleplane_async_flips.py -edp_a -config single -pixelformat SB_R10G10B10A2 -tiling SURFACE_MEMORY_X_TILED</CommandLine>
+                <OS>Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_EMU;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;GFT" Id="SSYNC008">
+                <CommandLine>python Tests/Planes/SmoothSync/ss_multipipe_singleplane_async_flips.py -edp_a -hdmi_b -config single -pixelformat SB_R10G10B10A2 -tiling SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_EMU;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+
+        <Test LastModifiedWW="2020.WW23" Name="ss_multipipe_singleplane_async_sync_flips.py" Owner="sgaikwad" Priority="P1" Version="1">
+            <TestInstance Grids="CI;GFT" Id="SSYNC009">
+                <CommandLine>python Tests/Planes/SmoothSync/ss_multipipe_singleplane_async_sync_flips.py -edp_a -config single -pixelformat SB_R10G10B10A2 -tiling SURFACE_MEMORY_TILE4</CommandLine>
+                <OS>Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;GFT" Id="SSYNC010">
+                <CommandLine>python Tests/Planes/SmoothSync/ss_multipipe_singleplane_async_sync_flips.py -edp_a -hdmi_b -config clone -pixelformat SB_R10G10B10A2 -tiling SURFACE_MEMORY_X_TILED</CommandLine>
+                <OS>Win19H1</OS>
+                <Platform>DG2</Platform>
+                <TestEnvironment>DG2_EMU;DG2_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;GFT" Id="SSYNC011">
+                <CommandLine>python Tests/Planes/SmoothSync/ss_multipipe_singleplane_async_sync_flips.py -edp_a -config single -pixelformat SB_R10G10B10A2 -tiling SURFACE_MEMORY_X_TILED</CommandLine>
+                <OS>Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_EMU;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+            <TestInstance Grids="CI;GFT" Id="SSYNC012">
+                <CommandLine>python Tests/Planes/SmoothSync/ss_multipipe_singleplane_async_sync_flips.py -edp_a -hdmi_b -config single -pixelformat SB_R10G10B10A2 -tiling SURFACE_MEMORY_Y_LEGACY_TILED</CommandLine>
+                <OS>Win19H1</OS>
+                <Platform>ADLP</Platform>
+                <TestEnvironment>ADLP_EMU;ADLP_SOC</TestEnvironment>
+                <ExecutionTime_mm>0</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+                <QualificationStatus>NONE</QualificationStatus>
+            </TestInstance>
+        </Test>
+    </Feature>
+</Display_Automation_2.0>

@@ -1,0 +1,28 @@
+HKCR
+{
+	IgfxExtBridge.SGUtil.1 = s 'SGUtil Class'
+	{
+		CLSID = s '{2299C8C2-634E-4745-923A-DE0C8D03E7BB}'
+	}
+	IgfxExtBridge.SGUtil = s 'SGUtil Class'
+	{
+		CLSID = s '{2299C8C2-634E-4745-923A-DE0C8D03E7BB}'
+		CurVer = s 'IgfxExtBridge.SGUtil.1'
+	}
+	
+	NoRemove CLSID
+	{
+		ForceRemove {2299C8C2-634E-4745-923A-DE0C8D03E7BB} = s 'SGUtil Class'
+		{
+			ProgID = s 'IgfxExtBridge.SGUtil.1'
+			VersionIndependentProgID = s 'IgfxExtBridge.SGUtil'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{9A650EBC-929B-4210-BA05-76D5D021B140}'
+		}
+	}
+}

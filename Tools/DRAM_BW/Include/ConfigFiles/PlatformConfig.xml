@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<PlatformConfigs>
+  <Platform>
+    <Name>TigerLake</Name>
+    <Enum>6</Enum>
+    <Config>
+      <Name>DDR4 Single Channel 8 GB</Name>
+      <SimulationData>
+        <MmioData Offset="0x145000" Data="0x0" />
+        <MmioData Offset="0x146054" Data="0x0" />
+        <MmioData Offset="0x146058" Data="0x0" />
+        <MmioData Offset="0x14605C" Data="0x0" />
+        <MmioData Offset="0x146060" Data="0x0" />
+        <MmioData Offset="0x51004" Data="0x0" />
+        <PcuMailBoxData MailBoxCmd="0x6" CmdParam1="0x0" CmdParam2="0x0" CmdData="0x0" CmdData1="0x0" ReadResult="0x46423900" ReadResult2="0x0"/>
+        <PcuMailBoxData MailBoxCmd="0x6" CmdParam1="0x0" CmdParam2="0x0" CmdData="0x1" CmdData1="0x0" ReadResult="0x89797365" ReadResult2="0x0"/>
+        <PcuMailBoxData MailBoxCmd="0x23" CmdParam1="0x0" CmdParam2="0x0" CmdData="0x0" CmdData1="0x0" ReadResult="0xA" ReadResult2="0x0"/>
+        <PcuMailBoxData MailBoxCmd="0x21" CmdParam1="0x0" CmdParam2="0x0" CmdData="0x0" CmdData1="0x0" ReadResult="0x1" ReadResult2="0x0"/>
+        <PcuMailBoxData MailBoxCmd="0xD" CmdParam1="0x0" CmdParam2="0x0" CmdData="0x0" CmdData1="0x0" ReadResult="0x110" ReadResult2="0x0"/>
+        <PcuMailBoxData MailBoxCmd="0xD" CmdParam1="0x1" CmdParam2="0x0" CmdData="0x0" CmdData1="0x0" ReadResult="0xF0F0080" ReadResult2="0x2308"/>
+      </SimulationData>
+    </Config>
+    <Config>
+      <Name>DDR4 Dual Channel 16 GB</Name>
+      <SimulationData>
+        <MmioData Offset="0x145000" Data="0x10000000" />
+        <MmioData Offset="0x146054" Data="0x0" />
+        <MmioData Offset="0x146058" Data="0x0" />
+        <MmioData Offset="0x14605C" Data="0x0" />
+        <MmioData Offset="0x146060" Data="0x0" />
+        <MmioData Offset="0x51004" Data="0x0" />
+        <PcuMailBoxData MailBoxCmd="0x6" CmdParam1="0x0" CmdParam2="0x0" CmdData="0x0" CmdData1="0x0" ReadResult="0x46423900" ReadResult2="0x0"/>
+        <PcuMailBoxData MailBoxCmd="0x6" CmdParam1="0x0" CmdParam2="0x0" CmdData="0x1" CmdData1="0x0" ReadResult="0x89797365" ReadResult2="0x0"/>
+        <PcuMailBoxData MailBoxCmd="0x23" CmdParam1="0x0" CmdParam2="0x0" CmdData="0x0" CmdData1="0x0" ReadResult="0xA" ReadResult2="0x0"/>
+        <PcuMailBoxData MailBoxCmd="0x21" CmdParam1="0x0" CmdParam2="0x0" CmdData="0x0" CmdData1="0x0" ReadResult="0x1" ReadResult2="0x0"/>
+        <PcuMailBoxData MailBoxCmd="0xD" CmdParam1="0x0" CmdParam2="0x0" CmdData="0x0" CmdData1="0x0" ReadResult="0x120" ReadResult2="0x0"/>
+        <PcuMailBoxData MailBoxCmd="0xD" CmdParam1="0x1" CmdParam2="0x0" CmdData="0x0" CmdData1="0x0" ReadResult="0xF0F0080" ReadResult2="0x2308"/>
+      </SimulationData>
+    </Config>
+        <Config>
+      <Name>LPDDR 8 GB</Name>
+      <SimulationData>
+        <MmioData Offset="0x145000" Data="0x00004003" />
+        <MmioData Offset="0x146054" Data="0x0" />
+        <MmioData Offset="0x146058" Data="0x0" />
+        <MmioData Offset="0x14605C" Data="0x0" />
+        <MmioData Offset="0x146060" Data="0x0" />
+        <MmioData Offset="0x51004" Data="0x0" />
+        <PcuMailBoxData MailBoxCmd="0x6" CmdParam1="0x0" CmdParam2="0x0" CmdData="0x0" CmdData1="0x0" ReadResult="0x46423900" ReadResult2="0x0"/>
+        <PcuMailBoxData MailBoxCmd="0x6" CmdParam1="0x0" CmdParam2="0x0" CmdData="0x1" CmdData1="0x0" ReadResult="0x89797365" ReadResult2="0x0"/>
+        <PcuMailBoxData MailBoxCmd="0x23" CmdParam1="0x0" CmdParam2="0x0" CmdData="0x0" CmdData1="0x0" ReadResult="0xA" ReadResult2="0x0"/>
+        <PcuMailBoxData MailBoxCmd="0x21" CmdParam1="0x0" CmdParam2="0x0" CmdData="0x0" CmdData1="0x0" ReadResult="0x1" ReadResult2="0x0"/>
+        <PcuMailBoxData MailBoxCmd="0xD" CmdParam1="0x0" CmdParam2="0x0" CmdData="0x0" CmdData1="0x0" ReadResult="0x143" ReadResult2="0x0"/>
+        <PcuMailBoxData MailBoxCmd="0xD" CmdParam1="0x1" CmdParam2="0x0" CmdData="0x0" CmdData1="0x0" ReadResult="0x14140080" ReadResult2="0x2D10"/>
+      </SimulationData>
+    </Config>
+  </Platform>
+</PlatformConfigs>
+

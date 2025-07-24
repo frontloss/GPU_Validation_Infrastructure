@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SheConnections>
+    <SheConfig ConfigName="SHE_CFG1">
+        <!-- PORT G (Normal DP ) -> MST Hub. 1st DP output from dock -> Emulator Port1 (MST Tiled Master EDID).
+         2nd DP output from dock -> Emulator Port2 (MST Tiled Slave EDID) -->
+        <Connection DisplayPort="DP_G"  EmulatorPort="IO_PORT10, IO_PORT11"/>
+    </SheConfig>
+
+    <SheConfig ConfigName="SHE_CFG2">
+        <!-- PORT-D (Type C) -> Emulator Port1(SST Tiled Master EDID) -->
+        <Connection DisplayPort="DP_D"  EmulatorPort="EMULATOR_PORT1"/>
+        <!-- PORT-E (Type C) -> Emulator Port1(SST Tiled Slave EDID) -->
+        <Connection DisplayPort="DP_E"  EmulatorPort="EMULATOR_PORT2"/>
+        <!-- PORT F (Type C) -> Emulator Port 3 (4K EDID) -->
+        <Connection DisplayPort="DP_F"  EmulatorPort="EMULATOR_PORT3"/>
+    </SheConfig>
+
+    <SheConfig ConfigName="SHE_CFG3">
+        <!-- PORT-D (TBT) -> TBT Dock. 1st DP output from dock -> Emulator Port1. 2nd DP output from dock -> Emulator Port2 -->
+        <Connection DisplayPort="DP_D"  EmulatorPort="EMULATOR_PORT1, EMULATOR_PORT2"/>
+        <!-- PORT-E (Type C) -> Emulator Port3 -->
+        <Connection DisplayPort="DP_E"  EmulatorPort="EMULATOR_PORT3"/>
+    </SheConfig>
+
+    <SheConfig ConfigName="SHE_CFG4">
+        <!-- PORT D (Type C) -> Emulator Port 1 (4K EDID) -->
+        <Connection DisplayPort="DP_D"  EmulatorPort="EMULATOR_PORT1"/>
+        <!-- PORT E (Type C) -> Emulator Port 2 (4K EDID) -->
+        <Connection DisplayPort="DP_E"  EmulatorPort="EMULATOR_PORT2"/>
+        <!-- PORT F (Type C) -> Emulator Port 3 (4K EDID) -->
+        <Connection DisplayPort="DP_F"  EmulatorPort="EMULATOR_PORT3"/>
+    </SheConfig>
+
+    <SheConfig ConfigName="SHE_CFG5">
+        <!-- PORT-D (TBT) -> TBT Dock. 1st DP output from dock -> Emulator Port1. 2nd DP output from dock -> Emulator Port2 -->
+        <Connection DisplayPort="DP_D"  EmulatorPort="EMULATOR_PORT1, EMULATOR_PORT2"/>
+        <!-- PORT-E -> Apple MFD Empty Dongle -->
+        <Connection DisplayPort="DP_E"  EmulatorPort="EMULATOR_NONE"/>
+        <!-- PORT-F (Type C) -> Club3D CSV-1537 Dongle (Switch selected to 2-lane) -> Emulator Port 3 (4K EDID) -->
+        <Connection DisplayPort="DP_F"  EmulatorPort="EMULATOR_PORT3"/>
+    </SheConfig>
+
+    <SheConfig ConfigName="SHE_CFG6">
+        <!-- PORT E (Type C) -> Emulator Port 1 (4K EDID) -->
+        <Connection DisplayPort="DP_E"  EmulatorPort="EMULATOR_PORT1"/>
+        <!-- PORT G (Normal DP ) -> Emulator Port 2 (4K EDID) -->
+        <Connection DisplayPort="DP_G"  EmulatorPort="EMULATOR_PORT2"/>
+        <!-- PORT D (Type C) -> Emulator Port 3 (4K EDID) -->
+        <Connection DisplayPort="DP_D"  EmulatorPort="EMULATOR_PORT3"/>
+    </SheConfig>
+
+    <SheConfig ConfigName="SHE_CFG7">
+        <!-- PORT D (Type C) -> Emulator Port 1 (4K EDID) -->
+        <Connection DisplayPort="DP_D"  EmulatorPort="EMULATOR_PORT1"/>
+        <!-- PORT G (Normal DP) -> Emulator Port 2 (4K EDID) -->
+        <Connection DisplayPort="DP_E"  EmulatorPort="EMULATOR_PORT2"/>
+    </SheConfig>
+
+    <SheConfig ConfigName="SHE_CFG8">
+        <!-- PORT-D (TBT) -> TBT Dock. 1st DP output from dock -> Emulator Port1.
+        2nd DP output from dock -> Emulator Port2. TBT output from dock -> Emulator Port3 -->
+        <Connection DisplayPort="DP_D"  EmulatorPort="EMULATOR_PORT1, EMULATOR_PORT2, EMULATOR_PORT3"/>
+    </SheConfig>
+
+    <SheConfig ConfigName="SHE_CFG9">
+        <!-- PORT G (Normal HDMI) -> Emulator Port 1 (4K EDID) -->
+        <Connection DisplayPort="HDMI_G"  EmulatorPort="EMULATOR_PORT1"/>
+        <!-- PORT B (Normal HDMI) -> Emulator Port 1 (4K EDID) -->
+        <Connection DisplayPort="HDMI_B"  EmulatorPort="EMULATOR_PORT2"/>
+        <!-- PORT E (Normal HDMI) -> Emulator Port 1 (4K EDID) -->
+        <Connection DisplayPort="HDMI_E"  EmulatorPort="EMULATOR_PORT3"/>
+    </SheConfig>
+
+</SheConnections>

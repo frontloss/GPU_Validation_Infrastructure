@@ -1,0 +1,165 @@
+;=====================================================================
+;
+; Copyright (c) Intel Corporation (2015).
+;
+; INTEL MAKES NO WARRANTY OF ANY KIND REGARDING THE CODE.  THIS CODE IS
+; LICENSED ON AN "AS IS" BASIS AND INTEL WILL NOT PROVIDE ANY SUPPORT,
+; ASSISTANCE, INSTALLATION, TRAINING OR OTHER SERVICES.  INTEL DOES NOT
+; PROVIDE ANY UPDATES, ENHANCEMENTS OR EXTENSIONS.  INTEL SPECIFICALLY
+; DISCLAIMS ANY WARRANTY OF MERCHANTABILITY, NONINFRINGEMENT, FITNESS FOR ANY
+; PARTICULAR PURPOSE, OR ANY OTHER WARRANTY.  Intel disclaims all liability,
+; including liability for infringement of any proprietary rights, relating to
+; use of the code. No license, express or implied, by estoppel or otherwise,
+; to any intellectual property rights is granted herein.
+;
+;=====================================================================
+
+;
+; File Name: DivaKmd.inf
+; Install information file for DIVA (Driver for Intel Validation Apps) KMD
+; Only mandatory sections are provided for.
+;
+
+;--------- 'Version' Section --------------------------------------------------
+
+[Version]
+; PURPOSE: Required section for every INF-file, by convention, appears first.
+Signature   = "$WINDOWS NT$"
+; Class       = DIVA
+; ClassGUID   = {3629E2AD-4561-4CF5-A8CE-24412E853CC7}; GUID generated for 'DIVA' class devices
+Class       = System
+ClassGUID   = {4D36E97D-E325-11CE-BFC1-08002BE10318}; Class including HALs, system buses, system bridges, ACPI driver, etc.
+Provider    = %OrganizationName%
+CatalogFile = DivaKmd.cat
+DriverVer = 02/04/2019,21.36.57.586
+
+;--------- 'SourceDisksNames' and 'SourceDiskFiles' Section -------------------
+
+[SourceDisksNames]
+; PURPOSE: Identifies the distribution disks that contain the source files to be transferred to the target computer during installation.
+; FORMAT: diskid = disk-description [, [tag-or-cab-file], [unused], [path], [flags]]
+1 = %DivaDiskDesc%
+
+[SourceDisksFiles]
+; PURPOSE: Names source files used during installation, identifies installation disks that contain those files and provides the directory paths.
+; FORMAT: fileName = diskid[, [subdir], [size]]
+DivaKmd.sys = 1
+DivaUtility.dll = 1
+DivaUtilityCLR.dll = 1
+
+;--------- 'DestinationDirs' Section ------------------------------------------
+
+[DestinationDirs]
+; PURPOSE: Specifies target destination directory or directories for all copy, delete, and/or rename operations on driver-files.
+DefaultDestDir = 13 ; copy to Driver Store '%WINDIR%\System32\DriverStore'
+Diva.KernelMode.Files = 13 ; copy to Driver Store '%WINDIR%\System32\DriverStore'
+Diva.UserMode.Files = 13 ; copy to Driver Store '%WINDIR%\System32\DriverStore'
+
+;--------- 'Manufacturer' and 'Models' Sections -------------------------------
+
+[Manufacturer]
+; PURPOSE: Identifies the manufacturer of one or more devices getting installed by INF
+; FORMAT: %strkey% = models-section-name [,TargetOSVersion] [,TargetOSVersion] ...
+%DivaMfgName% = DIVA_Device_Model, NTamd64
+
+[DIVA_Device_Model.NTamd64]
+; PURPOSE: Per-Manufacturer Models section identifies at least one device, references DDInstall section for that device and specifies unique-to-model-section HW-ID for that device.
+; FORMAT: device-description = install-section-name [, hw-id]
+%DivaDeviceDesc% = DIVA_Device_DDI, DivaSwKmd ; Virtual Hardware ID for DIVA driver
+
+;---------- 'DDInstall' and 'DDInstall.Services' Sections ----------------------
+
+[DIVA_Device_DDI.NTamd64]
+; PURPOSE: Per-Model 'DDInstall' section contains one ore more optional directives, with 'CopyFiles' & 'AddReg' listed first.
+CopyFiles = Diva.KernelMode.Files, Diva.UserMode.Files ; FORMAT: CopyFiles = @filename | file-list-section
+
+[DIVA_Device_DDI.NTamd64.Services]
+; PURPOSE: Provides at least one 'AddService' directive to control how & when the services of a particular driver are loaded, dependencies on other services or drivers, and so forth.
+; FORMAT: AddService = ServiceName, [flags], service-install-section
+Addservice = DivaKmdService, %SPSVCINST_ASSOCSERVICE%, DIVA_Service_Inst
+
+[DIVA_Device_DDI.AddReg]
+HKR,,DivaInstallPath,,%13%
+
+[DIVA_Device_DDI.NTamd64.HW]
+AddReg=DIVA_Device_DDI.AddReg
+
+[DIVA_Service_Inst]
+DisplayName    = %DivaServiceName% ; Friendly name for the service/driver
+ServiceType    = %SERVICE_KERNEL_DRIVER%
+StartType      = %SERVICE_DEMAND_START%
+ErrorControl   = %SERVICE_ERROR_NORMAL%
+ServiceBinary  = %13%\DivaKmd.sys
+LoadOrderGroup = Extended Base
+
+;--------- 'Files' Section --------------------------------------------------
+; FORMAT: [file-list-section]
+;         destination-file-name[,[source-file-name][,[unused][,flag]]]
+
+[Diva.KernelMode.Files]
+DivaKmd.sys, , , %COPYFLG_NOSKIP%
+
+[Diva.UserMode.Files]
+DivaUtility.dll, , , %COPYFLG_NOSKIP%
+DivaUtilityCLR.dll, , , %COPYFLG_NOSKIP%
+
+;--------- 'Strings' Section --------------------------------------------------
+
+[Strings]
+OrganizationName = "Intel Corporation"
+DivaMfgName      = "Intel(R) Integrated Graphics Device Validation"
+DivaDeviceDesc   = "Driver for Intel Validation Apps (CI-DIVA_4.0.535)"
+DivaServiceName  = "Driver for Intel Validation Apps (DIVA)"
+DivaDiskDesc     = "DIVA Device Installation Disk"
+
+; Service-flags: One or more (ORed) of the following system-defined flags, defined in 'Setupapi.h'.
+SPSVCINST_TAGTOFRONT                   = 0x00000001 ; Move named service's tag to the front of its group order list
+SPSVCINST_ASSOCSERVICE                 = 0x00000002 ; Assign the named service as the PnP function driver
+SPSVCINST_NOCLOBBER_DISPLAYNAME        = 0x00000008 ; Do not overwrite the given service's friendly name if this service already exists
+SPSVCINST_NOCLOBBER_STARTTYPE          = 0x00000010 ; Do not overwrite the given service's start type if this named service already exists
+SPSVCINST_NOCLOBBER_ERRORCONTROL       = 0x00000020 ; Do not overwrite the given service's error-control value if this named service already exists
+SPSVCINST_NOCLOBBER_LOADORDERGROUP     = 0x00000040 ; Do not overwrite the given service's load-order-group value if this named service already exists
+SPSVCINST_NOCLOBBER_DEPENDENCIES       = 0x00000080 ; Do not overwrite the given service's dependencies list if this named service already exists
+SPSVCINST_NOCLOBBER_DESCRIPTION        = 0x00000100 ; Do not overwrite the given service's description if this service already exists
+SPSVCINST_CLOBBER_SECURITY             = 0x00000400 ; Overwrite the security settings for the service if this service already exists
+SPSVCSINST_STARTSERVICE                = 0x00000800 ; Start the service after the service is installed
+SPSVCINST_NOCLOBBER_REQUIREDPRIVILEGES = 0x00001000 ; Do not overwrite the privileges for the given service if this service already exists
+
+; Service-type:
+SERVICE_KERNEL_DRIVER        = 0x00000001
+SERVICE_FILE_SYSTEM_DRIVER   = 0x00000002
+SERVICE_ADAPTER              = 0x00000004
+SERVICE_RECOGNIZER_DRIVER    = 0x00000008
+SERVICE_WIN32_OWN_PROCESS    = 0x00000010
+SERVICE_WIN32_SHARE_PROCESS  = 0x00000020
+SERVICE_USER_SERVICE         = 0x00000040
+SERVICE_USERSERVICE_INSTANCE = 0x00000080
+SERVICE_INTERACTIVE_PROCESS  = 0x00000100
+SERVICE_PKG_SERVICE          = 0x00000200
+
+; Service-start-type: Specifies when to start the driver as one of the following numeric values.
+SERVICE_BOOT_START   = 0x0 ; Driver started by the OS loader.
+SERVICE_SYSTEM_START = 0x1 ; Driver started during OS initialization.
+SERVICE_AUTO_START   = 0x2 ; Driver started by the service control manager during system startup.
+SERVICE_DEMAND_START = 0x3 ; Driver started on demand
+SERVICE_DISABLED     = 0x4 ; Driver that cannot be started.
+
+; Service-error-control-level: Specifies the level of error control as one of the following numeric values
+SERVICE_ERROR_IGNORE   = 0x0 ; If driver fails to load or initialize, proceed with system startup and do not display a warning to the user.
+SERVICE_ERROR_NORMAL   = 0x1 ; If driver fails to load or initialize, system startup should proceed but display a warning to the user.
+SERVICE_ERROR_SEVERE   = 0x2 ; If driver fails to load, system startup should switch to the registry's 'LastKnownGood' control set and continue system startup
+SERVICE_ERROR_CRITICAL = 0x3 ; If startup still fails when using 'LastKnownGood', run a bug-check routine.
+
+; Flag to control how (or whether) a particular source file is copied to destination
+COPYFLG_WARN_IF_SKIP         = 0x00000001
+COPYFLG_NOSKIP               = 0x00000002
+COPYFLG_NOVERSIONCHECK       = 0x00000004
+COPYFLG_FORCE_FILE_IN_USE    = 0x00000008
+COPYFLG_NO_OVERWRITE         = 0x00000010
+COPYFLG_NO_VERSION_DIALOG    = 0x00000020
+COPYFLG_OVERWRITE_OLDER_ONLY = 0x00000040
+COPYFLG_REPLACEONLY          = 0x00000400
+COPYFLG_NODECOMP             = 0x00000800
+COPYFLG_REPLACE_BOOT_FILE    = 0x00001000
+COPYFLG_NOPRUNE              = 0x00002000
+COPYFLG_IN_USE_RENAME        = 0x00004000

@@ -1,0 +1,46 @@
+---
+resource: windows_v1
+working_dir: DisplayAutomation2.0\Src
+manifest: windows.yml
+qb_variable_map:
+  build_version: BUILD_NAME
+  workspace_dir: WORKSPACE_DIR
+  component_dir: COMPONENT_DIR
+  build_number: BUILD_NUMBER
+  signfile_user: SIGNFILE_USER
+  signfile_pass: SIGNFILE_PASS
+  signfile_hash: SIGNFILE_HASH
+  signfile_cert: SIGNFILE_CERT
+  signfile_cross_cert: SIGNFILE_CROSS_CERT
+  artifactory_username: ARTIFACTORY_USERNAME
+  artifactory_password: ARTIFACTORY_PASSWORD
+types:
+  Release:
+    steps:
+#    - name: Make_Val_Binaries
+#      command: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Professional\\MSBuild\\15.0\\Bin\\MSBuild.exe MasterSolution.sln /p:Configuration=Release /p:Platform=x64"
+    - name: Build_Batch_Val_CUI
+      command: BuildDriver.bat
+    - name: Doxygen_Checker
+      command: doxygen_checker.bat
+#    - name: Delete_Binaries // Commenting this command as its not building GfxValSimDriver after this 
+#      command: del ..\bin\*.lib ..\bin\*iobj ..\bin\*.obj ..\bin\*.exp ..\bin\*.ipdb ..\bin\*.pdb
+    - name: kmcs-self-sign
+      command: 'python3 ..\..\Tools\Build\Scripts\signing.py --verbose --kmcs --self-sign
+        --driver-dir ..\bin\GfxValSimdriver --pfx-file-dir ..\..\..\build\self-signed_cert'
+    - name: Copy_Binaries
+      command: Copy.bat
+    - name: Make_VersionFile
+      command: echo %BUILD_NAME% > ..\..\PublishValBin\ValBin_Output\version.txt
+    - name: ZIP_Output
+      command: '..\..\..\build\7zip-win64\7z.exe a ..\..\PublishValBin\ValBin_Output\DisplayAutomation2.0_x64.zip ..\..\PublishValBin\ValBin_Output\*'
+    - name: publish_Val_Binaries
+      command: 'echo publishing ValBin files'
+      always_execute: true
+      output:
+      - file_patterns: "*.zip"
+        source_dir: 'PublishValBin\ValBin_Output'
+        destination_dir: 'ValBin_Output'
+#- name: Delete Binaries
+#  command: CD ..\bin
+#  command: DEL /s /f /q

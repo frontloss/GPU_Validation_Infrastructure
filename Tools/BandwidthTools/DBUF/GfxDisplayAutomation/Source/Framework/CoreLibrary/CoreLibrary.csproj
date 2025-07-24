@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3942ED5D-D917-4F23-9EE0-FC90DA902DFF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Intel.VPG.Display.Automation</RootNamespace>
+    <AssemblyName>Intel.VPG.Display.Automation.CoreLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug64|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug64\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SHEDLL">
+      <HintPath>..\AccessAPI\Assemblies\SHEDLL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\EnvironmentParams.cs" />
+    <Compile Include="Entities\InitEnvironment.cs" />
+    <Compile Include="Entities\InternalEnums.cs" />
+    <Compile Include="Framework\ApplicationManager.cs" />
+    <Compile Include="Framework\EnvPreparedness.cs" />
+    <Compile Include="Helpers\AssemblyLoader.cs" />
+    <Compile Include="Helpers\CommandLineParser.cs" />
+    <Compile Include="Entities\FrameworkAttribute.cs" />
+    <Compile Include="Helpers\CommonRoutines.cs" />
+    <Compile Include="Helpers\DTCMHelper.cs" />
+    <Compile Include="Helpers\Environment\InitCleanupSimulatedDisplays.cs" />
+    <Compile Include="Helpers\Environment\InitCloneDriver.cs" />
+    <Compile Include="Helpers\Environment\InitDisableLAN.cs" />
+    <Compile Include="Helpers\Environment\InitEnableCommonRoutine.cs" />
+    <Compile Include="Helpers\Environment\InitPlugSimulatedDisplays.cs" />
+    <Compile Include="Helpers\Environment\InitRebootAnalysis.cs" />
+    <Compile Include="Helpers\Environment\InitHotplugFramework.cs" />
+    <Compile Include="Helpers\Environment\InitVerifyDivaStatus.cs" />
+    <Compile Include="Helpers\Environment\InitTestCleanUp.cs" />
+    <Compile Include="Helpers\Environment\InitVerifyDotNetFW.cs" />
+    <Compile Include="Helpers\Environment\InitCheckDriverVerify.cs" />
+    <Compile Include="Helpers\Environment\InitSkipMetro.cs" />
+    <Compile Include="Helpers\Environment\InitAssemblies.cs" />
+    <Compile Include="Helpers\Environment\InitClearCUI.cs" />
+    <Compile Include="Helpers\Environment\InitPlugDVMUDisplays.cs" />
+    <Compile Include="Helpers\Environment\InitVerifyDriverStatus.cs" />
+    <Compile Include="Helpers\Environment\InitClearDumpsNEvents.cs" />
+    <Compile Include="Helpers\Environment\InitNotificationAreaIcons.cs" />
+    <Compile Include="Helpers\Environment\InitEnumerateDisplays.cs" />
+    <Compile Include="Framework\TestBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccessInterface\AccessInterface.csproj">
+      <Project>{0F59313C-058E-451E-BDAD-2999E4241455}</Project>
+      <Name>AccessInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConstantsLibrary\ConstantsLibrary.csproj">
+      <Project>{B8EDD54E-47A8-4E78-A31D-D29C6D521FC2}</Project>
+      <Name>ConstantsLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logger\Logger.csproj">
+      <Project>{ec0587c7-cf34-4309-b4b5-d1eb051032b4}</Project>
+      <Name>Logger</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assemblies\Mapper\EnvironmentInit.map" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>Copy /Y "$(ProjectDir)Images\*.jpg" "$(TargetDir)"
+Copy /Y "$(ProjectDir)Logger\*.xsl" "$(TargetDir)"
+XCopy "$(ProjectDir)Assemblies" "$(TargetDir)" /Y /S /E</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

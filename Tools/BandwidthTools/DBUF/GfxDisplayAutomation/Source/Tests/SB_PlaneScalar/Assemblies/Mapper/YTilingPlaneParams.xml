@@ -1,0 +1,20 @@
+<!-- Y Tilling MPO Plane Params -->
+<ULTFrameworkParams>
+  <PlaneAttributes>
+    <SourceAddressFlags>FlipOnNextVSync</SourceAddressFlags>
+    <MPOFlags>1</MPOFlags>
+    <PixelFormat>SB_B8G8R8A8</PixelFormat>
+    <MPORotation>MPO_ROTATION_IDENTITY</MPORotation>
+    <HwOrientation>MPO_ORIENTATION_DEFAULT</HwOrientation>
+    <MPOBlend>0</MPOBlend>
+    <MPOVideoFormat>MPO_VIDEO_FRAME_FORMAT_PROGRESSIVE</MPOVideoFormat>
+    <MPOYCbCrFlags>1</MPOYCbCrFlags>
+    <MPOStereoFormat>MPO_FORMAT_MONO</MPOStereoFormat>
+    <MPOStereoFlipMode>MPO_FLIP_NONE</MPOStereoFlipMode>
+    <StretchQuality>MPO_STRETCH_QUALITY_HIGH</StretchQuality>
+    <IsAsyncMMIOFlip>False</IsAsyncMMIOFlip>
+    <Enabled>True</Enabled>
+    <Affected>True</Affected>
+  </PlaneAttributes>
+</ULTFrameworkParams>
+

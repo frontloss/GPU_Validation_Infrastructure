@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Start>
+  <Platform id="HSWM">
+    <Key id="F1">
+	<ToggleSequence>
+		<Toggle config="SD">
+			<Port>PORTY</Port>
+		</Toggle>
+		<Toggle config="DDC">
+			<Port>PORTY</Port>
+			<Port>PORTX</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTX</Port>
+		</Toggle>
+    		<Toggle config="DDC">
+      			<Port>PORTB</Port>
+      			<Port>PORTY</Port>
+    		</Toggle>
+    		<Toggle config="SD">
+      			<Port>PORTB</Port>
+   		 </Toggle>
+    		<Toggle config="DDC">
+      			<Port>PORTB</Port>
+      			<Port>PORTX</Port>
+    		</Toggle>
+		<Toggle config="SD">
+      			<Port>PORTC</Port>
+   		 </Toggle>
+		<Toggle config="DDC">
+      			<Port>PORTB</Port>
+      			<Port>PORTC</Port>
+    		</Toggle>
+		<Toggle config="DDC">
+      			<Port>PORTC</Port>
+      			<Port>PORTX</Port>
+    		</Toggle>
+		<Toggle config="DDC">
+      			<Port>PORTC</Port>
+      			<Port>PORTY</Port>
+    		</Toggle>
+	</ToggleSequence>
+	</Key>
+	<Key id="F2">
+	<ToggleSequence>
+		<Toggle config="SD">
+				<Port>PORTY</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTC</Port>
+				<Port>PORTY</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTC</Port>
+				<Port>PORTX</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTX</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTB</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTB</Port>
+				<Port>PORTX</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTC</Port>
+		</Toggle>
+	</ToggleSequence>
+	</Key>
+	<Key id="F3">
+	<ToggleSequence>
+		<Toggle config="SD">
+				<Port>PORTY</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTC</Port>
+				<Port>PORTX</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTB</Port>
+				<Port>PORTC</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTC</Port>
+		</Toggle>
+	</ToggleSequence>
+	</Key>
+	<Key id="F4">
+	<ToggleSequence>
+		<Toggle config="SD">
+				<Port>PORTY</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTB</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTX</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTC</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTY</Port>
+				<Port>PORTX</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTB</Port>
+				<Port>PORTY</Port>
+		</Toggle>		
+	</ToggleSequence>
+	</Key>
+	</Platform>
+<Platform id="HSWU/BDWU">
+    <Key id="F1">
+	<ToggleSequence>
+		<Toggle config="SD">
+				<Port>PORTX</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTB</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTX</Port>
+				<Port>PORTB</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTC</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTB</Port>
+				<Port>PORTC</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTC</Port>
+				<Port>PORTX</Port>
+		</Toggle>
+	</ToggleSequence>
+	</Key>
+	<Key id="F2">
+	<ToggleSequence>
+		<Toggle config="DDC">
+				<Port>PORTX</Port>
+				<Port>PORTC</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTX</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTB</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTB</Port>
+				<Port>PORTX</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTC</Port>
+		</Toggle>
+	</ToggleSequence>
+	</Key>
+	<Key id="F3">
+	<ToggleSequence>
+		<Toggle config="DDC">
+				<Port>PORTX</Port>
+				<Port>PORTC</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTC</Port>
+				<Port>PORTB</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTC</Port>
+		</Toggle>
+	</ToggleSequence>
+	</Key>
+	<Key id="F4">
+	<ToggleSequence>
+		<Toggle config="SD">
+				<Port>PORTB</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTX</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTC</Port>
+		</Toggle>
+	</ToggleSequence>
+	</Key>
+	</Platform>
+  <Platform id="SKL">
+    <Key id="F1">
+	<ToggleSequence>
+		<Toggle config="SD">
+				<Port>PORTX</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTB</Port>
+		</Toggle>
+    <Toggle config="SD">
+				<Port>PORTC</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTX</Port>
+				<Port>PORTB</Port>
+		</Toggle>
+    <Toggle config="DDC">
+				<Port>PORTX</Port>
+				<Port>PORTC</Port>
+		</Toggle>
+    <Toggle config="DDC">
+				<Port>PORTB</Port>
+				<Port>PORTC</Port>
+		</Toggle>
+	</ToggleSequence>
+	</Key>
+	</Platform>
+	<Platform id="VLV">
+    <Key id="F1">
+	<ToggleSequence>
+		<Toggle config="SD">
+				<Port>PORTY</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTX</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTB</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTC</Port>
+		</Toggle>
+	</ToggleSequence>
+	</Key>
+	<Key id="F2">
+	<ToggleSequence>
+		<Toggle config="DDC">
+				<Port>PORTY</Port>
+				<Port>PORTX</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTB</Port>
+				<Port>PORTX</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTC</Port>
+				<Port>PORTX</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTB</Port>
+				<Port>PORTY</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTC</Port>
+				<Port>PORTY</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTB</Port>
+				<Port>PORTC</Port>
+		</Toggle>
+	</ToggleSequence>
+	</Key>
+	<Key id="F3">
+	<ToggleSequence>
+		<Toggle config="DDC">
+				<Port>PORTX</Port>
+				<Port>PORTY</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTX</Port>
+				<Port>PORTB</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTX</Port>
+				<Port>PORTC</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTY</Port>
+				<Port>PORTB</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTY</Port>
+				<Port>PORTC</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTC</Port>
+				<Port>PORTB</Port>
+		</Toggle>
+	</ToggleSequence>
+	</Key>
+	<Key id="F4">
+	<ToggleSequence>
+		<Toggle config="SD">
+				<Port>PORTY</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTX</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTB</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTC</Port>
+		</Toggle>
+	</ToggleSequence>	
+	</Key>
+	</Platform>
+	<Platform id="IVBM">
+    <Key id="F1">
+	<ToggleSequence>
+		<Toggle config="SD">
+				<Port>PORTY</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTX</Port>
+				<Port>PORTY</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTX</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTB</Port>
+				<Port>PORTY</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTB</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTB</Port>
+				<Port>PORTX</Port>
+		</Toggle>
+	</ToggleSequence>
+	</Key>
+	<Key id="F2">
+	<ToggleSequence>
+		<Toggle config="SD">
+				<Port>PORTY</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTX</Port>
+				<Port>PORTY</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTX</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTB</Port>
+				<Port>PORTY</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTB</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTB</Port>
+				<Port>PORTX</Port>
+		</Toggle>
+	</ToggleSequence>
+	</Key>
+	<Key id="F3">
+	<ToggleSequence>
+		<Toggle config="SD">
+				<Port>PORTY</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTX</Port>
+				<Port>PORTY</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTX</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTB</Port>
+				<Port>PORTY</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTB</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTB</Port>
+				<Port>PORTX</Port>
+		</Toggle>
+	</ToggleSequence>
+	</Key>
+	<Key id="F4">
+	<ToggleSequence>
+		<Toggle config="SD">
+				<Port>PORTY</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTX</Port>
+				<Port>PORTY</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTX</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTB</Port>
+				<Port>PORTY</Port>
+		</Toggle>
+		<Toggle config="SD">
+				<Port>PORTB</Port>
+		</Toggle>
+		<Toggle config="DDC">
+				<Port>PORTB</Port>
+				<Port>PORTX</Port>
+		</Toggle>
+	</ToggleSequence>
+	</Key>
+  </Platform>
+  <Platform id="APL">
+    <Key id="F1">
+      <ToggleSequence>
+        <Toggle config="SD">
+          <Port>PORTX</Port>
+        </Toggle>
+        <Toggle config="SD">
+          <Port>PORTB</Port>
+        </Toggle>
+        <Toggle config="DDC">
+          <Port>PORTX</Port>
+          <Port>PORTB</Port>
+        </Toggle>
+        <Toggle config="SD">
+          <Port>PORTC</Port>
+        </Toggle>
+        <Toggle config="DDC">
+          <Port>PORTB</Port>
+          <Port>PORTC</Port>
+        </Toggle>
+        <Toggle config="DDC">
+          <Port>PORTX</Port>
+          <Port>PORTC</Port>
+        </Toggle>
+      </ToggleSequence>
+    </Key>
+    <Key id="F2">
+      <ToggleSequence>
+        <Toggle config="DDC">
+          <Port>PORTX</Port>
+          <Port>PORTC</Port>
+        </Toggle>
+        <Toggle config="SD">
+          <Port>PORTX</Port>
+        </Toggle>
+        <Toggle config="SD">
+          <Port>PORTB</Port>
+        </Toggle>
+        <Toggle config="DDC">
+          <Port>PORTB</Port>
+          <Port>PORTX</Port>
+        </Toggle>
+        <Toggle config="SD">
+          <Port>PORTC</Port>
+        </Toggle>
+      </ToggleSequence>
+    </Key>
+    <Key id="F3">
+      <ToggleSequence>
+        <Toggle config="DDC">
+          <Port>PORTX</Port>
+          <Port>PORTC</Port>
+        </Toggle>
+        <Toggle config="DDC">
+          <Port>PORTC</Port>
+          <Port>PORTB</Port>
+        </Toggle>
+        <Toggle config="SD">
+          <Port>PORTC</Port>
+        </Toggle>
+      </ToggleSequence>
+    </Key>
+    <Key id="F4">
+      <ToggleSequence>
+        <Toggle config="SD">
+          <Port>PORTB</Port>
+        </Toggle>
+        <Toggle config="SD">
+          <Port>PORTX</Port>
+        </Toggle>
+        <Toggle config="SD">
+          <Port>PORTC</Port>
+        </Toggle>
+      </ToggleSequence>
+    </Key>
+  </Platform>
+  <Platform id="KBL">
+    <Key id="F1">
+      <ToggleSequence>
+        <Toggle config="SD">
+          <Port>PORTX</Port>
+        </Toggle>
+        <Toggle config="SD">
+          <Port>PORTB</Port>
+        </Toggle>
+        <Toggle config="SD">
+          <Port>PORTC</Port>
+        </Toggle>
+        <Toggle config="DDC">
+          <Port>PORTX</Port>
+          <Port>PORTB</Port>
+        </Toggle>
+        <Toggle config="DDC">
+          <Port>PORTX</Port>
+          <Port>PORTC</Port>
+        </Toggle>
+        <Toggle config="DDC">
+          <Port>PORTB</Port>
+          <Port>PORTC</Port>
+        </Toggle>
+      </ToggleSequence>
+    </Key>
+  </Platform>
+  <Platform id="CHV">
+    <Key id="F1">
+      <ToggleSequence>
+        <Toggle config="SD">
+          <Port>PORTX</Port>
+        </Toggle>
+        <Toggle config="SD">
+          <Port>PORTB</Port>
+        </Toggle>
+        <Toggle config="SD">
+          <Port>PORTC</Port>
+        </Toggle>
+        <Toggle config="DDC">
+          <Port>PORTX</Port>
+          <Port>PORTB</Port>
+        </Toggle>
+        <Toggle config="DDC">
+          <Port>PORTX</Port>
+          <Port>PORTC</Port>
+        </Toggle>
+        <Toggle config="DDC">
+          <Port>PORTB</Port>
+          <Port>PORTC</Port>
+        </Toggle>
+      </ToggleSequence>
+    </Key>
+  </Platform>
+</Start>

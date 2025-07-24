@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Brightness3Commands.c" />
+    <ClCompile Include="DeviceSimulation.c" />
+    <ClCompile Include="DispDiag.c" />
+    <ClCompile Include="DisplayStateBuffer.c" />
+    <ClCompile Include="DriverWATable.c" />
+    <ClCompile Include="GfxValSim.c" />
+    <ClCompile Include="MIPIDSICommands.c" />
+    <ClCompile Include="Vbt.c" />
+    <ClCompile Include="MPO\Yangra.c">
+      <Filter>MPO\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxValSimAccess.c" />
+    <ClCompile Include="MPO\ResourceManager.c">
+      <Filter>MPO\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MPO\legacy.c">
+      <Filter>MPO\Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Brightness3Commands.h" />
+    <ClInclude Include="CommonDetails.h" />
+    <ClInclude Include="DeviceSimulation.h" />
+    <ClInclude Include="DispDiag.h" />
+    <ClInclude Include="DisplayStateBuffer.h" />
+    <ClInclude Include="DriverWATable.h" />
+    <ClInclude Include="Driver_Model.h" />
+    <ClInclude Include="GfxValSim.h" />
+    <ClInclude Include="MIPIDSICommands.h" />
+    <ClInclude Include="sku_wa.h" />
+    <ClInclude Include="Vbt.h" />
+    <ClInclude Include="MPO\Yangra.h">
+      <Filter>MPO\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxValSimAccess.h" />
+    <ClInclude Include="MPO\CommonArgs.h">
+      <Filter>MPO\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="MPO\ResourceManager.h">
+      <Filter>MPO\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="MPO\legacy.h">
+      <Filter>MPO\Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="MPO">
+      <UniqueIdentifier>{3b2e854c-0bab-4c18-9400-631297ab2f34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MPO\Header">
+      <UniqueIdentifier>{8a43c079-5fef-4edd-8b63-59d87cc57801}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MPO\Source">
+      <UniqueIdentifier>{9ea4717c-2c47-4ba6-aea3-d2f8d740935c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

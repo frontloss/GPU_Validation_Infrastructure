@@ -1,0 +1,2 @@
+C:\Users\AKUMARV\Documents\Tools\CalculateWatermark\CalculateWatermark\Properties\Settings.settings;C:\Users\AKUMARV\Documents\Tools\CalculateWatermark\.klocwork\WatermarkSln\cpp.kwlp\ds\1\z25xav04.3bd;1;0;False;8C0F00D7D9B0046695A0255F1B11B061;False
+C:\Users\AKUMARV\Documents\Tools\CalculateWatermark\CalculateWatermark\Properties\Resources.resx;C:\Users\AKUMARV\Documents\Tools\CalculateWatermark\.klocwork\WatermarkSln\cpp.kwlp\ds\2\eriiz0hv.jn1;2;0;False;0CD8C971317D19BBED44757809BCB92B;False

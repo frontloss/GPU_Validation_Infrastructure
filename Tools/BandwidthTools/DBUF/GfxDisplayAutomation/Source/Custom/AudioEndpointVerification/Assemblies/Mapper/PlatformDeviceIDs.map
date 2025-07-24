@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Platforms>
+  <Platform id="IVBM">
+    <DeviceID>"0156"</DeviceID>
+    <DeviceID>"0166"</DeviceID>
+    <DeviceID>"0176"</DeviceID>
+    <DeviceID>"0186"</DeviceID>
+  </Platform>
+  <Platform id="HSWM">
+    <DeviceID>"0406"</DeviceID>
+    <DeviceID>"0416"</DeviceID>
+    <DeviceID>"0D16"</DeviceID>
+    <DeviceID>"0D26"</DeviceID>    
+    <DeviceID>"0094"</DeviceID>
+    <DeviceID>"0C04"</DeviceID>
+    <DeviceID>"0C06"</DeviceID>
+    <DeviceID>"0C0B"</DeviceID>
+    <DeviceID>"0C16"</DeviceID>
+    <DeviceID>"0C26"</DeviceID>
+    <DeviceID>"0D04"</DeviceID>
+  </Platform>
+  <Platform id="HSWDT">
+    <DeviceID>"0402"</DeviceID>
+    <DeviceID>"0412"</DeviceID>
+    <DeviceID>"041E"</DeviceID>
+    <DeviceID>"0D12"</DeviceID>
+    <DeviceID>"0D22"</DeviceID>
+    <DeviceID>"0C00"</DeviceID>
+    <DeviceID>"0C02"</DeviceID>
+    <DeviceID>"0C12"</DeviceID>
+    <DeviceID>"0C22"</DeviceID>
+    <DeviceID>"0D02"</DeviceID>
+  </Platform>
+  <Platform id="HSWU">
+    <DeviceID>"0A06"</DeviceID>
+    <DeviceID>"0A16"</DeviceID>
+    <DeviceID>"0A26"</DeviceID>
+    <DeviceID>"0A0E"</DeviceID>
+    <DeviceID>"0A1E"</DeviceID>
+    <DeviceID>"0A2E"</DeviceID>
+  </Platform>
+  <Platform id="VLV">
+    <DeviceID>"0F00"</DeviceID>
+    <DeviceID>"0F30"</DeviceID>
+    <DeviceID>"0F31"</DeviceID>
+  </Platform>
+  <Platform id="BDW">
+    <DeviceID>"1606"</DeviceID>
+    <DeviceID>"1616"</DeviceID>
+    <DeviceID>"1626"</DeviceID>
+    <DeviceID>"160E"</DeviceID>
+    <DeviceID>"161E"</DeviceID>
+    <DeviceID>"162E"</DeviceID>
+    <DeviceID>"162B"</DeviceID>
+    <DeviceID>"1602"</DeviceID>
+    <DeviceID>"1612"</DeviceID>
+    <DeviceID>"1622"</DeviceID>    
+    <DeviceID>"0090"</DeviceID>
+    <DeviceID>"0BD0"</DeviceID>
+    <DeviceID>"0BD1"</DeviceID>
+    <DeviceID>"0BD2"</DeviceID>
+    <DeviceID>"0BD3"</DeviceID>
+    <DeviceID>"0BD4"</DeviceID>
+  </Platform>
+  <Platform id="SKL">
+    <DeviceID>"0903"</DeviceID>
+    <DeviceID>"191EA"</DeviceID>
+    <DeviceID>"1912"</DeviceID>
+    <DeviceID>"1904"</DeviceID>
+    <DeviceID>"190C"</DeviceID>
+    <DeviceID>"1900"</DeviceID>
+    <DeviceID>"190F"</DeviceID>
+    <DeviceID>"1910"</DeviceID>
+    <DeviceID>"1906"</DeviceID>
+    <DeviceID>"1916"</DeviceID>
+    <DeviceID>"1926"</DeviceID>
+    <DeviceID>"191B"</DeviceID>
+    <DeviceID>"191E"</DeviceID>
+    <DeviceID>"193B"</DeviceID>
+    <DeviceID>"190E"</DeviceID>
+    <DeviceID>"1915"</DeviceID>
+    <DeviceID>"1913"</DeviceID>
+    <DeviceID>"1906"</DeviceID>
+    <DeviceID>"1921"</DeviceID>
+    <DeviceID>"1902"</DeviceID>
+    <DeviceID>"1917"</DeviceID>
+    <DeviceID>"1932"</DeviceID>
+    <DeviceID>"190B"</DeviceID>
+    <DeviceID>"191B"</DeviceID>
+    <DeviceID>"192B"</DeviceID>
+  </Platform>
+  <Platform id="CHV">
+    <DeviceID>"22B0"</DeviceID>
+    <DeviceID>"22B1"</DeviceID>
+  </Platform>
+  <Platform id="BXT">
+    <DeviceID>"9906"</DeviceID>
+    <DeviceID>"9907"</DeviceID>
+    <DeviceID>"0A84"</DeviceID>
+  </Platform>
+  <Platform id="CNL">
+    <DeviceID>"0A02"</DeviceID>
+  </Platform>
+</Platforms>

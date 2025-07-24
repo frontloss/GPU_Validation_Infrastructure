@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MST_DATA>
+	<!--Hot Plug Detection Test Script paramters-->
+	<!--Timing Delays are in Milliseconds-->
+	<HPD>
+		<ITERATION1>
+			<Cycles>5</Cycles>
+			<PlugDelay>300</PlugDelay>
+			<UnPlugDelay>300</UnPlugDelay>
+		</ITERATION1>
+		<ITERATION2>
+			<Cycles>5</Cycles>
+			<PlugDelay>500</PlugDelay>
+			<UnPlugDelay>500</UnPlugDelay>
+		</ITERATION2>
+		<ITERATION3>
+			<Cycles>5</Cycles>
+			<PlugDelay>800</PlugDelay>
+			<UnPlugDelay>800</UnPlugDelay>
+		</ITERATION3>
+	</HPD>
+	<!--MSTSST SWITCHING Test Script paramters-->
+	<!--Timing Delays are in Milliseconds-->
+	<SWITCH>
+		<ITERATION1>
+			<Cycles>10</Cycles>
+			<Delay1>0</Delay1>
+			<Delay2>300</Delay2>
+			<Delay3>500</Delay3>
+			<Delay4>700</Delay4>
+		</ITERATION1>
+	</SWITCH>
+</MST_DATA>

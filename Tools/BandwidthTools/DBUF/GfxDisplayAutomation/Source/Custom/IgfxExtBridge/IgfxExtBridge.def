@@ -1,0 +1,9 @@
+; IgfxExtBridge.def : Declares the module parameters.
+
+LIBRARY      "IgfxExtBridge.DLL"
+
+EXPORTS
+	DllCanUnloadNow      PRIVATE
+	DllGetClassObject    PRIVATE
+	DllRegisterServer    PRIVATE
+	DllUnregisterServer	 PRIVATE

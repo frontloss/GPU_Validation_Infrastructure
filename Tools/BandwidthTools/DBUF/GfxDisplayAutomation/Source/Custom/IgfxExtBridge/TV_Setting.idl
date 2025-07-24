@@ -1,0 +1,28 @@
+import "oaidl.idl";
+import "ocidl.idl";
+import "igfxBridgeUDT.idl";
+
+	[
+		object,
+		uuid(82C03218-085D-4301-9718-9CEC0EA4721B),
+		dual,
+		helpstring("ITVSetting Interface"),
+		pointer_default(unique)
+	]
+
+	interface ITVSetting : IDispatch
+	{
+		[id(1),  helpstring("method GetAvailableConnectors")] HRESULT GetAvailableConnectors([in]DWORD monitorID,[out]DWORD *pAvailableConnectors,[out]IGFX_ERROR_CODES *pExtraErrorCode,[out]BSTR *pErrorDescription); 		
+		[id(2),  helpstring("method GetConnectorSelection")] HRESULT GetConnectorSelection([in]DWORD monitorID,[out]DWORD *pAvailableConnectors,[out]IGFX_ERROR_CODES *pExtraErrorCode,[out]BSTR *pErrorDescription);
+		[id(3),  helpstring("method GetConnectorAttachedStatus")] HRESULT GetConnectorAttachedStatus([in]DWORD monitorID,[out]DWORD *pAvailableConnectors,[out]IGFX_ERROR_CODES *pExtraErrorCode,[out]BSTR *pErrorDescription);
+		[id(4),  helpstring("method SetConnectorSelection")] HRESULT SetConnectorSelection([in]DWORD monitorID,[in]DWORD availableConnector,[out]IGFX_ERROR_CODES *pExtraErrorCode,[out]BSTR *pErrorDescription);
+		[id(5),  helpstring("method GetTvParameters")] HRESULT GetTvParameters([in]DWORD monitorID,[out]IGFX_TV_PARAMETER_DATA *pTVParamaterData,[out]IGFX_ERROR_CODES *pExtraErrorCode,[out]BSTR *pErrorDescription);
+		[id(6),  helpstring("method SetTvParameters")] HRESULT SetTvParameters([in]DWORD monitorID,[in]IGFX_TV_PARAMETER_DATA *pTVParamaterData,[out]IGFX_ERROR_CODES *pExtraErrorCode,[out]BSTR *pErrorDescription);
+		[id(7),  helpstring("method TVTypeStdGet")] HRESULT TVTypeStdGet([out]IGFX_TV_FORMAT_EX *pTVFormat,[out]IGFX_ERROR_CODES *pExtraErrorCode,[out]BSTR *pErrorDescription);
+		[id(8),  helpstring("method TVTypeStdSet")] HRESULT TVTypeStdSet([in]IGFX_TV_FORMAT_EX *pTVFormat,[out]IGFX_ERROR_CODES *pExtraErrorCode,[out]BSTR *pErrorDescription);
+		[id(9),  helpstring("method ConnectorStatus")] HRESULT ConnectorStatus([out]IGFX_CONNECTOR_STATUS *pConnectorStatus,[out]IGFX_ERROR_CODES *pExtraErrorCode,[out]BSTR *pErrorDescription);
+		[id(10), helpstring("method GetPersistenceStatus")] HRESULT GetPersistenceStatus([out]DWORD *pPersistanceStatus,[out]IGFX_ERROR_CODES *pExtraErrorCode,[out]BSTR *pErrorDescription);
+		[id(11), helpstring("method SetPersistenceDisable")] HRESULT SetPersistenceDisable([out]IGFX_ERROR_CODES *pExtraErrorCode,[out]BSTR *pErrorDescription);
+		[id(12), helpstring("method SetPersistenceEnable")] HRESULT SetPersistenceEnable([out]IGFX_ERROR_CODES *pExtraErrorCode,[out]BSTR *pErrorDescription);
+	 };
+

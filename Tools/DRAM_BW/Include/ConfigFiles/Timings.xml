@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<TimingDataStore>
+   <!--Timing>
+    <Name>7680 x 4320 @ 60Hz</Name>
+    <Help>Some description about the timing</Help>
+    <Pixel_Clock>2089000000</Pixel_Clock>
+    <H_Total>7840</H_Total>
+    <H_Active>7680</H_Active>
+    <H_Blank_Start>7680</H_Blank_Start>
+    <H_BlankEnd>7839</H_BlankEnd>
+    <H_SyncStart>7728</H_SyncStart>
+    <H_SyncEnd>7759</H_SyncEnd>
+    <H_Frequency>267</H_Frequency>
+    <V_Total>4443</V_Total>
+    <V_Active>4320</V_Active>
+    <V_Blank_Start>4320</V_Blank_Start>
+    <V_BlankEnd>4442</V_BlankEnd>
+    <V_SyncStart>4323</V_SyncStart>
+    <V_SyncEnd>4327</V_SyncEnd>
+    <Refresh_Rate>000</Refresh_Rate>
+    <IsInterlaced>0</IsInterlaced>
+  </Timing-->
+  <Timing>
+    <Name>5120 x 2880 @ 60Hz CVT</Name>
+    <Help>Some description about the timing</Help>
+    <Pixel_Clock>938000000</Pixel_Clock>
+    <H_Total>5280</H_Total>
+    <H_Active>5120</H_Active>
+    <H_Blank_Start>5120</H_Blank_Start>
+    <H_BlankEnd>5279</H_BlankEnd>
+    <H_SyncStart>5168</H_SyncStart>
+    <H_SyncEnd>5199</H_SyncEnd>
+    <H_Frequency>178</H_Frequency>
+    <V_Total>2962</V_Total>
+    <V_Active>2880</V_Active>
+    <V_Blank_Start>2880</V_Blank_Start>
+    <V_BlankEnd>2961</V_BlankEnd>
+    <V_SyncStart>2883</V_SyncStart>
+    <V_SyncEnd>2887</V_SyncEnd>
+    <Refresh_Rate>60</Refresh_Rate>
+    <IsInterlaced>0</IsInterlaced>
+  </Timing>
+  <!--Timing>
+    <Name>3840 x 2160 @ 60 Hz CVT</Name>
+    <Help>Some description about the timing</Help>
+    <Pixel_Clock>533000000</Pixel_Clock>
+    <H_Total>4000</H_Total>
+    <H_Active>3840</H_Active>
+    <H_Blank_Start>3840</H_Blank_Start>
+    <H_BlankEnd>3999</H_BlankEnd>
+    <H_SyncStart>3888</H_SyncStart>
+    <H_SyncEnd>3919</H_SyncEnd>
+    <H_Frequency>133</H_Frequency>
+    <V_Total>2222</V_Total>
+    <V_Active>2160</V_Active>
+    <V_Blank_Start>2160</V_Blank_Start>
+    <V_BlankEnd>2221</V_BlankEnd>
+    <V_SyncStart>2163</V_SyncStart>
+    <V_SyncEnd>2167</V_SyncEnd>
+    <Refresh_Rate>60</Refresh_Rate>
+    <IsInterlaced>0</IsInterlaced>
+  </Timing-->
+  <Timing>
+    <Name>3840 x 2160 @ 60 Hz CE</Name>
+    <Help>Some description about the timing</Help>
+    <Pixel_Clock>594000000</Pixel_Clock>
+    <H_Total>4400</H_Total>
+    <H_Active>3840</H_Active>
+    <H_Blank_Start>3840</H_Blank_Start>
+    <H_BlankEnd>4399</H_BlankEnd>
+    <H_SyncStart>4016</H_SyncStart>
+    <H_SyncEnd>4103</H_SyncEnd>
+    <H_Frequency>135000</H_Frequency>
+    <V_Total>2250</V_Total>
+    <V_Active>2160</V_Active>
+    <V_Blank_Start>2160</V_Blank_Start>
+    <V_BlankEnd>2249</V_BlankEnd>
+    <V_SyncStart>2168</V_SyncStart>
+    <V_SyncEnd>2177</V_SyncEnd>
+    <Refresh_Rate>60</Refresh_Rate>
+    <IsInterlaced>0</IsInterlaced>
+  </Timing>
+  <Timing>
+    <Name>1920 x 1080 @ 60 Hz CE</Name>
+    <Help>Some description about the timing</Help>
+    <Pixel_Clock>148500000</Pixel_Clock>
+    <H_Total>2200</H_Total>
+    <H_Active>1920</H_Active>
+    <H_Blank_Start>1920</H_Blank_Start>
+    <H_BlankEnd>2199</H_BlankEnd>
+    <H_SyncStart>2008</H_SyncStart>
+    <H_SyncEnd>2051</H_SyncEnd>/
+    <H_Frequency>67500</H_Frequency>
+    <V_Total>1125</V_Total>
+    <V_Active>1080</V_Active>
+    <V_Blank_Start>1080</V_Blank_Start>
+    <V_BlankEnd>1124</V_BlankEnd>
+    <V_SyncStart>1084</V_SyncStart>
+    <V_SyncEnd>1088</V_SyncEnd>
+    <Refresh_Rate>60</Refresh_Rate>
+    <IsInterlaced>0</IsInterlaced>
+  </Timing>
+  <Timing>
+    <Name>1024 x 768 @ 60Hz CVT</Name>
+    <Help>Some description about the timing</Help>
+    <Pixel_Clock>56000000</Pixel_Clock>
+    <H_Total>1184</H_Total>
+    <H_Active>1024</H_Active>
+    <H_Blank_Start>1024</H_Blank_Start>
+    <H_BlankEnd>1183</H_BlankEnd>
+    <H_SyncStart>1072</H_SyncStart>
+    <H_SyncEnd>1103</H_SyncEnd>
+    <H_Frequency>47</H_Frequency>
+    <V_Total>790</V_Total>
+    <V_Active>768</V_Active>
+    <V_Blank_Start>768</V_Blank_Start>
+    <V_BlankEnd>789</V_BlankEnd>
+    <V_SyncStart>771</V_SyncStart>
+    <V_SyncEnd>774</V_SyncEnd>
+    <Refresh_Rate>60</Refresh_Rate>
+    <IsInterlaced>0</IsInterlaced>
+  </Timing>
+  <Timing>
+    <Name>800 x 600 @ 60Hz CVT</Name>
+    <Help>Some description about the timing</Help>
+    <Pixel_Clock>35000000</Pixel_Clock>
+    <H_Total>960</H_Total>
+    <H_Active>800</H_Active>
+    <H_Blank_Start>800</H_Blank_Start>
+    <H_BlankEnd>959</H_BlankEnd>
+    <H_SyncStart>848</H_SyncStart>
+    <H_SyncEnd>879</H_SyncEnd>
+    <H_Frequency>37</H_Frequency>
+    <V_Total>618</V_Total>
+    <V_Active>600</V_Active>
+    <V_Blank_Start>600</V_Blank_Start>
+    <V_BlankEnd>617</V_BlankEnd>
+    <V_SyncStart>603</V_SyncStart>
+    <V_SyncEnd>606</V_SyncEnd>
+    <Refresh_Rate>60</Refresh_Rate>
+    <IsInterlaced>0</IsInterlaced>
+  </Timing>
+  <!--Timing>
+    <Name>Template_0_0_0</Name>
+    <Help>Some description about the timing</Help>
+    <Pixel_Clock>000</Pixel_Clock>
+    <H_Total>000</H_Total>
+    <H_Active>000</H_Active>
+    <H_Blank_Start>000</H_Blank_Start>
+    <H_BlankEnd>000</H_BlankEnd>
+    <H_SyncStart>000</H_SyncStart>
+    <H_SyncEnd>000</H_SyncEnd>
+    <H_Frequency>000</H_Frequency>
+    <V_Total>000</V_Total>
+    <V_Active>000</V_Active>
+    <V_Blank_Start>000</V_Blank_Start>
+    <V_BlankEnd>000</V_BlankEnd>
+    <V_SyncStart>000</V_SyncStart>
+    <V_SyncEnd>000</V_SyncEnd>
+    <Refresh_Rate>000</Refresh_Rate>
+    <IsInterlaced>0</IsInterlaced>
+  </Timing-->
+</TimingDataStore>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<CustomModeTable>
+	<EDIDInstance ModeIndex="192" HActive="800" VActive="600" RefreshRate="60" Scanline="Progressive" Scaling="Default" PixelCLK="40000000" />
+	<EDIDInstance ModeIndex="238" HActive="1152" VActive="864" RefreshRate="75" Scanline="Progressive" Scaling="Default" PixelCLK="108000000" />
+	<EDIDInstance ModeIndex="345" HActive="1280" VActive="960" RefreshRate="60" Scanline="Progressive" Scaling="Default" PixelCLK="108000000" />
+</CustomModeTable>

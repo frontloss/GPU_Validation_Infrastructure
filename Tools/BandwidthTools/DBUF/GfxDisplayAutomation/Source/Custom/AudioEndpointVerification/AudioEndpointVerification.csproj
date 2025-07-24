@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C3AF8A89-A1B6-469A-8F99-F3357F692F33}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AudioEndpointVerification</RootNamespace>
+    <AssemblyName>AudioEndpointVerification</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IgfxExtBridge_DotNet">
+      <HintPath>Assemblies\IgfxExtBridge_DotNet.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonLibrary\Driver.cs" />
+    <Compile Include="CommonLibrary\DriverInfo.cs" />
+    <Compile Include="CommonLibrary\GFX_ESCAPE_HEADER_T.cs" />
+    <Compile Include="Display\Config.cs" />
+    <Compile Include="Display\DisplayConfig.cs" />
+    <Compile Include="Sln\Audio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sln\Audio.Designer.cs">
+      <DependentUpon>Audio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audio\Audio.cs" />
+    <Compile Include="Audio\AudioDispInfo.cs" />
+    <Compile Include="Audio\AudioEndpointData.cs" />
+    <Compile Include="Audio\Interfaces\IMMDevice.cs" />
+    <Compile Include="Audio\Interfaces\IMMDeviceCollection.cs" />
+    <Compile Include="Audio\Interfaces\IMMDeviceEnumerator.cs" />
+    <Compile Include="Audio\Interfaces\IMMEndpoint.cs" />
+    <Compile Include="Audio\Interfaces\IPolicyConfigVista.cs" />
+    <Compile Include="Audio\Interfaces\IPropertyStore.cs" />
+    <Compile Include="Audio\MMDevice.cs" />
+    <Compile Include="Audio\MMDeviceCollection.cs" />
+    <Compile Include="Audio\MMDeviceEnumerator.cs" />
+    <Compile Include="Audio\PKEY.cs" />
+    <Compile Include="Audio\PolicyConfigVista.cs" />
+    <Compile Include="Audio\PropertyStore.cs" />
+    <Compile Include="Audio\PropertyStoreProperty.cs" />
+    <Compile Include="CommonLibrary\APIConstants.cs" />
+    <Compile Include="CommonLibrary\APIExtensions.cs" />
+    <Compile Include="CommonLibrary\CommonExtension.cs" />
+    <Compile Include="CommonLibrary\D3DKMT_CLOSEADAPTER.cs" />
+    <Compile Include="CommonLibrary\D3DKMT_ESCAPE.cs" />
+    <Compile Include="CommonLibrary\D3DKMT_OPENADAPTERFROMHDC.cs" />
+    <Compile Include="CommonLibrary\DEVMODE.cs" />
+    <Compile Include="CommonLibrary\Display.cs" />
+    <Compile Include="CommonLibrary\DISPLAYCONFIG_MODE_INFO.cs" />
+    <Compile Include="CommonLibrary\DISPLAYCONFIG_PATH_INFO.cs" />
+    <Compile Include="CommonLibrary\DISPLAYCONFIG_PATH_SOURCE_INFO.cs" />
+    <Compile Include="CommonLibrary\DISPLAYCONFIG_PATH_TARGET_INFO.cs" />
+    <Compile Include="CommonLibrary\DISPLAYCONFIG_RATIONAL.cs" />
+    <Compile Include="CommonLibrary\DISPLAYCONFIG_SOURCE_MODE.cs" />
+    <Compile Include="CommonLibrary\DISPLAYCONFIG_TARGET_MODE.cs" />
+    <Compile Include="CommonLibrary\DISPLAYCONFIG_VIDEO_SIGNAL_INFO.cs" />
+    <Compile Include="CommonLibrary\DISPLAY_DEVICE.cs" />
+    <Compile Include="CommonLibrary\Interop.cs" />
+    <Compile Include="CommonLibrary\Logger.cs" />
+    <Compile Include="Display\CUIDisplayUIDMapping.cs" />
+    <Compile Include="Display\DisplayEnumeration.cs" />
+    <Compile Include="Display\DisplayInfo.cs" />
+    <Compile Include="Display\DisplayInfoCollection.cs" />
+    <Compile Include="Display\DisplayUIDMapper.cs" />
+    <Compile Include="Display\EDIDData.cs" />
+    <Compile Include="Display\SDKDisplayEnumeration.cs" />
+    <Compile Include="Driver\DriverEscape.cs" />
+    <Compile Include="Driver\DriverEscapeParams.cs" />
+    <Compile Include="Driver\GFX_ESCAPE_HEADER.cs" />
+    <Compile Include="Sln\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register\AudioRegDataWrapper.cs" />
+    <Compile Include="Register\EventInfo.cs" />
+    <Compile Include="Register\EventRegisterInfo.cs" />
+    <Compile Include="Register\GetAudioRegInfo.cs" />
+    <Compile Include="Register\PipePlane.cs" />
+    <Compile Include="Register\PipePlaneParams.cs" />
+    <EmbeddedResource Include="Sln\Audio.resx">
+      <DependentUpon>Audio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Assemblies\Mapper\AudioEndpointData.map" />
+    <None Include="Assemblies\Mapper\Events.map" />
+    <None Include="Assemblies\Mapper\Factors.map" />
+    <None Include="Assemblies\Mapper\PlatformDeviceIDs.map" />
+    <None Include="Assemblies\Mapper\Subevents.map" />
+    <None Include="Properties\DataSources\AudioDispInfo.datasource" />
+    <None Include="Properties\DataSources\AudioEndpointInfo.datasource" />
+    <None Include="Properties\DataSources\AudioRegDataWrapper.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Assemblies\IgfxExtBridge_DotNet.dll" />
+    <Content Include="Assemblies\Mapper\Logo.png" />
+    <Content Include="Assemblies\x64\devcon.exe" />
+    <Content Include="Assemblies\x64\IgfxExtBridge.dll" />
+    <Content Include="Assemblies\x86\devcon.exe" />
+    <Content Include="Assemblies\x86\IgfxExtBridge.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>XCopy "$(ProjectDir)Assemblies" "$(TargetDir)" /Y /S /E</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

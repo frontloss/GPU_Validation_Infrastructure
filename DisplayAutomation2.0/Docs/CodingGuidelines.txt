@@ -1,0 +1,4 @@
+https://www.python.org/dev/peps/pep-0008/
+http://docs.python-guide.org/en/latest/writing/style/
+
+TODO: Update  required

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSetQuery>
+	<Query Platform="ICL" OS="na" TestEnvironment="ICL_SOC"/>
+	<Query Platform="ICL" OS="na" TestEnvironment="ICL_SIM"/>
+	<Query Platform="ICL" OS="na" TestEnvironment="ICL_EMU"/>
+</TestSetQuery>
+
+<!-- All 3 attributes are mandatory. Please specify 'na' if any attribute is not required. -->
+<!-- Please refer (Tests\Smoke\TestSet_Bat\testset_xml_bat_config.xml) file for valid PLATFORM and OS name. -->
+<!-- Add any one suffix ('SIM', 'EMU', 'SOC', 'DOD') along with PLATFORM name for Test Environment. -->

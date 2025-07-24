@@ -1,0 +1,71 @@
+<Display_Automation_2.0>
+
+   <Feature Name="VirtualDisplay" Owner="joshipra">
+
+     <Test LastModifiedWW="2020.WW26" Name="virtual_display_headless.py" Owner="joshipra" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;GFT" Id="VDY001">
+         <CommandLine>python Tests\VirtualDisplay\Yangra\Yangra\virtual_display_headless.py -dp_b</CommandLine>
+         <OS>WINRS1;WINRS2;WINRS3</OS>
+         <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_SOC;TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="CI;PreETM;GFT" Id="VDY002">
+         <CommandLine>python Tests\VirtualDisplay\Yangra\virtual_display_headless.py -dp_b -hdmi_d</CommandLine>
+         <OS>WINRS1;WINRS2;WINRS3</OS>
+         <Platform>ICL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="CI;PreETM;GFT" Id="VDY003">
+         <CommandLine>python Tests\VirtualDisplay\Yangra\virtual_display_headless.py -dp_b -dp_d</CommandLine>
+         <OS>WINRS1;WINRS2;WINRS3</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+
+     <Test LastModifiedWW="2020.WW26" Name="virtual_display_crt.py" Owner="joshipra" Priority="P2" Version="1">
+
+       <TestInstance Grids="CI;PreETM;GFT" Id="VDY004">
+         <CommandLine>python Tests\VirtualDisplay\Yangra\virtual_display_crt.py -dp_b</CommandLine>
+         <OS>WINRS1;WINRS2;WINRS3</OS>
+         <Platform>ICL;TGL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_SOC;TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="CI;PreETM;GFT" Id="VDY005">
+         <CommandLine>python Tests\VirtualDisplay\Yangra\virtual_display_crt.py -dp_b -hdmi_d</CommandLine>
+         <OS>WINRS1;WINRS2;WINRS3</OS>
+         <Platform>ICL</Platform>
+                <TestEnvironment>ICL_SIM;ICL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+
+       <TestInstance Grids="CI;PreETM;GFT" Id="VDY006">
+         <CommandLine>python Tests\VirtualDisplay\Yangra\virtual_display_crt.py -dp_b -dp_d</CommandLine>
+         <OS>WINRS1;WINRS2;WINRS3</OS>
+         <Platform>TGL</Platform>
+                <TestEnvironment>TGL_SIM;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+
+   </Feature>
+</Display_Automation_2.0>

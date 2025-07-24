@@ -1,0 +1,7 @@
+^DisplayAutomation2.0\/TestStore\/PanelInputData\/[a-zA-Z0-9._\/]+.bin$
+^DisplayAutomation2.0\/TestStore\/PanelInputData\/[a-zA-Z0-9._\/]+.EDID$
+^DisplayAutomation2.0\/TestStore\/ExtDependency\/ColorModel.dll$
+^DisplayAutomation2.0\/TestStore\/ExtDependency\/ColorModel.lib$
+^DisplayAutomation2.0\/TestStore\/ExtDependency\/image
+^Archive
+^Common\/Component

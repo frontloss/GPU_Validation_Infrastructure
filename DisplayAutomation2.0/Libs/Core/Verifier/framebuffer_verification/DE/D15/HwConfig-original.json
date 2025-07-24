@@ -1,0 +1,282 @@
+{
+  "pipe": {
+    "name": "pipeA",
+    "components": [
+      {
+        "plane": {
+          "name": "plane1",
+          "components": [
+            {
+              "1dLut": {
+                "name": "plane1precscLut",
+                "outputFormat": "s3.24",
+                "maxSampleValue": 16777216,
+                "numOfSamples": 129
+              }
+            },
+            {
+              "csc": {
+                "name": "plane1csc",
+                "outputFormat": "s3.24",
+                "maxCoeffValue": 3.9921875,
+                "minCoeffValue": -3.9921875,
+                "maxPreOffsetValue": 0.999755859375,
+                "minPreOffsetValue": -1.0,
+                "maxPostOffsetValue": 0.999755859375,
+                "minPostOffsetValue": -1.0
+              }
+            },
+            {
+              "1dLut": {
+                "name": "plane1postcscLut",
+                "outputFormat": "s3.24",
+                "maxSampleValue": 16777216,
+                "numOfSamples": 33
+              }
+            },
+            {
+              "LogToneMappingLut": {
+                "name": "plane1LogToneMappingLut",
+                "outputFormat": "s3.24",
+                "maxSampleValue": 65536,
+                "numOfSamples": 171,
+                "NumOfSegments": 25,
+                "NumOfEntriesPerSegment": [
+                  1,
+                  2,
+                  2,
+                  2,
+                  2,
+                  2,
+                  2,
+                  4,
+                  4,
+                  4,
+                  4,
+                  4,
+                  8,
+                  8,
+                  8,
+                  8,
+                  8,
+                  8,
+                  8,
+                  16,
+                  16,
+                  16,
+                  16,
+                  16,
+                  1
+                ]
+              }
+            },
+            {
+              "D12ToneMappingLut": {
+                "name": "plane1ToneMappingtwosegementedLut",
+                "outputFormat": "s3.24",
+                "maxSampleValue": 16777216,
+                "numOfSamples": 42
+              }
+            }
+          ]
+        }
+      },
+      {
+        "plane": {
+          "name": "plane2",
+          "components": [
+            {
+              "1dLut": {
+                "name": "plane2precscLut",
+                "outputFormat": "s3.24",
+                "maxSampleValue": 16777216,
+                "numOfSamples": 129
+              }
+            },
+            {
+              "csc": {
+                "name": "plane2csc",
+                "outputFormat": "s3.24",
+                "maxCoeffValue": 3.9921875,
+                "minCoeffValue": -3.9921875,
+                "maxPreOffsetValue": 0.999755859375,
+                "minPreOffsetValue": -1.0,
+                "maxPostOffsetValue": 0.999755859375,
+                "minPostOffsetValue": -1.0
+              }
+            },
+            {
+              "1dLut": {
+                "name": "plane2postcscLut",
+                "maxSampleValue": 16777216,
+                "numOfSamples": 33
+              }
+            },
+            {
+              "D12ToneMappingLut": {
+                "name": "plane2ToneMappingLut",
+                "outputFormat": "s3.24",
+                "maxSampleValue": 16777216,
+                "numOfSamples": 42
+              }
+            }
+          ]
+        }
+      },
+      {
+        "plane": {
+          "name": "plane3",
+          "components": [
+            {
+              "1dLut": {
+                "name": "plane3precscLut",
+                "outputFormat": "s3.24",
+                "maxSampleValue": 16777216,
+                "numOfSamples": 129
+              }
+            },
+            {
+              "csc": {
+                "name": "plane3csc",
+                "outputFormat": "s3.24",
+                "maxCoeffValue": 3.9921875,
+                "minCoeffValue": -3.9921875,
+                "maxPreOffsetValue": 0.999755859375,
+                "minPreOffsetValue": -1.0,
+                "maxPostOffsetValue": 0.999755859375,
+                "minPostOffsetValue": -1.0
+              }
+            },
+            {
+              "1dLut": {
+                "name": "plane3postcscLut",
+                "outputFormat": "s3.24",
+                "maxSampleValue": 16777216,
+                "numOfSamples": 33
+              }
+            },
+            {
+              "D12ToneMappingLut": {
+                "name": "plan3ToneMappingLut",
+                "outputFormat": "s3.24",
+                "maxSampleValue": 16777216,
+                "numOfSamples": 42
+              }
+            }
+          ]
+        }
+      },
+      {
+        "blender": {
+          "name": "blender",
+          "outputFormat": "s3.24"
+        }
+      },
+      {
+        "1dLut": {
+          "name": "pipeprecscLut",
+          "outputFormat": "s3.24",
+          "maxSampleValue": 65536,
+          "numOfSamples": 33
+        }
+      },
+      {
+        "csc": {
+          "name": "pipecsc",
+          "outputFormat": "s3.24",
+          "maxCoeffValue": 3.9921875,
+          "minCoeffValue": -3.9921875,
+          "maxPreOffsetValue": 0.999755859375,
+          "minPreOffsetValue": -1.0,
+          "maxPostOffsetValue": 0.999755859375,
+          "minPostOffsetValue": -1.0
+        }
+      },
+      {
+        "LogLut": {
+          "name": "pipePostCscEOTFLogLut",
+          "outputFormat": "s3.24",
+          "maxSampleValue": 16777216,
+          "numOfSamples": 511,
+          "NumOfSegments": 25,
+          "NumOfEntriesPerSegment": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            4,
+            4,
+            4,
+            8,
+            8,
+            8,
+            16,
+            16,
+            16,
+            32,
+            32,
+            64,
+            64,
+            64,
+            32,
+            32,
+            32,
+            32,
+            32,
+            1
+          ]
+        }
+      },
+      {
+        "1dLut": {
+          "name": "pipepostcscLut",
+          "outputFormat": "u0.12",
+          "maxSampleValue": 65536,
+          "numOfSamples": 513
+        }
+      },
+      {
+        "3dLut": {
+          "name": "pipe3dLut",
+          "outputFormat": "u0.16",
+          "maxSampleValue": 1023,
+          "depth": 17
+        }
+      },
+      {
+        "Lace": {
+          "name": "pipelace",
+          "outputFormat": "u0.16"
+        }
+      },
+      {
+        "Dpst": {
+          "name": "pipedpst",
+          "outputFormat": "u0.16"
+        }
+      },
+      // 
+      {
+        "PAS": {
+          "name": "pas",
+          "Description": "Perceptual Adaptive Sharpening(PAS): Controls the Sharpness by two param, MinStrength and MaxStrength"
+          "outputFormat": "u0.16",
+          "MinStrength": 0,
+          "MaxStrength": 0.24
+        }
+      },
+      {
+        "Scaler": {
+          "name": "scaler",
+          "outputFormat": "u0.16",
+          "numTaps": 7,
+          "numPhase": 33,
+          "supportedFilterModes": "MEDIUM,INTEGER,EDGE_ENHANCE,BILINEAR,PROGRAMMED",
+          "maxCoeffValue": 1.99609375,
+          "minCoeffValue": -1.99609375
+        }
+      }
+    ]
+  }
+}

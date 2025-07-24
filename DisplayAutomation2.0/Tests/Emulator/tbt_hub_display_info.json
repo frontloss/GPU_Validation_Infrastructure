@@ -1,0 +1,24 @@
+{
+  "HUB_CONFIG1": [
+    {
+      "port_index": 0,
+      "port_type": "dp",
+      "edid_name": "DELL_UP3216Q_DP.bin",
+      "dpcd_name": "DELL_UP3216Q_DPCD.txt"
+    }
+  ],
+  "HUB_CONFIG2": [
+    {
+      "port_index": 0,
+      "port_type": "dp",
+      "edid_name": "DELL_UP3216Q_DP.bin",
+      "dpcd_name": "DELL_UP3216Q_DPCD.txt"
+    },
+    {
+      "port_index": 1,
+      "port_type": "dp",
+      "edid_name": "DELL_UP3216Q_DP.bin",
+      "dpcd_name": "DELL_UP3216Q_DPCD.txt"
+    }
+  ]
+}

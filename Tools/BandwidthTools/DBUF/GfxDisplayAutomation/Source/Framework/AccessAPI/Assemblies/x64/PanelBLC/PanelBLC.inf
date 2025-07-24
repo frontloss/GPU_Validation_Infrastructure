@@ -1,0 +1,71 @@
+; File Name: PanelBLC.inf
+; Install information file for Panel Brightness Control
+; Only mandatory sections are provided for.
+;--------- 'Version' Section --------------------------------------------------
+
+[Version]
+Signature   = "$WINDOWS NT$"
+Class       = System
+ClassGUID   = {4d36e97d-e325-11ce-bfc1-08002be10318}; GUID reserved for 'System' class devices
+Provider    = %OrganizationName%
+CatalogFile = PanelBLC.cat
+DriverVer=04/24/2015,11.10.4.507
+
+;--------- 'SourceDisksNames' and 'SourceDiskFiles' Section -------------------
+
+[SourceDisksNames]
+; FORMAT: diskid = disk-description[, [tag-or-cab-file], [unused], [path], [flags]]
+1 = %PanelBLCDiskDesc%, , , ""
+
+[SourceDisksFiles]
+; FORMAT: fileName = diskid[, [subdir], [size]]
+PanelBLC.sys = 1, ,
+
+;--------- 'DestinationDirs' Section ------------------------------------------
+
+[DestinationDirs]
+DefaultDestDir = 10; Windows directory, equivalent to %SystemRoot%
+PanelBLCFilesList  = 12; Drivers directory, equivalent to %SystemRoot%\system32\drivers
+
+;--------- 'Manufacturer' and 'Models' Sections -------------------------------
+[Manufacturer]
+; FORMAT: %strkey% = models-section-name[, TargetOSVersion]
+%PanelBLCMfgName% = PanelBLCModel, NTamd64
+
+[PanelBLCModel.NTamd64]
+%PanelBLCDeviceDesc% = PanelBLCDDI, PCI\VEN_8086&DEV_PanelBLC;
+
+;---------- 'DDInstall' and 'DDInstall.Services' Sections ----------------------
+
+[PanelBLCDDI]
+CopyFiles = PanelBLCFilesList; FORMAT: CopyFiles = @filename | file-list-section
+
+[PanelBLCDDI.NT]
+CopyFiles = PanelBLCFilesList
+
+[PanelBLCDDI.NT.Services]
+; FORMAT: AddService = ServiceName, [flags], service-install-section
+Addservice = PanelBLC, 0x00000002, PanelBLC_Service_Inst
+
+[PanelBLC_Service_Inst]
+DisplayName    = %PanelBLCServiceDesc%
+ServiceType    = 0x00000001
+StartType      = 0x3
+ErrorControl   = 0x00000001
+ServiceBinary  = %12%\PanelBLC.sys
+;AddReg	       = PanelBLCConfigRegs; Update registry entries pertinent to the newly installed service
+;DelReg	       = PanelBLCConfigRegs; Remove registry entries from a previously installed service
+LoadOrderGroup = Extended Base
+
+[PanelBLCFilesList]
+;FORMAT: destination-file-name[, [source-file-name][, [unused], [flag]]]
+PanelBLC.sys, , , 0x00000002
+
+;--------- 'Strings' Section --------------------------------------------------
+
+[Strings]
+OrganizationName     = "Intel Corporation"
+PanelBLCMfgName      = "Intel(R) Integrated Panel Device Validation"
+PanelBLCDeviceDesc   = "Driver for Panel Brightness Control (PanelBLC)"
+PanelBLCServiceDesc  = "Driver-Service for Panel Brightness Control (PanelBLC)"
+PanelBLCDiskDesc     = "PanelBLC Device Installation Disk"

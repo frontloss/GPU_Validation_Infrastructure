@@ -1,0 +1,69 @@
+#AddCommandButton{
+ background-color: gray;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    font-family:Verdana;
+    font-size: 15px;
+    text-decoration:solid;
+    border: 2px solid gray; 
+    border-radius: 5px;
+}
+#list{
+border: 2px solid gray; 
+border-radius: 5px;
+ padding: 3px;
+ font-family:Verdana;
+ -webkit-appearance:scrollbarbutton-down; 
+background-image: url('Images/DropDownHead.png'); 
+background-color: gray;
+ background-position:right;
+ background-repeat: no-repeat;
+ width: 150px;
+ text-decoration:solid;
+}
+#ToolTable{
+  
+}
+#ParameterTable
+{
+      border: 2px solid gray; 
+border-radius: 5px;
+ padding: 3px;
+ font-family:Verdana;
+background-color: gray;
+font-size: medium;
+}
+#HeaderImage{
+box-shadow: 10px 10px 5px #888888;
+}
+#interface{
+border: 2px solid gray; 
+border-radius: 5px;
+ padding: 3px;
+ font-family:Verdana;
+ -webkit-appearance: none; 
+background-image: url('../Images/DropDownHead.png'); 
+background-color: gray;
+ background-position:right;
+ background-repeat: no-repeat;
+ width: 150px;
+}
+#label
+{
+    border: 2px solid lightgray; 
+border-radius: 5px;
+ padding: 3px;
+ font-family:Verdana;
+background-color:lightgray;
+font-size:small;
+}
+#commandLine
+{
+border: 2px solid darkgray; 
+border-radius: 5px;
+ padding: 3px;
+ font-family:Verdana;
+background-color:darkgray;
+font-size:small;
+}

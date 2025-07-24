@@ -1,0 +1,19 @@
+<?xml-stylesheet type='text/xsl' href='DisplayTest.xsl'?>
+<Report
+  title="Display Test Automation">
+<Log
+    time="8/17/2015 2:07:25 PM"
+    level="INFO"><![CDATA[*************************** System Summary ***************************]]><br />
+<![CDATA[System Name: SOORYAR-MOBL]]><br />
+</Log>
+<Log
+    time="8/17/2015 2:07:25 PM"
+    level="WARN"><![CDATA[Exception data is StartIndex cannot be less than zero.
+Parameter name: startIndex]]><br />
+</Log>
+<Log
+  time="8/17/2015 2:08:03 PM"
+  level="DEBUG"><![CDATA[Fetching system configuration data - Attempt=1]]></Log>
+<Log
+  time="8/17/2015 2:08:03 PM"
+  level="DEBUG"><![CDATA[System configuration data obtained successfully]]></Log>

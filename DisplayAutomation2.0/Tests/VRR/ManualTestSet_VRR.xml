@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2_0_Manual>
+    <Feature Name="VRR" Owner="rohitku1">
+        <SubFeature Name="Functional" Owner="rohitku1">
+            <Test Id="TI-1284741" Name="VRR Basic eDP" Grids="W.GFT">
+                <CommandLine>python Tests\VRR\test_functional_basic.py -state enabled -manual true -display1 "EDP VRR Panel"</CommandLine>
+                <OS>WinRS5;Win19H1</OS>
+                <Platform>ICL</Platform>
+                <ExecutionTime>5m</ExecutionTime>
+            </Test>
+            <Test Id="TI-1284742" Name="VRR Basic DP" Grids="W.GFT">
+                <CommandLine>python Tests\VRR\test_functional_basic.py -state enabled -manual true -display1 "DP VRR Panel"</CommandLine>
+                <OS>WinRS5;Win19H1</OS>
+                <Platform>ICL;LKF1</Platform>
+                <ExecutionTime>5m</ExecutionTime>
+            </Test>
+        </SubFeature>
+    </Feature>
+</Display_Automation_2_0_Manual>

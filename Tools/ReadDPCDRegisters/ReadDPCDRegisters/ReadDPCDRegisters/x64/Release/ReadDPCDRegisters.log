@@ -1,0 +1,7 @@
+﻿  stdafx.cpp
+  ReadDPCDRegisters.cpp
+  Generating code
+  All 7 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  ReadDPCDRegisters.vcxproj -> C:\Users\Intel\Desktop\ReadDPCDRegisters\x64\Release\ReadDPCDRegisters.exe
+  ReadDPCDRegisters.vcxproj -> C:\Users\Intel\Desktop\ReadDPCDRegisters\x64\Release\ReadDPCDRegisters.pdb (Full PDB)

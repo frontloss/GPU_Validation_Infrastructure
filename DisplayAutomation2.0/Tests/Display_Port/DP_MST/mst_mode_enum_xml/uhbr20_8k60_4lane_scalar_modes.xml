@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<Display DPCD="" EDID="" DISPLAY_TECH="MST" TOPOLOGY_PATH="DP_MST_TILE\UHBR20_LC4_8K_60HZ_MST_DISPLAY.xml">
+    <Revision CreatedBy="Veena, Veluru" CreatedOn="WW23" CurrentRevision="1">
+        <RevisionHistory RevisionID="1" Name="Veena, Veluru" WW="WW42" Comments=""/>
+    </Revision>
+        <!-- Removing MAR scaling from compressed and uncompressed pipe joined scenario. 
+	For mode when there is a need of more than 1 pipe or custom targets like collage then
+	MAR/Centered scaling for pipe joined targets is not supported.
+	HSD : https://hsdes.intel.com/appstore/article/#/16018390975, https://hsdes.intel.com/appstore/article/#/16020371097 -->
+    <GoldenModeTable>
+        <EDIDInstance ModeIndex="1" HActive="7680" VActive="4320" RefreshRate="60" Scanline="Progressive" Scaling="Default" PixelCLK="2376000000"/>
+        <EDIDInstance ModeIndex="2" HActive="1024" VActive="768" RefreshRate="60" Scanline="Progressive" Scaling="Stretch" PixelCLK="2376000000"/>
+        <EDIDInstance ModeIndex="3" HActive="1920" VActive="1080" RefreshRate="60" Scanline="Progressive" Scaling="Stretch" PixelCLK="2376000000"/>
+    </GoldenModeTable>
+
+    <Platform Name="DG2" SKU="">
+        <IgnoreModeIndex>None</IgnoreModeIndex>
+        <ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+        <ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+    </Platform>
+    <Platform Name="ADLP" SKU="RPLP">
+        <IgnoreModeIndex>None</IgnoreModeIndex>
+        <ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+        <ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+    </Platform>
+    <Platform Name="MTL" SKU="">
+        <IgnoreModeIndex>None</IgnoreModeIndex>
+        <ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+        <ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+    </Platform>
+    <Platform Name="ELG" SKU="">
+        <IgnoreModeIndex>None</IgnoreModeIndex>
+        <ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+        <ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+    </Platform>
+    <Platform Name="LNL" SKU="">
+        <IgnoreModeIndex>None</IgnoreModeIndex>
+        <ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+        <ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+    </Platform>
+    <Platform Name="PTL" SKU="">
+        <IgnoreModeIndex>None</IgnoreModeIndex>
+        <ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+        <ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+    </Platform>
+    <Platform Name="CLS" SKU="">
+        <IgnoreModeIndex>None</IgnoreModeIndex>
+        <ApplyModeIndex>*</ApplyModeIndex> <!-- Provide ModeIndex to apply specific mode(ex: 96,97) or *(Asterisk) to apply all modes (except IgnoreModeIndex) -->
+        <ModeControlFlag CommonValue="0x08">None</ModeControlFlag>
+    </Platform>
+</Display>
+        <!--  ModeControlFlag 8 Bit Definition:
+            {
+            ('colorFormat'	, c_ubyte, 2), # Bit 0,1
+            ('reserved_2' 	, c_ubyte, 1), # Bit 2
+            ('bpc'		  	, c_ubyte, 2), # Bit 3,4
+            ('reserved_5' 	, c_ubyte, 1), # Bit 5
+            ('pixelRepMode' , c_ubyte, 1), # Bit 6
+            ('reserved_7' 	, c_ubyte, 1)  # Bit 7
+            }
+
+            | colorFormat_RGB 		= 00 |
+            | colorFormat_YUV420 	= 01 |
+            | colorFormat_YUV444 	= 10 |
+            | colorFormat_YUV422 	= 11 |
+
+            |  bpc_6bpc	 = 00  |
+            |  bpc_8bpc  = 01  |
+            |  bpc_10bpc = 10  |
+            |  bpc_12bpc = 11  |
+
+            pixelRepMode (0 = Not a Pixel Replicated Mode, 1 = Pixel Replicated Mode) -->

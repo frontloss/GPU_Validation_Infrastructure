@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Display_Automation_2.0>
+   <Feature Name="MIPI_DRRS" Owner="Kruti, Vadhavaniya">
+
+     <Test LastModifiedWW="2020.WW11" Name="mipi_drrs_with_ideal_monitor.py" Owner="khvadhav" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;ETM" Id="MIPI_DRRS0001">
+         <CommandLine>python Tests\Power\MIPI_DRRS\mipi_drrs_with_ideal_monitor.py -mipi_a SINK_MIP008 -mipi_c SINK_MIP008</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1;TGL</Platform>
+                <TestEnvironment>LKF1_SOC;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+
+     <Test LastModifiedWW="2020.WW11" Name="mipi_drrs_media_playback.py" Owner="khvadhav" Priority="P1" Version="1">
+       <TestInstance Grids="CI;PreETM;ETM" Id="MIPI_DRRS0002">
+         <CommandLine>python Tests\Power\MIPI_DRRS\mipi_drrs_media_playback.py -mipi_a SINK_MIP008 -media_fps 23.976</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1;TGL</Platform>
+                <TestEnvironment>LKF1_SOC;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="MIPI_DRRS0003">
+         <CommandLine>python Tests\Power\MIPI_DRRS\mipi_drrs_media_playback.py -mipi_a SINK_MIP008 -media_fps 24.000</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1;TGL</Platform>
+                <TestEnvironment>LKF1_SOC;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="MIPI_DRRS0004">
+         <CommandLine>python Tests\Power\MIPI_DRRS\mipi_drrs_media_playback.py -mipi_a SINK_MIP008 -media_fps 25.000</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1;TGL</Platform>
+                <TestEnvironment>LKF1_SOC;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="MIPI_DRRS0005">
+         <CommandLine>python Tests\Power\MIPI_DRRS\mipi_drrs_media_playback.py -mipi_a SINK_MIP008 -media_fps 29.970</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1;TGL</Platform>
+                <TestEnvironment>LKF1_SOC;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="MIPI_DRRS0006">
+         <CommandLine>python Tests\Power\MIPI_DRRS\mipi_drrs_media_playback.py -mipi_a SINK_MIP008 -media_fps 30.000</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1;TGL</Platform>
+                <TestEnvironment>LKF1_SOC;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+       <TestInstance Grids="CI;PreETM;ETM" Id="MIPI_DRRS0007">
+         <CommandLine>python Tests\Power\MIPI_DRRS\mipi_drrs_media_playback.py -mipi_a SINK_MIP008 -media_fps 59.940</CommandLine>
+         <OS>WinRS5</OS>
+         <Platform>LKF1;TGL</Platform>
+                <TestEnvironment>LKF1_SOC;TGL_SOC</TestEnvironment>
+                <ExecutionTime_mm>00</ExecutionTime_mm>
+                <AdditionalTag>NONE</AdditionalTag>
+		 <QualificationStatus>NONE</QualificationStatus>
+       </TestInstance>
+     </Test>
+
+   </Feature>
+</Display_Automation_2.0>

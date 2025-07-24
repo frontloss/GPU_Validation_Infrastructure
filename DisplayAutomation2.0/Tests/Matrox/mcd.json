@@ -1,0 +1,115 @@
+{
+  "2KCONFIG1_4D":
+  {
+    "OpType": [1,2,4,3],
+    "NumOutputs": 4,
+    "CombinedDesktopWidth": 3840,
+    "CombinedDesktopHeight": 2160,
+    "child_info_list": [
+      {"Order": 0, "FbSrc": [0,0,1920,1080], "FbPos": [0,0,1920,1080], "DisplayOrientation": 0, "TargetMode": [1920,1080,60]},
+      {"Order": 1, "FbSrc": [1920,0,3840,1080], "FbPos": [0,0,1920,1080], "DisplayOrientation": 0, "TargetMode": [1920,1080,60]},
+      {"Order": 2, "FbSrc": [0,1080,1920,2160], "FbPos": [0,0,1920,1080], "DisplayOrientation": 0, "TargetMode": [1920,1080,60]},
+      {"Order": 3, "FbSrc": [1920,1080,3840,2160], "FbPos": [0,0,1920,1080], "DisplayOrientation": 0, "TargetMode": [1920,1080,60]}
+    ]
+  },
+  "2KCONFIG2_HOR":
+  {
+    "OpType": [1,2,4,3],
+    "NumOutputs": 2,
+    "CombinedDesktopWidth": 3840,
+    "CombinedDesktopHeight": 1080,
+    "child_info_list": [
+      {"Order": 0, "FbSrc": [0,0,1920,1080], "FbPos": [0,0,1920,1080], "DisplayOrientation": 0, "TargetMode": [1920,1080,60]},
+      {"Order": 1, "FbSrc": [1920,0,3840,1080], "FbPos": [0,0,1920,1080], "DisplayOrientation": 0, "TargetMode": [1920,1080,60]}
+    ]
+  },
+  "2KCONFIG3_VER":
+  {
+    "OpType": [1,2,4,3],
+    "NumOutputs": 2,
+    "CombinedDesktopWidth": 1920,
+    "CombinedDesktopHeight": 2160,
+    "child_info_list": [
+      {"Order": 0, "FbSrc": [0,0,1920,1080], "FbPos": [0,0,1920,1080], "DisplayOrientation": 0, "TargetMode": [1920,1080,60]},
+      {"Order": 1, "FbSrc": [0,1080,1920,2160], "FbPos": [0,0,1920,1080], "DisplayOrientation": 0, "TargetMode": [1920,1080,60]}
+    ]
+  },
+ "2KCONFIG4_CLONE":
+  {
+    "OpType": [1,2,4,3],
+    "NumOutputs": 2,
+    "CombinedDesktopWidth": 3840,
+    "CombinedDesktopHeight": 1080,
+    "child_info_list": [
+      {"Order": 0, "FbSrc": [0,0,1920,1080], "FbPos": [0,0,1920,1080], "DisplayOrientation": 0, "TargetMode": [1920,1080,60]},
+      {"Order": 1, "FbSrc": [0,0,1920,1080], "FbPos": [0,0,1920,1080], "DisplayOrientation": 0, "TargetMode": [1920,1080,60]}
+    ]
+  },
+  "2KCONFIG5_SCALE":
+  {
+    "OpType": [1,2,4,3],
+    "NumOutputs": 2,
+    "CombinedDesktopWidth": 5120,
+    "CombinedDesktopHeight": 1600,
+    "child_info_list": [
+      {"Order": 0, "FbSrc": [0,0,1920,1080], "FbPos": [0,0,2560,1600], "DisplayOrientation": 0, "TargetMode": [2560,1600,60]},
+      {"Order": 1, "FbSrc": [1920,0,3840,1080], "FbPos": [0,0,2560,1600], "DisplayOrientation": 0, "TargetMode": [2560,1600,60]}
+    ]
+  },
+  "2KCONFIG6_ROT":
+  {
+    "OpType": [1,2,4,3],
+    "NumOutputs": 2,
+    "CombinedDesktopWidth": 3840,
+    "CombinedDesktopHeight": 1080,
+    "child_info_list": [
+      {"Order": 0, "FbSrc": [0,0,1920,1080], "FbPos": [0,0,1920,1080], "DisplayOrientation": 0, "TargetMode": [1920,1080,60]},
+      {"Order": 1, "FbSrc": [1920,0,3840,1080], "FbPos": [0,0,1920,1080], "DisplayOrientation": 2, "TargetMode": [1920,1080,60]}
+    ]
+  },
+  "2KCONFIG7_EXTRA":
+  {
+    "OpType": [1,2,4,3],
+    "NumOutputs": 2,
+    "CombinedDesktopWidth": 3940,
+    "CombinedDesktopHeight": 1080,
+    "child_info_list": [
+      {"Order": 0, "FbSrc": [0,0,1920,1080], "FbPos": [0,0,1920,1080], "DisplayOrientation": 0, "TargetMode": [1920,1080,60]},
+      {"Order": 1, "FbSrc": [2020,0,3940,1080], "FbPos": [0,0,1920,1080], "DisplayOrientation": 2, "TargetMode": [1920,1080,60]}
+    ]
+  },
+  "2KCONFIG8_OVERLAP":
+  {
+    "OpType": [1,2,4,3],
+    "NumOutputs": 2,
+    "CombinedDesktopWidth": 3740,
+    "CombinedDesktopHeight": 1080,
+    "child_info_list": [
+      {"Order": 0, "FbSrc": [0,0,1920,1080], "FbPos": [0,0,1920,1080], "DisplayOrientation": 0, "TargetMode": [1920,1080,60]},
+      {"Order": 1, "FbSrc": [1820,0,3740,1080], "FbPos": [0,0,1920,1080], "DisplayOrientation": 2, "TargetMode": [1920,1080,60]}
+    ]
+  },
+  "2KCONFIG9_HOR_GENLOCK_E":
+  {
+    "OpType": [1,2,4],
+    "NumOutputs": 2,
+    "CombinedDesktopWidth": 3840,
+    "CombinedDesktopHeight": 1080,
+    "child_info_list": [
+      {"Order": 0, "FbSrc": [0,0,1920,1080], "FbPos": [0,0,1920,1080], "DisplayOrientation": 0, "TargetMode": [1920,1080,60]},
+      {"Order": 1, "FbSrc": [1920,0,3840,1080], "FbPos": [0,0,1920,1080], "DisplayOrientation": 0, "TargetMode": [1920,1080,60]}
+    ]
+  },
+  "2KCONFIG10_HOR_GENLOCK_D":
+  {
+    "OpType": [3],
+    "NumOutputs": 2,
+    "CombinedDesktopWidth": 3840,
+    "CombinedDesktopHeight": 1080,
+    "child_info_list": [
+      {"Order": 0, "FbSrc": [0,0,1920,1080], "FbPos": [0,0,1920,1080], "DisplayOrientation": 0, "TargetMode": [1920,1080,60]},
+      {"Order": 1, "FbSrc": [1920,0,3840,1080], "FbPos": [0,0,1920,1080], "DisplayOrientation": 0, "TargetMode": [1920,1080,60]}
+    ]
+  }
+}
+

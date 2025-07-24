@@ -1,0 +1,33 @@
+import "oaidl.idl";
+import "ocidl.idl";
+
+import "igfxBridgeUDT.idl";
+
+	[
+		object,
+		uuid(A8B30857-69FB-44ba-B6CB-DE06D9152CF5),
+		dual,
+		helpstring("IPowerUtil Inferface"),
+		pointer_default(unique)
+	]
+
+	interface IPowerUtil : IDispatch
+	{
+		[id(1),  helpstring("method PowerApiOpen")] HRESULT PowerApiOpen(/*[out]*/DWORD *punHandle,/*[out]*/IGFX_ERROR_CODES *pExtraErrorCode,/*[out]*/BSTR *pErrorDescription);
+		[id(2),  helpstring("method PowerApiClose")] HRESULT PowerApiClose(/*[out]*/DWORD punHandle,/*[out]*/IGFX_ERROR_CODES *pExtraErrorCode,/*[out]*/BSTR *pErrorDescription);
+		[id(3),  helpstring("method GetPowerConsCaps")] HRESULT GetPowerConsCaps(/*[in]*/DWORD handle,/*[out]*/DWORD *pCaps,/*[out]*/IGFX_ERROR_CODES *pExtraErrorCode,/*[out]*/BSTR *pErrorDescription);
+		[id(4),  helpstring("method GetPowerPolicy_DFGT")] HRESULT GetPowerPolicy_DFGT(/*[in]*/DWORD handle,/*[out]*/DWORD PolicyID,/*[in]*/DWORD AcDc,/*[in]*/IGFX_DFGT_POLICY_1_0 *Policy, /*[out]*/IGFX_ERROR_CODES *pExtraErrorCode,/*[out]*/BSTR *pErrorDescription);
+		[id(5),  helpstring("method SetPowerPolicy_DFGT")] HRESULT SetPowerPolicy_DFGT(/*[in]*/DWORD handle,/*[out]*/DWORD PolicyID,/*[in]*/DWORD AcDc,/*[in]*/IGFX_DFGT_POLICY_1_0 *Policy, /*[out]*/IGFX_ERROR_CODES *pExtraErrorCode,/*[out]*/BSTR *pErrorDescription);
+		[id(6),  helpstring("method GetPowerPolicy_DPST")] HRESULT GetPowerPolicy_DPST(/*[in]*/DWORD handle,/*[out]*/DWORD PolicyID,/*[in]*/IGFX_DPST_POLICY_1_0 *Policy, /*[out]*/IGFX_ERROR_CODES *pExtraErrorCode,/*[out]*/BSTR *pErrorDescription);
+		[id(7),  helpstring("method SetPowerPolicy_DPST")] HRESULT SetPowerPolicy_DPST(/*[in]*/DWORD handle,/*[out]*/DWORD PolicyID,/*[in]*/IGFX_DPST_POLICY_1_0 *Policy, /*[out]*/IGFX_ERROR_CODES *pExtraErrorCode,/*[out]*/BSTR *pErrorDescription);
+		[id(8),  helpstring("method GetInverterParams")] HRESULT GetInverterParams(/*[in]*/DWORD PolicyID,/*[in][out]*/IGFX_POWER_PARAMS_0 *powerPolicy,/*[out]*/IGFX_ERROR_CODES *pExtraErrorCode,/*[out]*/BSTR *pErrorDescription);
+		[id(9),  helpstring("method SetInverterParams")] HRESULT SetInverterParams(/*[in]*/DWORD PolicyID,/*[in][out]*/IGFX_POWER_PARAMS_0 *powerPolicy,/*[out]*/IGFX_ERROR_CODES *pExtraErrorCode,/*[out]*/BSTR *pErrorDescription);
+		[id(10), helpstring("method SetPowerPolicyAll")] HRESULT SetPowerPolicyAll(/*[in]*/DWORD handle,/*[out]*/DWORD PolicyID,/*[in]*/DWORD *Policy, /*[out]*/IGFX_ERROR_CODES *pExtraErrorCode,/*[out]*/BSTR *pErrorDescription);
+		[id(11), helpstring("method GetPowerPolicyAll")] HRESULT GetPowerPolicyAll(/*[in]*/DWORD handle,/*[out]*/DWORD PolicyID,/*[in]*/DWORD *Policy, /*[out]*/IGFX_ERROR_CODES *pExtraErrorCode,/*[out]*/BSTR *pErrorDescription);
+		[id(12), helpstring("method GetPowerInfo")] HRESULT GetPowerInfo([in,out]IGFX_POWER_CONSERVATION_DATA *pData, [out]IGFX_ERROR_CODES *pExtraErrorCode,/*[out]*/BSTR *pErrorDescription);
+		[id(13), helpstring("method SetPowerInfo")] HRESULT SetPowerInfo([in,out]IGFX_POWER_CONSERVATION_DATA *pData, [out]IGFX_ERROR_CODES *pExtraErrorCode,/*[out]*/BSTR *pErrorDescription);
+		[id(14),  helpstring("method GetPowerPolicy_ADB")] HRESULT GetPowerPolicy_ADB(/*[in]*/DWORD handle,/*[out]*/DWORD PolicyID,/*[in]*/IGFX_ADB_POLICY_1_0 *Policy, /*[out]*/IGFX_ERROR_CODES *pExtraErrorCode,/*[out]*/BSTR *pErrorDescription);
+		[id(15),  helpstring("method SetPowerPolicy_ADB")] HRESULT SetPowerPolicy_ADB(/*[in]*/DWORD handle,/*[out]*/DWORD PolicyID,/*[in]*/IGFX_ADB_POLICY_1_0 *Policy, /*[out]*/IGFX_ERROR_CODES *pExtraErrorCode,/*[out]*/BSTR *pErrorDescription);
+	};
+
+

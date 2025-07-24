@@ -1,0 +1,760 @@
+<?xml version="1.0"?>
+<Test Feature="Scalar" Modes="CI,FS,MAR">
+<Platform Name="ICLLP" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="DP_A" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_B" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_C" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_D" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_E" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_F" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="HDMI_B" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_C" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_D" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_E" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_F" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+
+	<eDPScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</eDPScalarModes>
+
+	<DPScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</DPScalarModes>
+	
+	<HDMIScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</HDMIScalarModes>
+
+	<eDPCustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS" />
+	</eDPCustomModes>
+
+	<DPCustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS"/>
+	</DPCustomModes>
+
+	<HDMICustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS"/>
+	</HDMICustomModes>
+</Platform>
+<Platform Name="LKF1" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="MIPI_A" edid="MIPI_BOE_1200x1920_60Hz_8bpc_4lane_959.42MHz_PortSync.xml" dpcd="NA" />
+		<DisplayConfig Port="DP_D" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_E" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="HDMI_D" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_E" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+
+	<eDPScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</eDPScalarModes>
+
+	<MIPIScalarModes>
+		<EDIDInstance HActive="600" VActive="800" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="600" VActive="800" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="768" VActive="1024" RefreshRate="60" Scaling="FS" />
+	</MIPIScalarModes>
+
+	<DPScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</DPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</HDMIScalarModes>
+
+	<eDPCustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS" />
+	</eDPCustomModes>
+
+	<MIPICustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="1000" RefreshRate="60" Scaling="FS"/>
+	</MIPICustomModes>
+
+	<DPCustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS"/>
+	</DPCustomModes>
+
+	<HDMICustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS"/>
+	</HDMICustomModes>
+</Platform>
+<Platform Name="TGL" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="MIPI_A" edid="MIPI_BOE_1200x1920_60Hz_8bpc_4lane_959.42MHz_PortSync.xml" dpcd="NA" />
+		<DisplayConfig Port="DP_A" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_B" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_C" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_D" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_E" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_F" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_G" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_H" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_I" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="HDMI_B" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_C" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_D" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_E" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_F" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_G" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_H" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_I" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+
+	<eDPScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</eDPScalarModes>
+
+	<MIPIScalarModes>
+		<EDIDInstance HActive="600" VActive="800" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="600" VActive="800" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="768" VActive="1024" RefreshRate="60" Scaling="FS" />
+	</MIPIScalarModes>
+
+	<DPScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</DPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</HDMIScalarModes>
+
+	<eDPCustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS" />
+	</eDPCustomModes>
+
+	<MIPICustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="1000" RefreshRate="60" Scaling="FS"/>
+	</MIPICustomModes>
+
+	<DPCustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS"/>
+	</DPCustomModes>
+
+	<HDMICustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS"/>
+	</HDMICustomModes>
+</Platform>
+<Platform Name="DG1" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="DP_A" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_B" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_C" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_D" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="HDMI_B" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_C" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_D" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+
+	<eDPScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</eDPScalarModes>
+
+	<DPScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</DPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</HDMIScalarModes>
+
+	<eDPCustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS" />
+	</eDPCustomModes>
+
+	<DPCustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS"/>
+	</DPCustomModes>
+
+	<HDMICustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS"/>
+	</HDMICustomModes>
+</Platform>
+<Platform Name="DG2" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="DP_A" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_B" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_C" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_D" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_F" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="HDMI_B" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_C" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_D" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_F" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+
+	<eDPScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</eDPScalarModes>
+
+	<DPScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</DPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</HDMIScalarModes>
+
+	<eDPCustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS" />
+	</eDPCustomModes>
+
+	<DPCustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS"/>
+	</DPCustomModes>
+
+	<HDMICustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS"/>
+	</HDMICustomModes>
+</Platform>
+<Platform Name="RKL" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="DP_A" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_B" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_C" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_D" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="HDMI_A" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_B" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_C" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_D" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_F" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+
+	<eDPScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</eDPScalarModes>
+
+	<DPScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</DPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</HDMIScalarModes>
+
+	<eDPCustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS" />
+	</eDPCustomModes>
+
+	<DPCustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS"/>
+	</DPCustomModes>
+
+	<HDMICustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS"/>
+	</HDMICustomModes>
+</Platform>
+<Platform Name="ADLS" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="MIPI_A" edid="MIPI_BOE_1200x1920_60Hz_8bpc_4lane_959.42MHz_PortSync.xml" dpcd="NA" />
+		<DisplayConfig Port="DP_A" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_B" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_C" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_D" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_E" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="HDMI_B" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_C" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_D" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_E" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+
+	<eDPScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</eDPScalarModes>
+
+	<MIPIScalarModes>
+		<EDIDInstance HActive="600" VActive="800" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="600" VActive="800" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="768" VActive="1024" RefreshRate="60" Scaling="FS" />
+	</MIPIScalarModes>
+
+	<DPScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</DPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</HDMIScalarModes>
+
+	<eDPCustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS" />
+	</eDPCustomModes>
+
+	<MIPICustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="1000" RefreshRate="60" Scaling="FS"/>
+	</MIPICustomModes>
+
+	<DPCustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS"/>
+	</DPCustomModes>
+
+	<HDMICustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS"/>
+	</HDMICustomModes>
+</Platform>
+<Platform Name="ADLP" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="MIPI_A" edid="MIPI_BOE_1200x1920_60Hz_8bpc_4lane_959.42MHz_PortSync.xml" dpcd="NA" />
+		<DisplayConfig Port="DP_A" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_B" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_F" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_G" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_H" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_I" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="HDMI_B" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_F" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_G" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_H" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_I" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+
+	<eDPScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</eDPScalarModes>
+
+	<MIPIScalarModes>
+		<EDIDInstance HActive="600" VActive="800" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="600" VActive="800" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="768" VActive="1024" RefreshRate="60" Scaling="FS" />
+	</MIPIScalarModes>
+
+	<DPScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</DPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</HDMIScalarModes>
+
+	<eDPCustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS" />
+	</eDPCustomModes>
+
+	<MIPICustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="1000" RefreshRate="60" Scaling="FS"/>
+	</MIPICustomModes>
+
+	<DPCustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS"/>
+	</DPCustomModes>
+
+	<HDMICustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS"/>
+	</HDMICustomModes>
+</Platform>
+<Platform Name="MTL" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="DP_A" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_B" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_F" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_G" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_H" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_I" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="HDMI_B" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_F" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_G" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_H" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_I" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+
+	<eDPScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</eDPScalarModes>
+
+	<DPScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</DPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</HDMIScalarModes>
+
+	<eDPCustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS" />
+	</eDPCustomModes>
+
+	<DPCustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS"/>
+	</DPCustomModes>
+
+	<HDMICustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS"/>
+	</HDMICustomModes>
+</Platform>
+<Platform Name="ELG" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="DP_A" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_B" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_F" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_G" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_H" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_I" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="HDMI_B" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_F" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_G" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_H" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_I" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+
+	<eDPScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</eDPScalarModes>
+
+	<DPScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</DPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</HDMIScalarModes>
+
+	<eDPCustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS" />
+	</eDPCustomModes>
+
+	<DPCustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS"/>
+	</DPCustomModes>
+
+	<HDMICustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS"/>
+	</HDMICustomModes>
+</Platform>
+<Platform Name="LNL" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="DP_A" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_B" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_F" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_G" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_H" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_I" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="HDMI_B" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_F" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_G" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_H" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_I" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+
+	<eDPScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</eDPScalarModes>
+
+	<DPScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</DPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</HDMIScalarModes>
+
+	<eDPCustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="640" VActive="480" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS" />
+	</eDPCustomModes>
+
+	<DPCustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="640" VActive="480" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS"/>
+	</DPCustomModes>
+
+	<HDMICustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="640" VActive="480" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS"/>
+	</HDMICustomModes>
+</Platform>
+<Platform Name="PTL" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="DP_A" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_B" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_F" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_G" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_H" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_I" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="HDMI_B" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_F" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_G" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_H" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_I" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+
+	<eDPScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</eDPScalarModes>
+
+	<DPScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</DPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</HDMIScalarModes>
+
+	<eDPCustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="640" VActive="480" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS" />
+	</eDPCustomModes>
+
+	<DPCustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="640" VActive="480" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS"/>
+	</DPCustomModes>
+
+	<HDMICustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="640" VActive="480" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS"/>
+	</HDMICustomModes>
+</Platform>
+<Platform Name="NVL" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="DP_A" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_B" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_F" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_G" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_H" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_I" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="HDMI_B" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_F" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_G" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_H" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_I" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+
+	<eDPScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</eDPScalarModes>
+
+	<DPScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</DPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</HDMIScalarModes>
+
+	<eDPCustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS" />
+	</eDPCustomModes>
+
+	<DPCustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS"/>
+	</DPCustomModes>
+
+	<HDMICustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS"/>
+	</HDMICustomModes>
+</Platform>
+<Platform Name="CLS" SKU="">
+	<GoldenDisplayConfig>
+		<DisplayConfig Port="DP_A" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_B" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_F" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_G" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_H" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="DP_I" edid="eDP_4K_60Hz_120Hz_DisplayID.bin" dpcd="HBR3_WSSC_DPCD.txt" />
+		<DisplayConfig Port="HDMI_B" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_F" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_G" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_H" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+		<DisplayConfig Port="HDMI_I" edid="SHARP_PN_K321_HDMI.bin" dpcd="None" />
+	</GoldenDisplayConfig>
+
+	<eDPScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</eDPScalarModes>
+
+	<DPScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</DPScalarModes>
+
+	<HDMIScalarModes>
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="MAR" />
+		<EDIDInstance HActive="800" VActive="600" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1024" VActive="768" RefreshRate="60" Scaling="FS" />
+	</HDMIScalarModes>
+
+	<eDPCustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS" />
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS" />
+	</eDPCustomModes>
+
+	<DPCustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS"/>
+	</DPCustomModes>
+
+	<HDMICustomModes>
+		<EDIDInstance HActive="320" VActive="200" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="1000" VActive="800" RefreshRate="60" Scaling="FS"/>
+		<EDIDInstance HActive="2000" VActive="1600" RefreshRate="60" Scaling="FS"/>
+	</HDMICustomModes>
+</Platform>
+</Test>
